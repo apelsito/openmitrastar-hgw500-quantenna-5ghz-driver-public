@@ -1,0 +1,19 @@
+--- a/source/wlan/ieee80211.c
++++ b/source/wlan/ieee80211.c
+@@ -856,7 +856,7 @@
+ 
+ static void om_coc_update_pm(struct ieee80211com *ic)
+ {
+-    struct ieee80211_channel *chan=READ_ONCE(ic->ic_bsschan);
++    struct ieee80211_channel *chan;
+     int level;
+     int switched;
+     unsigned long flags;
+@@ -872,6 +872,7 @@
+     spin_unlock_irqrestore(&ic->om_coc_queue_lock,flags);
+     om_coc_publish_completion(ic);
+     if(!pending)return;
++    chan=READ_ONCE(ic->ic_bsschan);
+     /* The OEM worker accesses BSS flags before an invalid-pointer check.
+      * Avoid changing QoS, pick state or callback ownership when not ready. */
+     if(!chan||chan==IEEE80211_CHAN_ANYC)return;

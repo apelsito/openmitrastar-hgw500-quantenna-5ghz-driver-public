@@ -1,0 +1,12 @@
+{
+  "status": "PASS_OFFLINE_QUALIFIER_FAULT_CHECKS",
+  "hardware_accessed": false,
+  "cases": 5,
+  "outcomes": [
+    "correct_full_module_PASS",
+    "wrong_ioctl_id_REJECTED",
+    "unrelated_code_byte_REJECTED",
+    "unrelated_relocation_REJECTED",
+    "unrelated_rodata_byte_REJECTED"
+  ]
+}

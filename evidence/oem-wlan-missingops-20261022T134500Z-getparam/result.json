@@ -1,0 +1,23 @@
+{
+  "command": [
+    "node",
+    "/home/rea/openmitrastar-arc700-lab-20261021-r2/rea-agents/scripts/rea.mjs",
+    "function",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/oem-wlan-missingops-20261022T134300Z-linked/wlan-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+    "--procedure",
+    "0x3741c",
+    "--provider",
+    "ghidra",
+    "--format",
+    "json",
+    "--full-output"
+  ],
+  "started_utc": "2026-10-22T13:16:40.703091+00:00",
+  "finished_utc": "2026-10-22T13:16:42.745360+00:00",
+  "exit_code": 1,
+  "target_sha256": "79fbcbd4634a9fc32fdf8ac0c997f3bd0329131162a1ea4948794e4986c7e40a",
+  "target_unchanged": true,
+  "hardware_accessed": false,
+  "rea_output_sha256": "d620c5965badbe6615ecb2d0960221a54e86f81dd088c683f07441a588bb0a99",
+  "lab_manifest_sha256": "3d0e77d17af8bd3399772642436478d664ae0073892f71985c6a9b5de940d361"
+}

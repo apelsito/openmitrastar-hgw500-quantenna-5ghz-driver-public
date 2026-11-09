@@ -1,0 +1,103 @@
+{
+  "group": "host",
+  "source_files": 11,
+  "comments": 69,
+  "raw_bytes": 10710,
+  "raw_sha256": "6c88fe1166a9f47c303708c7dfaa0d38bed1c83978b5bafc11b83ed48067e4fc",
+  "unterminated_comments": 0,
+  "files": [
+    {
+      "path": "host/qevt-client/qevt_client.c",
+      "git_object": "2de8b9687d24103983620585e3e8abe371eca91a",
+      "mode": "100644",
+      "bytes": 12330,
+      "sha256": "028ac347d0c5facf9a34b71f4d2cd99db1b9408c0f9c7a6e9a8192ec71a365a1",
+      "comments": 7
+    },
+    {
+      "path": "host/umsdl/bin2ums.c",
+      "git_object": "f26b803a85f77a3fc2c9f68cac0541ae28971dcb",
+      "mode": "100644",
+      "bytes": 2351,
+      "sha256": "d7dcf5b6fbb028840311cc287f4d69c6031fe1059a0147c5ed2cd5448da1f9c1",
+      "comments": 1
+    },
+    {
+      "path": "host/umsdl/libumsdl.c",
+      "git_object": "e8184c0268addbb55b2271fefedfb11998f12d05",
+      "mode": "100644",
+      "bytes": 5683,
+      "sha256": "425bc6eb69b0303ac58d6061787cc2da18131e8c858c13000c15847001cfab61",
+      "comments": 6
+    },
+    {
+      "path": "host/umsdl/umsdl.c",
+      "git_object": "2e9f50f9bc581788d1604e96ed5726b0d8d4bb92",
+      "mode": "100644",
+      "bytes": 19316,
+      "sha256": "2fcfd9e14670c1c02843abd6ea88dd58cd63b42973ec5353d8a38399e0c341ef",
+      "comments": 36
+    },
+    {
+      "path": "host/umsdl/umsdl.h",
+      "git_object": "83bc1a4b5b07ddbff1ffb7e29b6dc60a83ce6b5a",
+      "mode": "100644",
+      "bytes": 3599,
+      "sha256": "bdfa0843624ebddce4662d765478eeffe4896cae0f9b1535e19a34fdc287d4bc",
+      "comments": 10
+    },
+    {
+      "path": "host/utilities/bin2bin.c",
+      "git_object": "583a978db5fea6f9a0556f29b31f8a565595b343",
+      "mode": "100644",
+      "bytes": 720,
+      "sha256": "717e6edd1ecb890289514c9dd3031d7adf83609c531d139016b0a7b9d4131121",
+      "comments": 0
+    },
+    {
+      "path": "host/utilities/bin2hex.c",
+      "git_object": "cc641b1910afe61f584688eef0b2a8c3930e6290",
+      "mode": "100644",
+      "bytes": 573,
+      "sha256": "e5ee18a3afd5d0bc097fe1d7f4863be8f66f5c76737d2c3d5aa356c34a4de290",
+      "comments": 0
+    },
+    {
+      "path": "host/utilities/kernel_base_util.c",
+      "git_object": "63ceda8dfbcc866b6425bff802cd01d739e9d7aa",
+      "mode": "100644",
+      "bytes": 574,
+      "sha256": "0433b48c1688ea6531689fee67b40460faf086db3ef74fcb7a90b0480c02cdc5",
+      "comments": 1
+    },
+    {
+      "path": "host/utilities/mac_addr.h",
+      "git_object": "60713412d5bc6c904c1051adcb033c3fc22c72d7",
+      "mode": "100644",
+      "bytes": 566,
+      "sha256": "d87e47549e3aa140b2af46349aea73d815d18482a591e269200aac32bbb771a3",
+      "comments": 4
+    },
+    {
+      "path": "host/utilities/macaddr.c",
+      "git_object": "c6a69516e3c4306f09e3c0e7277a82449bce6661",
+      "mode": "100644",
+      "bytes": 3173,
+      "sha256": "bc964fd1867efed6704e869a1f6ddb25dc4e938873813b78062ef36e240e4057",
+      "comments": 3
+    },
+    {
+      "path": "host/utilities/ruby_mem_helper.c",
+      "git_object": "881bef9cdf903b22ab4a895f445b8b96f339bd01",
+      "mode": "100644",
+      "bytes": 8433,
+      "sha256": "00184ce8baa6d4db91c813da2198bb2edc45b6f93afa0418b5a0eb1acb0edb8b",
+      "comments": 1
+    }
+  ],
+  "artifacts": {
+    "comments.raw.gz": "653973f3e0321b2c90e3354f400c202a35f73731d5103186997b3c720f368ec9",
+    "comments.jsonl.gz": "100ffbf9113da6696ab7dc388b406783d36ea2d55c68d9b94d0d73d41b7cc948",
+    "COMMENTS.md.gz": "5a13b4799ec8ff8c14ea9eb741f3154e72e86b1d685f7cea2893c7d0edf25696"
+  }
+}

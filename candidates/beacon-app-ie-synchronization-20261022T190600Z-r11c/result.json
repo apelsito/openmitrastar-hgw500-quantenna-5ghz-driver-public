@@ -1,0 +1,26 @@
+{
+  "status": "SOURCE_ONLY_R11_ALL_APP_READERS_SYNCHRONIZATION_PENDING_FIXTURES_BUILD",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent_result_sha256": "384256c605e92004f253df4a7c787b5904863da1d3bddd8beaf5fc82ec05eee2",
+  "changed_sources": {
+    "source/wlan/ieee80211_wireless.c": "52ea94042aeb5f23b8efa1866ab32c96e9f172fc05fac59851abe236cdd7de22",
+    "source/wlan/ieee80211_output.c": "6a353651d6d8f3a84a454f9ec51effceabd6af6b0378a35f13b681fa8abdba6d",
+    "source/wlan/ieee80211.c": "ab62a89f0c8d670a028267184dae98000398ae1caefde44353b9cfd62f98d8dd",
+    "source/wlan/ieee80211_beacon.c": "712d34d4ef45d23d9e146d15702baf6df1c1265b5be52dbcbb376eb4dbc1e64d"
+  },
+  "wire_header_changes": false,
+  "source_buffer_limit": 1024,
+  "existing_comments_preserved": {
+    "source/wlan/ieee80211_wireless.c": 784,
+    "source/wlan/ieee80211_output.c": 334,
+    "source/wlan/ieee80211.c": 281,
+    "source/wlan/ieee80211_beacon.c": 70
+  },
+  "scope": "Allocationoutsideiclock;lockedpointerlengthswap;readerslockcopyintoownedframe;freeoldafterunlock",
+  "limits": [
+    "Callcontext/reentrancy/lockorder andfullsourcefixture require verification",
+    "No genericVAPobject lifetime orthirdpartyAPPreadersafetyclaim",
+    "CompletechangedWLANunits andwholemoduledelta pending, nohardware"
+  ]
+}

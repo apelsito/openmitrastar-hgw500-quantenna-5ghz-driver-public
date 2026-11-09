@@ -1,0 +1,42 @@
+e5004956:	1304 2000           	ld	r0,[r19,4]
+e500495a:	b830                	lsr_s	r0,r0,0x10
+e500495c:	7108                	mov_s	r1,r0
+e500495e:	b9c9                	bmsk_s	r1,r1,0x9
+e5004960:	080f 001e           	bbit0	r0,0,14	;0xe500496e
+e5004964:	164e 1080           	ldb	r0,[r14,78]
+e5004968:	b880                	bset_s	r0,r0,0
+e500496a:	1e4e 1002           	stb	r0,[r14,78]
+e500496e:	096d 005e           	bbit0	r1,0x1,108	;0xe50049d8
+e5004972:	0876 fe2f           	bl.d	-16268	;0xe50009e4
+e5004976:	706a                	mov_s	r0,r19
+e5004978:	164e 1081           	ldb	r1,[r14,78]
+e500497c:	b982                	bset_s	r1,r1,0x2
+e500497e:	1e4e 1042           	stb	r1,[r14,78]
+e5004982:	d14d                	ld_s	r1,[pcl,0x134]	;0xe5004ab4
+e5004984:	0825 0044           	brlo	r0,r1,36	;0xe50049a8
+e5004988:	70d7 026e c400      	cmp_s	r0,0x26ec400
+e500498e:	20c2 0f85 006e c400 	sub.c	r0,r0,0x6ec400
+e5004996:	28c1 0325           	lsr.c	r0,r0,0xc
+e500499a:	28c0 01a5           	asl.c	r0,r0,0x6
+e500499e:	20c0 0f85 0063 c080 	add.c	r0,r0,0x63c080
+e50049a6:	f797                	blo_s	46	;0xe50049d2
+e50049a8:	d144                	ld_s	r1,[pcl,0x110]	;0xe5004ab8
+e50049aa:	0829 0044           	brlo	r0,r1,40	;0xe50049d0
+e50049ae:	0825 0f85 048f c400 	brhs	r0,0x48fc400,36	;0xe50049d0
+e50049b6:	2002 0f80 026f c400 	sub	r0,r0,0x26fc400
+e50049be:	d911                	mov_s	r1,0x11
+e50049c0:	0c92 00a0           	bl.d	5264	;0xe5005e50
+e50049c4:	b90a                	asl_s	r1,r1,0xa
+e50049c6:	b806                	asl_s	r0,r0,0x6
+e50049c8:	70c7 006b c0c0      	add_s	r0,r0,0x6bc0c0
+e50049ce:	f003                	b_s	6	;0xe50049d2
+e50049d0:	d800                	mov_s	r0,0
+e50049d2:	10f4 8000           	ld	r0,[r0,-12]
+e50049d6:	a614                	st_s	r0,[r14,0x50]
+e50049d8:	1304 2000           	ld	r0,[r19,4]
+e50049dc:	b830                	lsr_s	r0,r0,0x10
+e50049de:	b8c9                	bmsk_s	r0,r0,0x9
+e50049e0:	0811 00de           	bbit0	r0,0x3,16	;0xe50049f0
+e50049e4:	164e 1080           	ldb	r0,[r14,78]
+e50049e8:	2045 0600           	or	r0,r0,0x18
+e50049ec:	1e4e 1002           	stb	r0,[r14,78]

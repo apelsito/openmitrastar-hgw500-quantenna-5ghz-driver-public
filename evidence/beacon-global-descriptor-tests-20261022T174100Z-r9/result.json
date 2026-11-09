@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ACTUAL_32BIT_DESCRIPTOR_AND_DYNAMIC_PATH_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "lanes": {
+    "plain": {
+      "cases": 10021,
+      "checks": 211134,
+      "wire_bytes": 20,
+      "dynamic_updates": 10000
+    },
+    "80211k": {
+      "cases": 10021,
+      "checks": 211134,
+      "wire_bytes": 20,
+      "dynamic_updates": 10000
+    }
+  },
+  "descriptor_source_sha256": "198a92120083cc3c5645c71dcebc9cc285bf8fbe0474cb347f669897bad744c1",
+  "beacon_source_sha256": "b39205329a8a02169d7cec215e9582dc2967287833972f77337ec9baa151367b",
+  "fixture_sha256": "fc1f0212fa559f7b367c507ad20b40a27e3dbcd9a9e21a116c906bd5886d6237",
+  "limits": [
+    "Fake skb/DMA and IE encoders; real descriptor/list/dynamic update C blocks.",
+    "No ARC/module/full IE encoder or physical MuC proof. Full header dependency rebuild remains required."
+  ],
+  "actual_update_validation_prefix_included": true,
+  "complete_chain_negative_cases_included": true
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ACTUAL_R26_CLEAR_CRASH_LOG_MAPPING_AND_RESET_ORDER_CONTROLLERS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 36,
+  "clear_regions": 5,
+  "preflight_spans": 6,
+  "reset_software_only": true,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_linux73_clear_reset_pipeline.py": "6d092e4918910854893e0c7fc114aa7284602eb62fdd5d0eb0d41cc2ad9ae68f",
+    "outputs\\rea\\linux73-clear-reset-candidate-20261023T064300Z-r26\\source\\qdrv\\qdrv_control.c": "169d0d4dfe0c4e0d412146405636d1a03fe30ac91e1283b286e3b44b6a913dbe",
+    "outputs\\rea\\linux73-clear-reset-candidate-20261023T064300Z-r26\\source\\qdrv\\qdrv_soc.c": "651a7e60cbf8276b85e081965391bf53ab37997248d48be4096e5980b775c0ff",
+    "outputs\\rea\\linux73-r26-clear-reset-fixture-20261023T065500Z-r1\\actual-clear-reset.c": "ba0db18a6d30055477e02c0c00c1f586eeee417da5bf4230dcbe13b1951d51da",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\i686-w64-mingw32-clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+    "outputs\\rea\\linux73-r26-clear-reset-fixture-20261023T065500Z-r1\\fixture.exe": "34d3f69a5cc4b064b6867e90dd036c122b0c4cc2d12604dcf8e4a3dd1ea23caf"
+  },
+  "limits": [
+    "Actual source controllers; constants describe the selected profile and MMIO/leases are mocked.",
+    "No literal SRAM pointer dereference; crash bytes read through a mapping.",
+    "Software reset admission ordering is verified; physical TQE/NETSS writer quiescence is unproved."
+  ]
+}

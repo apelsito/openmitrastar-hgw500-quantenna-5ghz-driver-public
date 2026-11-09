@@ -1,0 +1,8 @@
+   397c4:	c203                	ld_s	r2,[sp,0xc]
+   397c6:	2295 08cc           	add2	r2,r2,803
+   397ca:	1200 0102           	ldh	r2,[r2]
+   397ce:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   397d6:	1a00 3080           	st	r2,[gp]
+   397da:	0039 0000           	b	56	;39810 <ieee80211_find_channel_by_ieee+0x2484>
+   397de:	1c14 3f80 ffff ffea 	st	0xffffffea,[sp,20]
+   397e6:	002d 0000           	b	44	;39810 <ieee80211_find_channel_by_ieee+0x2484>

@@ -1,0 +1,117 @@
+{
+  "status": "PASS_OFFLINE_R10_COMPLETE_PAIR_CLEANUP_DELIVERY",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "modules": [
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/a/qdrv/qdrv.ko",
+      "bytes": 684896,
+      "sha256": "637ce4985a391d43ad350dae130554135276f49ae0361887148d7a10c9985002"
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/a/wlan/wlan.ko",
+      "bytes": 634736,
+      "sha256": "6d194ed1488c3edca2bd56861a1fa0e15b40d84c5b18782aebf0003657597219"
+    },
+    {
+      "lane": "a",
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/a/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15508,
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "lane": "a",
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/a/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "lane": "a",
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/a/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9772,
+      "sha256": "68286793f255848f2658afe7400cfb47a0177c6b508a212e5d26dede7c5fdb26"
+    },
+    {
+      "lane": "a",
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/a/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13452,
+      "sha256": "ddbbee8fe20614dad0da988c3bd8342bac67b96f24ef53d7fcaccf08d3f90564"
+    },
+    {
+      "lane": "a",
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/a/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/b/qdrv/qdrv.ko",
+      "bytes": 684896,
+      "sha256": "637ce4985a391d43ad350dae130554135276f49ae0361887148d7a10c9985002"
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/b/wlan/wlan.ko",
+      "bytes": 634736,
+      "sha256": "6d194ed1488c3edca2bd56861a1fa0e15b40d84c5b18782aebf0003657597219"
+    },
+    {
+      "lane": "b",
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/b/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15508,
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "lane": "b",
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/b/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "lane": "b",
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/b/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9772,
+      "sha256": "68286793f255848f2658afe7400cfb47a0177c6b508a212e5d26dede7c5fdb26"
+    },
+    {
+      "lane": "b",
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/b/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13452,
+      "sha256": "ddbbee8fe20614dad0da988c3bd8342bac67b96f24ef53d7fcaccf08d3f90564"
+    },
+    {
+      "lane": "b",
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/b/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "source_qdrv_sha256": "35c3b912c1d4e0a0fda0db2300627deef11cb7b042ed5fba56e577feb23d6445",
+  "actual_cleanup_cases": 4,
+  "negative_verifier_cases": 7,
+  "build_input_pins": 1671,
+  "qualified_input_pin_count": 28,
+  "scope": "Onlytwo vnet_free_ioctl onunpublishedpreflight/encode failure; ABI and6othermodules unchanged",
+  "limits": [
+    "Changedbeaconworker sourcefixturebounded, notsemanticinstructionequivalence",
+    "Inherited19capabilityentries remainpartial/sourceproven",
+    "R11APPsynchronization isseparateSOURCE/ARCsyntaxcandidate; notincluded",
+    "MuC/RF/client/traffic/persistence/recovery/releaseUNRUN"
+  ]
+}

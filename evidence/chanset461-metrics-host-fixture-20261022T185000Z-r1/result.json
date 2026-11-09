@@ -1,0 +1,11 @@
+{
+  "status": "PASS_HOST461_CALLER_OWNED_CHANNEL_RANKING_SOURCE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "inputs_unchanged": true,
+  "table_plan_cases": 6,
+  "random_cost_tables": 1000,
+  "overlap_tie_RSSI_counterexamples": true,
+  "refusal_atomicity_cases": 4,
+  "limits": "No kernel callback/scan/policy/lifetime/driver registration or RF acceptance"
+}

@@ -1,0 +1,1545 @@
+--- a/source/wlan/openmitrastar_chanset_recovered.h
++++ b/source/wlan/openmitrastar_chanset_recovered.h
+@@ -0,0 +1,101 @@
++/* Derived from exact OEM constant tables and REA 0x12f18/0x12f9c.
++ * Source reconstruction only: no scan, ranking or regulatory acceptance.
++ * Templates preserve OEM oddities byte for byte. No table grants channel use.
++ */
++#ifndef OPENMITRASTAR_CHANSET_RECOVERED_H
++#define OPENMITRASTAR_CHANSET_RECOVERED_H
++#ifdef __KERNEL__
++#include <linux/types.h>
++typedef u32 om_cs_u32;
++#else
++#include <stdint.h>
++#include <stddef.h>
++typedef uint32_t om_cs_u32;
++#endif
++struct om_chanset_entry {
++    om_cs_u32 primary, secondary_offset, bandwidth, center;
++    om_cs_u32 invalid, inactive, cca[4], primary_cca[2];
++    om_cs_u32 scan_cca, cci_instant, aci_instant, cci_longterm;
++    om_cs_u32 aci_longterm, range_cost, dfs, cost;
++};
++struct om_chanset_view {
++    const struct om_chanset_entry *entries;
++    unsigned int count, capacity;
++};
++enum om_chanset_band { OM_CHANSET_BAND24 = 0, OM_CHANSET_BAND5 = 1 };
++int om_chanset_template(enum om_chanset_band band, unsigned int bandwidth,
++                        struct om_chanset_view *output);
++int om_chanset_find(const struct om_chanset_view *view, unsigned int channel,
++                    unsigned int bandwidth, unsigned int secondary_offset,
++                    const struct om_chanset_entry **output);
++
++typedef struct { om_cs_u32 cells[7], current_bandwidth; } om_chanset_scan_queue;
++struct om_chanset_rank_params {
++    om_cs_u32 cci_instant_factor, aci_instant_factor;
++    om_cs_u32 cci_longterm_factor, aci_longterm_factor;
++    om_cs_u32 range_factor, dfs_factor;
++    int min_cochannel_rssi;
++    om_cs_u32 max_bandwidth_benefit, dense_cci_span;
++};
++int om_chanset_add_scan_type(om_chanset_scan_queue *queue,
++                            enum om_chanset_band band, unsigned bandwidth);
++int om_chanset_rank_defaults(enum om_chanset_band band, int alternate,
++                             struct om_chanset_rank_params *output);
++int om_chanset_edges(const struct om_chanset_entry *entry,
++                     enum om_chanset_band band, unsigned neighborhood,
++                     unsigned dense_span, int *low, int *high);
++int om_chanset_cost(const struct om_chanset_entry *entry,
++                    const struct om_chanset_rank_params *params,
++                    om_cs_u32 *output);
++
++struct om_chanset_scan_sample {
++    om_cs_u32 bandwidth, cca_idle, cca_busy, cca_tx, cca_interference, attempts;
++    om_cs_u32 cca_primary, cca_secondary, cca_secondary40;
++    om_cs_u32 beacons, crc_errors, long_preamble_errors, short_preamble_errors;
++};
++int om_chanset_normalize_sample(const struct om_chanset_scan_sample *input,
++                                struct om_chanset_scan_sample *output);
++int om_chanset_update_scan_entry(struct om_chanset_entry *entry,
++                                const struct om_chanset_scan_sample *scaled);
++int om_chanset_select(const struct om_chanset_view *view,
++                      enum om_chanset_band band, unsigned maximum_bandwidth,
++                      unsigned current_scan_bandwidth, int automatic_bandwidth,
++                      unsigned minimum_benefit,
++                      const struct om_chanset_entry **output);
++
++/* Per-radio transaction storage is caller-owned and bounded by original98
++ * widest-band table records. It must not be allocated on a kernel stack. */
++struct om_chanset_transaction {
++    struct om_chanset_entry entries[98];
++    om_chanset_scan_queue queue;
++    struct om_chanset_rank_params params;
++    unsigned count, generation, busy, active;
++    unsigned initial_flags;
++    enum om_chanset_band band;
++};
++int om_chanset_prepare(struct om_chanset_transaction *transaction,
++                       enum om_chanset_band band, unsigned current_bandwidth,
++                       int alternate_rank, int automatic_bandwidth);
++int om_chanset_scan_request(const struct om_chanset_transaction *transaction,
++                            unsigned initial_flags, unsigned *flags,
++                            unsigned *secondary_offset);
++int om_chanset_scan_advance(struct om_chanset_transaction *transaction);
++int om_chanset_scan_sample(struct om_chanset_transaction *transaction,
++                           unsigned channel, unsigned secondary_offset,
++                           const struct om_chanset_scan_sample *input);
++int om_chanset_end(struct om_chanset_transaction *transaction);
++
++struct om_chanset_observation {
++    unsigned channel, bandwidth, secondary_offset;
++    int rssi_dbm;
++};
++struct om_chanset_channel_state {
++    unsigned allowed, inactive, dfs;
++    om_cs_u32 power_range_cost;
++};
++int om_chanset_rank(struct om_chanset_transaction *transaction,
++                    const struct om_chanset_channel_state *channels,
++                    unsigned channel_count,
++                    const struct om_chanset_observation *neighbors,
++                    unsigned neighbor_count, unsigned neighborhood);
++#endif
+--- a/source/wlan/openmitrastar_chanset_recovered.c
++++ b/source/wlan/openmitrastar_chanset_recovered.c
+@@ -0,0 +1,398 @@
++/* Exact first-match semantics from OEM FUN_ram_00012f9c, using typed
++ * fields rather than OEM raw offsets. Invalid bounds refuse before dereference.
++ * Template selection is OEM FUN_ram_00012f18 for bands 0 and 1; out-of-range
++ * band values fail explicitly instead of treating any nonzero as band5.
++ */
++#include "openmitrastar_chanset_recovered.h"
++#include "openmitrastar_chanset_tables.h"
++typedef char om_cs_size_is_80[(sizeof(struct om_chanset_entry) == 80) ? 1 : -1];
++int om_chanset_template(enum om_chanset_band band, unsigned int bandwidth,
++                        struct om_chanset_view *output)
++{
++    struct om_chanset_view selected = {0,0,0};
++    if (!output) return -22;
++    if (band == OM_CHANSET_BAND24) {
++        if (bandwidth == 20) {
++            selected.entries = om_cs_band24_bw20; selected.count = 14;
++        } else if (bandwidth == 40) {
++            selected.entries = om_cs_band24_bw40; selected.count = 18;
++        }
++    } else if (band == OM_CHANSET_BAND5) {
++        if (bandwidth == 20) {
++            selected.entries = om_cs_band5_bw20; selected.count = 30;
++        } else if (bandwidth == 40) {
++            selected.entries = om_cs_band5_bw40; selected.count = 28;
++        } else if (bandwidth == 80) {
++            selected.entries = om_cs_band5_bw80; selected.count = 24;
++        } else if (bandwidth == 160) {
++            selected.entries = om_cs_band5_bw160; selected.count = 16;
++        }
++    }
++    if (!selected.entries) return -22;
++    selected.capacity = selected.count;
++    *output = selected;
++    return 0;
++}
++int om_chanset_find(const struct om_chanset_view *view, unsigned int channel,
++                    unsigned int bandwidth, unsigned int secondary_offset,
++                    const struct om_chanset_entry **output)
++{
++    unsigned int index;
++    if (!view || !output || !view->entries || view->count > view->capacity ||
++        view->capacity > 98U) return -22;
++    for (index = 0; index < view->count; index++) {
++        const struct om_chanset_entry *entry = &view->entries[index];
++        if (entry->primary == channel && entry->bandwidth == bandwidth &&
++            entry->secondary_offset == secondary_offset) {
++            *output = entry;
++            return 1;
++        }
++    }
++    *output = 0;
++    return 0;
++}
++
++/* Recovered OEM 0x131a8: queue7, BW40 band24 uses ABOVE3/BELOW4.
++ * OEM full queue restarts at0; this helper refuses instead of overwriting.
++ * Invalid bandwidth leaves both queue and current_bandwidth unchanged.
++ */
++int om_chanset_add_scan_type(om_chanset_scan_queue *queue,
++                            enum om_chanset_band band, unsigned bandwidth)
++{
++    unsigned index = 0, first, second = 0;
++    if (!queue || (band != OM_CHANSET_BAND24 && band != OM_CHANSET_BAND5))
++        return -22;
++    if (bandwidth == 20) first = 1;
++    else if (bandwidth == 40) {
++        first = band == OM_CHANSET_BAND24 ? 3 : 2;
++        if (band == OM_CHANSET_BAND24) second = 4;
++    } else if (bandwidth == 80 && band == OM_CHANSET_BAND5) first = 5;
++    else if (bandwidth == 160 && band == OM_CHANSET_BAND5) first = 6;
++    else return -22;
++    while (index < 7 && queue->cells[index]) {
++        if (queue->cells[index]>6U) return -22;
++        index++;
++    }
++    if (index == 7 || (second && index >= 6)) return -28;
++    {
++        unsigned tail;
++        /* Require one populated prefix followed by unused zero slots. */
++        for (tail=index;tail<7;tail++) if (queue->cells[tail]) return -22;
++    }
++    queue->cells[index] = first;
++    if (second) queue->cells[index+1] = second;
++    queue->current_bandwidth = bandwidth;
++    return 0;
++}
++
++/* Exact nine-word defaults selected by OEM 0x13314. Channel-policy permissions
++ * stay with the caller; constant template availability does not allow TX. */
++int om_chanset_rank_defaults(enum om_chanset_band band, int alternate,
++                             struct om_chanset_rank_params *output)
++{
++    struct om_chanset_rank_params value;
++    if (!output) return -22;
++    if (band == OM_CHANSET_BAND24) {
++        value.cci_instant_factor=0; value.aci_instant_factor=0;
++        value.cci_longterm_factor=100; value.aci_longterm_factor=0;
++    } else if (band == OM_CHANSET_BAND5) {
++        value.cci_instant_factor=alternate?100:10;
++        value.aci_instant_factor=alternate?20:5;
++        value.cci_longterm_factor=alternate?10:100;
++        value.aci_longterm_factor=alternate?5:20;
++    } else return -22;
++    value.range_factor=10; value.dfs_factor=band==OM_CHANSET_BAND24?0:(om_cs_u32)-30;
++    value.min_cochannel_rssi=-80; value.max_bandwidth_benefit=2;
++    value.dense_cci_span=5; *output=value; return 0;
++}
++
++/* OEM helpers 0x13514/0x13598. Use signed 64-bit intermediates and refuse an
++ * unrepresentable edge; the recovered static templates remain within bounds. */
++int om_chanset_edges(const struct om_chanset_entry *entry,
++                     enum om_chanset_band band, unsigned neighborhood,
++                     unsigned dense_span, int *low, int *high)
++{
++    long long base, span, center, lo, hi;
++    if (!entry || !low || !high || low==high ||
++        (band != OM_CHANSET_BAND24 && band != OM_CHANSET_BAND5)) return -22;
++    base=entry->primary<36?2407:(entry->primary<183?5000:4000);
++    span=(band==OM_CHANSET_BAND24 && neighborhood==2)?dense_span:entry->bandwidth/2;
++    center=(long long)entry->center*5+base;lo=center-span;hi=center+span;
++    if (lo < (-2147483647LL-1) || lo>2147483647LL ||
++        hi < (-2147483647LL-1) || hi>2147483647LL) return -34;
++    *low=(int)lo;*high=(int)hi;return 0;
++}
++
++/* Exact 88-byte ARC hardware-loop body0x1488e..0x148e6. Ghidra omits this
++ * non-procedure loop; original text bytes and ARC objdump supply the evidence.
++ * ARC mpy/add/sub use low32 bits; preserve that wrap using unsigned arithmetic.
++ * The final subtract is unconditional, even when entry->dfs is zero.
++ */
++int om_chanset_cost(const struct om_chanset_entry *entry,
++                    const struct om_chanset_rank_params *params,
++                    om_cs_u32 *output)
++{
++    om_cs_u32 cost;
++    if (!entry || !params || !output) return -22;
++    cost=entry->aci_instant*params->aci_instant_factor;
++    cost+=entry->cci_instant*params->cci_instant_factor;
++    cost+=entry->aci_longterm*params->aci_longterm_factor;
++    cost+=entry->cci_longterm*params->cci_longterm_factor;
++    cost+=entry->dfs*params->dfs_factor;
++    cost+=entry->range_cost*params->range_factor;
++    cost-=params->dfs_factor;
++    *output=cost;return 0;
++}
++
++typedef char om_cs_scan_size_is_52[(sizeof(struct om_chanset_scan_sample)==52)?1:-1];
++static om_cs_u32 om_cs_scale(om_cs_u32 value, om_cs_u32 denominator)
++{
++    /* Exact OEM threshold0x418937: preserve divide-first truncation above it. */
++    return value<0x418937U?(value*1000U)/denominator:(value/denominator)*1000U;
++}
++int om_chanset_normalize_sample(const struct om_chanset_scan_sample *input,
++                                struct om_chanset_scan_sample *output)
++{
++    struct om_chanset_scan_sample value;
++    if(!input||!output||!input->attempts)return -11;
++    value=*input;
++    value.cca_idle=om_cs_scale(input->cca_idle,input->attempts);
++    value.cca_busy=om_cs_scale(input->cca_busy,input->attempts);
++    value.cca_tx=om_cs_scale(input->cca_tx,input->attempts);
++    value.cca_interference=om_cs_scale(input->cca_interference,input->attempts);
++    value.cca_primary=om_cs_scale(input->cca_primary,input->attempts);
++    value.cca_secondary=om_cs_scale(input->cca_secondary,input->attempts);
++    value.cca_secondary40=om_cs_scale(input->cca_secondary40,input->attempts);
++    value.beacons=om_cs_scale(input->beacons,input->attempts);
++    value.crc_errors=om_cs_scale(input->crc_errors,input->attempts);
++    value.long_preamble_errors=om_cs_scale(input->long_preamble_errors,input->attempts);
++    value.short_preamble_errors=om_cs_scale(input->short_preamble_errors,input->attempts);
++    value.attempts=1000;*output=value;return 0;
++}
++int om_chanset_update_scan_entry(struct om_chanset_entry *entry,
++                                const struct om_chanset_scan_sample *scaled)
++{
++    if(!entry||!scaled||scaled->attempts!=1000)return -22;
++    entry->scan_cca=scaled->cca_interference;
++    entry->cca[0]=scaled->cca_primary;
++    entry->cca[1]=scaled->cca_secondary;
++    entry->cca[2]=scaled->cca_secondary40;
++    entry->primary_cca[0]=0;
++    entry->cca[3]=scaled->cca_primary;
++    return 0;
++}
++static int om_cs_signed_less(om_cs_u32 first, om_cs_u32 second)
++{
++    /* Order by the ARC signed branch without implementation-defined casts. */
++    return (first^0x80000000U)<(second^0x80000000U);
++}
++static int om_cs_signed_le(om_cs_u32 first, om_cs_u32 second)
++{
++    return (first^0x80000000U)<=(second^0x80000000U);
++}
++int om_chanset_select(const struct om_chanset_view *view,
++                      enum om_chanset_band band, unsigned maximum_bandwidth,
++                      unsigned current_scan_bandwidth, int automatic_bandwidth,
++                      unsigned minimum_benefit,
++                      const struct om_chanset_entry **output)
++{
++    const struct om_chanset_entry *best[4]={0,0,0,0},*picked;
++    unsigned i,index;
++    if(!view||!output||!view->entries||view->count>view->capacity||view->capacity>98||
++       (band!=OM_CHANSET_BAND24&&band!=OM_CHANSET_BAND5))return -22;
++    for(i=0;i<view->count;i++) {
++        const struct om_chanset_entry *entry=&view->entries[i];
++        if(entry->bandwidth==20)index=0;
++        else if(entry->bandwidth==40)index=1;
++        else if(entry->bandwidth==80)index=2;
++        else if(entry->bandwidth==160)index=3;
++        else continue;
++        if(entry->bandwidth>maximum_bandwidth||current_scan_bandwidth>entry->bandwidth||
++           entry->invalid||entry->inactive)continue;
++        if(!best[index]||om_cs_signed_less(entry->cost,best[index]->cost))best[index]=entry;
++    }
++    picked=best[3]?best[3]:(best[2]?best[2]:(best[1]?best[1]:best[0]));
++    if(automatic_bandwidth) {
++        if(band==OM_CHANSET_BAND24) {
++            if(best[1]&&best[0]&&
++               om_cs_signed_less(best[0]->cost*minimum_benefit,best[1]->cost))picked=best[0];
++        } else if(best[3]&&best[2]) {
++            picked=om_cs_signed_le(best[3]->cost,best[2]->cost*minimum_benefit)?best[3]:best[2];
++        }
++    }
++    *output=picked;return picked?1:0;
++}
++
++int om_chanset_prepare(struct om_chanset_transaction *transaction,
++                       enum om_chanset_band band, unsigned current_bandwidth,
++                       int alternate_rank, int automatic_bandwidth)
++{
++    struct om_chanset_rank_params params;
++    om_chanset_scan_queue queue={{0},0};
++    struct om_chanset_view templates[4];
++    unsigned width=current_bandwidth, groups=0, count=0, group, i;
++    if(!transaction||transaction->busy||transaction->generation==~0U||
++       (current_bandwidth!=20&&current_bandwidth!=40&&current_bandwidth!=80&&current_bandwidth!=160))return -22;
++    if(om_chanset_rank_defaults(band,alternate_rank,&params))return -22;
++    /* Validate the entire plan before changing transaction fields. */
++    while(width>=20) {
++        if(om_chanset_template(band,width,&templates[groups]))return -22;
++        count+=templates[groups].count;
++        if(count>98)return -28;
++        groups++;width/=2;
++    }
++    width=(params.cci_instant_factor||params.aci_instant_factor)?current_bandwidth:20;
++    if(om_chanset_add_scan_type(&queue,band,width))return -22;
++    if(automatic_bandwidth&&width>20&&om_chanset_add_scan_type(&queue,band,width/2))return -22;
++    /* Caller must serialize this state and keep its owning radio alive. */
++    transaction->generation++;
++    transaction->busy=1;
++    transaction->active=1;
++    transaction->band=band;
++    transaction->params=params;
++    transaction->queue=queue;
++    transaction->count=count;
++    count=0;
++    for(group=0;group<groups;group++)for(i=0;i<templates[group].count;i++)
++        transaction->entries[count++]=templates[group].entries[i];
++    return 0;
++}
++int om_chanset_scan_request(const struct om_chanset_transaction *transaction,
++                            unsigned initial_flags, unsigned *flags,
++                            unsigned *secondary_offset)
++{
++    unsigned value, offset=0, selected;
++    if(!transaction||!flags||!secondary_offset||flags==secondary_offset||
++       !transaction->busy||!transaction->active)return -22;
++    selected=transaction->queue.cells[0];value=initial_flags;
++    if(selected<1||selected>6)return -22;
++    if(selected>=2&&selected<=4)value|=0x100000U;
++    else if(selected==5)value|=0x200000U;
++    if(selected==3)offset=1;
++    else if(selected==4)offset=3;
++    /* OEM scan0x1361c: requests are returned to the caller. No scan is started
++     * until a validated kernel/regulatory/lifetime adapter consumes them. */
++    *flags=value;*secondary_offset=offset;return 0;
++}
++int om_chanset_scan_advance(struct om_chanset_transaction *transaction)
++{
++    unsigned i;
++    if(!transaction||!transaction->busy||!transaction->active)return -22;
++    for(i=0;i<6;i++)transaction->queue.cells[i]=transaction->queue.cells[i+1];
++    transaction->queue.cells[6]=0;
++    return transaction->queue.cells[0]?1:0;
++}
++int om_chanset_scan_sample(struct om_chanset_transaction *transaction,
++                           unsigned channel, unsigned secondary_offset,
++                           const struct om_chanset_scan_sample *input)
++{
++    struct om_chanset_scan_sample sample;
++    struct om_chanset_view view;
++    const struct om_chanset_entry *found;
++    unsigned index;
++    int result;
++    if(!transaction||!input||!transaction->busy||!transaction->active||
++       transaction->count>98||channel>=255)return -22;
++    result=om_chanset_normalize_sample(input,&sample);
++    if(result)return result;
++    view.entries=transaction->entries;view.count=transaction->count;view.capacity=98;
++    result=om_chanset_find(&view,channel,sample.bandwidth,secondary_offset,&found);
++    if(result!=1)return result<0?result:-2;
++    index=(unsigned)(found-transaction->entries);
++    return om_chanset_update_scan_entry(&transaction->entries[index],&sample);
++}
++int om_chanset_end(struct om_chanset_transaction *transaction)
++{
++    if(!transaction||!transaction->busy)return -22;
++    /* Does not release memory or buffers used by actual scan callbacks. The
++     * kernel adapter must quiesce those callbacks before ending ownership. */
++    transaction->active=0;transaction->busy=0;transaction->count=0;
++    return 0;
++}
++
++/* Recovered two-row proximity policy at OEM0x85f74: min RSSI, span, weight.
++ * The weakest neighbor keeps the previous row, as in the recovered loop.
++ * These constants are ranking policy, never regulatory transmit permission. */
++static int om_cs_neighbor_record(const struct om_chanset_observation *neighbor,
++                                 struct om_chanset_entry *record)
++{
++    struct om_chanset_view view;
++    const struct om_chanset_entry *found;
++    enum om_chanset_band band=neighbor->channel<36?OM_CHANSET_BAND24:OM_CHANSET_BAND5;
++    if(om_chanset_template(band,neighbor->bandwidth,&view))return -22;
++    if(om_chanset_find(&view,neighbor->channel,neighbor->bandwidth,
++                       neighbor->secondary_offset,&found)!=1)return -2;
++    *record=*found;return 0;
++}
++int om_chanset_rank(struct om_chanset_transaction *transaction,
++                    const struct om_chanset_channel_state *channels,
++                    unsigned channel_count,
++                    const struct om_chanset_observation *neighbors,
++                    unsigned neighbor_count, unsigned neighborhood)
++{
++    static const int rssi_threshold[2]={-30,-62};
++    static const unsigned span[2]={80,20},weight[2]={5,1};
++    unsigned i,j,k,proximity=1;
++    int low,high;
++    struct om_chanset_entry neighbor;
++    if(!transaction||!channels||channel_count!=transaction->count||channel_count>98||
++       !transaction->busy||!transaction->active||neighbor_count>255||
++       (neighbor_count&&!neighbors))return -22;
++    /* Validate all potentially failing conversions before any metric update. */
++    for(i=0;i<channel_count;i++)
++        if(om_chanset_edges(&transaction->entries[i],transaction->band,neighborhood,
++                            transaction->params.dense_cci_span,&low,&high))return -22;
++    for(i=0;i<neighbor_count;i++) {
++        if(om_cs_neighbor_record(&neighbors[i],&neighbor))return -22;
++        if(om_chanset_edges(&neighbor,transaction->band,neighborhood,
++                            transaction->params.dense_cci_span,&low,&high))return -22;
++        if(neighbors[i].rssi_dbm < -128||neighbors[i].rssi_dbm>127)return -22;
++    }
++    for(i=0;i<channel_count;i++) {
++        struct om_chanset_entry *entry=&transaction->entries[i];
++        entry->invalid=!channels[i].allowed;
++        entry->inactive=!!channels[i].inactive;
++        entry->dfs=!!channels[i].dfs;
++        entry->range_cost=channels[i].power_range_cost;
++        entry->cci_instant=entry->scan_cca;
++        entry->aci_instant=entry->cci_longterm=entry->aci_longterm=0;
++        (void)om_chanset_edges(entry,transaction->band,neighborhood,
++                               transaction->params.dense_cci_span,&low,&high);
++        for(j=0;j<channel_count;j++) {
++            const struct om_chanset_entry *other=&transaction->entries[j];
++            int other_low,other_high;
++            (void)om_chanset_edges(other,transaction->band,neighborhood,
++                                  transaction->params.dense_cci_span,&other_low,&other_high);
++            /* Exact two half-open overlap bands, using signed wide math to
++             * keep subtraction/addition defined at domain boundaries. */
++            for(k=0;k<2;k++) {
++                if((long long)low-(long long)span[k]<other_high&&other_high<=low)
++                    entry->aci_instant+=other->primary_cca[k];
++                if(other_low<(long long)high+(long long)span[k]&&high<=other_low)
++                    entry->aci_instant+=other->primary_cca[k];
++            }
++        }
++    }
++    for(j=0;j<neighbor_count;j++) {
++        int neighbor_low,neighbor_high;
++        (void)om_cs_neighbor_record(&neighbors[j],&neighbor);
++        (void)om_chanset_edges(&neighbor,transaction->band,neighborhood,
++                               transaction->params.dense_cci_span,&neighbor_low,&neighbor_high);
++        if(neighbors[j].rssi_dbm>=rssi_threshold[0])proximity=0;
++        else if(neighbors[j].rssi_dbm>=rssi_threshold[1])proximity=1;
++        for(i=0;i<channel_count;i++) {
++            struct om_chanset_entry *entry=&transaction->entries[i];
++            (void)om_chanset_edges(entry,transaction->band,neighborhood,
++                                   transaction->params.dense_cci_span,&low,&high);
++            if(neighbors[j].rssi_dbm>transaction->params.min_cochannel_rssi&&
++               low<neighbor_high&&neighbor_low<high)entry->cci_longterm++;
++            if(((long long)low-(long long)span[proximity]<neighbor_high&&neighbor_high<=low)||
++               (neighbor_low<(long long)high+(long long)span[proximity]&&high<=neighbor_low))
++                entry->aci_longterm+=weight[proximity];
++        }
++    }
++    for(i=0;i<channel_count;i++)
++        (void)om_chanset_cost(&transaction->entries[i],&transaction->params,
++                              &transaction->entries[i].cost);
++    return 0;
++}
+--- a/source/wlan/openmitrastar_chanset_tables.h
++++ b/source/wlan/openmitrastar_chanset_tables.h
+@@ -0,0 +1,146 @@
++/* Exact OEM constant 80-byte records; no runtime data. */
++#ifndef OPENMITRASTAR_CHANSET_TABLES_H
++#define OPENMITRASTAR_CHANSET_TABLES_H
++static const struct om_chanset_entry om_cs_band24_bw20[14] = {
++    {1U,0U,20U,1U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {2U,0U,20U,2U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {3U,0U,20U,3U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {4U,0U,20U,4U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {5U,0U,20U,5U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {6U,0U,20U,6U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {7U,0U,20U,7U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {8U,0U,20U,8U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {9U,0U,20U,9U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {10U,0U,20U,10U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {11U,0U,20U,11U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {12U,0U,20U,12U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {13U,0U,20U,13U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {14U,0U,20U,14U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++};
++static const struct om_chanset_entry om_cs_band24_bw40[18] = {
++    {1U,1U,40U,3U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {2U,1U,40U,4U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {3U,1U,40U,5U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {4U,1U,40U,6U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {5U,1U,40U,7U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {6U,1U,40U,8U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {7U,1U,40U,9U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {8U,1U,40U,10U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {9U,1U,40U,11U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {5U,3U,40U,3U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {6U,3U,40U,4U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {7U,3U,40U,5U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {8U,3U,40U,6U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {9U,3U,40U,7U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {10U,3U,40U,8U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {11U,3U,40U,9U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {12U,3U,40U,10U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {13U,3U,40U,11U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++};
++static const struct om_chanset_entry om_cs_band5_bw20[30] = {
++    {36U,0U,20U,36U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {40U,0U,20U,40U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {44U,0U,20U,44U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {48U,0U,20U,48U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {52U,0U,20U,52U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {56U,0U,20U,56U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {60U,0U,20U,60U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {64U,0U,20U,64U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {100U,0U,20U,100U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {104U,0U,20U,104U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {108U,0U,20U,108U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {112U,0U,20U,112U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {116U,0U,20U,116U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {120U,0U,20U,120U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {124U,0U,20U,124U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {128U,0U,20U,128U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {132U,0U,20U,132U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {136U,0U,20U,136U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {140U,0U,20U,140U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {144U,0U,20U,144U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {149U,0U,20U,149U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {153U,0U,20U,153U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {157U,0U,20U,157U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {161U,0U,20U,161U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {165U,0U,20U,165U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {169U,0U,20U,169U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {184U,0U,20U,184U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {188U,0U,20U,188U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {192U,0U,20U,192U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {196U,0U,20U,196U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++};
++static const struct om_chanset_entry om_cs_band5_bw40[28] = {
++    {36U,1U,40U,38U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {40U,3U,40U,38U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {44U,1U,40U,46U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {48U,3U,40U,46U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {52U,1U,40U,54U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {56U,3U,40U,54U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {60U,1U,40U,62U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {64U,3U,40U,62U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {100U,1U,40U,102U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {104U,3U,40U,102U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {108U,1U,40U,110U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {112U,3U,40U,110U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {116U,1U,40U,118U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {120U,3U,40U,118U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {124U,1U,40U,126U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {128U,3U,40U,126U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {132U,1U,40U,134U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {136U,3U,40U,134U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {140U,1U,40U,142U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {144U,3U,40U,142U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {149U,1U,40U,151U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {153U,3U,40U,151U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {157U,1U,40U,159U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {161U,3U,40U,159U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {184U,1U,40U,186U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {188U,3U,40U,186U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {192U,1U,20U,194U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {196U,3U,20U,194U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++};
++static const struct om_chanset_entry om_cs_band5_bw80[24] = {
++    {36U,1U,80U,42U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {40U,3U,80U,42U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {44U,1U,80U,42U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {48U,3U,80U,42U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {52U,1U,80U,58U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {56U,3U,80U,58U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {60U,1U,80U,58U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {64U,3U,80U,58U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {100U,1U,80U,106U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {104U,3U,80U,106U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {108U,1U,80U,106U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {112U,3U,80U,106U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {116U,1U,80U,122U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {120U,3U,80U,122U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {124U,1U,80U,122U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {128U,3U,80U,122U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {132U,1U,80U,138U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {136U,3U,80U,138U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {140U,1U,80U,138U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {144U,3U,80U,138U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {149U,1U,80U,155U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {153U,3U,80U,155U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {157U,1U,80U,155U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {161U,3U,80U,155U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++};
++static const struct om_chanset_entry om_cs_band5_bw160[16] = {
++    {36U,1U,160U,50U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {40U,3U,160U,50U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {44U,1U,160U,50U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {48U,3U,160U,50U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {52U,1U,160U,50U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {56U,3U,160U,50U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {60U,1U,160U,50U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {64U,3U,160U,50U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {100U,1U,160U,114U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {104U,3U,160U,114U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {108U,1U,160U,114U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {112U,3U,160U,114U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {116U,1U,160U,114U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {120U,3U,160U,114U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {124U,1U,160U,114U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++    {128U,3U,160U,114U,0U,0U,{0U,0U,0U,0U},{0U,0U},0U,0U,0U,0U,0U,0U,0U,0U},
++};
++#endif
+--- a/source/wlan/openmitrastar_chanset_kernel.inc
++++ b/source/wlan/openmitrastar_chanset_kernel.inc
+@@ -0,0 +1,205 @@
++
++/* Actual scanner-owned adapter for OEM channel-set selection. The existing
++ * validated channel tables supply regulatory/DFS state; templates grant no TX.
++ * Shared scan counters are sampled scalars, not a coherent cross-MuC snapshot.
++ * No allocation or sleeping operation occurs in scan completion/timer context.
++ */
++int om_chanset_kernel_allowed(struct ieee80211vap *vap)
++{
++    struct ieee80211com *ic;
++    unsigned mode;
++    if(!vap||vap->iv_opmode!=IEEE80211_M_HOSTAP)return 0;
++    ic=vap->iv_ic;mode=ic->ic_phymode;
++    return mode==IEEE80211_MODE_11B||mode==IEEE80211_MODE_11G||
++        mode==IEEE80211_MODE_11NG||mode==IEEE80211_MODE_11NG_HT40PM;
++}
++int om_chanset_kernel_policy(struct ieee80211com *ic,int *value,int write)
++{
++    struct scan_state *scan;
++    unsigned long flags;
++    if(!ic||!value||!ic->ic_scan)return -EAGAIN;
++    scan=SCAN_PRIVATE(ic->ic_scan);
++    spin_lock_irqsave(&scan->om_chanset_lock,flags);
++    if(scan->om_chanset_stopping){spin_unlock_irqrestore(&scan->om_chanset_lock,flags);return -EBUSY;}
++    if(write)scan->om_chanset_policy=(u8)*value;
++    else *value=scan->om_chanset_policy;
++    spin_unlock_irqrestore(&scan->om_chanset_lock,flags);
++    return 0;
++}
++int om_chanset_kernel_start(struct ieee80211vap *vap,int flags,
++    unsigned duration,unsigned nssid,const struct ieee80211_scan_ssid *ssids)
++{
++    struct ieee80211com *ic=vap->iv_ic;
++    struct scan_state *scan;
++    unsigned long irq;
++    int result;
++    if(!om_chanset_kernel_allowed(vap)||!ic->ic_scan)return -EOPNOTSUPP;
++    scan=SCAN_PRIVATE(ic->ic_scan);
++    spin_lock_irqsave(&scan->om_chanset_lock,irq);
++    if(scan->om_chanset_stopping||(ic->ic_flags&IEEE80211_F_SCAN)){
++        spin_unlock_irqrestore(&scan->om_chanset_lock,irq);return -EBUSY;
++    }
++    if(scan->om_chanset.busy)(void)om_chanset_end(&scan->om_chanset);
++    result=om_chanset_prepare(&scan->om_chanset,OM_CHANSET_BAND24,
++        ieee80211_get_bw(ic),ic->ic_country_code!=CTRY_DEFAULT,scan->om_chanset_policy);
++    if(!result){
++        scan->om_chanset_owner=vap;
++        scan->om_chanset.initial_flags=(unsigned)flags;
++    }
++    spin_unlock_irqrestore(&scan->om_chanset_lock,irq);
++    if(result)return result;
++    /* Reuse the existing timer/SSID/scan policy. Fresh scan avoids stale cache.
++     * The same state machine cancels it before releasing the scanner owner. */
++    result=ieee80211_start_scan(vap,flags&~IEEE80211_SCAN_USECACHE,duration,nssid,ssids);
++    if(!result)om_chanset_kernel_cancel(ic);
++    return result;
++}
++unsigned om_chanset_kernel_scan_type(struct ieee80211com *ic)
++{
++    struct scan_state *scan;
++    if(!ic||!ic->ic_scan)return 0;
++    scan=SCAN_PRIVATE(ic->ic_scan);
++    if(READ_ONCE(scan->om_chanset_stopping)||!READ_ONCE(scan->om_chanset.active))return 0;
++    return READ_ONCE(scan->om_chanset.queue.cells[0]);
++}
++void om_chanset_kernel_cancel(struct ieee80211com *ic)
++{
++    struct scan_state *scan;
++    unsigned long flags;
++    if(!ic||!ic->ic_scan)return;
++    scan=SCAN_PRIVATE(ic->ic_scan);
++    spin_lock_irqsave(&scan->om_chanset_lock,flags);
++    if(scan->om_chanset.busy)(void)om_chanset_end(&scan->om_chanset);
++    scan->om_chanset_owner=NULL;
++    spin_unlock_irqrestore(&scan->om_chanset_lock,flags);
++}
++int om_chanset_kernel_finished(struct ieee80211com *ic)
++{
++    struct scan_state *scan;
++    if(!ic||!ic->ic_scan)return 1;
++    scan=SCAN_PRIVATE(ic->ic_scan);
++    return !READ_ONCE(scan->om_chanset.active)||!READ_ONCE(scan->om_chanset.queue.cells[0]);
++}
++static int om_cs_kernel_disabled(struct ieee80211com *ic,unsigned channel,unsigned width)
++{
++    struct ieee80211_channel *chan;
++    unsigned sec;
++    if(channel>=IEEE80211_CHAN_MAX||isset(ic->ic_chan_disabled,channel))return 1;
++    if(width<40)return 0;
++    chan=ieee80211_find_channel_by_ieee(ic,channel);
++    if(!chan)return 1;
++    sec=ieee80211_find_sec_chan(chan);
++    return !sec||sec>=IEEE80211_CHAN_MAX||isset(ic->ic_chan_disabled,sec);
++}
++struct ieee80211_channel *om_chanset_kernel_pick(struct ieee80211com *ic)
++{
++    struct scan_state *scan;
++    struct ieee80211_scan_state *ss;
++    struct shared_params *shared;
++    struct qtn_scs_info_set *scs;
++    struct ap_state *as;
++    struct ap_scan_entry *se;
++    struct ieee80211vap *vap;
++    struct ieee80211_channel *chan,*chosen=NULL;
++    struct om_chanset_transaction *transaction;
++    struct om_chanset_view view;
++    const struct om_chanset_entry *picked;
++    struct om_chanset_scan_sample sample;
++    unsigned long flags;
++    unsigned i,n=0,current;
++    int neighborhood,result,index;
++    if(!ic||!(ss=ic->ic_scan)||!(vap=ss->ss_vap)||!ss->ss_priv)return NULL;
++    scan=SCAN_PRIVATE(ss);transaction=&scan->om_chanset;
++    spin_lock_irqsave(&scan->om_chanset_lock,flags);
++    if(scan->om_chanset_stopping||!transaction->active||scan->om_chanset_owner!=vap)goto out;
++    shared=qtn_mproc_sync_shared_params_get();
++    scs=shared?READ_ONCE(shared->scs_info_lhost):NULL;
++    if(scs){
++        for(i=0;i<IEEE80211_CHAN_MAX;i++){
++            const struct qtn_scs_scan_info *raw=&scs->scan_info[i];
++            sample.bandwidth=READ_ONCE(raw->bw_sel);sample.attempts=READ_ONCE(raw->cca_try);
++            sample.cca_idle=READ_ONCE(raw->cca_idle);sample.cca_busy=READ_ONCE(raw->cca_busy);
++            sample.cca_tx=READ_ONCE(raw->cca_tx);sample.cca_interference=READ_ONCE(raw->cca_intf);
++            sample.cca_primary=READ_ONCE(raw->cca_pri);sample.cca_secondary=READ_ONCE(raw->cca_sec);
++            sample.cca_secondary40=READ_ONCE(raw->cca_sec40);sample.beacons=READ_ONCE(raw->bcn_rcvd);
++            sample.crc_errors=READ_ONCE(raw->crc_err);sample.long_preamble_errors=READ_ONCE(raw->lpre_err);
++            sample.short_preamble_errors=READ_ONCE(raw->spre_err);
++            chan=ieee80211_find_channel_by_ieee(ic,i);
++            if(chan)(void)om_chanset_scan_sample(transaction,i,
++                sample.bandwidth==20?0:(chan->ic_flags&IEEE80211_CHAN_HT40U)?1:
++                (chan->ic_flags&IEEE80211_CHAN_HT40D)?3:0,&sample);
++        }
++    }
++    (void)om_chanset_scan_advance(transaction);
++    if(transaction->queue.cells[0])goto out;
++    /* Lock the shared scan cache while copying only bounded channel metrics.
++     * No SSID/MAC/client data is recorded in source evidence or this snapshot. */
++    as=ss->ss_priv;spin_lock(&as->asl_lock);
++    for(i=0;i<IEEE80211_CHAN_MAX;i++)TAILQ_FOREACH(se,&as->as_scan_list[i].asl_head,ase_list){
++        uint8_t primary,secondary;
++        unsigned width;
++        if(n==255)break;
++        if(!se->base.se_chan)continue;
++        width=ieee80211_get_max_ap_bw(&se->base);
++        if(width!=20&&width!=40)continue;
++        ieee80211_find_ht_pri_sec_chan(vap,&se->base,&primary,&secondary);
++        if(!primary)primary=se->base.se_chan->ic_ieee;
++        scan->om_observations[n].channel=primary;scan->om_observations[n].bandwidth=width;
++        scan->om_observations[n].secondary_offset=secondary>primary?1:secondary<primary?3:0;
++        scan->om_observations[n].rssi_dbm=se->base.se_rssi;n++;
++    }
++    spin_unlock(&as->asl_lock);
++    neighborhood=ieee80211_get_type_of_neighborhood(ic);
++    for(i=0;i<transaction->count;i++){
++        struct om_chanset_entry *entry=&transaction->entries[i];
++        struct om_chanset_channel_state *state=&scan->om_channels[i];
++        const uint8_t *active=entry->bandwidth==40?ic->ic_chan_active_40:ic->ic_chan_active_20;
++        chan=ieee80211_find_channel_by_ieee(ic,entry->primary);
++        state->allowed=chan&&isset(active,entry->primary)&&
++            !isset(ic->ic_chan_pri_inactive,entry->primary)&&
++            !om_cs_kernel_disabled(ic,entry->primary,entry->bandwidth)&&
++            !(chan->ic_flags&(IEEE80211_CHAN_RADAR|IEEE80211_CHAN_DFS));
++        state->inactive=0;state->dfs=chan?!!(chan->ic_flags&IEEE80211_CHAN_DFS):0;
++        index=entry->bandwidth==40?PWR_IDX_40M:PWR_IDX_20M;
++        state->power_range_cost=chan?(u32)((int)chan->ic_maxregpower-
++            (int)chan->ic_maxpower_table[PWR_IDX_BF_OFF][PWR_IDX_1SS][index]):0;
++        if(chan&&state->allowed&&!ic->ic_check_channel(ic,chan,0,0))state->allowed=0;
++        if(entry->bandwidth==40)for(unsigned j=0;j<n;j++){
++            struct ieee80211_channel candidate;
++            uint8_t primary=scan->om_observations[j].channel;
++            unsigned off=scan->om_observations[j].secondary_offset;
++            if(!chan)break;candidate=*chan;ieee80211_update_sec_chan_offset(&candidate,entry->secondary_offset);
++            /* Existing coexistence validator reads current channel. Preserve
++             * its current-channel contract; do not forge ic_curchan for a call. */
++            if(ic->ic_curchan==chan&&!ieee80211_20_40_operation_permitted(vap,primary,
++                off==1?primary+4:off==3?primary-4:0))state->inactive=1;
++        }
++    }
++    result=om_chanset_rank(transaction,scan->om_channels,transaction->count,
++                           scan->om_observations,n,neighborhood);
++    if(result)goto out;
++    view.entries=transaction->entries;view.count=transaction->count;view.capacity=98;
++    current=ieee80211_get_bw(ic);
++    if(om_chanset_select(&view,OM_CHANSET_BAND24,ic->ic_max_system_bw,
++        transaction->queue.current_bandwidth,scan->om_chanset_policy,
++        transaction->params.max_bandwidth_benefit,&picked)==1){
++        chosen=ieee80211_find_channel_by_ieee(ic,picked->primary);
++        if(chosen&&ieee80211_dual_sec_chan_supported(vap,picked->primary))
++            ieee80211_update_sec_chan_offset(chosen,picked->secondary_offset);
++        if(chosen&&current!=picked->bandwidth)om_ieee80211_change_bw(vap,picked->bandwidth,0);
++        (void)om_chanset_end(transaction);scan->om_chanset_owner=NULL;
++    }else if(transaction->queue.current_bandwidth>20){
++        (void)om_chanset_add_scan_type(&transaction->queue,OM_CHANSET_BAND24,
++                                      transaction->queue.current_bandwidth/2);
++    }
++out:
++    spin_unlock_irqrestore(&scan->om_chanset_lock,flags);
++    return chosen;
++}
++EXPORT_SYMBOL(om_chanset_kernel_allowed);
++EXPORT_SYMBOL(om_chanset_kernel_start);
++EXPORT_SYMBOL(om_chanset_kernel_policy);
++EXPORT_SYMBOL(om_chanset_kernel_scan_type);
++EXPORT_SYMBOL(om_chanset_kernel_pick);
++EXPORT_SYMBOL(om_chanset_kernel_finished);
++EXPORT_SYMBOL(om_chanset_kernel_cancel);
+--- a/headers/net80211/ieee80211_scan.h
++++ b/headers/net80211/ieee80211_scan.h
+@@ -0,0 +1,431 @@
++/*-
++ * Copyright (c) 2005 Sam Leffler, Errno Consulting
++ * All rights reserved.
++ *
++ * Redistribution and use in source and binary forms, with or without
++ * modification, are permitted provided that the following conditions
++ * are met:
++ * 1. Redistributions of source code must retain the above copyright
++ *    notice, this list of conditions and the following disclaimer.
++ * 2. Redistributions in binary form must reproduce the above copyright
++ *    notice, this list of conditions and the following disclaimer in the
++ *    documentation and/or other materials provided with the distribution.
++ * 3. The name of the author may not be used to endorse or promote products
++ *    derived from this software without specific prior written permission.
++ *
++ * Alternatively, this software may be distributed under the terms of the
++ * GNU General Public License ("GPL") version 2 as published by the Free
++ * Software Foundation.
++ *
++ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
++ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
++ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
++ * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
++ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
++ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
++ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
++ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
++ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
++ * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
++ *
++ * $Id: ieee80211_scan.h 2366 2007-05-23 08:43:05Z mrenzmann $
++ */
++#ifndef _NET80211_IEEE80211_SCAN_H_
++#define _NET80211_IEEE80211_SCAN_H_
++
++#define	IEEE80211_SCAN_MAX	IEEE80211_CHAN_MAX
++
++struct ieee80211_scanner;
++
++struct ieee80211_scan_ssid {
++	int len;					/* length in bytes */
++	u_int8_t ssid[IEEE80211_NWID_LEN];	/* ssid contents */
++};
++#define	IEEE80211_SCAN_MAX_SSID	1
++
++struct ieee80211_scan_state {
++	struct ieee80211vap *ss_vap;
++	const struct ieee80211_scanner *ss_ops;	/* policy hookup, see below */
++	void *ss_priv;				/* scanner private state */
++	void *ss_scs_priv;			/* scs private state independent of the scan state */
++	u_int16_t ss_flags;
++#define	IEEE80211_SCAN_NOPICK			0x0001	/* scan only, no selection */
++#define	IEEE80211_SCAN_ACTIVE			0x0002	/* active scan (probe req) */
++#define	IEEE80211_SCAN_PICK1ST			0x0004	/* ``hey sailor'' mode */
++#define	IEEE80211_SCAN_BGSCAN			0x0008	/* bg scan, exit ps at end */
++#define	IEEE80211_SCAN_ONCE			0x0010	/* do one complete pass */
++#define	IEEE80211_SCAN_NO_DFS			0x0020	/* avoid DFS channels, AP only */
++#define IEEE80211_SCAN_DFS_ACTION		0x0040	/* scan end, do DFS action */
++#define IEEE80211_SCAN_QTN_BGSCAN		0x0080	/* quantenna background scanning required */
++#define IEEE80211_SCAN_OPCHAN			0x0100	/* quantenna scanning on operating channel only */
++#define IEEE80211_SCAN_QTN_SEARCH_MBS		0x0200	/* seach MBS, no action on scan end */
++#define IEEE80211_SCAN_OBSS			0x0400	/* OBSS scan */
++/* Note: top 4 bits for internal use only */
++#define	IEEE80211_SCAN_GOTPICK			0x1000	/* got candidate, can stop */
++
++/* Prefer selecting DFS only channels for bootup CAC*/
++#define IEEE80211_SCAN_PICK_NOT_AVAILABLE_DFS_ONLY		0x0011
++
++/* Select channel from DFS and non-DFS sets which are available only*/
++/* All Non-DFS channels are available by default,
++ * DFS channels are available only after CAC-Completion events
++ */
++#define IEEE80211_SCAN_PICK_AVAILABLE_ANY_CHANNEL		0x0012
++
++	u_int16_t ss_pick_flags;			/* pick a channel via a algorithm in a special domain */
++
++  /*
++   * Be aware only the lower 12 bits actually make it to ss_flags from
++   * the flags parameter to ieee80211_start_scan.
++   */
++	u_int8_t	ss_nssid;			/* # ssid's to probe/match */
++	struct ieee80211_scan_ssid ss_ssid[IEEE80211_SCAN_MAX_SSID];
++						/* ssid's to probe/match */
++						/* ordered channel set */
++	struct ieee80211_channel *ss_chans[IEEE80211_SCAN_MAX];
++	u_int16_t ss_next;			/* ix of next chan to scan */
++	u_int16_t ss_last;			/* ix + 1 of last chan to scan */
++	unsigned long ss_mindwell;		/* min dwell on channel */
++	unsigned long ss_mindwell_passive;	/* min dwell time on a passive channel */
++	unsigned long ss_maxdwell;		/* max dwell on channel */
++	unsigned long ss_maxdwell_passive;	/* max dwell time on a passive channel */
++	u_int ss_duration;			/* used for calling ieee80211_start_scan() */
++	u_int8_t is_scan_valid;			/* was the channel scan initiated by supplicant */
++};
++
++/*
++ * The upper 16 bits of the flags word is used to communicate
++ * information to the scanning code that is NOT recorded in
++ * ss_flags.  It might be better to split this stuff out into
++ * a separate variable to avoid confusion.
++ */
++#define	IEEE80211_SCAN_FLUSH	0x10000		/* flush candidate table */
++#define	IEEE80211_SCAN_NOSSID	0x20000		/* don't update ssid list */
++#define	IEEE80211_SCAN_USECACHE	0x40000		/* Must use a result from the cache */
++#define	IEEE80211_SCAN_KEEPMODE	0x80000		/* Must keep the same wireless mode (11a, 11g, or 11at, etc) */
++
++/*
++ * Parameters for managing cache entries:
++ *
++ * o a station with STA_FAILS_MAX failures is not considered
++ *   when picking a candidate
++ * o a station that hasn't had an update in STA_PURGE_SCANS
++ *   (background) scans is discarded
++ * o after STA_FAILS_AGE seconds we clear the failure count
++ */
++#define	STA_FAILS_MAX	2		/* assoc failures before ignored */
++#define	STA_FAILS_AGE	(2 * 60)	/* time before clearing fails (secs) */
++#define	STA_PURGE_SCANS	2		/* age for purging sta entries (scans) */
++#define	AP_PURGE_SCANS	8		/* age for purging ap entries (scans) */
++
++#define RSSI_LPF_LEN	10
++#define	RSSI_EP_MULTIPLIER	(1<<7)	/* pow2 to optimize out * and / */
++#define RSSI_IN(x)		((x) * RSSI_EP_MULTIPLIER)
++#define LPF_RSSI(x, y, len)	(((x) * ((len) - 1) + (y)) / (len))
++#define RSSI_LPF(x, y) do {						\
++    if ((y) >= -20)							\
++	    x = LPF_RSSI((x), RSSI_IN((y)), RSSI_LPF_LEN);		\
++} while (0)
++#define	EP_RND(x, mul) \
++	((((x)%(mul)) >= ((mul)/2)) ? howmany(x, mul) : (x)/(mul))
++#define	RSSI_GET(x)	EP_RND(x, RSSI_EP_MULTIPLIER)
++#define	ISPROBE(_st)	((_st) == IEEE80211_FC0_SUBTYPE_PROBE_RESP)
++#define	STA_HASHSIZE	32
++/* simple hash is enough for variation of macaddr */
++#define	STA_HASH(addr)	\
++	(((const u_int8_t *)(addr))[IEEE80211_ADDR_LEN - 1] % STA_HASHSIZE)
++
++struct ieee80211com;
++void ieee80211_scan_attach(struct ieee80211com *);
++void ieee80211_scan_detach(struct ieee80211com *);
++void ieee80211_scan_vattach(struct ieee80211vap *);
++void ieee80211_scan_vdetach(struct ieee80211vap *);
++
++void ieee80211_scan_dump_channels(const struct ieee80211_scan_state *);
++
++#define	IEEE80211_SCAN_FOREVER	0x7fffffff
++int ieee80211_start_scan(struct ieee80211vap *, int, u_int, u_int,
++	const struct ieee80211_scan_ssid ssids[]);
++int ieee80211_check_scan(struct ieee80211vap *, int, u_int, u_int,
++	const struct ieee80211_scan_ssid ssids[],
++	int (*action)(struct ieee80211vap *, const struct ieee80211_scan_entry *));
++int ieee80211_should_scan(struct ieee80211vap *vap);
++int ieee80211_bg_scan(struct ieee80211vap *);
++void ieee80211_cancel_scan(struct ieee80211vap *);
++void ieee80211_cancel_scan_no_wait(struct ieee80211vap *vap);
++
++void ieee80211_scan_scs_sample(struct ieee80211vap *vap);
++
++int ieee80211_scan_dfs_action(struct ieee80211vap *, const struct ieee80211_scan_entry *);
++
++struct ieee80211_scanparams;
++void ieee80211_add_scan(struct ieee80211vap *, const struct ieee80211_scanparams *,
++	const struct ieee80211_frame *, int, int, int);
++void ieee80211_scan_timeout(unsigned long arg);
++void ieee80211_scan_timeout_timer(struct timer_list *timer);
++
++void ieee80211_scan_assoc_success(struct ieee80211com *,
++	const u_int8_t mac[IEEE80211_ADDR_LEN]);
++enum {
++	IEEE80211_SCAN_FAIL_TIMEOUT	= 1,	/* no response to mgmt frame */
++	IEEE80211_SCAN_FAIL_STATUS	= 2	/* negative response to " " */
++};
++void ieee80211_scan_assoc_fail(struct ieee80211com *,
++	const u_int8_t mac[IEEE80211_ADDR_LEN], int);
++void ieee80211_scan_flush(struct ieee80211com *);
++void ieee80211_scan_remove(struct ieee80211vap *);
++struct ieee80211_channel *ieee80211_scan_pickchannel(struct ieee80211com *ic, int flags);
++
++struct ieee80211_scan_entry;
++typedef int ieee80211_scan_iter_func(void *, const struct ieee80211_scan_entry *);
++int ieee80211_scan_iterate(struct ieee80211com *, ieee80211_scan_iter_func *, void *);
++
++/*
++ * Parameters supplied when adding/updating an entry in a
++ * scan cache.  Pointer variables should be set to NULL
++ * if no data is available.  Pointer references can be to
++ * local data; any information that is saved will be copied.
++ * All multi-byte values must be in host byte order.
++ */
++struct ieee80211_scanparams {
++	u_int16_t capinfo;	/* 802.11 capabilities */
++	u_int16_t fhdwell;	/* FHSS dwell interval */
++	u_int8_t chan;		/* */
++	u_int8_t bchan;
++	u_int8_t fhindex;
++	u_int8_t erp;
++	u_int16_t bintval;
++	u_int8_t timoff;
++	u_int8_t *tim;
++	u_int8_t *tstamp;
++	u_int8_t *country;
++	u_int8_t *ssid;
++	u_int8_t *rates;
++	u_int8_t *xrates;
++	u_int8_t *htcap;
++	u_int8_t *htinfo;
++	u_int8_t *csa;
++	u_int8_t *csa_tsf;
++	u_int8_t *measreq;
++	u_int8_t *wpa;
++	u_int8_t *rsn;
++	u_int8_t *wme;
++	u_int8_t *wsc;
++	u_int8_t *ath;
++	u_int8_t *qtn;
++	u_int8_t *vhtcap;
++	u_int8_t *vhtop;
++	u_int8_t *pwr_constraint;
++	u_int8_t *obss_scan;
++	int8_t	local_max_txpwr;
++	struct ieee80211_channel *rxchan;
++	uint8_t extender_role;
++	uint8_t *ext_bssid_ie;
++};
++
++/*
++ * Scan cache entry format used when exporting data from a policy
++ * module; this data may be represented some other way internally.
++ */
++struct ieee80211_scan_entry {
++	u_int8_t se_macaddr[IEEE80211_ADDR_LEN];
++	u_int8_t se_bssid[IEEE80211_ADDR_LEN];
++	u_int8_t se_ssid[2 + IEEE80211_NWID_LEN];
++	u_int8_t se_rates[2 + IEEE80211_RATE_MAXSIZE];
++	u_int8_t se_xrates[2 + IEEE80211_RATE_MAXSIZE];
++	u_int32_t se_rstamp;		/* recv timestamp */
++	union {
++		u_int8_t data[8];
++		__le64 tsf;
++	} se_tstamp;			/* from last rcv'd beacon */
++	u_int16_t se_intval;		/* beacon interval (host byte order) */
++	u_int16_t se_capinfo;		/* capabilities (host byte order) */
++	struct ieee80211_channel *se_chan;/* channel where sta found */
++	u_int16_t se_timoff;		/* byte offset to TIM ie */
++	u_int16_t se_fhdwell;		/* FH only (host byte order) */
++	u_int8_t se_fhindex;		/* FH only */
++	u_int8_t se_erp;		/* ERP from beacon/probe resp */
++	int8_t se_rssi;			/* avg'd recv ssi */
++	u_int8_t se_dtimperiod;		/* DTIM period */
++	u_int8_t *se_wpa_ie;		/* captured WPA ie */
++	u_int8_t *se_rsn_ie;		/* captured RSN ie */
++	u_int8_t *se_wme_ie;		/* captured WME ie */
++	u_int8_t *se_wsc_ie;		/* captured WSC ie */
++	u_int8_t *se_htcap_ie;		/* captured HT Capability Info ie */
++	u_int8_t *se_htinfo_ie;		/* captured HT Information ie */
++	u_int8_t *se_vhtcap_ie;		/* captured VHT Capability Info ie */
++	u_int8_t *se_vhtop_ie;		/* captured VHT Operation Info ie */
++	u_int8_t *se_ath_ie;		/* captured Atheros ie */
++	u_int8_t *se_qtn_ie;		/* captured qtn ie */
++	u_int8_t se_qtn_ie_flags;	/* captured Quantenna flags */
++	u_int8_t se_is_qtn_dev;		/* 1 - is QTN device, 0 - non-QTN device */
++	u_int8_t se_ext_role;		/* 0 - default mode, 1 - MBS, 2 - RBS */
++	u_int8_t *se_ext_bssid_ie;	/* captured extender bssid ie */
++	u_int se_age;			/* age of entry (0 on create) */
++	int8_t local_max_txpwr;		/* local max transmit power from Beacon/Probe response */
++};
++
++/*
++ * Template for an in-kernel scan policy module.
++ * Modules register with the scanning code and are
++ * typically loaded as needed.
++ */
++struct ieee80211_scanner {
++	const char *scan_name;		/* printable name */
++	int (*scan_attach)(struct ieee80211_scan_state *);
++	int (*scan_detach)(struct ieee80211_scan_state *);
++	int (*scan_start)(struct ieee80211_scan_state *, struct ieee80211vap *);
++	int (*scan_restart)(struct ieee80211_scan_state *, struct ieee80211vap *);
++	int (*scan_cancel)(struct ieee80211_scan_state *, struct ieee80211vap *);
++	int (*scan_end)(struct ieee80211_scan_state *, struct ieee80211vap *,
++		int (*action)(struct ieee80211vap *, const struct ieee80211_scan_entry *),
++		u_int32_t);
++	int (*scan_flush)(struct ieee80211_scan_state *);
++	void (*scan_remove)(struct ieee80211_scan_state *, struct ieee80211_node *);
++	struct ieee80211_channel *(*scan_pickchan)(struct ieee80211com *ic,
++			struct ieee80211_scan_state *, int);
++	/* add an entry to the cache */
++	int (*scan_add)(struct ieee80211_scan_state *,
++		const struct ieee80211_scanparams *,
++		const struct ieee80211_frame *, int, int, int);
++	/* age and/or purge entries in the cache */
++	void (*scan_age)(struct ieee80211_scan_state *);
++	/* note that association failed for an entry */
++	void (*scan_assoc_fail)(struct ieee80211_scan_state *,
++		const u_int8_t macaddr[IEEE80211_ADDR_LEN], int);
++	/* note that association succeed for an entry */
++	void (*scan_assoc_success)(struct ieee80211_scan_state *,
++		const u_int8_t macaddr[IEEE80211_ADDR_LEN]);
++	/* iterate over entries in the scan cache */
++	int (*scan_iterate)(struct ieee80211_scan_state *,
++		ieee80211_scan_iter_func *, void *);
++	/* default action to take when found scan match */
++	int (*scan_default)(struct ieee80211vap *,
++		const struct ieee80211_scan_entry *);
++};
++
++
++struct sta_entry {
++	struct ieee80211_scan_entry base;
++	TAILQ_ENTRY(sta_entry) se_list;
++	LIST_ENTRY(sta_entry) se_hash;
++	u_int8_t se_fails;		/* failure to associate count */
++	u_int8_t se_seen;		/* seen during current scan */
++	u_int8_t se_notseen;		/* not seen in previous scans */
++	u_int32_t se_avgrssi;		/* LPF rssi state */
++	unsigned long se_lastupdate;	/* time of last update */
++	unsigned long se_lastfail;	/* time of last failure */
++	unsigned long se_lastassoc;	/* time of last association */
++	u_int se_scangen;		/* iterator scan gen# */
++	int se_inuse;			/* indicate that entry is in use and cannot be freed */
++	int se_request_to_free;		/* indicate that entry must be freed after se_inuse cleared up */
++};
++
++struct sta_table {
++	spinlock_t st_lock;			/* on scan table */
++	TAILQ_HEAD(, sta_entry) st_entry;	/* all entries */
++	ATH_LIST_HEAD(, sta_entry) st_hash[STA_HASHSIZE];
++	uint32_t st_entry_num;
++	spinlock_t st_scanlock;			/* on st_scangen */
++	u_int st_scangen;			/* gen# for iterator */
++	int st_newscan;
++	struct IEEE80211_TQ_STRUCT st_actiontq;	/* tasklet for "action" */
++	struct ieee80211_scan_entry st_selbss;	/* selected bss for action tasklet */
++	int (*st_action)(struct ieee80211vap *, const struct ieee80211_scan_entry *);
++};
++
++struct ap_scan_list {
++	TAILQ_HEAD(, ap_scan_entry) asl_head;
++};
++
++struct ap_scan_entry {
++	struct ieee80211_scan_entry base;
++	TAILQ_ENTRY(ap_scan_entry) ase_list;
++	unsigned long se_lastupdate;	/* time of last update */
++	u_int32_t se_avgrssi;		/* LPF rssi state */
++	u_int8_t se_seen;	/* seen during current scan */
++	u_int8_t se_notseen;	/* not seen in previous scans */
++	u_int32_t se_inuse;	/* indicate that entry is in use and cannot be freed */
++	u_int8_t se_request_to_free;	/* request to free entry after se_inuse cleared. */
++};
++
++struct ap_state {
++	unsigned int as_numbeacons[IEEE80211_CHAN_MAX];
++	uint8_t as_obss_chanlayout[IEEE80211_CHAN_MAX];
++
++	int as_maxrssi[IEEE80211_CHAN_MAX];
++	int as_cci[IEEE80211_CHAN_MAX];		/* CCI, Co-Channel Interference */
++	int as_aci[IEEE80211_CHAN_MAX];		/* ACI, Adjacent Channel Interference */
++	int as_numpkts[IEEE80211_CHAN_MAX];
++	int as_chanmetric[IEEE80211_CHAN_MAX];
++	uint32_t as_chanmetric_timestamp[IEEE80211_CHAN_MAX];
++	uint32_t as_chanmetric_pref[IEEE80211_CHAN_MAX];
++	struct IEEE80211_TQ_STRUCT as_actiontq;	/* tasklet for "action" */
++	struct ieee80211_scan_entry as_selbss;	/* selected bss for action tasklet */
++	int (*as_action)(struct ieee80211vap *, const struct ieee80211_scan_entry *);
++	struct ap_scan_list as_scan_list[IEEE80211_CHAN_MAX];
++	uint32_t as_entry_num;			/* scan entry number */
++	spinlock_t asl_lock;			/* to protect as_scan_list */
++
++	u_int8_t as_chan_xped[IEEE80211_CHAN_BYTES];	/* whether once used as working channel */
++	uint32_t as_scs_ranking_cnt;
++
++	/* CCA interference */
++#define SCS_CCA_INTF_INVALID	0xFFFF
++	uint16_t as_cca_intf_smth;
++	uint16_t as_cca_intf[IEEE80211_CHAN_MAX];
++	uint32_t as_cca_intf_jiffies[IEEE80211_CHAN_MAX];
++	uint32_t as_pmbl_err_ap[IEEE80211_CHAN_MAX];
++	uint32_t as_pmbl_err_sta[IEEE80211_CHAN_MAX];
++	/* tx and rx time */
++	uint32_t as_tx_ms;
++	uint32_t as_rx_ms;
++	uint32_t as_tx_ms_smth;
++	uint32_t as_rx_ms_smth;
++	/* rssi from all STAs, used to calculate attenuation */
++#define SCS_RSSI_UNINITED		-1
++#define SCS_RSSI_VALID(_rssi)		(((_rssi) < -1) && ((_rssi) > -1200))
++#define SCS_RSSI_PRECISION_RECIP	10	/* 0.1db */
++#define SCS_ATTEN_UNINITED		0
++#define SCS_ATTEN_VALID(_atten)         (_atten != SCS_ATTEN_UNINITED)
++	int8_t	as_sta_atten_num;
++	int32_t	as_sta_atten_sum;
++	int32_t	as_sta_atten_min;
++	int32_t	as_sta_atten_max;
++	int32_t as_sta_atten_expect;    /* the attenuation expected in low power channel */
++	int32_t as_dfs_reentry_cnt;
++	int32_t as_dfs_reentry_level;
++};
++
++void ieee80211_add_scan_entry(struct ieee80211_scan_entry *ise,
++			const struct ieee80211_scanparams *sp,
++			const struct ieee80211_frame *wh,
++			int subtype, int rssi, int rstamp);
++void ieee80211_scan_check_secondary_channel(struct ieee80211_scan_state *ss,
++			struct ieee80211_scan_entry *ise);
++struct ieee80211_channel *ieee80211_scan_switch_pri_chan(struct ieee80211_scan_state *ss,
++			struct ieee80211_channel *chan_pri);
++int ieee80211_wps_active(uint8_t *wsc_ie);
++void ieee80211_dump_scan_res(struct ieee80211_scan_state *ss);
++int ieee80211_get_type_of_neighborhood(struct ieee80211com *ic);
++void ieee80211_check_type_of_neighborhood(struct ieee80211com *ic);
++
++const struct ieee80211_scanner *ieee80211_scanner_get(enum ieee80211_opmode,
++	int);
++void ieee80211_scanner_register(enum ieee80211_opmode,
++	const struct ieee80211_scanner *);
++void ieee80211_scanner_unregister(enum ieee80211_opmode,
++	const struct ieee80211_scanner *);
++void ieee80211_scanner_unregister_all(const struct ieee80211_scanner *);
++
++/* Recovered OEM461 scanner state and callbacks; no raw OEM IC offsets. */
++int om_chanset_kernel_allowed(struct ieee80211vap *vap);
++int om_chanset_kernel_start(struct ieee80211vap *vap, int flags,
++    unsigned duration, unsigned nssid, const struct ieee80211_scan_ssid *ssids);
++int om_chanset_kernel_policy(struct ieee80211com *ic, int *value, int write);
++unsigned om_chanset_kernel_scan_type(struct ieee80211com *ic);
++struct ieee80211_channel *om_chanset_kernel_pick(struct ieee80211com *ic);
++int om_chanset_kernel_finished(struct ieee80211com *ic);
++void om_chanset_kernel_cancel(struct ieee80211com *ic);
++
++#endif /* _NET80211_IEEE80211_SCAN_H_ */
+--- a/headers/net80211/ieee80211_var.h
++++ b/headers/net80211/ieee80211_var.h
+@@ -2049,6 +2049,7 @@
+ void ieee80211_eap_output(struct net_device *dev, const void *eap_msg, int eap_msg_len);
+ int ieee80211_blacklist_check(struct ieee80211_node *ni);
+ int ieee80211_pwr_adjust(struct ieee80211vap *vap, int rxgain_state);
++void om_ieee80211_change_bw(struct ieee80211vap *,int,int);
+ void ieee80211_pm_queue_work(struct ieee80211com *ic);
+ void om_ieee80211_pm_queue_node_join(struct ieee80211com *ic);
+ void om_ieee80211_coc_quiesce(struct ieee80211com *ic);
+--- a/source/wlan/ieee80211_scan.c
++++ b/source/wlan/ieee80211_scan.c
+@@ -56,6 +56,7 @@
+ 
+ #include "net80211/ieee80211_var.h"
+ #include "net80211/ieee80211_scan.h"
++#include "openmitrastar_chanset_recovered.h"
+ 
+ struct scan_state {
+ 	struct ieee80211_scan_state base;	/* public state */
+@@ -71,6 +72,13 @@
+ 	struct tasklet_struct ss_pwrsav;	/* sta ps ena tasklet */
+ 	struct timer_list ss_scan_timer;	/* scan timer */
+ 	struct timer_list ss_probe_timer;	/* start sending probe requests timer */
++	spinlock_t om_chanset_lock;
++	bool om_chanset_stopping;
++	u8 om_chanset_policy;
++	struct ieee80211vap *om_chanset_owner;
++	struct om_chanset_transaction om_chanset;
++	struct om_chanset_observation om_observations[255];
++	struct om_chanset_channel_state om_channels[98];
+ };
+ #define	SCAN_PRIVATE(ss)	((struct scan_state *) ss)
+ 
+@@ -159,6 +167,7 @@
+ 			(unsigned long) ss);
+ 		ss->base.ss_pick_flags = IEEE80211_PICK_DEFAULT;
+ 		ss->base.is_scan_valid = 0;
++		spin_lock_init(&ss->om_chanset_lock);
+ 		ic->ic_scan = &ss->base;
+ 	} else
+ 		ic->ic_scan = NULL;
+@@ -177,9 +186,11 @@
+ #ifdef QSCS_ENABLED
+ 		ieee80211_scs_deinit_ranking_stats(ic);
+ #endif
+-		del_timer(&SCAN_PRIVATE(ss)->ss_scan_timer);
+-		del_timer(&SCAN_PRIVATE(ss)->ss_probe_timer);
++		WRITE_ONCE(SCAN_PRIVATE(ss)->om_chanset_stopping,true);
++		del_timer_sync(&SCAN_PRIVATE(ss)->ss_scan_timer);
++		del_timer_sync(&SCAN_PRIVATE(ss)->ss_probe_timer);
+ 		tasklet_kill(&SCAN_PRIVATE(ss)->ss_pwrsav);
++		om_chanset_kernel_cancel(ic);
+ 		if (ss->ss_ops != NULL) {
+ 			ss->ss_ops->scan_detach(ss);
+ 			ss->ss_ops = NULL;
+@@ -826,6 +837,7 @@
+ 		/* clear bg scan NOPICK and mark cancel request */
+ 		ss->ss_flags &= ~IEEE80211_SCAN_NOPICK;
+ 		SCAN_PRIVATE(ss)->ss_iflags |= ISCAN_CANCEL;
++		om_chanset_kernel_cancel(ic);
+ 		ss->ss_ops->scan_cancel(ss, vap);
+ 
+ 		if (no_wait) {
+@@ -1023,6 +1035,7 @@
+ 	unsigned long maxdwell, scanend;
+ 	int scanning, scandone;
+ 
++	if (READ_ONCE(scan->om_chanset_stopping))return;
+ 	/* Make passive channels special */
+ 	int is_passive;
+ 	int is_obss = 0;
+@@ -1197,10 +1210,16 @@
+ 			/* Channel change done with 20MHz wide channels unless in 40MHz only mode */
+ 			if (!((ss->ss_flags & IEEE80211_SCAN_BGSCAN) &&
+ 					chan->ic_ieee == ic->ic_curchan->ic_ieee)) {
+-				if (!ic->ic_11n_40_only_mode)
++				unsigned om_type=om_chanset_kernel_scan_type(ic);
++				if(om_type>=2&&om_type<=4){
++				    ic->ic_flags_ext &= ~IEEE80211_FEXT_SCAN_20;
++				    ic->ic_flags_ext |= IEEE80211_FEXT_SCAN_40;
++				    if(om_type==3||om_type==4)ieee80211_update_sec_chan_offset(chan,om_type==3?1:3);
++				}else if (!ic->ic_11n_40_only_mode)
+ 				      ic->ic_flags_ext |= IEEE80211_FEXT_SCAN_20;
+ 
+ 				change_channel(ic, chan);
++				if(om_type)ic->ic_flags_ext &= ~IEEE80211_FEXT_SCAN_40;
+ 
+ 				/* Clear the flag */
+ 				if (!ic->ic_11n_40_only_mode)
+@@ -2062,3 +2081,6 @@
+ 		}
+ 	}
+ }
++
++#include "openmitrastar_chanset_recovered.c"
++#include "openmitrastar_chanset_kernel.inc"
+--- a/source/wlan/ieee80211_wireless.c
++++ b/source/wlan/ieee80211_wireless.c
+@@ -128,6 +128,7 @@
+ #define OM_OEM_PARAM_DUPLICATE_RTS 498
+ #define OM_OEM_PARAM_TX_AMSDU_11N 484
+ #define OM_OEM_PARAM_NAC_MODE 457
++#define OM_OEM_PARAM_BW_AUTOSEL 461
+ #define OM_OEM_PARAM_COC_MOVE_NDFS 491
+ #define OM_OEM_PARAM_FIX_LEGACY_RATE 490
+ #define OM_OEM_PARAM_DEVICE_MODE 451
+@@ -11423,6 +11424,9 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_BW_AUTOSEL:
++		return om_chanset_kernel_policy(ic,&value,1);
++
+ 	case OM_OEM_PARAM_COC_MOVE_NDFS:
+ 		WRITE_ONCE(ic->om_coc_move_ndfs,(u32)value);
+ 		return 0;
+@@ -14059,6 +14063,9 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_BW_AUTOSEL:
++		return om_chanset_kernel_policy(ic,&param[0],0);
++
+ 	case OM_OEM_PARAM_COC_MOVE_NDFS:
+ 		param[0]=(int)READ_ONCE(ic->om_coc_move_ndfs);
+ 		return 0;
+@@ -21061,6 +21068,8 @@
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1,0,"coc_mv_to_ndfs" },
+ 	{ OM_OEM_PARAM_COC_MOVE_NDFS,0,
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1,"g_coc_mv_to_ndfs" },
++	{OM_OEM_PARAM_BW_AUTOSEL,IW_PRIV_TYPE_INT|IW_PRIV_SIZE_FIXED|1,0,"set_bw_autosel"},
++	{OM_OEM_PARAM_BW_AUTOSEL,0,IW_PRIV_TYPE_INT|IW_PRIV_SIZE_FIXED|1,"get_bw_autosel"},
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {
+@@ -21553,3 +21562,48 @@
+ 	"Peer STA does not support the requested cipher suite"
+ };
+ EXPORT_SYMBOL(d11_r);
++
++/* Recovered OEM change_bw (0x3412c,88 bytes) and its power helper
++ * (0x2ef34,212 bytes). Operative order is BW71 wire, active-channel map,
++ * existing regulatory/power table selection, optional set_channel callback.
++ * This helper does not create regulatory entries or change calibration.
++ * Existing void callbacks cannot establish completed PHY/MuC transitions. */
++void om_ieee80211_change_bw(struct ieee80211vap *vap,int bw,int delay_ch_switch)
++{
++    struct ieee80211com *ic=vap->iv_ic;
++    struct ieee80211_channel *chan;
++    int idx;
++    int i;
++    ieee80211_param_to_qdrv(vap,IEEE80211_PARAM_BW_SEL_MUC,bw,NULL,0);
++    switch(bw){
++    case BW_HT40:
++        memcpy(ic->ic_chan_active,ic->ic_chan_active_40,sizeof(ic->ic_chan_active));
++        break;
++    case BW_HT80:
++        memcpy(ic->ic_chan_active,ic->ic_chan_active_80,sizeof(ic->ic_chan_active));
++        break;
++    default:
++        memcpy(ic->ic_chan_active,ic->ic_chan_active_20,sizeof(ic->ic_chan_active));
++        break;
++    }
++    if(ic->ic_country_code!=CTRY_DEFAULT){
++        switch(bw){
++        case BW_HT20:idx=PWR_IDX_20M;break;
++        case BW_HT40:idx=PWR_IDX_40M;break;
++        case BW_HT80:idx=PWR_IDX_80M;break;
++        default:
++            printk("unsupported bw: %u\n",bw);
++            goto set_channel;
++        }
++        for(i=0;i<ic->ic_nchans;i++){
++            chan=&ic->ic_channels[i];
++            if(!isset(ic->ic_chan_active,chan->ic_ieee))continue;
++            chan->ic_maxpower=chan->ic_maxpower_table[PWR_IDX_BF_OFF][PWR_IDX_1SS][idx];
++            chan->ic_maxpower_normal=chan->ic_maxpower;
++        }
++    }
++set_channel:
++    if(!delay_ch_switch)ic->ic_set_channel(ic);
++}
++
++EXPORT_SYMBOL(om_ieee80211_change_bw);
+--- a/source/wlan/ieee80211_proto.c
++++ b/source/wlan/ieee80211_proto.c
+@@ -1863,6 +1863,10 @@
+ 					ieee80211_icac_select(ic, &scan_flags);
+ 				}
+ 			}
++			if(om_chanset_kernel_allowed(vap))
++			    (void)om_chanset_kernel_start(vap,scan_flags,IEEE80211_SCAN_FOREVER,
++			        vap->iv_des_nssid,vap->iv_des_ssid);
++			else
+ 			(void) ieee80211_check_scan(vap, scan_flags,
+ 					IEEE80211_SCAN_FOREVER,
+ 					vap->iv_des_nssid, vap->iv_des_ssid,
+--- a/source/wlan/ieee80211_scan_ap.c
++++ b/source/wlan/ieee80211_scan_ap.c
+@@ -63,20 +63,20 @@
+ 
+ 	WARN_ON_ONCE(in_irq());
+ 
+-	spin_lock(&as->asl_lock);
+ 	if (bh_disabled) {
+ 		local_bh_disable();
+ 	}
++	spin_lock(&as->asl_lock);
+ 	return bh_disabled;
+ }
+ 
+ static void
+ unlock_ap_list(struct ap_state *as, int bh_disabled)
+ {
++	spin_unlock(&as->asl_lock);
+ 	if (bh_disabled) {
+ 		local_bh_enable();
+ 	}
+-	spin_unlock(&as->asl_lock);
+ }
+ 
+ static void
+@@ -223,6 +223,7 @@
+ 	struct ap_state *as = ss->ss_priv;
+ 
+ 	if (as != NULL) {
++		IEEE80211_CANCEL_TQUEUE(&as->as_actiontq);
+ 		ap_flush_asl_table(ss);
+ 		FREE(as, M_SCANCACHE);
+ 	}
+@@ -569,6 +570,8 @@
+ 	int pri_inactive;
+ 	struct ieee80211_channel *ic_best_chan = NULL;
+ 
++	if(om_chanset_kernel_allowed(ss->ss_vap))return om_chanset_kernel_pick(ic);
++
+ 	/*
+ 	 * Convert CCA interference to CCI factor
+ 	 */
+@@ -975,7 +978,7 @@
+ 			se.se_chan = ic->ic_bsschan;
+ 			ret = 0;
+ 		} else {
+-			return 0;			/* restart scan */
++			return om_chanset_kernel_allowed(vap)?!om_chanset_kernel_finished(ic):0; /* recovered scan queue */
+ 		}
+ 	} else {
+ 		struct ieee80211_channel *c;

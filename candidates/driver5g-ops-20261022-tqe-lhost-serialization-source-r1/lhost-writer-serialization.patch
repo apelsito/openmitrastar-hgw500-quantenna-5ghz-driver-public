@@ -1,0 +1,99 @@
+--- a/src/platform/topaz/switch_tqe.c
++++ b/src/platform/topaz/switch_tqe.c
+@@ -420,23 +420,47 @@
+ 		arc_write_uncached_32(freep, free);
+ }
+ 
++/* SOURCE-ONLY: serializes the compiled UP Linux LHOST bank writers.
++ * READY check and descriptor publication belong to one local IRQ interval.
++ * Congestion xmit additionally owns completion/status until return.
++ * Existing unbounded wait/ownership/drop semantics deliberately remain.
++ * Firmware cross-bank writes and HBM latency remain unqualified.
++ */
++#if defined(CONFIG_SMP) || defined(CONFIG_PREEMPT) || defined(CONFIG_PREEMPT_VOLUNTARY) || defined(CONFIG_TOPAZ_PCIE_TARGET)
++#error "SOURCE-only LHOST serialization requires exact UP/PREEMPT_NONE/non-PCIe baseline"
++#endif
++static unsigned long omtqe_lhost_publish(const union topaz_tqe_cpuif_ppctl *ppctl)
++{
++	unsigned long flags;
++	local_irq_save(flags);
++	topaz_tqe_wait();
++	topaz_tqe_cpuif_tx_start(ppctl);
++	return flags;
++}
++
++static void omtqe_lhost_publish_end(unsigned long flags)
++{
++	local_irq_restore(flags);
++}
++
+ int topaz_tqe_xmit(union topaz_tqe_cpuif_ppctl *pp_cntl)
+ {
+ 	int num = topaz_tqe_cpuif_port_to_num(TOPAZ_TQE_LOCAL_CPU);
+-
+-	topaz_tqe_wait();
+-	switch_tqe_multi_proc_sem_down("topaz_tqe_xmit",__LINE__);
+-	topaz_tqe_cpuif_tx_start(pp_cntl);
+-	switch_tqe_multi_proc_sem_up();
++	unsigned long flags;
++	int result;
++
++	flags = omtqe_lhost_publish(pp_cntl);
+ 
+ 	wmb();
+ 
+ 	topaz_tqe_wait();
+ 	if ((qtn_mproc_sync_mem_read(TOPAZ_TQE_CPUIF_TXSTART(num)) &
+ 			TOPAZ_TQE_CPUIF_TX_START_NOT_SUCCESS))
+-		return NET_XMIT_CN;
++		result = NET_XMIT_CN;
+ 	else
+-		return NET_XMIT_SUCCESS;
++		result = NET_XMIT_SUCCESS;
++	omtqe_lhost_publish_end(flags);
++	return result;
+ 
+ }
+ 
+@@ -522,10 +546,8 @@
+ 	if (queue) {
+ 		topaz_tqe_congest_queue_process(desc, queue, node, tid, &ppctl, 0);
+ 	} else {
+-		topaz_tqe_wait();
+-		switch_tqe_multi_proc_sem_down("tqe_push_mcast",__LINE__);
+-		topaz_tqe_cpuif_tx_start(&ppctl);
+-		switch_tqe_multi_proc_sem_up();
++		unsigned long flags = omtqe_lhost_publish(&ppctl);
++		omtqe_lhost_publish_end(flags);
+ 	}
+ 
+ 	if (port == TOPAZ_TQE_WMAC_PORT && update_multicast.fn)
+@@ -795,10 +817,8 @@
+ 	if (queue) {
+ 		topaz_tqe_congest_queue_process(desc, queue, node, tid, &ctl, 1);
+ 	} else {
+-		while (topaz_tqe_cpuif_tx_nready());
+-		switch_tqe_multi_proc_sem_down("topaz_swfwd_tqe_xmit",__LINE__);
+-		topaz_tqe_cpuif_tx_start(&ctl);
+-		switch_tqe_multi_proc_sem_up();
++		unsigned long flags = omtqe_lhost_publish(&ctl);
++		omtqe_lhost_publish_end(flags);
+ 	}
+ 
+ 	return 1;
+@@ -1230,11 +1250,10 @@
+ 	/* always free to txdone pool */
+ 	ppctl->data.buff_pool_num = TOPAZ_HBM_EMAC_TX_DONE_POOL;
+ 
+-	while (topaz_tqe_cpuif_tx_nready());
+-	
+-	switch_tqe_multi_proc_sem_down("tqe_tx_buf",__LINE__);
+-	topaz_tqe_cpuif_tx_start(ppctl);
+-	switch_tqe_multi_proc_sem_up();
++	{
++		unsigned long flags = omtqe_lhost_publish(ppctl);
++		omtqe_lhost_publish_end(flags);
++	}
+ 
+ 	return 0;
+ }

@@ -1,0 +1,27 @@
+{
+  "status": "PASS_REPRODUCED_R1_SIGNED_SAVED_BYTE_MISMATCH_EXACT_ARC_ANCHORS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 1,
+  "saved78_actual": -1,
+  "saved78_oem_expected": 255,
+  "saved195_actual": -128,
+  "saved195_oem_expected": 128,
+  "mode482_actual": -1,
+  "mode482_oem_expected": -1,
+  "assembly_anchors": [
+    "0x711b0: ldb r2, [r2]",
+    "0x711d0: ldb r2, [r13]",
+    "0x71244: ldb r2, [r2]",
+    "0x7125c: ldb r3, [r2]",
+    "0x71280: ldb.x r2, [r3, 0xc]"
+  ],
+  "input_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\review_hgw5g_vopt481_unsigned_saved_bytes.py": "c3b93b56c7890949ded9fc81a5f4504381ca4503115656d9f301eb44507b5029",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-oem-vopt481-apply-20261022T200100Z-r1\\rea.json": "edfcff0990cab7fcf6e01eec7c8cb56773c4425adacb93e8ee7a2b9563252b72",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\vopt481-recovered-core-20261022T201300Z-r1\\openmitrastar_vopt481_recovered.c": "1370a38b94d83ac5395189d1305689f69c92bf4d95c1d0c1a3ee461233c88ad1",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\vopt481-recovered-core-20261022T201300Z-r1\\openmitrastar_vopt481_recovered.h": "dfa5a344f0f6faa7615306bea98f87d0a0a65bc5529fcd1e8772184f82a378da"
+  },
+  "fixture_sha256": "01b634ff060056e5de5a5bb82cf08212ae88ac53db6f57c6b6f57cf3fdda8d9e"
+}

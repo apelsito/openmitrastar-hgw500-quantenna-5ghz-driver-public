@@ -1,0 +1,185 @@
+--- a/include/linux/skbuff.h
++++ b/include/linux/skbuff.h
+@@ -11,6 +11,9 @@
+ #define _LINUX_SKBUFF_H
+ 
+ #include <linux/kernel.h>
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++#include <linux/openmitrastar_qtn_skb.h>
++#endif
+ #include <linux/compiler.h>
+ #include <linux/time.h>
+ #include <linux/bug.h>
+@@ -969,6 +972,15 @@
+ 	 */
+ 	struct_group(headers,
+ 
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++        /* NativeTopazpacketcontract; includedin __copy_skb_header headersgroup. */
++        struct qtn_skb_cb qtn_cb;
++        struct net_device *orig_dev;
++        struct qtn_skb_recycle_list *recycle_list;
++        __u32 src_port,dest_port;
++        __u8 is_recyclable:1,cache_is_cleaned:1,hbm_no_free:1,ext_l2_filter:1;
++#endif
++
+ 	/* private: */
+ 	__u8			__pkt_type_offset[0];
+ 	/* public: */
+--- a/include/linux/openmitrastar_qtn_skb.h
++++ b/include/linux/openmitrastar_qtn_skb.h
+@@ -0,0 +1,62 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef _LINUX_OPENMITRASTAR_QTN_SKB_H
++#define _LINUX_OPENMITRASTAR_QTN_SKB_H
++
++#include <linux/types.h>
++
++struct qtn_skb_recycle_list;
++
++#ifndef __QTN_SKB_CB_H
++#define __QTN_SKB_CB_H
++
++struct qtn_skb_cb {
++	u8 encap;
++	u8 ip_protocol;
++	u16 ether_type;
++	void *ni;
++	u32 flags;
++};
++
++#define QTN_SKB_ENCAP_ETH 0
++#define QTN_SKB_ENCAP_80211_MGMT 1
++#define QTN_SKB_ENCAP_80211_DATA 2
++#define QTN_SKB_ENCAP(skb) ((skb)->qtn_cb.encap)
++#define QTN_SKB_ENCAP_IS_80211(skb) ((skb)->qtn_cb.encap > 0)
++#define QTN_SKB_ENCAP_IS_80211_MGMT(skb) \
++	((skb)->qtn_cb.encap == QTN_SKB_ENCAP_80211_MGMT)
++
++#define QTN_SKB_CB_NI(skb) ((skb)->qtn_cb.ni)
++#define QTN_SKB_CB_ETHERTYPE(skb) ((skb)->qtn_cb.ether_type)
++#define QTN_SKB_CB_IPPROTO(skb) ((skb)->qtn_cb.ip_protocol)
++
++#define M_LINK0 0x0001
++#define M_FF 0x0002
++#define M_PWR_SAV 0x0004
++#define M_UAPSD 0x0008
++#define M_RAW 0x0010
++#define M_CLASSIFY 0x0020
++#define M_VSP_CHK 0x0040
++#define M_VSP_NOT_FOUND 0x0080
++#define M_VSP_RX_BSS 0x0100
++#define M_RATE_TRAINING 0x0200
++#define M_NO_AMSDU 0x0400
++#define M_ENQUEUED_SCH 0x0800
++#define M_ENQUEUED_MUC 0x1000
++#define M_TX_DONE_IMM_INT 0x2000
++#define M_VLAN_TAGGED 0x4000
++#define M_ORIG_OUTSIDE 0x8000
++#define M_ORIG_BR 0x10000
++#define M_NO_L2_LRN 0x20000
++
++#define M_FLAG_SET(skb, flag) ((skb)->qtn_cb.flags |= (flag))
++#define M_FLAG_CLR(skb, flag) ((skb)->qtn_cb.flags &= ~(flag))
++#define M_FLAG_GET(skb, flag) ((skb)->qtn_cb.flags & (flag))
++#define M_FLAG_ISSET(skb, flag) (!!M_FLAG_GET((skb), (flag)))
++#define M_FLAG_KEEP_ONLY(skb, flag) ((skb)->qtn_cb.flags &= (flag))
++#define M_PWR_SAV_SET(skb) M_FLAG_SET((skb), M_PWR_SAV)
++#define M_PWR_SAV_CLR(skb) M_FLAG_CLR((skb), M_PWR_SAV)
++#define M_PWR_SAV_GET(skb) M_FLAG_GET((skb), M_PWR_SAV)
++
++#endif /* __QTN_SKB_CB_H */
++#endif /* _LINUX_OPENMITRASTAR_QTN_SKB_H */
++
+--- a/include/linux/netdevice.h
++++ b/include/linux/netdevice.h
+@@ -214,6 +214,11 @@
+ 	NET_DEV_STAT(tx_window_errors);
+ 	NET_DEV_STAT(rx_compressed);
+ 	NET_DEV_STAT(tx_compressed);
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++        NET_DEV_STAT(rx_unicast_packets);NET_DEV_STAT(tx_unicast_packets);
++        NET_DEV_STAT(tx_multicast_packets);NET_DEV_STAT(rx_broadcast_packets);
++        NET_DEV_STAT(tx_broadcast_packets);
++#endif
+ };
+ #undef NET_DEV_STAT
+ 
+@@ -2647,6 +2652,9 @@
+ 
+ 	struct hwtstamp_provider __rcu	*hwprov;
+ 
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++        u32 qtn_flags;
++#endif
+ 	u8			priv[] ____cacheline_aligned
+ 				       __counted_by(priv_len);
+ } ____cacheline_aligned;
+--- a/net/core/dev.c
++++ b/net/core/dev.c
+@@ -11927,7 +11927,11 @@
+ 	const atomic_long_t *src = (atomic_long_t *)netdev_stats;
+ 	u64 *dst = (u64 *)stats64;
+ 
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++	n=min_t(size_t,n,sizeof(*stats64)/sizeof(u64));
++#else
+ 	BUILD_BUG_ON(n > sizeof(*stats64) / sizeof(u64));
++#endif
+ 	for (i = 0; i < n; i++)
+ 		dst[i] = (unsigned long)atomic_long_read(&src[i]);
+ 	/* zero out counters that only exist in rtnl_link_stats64 */
+--- a/include/linux/openmitrastar_bridge.h
++++ b/include/linux/openmitrastar_bridge.h
+@@ -0,0 +1,37 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef _LINUX_OPENMITRASTAR_BRIDGE_H
++#define _LINUX_OPENMITRASTAR_BRIDGE_H
++
++#include <linux/if_ether.h>
++#include <linux/types.h>
++
++struct net_device;
++
++#define QTN_FLAG_WIFI_DEVICE       0x80000000U
++#define QTN_FLAG_INTRA_BSS_ISOLATE 0x40000000U
++#define QTN_FLAG_BSS_ISOLATE       0x20000000U
++#define QTN_FLAG_WIFI_INTRA_BSS \
++	(QTN_FLAG_WIFI_DEVICE | QTN_FLAG_INTRA_BSS_ISOLATE)
++#define QTN_FLAG_WIFI_BSS_ISOLATE \
++	(QTN_FLAG_WIFI_DEVICE | QTN_FLAG_BSS_ISOLATE)
++#define QTN_FLAG_IS_INTRA_BSS(flags) \
++	(((flags) & QTN_FLAG_WIFI_INTRA_BSS) == QTN_FLAG_WIFI_INTRA_BSS)
++#define QTN_FLAG_IS_BSS_ISOLATE(flags) \
++	(((flags) & QTN_FLAG_WIFI_BSS_ISOLATE) == QTN_FLAG_WIFI_BSS_ISOLATE)
++
++struct openmitrastar_fdb_entry {
++	u8 mac_addr[ETH_ALEN];
++	u8 is_local;
++	u8 is_wlan;
++	u32 ageing_timer_value;
++};
++
++int openmitrastar_br_fdb_fillbuf(struct net_device *dev,
++		struct openmitrastar_fdb_entry *entries, unsigned long maxnum);
++void openmitrastar_br_fdb_update_const(struct net_device *dev,
++		const unsigned char *addr, u16 sub_port);
++void br_set_ap_isolate(int enable);
++int br_get_ap_isolate(void);
++
++#endif /* _LINUX_OPENMITRASTAR_BRIDGE_H */
++
+--- a/net/wireless/Kconfig
++++ b/net/wireless/Kconfig
+@@ -202,3 +202,11 @@
+ 	  If unsure, say N.
+ 
+ endif # CFG80211
++
++config OPENMITRASTAR_QDRV_COMPAT
++    bool "OwnerHGW500Quantenna packetABI andlegacyWEXT"
++    depends on ARC_PLAT_TOPAZ_BASIC
++    select WIRELESS_EXT
++    select WEXT_PRIV
++    help
++      Offlineowner portcandidate. Requires fullkernel/module pairedrebuild.

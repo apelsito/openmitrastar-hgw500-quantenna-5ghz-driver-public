@@ -1,0 +1,8 @@
+{
+  "status": "PASS_ACTUAL_OLDDEFCONFIG_NO_BUILTIN_DT_NAME_NO_INITRAMFS_ETH73_PRESERVED",
+  "hardware_accessed": false,
+  "kernel_compilation": false,
+  "GENERIC_BUILTIN_DTB": "ARC selects framework; empty name yields emptydtb-y",
+  "config_sha256": "e709aba8ed2b55f3e6debe1480bbea2f1320c4bcd9dc3e9832c185b8e72e8efe",
+  "olddefconfig_exit": 0
+}

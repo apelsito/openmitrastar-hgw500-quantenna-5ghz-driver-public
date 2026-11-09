@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ACTUAL_COC491_IOCTL_SETGET_FULL_U32_BOUNDARY_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 262144,
+  "source_sha256": "8b519bc98edf7c2a15a92df2fe0060dedf111c065d57d55772f05bd5ba2d5459",
+  "setter_case_sha256": "0c02e0fc931bd95c2e51cf9d94729ad01ffec8997b50b9eef4407d057a198904",
+  "getter_case_sha256": "c6882fbe7f68e495e962b9f776323a14ef153f726451c98744ddab84adfafd5a",
+  "limits": "Actual491dispatch snippets; otherdispatcherconditions andphysicalWEXT separate"
+}

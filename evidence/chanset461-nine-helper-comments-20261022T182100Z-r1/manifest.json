@@ -1,0 +1,60 @@
+{
+  "schema": "openmitrastar.hgw-comments/v1",
+  "status": "PASS_EXACT_COMMENT_CATALOG",
+  "created_utc": "2026-10-22T17:16:37.260803+00:00",
+  "root": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea",
+  "source_roots": [
+    "chanset461-scan-select-source-20261022T175500Z-r5"
+  ],
+  "catalog_tool_sha256": "54fb4533d3de4384677a249d6396479cae94548b02abac89e09f5822120273b3",
+  "hardware_accessed": false,
+  "source_files_modified": false,
+  "files": [
+    {
+      "path": "chanset461-scan-select-source-20261022T175500Z-r5/openmitrastar_chanset_recovered.c",
+      "bytes": 10212,
+      "sha256": "ee37353da2033bfff87ffb5b58108317177c678558f590508b3e44850cf6bd81",
+      "comment_scanner": "C_CPP_LEXICAL",
+      "comments": 8
+    },
+    {
+      "path": "chanset461-scan-select-source-20261022T175500Z-r5/openmitrastar_chanset_recovered.h",
+      "bytes": 3098,
+      "sha256": "9be240bb9724f6578a5fcad37c12bf2c6b0367063ba433eb52375a0862742631",
+      "comment_scanner": "C_CPP_LEXICAL",
+      "comments": 1
+    },
+    {
+      "path": "chanset461-scan-select-source-20261022T175500Z-r5/openmitrastar_chanset_tables.h",
+      "bytes": 10259,
+      "sha256": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492",
+      "comment_scanner": "C_CPP_LEXICAL",
+      "comments": 1
+    },
+    {
+      "path": "chanset461-scan-select-source-20261022T175500Z-r5/result.json",
+      "bytes": 1671,
+      "sha256": "1f18f70b71cbf0d089e5e20392cc779226885d98b9cd87f7050d7307fff5b1af",
+      "comment_scanner": "NOT_SCANNED_UNSUPPORTED_LANGUAGE",
+      "comments": 0
+    },
+    {
+      "path": "chanset461-scan-select-source-20261022T175500Z-r5/tables.json",
+      "bytes": 35561,
+      "sha256": "8d37396ee20d6902ea9c2948579c57b4e69c307d332904717aa4889ba6a98538",
+      "comment_scanner": "NOT_SCANNED_UNSUPPORTED_LANGUAGE",
+      "comments": 0
+    }
+  ],
+  "file_count": 5,
+  "comment_count": 10,
+  "raw_comment_bytes": 1643,
+  "raw_comment_sha256": "361f1f16b447a12e804f77edfc88bc5a53d6144644aa7222853e91ef905676c4",
+  "unterminated_comments": 0,
+  "limits": [
+    "C/C++ lexical comments only; all preprocessor branches included",
+    "No trigraph translation or preprocessing/include expansion",
+    "Non-source file hashes are catalogued, their content is not published",
+    "Decoded pages are views; exact raw bytes remain authoritative"
+  ]
+}

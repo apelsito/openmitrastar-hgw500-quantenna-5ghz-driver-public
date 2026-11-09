@@ -1,0 +1,154 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-bounded-loader-r23-pair-receipt-20261023T052000Z-r1/a-build.log",
+      "source": "outputs/rea/linux73-bounded-loader-r23-pair-receipt-20261023T052000Z-r1/a-build.log",
+      "bytes": 484118,
+      "sha256": "166d2abcda1146bab282580ddf13f6db260a11d46f708f100fa868e12c6523ec",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-bounded-loader-r23-pair-receipt-20261023T052000Z-r1/b-build.log",
+      "source": "outputs/rea/linux73-bounded-loader-r23-pair-receipt-20261023T052000Z-r1/b-build.log",
+      "bytes": 484118,
+      "sha256": "3054bc8c05a1d1df4bf7e79ec6abbeb51310d70046cf7ae209fe88cc14a27e72",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-bounded-loader-r23-pair-receipt-20261023T052000Z-r1/result.json",
+      "source": "outputs/rea/linux73-bounded-loader-r23-pair-receipt-20261023T052000Z-r1/result.json",
+      "bytes": 62098,
+      "sha256": "c5c40c2fb72ea70627ea4070d53ea1db33cceab12cb1ba97fb062e48144f3864",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r22-r23-module-delta-20261023T052500Z-r1/result.json",
+      "source": "outputs/rea/linux73-r22-r23-module-delta-20261023T052500Z-r1/result.json",
+      "bytes": 2282,
+      "sha256": "eb332101fbc97a64692a96ab4f49ff504e9221f2a3373e38d76359873eec0eb1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-comments-20261023T050000Z-r1/artifact-hashes.json",
+      "source": "outputs/rea/linux73-r23-comments-20261023T050000Z-r1/artifact-hashes.json",
+      "bytes": 436,
+      "sha256": "e478de28dc2f95ca30d00824260faf294aff398d258f2c4162e0650f6966f5d4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-comments-20261023T050000Z-r1/comments.json",
+      "source": "outputs/rea/linux73-r23-comments-20261023T050000Z-r1/comments.json",
+      "bytes": 3690198,
+      "sha256": "5c69d94231420ae77dc3647bb958b172bb5ffb46999570270790d493aa4736d8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-comments-20261023T050000Z-r1/COMMENTS.md",
+      "source": "outputs/rea/linux73-r23-comments-20261023T050000Z-r1/COMMENTS.md",
+      "bytes": 1995761,
+      "sha256": "f9a4b91ecc5e093d3f1a4b17e4480a6c98d6e7a6548a8d4f38b41b47854edb52",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-comments-20261023T050000Z-r1/comments.raw.bin",
+      "source": "outputs/rea/linux73-r23-comments-20261023T050000Z-r1/comments.raw.bin",
+      "bytes": 724512,
+      "sha256": "94d142b96e4e6c9146ebaf558eb604088e06f527cb79637ac758b07f94fdd050",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-comments-20261023T050000Z-r1/index.html",
+      "source": "outputs/rea/linux73-r23-comments-20261023T050000Z-r1/index.html",
+      "bytes": 2231892,
+      "sha256": "9e05f41684ee53d8e67baceed45fa3225bc86ac5310997467107c0215f710a6c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-comments-20261023T050000Z-r1/manifest.json",
+      "source": "outputs/rea/linux73-r23-comments-20261023T050000Z-r1/manifest.json",
+      "bytes": 42092,
+      "sha256": "d78a753da968b2103f84feadf779feaab8f88e9a2d71fce5d9d2e25bb9754173",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-carrier-writer-admission-proposal-20261023T050300Z-r1/carrier-writer-contract.json",
+      "source": "outputs/rea/linux73-r23-carrier-writer-admission-proposal-20261023T050300Z-r1/carrier-writer-contract.json",
+      "bytes": 13491,
+      "sha256": "54d19c06149176249603764dc7870f25d1f6bbd91fc57dc33d398c3b2f26bd15",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-carrier-writer-admission-proposal-20261023T050300Z-r1/CARRIER_WRITER_ADMISSION.md",
+      "source": "outputs/rea/linux73-r23-carrier-writer-admission-proposal-20261023T050300Z-r1/CARRIER_WRITER_ADMISSION.md",
+      "bytes": 2358,
+      "sha256": "f0b9d3f3fdc6faa5082005834bac3990457d3ceee1823326e1314d7a33c33f2d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-carrier-writer-admission-proposal-20261023T050300Z-r1/result.json",
+      "source": "outputs/rea/linux73-r23-carrier-writer-admission-proposal-20261023T050300Z-r1/result.json",
+      "bytes": 3064,
+      "sha256": "29b4246b1f549f9461e52e5a04f50820eccf703a9302a44a34e9005cfada6583",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/cac.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/cac.pseudocode.c",
+      "bytes": 3314,
+      "sha256": "b73aca60b3f81c9c6e8df98e1b52e7ac31f85207fc5ff43ad49c116de5aa7dae",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/field_write.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/field_write.pseudocode.c",
+      "bytes": 1291,
+      "sha256": "2bc71bd00b2bf626d443da86d622c29f4ab8ca4bf0c289e7838193649f8526fd",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/HANDOFF.md",
+      "source": "outputs/rea/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/HANDOFF.md",
+      "bytes": 3247,
+      "sha256": "ad7bb85391094c0eaad8b024bfcf56375b7acefb1160447f2e30b7db922afb16",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/input-pins.json",
+      "source": "outputs/rea/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/input-pins.json",
+      "bytes": 3761,
+      "sha256": "906fead266c52e2754007aec9e379617b2062f6db12c3442ce7fc9f7becede06",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/ioctl-main-table.json",
+      "source": "outputs/rea/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/ioctl-main-table.json",
+      "bytes": 3629,
+      "sha256": "45b317071eddbb0e926f5bb34e3370408fe5ea55544d85f1be19cd4f7af5aa3e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/locked_field_write.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/locked_field_write.pseudocode.c",
+      "bytes": 273,
+      "sha256": "31a0e6c9386c7291da07973e1caff089a0808934f8d2cd9481843c62ce44a93c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/result.json",
+      "source": "outputs/rea/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/result.json",
+      "bytes": 6225,
+      "sha256": "83c7b746a3cf443002b7950bb7dab60353ff7a693c51862e889a5895325d0020",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/tx_control.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-exactframe-provider-audit-20261023T002500Z-r1/tx_control.pseudocode.c",
+      "bytes": 802,
+      "sha256": "428561ef1ec584d980300dd93e56af8012e7cd8ae584119558e32c4497207350",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

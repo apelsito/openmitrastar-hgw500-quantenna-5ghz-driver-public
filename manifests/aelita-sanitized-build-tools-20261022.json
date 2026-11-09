@@ -1,0 +1,23 @@
+{
+  "status": "PASS_NEW_AELITA_NO_DTBS_BUILD_WRAPPER_ACTUAL_SOURCE_PLAN_CONTROLS_SEALED",
+  "hardware_accessed": false,
+  "files": {
+    "tools/linux73_build_aelita.py": "6eb8199d80b6ccb1aa4486194d302b5646b2ddf5c43bfdc658c55c3a5a2d56a4",
+    "tools/linux73_build_aelita_verified.py": "4ea2938109d120158e7597487c95415ea8431a8ccc648a55c192adbe8b43b133",
+    "scripts/aelita_rebuild.sh": "7dbefddad3596ea5ff720a40157aba5b8d35fd929dd09091cc54921be29c7238",
+    "docs/AELITA_SANITIZED_KERNEL_BUILD_20261022.md": "689256996a5d18533149eecc93cf95bf09a0f24dcaf164a91240c18546cb69e0",
+    "docs/AELITA_END_TO_END_SANITIZED_20261022.md": "cd27c6b795bb03dd961e7f9a8eb65458f87698b8b5788b2dea040bf7ae99589d",
+    "evidence/linux73-aelita-builder-plan-20261022T234200Z-r1/result.json": "22c5edeb98959b6e124135a5956433badce698b6b0394784f15484fefe4dde0e",
+    "evidence/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/result.json": "d3fc3376b9062299817cb64f67686926a509740ec1bd241334fd135eb682677c",
+    "evidence/aelita-active-r3-input-verification-20261022T234500Z-r1/result.json": "59d807134e2ef42ba6fcba1ffa0ec29231294cce31024325e545daf5e43007b2"
+  },
+  "predecessor_current_ipv6_sha256": "909ff66923e4b75619c493d3d89b3a4a05b515d4e8a95abf89991256f1b12dfc",
+  "active_build_input_regular_files_verified": 95986,
+  "fullbuild": "Separate running rebuild_path48194, no result claimed",
+  "tests": [
+    "actualplan22cases",
+    "complete95986sourcewrapper3cases",
+    "bashsyntax"
+  ],
+  "new_sources_frozen": true
+}

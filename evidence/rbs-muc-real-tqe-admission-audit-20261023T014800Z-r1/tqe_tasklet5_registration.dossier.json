@@ -1,0 +1,64 @@
+{
+  "source_directory": "outputs\\rea\\rbs-muc-tqe-ingress-registration-20261023T013900Z-r1",
+  "procedure": {
+    "address": "0x15696c",
+    "name": "FUN_ram_0015696c",
+    "classification": {
+      "external": false,
+      "thunk": false,
+      "thunk_target": null,
+      "provenance": "ghidra-function-manager"
+    },
+    "body": {
+      "available": true,
+      "provenance": "ghidra-function-body-address-set",
+      "ranges": [
+        {
+          "start": "0x15696c",
+          "end": "0x156a35"
+        }
+      ],
+      "total_bytes": 202,
+      "span_bytes": 202,
+      "non_contiguous": false,
+      "contains_entry": true
+    },
+    "signature": "undefined FUN_ram_0015696c()",
+    "locals": [
+      {
+        "description": "undefined4 local_4 @ Stack[-0x4]:4",
+        "provenance": "ghidra-function-database"
+      }
+    ]
+  },
+  "callees": [
+    {
+      "address": "0xe83ec",
+      "name": "FUN_ram_000e83ec"
+    },
+    {
+      "address": "0x15659c",
+      "name": "FUN_ram_0015659c"
+    },
+    {
+      "address": "0x15692c",
+      "name": "FUN_ram_0015692c"
+    }
+  ],
+  "callers": [
+    {
+      "address": "0x156ca8",
+      "name": "FUN_ram_00156ca8"
+    }
+  ],
+  "limitations": [
+    "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+    "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+    "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+    "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+  ],
+  "pseudocode_sha256": "1b9cc32474813515dc703a3dd7bbd29b0d87b42d9419917a836c6bd45e648130",
+  "rea_sha256": "f8c76b1d3dcc9465e1f6eab074df9e21ec2a3d5b98f3a9a1cd6218c244dec9e8",
+  "started_utc": "2026-10-22T22:37:31.230108+00:00",
+  "finished_utc": "2026-10-22T22:38:56.724954+00:00"
+}

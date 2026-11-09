@@ -1,0 +1,20 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-full44-72c-compile-receipt-20261023T002500Z-r18/modpost-boundary.log",
+      "source": "outputs/rea/linux73-full44-72c-compile-receipt-20261023T002500Z-r18/modpost-boundary.log",
+      "bytes": 7386,
+      "sha256": "d180a21eaaef21591c084a055ddd4037deeda9997fabf1eaa000cb129d14a618",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-full44-72c-compile-receipt-20261023T002500Z-r18/result.json",
+      "source": "outputs/rea/linux73-full44-72c-compile-receipt-20261023T002500Z-r18/result.json",
+      "bytes": 19414,
+      "sha256": "d820502f9801aa165bfc5558412cae19503af421d79cf3ca81953dd8d90e71e7",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "hardware_accessed": false
+}

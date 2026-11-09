@@ -1,0 +1,50 @@
+{
+  "schema": "openmitrastar.seven-getter-module-pair-qualification/v1",
+  "status": "PASS_OFFLINE_COMPLETE_SEVEN_ENTRY_PAIR",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "remaining_oem_table_gaps": 37,
+  "modules": [
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/a/qdrv/qdrv.ko",
+      "bytes": 684108,
+      "sha256": "dd8f29a1dccb9a01236eb4577f8909088eb544eac872593d4696bf1585cfad06"
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/a/wlan/wlan.ko",
+      "bytes": 629496,
+      "sha256": "461c23d2d29833216bb3e7b10afba51531b33cae73e7d0ed6c929482e1faec92"
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/b/qdrv/qdrv.ko",
+      "bytes": 684108,
+      "sha256": "dd8f29a1dccb9a01236eb4577f8909088eb544eac872593d4696bf1585cfad06"
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/b/wlan/wlan.ko",
+      "bytes": 629496,
+      "sha256": "461c23d2d29833216bb3e7b10afba51531b33cae73e7d0ed6c929482e1faec92"
+    }
+  ],
+  "reproducible": true,
+  "total_recovered_entries": 7,
+  "input_pins_verified": 2208,
+  "actual_getter_and_forward_fixture_checks": 327681,
+  "arc_field_witness": {
+    "cca_fix_disable": 20743,
+    "auto_cca_enable": 20744,
+    "ic_getparam": 20924,
+    "sizeof_ieee80211com": 22644
+  },
+  "fixture_evidence_sha256": "91ebb9baf08af32010e60f689ae867573166e09c72349ca9450ff8a5d5f0a628",
+  "limits": "Seven-entry module pair complete; changed getters checked by separate actual source fixture/ARC ABI evidence; remaining37OEM entries unresolved, queue arbitration and physical acceptance unproved."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "SOURCE_ONLY_OEM_RBSDFS_CORE_AND_EXACT_FRAME_ADAPTER_PROVIDER_BOUNDARY",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "source_replacement": false,
+  "qualified_ops_added": 0,
+  "files": {
+    "openmitrastar_rbsdfs_recovered.h": "d0671a3f71149a58a9628b8919fd98334b1783f4a8d566a4949ceb090359c57d",
+    "openmitrastar_rbsdfs_recovered.c": "8cc8c6673fe388f88c02971a3f362e8ae9ade5431f311fb2d0803f47e0f738c9"
+  },
+  "evidence_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\prepare_hgw5g_rbsdfs_recovered_core.py": "4ff820bcf22c70a9de0b17cb1441300403853256df2621123c69c893cbe774fc",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\rbsdfs466-measurement-rea-20261022T231000Z-r1\\rea.json": "1b2886ec288501eb91da3fdaec8fdb73b1a6ef97d9096cf43a6d828be261518e",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\rbsdfs466468-radar-rea-20261022T231100Z-r1\\rea.json": "e18a57ca4c125b090351ac2cbab8eb09914d21c4725f530f23634bed892dac40",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\rbsdfs468-expiry-rea-20261022T231600Z-r2\\rea.json": "c0a8ba7449c0ac10096683c1f4e217bbcc86ed96635e14c81495063d5816c93c",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-wlan-case-map-20261022T132100Z-r1\\466-rbs_dfs_msr_cac-set.objdump.txt": "229dbd42772ff3f28092b305b7d80c46799d617dcc352fb385b51357454f560a",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-wlan-case-map-20261022T132100Z-r1\\468-rbs_dfs_end_tx-set.objdump.txt": "63fbbf2a732b917b0d8c141685ef2435da34b001b18d59029d9b8674e517fef5"
+  },
+  "ops_contracts": {
+    "466": "U32!=0 stored u8, getteru8, noSTArole/EUvalidation",
+    "468": "U32 range1..1000,default500, getteru32"
+  },
+  "limits": [
+    "OEMenableTXcallback is represented faithfully; no live hostlink/TXprovider bound.",
+    "Exact-frameadapter refuses unavailableprovider; neither Linuxmodulepointerlifetime norphysicalframegrants proven.",
+    "OEMreportframe gate was recovered separately from missingfullQHOPpacketconsumers anddata-path metadata.",
+    "NoSTAstrictalias,CACcompletion,radarclear,regulatoryorphysicalchange."
+  ]
+}

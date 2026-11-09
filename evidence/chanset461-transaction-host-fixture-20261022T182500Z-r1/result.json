@@ -1,0 +1,12 @@
+{
+  "status": "PASS_HOST_CALLER_OWNED461_SCAN_TRANSACTION_SOURCE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "inputs_unchanged": true,
+  "plan_cases": 24,
+  "table_max_records": 98,
+  "busy_overflow_and_invalid_refusal_atomic": true,
+  "actual_scan_flags_order": true,
+  "sample_target_exact": true,
+  "limits": "Caller-owned serialization and memory; no kernel callback/quiesce/registration/real scan"
+}

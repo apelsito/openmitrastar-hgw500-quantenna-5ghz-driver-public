@@ -1,0 +1,17 @@
+make: Entering directory '/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-source'
+make[1]: Entering directory '/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/abi-witness'
+  CC [M]  abi_probe.o
+make[1]: Leaving directory '/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/abi-witness'
+make: Leaving directory '/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-source'
+In file included from /workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:31,
+                 from /home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/driver/source/qdrv/compat/include/openmitrastar_qdrv_compat.h:7,
+                 from abi_probe.c:1:
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/common_mem.h:239:46: warning: no previous prototype for 'bus_to_virt' [-Wmissing-prototypes]
+  239 |                 RUBY_WEAK(bus_to_virt) void* bus_to_virt(unsigned long addr)
+      |                                              ^~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:305:57: warning: no previous prototype for 'muc_to_nocache' [-Wmissing-prototypes]
+  305 |                         RUBY_WEAK(muc_to_nocache) void* muc_to_nocache(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:317:57: warning: no previous prototype for 'nocache_to_muc' [-Wmissing-prototypes]
+  317 |                         RUBY_WEAK(nocache_to_muc) void* nocache_to_muc(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~

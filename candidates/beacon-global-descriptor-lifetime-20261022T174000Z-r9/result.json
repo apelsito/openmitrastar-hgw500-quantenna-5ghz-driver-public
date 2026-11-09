@@ -1,0 +1,32 @@
+{
+  "schema": "openmitrastar.beacon-descriptor-lifetime/v1",
+  "status": "SOURCE_ONLY_GLOBAL_BEACON_BUDGET_PENDING_FULL_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent_manifest_sha256": "6fff232c11a9bdd519ea469d94329dbea9f9d8b7f627d4940c409846b8447f9e",
+  "changed_sources": {
+    "headers\\net80211\\ieee80211_beacon_desc.h": "c2a6a94196acf9fa32c934e2ce77e9e6a9485a8fbcc890537e1cc14b74310fe1",
+    "source\\wlan\\ieee80211_beacon_desc.c": "198a92120083cc3c5645c71dcebc9cc285bf8fbe0474cb347f669897bad744c1",
+    "source\\wlan\\ieee80211_beacon.c": "b39205329a8a02169d7cec215e9582dc2967287833972f77337ec9baa151367b",
+    "source\\qdrv\\qdrv_wlan.c": "bd89f8b4fe774b43c747f91fe907f684a398ba85a191ca0cde38f4c4e4d8f739"
+  },
+  "original_comment_occurrences_preserved": {
+    "headers\\net80211\\ieee80211_beacon_desc.h": 4,
+    "source\\wlan\\ieee80211_beacon_desc.c": 28,
+    "source\\wlan\\ieee80211_beacon.c": 64,
+    "source\\qdrv\\qdrv_wlan.c": 291
+  },
+  "fixed_arena_bytes": 1000,
+  "descriptor_wire_bytes": 20,
+  "reserved_dynamic_slots": 2,
+  "static_source_call_upper_bound": 32,
+  "total_descriptor_upper_bound": 34,
+  "dynamic_behavior": "CCA/APP slot reused; removal unlinks only reserved descriptor; payload extent uses current lengths/tailroom",
+  "publication_failure": "Construction errors cleaned up by QDRV before vnet_send_ioctl_owned",
+  "constraints": [
+    "Host param append requires complete QDRV/WLAN/header-user rebuild.",
+    "Preserved disabled legacy code is provenance, not a second compiled implementation.",
+    "Wire descriptor and fixed1000B arena unchanged; actualARC layout unproved until compiler is available.",
+    "Whole source function fixture and prepublication integration checks required; no physical/radio acceptance."
+  ]
+}

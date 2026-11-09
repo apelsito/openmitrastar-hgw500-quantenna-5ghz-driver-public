@@ -1,0 +1,9 @@
+{
+  "status": "PASS_OFFLINE_MAXBW_ALIAS_FIXTURE_ARC_UNIT",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "source_unchanged": true,
+  "cases": 65536,
+  "checks": 196608,
+  "limits": "Fullmodule/pair/policy-context qualification pending; no runtimeorRFmutation"
+}

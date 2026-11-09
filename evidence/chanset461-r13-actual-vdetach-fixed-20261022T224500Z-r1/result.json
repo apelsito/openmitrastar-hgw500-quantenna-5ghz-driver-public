@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ACTUAL_TASKLET_VDETACH_TASKLET_FIRST_JOIN_SCHEDULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 1,
+  "timer_pending_after_actual_vdetach": false,
+  "tasklet_joined": true,
+  "source_sha256": "5d2dcc8878be78849b964665bfb51ef75827be67eeea798c71ca5bc7a1f6d42f",
+  "fixture_sha256": "ce662079ac07b167d4a8aa480fad791ad3511012d0da5e13c0b29a8c6ebbcaca",
+  "limits": "Actual complete tasklet/vdetach C bodies, Windows synchronization fake. Hosttasklet argument uintptr_t substitution only. Scheduled rearm counterexample, no actual kernel scheduling orruntime."
+}

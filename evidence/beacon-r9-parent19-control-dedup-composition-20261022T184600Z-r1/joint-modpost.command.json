@@ -1,0 +1,16 @@
+[
+  "/workspace/OpenMitraStar-build/f363/f363-components-20260921T203041Z/kernel/scripts/mod/modpost",
+  "-e",
+  "-a",
+  "-i",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/retained-dependencies.symvers",
+  "-o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/Module.symvers",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/qdrv/qdrv.o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/wlan/wlan.o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/wlan_scan_ap/wlan_scan_ap.o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/wlan_scan_sta/wlan_scan_sta.o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/wlan_ccmp/wlan_ccmp.o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/wlan_tkip/wlan_tkip.o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/wlan_xauth/wlan_xauth.o"
+]

@@ -1,0 +1,63 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-carrier-writer-r24-pair-receipt-20261023T055500Z-r1/a-build.log",
+      "source": "outputs/rea/linux73-carrier-writer-r24-pair-receipt-20261023T055500Z-r1/a-build.log",
+      "bytes": 484118,
+      "sha256": "f4004fd89b7c79425cc7a2da4e5c6096f27d62bb73611ca0373c9e972d22915a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-carrier-writer-r24-pair-receipt-20261023T055500Z-r1/b-build.log",
+      "source": "outputs/rea/linux73-carrier-writer-r24-pair-receipt-20261023T055500Z-r1/b-build.log",
+      "bytes": 484118,
+      "sha256": "4026333297ed292de94db445cbaf9e4d1f09b5422eaf9b9e1bceef0478737cd4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-carrier-writer-r24-pair-receipt-20261023T055500Z-r1/result.json",
+      "source": "outputs/rea/linux73-carrier-writer-r24-pair-receipt-20261023T055500Z-r1/result.json",
+      "bytes": 62309,
+      "sha256": "c3172e07dc81692d99d241f42ab0a5c3e5519146547e74ca55860e49c7a738c9",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-r24-module-delta-20261023T055000Z-r1/result.json",
+      "source": "outputs/rea/linux73-r23-r24-module-delta-20261023T055000Z-r1/result.json",
+      "bytes": 1428,
+      "sha256": "415fc2bd723f69244bf01c32e23e4448a400cf01fd847cc59553fe7ce215ed73",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-actual-abi-witness-20261023T060000Z-r1/result.json",
+      "source": "outputs/rea/linux73-r24-actual-abi-witness-20261023T060000Z-r1/result.json",
+      "bytes": 825,
+      "sha256": "21e3272986a7abdb01adf9dd47900c745ad428cc5548671f68b7f94125799651",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-actual-abi-witness-20261023T060000Z-r1/abi_probe.c",
+      "source": "outputs/rea/linux73-r24-actual-abi-witness-20261023T060000Z-r1/abi_probe.c",
+      "bytes": 1332,
+      "sha256": "abaa1c1507a4551cc1809997b0909d0657af187f474020ac8aa78e42076bed83",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-actual-abi-witness-20261023T060000Z-r1/build.log",
+      "source": "outputs/rea/linux73-r24-actual-abi-witness-20261023T060000Z-r1/build.log",
+      "bytes": 1773,
+      "sha256": "51fa3d7dde1c167f5afcb20efcd9c20a7fedbffd3c004c62b8ec140746bbb652",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-external-kconfig-qualification-20261023T060500Z-r1/result.json",
+      "source": "outputs/rea/linux73-r24-external-kconfig-qualification-20261023T060500Z-r1/result.json",
+      "bytes": 643,
+      "sha256": "fc821714a9f41e670e5179a457af610ce19f028c73c243ce83ecdb45d6a227c1",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

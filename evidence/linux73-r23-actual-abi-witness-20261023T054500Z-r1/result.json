@@ -1,0 +1,21 @@
+{
+  "status": "PASS_REAL_ARC_R23_ABI_UNCHANGED_DMA20_SKB208_NETDEV1408",
+  "ABI": {
+    "om_abi_dma_desc_size": 20,
+    "om_abi_ndev_priv": 1408,
+    "om_abi_ndev_qtn_flags": 1356,
+    "om_abi_ndev_size": 1408,
+    "om_abi_ndevstats_size": 112,
+    "om_abi_qtn_cb_size": 12,
+    "om_abi_skb_orig_dev": 108,
+    "om_abi_skb_qtn_cb": 96,
+    "om_abi_skb_recycle": 112,
+    "om_abi_skb_size": 208
+  },
+  "object_sha256": "e8ad11512a921b5bce0fad3bd2e546f532a9469bf6fba00df1b1a9bc1e4f6b69",
+  "kernel_config_sha256": "e709aba8ed2b55f3e6debe1480bbea2f1320c4bcd9dc3e9832c185b8e72e8efe",
+  "kernel_symvers_sha256": "b3bdc2fecfad7321cd5d03454ea47d2341ef43ffc5e3f091de4c78c0d2726950",
+  "r23_pair_sha256": "c5c40c2fb72ea70627ea4070d53ea1db33cceab12cb1ba97fb062e48144f3864",
+  "hardware_accessed": false,
+  "firmware_eligible": false
+}

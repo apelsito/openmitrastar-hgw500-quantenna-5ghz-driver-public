@@ -1,0 +1,80 @@
+{
+  "schema": "openmitrastar.beacon-r9-offline-delivery/v1",
+  "status": "PASS_OFFLINE_CONTROLLED_LIFETIME7MODULE_ABI_AND_NEGATIVE_CHECKS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "compiled_c_units": {
+    "candidate_two_waves": 116,
+    "same_header_parent19_control": 58
+  },
+  "reproducible_7_module_candidates": true,
+  "all_old_ic_nonbitfield_members_checked": 374,
+  "old_bo_members_checked": 17,
+  "old_param_members_checked": 5,
+  "wire_sizes_unchanged": {
+    "beacon_descriptor": 20,
+    "arena": 1000,
+    "host_ioctl": 32,
+    "setparams": 76,
+    "beacon_args": 64
+  },
+  "host_sizes_changed": {
+    "ic": [
+      22644,
+      22652
+    ],
+    "bo": [
+      64,
+      68
+    ],
+    "param": [
+      1016,
+      1028
+    ],
+    "qdrv_wlan": [
+      30556,
+      30564
+    ],
+    "qdrv_vap": [
+      3540,
+      3544
+    ]
+  },
+  "qualifier_prepost_pins": 2342,
+  "negative_verifier_cases": 11,
+  "lifetime_source_fixture_cases": {
+    "plain": 10021,
+    "80211k": 10021
+  },
+  "lifetime_source_fixture_checks": 422268,
+  "limits": [
+    "R9bugfixscope compared against freshlycompiledsameheadercontrol; inherited19entrycapabilitysemantics NOTfullfeatures/clientacceptance.",
+    "FakeIEencoders/skb/DMA fixtures do not executeallIEencoders orfullQDRVfunction runtime.",
+    "R10unpublishedioctl2cleanupfix remainsnextcandidate;R11APPconcurrency separated.",
+    "Nohardware/RF/clienttraffic/soak/persistence/rollback/releaseacceptance."
+  ],
+  "evidence": [
+    "beacon-r9-parent19-control-source-20261022T183100Z-r1",
+    "beacon-r9-parent19-control-build-20261022T183200Z-r1",
+    "beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1",
+    "beacon-r9-dedup-joint-composition-20261022T163500Z-r2",
+    "beacon-r9-dedup-second-composition-20261022T164500Z-r1",
+    "beacon-r9-full-abi-witness-20261022T183400Z-r2",
+    "beacon-r9-source-qualification-20261022T174500Z-r1",
+    "beacon-r9-controlled-global-qualification-20261022T191600Z-r10",
+    "beacon-r9-verifier-negative-20261022T191800Z-r1"
+  ],
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\beacon-r9-parent19-control-source-20261022T183100Z-r1\\result.json": "447eced1b68cc9a5060936d6bcf88633eeb22b56bf5e1ace2144847c545ad735",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\beacon-r9-parent19-control-build-20261022T183200Z-r1\\result.json": "06dd3906d62c5e5d38ea5f96e07fabbfdaec1ac285ff3ab81083cfe4e4f2899e",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1\\result.json": "c2f3d4295d1184b0b1ac0bdc41d17f51f8dfff20c0eb68accb90f01da4370be8",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\beacon-r9-dedup-joint-composition-20261022T163500Z-r2\\result.json": "98f88523f5877b5dff9230669496e7588cce20bd6bd1f440a63f2e44308ca16b",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\beacon-r9-dedup-second-composition-20261022T164500Z-r1\\result.json": "69c6cac442f5099b081e1203706461bb8b476a7437c34f21b7c389e4f74204c9",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\beacon-r9-full-abi-witness-20261022T183400Z-r2\\result.json": "380793d8ed7c67d5084a5a8fa9a590c55383820ef84b2d847adb9e37d7eeb85a",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\beacon-r9-source-qualification-20261022T174500Z-r1\\result.json": "aed01f9e8f42d2fa8566f08079b288f696c4b4af61404d0ad6fdb3732bfa9fba",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\beacon-r9-controlled-global-qualification-20261022T191600Z-r10\\result.json": "61d8a5c028d7cc7a603349e1d045dc5e2699054666aaa9edca9b06be7940cfee",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\beacon-r9-verifier-negative-20261022T191800Z-r1\\result.json": "b02d65c9132990f1799b65a343ce5f7248f377311029c8c8da9d27642aae8bbe",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\qualify_beacon_r9_controlled_closure.py": "9792c05091ffe18e23f6b9fe5039ef733218cedb32724d7da78fb4ef4aa3a4fd",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\witness_beacon_r9_full_abi.py": "ade527a965850f6618eee0cddf544bffea5f5f462a8d171cb34f151fc9a2bf20"
+  }
+}

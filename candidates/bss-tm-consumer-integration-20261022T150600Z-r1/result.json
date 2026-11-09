@@ -1,0 +1,28 @@
+{
+  "status": "SOURCE_ONLY_BSS_TM_COPIED_IE_INTEGRATION_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent_wlan_sha256": "538da528ed69173af54bb5f7c8001e75254fadc883b6464e6674cff2d83e9cb2",
+  "changed_sources": {
+    "ieee80211_wireless.c": "c824381346ee08a1bb23746fedc0bcce84f43c8e3b44da9c991e931895b24b4f",
+    "ieee80211_beacon_desc.c": "9bab3263aebcb0a3a67aa816a56767d4185d5631107dd28cb38d9621c8599bb3",
+    "ieee80211_output.c": "348fb63c5df5955f817ead15e29b7da7bd1b13131e84e8fa75e26f047bf19e34"
+  },
+  "header_sha256": "598cc9be384e03f556c00e4bd5c21b4664a5fabf532341cb2771d2a0cde6fab1",
+  "helper_sha256": "e5d3f5501a1df98e36f2ef664c4a97f8f948e8274342965b45580209be74df10",
+  "total_original_table_entries_added": 17,
+  "actual_functional_entries_recovered": 15,
+  "faithful_unsupported_entries": 2,
+  "remaining_original_table_gaps": 27,
+  "callers": [
+    "beacon_appIE_descriptor",
+    "probe_response_appIE",
+    "association_response_appIE"
+  ],
+  "explicit_behavior_delta": "ShortTLVbounds; associationresponse usesitsactualcopiedlength (OEMusedproberesponselength)",
+  "gates": [
+    "CompleteallWLANandQDRVheader-userrebuild withoverlayheadersfirst",
+    "ARCexistingprefixABIoffsets unchanged,sizeextensionpermitted",
+    "Fullmodules/tests; no80211vactionhandler/clientacceptanceclaim"
+  ]
+}

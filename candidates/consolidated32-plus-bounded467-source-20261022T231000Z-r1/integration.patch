@@ -1,0 +1,93 @@
+--- a/headers/net80211/ieee80211_var.h
++++ b/headers/net80211/ieee80211_var.h
+@@ -2053,7 +2053,7 @@
+ void ieee80211_eap_output(struct net_device *dev, const void *eap_msg, int eap_msg_len);
+ int ieee80211_blacklist_check(struct ieee80211_node *ni);
+ int ieee80211_pwr_adjust(struct ieee80211vap *vap, int rxgain_state);
+-void ieee80211_pm_queue_work(struct ieee80211com *ic);
++void ieee80211_pm_queue_work(struct ieee80211com *ic); int om_ieee80211_dfs_channel_available(struct ieee80211com *ic);
+ void om_ieee80211_pm_queue_node_join(struct ieee80211com *ic);
+ void om_ieee80211_coc_quiesce(struct ieee80211com *ic);
+ void ieee80211_beacon_interval_set(struct ieee80211com *ic, int value);
+--- a/source/wlan/ieee80211_scan.c
++++ b/source/wlan/ieee80211_scan.c
+@@ -2110,6 +2110,35 @@
+ }
+ EXPORT_SYMBOL(ieee80211_scan_pickchannel);
+ 
++/* OEM467: scanner-list refresh then pick0x130000, return1/-95.
++ * This bounded recovery admits initialized AP scanner in 5GHz modes only.
++ * OEM24GHz modes2/3/8/9 delegate to the separate chanset461 algorithm.
++ * Existing port metric/alternate paths remain; no alias to CAC-readybool.
++ * scan_start here is scanner policy/list construction, not RF scan_start. */
++int om_ieee80211_dfs_channel_available(struct ieee80211com *ic)
++{
++    struct ieee80211_scan_state *ss=READ_ONCE(ic->ic_scan);
++    const struct ieee80211_scanner *ops;
++    struct ieee80211vap *vap;
++    struct ieee80211_channel *picked;
++    int mode=READ_ONCE(ic->ic_phymode);
++    if(mode!=1&&mode!=7&&mode!=10&&(unsigned)(mode-11)>=4U)
++        return -EOPNOTSUPP;
++    if(!ss)return -EOPNOTSUPP;
++    ops=READ_ONCE(ss->ss_ops);
++    vap=READ_ONCE(ss->ss_vap);
++    if(!ops||!vap||!ss->ss_priv||vap->iv_opmode!=IEEE80211_M_HOSTAP)
++        return -EOPNOTSUPP;
++    /* Missing scannerstart originally left the oldlist inplace. Refuse that
++     * incomplete path so no success is returned from a stale partial list. */
++    if(!ops->scan_start||!ops->scan_pickchan)return -EOPNOTSUPP;
++    ops->scan_start(ss,vap);
++    if(!ss->ss_last||ss->ss_last>IEEE80211_SCAN_MAX)return -EOPNOTSUPP;
++    picked=ieee80211_scan_pickchannel(ic,0x130000);
++    return picked?1:-EOPNOTSUPP;
++}
++EXPORT_SYMBOL(om_ieee80211_dfs_channel_available);
++
+ int ieee80211_get_type_of_neighborhood(struct ieee80211com *ic)
+ {
+ 	if (ic->ic_neighbor_count < 0)
+--- a/source/wlan/ieee80211_scan_ap.c
++++ b/source/wlan/ieee80211_scan_ap.c
+@@ -717,6 +717,11 @@
+ 			&& ((ic_best_chan) && (ic_best_chan->ic_flags & IEEE80211_CHAN_DFS)))
+ 			continue;
+ 
++		/* Exact OEM467 selector flag13 admits DFS-only after channel validation.
++		 * It intentionally does not mean not-yet-CAC or available-only. */
++		if (flags == 0x130000 && !(ic_best_chan->ic_flags & IEEE80211_CHAN_DFS))
++			continue;
++
+ 		/* IEEE80211_SCAN_PICK_NOT_AVAILABLE_DFS_ONLY is set only during ICAC */
+ 		if (flags == IEEE80211_SCAN_PICK_NOT_AVAILABLE_DFS_ONLY) {
+ 			if ((ic_best_chan) && (ic->ic_dfs_chans_available_for_cac(ic, ic_best_chan) == false)){
+--- a/source/wlan/ieee80211_wireless.c
++++ b/source/wlan/ieee80211_wireless.c
+@@ -131,6 +131,7 @@
+ #define OM_OEM_PARAM_NAC_MODE 457
+ #define OM_OEM_PARAM_20_40_BSS_COEX 449
+ #define OM_OEM_PARAM_BW_AUTOSEL 461
++#define OM_OEM_PARAM_DFS_CHANNEL_AVAILABLE 467
+ #define OM_OEM_PARAM_COC_MOVE_NDFS 491
+ #define OM_OEM_PARAM_FIX_LEGACY_RATE 490
+ #define OM_OEM_PARAM_NEIGHBOR_REPORT 492
+@@ -14085,6 +14086,10 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_DFS_CHANNEL_AVAILABLE:
++		param[0]=om_ieee80211_dfs_channel_available(ic);
++		return 0;
++
+ 	case OM_OEM_PARAM_BW_AUTOSEL:
+ 		return om_chanset_kernel_policy(ic,&param[0],0);
+ 
+@@ -21128,6 +21133,8 @@
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1,0,"20_40_bss_coex" },
+ 	{OM_OEM_PARAM_BW_AUTOSEL,IW_PRIV_TYPE_INT|IW_PRIV_SIZE_FIXED|1,0,"set_bw_autosel"},
+ 	{OM_OEM_PARAM_BW_AUTOSEL,0,IW_PRIV_TYPE_INT|IW_PRIV_SIZE_FIXED|1,"get_bw_autosel"},
++	{ OM_OEM_PARAM_DFS_CHANNEL_AVAILABLE,0,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1,"dfs_chan_avail" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

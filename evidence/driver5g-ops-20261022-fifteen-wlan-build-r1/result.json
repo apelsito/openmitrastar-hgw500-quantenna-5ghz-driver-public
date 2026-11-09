@@ -1,0 +1,42 @@
+{
+  "schema": "openmitrastar.fifteen-entry-wlan-module/v1",
+  "status": "PASS_ALL_WLAN_UNITS_FIFTEEN_PENDING_DELTA_QUALIFICATION",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "modules": [
+    {
+      "lane": "a",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fifteen-wlan-build-r1/a/wlan/wlan.ko",
+      "bytes": 629896,
+      "sha256": "eac8c0633dc719d96850cb4cb95ff9cec42e2d3e217bda632089c7b2e922f946"
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fifteen-wlan-build-r1/b/wlan/wlan.ko",
+      "bytes": 629896,
+      "sha256": "eac8c0633dc719d96850cb4cb95ff9cec42e2d3e217bda632089c7b2e922f946"
+    }
+  ],
+  "candidate": "/workspace/user-home/Desktop/MitraStar/outputs/rea/check-cur-chan-candidate-20261022T145000Z-r1",
+  "qdrv_baseline_build": "/workspace/user-home/Desktop/MitraStar/outputs/rea/arc700-20261021-r2/f370-module-20261021T221200Z-r2",
+  "wlan_baseline_build": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-wlan-baseline-r2",
+  "qdrv_baseline_lineage": "F364_F365_BASELINE_WITHOUT_F370_OBSERVATION_COUNTERS",
+  "total_original_entries": 15,
+  "functional_ops_added": 13,
+  "faithful_unsupported": 2,
+  "remaining_oem_table_gaps": 29,
+  "nac_prototype_included": false,
+  "limits": "Complete source-built module pair linkage; whole-module delta qualification still required. No runtime, RF, traffic or release acceptance.",
+  "reproducible": true,
+  "protected_inputs_unchanged": true,
+  "all_source_units_compiled_per_lane": 19,
+  "qdrv_source_built_units_linked": 0,
+  "wlan_source_built_units_linked": 19,
+  "reused_qdrv_units_per_lane": 0,
+  "reused_wlan_units_per_lane": 0,
+  "private_qdrv_size_bytes": 30556,
+  "private_bool_offset": 30552
+}

@@ -1,0 +1,82 @@
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -126,6 +126,7 @@
+ #define OM_OEM_PARAM_CHECK_CURRENT_CHANNEL 464
+ #define OM_OEM_PARAM_DYNAMIC_SIFS 463
+ #define OM_OEM_PARAM_DUPLICATE_RTS 498
++#define OM_OEM_PARAM_TX_AMSDU_11N 484
+ #define OM_OEM_PARAM_DEVICE_MODE 451
+ #define OM_OEM_PARAM_IGNORE_ICAC_SELECTION 465
+ #define OM_OEM_PARAM_FT_OVER_DS 495
+@@ -11373,6 +11374,15 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_TX_AMSDU_11N:
++		/* ExactOEMchangedboolpath; fulloriginalvalue reachesMuCparam484. */
++		if (vap->iv_tx_amsdu_11n != !!value) {
++			vap->iv_tx_amsdu_11n = !!value;
++			ieee80211_param_to_qdrv(vap, param, value, NULL, 0);
++			ieee80211_wireless_reassoc(vap, 0, 1);
++		}
++		break;
++
+ 	case OM_OEM_PARAM_DUPLICATE_RTS:
+ 		ieee80211_param_to_qdrv(vap, param, value, NULL, 0);
+ 		break;
+@@ -13967,6 +13977,10 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_TX_AMSDU_11N:
++		param[0] = vap->iv_tx_amsdu_11n;
++		break;
++
+ 	case OM_OEM_PARAM_DUPLICATE_RTS:
+ 		ieee80211_param_from_qdrv(vap, param[0] & 0xffff, &param[0], NULL, 0);
+ 		break;
+@@ -20938,6 +20952,10 @@
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "set_dup_rts" },
+ 	{ OM_OEM_PARAM_DUPLICATE_RTS,
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_dup_rts" },
++	{ OM_OEM_PARAM_TX_AMSDU_11N,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "txamsdu_11n" },
++	{ OM_OEM_PARAM_TX_AMSDU_11N,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_txamsdu_11n" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {
+--- a/src/wlan/ieee80211.c
++++ b/src/wlan/ieee80211.c
+@@ -1311,6 +1311,7 @@
+ 	vap->iv_reliable_bcst = 1;
+ 	vap->iv_ap_fwd_lncb = 1;
+ 	vap->iv_tx_amsdu = 1;
++	vap->iv_tx_amsdu_11n = 1; /* exactOEM484VAPsetupdefault */
+ 	vap->iv_tx_max_amsdu = IEEE80211_VHTCAP_MAX_MPDU_11454;
+ 	vap->allow_tkip_for_vht = 0;
+ 	vap->is_block_all_assoc = 0;
+--- a/src/wlan/ieee80211_output.c
++++ b/src/wlan/ieee80211_output.c
+@@ -5123,7 +5123,9 @@
+ 						IEEE80211_A_BA_DELAYED : IEEE80211_A_BA_IMMEDIATE);
+ 				temp16 |= ((ba->tid) << IEEE80211_A_BA_TID_S);
+ 				temp16 |= ((ba->buff_size) << IEEE80211_A_BA_BUFF_SIZE_S);
+-				if (vap->iv_tx_amsdu)
++				if (vap->iv_tx_amsdu &&
++				    (((ni->ni_flags & (IEEE80211_NODE_HT | IEEE80211_NODE_VHT))
++				       != IEEE80211_NODE_HT) || vap->iv_tx_amsdu_11n))
+ 					temp16 |= IEEE80211_A_BA_AMSDU_SUPPORTED;
+ 
+ 				*(u_int8_t *)frm = temp16 & 0xFF;
+--- a/vendor/port-context/drivers/include/kernel/net80211/ieee80211_var.h
++++ b/vendor/port-context/drivers/include/kernel/net80211/ieee80211_var.h
+@@ -1678,6 +1678,8 @@
+ 	struct list_head	sample_sta_list;
+ 	struct bcast_pps_info	bcast_pps;
+ 	uint8_t			iv_11ac_and_11n_flag;	/* 1 - IEEE80211_AC_ONLY, 2 - IEEE80211_N_ONLY */
++	/* OEM484distinctVAP11n A-MSDUpolicy; noexistingmemberoffset changes. */
++	u8 iv_tx_amsdu_11n;
+ };
+ MALLOC_DECLARE(M_80211_VAP);
+ 

@@ -1,0 +1,84 @@
+{
+  "status": "PASS_OFFLINE_COMPLETE_FOURTEEN_ENTRY_PAIR",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "remaining_original_table_gaps": 30,
+  "functional_ops_added": 12,
+  "faithful_unsupported": 2,
+  "nac_prototype_included": false,
+  "modules": [
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fourteen-full-module-pair-r4/a/qdrv/qdrv.ko",
+      "bytes": 684756,
+      "sha256": "3e76821b3d6358682db6a109dc1f1dc33f6a440e36fcb13bf1711dc58c2ecf06"
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fourteen-full-module-pair-r4/a/wlan/wlan.ko",
+      "bytes": 629984,
+      "sha256": "46075f1fca1d4b07fac0841798a29bc5fab28c900b2bb9692e8f946d7098cb79"
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fourteen-full-module-pair-r4/b/qdrv/qdrv.ko",
+      "bytes": 684756,
+      "sha256": "3e76821b3d6358682db6a109dc1f1dc33f6a440e36fcb13bf1711dc58c2ecf06"
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fourteen-full-module-pair-r4/b/wlan/wlan.ko",
+      "bytes": 629984,
+      "sha256": "46075f1fca1d4b07fac0841798a29bc5fab28c900b2bb9692e8f946d7098cb79"
+    }
+  ],
+  "reproducible": true,
+  "input_pins_verified": 2220,
+  "private_prefix_abi_fixture_sha256": "d1708bb486603783fefe5f6e08c15f04ab771dd0c8d78bb72feb5d7804ad1a91",
+  "bbdf_bool_fixture_cases": 131072,
+  "limits": "14records=12functional+2faithfulunsupported; exact privateprefix/fixtures separate. MuC firmware behavior, TQE arbitration and physical gates remainUNRUN.",
+  "qualification_revision": 5,
+  "section_membership_and_attributes_verified": true,
+  "qualification_host": "Windows pure standard-library parser",
+  "current_host_accessible_input_pins_verified": 1502,
+  "current_linux_only_pins_unavailable": 718,
+  "linux_only_pins_previously_verified_in_r3": true,
+  "qualifier_sha256": "66192fa6be17a03b8faaedfae3ec33f4846448a8b13d3caf4a3829fbe7440e65",
+  "negative_test_cases": 7,
+  "negative_test_evidence": "outputs/rea/driver5g-ops-20261022-fourteen-full-fault-tests-host-r2/result.json",
+  "qualification_inputs_read_once_hashed_and_rechecked": true,
+  "modified_sources_bound_to_candidate_proof": true,
+  "fixtures_bound": {
+    "cca": {
+      "path": "outputs\\rea\\named-cca-getters-fixture-20261022T133600Z-r3\\result.json",
+      "sha256": "91ebb9baf08af32010e60f689ae867573166e09c72349ca9450ff8a5d5f0a628",
+      "status": "PASS_OFFLINE_ARC_ABI_AND_ACTUAL_GETTER_FIXTURE"
+    },
+    "devmode": {
+      "path": "outputs\\rea\\devmode-unsupported-fixture-20261022T141100Z-r1\\result.json",
+      "sha256": "87e20faf093c93c074d99dd35f743e4d9ea2d3b727de29f0882d335d5220f191",
+      "status": "PASS_OFFLINE_DEVMODE_STUB_FIXTURE_AND_ARC_UNIT"
+    },
+    "maxbw": {
+      "path": "outputs\\rea\\maxbw-aliases-fixture-20261022T143600Z-r1\\result.json",
+      "sha256": "ecb76b64d4c6adc91146da2705e7398eb0cce5a49cc62f8f96bcb5ec048d41ab",
+      "status": "PASS_OFFLINE_MAXBW_ALIAS_FIXTURE_ARC_UNIT"
+    },
+    "bbdf": {
+      "path": "outputs\\rea\\bbdf-recovery-fixture-20261022T144600Z-r1\\result.json",
+      "sha256": "d1708bb486603783fefe5f6e08c15f04ab771dd0c8d78bb72feb5d7804ad1a91",
+      "status": "PASS_OFFLINE_BBDF_PREFIX_ABI_ARC_UNITS_AND_FIXTURE"
+    },
+    "faults": {
+      "path": "outputs\\rea\\driver5g-ops-20261022-fourteen-full-fault-tests-host-r2\\result.json",
+      "sha256": "b8d0388e74a82a6251d9797e814db013585100f1a7005dd9eab806130784b665",
+      "status": "PASS_ACTUAL_MODULE_FAULT_CHECKS"
+    }
+  },
+  "qualification_input_pin_count": 17
+}

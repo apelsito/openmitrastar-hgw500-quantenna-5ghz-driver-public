@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ACTUAL_FULL_MULTICAST_CALLER_AND_ENUMERATION_TYPED_OWNERSHIP",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 259,
+  "caller_function_actual": true,
+  "OEM_enumerators_actual": 4,
+  "pre_ec_catalog_and_module_pin_order_asserted": true,
+  "max_fanout134_actual_inputEMAC0": true,
+  "timeoutallrefs_single_owner": true,
+  "fixture_sha256": "20506599c91eea224586b9310b87a5cd67c616760bb69f20735851f23492573e",
+  "limits": "FakeMMIO/HBMcache/IEmetadata only; no firmwarebus/recovery/physicalacceptance."
+}

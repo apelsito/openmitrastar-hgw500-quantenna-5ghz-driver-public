@@ -1,0 +1,432 @@
+{
+  "switch_tqe": {
+    "status": "PASS_GLOBAL_RESIDUAL_BOUNDED_PAIR_SCOPE",
+    "changed_source_bodies": [
+      {
+        "name": "tqe_push_mcast",
+        "old_value": 4748,
+        "new_value": 4956,
+        "old_bytes": 498,
+        "new_bytes": 468,
+        "section": ".text",
+        "old_sha256": "2924dc0af433212557d89c3486d23307aeb5a2609a849c0e5452ac95a06837e5",
+        "new_sha256": "e21fb0833eef0256de2967f3fc02fbec0ebd040e9f68452ac9e376457ce78065"
+      },
+      {
+        "name": "tqe_rx_napi_handler",
+        "old_value": 6624,
+        "new_value": 6804,
+        "old_bytes": 2170,
+        "new_bytes": 2084,
+        "section": ".text",
+        "old_sha256": "9155ffbdb79d832e5e1c478723a73bf515ae5e36a8a0c631e4af9106ed126cbd",
+        "new_sha256": "12237f5daa265d5a254c439abe63e48e4b7d539b0e985b90a3d34d13d585af6a"
+      },
+      {
+        "name": "tqe_module_exit",
+        "old_value": 0,
+        "new_value": 0,
+        "old_bytes": 326,
+        "new_bytes": 338,
+        "section": ".exit.text",
+        "old_sha256": "ff94a5508ebe84af829838d88b69684cfd75999def50a415a7cd9892f5d1954c",
+        "new_sha256": "35ceba1d52239bf07c9ca4cf703ed4dc5a3c9395e42e5ae2ac36d43d272f8bb7"
+      },
+      {
+        "name": "cleanup_module",
+        "old_value": 0,
+        "new_value": 0,
+        "old_bytes": 326,
+        "new_bytes": 338,
+        "section": ".exit.text",
+        "old_sha256": "ff94a5508ebe84af829838d88b69684cfd75999def50a415a7cd9892f5d1954c",
+        "new_sha256": "35ceba1d52239bf07c9ca4cf703ed4dc5a3c9395e42e5ae2ac36d43d272f8bb7"
+      },
+      {
+        "name": "tqe_tx",
+        "old_value": 3736,
+        "new_value": 3916,
+        "old_bytes": 694,
+        "new_bytes": 674,
+        "section": ".text",
+        "old_sha256": "2b79e5f6567f5fe60b9154d772d030677554ddb70ea06e89641e169885e7ffa5",
+        "new_sha256": "6eea90fc06715f10fd6a54ead98b91d8fe4bac4561ccf49f0a7c16aa982b119b"
+      },
+      {
+        "name": "topaz_tqe_xmit",
+        "old_value": 284,
+        "new_value": 1064,
+        "old_bytes": 222,
+        "new_bytes": 8,
+        "section": ".text",
+        "old_sha256": "adb73dc7b90a288aa86c1179ceeebdf5817899c02379e1c9a96a2904fc32e82b",
+        "new_sha256": "cd1a4a2967d9ade9e2e79243be675a22fda08e53c90e330034e4ed4d55f43db4"
+      },
+      {
+        "name": "topaz_tqe_congest_queue_process",
+        "old_value": 4432,
+        "new_value": 4592,
+        "old_bytes": 314,
+        "new_bytes": 364,
+        "section": ".text",
+        "old_sha256": "edb32eefedb06be3351e4de47389d101e6819ea6fe64a2be2ec5fa1f05fa1ff5",
+        "new_sha256": "5327fe7259f48d9f8dfda973be8285c422b78290ed3ca215a51901f26f560169"
+      },
+      {
+        "name": "tqe_rx_multicast",
+        "old_value": 5328,
+        "new_value": 5504,
+        "old_bytes": 1018,
+        "new_bytes": 1024,
+        "section": ".text",
+        "old_sha256": "9e1485d3b2607053d8ae9a837d005d4f980f157250dd329cad7b4e44ebbf6e21",
+        "new_sha256": "5a33e6532b6f2edeecec897e23d7b69472729e2c458677cbfd12b7c84adaaf82"
+      }
+    ],
+    "new_source_functions": [
+      "omtqe_lhost_reserve",
+      "omtqe_lhost_submit",
+      "omtqe_lhost_submit_reserved"
+    ],
+    "exact_other_changes": [],
+    "unchanged_function_bodies": [
+      "arch_local_irq_save",
+      "tqe_irq_enable",
+      "tqe_irq_disable",
+      "tqe_ndo_open",
+      "tqe_ndo_start_xmit",
+      "tqe_port_set",
+      "tqe_dbg_show",
+      "tqe_irqh",
+      "tqe_descs_free",
+      "w3_fwt_reset_grant_probe",
+      "tasklet_schedule",
+      "tqe_ndo_stop",
+      "tqe_rx_pkt_drop",
+      "topaz_tqe_vlan_gettid.constprop.0",
+      "tqe_dbg_set",
+      "tqe_module_init",
+      "tqe_register_ucastfwt_cbk",
+      "tqe_rx_call_port_handler",
+      "tqe_rx_l2_ext_filter",
+      "tqe_port_remove_handler",
+      "init_module",
+      "topaz_hbm_get_buf",
+      "tqe_rx_get_node_id",
+      "tqe_port_add_handler",
+      "tqe_rx_ether_type_skip_vlan",
+      "bus_to_virt",
+      "tqe_port_set_group",
+      "tqe_port_clear_group",
+      "tqe_port_unregister",
+      "wowlan_magic_packet_check",
+      "qtn_mproc_sync_spin_lock",
+      "muc_to_nocache",
+      "qtn_mproc_sync_spin_try_lock",
+      "topaz_hbm_put_buf",
+      "tqe_register_macfwt_cbk",
+      "tqe_reg_multicast_tx_stats",
+      "tqe_register_fwt_cbk",
+      "nocache_to_muc",
+      "tqe_port_register",
+      "switch_tqe_multi_proc_sem_up",
+      "tqe_register_mac_reserved_cbk",
+      "qtn_mproc_sync_spin_unlock",
+      "print_tqe_counters",
+      "switch_tqe_multi_proc_sem_down"
+    ],
+    "named_symbols_checked": 256,
+    "new_symbols_exact": [
+      "omcgq_bank_acquire",
+      "omcgq_bank_cancel",
+      "omcgq_bank_quarantine",
+      "omcgq_bank_quarantined",
+      "omcgq_bank_retain",
+      "omcgq_bank_retained",
+      "omcgq_bank_token_valid",
+      "omtqe_lhost_reserve",
+      "omtqe_lhost_submit",
+      "omtqe_lhost_submit_reserved"
+    ],
+    "residual_relocations_checked": 322,
+    "data_sections_checked": [
+      "",
+      "__ksymtab",
+      "__ksymtab_strings",
+      ".rodata.str1.4",
+      ".rodata",
+      ".modinfo",
+      "__param",
+      ".note.Linux",
+      ".data",
+      ".gnu.linkonce.this_module",
+      ".bss",
+      ".comment",
+      ".note.GNU-stack",
+      ".ARC.attributes"
+    ],
+    "unowned_padding": [
+      {
+        "section": ".text",
+        "old_unowned_bytes": 56,
+        "new_unowned_bytes": 52,
+        "old_padding_sha256": "4a8f2129a530f5f51cfa0a7ccf88219ae7981e00421445083d8f58e35102c164",
+        "new_padding_sha256": "c8c283338944d0d05fcd251a2ddf6be2fd403c3cea9bd741ac88177e84d203c9",
+        "padding_exact_declared_nop_count": true
+      },
+      {
+        "section": ".text.unlikely",
+        "old_unowned_bytes": 2,
+        "new_unowned_bytes": 2,
+        "old_padding_sha256": "ccf84481747c192349a30f8109c0a9bb223ace52c88de4e176315967424df8c2",
+        "new_padding_sha256": "ccf84481747c192349a30f8109c0a9bb223ace52c88de4e176315967424df8c2",
+        "padding_exact_declared_nop_count": true
+      },
+      {
+        "section": ".init.text",
+        "old_unowned_bytes": 2,
+        "new_unowned_bytes": 2,
+        "old_padding_sha256": "ccf84481747c192349a30f8109c0a9bb223ace52c88de4e176315967424df8c2",
+        "new_padding_sha256": "ccf84481747c192349a30f8109c0a9bb223ace52c88de4e176315967424df8c2",
+        "padding_exact_declared_nop_count": true
+      },
+      {
+        "section": ".exit.text",
+        "old_unowned_bytes": 2,
+        "new_unowned_bytes": 2,
+        "old_padding_sha256": "ccf84481747c192349a30f8109c0a9bb223ace52c88de4e176315967424df8c2",
+        "new_padding_sha256": "ccf84481747c192349a30f8109c0a9bb223ace52c88de4e176315967424df8c2",
+        "padding_exact_declared_nop_count": true
+      }
+    ],
+    "limits": "Changed/new function bodies pinned and source-fixture-qualified, not instruction equivalent."
+  },
+  "topaz_congest_queue": {
+    "status": "PASS_GLOBAL_RESIDUAL_BOUNDED_PAIR_SCOPE",
+    "changed_source_bodies": [
+      {
+        "name": "topaz_congest_queue_clear",
+        "old_value": 924,
+        "new_value": 1660,
+        "old_bytes": 70,
+        "new_bytes": 84,
+        "section": ".text",
+        "old_sha256": "d43f1b283d03101229aafacd5c6f56cce6eb39cd7549a78c140586a56b3c0321",
+        "new_sha256": "841cc96ea47c03c0f5484865b01ddd71f17d490db323edd8b15fa4be35648b3d"
+      },
+      {
+        "name": "topaz_congest_queue_exit",
+        "old_value": 732,
+        "new_value": 1452,
+        "old_bytes": 66,
+        "new_bytes": 82,
+        "section": ".text",
+        "old_sha256": "6fa2fd5ac91e48078b3bf093bf2b863fc4eb58c9d591396f48529eac93da3f7a",
+        "new_sha256": "e9ad3553a6658ef0e5c3aca3513b372b02d08c0a63f3261cefaa6d4fa1eb929f"
+      },
+      {
+        "name": "topaz_congest_queue_xmit",
+        "old_value": 292,
+        "new_value": 292,
+        "old_bytes": 224,
+        "new_bytes": 246,
+        "section": ".sram.text",
+        "old_sha256": "e67d426170d60e5a6fd6ce739d8f3c6af7b2bff145d9f462ab90bfc2d0f0cd06",
+        "new_sha256": "a947f54c9f694327dff1a92ad2d7a27534a487ccb5bd50fde4c4d9972547c197"
+      }
+    ],
+    "new_source_functions": [
+      "omcgq_bank_acquire",
+      "omcgq_bank_cancel",
+      "omcgq_bank_quarantine",
+      "omcgq_bank_quarantined",
+      "omcgq_bank_retain",
+      "omcgq_bank_retained",
+      "omcgq_bank_token_valid",
+      "omcgq_record_held",
+      "omcgq_token_matches"
+    ],
+    "exact_other_changes": [
+      {
+        "name": "topaz_congest_dequeue",
+        "normalization": [
+          [
+            74,
+            "BSS anchor field delta +12"
+          ],
+          [
+            82,
+            "BSS anchor field delta +12"
+          ]
+        ]
+      },
+      {
+        "name": "topaz_congest_enqueue",
+        "normalization": [
+          [
+            62,
+            "BSS anchor field delta +12"
+          ],
+          [
+            70,
+            "BSS anchor field delta +12"
+          ],
+          [
+            76,
+            "BSS anchor field delta +12"
+          ],
+          [
+            82,
+            "BSS anchor field delta +12"
+          ]
+        ]
+      },
+      {
+        "name": "topaz_congest_release_queue",
+        "normalization": [
+          [
+            26,
+            "branch +2 due diagnostic width"
+          ],
+          [
+            38,
+            "assert line220 to373"
+          ]
+        ]
+      },
+      {
+        "name": "reg_congest_queue_stats",
+        "normalization": [
+          [
+            8,
+            "BSS anchor field delta +12"
+          ],
+          [
+            10,
+            "BSS anchor field delta +12"
+          ]
+        ]
+      }
+    ],
+    "unchanged_function_bodies": [
+      "arch_local_irq_save",
+      "topaz_congest_queue_module_init",
+      "topaz_congest_queue_module_exit",
+      "cleanup_module",
+      "topaz_congest_set_unicast_queue_count",
+      "init_module",
+      "topaz_hbm_get_buf",
+      "topaz_hbm_congest_queue_put_buf",
+      "topaz_congest_alloc_queue",
+      "topaz_congest_dump",
+      "bus_to_virt",
+      "congest_tx_tasklet",
+      "topaz_congest_queue_init",
+      "qtn_mproc_sync_spin_lock",
+      "muc_to_nocache",
+      "qtn_mproc_sync_spin_try_lock",
+      "topaz_hbm_put_buf",
+      "nocache_to_muc",
+      "topaz_congest_alloc_unicast_queue",
+      "topaz_congest_queue_get",
+      "qtn_mproc_sync_spin_unlock",
+      "get_active_tid_num"
+    ],
+    "named_symbols_checked": 94,
+    "new_symbols_exact": [
+      "__kstrtab_omcgq_bank_acquire",
+      "__kstrtab_omcgq_bank_cancel",
+      "__kstrtab_omcgq_bank_quarantine",
+      "__kstrtab_omcgq_bank_quarantined",
+      "__kstrtab_omcgq_bank_retain",
+      "__kstrtab_omcgq_bank_retained",
+      "__kstrtab_omcgq_bank_token_valid",
+      "__kstrtabns_omcgq_bank_acquire",
+      "__kstrtabns_omcgq_bank_cancel",
+      "__kstrtabns_omcgq_bank_quarantine",
+      "__kstrtabns_omcgq_bank_quarantined",
+      "__kstrtabns_omcgq_bank_retain",
+      "__kstrtabns_omcgq_bank_retained",
+      "__kstrtabns_omcgq_bank_token_valid",
+      "__ksymtab_omcgq_bank_acquire",
+      "__ksymtab_omcgq_bank_cancel",
+      "__ksymtab_omcgq_bank_quarantine",
+      "__ksymtab_omcgq_bank_quarantined",
+      "__ksymtab_omcgq_bank_retain",
+      "__ksymtab_omcgq_bank_retained",
+      "__ksymtab_omcgq_bank_token_valid",
+      "memcmp",
+      "memcpy",
+      "module_put",
+      "omcgq_bank_acquire",
+      "omcgq_bank_cancel",
+      "omcgq_bank_quarantine",
+      "omcgq_bank_quarantined",
+      "omcgq_bank_retain",
+      "omcgq_bank_retained",
+      "omcgq_bank_token_valid",
+      "omcgq_generation",
+      "omcgq_held",
+      "omcgq_held_count",
+      "omcgq_owner",
+      "omcgq_quarantined",
+      "omcgq_record_held",
+      "omcgq_reserved",
+      "omcgq_retained",
+      "omcgq_token_matches",
+      "omcgq_unrecorded",
+      "try_module_get"
+    ],
+    "residual_relocations_checked": 138,
+    "data_sections_checked": [
+      "",
+      "__ksymtab",
+      "__ksymtab_strings",
+      ".rodata.str1.4",
+      ".rodata",
+      ".modinfo",
+      ".note.Linux",
+      ".data",
+      ".gnu.linkonce.this_module",
+      ".bss",
+      ".comment",
+      ".note.GNU-stack",
+      ".ARC.attributes"
+    ],
+    "unowned_padding": [
+      {
+        "section": ".text",
+        "old_unowned_bytes": 32,
+        "new_unowned_bytes": 34,
+        "old_padding_sha256": "35d569f118470d78a8ed4e431ef25a0864021f33f6eb03c73d96f4ecd44c6c07",
+        "new_padding_sha256": "4672863f9bf25549cae2c7a628a879d97af638886941566c45bb96eff262d50d",
+        "padding_exact_declared_nop_count": true
+      },
+      {
+        "section": ".sram.text",
+        "old_unowned_bytes": 2,
+        "new_unowned_bytes": 4,
+        "old_padding_sha256": "ccf84481747c192349a30f8109c0a9bb223ace52c88de4e176315967424df8c2",
+        "new_padding_sha256": "878d9f1cbce679ed80648c3afa5db94a076b1e499739ae05911744e62265bf54",
+        "padding_exact_declared_nop_count": true
+      },
+      {
+        "section": ".init.text",
+        "old_unowned_bytes": 0,
+        "new_unowned_bytes": 0,
+        "old_padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "new_padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "padding_exact_declared_nop_count": true
+      },
+      {
+        "section": ".exit.text",
+        "old_unowned_bytes": 2,
+        "new_unowned_bytes": 2,
+        "old_padding_sha256": "ccf84481747c192349a30f8109c0a9bb223ace52c88de4e176315967424df8c2",
+        "new_padding_sha256": "ccf84481747c192349a30f8109c0a9bb223ace52c88de4e176315967424df8c2",
+        "padding_exact_declared_nop_count": true
+      }
+    ],
+    "limits": "Changed/new function bodies pinned and source-fixture-qualified, not instruction equivalent."
+  }
+}

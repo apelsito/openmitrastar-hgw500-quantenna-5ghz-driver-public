@@ -1,0 +1,18 @@
+--- a/source/qdrv/qdrv_wlan.c
++++ b/source/qdrv/qdrv_wlan.c
+@@ -3736,6 +3736,7 @@
+ 					preflight_report.used, beacon_skb->len,
+ 					(u32)plat_kernel_addr_to_dma(NULL, vap->param->head),
+ 					(u32)args_dma);
++			vnet_free_ioctl(ioctl);
+ 			qdrv_hostlink_free_coherent(NULL, sizeof(*bc_args),
+ 				bc_args, args_dma);
+ 			ieee80211_beacon_destroy_param(vap);
+@@ -3757,6 +3758,7 @@
+ 		if (encode) {
+ 			pr_err("OMQDRVBC stage=v89-wire-fail rc=%d reason=%u index=%u\n",
+ 				encode, preflight_report.reason, preflight_report.index);
++			vnet_free_ioctl(ioctl);
+ 			qdrv_hostlink_free_coherent(NULL, sizeof(*bc_args),
+ 				bc_args, args_dma);
+ 			ieee80211_beacon_destroy_param(vap);

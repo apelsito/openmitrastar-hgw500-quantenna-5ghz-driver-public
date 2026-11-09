@@ -1,0 +1,300 @@
+{
+  "status": "PASS_OFFLINE_CONSOLIDATED32_SCANNER_RECORDS_PAIRED_MODULE_GLOBAL_CHECKPOINT",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "offline_original_records_reconstructed": 32,
+  "remaining_original_records": 12,
+  "private_table_records": 598,
+  "faithful_unsupported_inherited": 2,
+  "fullfunctional_driver_operations": null,
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/qdrv/qdrv.ko",
+      "bytes": 684944,
+      "sha256": "58fbed55bf18243c58a91fac08b9c3ec36548e8dcf2144e7544a7c6563f0cc73"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan/wlan.ko",
+      "bytes": 660708,
+      "sha256": "4c99e721af811b35495044680f9daabbac2cf2aabb4efebdb70eb49f9a4a081f"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15840,
+      "sha256": "7a804198c3eb8e454e3d3b2c090660e6b4ac47c6e67104c0f82381857f46f2f0"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9760,
+      "sha256": "1eb355a9b96b2ee2a75382565f6a628d62c583aa21600f9b922d038f657d96d5"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13440,
+      "sha256": "02f83895c1e3343ee3cc0b2162e37e9428c66de36fa0e2b8a5ddd834d20dbf5f"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "fresh_changed_source_compiles": 8,
+  "reused_exact_parent30_objects": 108,
+  "all_current_review_pins": 4520,
+  "whole_parent30_modules_exact": {
+    "qdrv": {
+      "status": "BYTE_IDENTICAL_WHOLE_PARENT30_MODULE",
+      "sha256": "58fbed55bf18243c58a91fac08b9c3ec36548e8dcf2144e7544a7c6563f0cc73"
+    },
+    "wlan_scan_sta": {
+      "status": "BYTE_IDENTICAL_WHOLE_PARENT30_MODULE",
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    "wlan_ccmp": {
+      "status": "BYTE_IDENTICAL_WHOLE_PARENT30_MODULE",
+      "sha256": "1eb355a9b96b2ee2a75382565f6a628d62c583aa21600f9b922d038f657d96d5"
+    },
+    "wlan_tkip": {
+      "status": "BYTE_IDENTICAL_WHOLE_PARENT30_MODULE",
+      "sha256": "02f83895c1e3343ee3cc0b2162e37e9428c66de36fa0e2b8a5ddd834d20dbf5f"
+    },
+    "wlan_xauth": {
+      "status": "BYTE_IDENTICAL_WHOLE_PARENT30_MODULE",
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  },
+  "complete_WLAN_AP_module_audits": {
+    "wlan": {
+      "status": "PASS_CONSOLIDATED32_COMPLETE_CODE_DATA_SYMBOL_RELA_SCOPE",
+      "component": "wlan",
+      "same_functions": 960,
+      "source_changed_functions": [
+        "__ieee80211_newstate.isra.0",
+        "_ieee80211_cancel_scan",
+        "ieee80211_ioctl_getparam",
+        "ieee80211_ioctl_setparam",
+        "ieee80211_scan_attach",
+        "ieee80211_scan_detach",
+        "ieee80211_scan_vdetach",
+        "ieee80211_start_scan",
+        "scan_next",
+        "scan_restart_pwrsav",
+        "send_probes"
+      ],
+      "source_new_functions": [
+        "change_channel.part.0",
+        "om_chanset_add_scan_type",
+        "om_chanset_cost",
+        "om_chanset_edges",
+        "om_chanset_end",
+        "om_chanset_find",
+        "om_chanset_kernel_active",
+        "om_chanset_kernel_allowed",
+        "om_chanset_kernel_cancel",
+        "om_chanset_kernel_finished",
+        "om_chanset_kernel_pick",
+        "om_chanset_kernel_policy",
+        "om_chanset_kernel_scan_type",
+        "om_chanset_kernel_start",
+        "om_chanset_normalize_sample",
+        "om_chanset_prepare",
+        "om_chanset_rank",
+        "om_chanset_rank_defaults",
+        "om_chanset_scan_advance",
+        "om_chanset_scan_request",
+        "om_chanset_scan_sample",
+        "om_chanset_select",
+        "om_chanset_template",
+        "om_chanset_update_scan_entry",
+        "om_cs_neighbor_record",
+        "om_cs_scale"
+      ],
+      "diagnostic_functions": [
+        "ieee80211_newstate",
+        "ieee80211_delete_wlanunit",
+        "ieee80211_ioctl_giwfreq",
+        "ieee80211_param_from_qdrv",
+        "ieee80211_should_scan"
+      ],
+      "residual_relocations": 9004,
+      "anonymous_gaps": [
+        {
+          "section": ".text",
+          "old_nop_bytes": 954,
+          "new_nop_bytes": 982,
+          "old_anonymous_bytes": 2810,
+          "anonymous_owner_exact": true
+        },
+        {
+          "section": ".text.unlikely",
+          "old_nop_bytes": 6,
+          "new_nop_bytes": 6,
+          "old_anonymous_bytes": 0,
+          "anonymous_owner_exact": true
+        },
+        {
+          "section": ".init.text",
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "old_anonymous_bytes": 0,
+          "anonymous_owner_exact": true
+        },
+        {
+          "section": ".exit.text",
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "old_anonymous_bytes": 2,
+          "anonymous_owner_exact": true
+        }
+      ],
+      "old_symbols": 2288,
+      "new_symbols": 2346,
+      "limits": "Changed/newsourcefunctionsfixturebound; nooriginaluniversalmetric/lifetime/RFproof."
+    },
+    "wlan_scan_ap": {
+      "status": "PASS_CONSOLIDATED32_COMPLETE_CODE_DATA_SYMBOL_RELA_SCOPE",
+      "component": "wlan_scan_ap",
+      "same_functions": 24,
+      "source_changed_functions": [
+        "ap_detach",
+        "ap_end",
+        "ap_pick_channel",
+        "unlock_ap_list.isra.0"
+      ],
+      "source_new_functions": [],
+      "diagnostic_functions": [],
+      "residual_relocations": 118,
+      "anonymous_gaps": [
+        {
+          "section": ".text",
+          "old_nop_bytes": 20,
+          "new_nop_bytes": 20,
+          "old_anonymous_bytes": 0,
+          "anonymous_owner_exact": true
+        },
+        {
+          "section": ".init.text",
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "old_anonymous_bytes": 2,
+          "anonymous_owner_exact": true
+        },
+        {
+          "section": ".exit.text",
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "old_anonymous_bytes": 2,
+          "anonymous_owner_exact": true
+        }
+      ],
+      "old_symbols": 107,
+      "new_symbols": 111,
+      "limits": "Changed/newsourcefunctionsfixturebound; nooriginaluniversalmetric/lifetime/RFproof."
+    }
+  },
+  "parsed_negative_cases": 11,
+  "private_scanner_ABI": {
+    "old_public_fields": 17,
+    "old_private_fields": 8,
+    "sizes": {
+      "old": 1188,
+      "new": 14784
+    },
+    "extensions": {
+      "om_chanset_lock": {
+        "offset": 1188,
+        "size": 0
+      },
+      "om_chanset_stopping": {
+        "offset": 1188,
+        "size": 1
+      },
+      "om_chanset_policy": {
+        "offset": 1189,
+        "size": 1
+      },
+      "om_chanset_owner": {
+        "offset": 1192,
+        "size": 4
+      },
+      "om_chanset": {
+        "offset": 1196,
+        "size": 7932
+      },
+      "om_observations": {
+        "offset": 9128,
+        "size": 4080
+      },
+      "om_channels": {
+        "offset": 13208,
+        "size": 1568
+      },
+      "om_scan_detaching": {
+        "offset": 14776,
+        "size": 1
+      },
+      "om_chanset_last_error": {
+        "offset": 14780,
+        "size": 4
+      }
+    }
+  },
+  "host_wire_ABI_unchanged": true,
+  "fixture_receipts": [
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-start-fixture-20261022T222700Z-r2/result.json",
+      "status": "PASS_ACTUAL_KERNEL_START_LEGACY_RESERVATION_GUARD"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-next-end-fixture-20261022T222700Z-r2/result.json",
+      "status": "PASS_ACTUAL_FULL_SCAN_NEXT_AP_END_FOREGROUND_SOURCE_FIXTURE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-critical-fixture-20261022T222700Z-r2/result.json",
+      "status": "PASS_ACTUAL_ADAPTER_REVIEW_FIXTURE_WITH_CALLBACK_COUNTEREXAMPLES"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-detach-fixture-20261022T223200Z-r2/result.json",
+      "status": "PASS_ACTUAL_TASKLET_VDETACH_TASKLET_FIRST_JOIN_SCHEDULE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-449-policy-20261022T222800Z-r2/result.json",
+      "status": "PASS_ACTUAL_COEX26_TIMER_SCAN_ASSOC_STA_OBSS_CONSUMER_FIXTURE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-coc-fixture-20261022T222800Z-r2/result.json",
+      "status": "PASS_ACTUAL_COC491_DEFERRED_WORK_CONSUMER_CALLBACK_QUEUE_HOST_REFERENCE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-app-fixture-20261022T222800Z-r2/result.json",
+      "status": "PASS_ACTUAL_APP_HELPER_LENGTH_ALLOCATION_BH_TRANSACTION_FIXTURE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-policy-fixture-20261022T224100Z-r2/result.json",
+      "status": "PASS_CONSOLIDATED32_ACTUAL_461_WEXT_SCANNER_POLICY_FIXTURE"
+    }
+  ],
+  "existing_449_491_492_493_source_paths_preserved": true,
+  "limits": [
+    "32privateRECORDS reconstructedwithsetters/gettersseparate, not32physical/fullfeatures.",
+    "461HT24APbranchonly;5GHzscannerexistingalgorithmretained, notallrank/scanset/OEMmetricsemanticsuniversalproof.",
+    "UP/PREEMPT_NONEvalidcallerRTNL/VAPserialization scope; externalarbitrarycallers/SMP/hardIRQ/realasyncMuClifetimeunqualified.",
+    "Sampled13wordsharedscanmetricsmaymixgenerations; nocoherenttupleproof.",
+    "Typed40states manuallyinstalledin7foregroundfixturecases; noautomatic40MHzscancoverageclaim.",
+    "Inherited449bounds/CoCvalidinit/NACsnapshot/492493advertisementdeviations/twoEOPNOTSUPPscope retained.",
+    "NoRFrealclientassociation/bidirectionaltrafficcoldbootpersistence/rollback/recovery/releaseacceptance."
+  ]
+}

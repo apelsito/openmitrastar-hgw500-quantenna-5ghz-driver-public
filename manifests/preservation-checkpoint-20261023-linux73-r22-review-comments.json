@@ -1,0 +1,91 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-r22-independent-dma-table-review-20261023T044700Z-r3/result.json",
+      "source": "outputs/rea/linux73-r22-independent-dma-table-review-20261023T044700Z-r3/result.json",
+      "bytes": 4931,
+      "sha256": "c08e720d508db3b0b71b7a3e0908b599ec335c2f55e3dd83ab064b726210ead7",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r22-comments-20261023T044000Z-r1/artifact-hashes.json",
+      "source": "outputs/rea/linux73-r22-comments-20261023T044000Z-r1/artifact-hashes.json",
+      "bytes": 436,
+      "sha256": "53e203d253916bbd0cda9fec9c6e8d5ffd6a7b3d96c04b812126c56a1876919f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r22-comments-20261023T044000Z-r1/comments.json",
+      "source": "outputs/rea/linux73-r22-comments-20261023T044000Z-r1/comments.json",
+      "bytes": 3688905,
+      "sha256": "ec3ddb564cc7ecd0a6208defc0a9c36bd0602fd7b6cd276482107bd7fa5ab1e5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r22-comments-20261023T044000Z-r1/COMMENTS.md",
+      "source": "outputs/rea/linux73-r22-comments-20261023T044000Z-r1/COMMENTS.md",
+      "bytes": 1994940,
+      "sha256": "c42c73db48d1914ecc553ca12f9b8b7b79fc670cc1ae42daf4bdfb431e924afd",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r22-comments-20261023T044000Z-r1/comments.raw.bin",
+      "source": "outputs/rea/linux73-r22-comments-20261023T044000Z-r1/comments.raw.bin",
+      "bytes": 724025,
+      "sha256": "34f80fa7acf1e6c8e7f4a82382a1ddaf303b2d35d8b90d845140c1d86e7df52a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r22-comments-20261023T044000Z-r1/index.html",
+      "source": "outputs/rea/linux73-r22-comments-20261023T044000Z-r1/index.html",
+      "bytes": 2231007,
+      "sha256": "98ca8e7be4830f68b6a76620f9b6dc695b3c4adaa0862cb102aa60f3c5d69a55",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r22-comments-20261023T044000Z-r1/manifest.json",
+      "source": "outputs/rea/linux73-r22-comments-20261023T044000Z-r1/manifest.json",
+      "bytes": 42091,
+      "sha256": "c19993feb5b6edc45ed8a4572d8280b58238dba054d94be62c2a735e1fc5e7c5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r22/prepare_linux73_sram_backend_adapter.py",
+      "source": "tools/prepare_linux73_sram_backend_adapter.py",
+      "bytes": 12727,
+      "sha256": "433c86e209b16a305320ed484a521b2326f155296892e43dd4c9317df61f5518",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r22/test_linux73_sram_backend_adapter.py",
+      "source": "tools/test_linux73_sram_backend_adapter.py",
+      "bytes": 9178,
+      "sha256": "71a837c899047ee501588c31f08b88dee30bc75cbaaef3a7856890dbba7837d9",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-sram-r1/prepare_linux73_sram_lifetime_adapter.py",
+      "source": "tools/prepare_linux73_sram_lifetime_adapter.py",
+      "bytes": 9226,
+      "sha256": "330cca018521c7520efbca309c97351ad1e67883475922e6b0c4c8c3d8c6b1f9",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-sram-r1/test_linux73_sram_lifetime.py",
+      "source": "tools/test_linux73_sram_lifetime.py",
+      "bytes": 5379,
+      "sha256": "04f102a8ac25174f8dfa1b6f7b8542019039160f5d05483d499ea324ce2f3a92",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-sram-r1/seal_linux73_sram_lifetime_ledger.py",
+      "source": "tools/seal_linux73_sram_lifetime_ledger.py",
+      "bytes": 7166,
+      "sha256": "79b90ee5bb239990f428dba0f8cf976c1ae1d0aef57e435380c9d3a6afad81e1",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

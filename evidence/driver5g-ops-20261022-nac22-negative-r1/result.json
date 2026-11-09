@@ -1,0 +1,43 @@
+{
+  "status": "PASS_SEVEN_NAC22_NEGATIVE_AUDIT_CASES",
+  "cases": 7,
+  "hardware_accessed": false,
+  "files_modified": false,
+  "rows": [
+    {
+      "case": "function",
+      "rejected": true,
+      "reason": "unrelatedfunction ieee80211_setmode"
+    },
+    {
+      "case": "padding",
+      "rejected": true,
+      "reason": "unrelatedfunction init_wlan"
+    },
+    {
+      "case": "data",
+      "rejected": true,
+      "reason": "allocateddata .data.once"
+    },
+    {
+      "case": "table",
+      "rejected": true,
+      "reason": ""
+    },
+    {
+      "case": "relocation",
+      "rejected": true,
+      "reason": "RELAresidual [(('object', 2229, 'fwt_db_get_macs_behind_node', '.text', 56), 27, ('printk', '', 0, 1, 0)), (('object', 2229, 'fwt_db_get_macs_behind_node', '.text', 56), 27, ('printk', '', 0, 1, 4))]"
+    },
+    {
+      "case": "symbol",
+      "rejected": true,
+      "reason": "unrelatedfunction ieee80211_setmode"
+    },
+    {
+      "case": "diagnostic",
+      "rejected": true,
+      "reason": "otherdiagnosticbytes ieee80211_param_from_qdrv"
+    }
+  ]
+}

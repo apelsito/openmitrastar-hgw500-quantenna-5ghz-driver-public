@@ -1,0 +1,6 @@
+{
+  "outputs\\rea\\driver5g-ops-20261022-twenty-full-qualification-r1\\result.json": "9e1465557d94e4ce2a64bd97a79f1450e9286b2d4fd2a8207ac9bfa40b910132",
+  "outputs\\rea\\driver5g-ops-20261022-twenty-full-qualification-r1\\qualification-input-pins.json": "41b075708a3d5f125cca04e3b5cbaeb5aa8a1972db9df4e56130f7b8022e80e7",
+  "outputs\\kernel-port\\quantenna-linux510-radiohw-inactivity-trace-f152-20260831\\module-manifest.tsv": "aeae6659a25137e9358f34f7eefc70e186ef3b884362a17923649b430fa5bc1b",
+  "tools\\qualify_hgw5g_twenty_typed_closure.py": "91105229b63c66d247e2323834942891c145d07dcc319942a4c51ad2309ed72f"
+}

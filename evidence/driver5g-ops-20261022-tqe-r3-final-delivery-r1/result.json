@@ -1,0 +1,50 @@
+{
+  "schema": "openmitrastar.tqe-r3-final-delivery/v1",
+  "status": "OFFLINE_FINITE_TYPED_BATCH_BUILD_AND_CALLER_SCOPE_PENDING_INDEPENDENT_SUPPLEMENT",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "ledger_capacity_not_enlarged": 256,
+  "actual_shared_owner_catalog_slot_reserved_pre_ec": true,
+  "first_admission_module_pins_pre_ec": true,
+  "guard_cases": [
+    "generationoverflow nofalsefree",
+    "excesscallback nopublication",
+    "incompletefinish quarantine",
+    "nestednormalwriter refusal",
+    "fullcatalogpreownership refusal"
+  ],
+  "actual_fixtures": {
+    "scalar_capacity_provider": 35212,
+    "typed_callback_provider": 142,
+    "actual_multicastcaller_andOEMenumeration": 259,
+    "normal4writer_source_body_fixture_withcompiledoutlegacy_caveat": 146
+  },
+  "new_pair_reproducible_x2": true,
+  "source": "typed-batch-source-r4",
+  "build": "typed-batch-build-r2",
+  "explicit_network_behavior_delta": "MulticastcongestionretryCN->failclosedquarantine; no packetthroughputacceptance. VLANdeniedneverforwarded, owner retainedinsteadHBMdrop.",
+  "physical_blockers": [
+    "Foreignprocessorbank0arbitrationunknown",
+    "HBMallocation/filterwholepathunboundedwaits",
+    "Noauto recovery/release/reset;reboot-onlypins",
+    "No RF/client traffic/persistence/rollback/releaseacceptance"
+  ],
+  "evidence": [
+    "driver5g-ops-20261022-tqe-r3-typed-batch-source-r4",
+    "driver5g-ops-20261022-tqe-r3-typed-batch-build-r2",
+    "driver5g-ops-20261022-tqe-r3-typed-batch-capacity-fixture-r3",
+    "driver5g-ops-20261022-tqe-r3-typed-publication-fixture-r6",
+    "driver5g-ops-20261022-tqe-r3-fullcaller-fixture-r1",
+    "driver5g-ops-20261022-tqe-r3-normal-writers-fixture-r3",
+    "driver5g-ops-20261022-tqe-r3-typed-batch-global-r11"
+  ],
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-source-r4\\result.json": "37ca77e8d673e20702b97f245d3f64457ada1fb04295faee3567a236e936a7e6",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-build-r2\\result.json": "bec577e25805d94e7405cccda1d382e9efbdba68bc3e81613cfc254f279e5ad4",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-capacity-fixture-r3\\result.json": "f0f4485c1e8e2b2c681a175951b39badac8e26d812646f50ebd35dd6ad38887f",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-publication-fixture-r6\\result.json": "0bc2840acd5fd8069e095aff7905a24c9bbc5f4ad989ef818eb107f27e12913c",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-fullcaller-fixture-r1\\result.json": "ea2da0a40d13d1b62335573eeb0598957e0cb96a2b30d945e91913725498bcc5",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-normal-writers-fixture-r3\\result.json": "2745555088cefea1f72ec6424047dd9ada71ebaff38f74fca68cf1eba955b146",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-global-r11\\result.json": "433991db28e639881ecf73627f2236e0114da8bc06ce7947cb26d06f4e29b2b6"
+  }
+}

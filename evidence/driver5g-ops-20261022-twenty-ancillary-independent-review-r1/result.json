@@ -1,0 +1,45 @@
+{
+  "status": "PASS_FIVE_ANCILLARY_OPERATIONAL_BYTES_AND14_MODULE_IDENTITIES",
+  "hardware_accessed": false,
+  "module_identity_records": 14,
+  "freshCcompilations": 116,
+  "ancillary": {
+    "wlan_scan_ap": {
+      "status": "PASS_ANCILLARY_OPERATIONAL_BYTES_ALL_SYMBOLS_RELOCS",
+      "functions": 28,
+      "relocations": 199,
+      "symbols": 106,
+      "declared_metadata_delta": "Onlynewgeneratedsrcversionaddition; originalcode/data/exports exact"
+    },
+    "wlan_scan_sta": {
+      "status": "PASS_ANCILLARY_OPERATIONAL_BYTES_ALL_SYMBOLS_RELOCS",
+      "functions": 41,
+      "relocations": 304,
+      "symbols": 127,
+      "declared_metadata_delta": "Onlynewgeneratedsrcversionaddition; originalcode/data/exports exact"
+    },
+    "wlan_ccmp": {
+      "status": "PASS_ANCILLARY_OPERATIONAL_BYTES_ALL_SYMBOLS_RELOCS",
+      "functions": 16,
+      "relocations": 99,
+      "symbols": 75,
+      "declared_metadata_delta": "Onlynewgeneratedsrcversionaddition; originalcode/data/exports exact"
+    },
+    "wlan_tkip": {
+      "status": "PASS_ANCILLARY_OPERATIONAL_BYTES_ALL_SYMBOLS_RELOCS",
+      "functions": 24,
+      "relocations": 113,
+      "symbols": 85,
+      "declared_metadata_delta": "Onlynewgeneratedsrcversionaddition; originalcode/data/exports exact"
+    },
+    "wlan_xauth": {
+      "status": "PASS_ANCILLARY_OPERATIONAL_BYTES_ALL_SYMBOLS_RELOCS",
+      "functions": 7,
+      "relocations": 7,
+      "symbols": 35,
+      "declared_metadata_delta": "Onlynewgeneratedsrcversionaddition; originalcode/data/exports exact"
+    }
+  },
+  "qdrv_byte_identical18": true,
+  "limits": "Declaredonlygeneratedsrcversionmetadataaddition; originalancillarysourcebytes/code/data/sym/RELAcurrentbaselinechecked, no runtimeperf."
+}

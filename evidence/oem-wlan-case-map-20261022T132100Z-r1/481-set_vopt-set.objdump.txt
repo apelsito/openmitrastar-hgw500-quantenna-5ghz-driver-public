@@ -1,0 +1,11 @@
+   4680e:	8749                	ld_s	r2,[r15,0x24]
+   46810:	e286                	cmp_s	r2,0x6
+   46812:	0490 0002           	bne	1168	;46ca0 <findchannel_any+0x5698>
+   46816:	e682                	cmp_s	r14,0x2
+   46818:	0488 0009           	bgt	1160	;46ca0 <findchannel_any+0x5698>
+   4681c:	e680                	cmp_s	r14,0
+   4681e:	0484 000b           	blt	1156	;46ca0 <findchannel_any+0x5698>
+   46822:	2700 1f82 0000 4df4 	add	r2,r15,0x4df4
+   4682a:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   46832:	aac0                	stb_s	r14,[r2,0]
+   46834:	0453 0000           	b	1106	;46c86 <findchannel_any+0x567e>

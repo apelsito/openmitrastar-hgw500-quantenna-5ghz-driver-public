@@ -1,0 +1,13 @@
+[
+  "wsl",
+  "-d",
+  "REA-Linux",
+  "-u",
+  "rea",
+  "--",
+  "/workspace/user-home/Desktop/MitraStar/work/toolchains/arc-uclibc/arc-arc700-linux-uclibc/bin/arc-snps-linux-uclibc-objdump",
+  "-d",
+  "--start-address=0x1483e",
+  "--stop-address=0x148ea",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/oem-wlan-missingops-20261022T134300Z-linked/wlan-ANALYSIS_ONLY-NOT_FIRMWARE.elf"
+]

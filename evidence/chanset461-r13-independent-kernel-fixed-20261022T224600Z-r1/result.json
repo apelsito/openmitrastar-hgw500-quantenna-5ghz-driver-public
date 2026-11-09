@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ACTUAL_ADAPTER_REVIEW_FIXTURE_WITH_CALLBACK_COUNTEREXAMPLES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 5,
+  "missing_shared_fixed": true,
+  "empty_legal_set_fixed": true,
+  "rank_failure_leaves_busy": false,
+  "rejected_choice_changes_flags": false,
+  "rejected_list_visits": 255,
+  "input_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_chanset461_kernel_critical_review.py": "7d09ab6eb7e4be16885216757f8cd33cf1e5706d0548c6722d86e6b15547f0c6",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-kernel-adapter-20261022T192700Z-r13\\source\\wlan\\openmitrastar_chanset_kernel.inc": "42cad6124219aeb9278f81eadc52cb0438d2cbe2bdc8cac572e5a3b9db37af93",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-kernel-adapter-20261022T192700Z-r13\\source\\wlan\\ieee80211_scan_ap.c": "8ba977a250dab981c8ef394b171b0b41fc8058915784766348db8dca21a23d9a",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-kernel-adapter-20261022T192700Z-r13\\source\\wlan\\ieee80211_scan.c": "5d2dcc8878be78849b964665bfb51ef75827be67eeea798c71ca5bc7a1f6d42f",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-kernel-adapter-20261022T192700Z-r13\\source\\wlan\\openmitrastar_chanset_recovered.c": "72458854f8208e6fb4ae2e4265df9ad6da8ac89085947433623bb15c8ce68408",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-kernel-adapter-20261022T192700Z-r13\\source\\wlan\\openmitrastar_chanset_recovered.h": "bd0dd1247dbd534a0461e1462b4270c38e247bdf593cb721ff3f4d2a559e4245",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-kernel-adapter-20261022T192700Z-r13\\source\\wlan\\openmitrastar_chanset_tables.h": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492"
+  },
+  "fixture_sha256": "5f0badb5a8abb08d73c1c87074308d8e575af910845fbe403bef21c01ba4c6cc",
+  "limits": "Whole adapter include/pure helpers actual; kernel primitives/channels/start are fake. AP null-return exact extracted branch + scan callback boolean witness, not full ap_end/scan_next. VAP teardown/real callback scheduling not completely exercised."
+}

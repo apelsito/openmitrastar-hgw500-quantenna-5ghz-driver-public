@@ -1,0 +1,10 @@
+[
+  "gcc",
+  "-std=c11",
+  "-O1",
+  "-g",
+  "-fsanitize=address,undefined",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/nac-getter-prototype-20261022T141500Z-r1/actual-nac-getter-fixture.c",
+  "-o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/nac-getter-fixture-20261022T141600Z-r1/fixture"
+]

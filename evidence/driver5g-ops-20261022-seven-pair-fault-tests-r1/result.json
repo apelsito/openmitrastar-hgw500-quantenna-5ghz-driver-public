@@ -1,0 +1,33 @@
+{
+  "status": "PASS_ACTUAL_MODULE_FAULT_CHECKS",
+  "cases": 5,
+  "outcomes": [
+    {
+      "mutation": "correct",
+      "outcome": "PASS",
+      "error": null
+    },
+    {
+      "mutation": "text_hole",
+      "outcome": "REJECTED",
+      "error": "executable bytes outside declared getter/diagnostics .text"
+    },
+    {
+      "mutation": "relocation_target",
+      "outcome": "REJECTED",
+      "error": "relocations outside getters changed [(('object', 'qdrv_f355_claim', '.text', 18), 27, ('object', 'arch_local_irq_save', '.text', 0)), (('object', 'qdrv_f355_claim', '.text', 18), 27, ('object', 'arch_local_irq_save', '.text', 1))]"
+    },
+    {
+      "mutation": "rodata_byte",
+      "outcome": "REJECTED",
+      "error": "allocated/data section .rodata"
+    },
+    {
+      "mutation": "string_byte",
+      "outcome": "REJECTED",
+      "error": "relocations outside getters changed [(('object', 'qdrv_f355_claim', '.text', 84), 27, ('string', '\\x016OMF355_LIFETIME retained=1 operation=%s release=reboot-only\\n')), (('object', 'qdrv_f355_claim', '.text', 84), 27, ('string', '\\x017OMF355_LIFETIME retained=1 operation=%s release=reboot-only\\n'))]"
+    }
+  ],
+  "hardware_accessed": false,
+  "original_elf_files_modified": false
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ACTUAL_R24_SHA256_BUILTIN_PROVIDER_EXTERNAL_REQUIREMENT_RECORDED",
+  "required_future_candidate_manifest_entry": "CRYPTO_LIB_SHA256=y",
+  "current_candidate_manifest_omits_explicit_requirement": true,
+  "actual_config_option": "CONFIG_CRYPTO_LIB_SHA256=y",
+  "sha256_Module_symvers": "0x00000000\tsha256\tvmlinux\tEXPORT_SYMBOL\t",
+  "sha256_actual_vmlinux_symbol": "84a465cc T sha256",
+  "config_sha256": "e709aba8ed2b55f3e6debe1480bbea2f1320c4bcd9dc3e9832c185b8e72e8efe",
+  "symvers_sha256": "b3bdc2fecfad7321cd5d03454ea47d2341ef43ffc5e3f091de4c78c0d2726950",
+  "hardware_accessed": false,
+  "firmware_eligible": false
+}

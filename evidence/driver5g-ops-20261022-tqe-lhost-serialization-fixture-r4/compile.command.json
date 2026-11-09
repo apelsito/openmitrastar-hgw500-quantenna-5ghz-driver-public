@@ -1,0 +1,11 @@
+[
+  "tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\clang.exe",
+  "-std=c11",
+  "-O1",
+  "-Wall",
+  "-Wextra",
+  "-Wno-unused-function",
+  "outputs\\rea\\driver5g-ops-20261022-tqe-lhost-serialization-fixture-r4\\actual-four-writers.c",
+  "-o",
+  "outputs\\rea\\driver5g-ops-20261022-tqe-lhost-serialization-fixture-r4\\fixture.exe"
+]

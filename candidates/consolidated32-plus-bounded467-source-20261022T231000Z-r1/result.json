@@ -1,0 +1,35 @@
+{
+  "status": "SOURCE_CONSOLIDATED32_PLUS_BOUNDED467_PENDING_GATES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent": "outputs\\rea\\consolidated32-source-20261022T222600Z-r2",
+  "bounded": "outputs\\rea\\dfs467-bounded-source-20261022T225000Z-r2",
+  "parent_sha256": "7f7a137f803bf8e2980e7f5212f97ee191b0f4e987f9bd79c4e3bbd03d1788bb",
+  "bounded_sha256": "2457a58116f1ac480717a095214c1f936d04317795fdc2b220f7b8bbdfb74327",
+  "complete_original_records": 32,
+  "bounded_extra_records": 1,
+  "allmode_oem467_recovery": false,
+  "private_table_records": 599,
+  "changed_sources": {
+    "headers/net80211/ieee80211_var.h": "bd2ac14a82ca540fce0f7bee88ad63f361e8e01fa598bc42988c9e82a96b3920",
+    "source/wlan/ieee80211_scan.c": "df465c58caf27a7d3cd1d26a9f49ff3167891c60bb9e6ae126451cc4e8b3ccfd",
+    "source/wlan/ieee80211_scan_ap.c": "f9bb2989300249b88063a2afd7d954ae53385fab17e0b16a2d9fd69007036ce0",
+    "source/wlan/ieee80211_wireless.c": "2991e16ce095ac2bce0385663f3caaceeb254dc0a7ff30eccc6d97f05dec1a49"
+  },
+  "host_layout_changed": false,
+  "header_old_line_positions_preserved": true,
+  "all_other_sources_exact": true,
+  "helper_exact_bounded_r2": true,
+  "limits": [
+    "Preservesretainedportmetric/alternate/width/fallbackmachinery; notfullOEMAPpickinstructionequivalence.",
+    "No24GHzchanset461implementationorallmode467acceptance.",
+    "NoPHY/RF/regulatory/calibration/clienttrafficpersistence/releaseacceptance.",
+    "Validinitializedscannerobjectlifetime assumed; nohotdetach/overlapscanproof"
+  ],
+  "safety_deviations": [
+    "24GHz/OEM461modes2/3/8/9 andunsupportedmodes return-95",
+    "Missingstart/pick/private/scannervap refuses stalequery insteadOEMpartiallistfallback",
+    "APscannerinitializedonly; noSTA/mixedscannerclaim",
+    "Empty/out-of-range refreshedscanlist refuses beforepick toavoid retained/OEM ANYCfallbacksuccessfromstale ss_chans0"
+  ]
+}

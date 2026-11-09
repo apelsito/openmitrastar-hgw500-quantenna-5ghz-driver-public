@@ -1,0 +1,3 @@
+PASS actual backend resource+mapping+ownership cases=362 request=3 release=2 map=2 unmap=1
+PASS actual task writer lease cases=410 concurrent_waiters=3 foreign_end=refused resource=4/3 map=3/2
+PASS actual reset software lease cases=468 mask=0x4180 hardware_reset_writes=0 concurrent_waiters=4

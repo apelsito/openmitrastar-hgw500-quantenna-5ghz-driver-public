@@ -1,0 +1,72 @@
+{
+  "schema": "openmitrastar.arc-toolchain-external-carrier/v1",
+  "binaries_in_Git": false,
+  "local_workspace_carrier": "work/toolchains/arc-uclibc/arc-arc700-linux-uclibc",
+  "prior_ext4_carrier": "/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700",
+  "local_files_verified": [
+    {
+      "path": "bin/arc-snps-linux-uclibc-gcc",
+      "bytes": 2025720,
+      "sha256": "3918a0da3c9f2cfde359f6fed1d0df19e737438dfd2cc60edae63f2dcbf14263"
+    },
+    {
+      "path": "bin/arc-snps-linux-uclibc-ld",
+      "bytes": 1620376,
+      "sha256": "75bff65e7062f6aba2f2c49472a64826fe7a28018dd343dda88563adc3a15c32"
+    },
+    {
+      "path": "bin/arc-snps-linux-uclibc-objdump",
+      "bytes": 2048232,
+      "sha256": "96784aca5469a645953814ad4f1672a2063154427c2c51e4a9fcbbf13dcb6f3a"
+    },
+    {
+      "path": "bin/arc-snps-linux-uclibc-nm",
+      "bytes": 871400,
+      "sha256": "3e0ecfaede1ff90a5233ad96adf30a85d9371103034200d86e6d502112886397"
+    },
+    {
+      "path": "bin/arc-snps-linux-uclibc-readelf",
+      "bytes": 1019344,
+      "sha256": "41d04a3dbe01adea47f6786e78c72c7c860b8a2f1794802ed41d9bd56430149f"
+    },
+    {
+      "path": "libexec/gcc/arc-snps-linux-uclibc/15.2.0/cc1",
+      "bytes": 26641112,
+      "sha256": "4fdc21cc13940323eed614b328cbe75afffa9bb4c47c5a9234e2ca654eb28ab8"
+    }
+  ],
+  "prior_transfer_receipt_sha256": "2ab77391b863a0171cc2ef2c41cbac023ccbb23e330e97a4f04d104134786e02",
+  "prior_transfer_files": [
+    {
+      "path": "bin/arc-snps-linux-uclibc-gcc",
+      "source_sha256": "3918a0da3c9f2cfde359f6fed1d0df19e737438dfd2cc60edae63f2dcbf14263",
+      "local_sha256": "3918a0da3c9f2cfde359f6fed1d0df19e737438dfd2cc60edae63f2dcbf14263"
+    },
+    {
+      "path": "bin/arc-snps-linux-uclibc-ld",
+      "source_sha256": "75bff65e7062f6aba2f2c49472a64826fe7a28018dd343dda88563adc3a15c32",
+      "local_sha256": "75bff65e7062f6aba2f2c49472a64826fe7a28018dd343dda88563adc3a15c32"
+    },
+    {
+      "path": "bin/arc-snps-linux-uclibc-objdump",
+      "source_sha256": "96784aca5469a645953814ad4f1672a2063154427c2c51e4a9fcbbf13dcb6f3a",
+      "local_sha256": "96784aca5469a645953814ad4f1672a2063154427c2c51e4a9fcbbf13dcb6f3a"
+    },
+    {
+      "path": "libexec/gcc/arc-snps-linux-uclibc/15.2.0/cc1",
+      "source_sha256": "4fdc21cc13940323eed614b328cbe75afffa9bb4c47c5a9234e2ca654eb28ab8",
+      "local_sha256": "4fdc21cc13940323eed614b328cbe75afffa9bb4c47c5a9234e2ca654eb28ab8"
+    }
+  ],
+  "requires_complete_tree": [
+    "bin",
+    "lib",
+    "libexec",
+    "arc-snps-linux-uclibc/sysroot",
+    "include",
+    "share"
+  ],
+  "preserve": "TransferoutsideGit, preserving symlinks and executablepermissions; checkallusedcompiler/dependencyhashes onLinux destination",
+  "destination_access": "AELITA availability notobserved; currentowner carrierverified only",
+  "rights": "Toolchain remains external perAGENTS; no redistributablebinary license asserted"
+}

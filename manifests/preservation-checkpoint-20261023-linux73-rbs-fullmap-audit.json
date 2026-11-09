@@ -1,0 +1,133 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/actual_netdev_init_callback.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/actual_netdev_init_callback.pseudocode.c",
+      "bytes": 4281,
+      "sha256": "10542b2c154641d2fd6a7747b48ab73da98d2b6d8abb4d97d5536a24585ef40e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/actual_tasklet_scheduler.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/actual_tasklet_scheduler.pseudocode.c",
+      "bytes": 1162,
+      "sha256": "fc40fa40689ad7a5d732d1578d3920e93c84d709ea91ed1b71e5771327a61385",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/descriptor_completion.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/descriptor_completion.gnu-assembly.txt",
+      "bytes": 3256,
+      "sha256": "e037ffab85a52386a99db6f40f48239329a54e50ba893b0c9f791136317debde",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/HANDOFF.md",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/HANDOFF.md",
+      "bytes": 3960,
+      "sha256": "c545508a50f128bfbaff4402c11117db69f6b676c98fd478ab39a63e72eb3bec",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/input-pins.json",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/input-pins.json",
+      "bytes": 4996,
+      "sha256": "e878219d9f719ddc2d4e6d73b8ad4b2c87e6462be010d0f7d29b2c1039b7123d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/ioctl_consumer.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/ioctl_consumer.gnu-assembly.txt",
+      "bytes": 4280,
+      "sha256": "7e2f82d16cf5ae5ed4134212e5750dfa5b4a569bc28b36d3530b30dd326c2b3b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/mailbox_init.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/mailbox_init.pseudocode.c",
+      "bytes": 1379,
+      "sha256": "1ebaad91d00e46a5d05e525b7c807b5a5f28bcb3ef4dbfe8a0e0e59a02e1a8af",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/mailbox_records.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/mailbox_records.gnu-assembly.txt",
+      "bytes": 5365,
+      "sha256": "63e0166e1e9e015b7956bd86c70716fcdec2a9a9a9289bc0ab72e939810fd71a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/name_mgmt_xmit_actual_sync_auc_ipc.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/name_mgmt_xmit_actual_sync_auc_ipc.pseudocode.c",
+      "bytes": 1850,
+      "sha256": "f3186533526358acc293d51a08dac717bbd54b50001a5cb4273e0964af35c119",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/name_scheduler_actual_rx_tqe.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/name_scheduler_actual_rx_tqe.pseudocode.c",
+      "bytes": 1875,
+      "sha256": "599d62a1da03ee73e610f9256f370e2425e9db5e6e9bbab381fab08d88176f33",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/name_tx_restrict_actual_global_time.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/name_tx_restrict_actual_global_time.pseudocode.c",
+      "bytes": 171,
+      "sha256": "f0636de7eba78accb63a52a1d071190e6d758f104e3375d0533174f2d997e751",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/original-symbol-hints.json",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/original-symbol-hints.json",
+      "bytes": 1606,
+      "sha256": "dd62fbe33473eec71f93af5d929e96d428a23416274d1f1d8e1892f2ca89508a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/response_message_post.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/response_message_post.pseudocode.c",
+      "bytes": 1726,
+      "sha256": "9ba05d49e54ed99904d22ec0ef591b93dcf523285e4493dfa84c60fa153f4518",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/result.json",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/result.json",
+      "bytes": 14873,
+      "sha256": "eac58a1d5cebd5abe92f67c8d3808fbe224327c5d4e666af15b78573a336bc4a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/semaphore_functions_actual.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/semaphore_functions_actual.gnu-assembly.txt",
+      "bytes": 1054,
+      "sha256": "83c31398998e18a89d02057cdfb71a76ab6fde89ec6f827b144baac0be1f13a2",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/tasklet_scheduler.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/tasklet_scheduler.gnu-assembly.txt",
+      "bytes": 2335,
+      "sha256": "7aad1988a8031615ee91830715ea5414e4fb30dade430fbc4b5ff4c3e2fc4cc3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/tx_queue_setup_cleanup.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-mailbox-fullmap-bounded-audit-20261023T012000Z-r1/tx_queue_setup_cleanup.pseudocode.c",
+      "bytes": 2071,
+      "sha256": "07b15261966b3cc4a671a0cbd7a5a8e3d5861883c3feec7504a15170bebc4e86",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-rbs/seal_rbs_mailbox_fullmap_search.py",
+      "source": "tools/seal_rbs_mailbox_fullmap_search.py",
+      "bytes": 10629,
+      "sha256": "e3623cd19d1240a8e7a14c4140d2c6c291ba8e50ea8965b7f02f6e85e27cc7e9",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

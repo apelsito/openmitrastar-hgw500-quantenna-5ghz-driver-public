@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-10-22T18:09:09.042271+00:00",
+  "finished_utc": "2026-10-22T18:10:44.383825+00:00",
+  "command": [
+    "D:\\Tools\\REA\\node-v24.16.0-win-x64\\node.exe",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\rea-agents\\scripts\\rea.mjs",
+    "function",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-wlan-missingops-20261022T134300Z-linked\\wlan-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+    "--procedure",
+    "ieee80211_chan_selection_allowed",
+    "--provider",
+    "ghidra",
+    "--format",
+    "json",
+    "--full-output"
+  ],
+  "exit_code": 0,
+  "target_sha256": "79fbcbd4634a9fc32fdf8ac0c997f3bd0329131162a1ea4948794e4986c7e40a",
+  "target_unchanged": true,
+  "hardware_accessed": false,
+  "installed_runtime_modified": false,
+  "lab_manifest_sha256": "4eaee5f0e843a04da5021aeec00918660b3a133059a574afcd77e44d96e0110e",
+  "rea_output_sha256": "5dbf07e882b5d29dfe106a5681316778278fca0b76b40078b1914e95c9c355da"
+}

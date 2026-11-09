@@ -1,0 +1,31 @@
+{
+  "status": "PASS_INDEPENDENT_COMPLETE20_TYPED_CLOSURE_REVIEW",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "final_qualification_result_sha256": "9e1465557d94e4ce2a64bd97a79f1450e9286b2d4fd2a8207ac9bfa40b910132",
+  "current_host_qualification_pins_verified": 792,
+  "linux_only_pins_in_receipt": 719,
+  "errors": [],
+  "ancestor_ancillary_F152_manifest_exact_modules": [
+    "wlan_scan_ap",
+    "wlan_scan_sta",
+    "wlan_ccmp",
+    "wlan_tkip",
+    "wlan_xauth"
+  ],
+  "all7modulepairs_identical": true,
+  "actual_Ccompiles": 116,
+  "WLAN586records_18functional2unsupported24missing": true,
+  "original_QDRV18_identity": true,
+  "all209VAPfields_widthsand_offsets_unchanged": true,
+  "typed_field_3081_padding_VAPsize3084": true,
+  "diagnostics_exact7functions": true,
+  "actual_semantic_bodies": "4changedbodies sourcefixturebounded notoldinstructionequivalence",
+  "negativecases": 7,
+  "canonical_original_coordinate_mapping_fixed": true,
+  "limits": [
+    "Noaggregation/throughput/clientRFphysicalacceptance",
+    "Freshhostaudit+sourcefixture/ARCABI proof; finalLinux1511pinsreceipt read/postchecked bybuilderqualifier",
+    "24originalprivateentries remainunresolved"
+  ]
+}

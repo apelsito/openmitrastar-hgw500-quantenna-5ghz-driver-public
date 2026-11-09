@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ACTUAL_COC491_DEFERRED_WORK_CONSUMER_CALLBACK_QUEUE_HOST_REFERENCE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "worker_cases": 165888,
+  "callback_cases": 66,
+  "queue_cases": 64,
+  "stop_gate_cases": 6,
+  "source_sha256": "1d2b8e6464d8e0f03eb9d7d91b2518f8ae484069e5f026a1d4359bbf6d56c02d",
+  "helper_sha256": "dda305f73ccb354badc3bf9596e3e68a0f3cb802f8c2b2314a5f1f9164f912ba",
+  "queue_sha256": "f4e6e96d81925fc020d1f075eb2dd5a9f74d16c0e9c90b3249790f7ac5e4816f",
+  "host_adapter": "Onlyunsignedlongcallbackargumentbecomesuintptr_t onWindowsLLP64 toavoidhostpointertruncation; bodyunchanged",
+  "limits": "Fakecallbacks; scalar sampledstate; stopgate basicnotfullconcurrency; noCoherenttuple/lifetimehardware/RF/CSAcompletion/PMbackendacceptance"
+}

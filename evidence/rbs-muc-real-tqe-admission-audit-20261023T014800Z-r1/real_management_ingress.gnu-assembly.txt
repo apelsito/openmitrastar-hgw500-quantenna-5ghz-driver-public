@@ -1,0 +1,43 @@
+  159eb8:	1cec b348           	st.aw	r13,[sp,-20]
+  159ebc:	1c04 37c0           	st	blink,[sp,4]
+  159ec0:	c642                	st_s	r14,[sp,0x8]
+  159ec2:	c743                	st_s	r15,[sp,0xc]
+  159ec4:	1c10 3400           	st	r16,[sp,16]
+  159ec8:	c1a1                	sub_s	sp,sp,0x4
+  159eca:	701a                	mov_s	r16,r0
+  159ecc:	81a0                	ld_s	r13,[r1,0]
+  159ece:	81e2                	ld_s	r15,[r1,0x8]
+  159ed0:	bd30                	lsr_s	r13,r13,0x10
+  159ed2:	91c2                	ldw_s	r14,[r1,0x4]
+  159ed4:	bdc9                	bmsk_s	r13,r13,0x9
+  159ed6:	77d7 006e c400      	cmp_s	r15,0x6ec400
+  159edc:	0024 0026           	bnc.d	36	;0x159f00
+  159ee0:	252f 1347           	extb	r13,r13
+  159ee4:	0f2d 1f85 026f c400 	brhs	r15,0x26fc400,44	;0x159f10
+  159eec:	70cf 001c 7624      	mov_s	r0,0x1c7624
+  159ef2:	71e9                	mov_s	r1,r15
+  159ef4:	2022 0f80 000e e260 	jl	0xee260
+  159efc:	0049 0000           	b	72	;0x159f44
+  159f00:	0f19 1f84 026e c400 	brlo	r15,0x26ec400,24	;0x159f18
+  159f08:	0fe5 9f84 026f c400 	brlo	r15,0x26fc400,-28	;0x159eec
+  159f10:	0fdd 9f85 048f c400 	brhs	r15,0x48fc400,-36	;0x159eec
+  159f18:	70e9                	mov_s	r0,r15
+  159f1a:	71c9                	mov_s	r1,r14
+  159f1c:	2022 0f80 8002 5588 	jl	0x80025588
+  159f24:	254a 0000           	mov	r5,0
+  159f28:	1c00 3140           	st	r5,[sp]
+  159f2c:	700a                	mov_s	r0,r16
+  159f2e:	71e9                	mov_s	r1,r15
+  159f30:	72c9                	mov_s	r2,r14
+  159f32:	73a9                	mov_s	r3,r13
+  159f34:	244a 0040           	mov	r4,0x1
+  159f38:	260a 0140           	mov	r6,r5
+  159f3c:	0f8e fdef           	bl.d	-16500	;0x155ec8
+  159f40:	270a 0140           	mov	r7,r5
+  159f44:	2440 311c           	add	sp,sp,0x4
+  159f48:	1404 301f           	ld	blink,[sp,4]
+  159f4c:	c602                	ld_s	r14,[sp,0x8]
+  159f4e:	c703                	ld_s	r15,[sp,0xc]
+  159f50:	1410 3010           	ld	r16,[sp,16]
+  159f54:	2021 07c0           	j.d	[blink]
+  159f58:	1414 340d           	ld.ab	r13,[sp,20]

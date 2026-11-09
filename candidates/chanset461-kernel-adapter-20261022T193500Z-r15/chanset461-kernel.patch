@@ -1,0 +1,11 @@
+--- a/source/wlan/ieee80211_scan.c
++++ b/source/wlan/ieee80211_scan.c
+@@ -645,7 +645,7 @@
+ 	IEEE80211_UNLOCK_IRQ(ic);
+ 
+ 	/* Don't transmit beacons while scanning */
+-	if (vap->iv_opmode == IEEE80211_M_HOSTAP
++	if (om_start_owned && vap->iv_opmode == IEEE80211_M_HOSTAP
+ #ifdef QTN_BG_SCAN
+ 			&& !(flags & IEEE80211_SCAN_QTN_BGSCAN)
+ #endif /*QTN_BG_SCAN */

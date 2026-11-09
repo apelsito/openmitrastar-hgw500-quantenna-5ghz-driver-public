@@ -1,0 +1,12 @@
+{
+  "status": "PASS_HOST_COMPILED_EXACT130_ROWS_AND_BOUNDED_FIRST_LOOKUP",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "inputs_unchanged": true,
+  "source_pins": 7,
+  "lookup_cases": 46080,
+  "exact_compiled_words": 2600,
+  "negative_cases": 9,
+  "duplicate_first_match": true,
+  "limits": "Table/lookup source fixture only;461 scan/rank/lifetime/integration/physical unrun"
+}

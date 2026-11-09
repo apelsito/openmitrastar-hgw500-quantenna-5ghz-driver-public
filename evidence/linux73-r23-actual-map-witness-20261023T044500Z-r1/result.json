@@ -1,0 +1,26 @@
+{
+  "status": "PASS_REAL_ARC_R23_ELF93_CONSTANTS_AND_ACTUAL_TRANSLATION_HELPERS_COMPILED",
+  "constants": {
+    "EM_ARCOMPACT": "0x5d",
+    "RUBY_SRAM_BEGIN": "0x88000000",
+    "RUBY_SRAM_BUS_BEGIN": "0x80000000",
+    "RUBY_SRAM_NOCACHE_BEGIN": "0x60000000",
+    "RUBY_SRAM_SIZE": "0x80000",
+    "RUBY_DRAM_BEGIN": "0x80000000",
+    "RUBY_DRAM_BUS_BEGIN": "0x0",
+    "RUBY_MAX_DRAM_SIZE": "0x8000000",
+    "TOPAZ_AUC_IMEM_ADDR": "0xe5000000",
+    "TOPAZ_AUC_IMEM_SIZE": "0x8000",
+    "TOPAZ_AUC_DMEM_ADDR": "0xe5101000",
+    "TOPAZ_AUC_DMEM_SIZE": "0x3000",
+    "RUBY_DSP_XYMEM_BEGIN": "0xd0000000",
+    "RUBY_DSP_XYMEM_END": "0xdfffffff"
+  },
+  "object_sha256": "1d1f60f3cd7a7aaf73c7d8ddd8cb44d0f47a724b91f2aaa111b7ff2da62476c8",
+  "source_sha256": "9181b08c341e5919b6e1813c42e39fbdc81af6d0ca7623fe63012719d7e0ffb0",
+  "template_command_sha256": "80a857f9a81d136a6d840b8ea9f628e1ef0b262e9e8db62bb5a2b9603025718c",
+  "translation_execution": "UNRUN_ON_ARC_NO_HARDWARE",
+  "limits": "Actual production macro profile/helper ARC machinecode witness; independent host fake translation preflight tests do not prove real mapping/cache/bus",
+  "hardware_accessed": false,
+  "firmware_eligible": false
+}

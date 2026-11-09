@@ -1,0 +1,74 @@
+--- OEM/qtn_memget
++++ prototype/qtn_memget
+@@ -1,7 +1,6 @@
+-static void *qtn_memget(unsigned long nbytes)
++static void *om_sram_memget(struct om_sram_core *core,unsigned long nbytes)
+ {
+-	struct memblock *memlist = &s_memlist;
+-	unsigned long flags;
++	struct memblock *memlist = &core->memlist;
+ 	register struct memblock *prev, *curr, *leftover;
+ 
+ 	if(0 == nbytes)
+@@ -12,7 +11,6 @@
+ 	/* Round to multiple of memblock size   */
+ 	nbytes = (unsigned long) roundmb(nbytes);
+ 
+-	spin_lock_irqsave(&s_heap_lock, flags);
+ 
+ 	prev = memlist;
+ 	curr = memlist->next;
+@@ -42,10 +40,8 @@
+ 		curr = curr->next;
+ 	}
+ 
+-	spin_unlock_irqrestore(&s_heap_lock, flags);
+ 	return NULL;
+ 
+ return_curr:
+-	spin_unlock_irqrestore(&s_heap_lock, flags);
+ 	return (void *)curr;
+ }--- OEM/qtn_memfree
++++ prototype/qtn_memfree
+@@ -1,14 +1,12 @@
+-static int qtn_memfree(void *memptr, unsigned long nbytes)
++static int om_sram_memfree(struct om_sram_core *core,void *memptr, unsigned long nbytes)
+ {
+-	struct memblock *memlist = &s_memlist;
+-	unsigned long flags;
++	struct memblock *memlist = &core->memlist;
+ 	register struct memblock *block, *next, *prev;
+ 	unsigned long top;
+ 
+ 	block = (struct memblock *) memptr;
+ 	nbytes = (unsigned long) roundmb(nbytes);
+ 
+-	spin_lock_irqsave(&s_heap_lock, flags);
+ 
+ 	prev = memlist;
+ 	next = memlist->next;
+@@ -32,8 +30,7 @@
+ 	if ((top > (unsigned long) block)
+ 		|| ((next != NULL) && ((unsigned long) block + nbytes) > (unsigned long)next))
+ 	{
+-		spin_unlock_irqrestore(&s_heap_lock, flags);
+-		return -1;
++			return -1;
+ 	}
+ 
+ 	memlist->length += nbytes;
+@@ -52,13 +49,12 @@
+ 	}
+ 
+ 	/* coalesce with next block if adjacent */
+-	if(((unsigned long) block + block->length) == (unsigned long) next)
++	if(next && ((unsigned long) block + block->length) == (unsigned long) next)
+ 	{
+ 		block->length += next->length;
+ 		block->next = next->next;
+ 	}
+ 
+-	spin_unlock_irqrestore(&s_heap_lock, flags);
+ 
+ 	return 0;
+ }

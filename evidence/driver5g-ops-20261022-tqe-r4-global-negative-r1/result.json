@@ -1,0 +1,68 @@
+{
+  "status": "PASS_R4_VERIFIER_NEGATIVE_FIXTURES",
+  "hardware_accessed": false,
+  "artifact_bytes_modified": false,
+  "cases": 10,
+  "tests": [
+    {
+      "component": "switch_tqe",
+      "fault": "oldother",
+      "result": "REJECT",
+      "reason": "symbolattrs tqe_ndo_open"
+    },
+    {
+      "component": "switch_tqe",
+      "fault": "newother",
+      "result": "REJECT",
+      "reason": ""
+    },
+    {
+      "component": "switch_tqe",
+      "fault": "unrelatedcode",
+      "result": "REJECT",
+      "reason": ""
+    },
+    {
+      "component": "switch_tqe",
+      "fault": "oldRELA",
+      "result": "REJECT",
+      "reason": "residualRELA [(('object', '__ksymtab', '__ksymtab_g_dscp_flag', 0), 4, ('g_"
+    },
+    {
+      "component": "switch_tqe",
+      "fault": "extraexec",
+      "result": "REJECT",
+      "reason": ""
+    },
+    {
+      "component": "topaz_congest_queue",
+      "fault": "oldother",
+      "result": "REJECT",
+      "reason": "symbolattrs topaz_congest_dump"
+    },
+    {
+      "component": "topaz_congest_queue",
+      "fault": "newother",
+      "result": "REJECT",
+      "reason": ""
+    },
+    {
+      "component": "topaz_congest_queue",
+      "fault": "unrelatedcode",
+      "result": "REJECT",
+      "reason": ""
+    },
+    {
+      "component": "topaz_congest_queue",
+      "fault": "oldRELA",
+      "result": "REJECT",
+      "reason": "residualRELA [(('object', '__ksymtab', '__ksymtab_congest_tx_tasklet', 0), "
+    },
+    {
+      "component": "topaz_congest_queue",
+      "fault": "extraexec",
+      "result": "REJECT",
+      "reason": ""
+    }
+  ]
+}

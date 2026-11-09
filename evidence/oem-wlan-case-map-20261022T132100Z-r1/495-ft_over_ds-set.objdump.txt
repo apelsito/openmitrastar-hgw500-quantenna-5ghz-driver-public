@@ -1,0 +1,10 @@
+   46a9c:	c206                	ld_s	r2,[sp,0x18]
+   46a9e:	2280 0211           	add	r2,r2,1096
+   46aa2:	8240                	ld_s	r2,[r2,0]
+   46aa4:	e286                	cmp_s	r2,0x6
+   46aa6:	01ec 0002           	bne	492	;46c90 <findchannel_any+0x5688>
+   46aaa:	c206                	ld_s	r2,[sp,0x18]
+   46aac:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   46ab4:	2294 01d9           	add1	r2,r2,1607
+   46ab8:	aac0                	stb_s	r14,[r2,0]
+   46aba:	01cf 0000           	b	462	;46c86 <findchannel_any+0x567e>

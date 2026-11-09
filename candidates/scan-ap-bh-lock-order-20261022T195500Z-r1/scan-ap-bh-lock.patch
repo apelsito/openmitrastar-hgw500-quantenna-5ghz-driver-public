@@ -1,0 +1,25 @@
+--- a/ieee80211_scan_ap.c
++++ b/ieee80211_scan_ap.c
+@@ -63,20 +63,20 @@
+ 
+ 	WARN_ON_ONCE(in_irq());
+ 
+-	spin_lock(&as->asl_lock);
+ 	if (bh_disabled) {
+ 		local_bh_disable();
+ 	}
++	spin_lock(&as->asl_lock);
+ 	return bh_disabled;
+ }
+ 
+ static void
+ unlock_ap_list(struct ap_state *as, int bh_disabled)
+ {
++	spin_unlock(&as->asl_lock);
+ 	if (bh_disabled) {
+ 		local_bh_enable();
+ 	}
+-	spin_unlock(&as->asl_lock);
+ }
+ 
+ static void

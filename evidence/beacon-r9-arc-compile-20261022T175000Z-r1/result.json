@@ -1,0 +1,37 @@
+{
+  "status": "PASS_ARC_TYPED_HEADER_SOURCE_UNITS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "module_built": false,
+  "units": [
+    {
+      "component": "qdrv",
+      "name": "qdrv_wlan",
+      "source_sha256": "bd89f8b4fe774b43c747f91fe907f684a398ba85a191ca0cde38f4c4e4d8f739",
+      "object_sha256": "9a3f9dbb7221d7d3d8e72165326ba761675ae6b115c8017bdb652c70309a6697",
+      "object_bytes": 137576,
+      "machine": 93,
+      "functions": 184
+    },
+    {
+      "component": "wlan",
+      "name": "ieee80211_beacon",
+      "source_sha256": "b39205329a8a02169d7cec215e9582dc2967287833972f77337ec9baa151367b",
+      "object_sha256": "47859535483418db255a22f661a6c6bb9b1610f4d448379f4a1882bd0843c006",
+      "object_bytes": 8068,
+      "machine": 93,
+      "functions": 12
+    },
+    {
+      "component": "wlan",
+      "name": "ieee80211_beacon_desc",
+      "source_sha256": "198a92120083cc3c5645c71dcebc9cc285bf8fbe0474cb347f669897bad744c1",
+      "object_sha256": "3ad860edd5d2d63d8d2f47d8d45234f6e063dd331361140b106283ce4dfa966e",
+      "object_bytes": 14800,
+      "machine": 93,
+      "functions": 23
+    }
+  ],
+  "input_pins": 1440,
+  "inputs_unchanged": true
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "openmitrastar.tqe-r4-final-reviewed-delivery/v1",
+  "status": "PASS_OFFLINE_BOUNDED_TYPED_QUEUE_RETRY_PAIR_WITH_INDEPENDENT_METADATA_SUPPLEMENT",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "selected_source": "typed-queue-source-r8",
+  "selected_build": "typed-queue-build-r5",
+  "confirmed_CN_retry_connected": true,
+  "published_unknown_never_retry_no_HBM_free": true,
+  "catalog_markers": 135,
+  "ownershipledger_notgrown": 256,
+  "queue_global_capacity": 2048,
+  "registrationpinsbeforestoredcallback": true,
+  "atomic_owner_credit_head_commit": true,
+  "processinglease_nestedconsumer_refusal": true,
+  "fixture_cases_actual_connected": 13,
+  "global_verifier_negatives_rejected": 10,
+  "independent_evidence": "tqe-r4-source-r8-independent-final-review-20261022T210600Z-r1",
+  "outer105_scope": "HistoricalR3 source entryfixture; R4typedcreditcallerintegration changes notcoveredbyouterfixture.",
+  "remaining_gates": [
+    "ForeignLHOSTbank/MMIOandHMBwholefunctionwaits unknown; no hardware bus timing.",
+    "Unmarkedqueue HBMclearcleanup remains original/unbounded.",
+    "Realclient/packetthroughput/soak/persistence/rollback/releaseUNRUN.",
+    "No automaticreset/recovery/release; modulepins reboot-only."
+  ],
+  "evidence": [
+    "driver5g-ops-20261022-tqe-r4-typed-queue-source-r8",
+    "driver5g-ops-20261022-tqe-r4-typed-queue-build-r5",
+    "driver5g-ops-20261022-tqe-r4-typed-queue-fixture-r10",
+    "driver5g-ops-20261022-tqe-r4-initial-retry-fixture-r5",
+    "driver5g-ops-20261022-tqe-r4-typed-queue-global-r5",
+    "driver5g-ops-20261022-tqe-r4-global-negative-r1",
+    "tqe-r4-source-r8-independent-final-review-20261022T210600Z-r1"
+  ],
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r4-typed-queue-source-r8\\result.json": "475e40c720a65e55ec99200e7656b743dab4a87d460958eff3099399ff728cd8",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r4-typed-queue-build-r5\\result.json": "7b76a8f484851066687283fe5387f9e772cf4f6f6c34fbcecffee65fe57f3a4e",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r4-typed-queue-fixture-r10\\result.json": "a2be1689f8fa4c9637a9377a123c727407e7f6919db16894cb98690c946e8e0a",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r4-initial-retry-fixture-r5\\result.json": "de9bfecb3cc980d0e9811723165024c705369b8080ba1f3270d12bad6a2b3fac",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r4-typed-queue-global-r5\\result.json": "07108bf1d48e6064eb6be638c84780b920a72bed54a73dd652eb31399661d8bc",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r4-global-negative-r1\\result.json": "fdca0ba6ded9a2d6380bdb8f0f7ceb83d8fca09bb01dbe6037e391614a7c1b18",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\tqe-r4-source-r8-independent-final-review-20261022T210600Z-r1\\result.json": "9e19ed54b11ebbe8bba300bf454d1dada0a48b366ab3a4f044f91e22796cad8b"
+  }
+}

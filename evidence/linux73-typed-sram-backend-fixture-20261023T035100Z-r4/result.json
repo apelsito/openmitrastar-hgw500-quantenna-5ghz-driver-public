@@ -1,0 +1,25 @@
+{
+  "status": "PASS_ACTUAL_OEM_CORE_TYPED_SRAM_BACKEND_FAKE_RESOURCE_MAPPING_OWNERSHIP",
+  "source_sha256": "ebbc75e2f22cfc8b3260947bf63daff451fee207a2a51ee9d300fe7a8c24357b",
+  "core_sha256": "43093bb58b10f0d5a2a39e0dc85577f42f2094ce83b80c1e24f03c502f62b819",
+  "output": "PASS actual backend resource+mapping+ownership cases=362 request=3 release=2 map=2 unmap=1",
+  "command": [
+    "gcc",
+    "-std=gnu11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-misleading-indentation",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-I/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include",
+    "-include",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/shim.h",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/fixture.c",
+    "-o",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/fixture"
+  ],
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "limits": "Host pointer-size fixture; real ARCcompile and earlier coreARC32fixtures separate. Fake SRAM does not prove physicalbusmapping."
+}

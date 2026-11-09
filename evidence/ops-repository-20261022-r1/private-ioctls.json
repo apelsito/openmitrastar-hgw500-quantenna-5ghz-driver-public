@@ -1,0 +1,8217 @@
+{
+  "oem_wlan": [
+    {
+      "index": 0,
+      "cmd": 35822,
+      "set_args": 4352,
+      "get_args": 0,
+      "name": "setoptie"
+    },
+    {
+      "index": 1,
+      "cmd": 35823,
+      "set_args": 0,
+      "get_args": 4352,
+      "name": "getoptie"
+    },
+    {
+      "index": 2,
+      "cmd": 35826,
+      "set_args": 6208,
+      "get_args": 0,
+      "name": "setkey"
+    },
+    {
+      "index": 3,
+      "cmd": 35828,
+      "set_args": 6151,
+      "get_args": 0,
+      "name": "delkey"
+    },
+    {
+      "index": 4,
+      "cmd": 35824,
+      "set_args": 6186,
+      "get_args": 0,
+      "name": "setmlme"
+    },
+    {
+      "index": 5,
+      "cmd": 35830,
+      "set_args": 26625,
+      "get_args": 0,
+      "name": "setbssid"
+    },
+    {
+      "index": 6,
+      "cmd": 35832,
+      "set_args": 26625,
+      "get_args": 0,
+      "name": "delmac"
+    },
+    {
+      "index": 7,
+      "cmd": 35838,
+      "set_args": 26625,
+      "get_args": 0,
+      "name": "kickmac"
+    },
+    {
+      "index": 8,
+      "cmd": 35834,
+      "set_args": 26625,
+      "get_args": 0,
+      "name": "wds_add"
+    },
+    {
+      "index": 9,
+      "cmd": 35836,
+      "set_args": 26625,
+      "get_args": 0,
+      "name": "wds_del"
+    },
+    {
+      "index": 10,
+      "cmd": 35814,
+      "set_args": 6176,
+      "get_args": 0,
+      "name": "setchanlist"
+    },
+    {
+      "index": 11,
+      "cmd": 35815,
+      "set_args": 0,
+      "get_args": 6176,
+      "name": "getchanlist"
+    },
+    {
+      "index": 12,
+      "cmd": 35831,
+      "set_args": 6153,
+      "get_args": 0,
+      "name": "startcca"
+    },
+    {
+      "index": 13,
+      "cmd": 35821,
+      "set_args": 0,
+      "get_args": 7936,
+      "name": "getchaninfo"
+    },
+    {
+      "index": 14,
+      "cmd": 35810,
+      "set_args": 8204,
+      "get_args": 0,
+      "name": "mode"
+    },
+    {
+      "index": 15,
+      "cmd": 35811,
+      "set_args": 0,
+      "get_args": 8198,
+      "name": "get_mode"
+    },
+    {
+      "index": 16,
+      "cmd": 35827,
+      "set_args": 8448,
+      "get_args": 0,
+      "name": "postevent"
+    },
+    {
+      "index": 17,
+      "cmd": 35829,
+      "set_args": 6143,
+      "get_args": 0,
+      "name": "txeapol"
+    },
+    {
+      "index": 18,
+      "cmd": 35812,
+      "set_args": 18436,
+      "get_args": 0,
+      "name": "setwmmparams"
+    },
+    {
+      "index": 19,
+      "cmd": 35813,
+      "set_args": 18435,
+      "get_args": 18433,
+      "name": "getwmmparams"
+    },
+    {
+      "index": 20,
+      "cmd": 35825,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "doth_radar"
+    },
+    {
+      "index": 21,
+      "cmd": 35839,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dfsactscan"
+    },
+    {
+      "index": 22,
+      "cmd": 35833,
+      "set_args": 4108,
+      "get_args": 6292,
+      "name": "getstastatistic"
+    },
+    {
+      "index": 23,
+      "cmd": 35812,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": ""
+    },
+    {
+      "index": 24,
+      "cmd": 35813,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": ""
+    },
+    {
+      "index": 25,
+      "cmd": 1,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "cwmin"
+    },
+    {
+      "index": 26,
+      "cmd": 1,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_cwmin"
+    },
+    {
+      "index": 27,
+      "cmd": 2,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "cwmax"
+    },
+    {
+      "index": 28,
+      "cmd": 2,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_cwmax"
+    },
+    {
+      "index": 29,
+      "cmd": 3,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "aifs"
+    },
+    {
+      "index": 30,
+      "cmd": 3,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_aifs"
+    },
+    {
+      "index": 31,
+      "cmd": 4,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "txoplimit"
+    },
+    {
+      "index": 32,
+      "cmd": 4,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_txoplimit"
+    },
+    {
+      "index": 33,
+      "cmd": 5,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "acm"
+    },
+    {
+      "index": 34,
+      "cmd": 5,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_acm"
+    },
+    {
+      "index": 35,
+      "cmd": 6,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "noackpolicy"
+    },
+    {
+      "index": 36,
+      "cmd": 6,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_noackpolicy"
+    },
+    {
+      "index": 37,
+      "cmd": 35808,
+      "set_args": 18434,
+      "get_args": 0,
+      "name": "setparam"
+    },
+    {
+      "index": 38,
+      "cmd": 35809,
+      "set_args": 18433,
+      "get_args": 18433,
+      "name": "getparam"
+    },
+    {
+      "index": 39,
+      "cmd": 35808,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": ""
+    },
+    {
+      "index": 40,
+      "cmd": 35809,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": ""
+    },
+    {
+      "index": 41,
+      "cmd": 3,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "authmode"
+    },
+    {
+      "index": 42,
+      "cmd": 3,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_authmode"
+    },
+    {
+      "index": 43,
+      "cmd": 4,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "protmode"
+    },
+    {
+      "index": 44,
+      "cmd": 4,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_protmode"
+    },
+    {
+      "index": 45,
+      "cmd": 5,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mcastcipher"
+    },
+    {
+      "index": 46,
+      "cmd": 5,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mcastcipher"
+    },
+    {
+      "index": 47,
+      "cmd": 6,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mcastkeylen"
+    },
+    {
+      "index": 48,
+      "cmd": 6,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mcastkeylen"
+    },
+    {
+      "index": 49,
+      "cmd": 7,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ucastciphers"
+    },
+    {
+      "index": 50,
+      "cmd": 7,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_uciphers"
+    },
+    {
+      "index": 51,
+      "cmd": 8,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ucastcipher"
+    },
+    {
+      "index": 52,
+      "cmd": 8,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ucastcipher"
+    },
+    {
+      "index": 53,
+      "cmd": 9,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ucastkeylen"
+    },
+    {
+      "index": 54,
+      "cmd": 9,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ucastkeylen"
+    },
+    {
+      "index": 55,
+      "cmd": 21,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "keymgtalgs"
+    },
+    {
+      "index": 56,
+      "cmd": 21,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_keymgtalgs"
+    },
+    {
+      "index": 57,
+      "cmd": 22,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rsncaps"
+    },
+    {
+      "index": 58,
+      "cmd": 22,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rsncaps"
+    },
+    {
+      "index": 59,
+      "cmd": 12,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "hostroaming"
+    },
+    {
+      "index": 60,
+      "cmd": 12,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_hostroaming"
+    },
+    {
+      "index": 61,
+      "cmd": 13,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "privacy"
+    },
+    {
+      "index": 62,
+      "cmd": 13,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_privacy"
+    },
+    {
+      "index": 63,
+      "cmd": 14,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "countermeasures"
+    },
+    {
+      "index": 64,
+      "cmd": 14,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_countermeas"
+    },
+    {
+      "index": 65,
+      "cmd": 15,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dropunencrypted"
+    },
+    {
+      "index": 66,
+      "cmd": 15,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dropunencry"
+    },
+    {
+      "index": 67,
+      "cmd": 10,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wpa"
+    },
+    {
+      "index": 68,
+      "cmd": 10,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_wpa"
+    },
+    {
+      "index": 69,
+      "cmd": 16,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "driver_caps"
+    },
+    {
+      "index": 70,
+      "cmd": 16,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_driver_caps"
+    },
+    {
+      "index": 71,
+      "cmd": 18,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wmm"
+    },
+    {
+      "index": 72,
+      "cmd": 18,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_wmm"
+    },
+    {
+      "index": 73,
+      "cmd": 19,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "hide_ssid"
+    },
+    {
+      "index": 74,
+      "cmd": 19,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_hide_ssid"
+    },
+    {
+      "index": 75,
+      "cmd": 20,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ap_bridge"
+    },
+    {
+      "index": 76,
+      "cmd": 20,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ap_bridge"
+    },
+    {
+      "index": 77,
+      "cmd": 23,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "inact"
+    },
+    {
+      "index": 78,
+      "cmd": 23,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_inact"
+    },
+    {
+      "index": 79,
+      "cmd": 24,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "inact_auth"
+    },
+    {
+      "index": 80,
+      "cmd": 24,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_inact_auth"
+    },
+    {
+      "index": 81,
+      "cmd": 25,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "inact_init"
+    },
+    {
+      "index": 82,
+      "cmd": 25,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_inact_init"
+    },
+    {
+      "index": 83,
+      "cmd": 26,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "abolt"
+    },
+    {
+      "index": 84,
+      "cmd": 26,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_abolt"
+    },
+    {
+      "index": 85,
+      "cmd": 28,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dtim_period"
+    },
+    {
+      "index": 86,
+      "cmd": 28,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dtim_period"
+    },
+    {
+      "index": 87,
+      "cmd": 173,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "assoc_limit"
+    },
+    {
+      "index": 88,
+      "cmd": 173,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_assoc_limit"
+    },
+    {
+      "index": 89,
+      "cmd": 188,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bss_assoc_limit"
+    },
+    {
+      "index": 90,
+      "cmd": 188,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bss_assolmt"
+    },
+    {
+      "index": 91,
+      "cmd": 29,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bintval"
+    },
+    {
+      "index": 92,
+      "cmd": 29,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bintval"
+    },
+    {
+      "index": 93,
+      "cmd": 30,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "doth"
+    },
+    {
+      "index": 94,
+      "cmd": 30,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_doth"
+    },
+    {
+      "index": 95,
+      "cmd": 31,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "doth_pwrcst"
+    },
+    {
+      "index": 96,
+      "cmd": 31,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_doth_pwrcst"
+    },
+    {
+      "index": 97,
+      "cmd": 32,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "doth_reassoc"
+    },
+    {
+      "index": 98,
+      "cmd": 35816,
+      "set_args": 18434,
+      "get_args": 0,
+      "name": "doth_chanswitch"
+    },
+    {
+      "index": 99,
+      "cmd": 37,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pureg"
+    },
+    {
+      "index": 100,
+      "cmd": 37,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_pureg"
+    },
+    {
+      "index": 101,
+      "cmd": 38,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "repeater"
+    },
+    {
+      "index": 102,
+      "cmd": 38,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_repeater"
+    },
+    {
+      "index": 103,
+      "cmd": 39,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wds"
+    },
+    {
+      "index": 104,
+      "cmd": 39,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_wds"
+    },
+    {
+      "index": 105,
+      "cmd": 40,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bgscan"
+    },
+    {
+      "index": 106,
+      "cmd": 40,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bgscan"
+    },
+    {
+      "index": 107,
+      "cmd": 41,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bgscanidle"
+    },
+    {
+      "index": 108,
+      "cmd": 41,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bgscanidle"
+    },
+    {
+      "index": 109,
+      "cmd": 42,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bgscanintvl"
+    },
+    {
+      "index": 110,
+      "cmd": 42,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bgscanintvl"
+    },
+    {
+      "index": 111,
+      "cmd": 43,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mcast_rate"
+    },
+    {
+      "index": 112,
+      "cmd": 43,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mcast_rate"
+    },
+    {
+      "index": 113,
+      "cmd": 44,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "coverageclass"
+    },
+    {
+      "index": 114,
+      "cmd": 44,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_coveragecls"
+    },
+    {
+      "index": 115,
+      "cmd": 45,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "countryie"
+    },
+    {
+      "index": 116,
+      "cmd": 45,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_countryie"
+    },
+    {
+      "index": 117,
+      "cmd": 46,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "scanvalid"
+    },
+    {
+      "index": 118,
+      "cmd": 46,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scanvalid"
+    },
+    {
+      "index": 119,
+      "cmd": 59,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "regclass"
+    },
+    {
+      "index": 120,
+      "cmd": 59,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_regclass"
+    },
+    {
+      "index": 121,
+      "cmd": 60,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dropunenceapol"
+    },
+    {
+      "index": 122,
+      "cmd": 60,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dropunencea"
+    },
+    {
+      "index": 123,
+      "cmd": 61,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "shpreamble"
+    },
+    {
+      "index": 124,
+      "cmd": 61,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_shpreamble"
+    },
+    {
+      "index": 125,
+      "cmd": 47,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rssi11a"
+    },
+    {
+      "index": 126,
+      "cmd": 47,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rssi11a"
+    },
+    {
+      "index": 127,
+      "cmd": 48,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rssi11b"
+    },
+    {
+      "index": 128,
+      "cmd": 48,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rssi11b"
+    },
+    {
+      "index": 129,
+      "cmd": 49,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rssi11g"
+    },
+    {
+      "index": 130,
+      "cmd": 49,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rssi11g"
+    },
+    {
+      "index": 131,
+      "cmd": 50,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rate11a"
+    },
+    {
+      "index": 132,
+      "cmd": 50,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rate11a"
+    },
+    {
+      "index": 133,
+      "cmd": 51,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rate11b"
+    },
+    {
+      "index": 134,
+      "cmd": 51,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rate11b"
+    },
+    {
+      "index": 135,
+      "cmd": 52,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rate11g"
+    },
+    {
+      "index": 136,
+      "cmd": 52,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rate11g"
+    },
+    {
+      "index": 137,
+      "cmd": 53,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "uapsd"
+    },
+    {
+      "index": 138,
+      "cmd": 53,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_uapsd"
+    },
+    {
+      "index": 139,
+      "cmd": 54,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sleep"
+    },
+    {
+      "index": 140,
+      "cmd": 54,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_sleep"
+    },
+    {
+      "index": 141,
+      "cmd": 55,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "qosnull"
+    },
+    {
+      "index": 142,
+      "cmd": 56,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pspoll"
+    },
+    {
+      "index": 143,
+      "cmd": 57,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "eospdrop"
+    },
+    {
+      "index": 144,
+      "cmd": 57,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_eospdrop"
+    },
+    {
+      "index": 145,
+      "cmd": 231,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sta_dfs"
+    },
+    {
+      "index": 146,
+      "cmd": 231,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_sta_dfs"
+    },
+    {
+      "index": 147,
+      "cmd": 58,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "markdfs"
+    },
+    {
+      "index": 148,
+      "cmd": 58,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_markdfs"
+    },
+    {
+      "index": 149,
+      "cmd": 235,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "radar_bw"
+    },
+    {
+      "index": 150,
+      "cmd": 35818,
+      "set_args": 5132,
+      "get_args": 0,
+      "name": "setiebuf"
+    },
+    {
+      "index": 151,
+      "cmd": 35817,
+      "set_args": 0,
+      "get_args": 5132,
+      "name": "getiebuf"
+    },
+    {
+      "index": 152,
+      "cmd": 35820,
+      "set_args": 4100,
+      "get_args": 0,
+      "name": "setfilter"
+    },
+    {
+      "index": 153,
+      "cmd": 62,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "fixedtxrate"
+    },
+    {
+      "index": 154,
+      "cmd": 62,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_fixedtxrate"
+    },
+    {
+      "index": 155,
+      "cmd": 63,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mimomode"
+    },
+    {
+      "index": 156,
+      "cmd": 63,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mimomode"
+    },
+    {
+      "index": 157,
+      "cmd": 64,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "aggregation"
+    },
+    {
+      "index": 158,
+      "cmd": 64,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_aggregation"
+    },
+    {
+      "index": 159,
+      "cmd": 65,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "retrycount"
+    },
+    {
+      "index": 160,
+      "cmd": 65,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_retrycount"
+    },
+    {
+      "index": 161,
+      "cmd": 66,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "vapdebug"
+    },
+    {
+      "index": 162,
+      "cmd": 66,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vapdebug"
+    },
+    {
+      "index": 163,
+      "cmd": 327,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "noderef_dbg"
+    },
+    {
+      "index": 164,
+      "cmd": 68,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "expmattype"
+    },
+    {
+      "index": 165,
+      "cmd": 68,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_expmattype"
+    },
+    {
+      "index": 166,
+      "cmd": 69,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bwselect"
+    },
+    {
+      "index": 167,
+      "cmd": 69,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bwselect"
+    },
+    {
+      "index": 168,
+      "cmd": 70,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rgselect"
+    },
+    {
+      "index": 169,
+      "cmd": 70,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rgselect"
+    },
+    {
+      "index": 170,
+      "cmd": 71,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bwselect_muc"
+    },
+    {
+      "index": 171,
+      "cmd": 71,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bwselect_muc"
+    },
+    {
+      "index": 172,
+      "cmd": 72,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ackpolicy"
+    },
+    {
+      "index": 173,
+      "cmd": 72,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ackpolicy"
+    },
+    {
+      "index": 174,
+      "cmd": 73,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "legacyselect"
+    },
+    {
+      "index": 175,
+      "cmd": 73,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_legacyselect"
+    },
+    {
+      "index": 176,
+      "cmd": 306,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "max_aggsize"
+    },
+    {
+      "index": 177,
+      "cmd": 306,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_maxaggsize"
+    },
+    {
+      "index": 178,
+      "cmd": 77,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "txbf_ctrl"
+    },
+    {
+      "index": 179,
+      "cmd": 77,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_txbfctrl"
+    },
+    {
+      "index": 180,
+      "cmd": 78,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "txbf_period"
+    },
+    {
+      "index": 181,
+      "cmd": 78,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_txbfperiod"
+    },
+    {
+      "index": 182,
+      "cmd": 80,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "htba_seq"
+    },
+    {
+      "index": 183,
+      "cmd": 80,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_htba_seq"
+    },
+    {
+      "index": 184,
+      "cmd": 81,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "htba_size"
+    },
+    {
+      "index": 185,
+      "cmd": 81,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_htba_size"
+    },
+    {
+      "index": 186,
+      "cmd": 82,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "htba_time"
+    },
+    {
+      "index": 187,
+      "cmd": 82,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_htba_time"
+    },
+    {
+      "index": 188,
+      "cmd": 83,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "htba_addba"
+    },
+    {
+      "index": 189,
+      "cmd": 83,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_htba_addba"
+    },
+    {
+      "index": 190,
+      "cmd": 84,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "htba_delba"
+    },
+    {
+      "index": 191,
+      "cmd": 84,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_htba_delba"
+    },
+    {
+      "index": 192,
+      "cmd": 85,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "disablescan"
+    },
+    {
+      "index": 193,
+      "cmd": 85,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_disablescan"
+    },
+    {
+      "index": 194,
+      "cmd": 86,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_profile"
+    },
+    {
+      "index": 195,
+      "cmd": 86,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "muc_profile"
+    },
+    {
+      "index": 196,
+      "cmd": 87,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_set_phystat"
+    },
+    {
+      "index": 197,
+      "cmd": 87,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "muc_get_phystat"
+    },
+    {
+      "index": 198,
+      "cmd": 88,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_set_partnum"
+    },
+    {
+      "index": 199,
+      "cmd": 88,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "muc_get_partnum"
+    },
+    {
+      "index": 200,
+      "cmd": 89,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ena_gain_adapt"
+    },
+    {
+      "index": 201,
+      "cmd": 89,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_gain_adapt"
+    },
+    {
+      "index": 202,
+      "cmd": 90,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rfchipid"
+    },
+    {
+      "index": 203,
+      "cmd": 90,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rfchipid"
+    },
+    {
+      "index": 204,
+      "cmd": 91,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rfchip_verid"
+    },
+    {
+      "index": 205,
+      "cmd": 91,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rfchip_verid"
+    },
+    {
+      "index": 206,
+      "cmd": 93,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "short_gi"
+    },
+    {
+      "index": 207,
+      "cmd": 93,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_short_gi"
+    },
+    {
+      "index": 208,
+      "cmd": 96,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "forcesmps"
+    },
+    {
+      "index": 209,
+      "cmd": 97,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "forcemicerror"
+    },
+    {
+      "index": 210,
+      "cmd": 98,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "en_cmsures"
+    },
+    {
+      "index": 211,
+      "cmd": 99,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "implicit_ba"
+    },
+    {
+      "index": 212,
+      "cmd": 99,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_implicit_ba"
+    },
+    {
+      "index": 213,
+      "cmd": 100,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cl_remove"
+    },
+    {
+      "index": 214,
+      "cmd": 101,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "showmem"
+    },
+    {
+      "index": 215,
+      "cmd": 102,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "scanstatus"
+    },
+    {
+      "index": 216,
+      "cmd": 102,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scanstatus"
+    },
+    {
+      "index": 217,
+      "cmd": 220,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_cacstatus"
+    },
+    {
+      "index": 218,
+      "cmd": 103,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ba_control"
+    },
+    {
+      "index": 219,
+      "cmd": 103,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ba_control"
+    },
+    {
+      "index": 220,
+      "cmd": 104,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "no_ssid_assoc"
+    },
+    {
+      "index": 221,
+      "cmd": 106,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cfg_txpower"
+    },
+    {
+      "index": 222,
+      "cmd": 370,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "init_txpower"
+    },
+    {
+      "index": 223,
+      "cmd": 267,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cfg_bw_power"
+    },
+    {
+      "index": 224,
+      "cmd": 217,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tpc_intvl"
+    },
+    {
+      "index": 225,
+      "cmd": 217,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tpc_interval"
+    },
+    {
+      "index": 226,
+      "cmd": 219,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tpc"
+    },
+    {
+      "index": 227,
+      "cmd": 219,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tpc"
+    },
+    {
+      "index": 228,
+      "cmd": 218,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tpc_query"
+    },
+    {
+      "index": 229,
+      "cmd": 218,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tpc_query"
+    },
+    {
+      "index": 230,
+      "cmd": 210,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cfg_reg_txpower"
+    },
+    {
+      "index": 231,
+      "cmd": 107,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "skb_list_max"
+    },
+    {
+      "index": 232,
+      "cmd": 108,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "vapstats"
+    },
+    {
+      "index": 233,
+      "cmd": 109,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rate_ctrl_flags"
+    },
+    {
+      "index": 234,
+      "cmd": 110,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_ldpc"
+    },
+    {
+      "index": 235,
+      "cmd": 110,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ldpc"
+    },
+    {
+      "index": 236,
+      "cmd": 111,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dfs_fast_switch"
+    },
+    {
+      "index": 237,
+      "cmd": 111,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dfs_switch"
+    },
+    {
+      "index": 238,
+      "cmd": 126,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_blacklist"
+    },
+    {
+      "index": 239,
+      "cmd": 114,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "scan_no_dfs"
+    },
+    {
+      "index": 240,
+      "cmd": 114,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scan_dfs"
+    },
+    {
+      "index": 241,
+      "cmd": 122,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sample_rate"
+    },
+    {
+      "index": 242,
+      "cmd": 122,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_sample_rate"
+    },
+    {
+      "index": 243,
+      "cmd": 112,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_40only_mode"
+    },
+    {
+      "index": 244,
+      "cmd": 112,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_40only_mode"
+    },
+    {
+      "index": 245,
+      "cmd": 113,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_ampdu_dens"
+    },
+    {
+      "index": 246,
+      "cmd": 113,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ampdu_dens"
+    },
+    {
+      "index": 247,
+      "cmd": 115,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "region"
+    },
+    {
+      "index": 248,
+      "cmd": 115,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_region"
+    },
+    {
+      "index": 249,
+      "cmd": 260,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "country_code"
+    },
+    {
+      "index": 250,
+      "cmd": 260,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_country_code"
+    },
+    {
+      "index": 251,
+      "cmd": 123,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mcs_cap"
+    },
+    {
+      "index": 252,
+      "cmd": 123,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mcs_cap"
+    },
+    {
+      "index": 253,
+      "cmd": 124,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "max_mgmtfrms"
+    },
+    {
+      "index": 254,
+      "cmd": 124,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_max_mgtfrms"
+    },
+    {
+      "index": 255,
+      "cmd": 125,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mcs_odd_even"
+    },
+    {
+      "index": 256,
+      "cmd": 125,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mcs_oddeven"
+    },
+    {
+      "index": 257,
+      "cmd": 128,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ba_max"
+    },
+    {
+      "index": 258,
+      "cmd": 128,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ba_max"
+    },
+    {
+      "index": 259,
+      "cmd": 129,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tx_restrict"
+    },
+    {
+      "index": 260,
+      "cmd": 129,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tx_restrict"
+    },
+    {
+      "index": 261,
+      "cmd": 131,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mode_phy_stats"
+    },
+    {
+      "index": 262,
+      "cmd": 133,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "min_dt_act"
+    },
+    {
+      "index": 263,
+      "cmd": 133,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_min_dt_act"
+    },
+    {
+      "index": 264,
+      "cmd": 134,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "min_dt_pas"
+    },
+    {
+      "index": 265,
+      "cmd": 134,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_min_dt_pas"
+    },
+    {
+      "index": 266,
+      "cmd": 135,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "max_dt_act"
+    },
+    {
+      "index": 267,
+      "cmd": 135,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_max_dt_act"
+    },
+    {
+      "index": 268,
+      "cmd": 136,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "max_dt_pas"
+    },
+    {
+      "index": 269,
+      "cmd": 136,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_max_dt_pas"
+    },
+    {
+      "index": 270,
+      "cmd": 207,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dt_act"
+    },
+    {
+      "index": 271,
+      "cmd": 207,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dt_act"
+    },
+    {
+      "index": 272,
+      "cmd": 208,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dt_pas"
+    },
+    {
+      "index": 273,
+      "cmd": 208,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dt_pas"
+    },
+    {
+      "index": 274,
+      "cmd": 389,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dur_act"
+    },
+    {
+      "index": 275,
+      "cmd": 389,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dur_act"
+    },
+    {
+      "index": 276,
+      "cmd": 390,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dur_pf"
+    },
+    {
+      "index": 277,
+      "cmd": 390,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dur_pf"
+    },
+    {
+      "index": 278,
+      "cmd": 391,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dur_pn"
+    },
+    {
+      "index": 279,
+      "cmd": 391,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dur_pn"
+    },
+    {
+      "index": 280,
+      "cmd": 392,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dur_ps"
+    },
+    {
+      "index": 281,
+      "cmd": 392,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dur_ps"
+    },
+    {
+      "index": 282,
+      "cmd": 393,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_thr_fst"
+    },
+    {
+      "index": 283,
+      "cmd": 393,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_thr_fst"
+    },
+    {
+      "index": 284,
+      "cmd": 394,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_thr_nor"
+    },
+    {
+      "index": 285,
+      "cmd": 394,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_thr_nor"
+    },
+    {
+      "index": 286,
+      "cmd": 209,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_debug"
+    },
+    {
+      "index": 287,
+      "cmd": 209,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_debug"
+    },
+    {
+      "index": 288,
+      "cmd": 138,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "legacy_retry"
+    },
+    {
+      "index": 289,
+      "cmd": 138,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_legacyretry"
+    },
+    {
+      "index": 290,
+      "cmd": 147,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "scs_set"
+    },
+    {
+      "index": 291,
+      "cmd": 147,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "scs_get"
+    },
+    {
+      "index": 292,
+      "cmd": 203,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "scs_get_reent"
+    },
+    {
+      "index": 293,
+      "cmd": 139,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "training_count"
+    },
+    {
+      "index": 294,
+      "cmd": 140,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dynamic_ac"
+    },
+    {
+      "index": 295,
+      "cmd": 141,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dbg_dump"
+    },
+    {
+      "index": 296,
+      "cmd": 142,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dbg_dump_tcm_fd"
+    },
+    {
+      "index": 297,
+      "cmd": 143,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rxcsr_err_allow"
+    },
+    {
+      "index": 298,
+      "cmd": 144,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dbg_stop"
+    },
+    {
+      "index": 299,
+      "cmd": 145,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dbg_check"
+    },
+    {
+      "index": 300,
+      "cmd": 146,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ctrl_filter"
+    },
+    {
+      "index": 301,
+      "cmd": 148,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_alt_chan"
+    },
+    {
+      "index": 302,
+      "cmd": 148,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_alt_chan"
+    },
+    {
+      "index": 303,
+      "cmd": 149,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bcm_fixup"
+    },
+    {
+      "index": 304,
+      "cmd": 150,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "gi_select"
+    },
+    {
+      "index": 305,
+      "cmd": 150,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_gi_select"
+    },
+    {
+      "index": 306,
+      "cmd": 105,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "gi_fixed"
+    },
+    {
+      "index": 307,
+      "cmd": 105,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_gi_fixed"
+    },
+    {
+      "index": 308,
+      "cmd": 270,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bw_fixed"
+    },
+    {
+      "index": 309,
+      "cmd": 270,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bw_fixed"
+    },
+    {
+      "index": 310,
+      "cmd": 154,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_ldpc_nonqtn"
+    },
+    {
+      "index": 311,
+      "cmd": 154,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ldpc_nonqtn"
+    },
+    {
+      "index": 312,
+      "cmd": 155,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "fwd_unknown_mc"
+    },
+    {
+      "index": 313,
+      "cmd": 155,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_unknown_mc"
+    },
+    {
+      "index": 314,
+      "cmd": 156,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "reliable_bc"
+    },
+    {
+      "index": 315,
+      "cmd": 156,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_reliable_bc"
+    },
+    {
+      "index": 316,
+      "cmd": 157,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ap_fwd_lncb"
+    },
+    {
+      "index": 317,
+      "cmd": 157,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ap_fwd_lncb"
+    },
+    {
+      "index": 318,
+      "cmd": 158,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pppc"
+    },
+    {
+      "index": 319,
+      "cmd": 158,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_pppc"
+    },
+    {
+      "index": 320,
+      "cmd": 206,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pppc_step"
+    },
+    {
+      "index": 321,
+      "cmd": 206,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_pppc_step"
+    },
+    {
+      "index": 322,
+      "cmd": 159,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "test_lncb"
+    },
+    {
+      "index": 323,
+      "cmd": 160,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_stbc"
+    },
+    {
+      "index": 324,
+      "cmd": 160,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_stbc"
+    },
+    {
+      "index": 325,
+      "cmd": 161,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_rtscts"
+    },
+    {
+      "index": 326,
+      "cmd": 161,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rtscts"
+    },
+    {
+      "index": 327,
+      "cmd": 292,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_txqos_sched"
+    },
+    {
+      "index": 328,
+      "cmd": 292,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_txqos_sched"
+    },
+    {
+      "index": 329,
+      "cmd": 162,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dfs_cce"
+    },
+    {
+      "index": 330,
+      "cmd": 163,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scs_cce"
+    },
+    {
+      "index": 331,
+      "cmd": 165,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rx_agg_to"
+    },
+    {
+      "index": 332,
+      "cmd": 165,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rx_agg_to"
+    },
+    {
+      "index": 333,
+      "cmd": 166,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_halt"
+    },
+    {
+      "index": 334,
+      "cmd": 167,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tr_trig"
+    },
+    {
+      "index": 335,
+      "cmd": 168,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_tb"
+    },
+    {
+      "index": 336,
+      "cmd": 169,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_bkbitmap"
+    },
+    {
+      "index": 337,
+      "cmd": 171,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_flags"
+    },
+    {
+      "index": 338,
+      "cmd": 172,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_ht_nss_cap"
+    },
+    {
+      "index": 339,
+      "cmd": 172,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ht_nss_cap"
+    },
+    {
+      "index": 340,
+      "cmd": 269,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht_nss_cap"
+    },
+    {
+      "index": 341,
+      "cmd": 269,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht_nss_cap"
+    },
+    {
+      "index": 342,
+      "cmd": 177,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "unknown_dst_arp"
+    },
+    {
+      "index": 343,
+      "cmd": 178,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "unknown_dst_fwd"
+    },
+    {
+      "index": 344,
+      "cmd": 180,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "reset_assoc_his"
+    },
+    {
+      "index": 345,
+      "cmd": 181,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "clean_csw"
+    },
+    {
+      "index": 346,
+      "cmd": 346,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_upd"
+    },
+    {
+      "index": 347,
+      "cmd": 347,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_tx_rate_set"
+    },
+    {
+      "index": 348,
+      "cmd": 348,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_dbg_lvl_set"
+    },
+    {
+      "index": 349,
+      "cmd": 349,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_enable_set"
+    },
+    {
+      "index": 350,
+      "cmd": 349,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "mu_enable_get"
+    },
+    {
+      "index": 351,
+      "cmd": 350,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_qmt_inst"
+    },
+    {
+      "index": 352,
+      "cmd": 351,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_qmt_del"
+    },
+    {
+      "index": 353,
+      "cmd": 368,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "mu_grp_qmt_get"
+    },
+    {
+      "index": 354,
+      "cmd": 353,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_qmt_ena"
+    },
+    {
+      "index": 355,
+      "cmd": 367,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_qmt_dis"
+    },
+    {
+      "index": 356,
+      "cmd": 354,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_dbg_flg_set"
+    },
+    {
+      "index": 357,
+      "cmd": 373,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_airtime_pad"
+    },
+    {
+      "index": 358,
+      "cmd": 355,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dsp_dbg_lvl_set"
+    },
+    {
+      "index": 359,
+      "cmd": 356,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dsp_dbg_flg_set"
+    },
+    {
+      "index": 360,
+      "cmd": 357,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_crc_error"
+    },
+    {
+      "index": 361,
+      "cmd": 358,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_sw_usr_pos"
+    },
+    {
+      "index": 362,
+      "cmd": 359,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_snd_per"
+    },
+    {
+      "index": 363,
+      "cmd": 360,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_prec_snd_per"
+    },
+    {
+      "index": 364,
+      "cmd": 418,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_rank_toleran"
+    },
+    {
+      "index": 365,
+      "cmd": 365,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dsp_prc_alg_set"
+    },
+    {
+      "index": 366,
+      "cmd": 366,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dsp_rnk_alg_set"
+    },
+    {
+      "index": 367,
+      "cmd": 369,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_set_use_eq"
+    },
+    {
+      "index": 368,
+      "cmd": 369,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "mu_get_use_eq"
+    },
+    {
+      "index": 369,
+      "cmd": 374,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_amsdu_size"
+    },
+    {
+      "index": 370,
+      "cmd": 399,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_bmps"
+    },
+    {
+      "index": 371,
+      "cmd": 399,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bmps"
+    },
+    {
+      "index": 372,
+      "cmd": 35837,
+      "set_args": 0,
+      "get_args": 6728,
+      "name": ""
+    },
+    {
+      "index": 373,
+      "cmd": 180,
+      "set_args": 0,
+      "get_args": 6728,
+      "name": "assoc_history"
+    },
+    {
+      "index": 374,
+      "cmd": 181,
+      "set_args": 0,
+      "get_args": 6728,
+      "name": "get_csw_record"
+    },
+    {
+      "index": 375,
+      "cmd": 182,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "restrict_rts"
+    },
+    {
+      "index": 376,
+      "cmd": 182,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rstrict_rts"
+    },
+    {
+      "index": 377,
+      "cmd": 183,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "restrict_max"
+    },
+    {
+      "index": 378,
+      "cmd": 183,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rstrict_max"
+    },
+    {
+      "index": 379,
+      "cmd": 186,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "swret_agg"
+    },
+    {
+      "index": 380,
+      "cmd": 186,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_swret_agg"
+    },
+    {
+      "index": 381,
+      "cmd": 187,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "swret_noagg"
+    },
+    {
+      "index": 382,
+      "cmd": 187,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_swret_noagg"
+    },
+    {
+      "index": 383,
+      "cmd": 191,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_cca_pri"
+    },
+    {
+      "index": 384,
+      "cmd": 192,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_cca_sec"
+    },
+    {
+      "index": 385,
+      "cmd": 332,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_cca_sec40"
+    },
+    {
+      "index": 386,
+      "cmd": 331,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_cca_fixed"
+    },
+    {
+      "index": 387,
+      "cmd": 331,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_cca_fixed"
+    },
+    {
+      "index": 388,
+      "cmd": 196,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pm"
+    },
+    {
+      "index": 389,
+      "cmd": 196,
+      "set_args": 0,
+      "get_args": 6728,
+      "name": "get_pm"
+    },
+    {
+      "index": 390,
+      "cmd": 195,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ps_cmd"
+    },
+    {
+      "index": 391,
+      "cmd": 199,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "fast_reassoc"
+    },
+    {
+      "index": 392,
+      "cmd": 201,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "test_traffic"
+    },
+    {
+      "index": 393,
+      "cmd": 204,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "qcat_state"
+    },
+    {
+      "index": 394,
+      "cmd": 205,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ralg_dbg"
+    },
+    {
+      "index": 395,
+      "cmd": 212,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "csa_flag"
+    },
+    {
+      "index": 396,
+      "cmd": 212,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_csa_flag"
+    },
+    {
+      "index": 397,
+      "cmd": 215,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "def_matrix"
+    },
+    {
+      "index": 398,
+      "cmd": 215,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_def_matrix"
+    },
+    {
+      "index": 399,
+      "cmd": 272,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tunepd"
+    },
+    {
+      "index": 400,
+      "cmd": 273,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tunepd_done"
+    },
+    {
+      "index": 401,
+      "cmd": 221,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rtshold"
+    },
+    {
+      "index": 402,
+      "cmd": 239,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "carrier_id"
+    },
+    {
+      "index": 403,
+      "cmd": 239,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_carrier_id"
+    },
+    {
+      "index": 404,
+      "cmd": 222,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ba_throt"
+    },
+    {
+      "index": 405,
+      "cmd": 223,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "queuing_alg"
+    },
+    {
+      "index": 406,
+      "cmd": 223,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_queuing_alg"
+    },
+    {
+      "index": 407,
+      "cmd": 226,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wme_throt"
+    },
+    {
+      "index": 408,
+      "cmd": 2,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht"
+    },
+    {
+      "index": 409,
+      "cmd": 2,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht"
+    },
+    {
+      "index": 410,
+      "cmd": 227,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "enable_11ac"
+    },
+    {
+      "index": 411,
+      "cmd": 227,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_11ac_status"
+    },
+    {
+      "index": 412,
+      "cmd": 228,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_11ac_mcs"
+    },
+    {
+      "index": 413,
+      "cmd": 228,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_11ac_mcs"
+    },
+    {
+      "index": 414,
+      "cmd": 347,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_mu_mcs"
+    },
+    {
+      "index": 415,
+      "cmd": 243,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auc_rx_dbg"
+    },
+    {
+      "index": 416,
+      "cmd": 252,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auc_tx_dbg"
+    },
+    {
+      "index": 417,
+      "cmd": 246,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tx_maxmpdu"
+    },
+    {
+      "index": 418,
+      "cmd": 246,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tx_maxmpdu"
+    },
+    {
+      "index": 419,
+      "cmd": 244,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rx_accel"
+    },
+    {
+      "index": 420,
+      "cmd": 245,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rx_accel_lu_sa"
+    },
+    {
+      "index": 421,
+      "cmd": 255,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tacmap"
+    },
+    {
+      "index": 422,
+      "cmd": 256,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "vap_pri"
+    },
+    {
+      "index": 423,
+      "cmd": 256,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vap_pri"
+    },
+    {
+      "index": 424,
+      "cmd": 288,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "airfair"
+    },
+    {
+      "index": 425,
+      "cmd": 288,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_airfair"
+    },
+    {
+      "index": 426,
+      "cmd": 257,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auc_qos_sch"
+    },
+    {
+      "index": 427,
+      "cmd": 263,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "vap_pri_wme"
+    },
+    {
+      "index": 428,
+      "cmd": 266,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "emi_pwr_sw"
+    },
+    {
+      "index": 429,
+      "cmd": 266,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_emi_pwr"
+    },
+    {
+      "index": 430,
+      "cmd": 300,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "aggressive_agg"
+    },
+    {
+      "index": 431,
+      "cmd": 307,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tqew_descrs"
+    },
+    {
+      "index": 432,
+      "cmd": 307,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tqew_descrs"
+    },
+    {
+      "index": 433,
+      "cmd": 213,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "br_ip"
+    },
+    {
+      "index": 434,
+      "cmd": 229,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "genpcap"
+    },
+    {
+      "index": 435,
+      "cmd": 236,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_disc_int"
+    },
+    {
+      "index": 436,
+      "cmd": 237,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_path_wgt"
+    },
+    {
+      "index": 437,
+      "cmd": 318,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_min_rssi"
+    },
+    {
+      "index": 438,
+      "cmd": 319,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_swit_ints"
+    },
+    {
+      "index": 439,
+      "cmd": 320,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_rate_wgt"
+    },
+    {
+      "index": 440,
+      "cmd": 324,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_offchan"
+    },
+    {
+      "index": 441,
+      "cmd": 324,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tdls_offchan"
+    },
+    {
+      "index": 442,
+      "cmd": 325,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_offchbw"
+    },
+    {
+      "index": 443,
+      "cmd": 325,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tdls_offchbw"
+    },
+    {
+      "index": 444,
+      "cmd": 232,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ocac_set"
+    },
+    {
+      "index": 445,
+      "cmd": 232,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "ocac_get"
+    },
+    {
+      "index": 446,
+      "cmd": 375,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sdfs_set"
+    },
+    {
+      "index": 447,
+      "cmd": 375,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "sdfs_get"
+    },
+    {
+      "index": 448,
+      "cmd": 241,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "deact_chan_pri"
+    },
+    {
+      "index": 449,
+      "cmd": 242,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "restrict_rt"
+    },
+    {
+      "index": 450,
+      "cmd": 242,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_restrict_rt"
+    },
+    {
+      "index": 451,
+      "cmd": 251,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "training_restart"
+    },
+    {
+      "index": 452,
+      "cmd": 381,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vco_lock"
+    },
+    {
+      "index": 453,
+      "cmd": 381,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vco_lock"
+    },
+    {
+      "index": 454,
+      "cmd": 274,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pmf_set"
+    },
+    {
+      "index": 455,
+      "cmd": 274,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "pmf_get"
+    },
+    {
+      "index": 456,
+      "cmd": 268,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "scan_cancel"
+    },
+    {
+      "index": 457,
+      "cmd": 275,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auto_cca_enable"
+    },
+    {
+      "index": 458,
+      "cmd": 275,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_auto_cca_en"
+    },
+    {
+      "index": 459,
+      "cmd": 276,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auto_cca_param"
+    },
+    {
+      "index": 460,
+      "cmd": 277,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auto_cca_dbg"
+    },
+    {
+      "index": 461,
+      "cmd": 387,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "autocs_enable"
+    },
+    {
+      "index": 462,
+      "cmd": 388,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "autocs_param"
+    },
+    {
+      "index": 463,
+      "cmd": 278,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "intra_bss"
+    },
+    {
+      "index": 464,
+      "cmd": 278,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_intra_bss"
+    },
+    {
+      "index": 465,
+      "cmd": 279,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bss_isolate"
+    },
+    {
+      "index": 466,
+      "cmd": 279,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bss_iso"
+    },
+    {
+      "index": 467,
+      "cmd": 280,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bf_rxsts"
+    },
+    {
+      "index": 468,
+      "cmd": 280,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bf_rxsts"
+    },
+    {
+      "index": 469,
+      "cmd": 303,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pc_override"
+    },
+    {
+      "index": 470,
+      "cmd": 303,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_pc_override"
+    },
+    {
+      "index": 471,
+      "cmd": 281,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wowlan_set"
+    },
+    {
+      "index": 472,
+      "cmd": 281,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "wowlan_get"
+    },
+    {
+      "index": 473,
+      "cmd": 290,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rx_amsdu"
+    },
+    {
+      "index": 474,
+      "cmd": 290,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rx_amsdu"
+    },
+    {
+      "index": 475,
+      "cmd": 291,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "disassoc_reason"
+    },
+    {
+      "index": 476,
+      "cmd": 297,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "peer_rts"
+    },
+    {
+      "index": 477,
+      "cmd": 297,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_peer_rts"
+    },
+    {
+      "index": 478,
+      "cmd": 298,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dyn_wmm"
+    },
+    {
+      "index": 479,
+      "cmd": 298,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dyn_wmm"
+    },
+    {
+      "index": 480,
+      "cmd": 299,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rssi_for_ba_set"
+    },
+    {
+      "index": 481,
+      "cmd": 301,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_bb_param"
+    },
+    {
+      "index": 482,
+      "cmd": 301,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bb_param"
+    },
+    {
+      "index": 483,
+      "cmd": 302,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "vap_txamsdu"
+    },
+    {
+      "index": 484,
+      "cmd": 302,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vap_txamsdu"
+    },
+    {
+      "index": 485,
+      "cmd": 484,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "txamsdu_11n"
+    },
+    {
+      "index": 486,
+      "cmd": 484,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_txamsdu_11n"
+    },
+    {
+      "index": 487,
+      "cmd": 309,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cs_thres"
+    },
+    {
+      "index": 488,
+      "cmd": 309,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_cs_thres"
+    },
+    {
+      "index": 489,
+      "cmd": 333,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cs_thres_dbm"
+    },
+    {
+      "index": 490,
+      "cmd": 363,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scan_inv"
+    },
+    {
+      "index": 491,
+      "cmd": 363,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_scan_inv"
+    },
+    {
+      "index": 492,
+      "cmd": 271,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sfs"
+    },
+    {
+      "index": 493,
+      "cmd": 361,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "def_1ss_mat_en"
+    },
+    {
+      "index": 494,
+      "cmd": 362,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "def_1ss_mat_th"
+    },
+    {
+      "index": 495,
+      "cmd": 329,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "swfeat_disable"
+    },
+    {
+      "index": 496,
+      "cmd": 335,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "flush_scan"
+    },
+    {
+      "index": 497,
+      "cmd": 336,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_scan_opch"
+    },
+    {
+      "index": 498,
+      "cmd": 336,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scan_opch"
+    },
+    {
+      "index": 499,
+      "cmd": 337,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dump_scale_base"
+    },
+    {
+      "index": 500,
+      "cmd": 342,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tx_scale_index"
+    },
+    {
+      "index": 501,
+      "cmd": 345,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pm_corrupt_debug"
+    },
+    {
+      "index": 502,
+      "cmd": 371,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "l2_ext_filter"
+    },
+    {
+      "index": 503,
+      "cmd": 371,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_l2_ext_filt"
+    },
+    {
+      "index": 504,
+      "cmd": 378,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_optim_stats"
+    },
+    {
+      "index": 505,
+      "cmd": 379,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "unicast_qcnt"
+    },
+    {
+      "index": 506,
+      "cmd": 382,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "obss_exe_req"
+    },
+    {
+      "index": 507,
+      "cmd": 383,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_obss_int"
+    },
+    {
+      "index": 508,
+      "cmd": 383,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_obss_int"
+    },
+    {
+      "index": 509,
+      "cmd": 386,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht_tkip"
+    },
+    {
+      "index": 510,
+      "cmd": 386,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht_tkip"
+    },
+    {
+      "index": 511,
+      "cmd": 396,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht_24g"
+    },
+    {
+      "index": 512,
+      "cmd": 396,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht_24g"
+    },
+    {
+      "index": 513,
+      "cmd": 398,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bcn_scheme"
+    },
+    {
+      "index": 514,
+      "cmd": 398,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bcn_scheme"
+    },
+    {
+      "index": 515,
+      "cmd": 400,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "40mhz_intol"
+    },
+    {
+      "index": 516,
+      "cmd": 400,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_40mhz_intol"
+    },
+    {
+      "index": 517,
+      "cmd": 404,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "vap_state"
+    },
+    {
+      "index": 518,
+      "cmd": 404,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vap_state"
+    },
+    {
+      "index": 519,
+      "cmd": 401,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_antenna_usg"
+    },
+    {
+      "index": 520,
+      "cmd": 401,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_antenna_usg"
+    },
+    {
+      "index": 521,
+      "cmd": 409,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_rts_bw"
+    },
+    {
+      "index": 522,
+      "cmd": 409,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rts_bw"
+    },
+    {
+      "index": 523,
+      "cmd": 498,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_dup_rts"
+    },
+    {
+      "index": 524,
+      "cmd": 498,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dup_rts"
+    },
+    {
+      "index": 525,
+      "cmd": 410,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_cts_bw"
+    },
+    {
+      "index": 526,
+      "cmd": 410,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_cts_bw"
+    },
+    {
+      "index": 527,
+      "cmd": 411,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht_mcs_cap"
+    },
+    {
+      "index": 528,
+      "cmd": 411,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht_mcs_cap"
+    },
+    {
+      "index": 529,
+      "cmd": 412,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht_opmntf"
+    },
+    {
+      "index": 530,
+      "cmd": 412,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht_opmntf"
+    },
+    {
+      "index": 531,
+      "cmd": 414,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_mu_non_ht"
+    },
+    {
+      "index": 532,
+      "cmd": 414,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mu_non_ht"
+    },
+    {
+      "index": 533,
+      "cmd": 415,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "11g_protect"
+    },
+    {
+      "index": 534,
+      "cmd": 415,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_11g_protect"
+    },
+    {
+      "index": 535,
+      "cmd": 420,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_rx_bws_ndpa"
+    },
+    {
+      "index": 536,
+      "cmd": 420,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rx_bws_ndpa"
+    },
+    {
+      "index": 537,
+      "cmd": 421,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_rstrict_wip"
+    },
+    {
+      "index": 538,
+      "cmd": 421,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rstrict_wip"
+    },
+    {
+      "index": 539,
+      "cmd": 422,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_mc_to_uc"
+    },
+    {
+      "index": 540,
+      "cmd": 422,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mc_to_uc"
+    },
+    {
+      "index": 541,
+      "cmd": 424,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "hostap_state"
+    },
+    {
+      "index": 542,
+      "cmd": 424,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_hostap_state"
+    },
+    {
+      "index": 543,
+      "cmd": 425,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wpa_state"
+    },
+    {
+      "index": 544,
+      "cmd": 425,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_wpa_state"
+    },
+    {
+      "index": 545,
+      "cmd": 428,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ep_status"
+    },
+    {
+      "index": 546,
+      "cmd": 430,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_bcast_pps"
+    },
+    {
+      "index": 547,
+      "cmd": 432,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_ssid_grpid"
+    },
+    {
+      "index": 548,
+      "cmd": 432,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ssid_grpid"
+    },
+    {
+      "index": 549,
+      "cmd": 433,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_assoc_rsrv"
+    },
+    {
+      "index": 550,
+      "cmd": 433,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_assoc_rsrv"
+    },
+    {
+      "index": 551,
+      "cmd": 434,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_boot_cac"
+    },
+    {
+      "index": 552,
+      "cmd": 435,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_rx_bar_sync"
+    },
+    {
+      "index": 553,
+      "cmd": 435,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rx_bar_sync"
+    },
+    {
+      "index": 554,
+      "cmd": 436,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_reg_is_eu"
+    },
+    {
+      "index": 555,
+      "cmd": 437,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auc_tx_agg_dur"
+    },
+    {
+      "index": 556,
+      "cmd": 438,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "chan_avail_stat"
+    },
+    {
+      "index": 557,
+      "cmd": 439,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "stop_icac"
+    },
+    {
+      "index": 558,
+      "cmd": 440,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sta_dfs_strict"
+    },
+    {
+      "index": 559,
+      "cmd": 441,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sta_dfs_msr_cac"
+    },
+    {
+      "index": 560,
+      "cmd": 442,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sta_dfs_end_tx"
+    },
+    {
+      "index": 561,
+      "cmd": 443,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_nbr_thrshd"
+    },
+    {
+      "index": 562,
+      "cmd": 444,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_nbr_type"
+    },
+    {
+      "index": 563,
+      "cmd": 445,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_nbr_cnt"
+    },
+    {
+      "index": 564,
+      "cmd": 151,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "radar_nop_time"
+    },
+    {
+      "index": 565,
+      "cmd": 151,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "gt_radar_nop"
+    },
+    {
+      "index": 566,
+      "cmd": 447,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dfs_csa_cnt"
+    },
+    {
+      "index": 567,
+      "cmd": 447,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dfs_csa_cnt"
+    },
+    {
+      "index": 568,
+      "cmd": 440,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "gt_stdfs_strict"
+    },
+    {
+      "index": 569,
+      "cmd": 441,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "gt_stdfs_msrcac"
+    },
+    {
+      "index": 570,
+      "cmd": 442,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "gt_stdfs_end_tx"
+    },
+    {
+      "index": 571,
+      "cmd": 449,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "20_40_bss_coex"
+    },
+    {
+      "index": 572,
+      "cmd": 450,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_min_cac"
+    },
+    {
+      "index": 573,
+      "cmd": 457,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "nac_mode"
+    },
+    {
+      "index": 574,
+      "cmd": 457,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_nac_mode"
+    },
+    {
+      "index": 575,
+      "cmd": 451,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dev_mode"
+    },
+    {
+      "index": 576,
+      "cmd": 460,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_max_bw"
+    },
+    {
+      "index": 577,
+      "cmd": 460,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_max_bw"
+    },
+    {
+      "index": 578,
+      "cmd": 461,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_bw_autosel"
+    },
+    {
+      "index": 579,
+      "cmd": 461,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bw_autosel"
+    },
+    {
+      "index": 580,
+      "cmd": 465,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ignr_icac_sel"
+    },
+    {
+      "index": 581,
+      "cmd": 467,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "dfs_chan_avail"
+    },
+    {
+      "index": 582,
+      "cmd": 464,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "check_cur_chan"
+    },
+    {
+      "index": 583,
+      "cmd": 466,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rbs_dfs_msr_cac"
+    },
+    {
+      "index": 584,
+      "cmd": 466,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "g_rbsdfs_msrcac"
+    },
+    {
+      "index": 585,
+      "cmd": 468,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rbs_dfs_end_tx"
+    },
+    {
+      "index": 586,
+      "cmd": 468,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "g_rbsdfs_end_tx"
+    },
+    {
+      "index": 587,
+      "cmd": 492,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "neigh_repo"
+    },
+    {
+      "index": 588,
+      "cmd": 492,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_neigh_repo"
+    },
+    {
+      "index": 589,
+      "cmd": 463,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_dyn_sifs"
+    },
+    {
+      "index": 590,
+      "cmd": 478,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wea_cac_en"
+    },
+    {
+      "index": 591,
+      "cmd": 478,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_wea_cac_en"
+    },
+    {
+      "index": 592,
+      "cmd": 481,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vopt"
+    },
+    {
+      "index": 593,
+      "cmd": 481,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vopt"
+    },
+    {
+      "index": 594,
+      "cmd": 483,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bbdf_war_en"
+    },
+    {
+      "index": 595,
+      "cmd": 483,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bbdfwar_en"
+    },
+    {
+      "index": 596,
+      "cmd": 491,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "coc_mv_to_ndfs"
+    },
+    {
+      "index": 597,
+      "cmd": 491,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "g_coc_mv_to_ndfs"
+    },
+    {
+      "index": 598,
+      "cmd": 493,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bss_tm"
+    },
+    {
+      "index": 599,
+      "cmd": 493,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bss_tm"
+    },
+    {
+      "index": 600,
+      "cmd": 494,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mdid"
+    },
+    {
+      "index": 601,
+      "cmd": 494,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mdid"
+    },
+    {
+      "index": 602,
+      "cmd": 495,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ft_over_ds"
+    },
+    {
+      "index": 603,
+      "cmd": 495,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ft_over_ds"
+    },
+    {
+      "index": 604,
+      "cmd": 496,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_sretry_lmt"
+    },
+    {
+      "index": 605,
+      "cmd": 497,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_lretry_lmt"
+    },
+    {
+      "index": 606,
+      "cmd": 490,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "fix_legacy_rate"
+    }
+  ],
+  "f365_wlan": [
+    {
+      "index": 0,
+      "cmd": 35822,
+      "set_args": 4352,
+      "get_args": 0,
+      "name": "setoptie"
+    },
+    {
+      "index": 1,
+      "cmd": 35823,
+      "set_args": 0,
+      "get_args": 4352,
+      "name": "getoptie"
+    },
+    {
+      "index": 2,
+      "cmd": 35826,
+      "set_args": 6208,
+      "get_args": 0,
+      "name": "setkey"
+    },
+    {
+      "index": 3,
+      "cmd": 35828,
+      "set_args": 6151,
+      "get_args": 0,
+      "name": "delkey"
+    },
+    {
+      "index": 4,
+      "cmd": 35824,
+      "set_args": 6186,
+      "get_args": 0,
+      "name": "setmlme"
+    },
+    {
+      "index": 5,
+      "cmd": 35830,
+      "set_args": 26625,
+      "get_args": 0,
+      "name": "setbssid"
+    },
+    {
+      "index": 6,
+      "cmd": 35832,
+      "set_args": 26625,
+      "get_args": 0,
+      "name": "delmac"
+    },
+    {
+      "index": 7,
+      "cmd": 35838,
+      "set_args": 26625,
+      "get_args": 0,
+      "name": "kickmac"
+    },
+    {
+      "index": 8,
+      "cmd": 35834,
+      "set_args": 26625,
+      "get_args": 0,
+      "name": "wds_add"
+    },
+    {
+      "index": 9,
+      "cmd": 35836,
+      "set_args": 26625,
+      "get_args": 0,
+      "name": "wds_del"
+    },
+    {
+      "index": 10,
+      "cmd": 35814,
+      "set_args": 6176,
+      "get_args": 0,
+      "name": "setchanlist"
+    },
+    {
+      "index": 11,
+      "cmd": 35815,
+      "set_args": 0,
+      "get_args": 6176,
+      "name": "getchanlist"
+    },
+    {
+      "index": 12,
+      "cmd": 35831,
+      "set_args": 6153,
+      "get_args": 0,
+      "name": "startcca"
+    },
+    {
+      "index": 13,
+      "cmd": 35821,
+      "set_args": 0,
+      "get_args": 7936,
+      "name": "getchaninfo"
+    },
+    {
+      "index": 14,
+      "cmd": 35810,
+      "set_args": 8204,
+      "get_args": 0,
+      "name": "mode"
+    },
+    {
+      "index": 15,
+      "cmd": 35811,
+      "set_args": 0,
+      "get_args": 8198,
+      "name": "get_mode"
+    },
+    {
+      "index": 16,
+      "cmd": 35827,
+      "set_args": 8448,
+      "get_args": 0,
+      "name": "postevent"
+    },
+    {
+      "index": 17,
+      "cmd": 35829,
+      "set_args": 6143,
+      "get_args": 0,
+      "name": "txeapol"
+    },
+    {
+      "index": 18,
+      "cmd": 35812,
+      "set_args": 18436,
+      "get_args": 0,
+      "name": "setwmmparams"
+    },
+    {
+      "index": 19,
+      "cmd": 35813,
+      "set_args": 18435,
+      "get_args": 18433,
+      "name": "getwmmparams"
+    },
+    {
+      "index": 20,
+      "cmd": 35825,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "doth_radar"
+    },
+    {
+      "index": 21,
+      "cmd": 35839,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dfsactscan"
+    },
+    {
+      "index": 22,
+      "cmd": 35833,
+      "set_args": 4108,
+      "get_args": 6292,
+      "name": "getstastatistic"
+    },
+    {
+      "index": 23,
+      "cmd": 35812,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": ""
+    },
+    {
+      "index": 24,
+      "cmd": 35813,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": ""
+    },
+    {
+      "index": 25,
+      "cmd": 1,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "cwmin"
+    },
+    {
+      "index": 26,
+      "cmd": 1,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_cwmin"
+    },
+    {
+      "index": 27,
+      "cmd": 2,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "cwmax"
+    },
+    {
+      "index": 28,
+      "cmd": 2,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_cwmax"
+    },
+    {
+      "index": 29,
+      "cmd": 3,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "aifs"
+    },
+    {
+      "index": 30,
+      "cmd": 3,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_aifs"
+    },
+    {
+      "index": 31,
+      "cmd": 4,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "txoplimit"
+    },
+    {
+      "index": 32,
+      "cmd": 4,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_txoplimit"
+    },
+    {
+      "index": 33,
+      "cmd": 5,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "acm"
+    },
+    {
+      "index": 34,
+      "cmd": 5,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_acm"
+    },
+    {
+      "index": 35,
+      "cmd": 6,
+      "set_args": 18435,
+      "get_args": 0,
+      "name": "noackpolicy"
+    },
+    {
+      "index": 36,
+      "cmd": 6,
+      "set_args": 18434,
+      "get_args": 18433,
+      "name": "get_noackpolicy"
+    },
+    {
+      "index": 37,
+      "cmd": 35808,
+      "set_args": 18434,
+      "get_args": 0,
+      "name": "setparam"
+    },
+    {
+      "index": 38,
+      "cmd": 35809,
+      "set_args": 18433,
+      "get_args": 18433,
+      "name": "getparam"
+    },
+    {
+      "index": 39,
+      "cmd": 35808,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": ""
+    },
+    {
+      "index": 40,
+      "cmd": 35809,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": ""
+    },
+    {
+      "index": 41,
+      "cmd": 3,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "authmode"
+    },
+    {
+      "index": 42,
+      "cmd": 3,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_authmode"
+    },
+    {
+      "index": 43,
+      "cmd": 4,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "protmode"
+    },
+    {
+      "index": 44,
+      "cmd": 4,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_protmode"
+    },
+    {
+      "index": 45,
+      "cmd": 5,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mcastcipher"
+    },
+    {
+      "index": 46,
+      "cmd": 5,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mcastcipher"
+    },
+    {
+      "index": 47,
+      "cmd": 6,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mcastkeylen"
+    },
+    {
+      "index": 48,
+      "cmd": 6,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mcastkeylen"
+    },
+    {
+      "index": 49,
+      "cmd": 7,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ucastciphers"
+    },
+    {
+      "index": 50,
+      "cmd": 7,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_uciphers"
+    },
+    {
+      "index": 51,
+      "cmd": 8,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ucastcipher"
+    },
+    {
+      "index": 52,
+      "cmd": 8,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ucastcipher"
+    },
+    {
+      "index": 53,
+      "cmd": 9,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ucastkeylen"
+    },
+    {
+      "index": 54,
+      "cmd": 9,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ucastkeylen"
+    },
+    {
+      "index": 55,
+      "cmd": 21,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "keymgtalgs"
+    },
+    {
+      "index": 56,
+      "cmd": 21,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_keymgtalgs"
+    },
+    {
+      "index": 57,
+      "cmd": 22,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rsncaps"
+    },
+    {
+      "index": 58,
+      "cmd": 22,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rsncaps"
+    },
+    {
+      "index": 59,
+      "cmd": 12,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "hostroaming"
+    },
+    {
+      "index": 60,
+      "cmd": 12,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_hostroaming"
+    },
+    {
+      "index": 61,
+      "cmd": 13,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "privacy"
+    },
+    {
+      "index": 62,
+      "cmd": 13,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_privacy"
+    },
+    {
+      "index": 63,
+      "cmd": 14,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "countermeasures"
+    },
+    {
+      "index": 64,
+      "cmd": 14,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_countermeas"
+    },
+    {
+      "index": 65,
+      "cmd": 15,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dropunencrypted"
+    },
+    {
+      "index": 66,
+      "cmd": 15,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dropunencry"
+    },
+    {
+      "index": 67,
+      "cmd": 10,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wpa"
+    },
+    {
+      "index": 68,
+      "cmd": 10,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_wpa"
+    },
+    {
+      "index": 69,
+      "cmd": 16,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "driver_caps"
+    },
+    {
+      "index": 70,
+      "cmd": 16,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_driver_caps"
+    },
+    {
+      "index": 71,
+      "cmd": 17,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "maccmd"
+    },
+    {
+      "index": 72,
+      "cmd": 18,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wmm"
+    },
+    {
+      "index": 73,
+      "cmd": 18,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_wmm"
+    },
+    {
+      "index": 74,
+      "cmd": 19,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "hide_ssid"
+    },
+    {
+      "index": 75,
+      "cmd": 19,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_hide_ssid"
+    },
+    {
+      "index": 76,
+      "cmd": 20,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ap_bridge"
+    },
+    {
+      "index": 77,
+      "cmd": 20,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ap_bridge"
+    },
+    {
+      "index": 78,
+      "cmd": 23,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "inact"
+    },
+    {
+      "index": 79,
+      "cmd": 23,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_inact"
+    },
+    {
+      "index": 80,
+      "cmd": 24,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "inact_auth"
+    },
+    {
+      "index": 81,
+      "cmd": 24,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_inact_auth"
+    },
+    {
+      "index": 82,
+      "cmd": 25,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "inact_init"
+    },
+    {
+      "index": 83,
+      "cmd": 25,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_inact_init"
+    },
+    {
+      "index": 84,
+      "cmd": 26,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "abolt"
+    },
+    {
+      "index": 85,
+      "cmd": 26,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_abolt"
+    },
+    {
+      "index": 86,
+      "cmd": 28,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dtim_period"
+    },
+    {
+      "index": 87,
+      "cmd": 28,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dtim_period"
+    },
+    {
+      "index": 88,
+      "cmd": 173,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "assoc_limit"
+    },
+    {
+      "index": 89,
+      "cmd": 173,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_assoc_limit"
+    },
+    {
+      "index": 90,
+      "cmd": 188,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bss_assoc_limit"
+    },
+    {
+      "index": 91,
+      "cmd": 188,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bss_assolmt"
+    },
+    {
+      "index": 92,
+      "cmd": 29,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bintval"
+    },
+    {
+      "index": 93,
+      "cmd": 29,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bintval"
+    },
+    {
+      "index": 94,
+      "cmd": 30,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "doth"
+    },
+    {
+      "index": 95,
+      "cmd": 30,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_doth"
+    },
+    {
+      "index": 96,
+      "cmd": 31,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "doth_pwrcst"
+    },
+    {
+      "index": 97,
+      "cmd": 31,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_doth_pwrcst"
+    },
+    {
+      "index": 98,
+      "cmd": 32,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "doth_reassoc"
+    },
+    {
+      "index": 99,
+      "cmd": 35816,
+      "set_args": 18434,
+      "get_args": 0,
+      "name": "doth_chanswitch"
+    },
+    {
+      "index": 100,
+      "cmd": 37,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pureg"
+    },
+    {
+      "index": 101,
+      "cmd": 37,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_pureg"
+    },
+    {
+      "index": 102,
+      "cmd": 38,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "repeater"
+    },
+    {
+      "index": 103,
+      "cmd": 38,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_repeater"
+    },
+    {
+      "index": 104,
+      "cmd": 39,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wds"
+    },
+    {
+      "index": 105,
+      "cmd": 39,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_wds"
+    },
+    {
+      "index": 106,
+      "cmd": 40,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bgscan"
+    },
+    {
+      "index": 107,
+      "cmd": 40,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bgscan"
+    },
+    {
+      "index": 108,
+      "cmd": 41,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bgscanidle"
+    },
+    {
+      "index": 109,
+      "cmd": 41,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bgscanidle"
+    },
+    {
+      "index": 110,
+      "cmd": 42,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bgscanintvl"
+    },
+    {
+      "index": 111,
+      "cmd": 42,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bgscanintvl"
+    },
+    {
+      "index": 112,
+      "cmd": 43,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mcast_rate"
+    },
+    {
+      "index": 113,
+      "cmd": 43,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mcast_rate"
+    },
+    {
+      "index": 114,
+      "cmd": 44,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "coverageclass"
+    },
+    {
+      "index": 115,
+      "cmd": 44,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_coveragecls"
+    },
+    {
+      "index": 116,
+      "cmd": 45,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "countryie"
+    },
+    {
+      "index": 117,
+      "cmd": 45,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_countryie"
+    },
+    {
+      "index": 118,
+      "cmd": 46,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "scanvalid"
+    },
+    {
+      "index": 119,
+      "cmd": 46,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scanvalid"
+    },
+    {
+      "index": 120,
+      "cmd": 59,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "regclass"
+    },
+    {
+      "index": 121,
+      "cmd": 59,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_regclass"
+    },
+    {
+      "index": 122,
+      "cmd": 60,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dropunenceapol"
+    },
+    {
+      "index": 123,
+      "cmd": 60,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dropunencea"
+    },
+    {
+      "index": 124,
+      "cmd": 61,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "shpreamble"
+    },
+    {
+      "index": 125,
+      "cmd": 61,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_shpreamble"
+    },
+    {
+      "index": 126,
+      "cmd": 47,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rssi11a"
+    },
+    {
+      "index": 127,
+      "cmd": 47,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rssi11a"
+    },
+    {
+      "index": 128,
+      "cmd": 48,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rssi11b"
+    },
+    {
+      "index": 129,
+      "cmd": 48,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rssi11b"
+    },
+    {
+      "index": 130,
+      "cmd": 49,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rssi11g"
+    },
+    {
+      "index": 131,
+      "cmd": 49,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rssi11g"
+    },
+    {
+      "index": 132,
+      "cmd": 50,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rate11a"
+    },
+    {
+      "index": 133,
+      "cmd": 50,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rate11a"
+    },
+    {
+      "index": 134,
+      "cmd": 51,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rate11b"
+    },
+    {
+      "index": 135,
+      "cmd": 51,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rate11b"
+    },
+    {
+      "index": 136,
+      "cmd": 52,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rate11g"
+    },
+    {
+      "index": 137,
+      "cmd": 52,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rate11g"
+    },
+    {
+      "index": 138,
+      "cmd": 53,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "uapsd"
+    },
+    {
+      "index": 139,
+      "cmd": 53,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_uapsd"
+    },
+    {
+      "index": 140,
+      "cmd": 54,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sleep"
+    },
+    {
+      "index": 141,
+      "cmd": 54,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_sleep"
+    },
+    {
+      "index": 142,
+      "cmd": 55,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "qosnull"
+    },
+    {
+      "index": 143,
+      "cmd": 56,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pspoll"
+    },
+    {
+      "index": 144,
+      "cmd": 57,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "eospdrop"
+    },
+    {
+      "index": 145,
+      "cmd": 57,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_eospdrop"
+    },
+    {
+      "index": 146,
+      "cmd": 231,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sta_dfs"
+    },
+    {
+      "index": 147,
+      "cmd": 231,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_sta_dfs"
+    },
+    {
+      "index": 148,
+      "cmd": 58,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "markdfs"
+    },
+    {
+      "index": 149,
+      "cmd": 58,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_markdfs"
+    },
+    {
+      "index": 150,
+      "cmd": 235,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "radar_bw"
+    },
+    {
+      "index": 151,
+      "cmd": 35818,
+      "set_args": 5132,
+      "get_args": 0,
+      "name": "setiebuf"
+    },
+    {
+      "index": 152,
+      "cmd": 35817,
+      "set_args": 0,
+      "get_args": 5132,
+      "name": "getiebuf"
+    },
+    {
+      "index": 153,
+      "cmd": 35820,
+      "set_args": 4100,
+      "get_args": 0,
+      "name": "setfilter"
+    },
+    {
+      "index": 154,
+      "cmd": 62,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "fixedtxrate"
+    },
+    {
+      "index": 155,
+      "cmd": 62,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_fixedtxrate"
+    },
+    {
+      "index": 156,
+      "cmd": 63,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mimomode"
+    },
+    {
+      "index": 157,
+      "cmd": 63,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mimomode"
+    },
+    {
+      "index": 158,
+      "cmd": 64,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "aggregation"
+    },
+    {
+      "index": 159,
+      "cmd": 64,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_aggregation"
+    },
+    {
+      "index": 160,
+      "cmd": 65,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "retrycount"
+    },
+    {
+      "index": 161,
+      "cmd": 65,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_retrycount"
+    },
+    {
+      "index": 162,
+      "cmd": 66,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "vapdebug"
+    },
+    {
+      "index": 163,
+      "cmd": 66,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vapdebug"
+    },
+    {
+      "index": 164,
+      "cmd": 327,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "noderef_dbg"
+    },
+    {
+      "index": 165,
+      "cmd": 68,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "expmattype"
+    },
+    {
+      "index": 166,
+      "cmd": 68,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_expmattype"
+    },
+    {
+      "index": 167,
+      "cmd": 69,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bwselect"
+    },
+    {
+      "index": 168,
+      "cmd": 69,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bwselect"
+    },
+    {
+      "index": 169,
+      "cmd": 70,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rgselect"
+    },
+    {
+      "index": 170,
+      "cmd": 70,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rgselect"
+    },
+    {
+      "index": 171,
+      "cmd": 71,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bwselect_muc"
+    },
+    {
+      "index": 172,
+      "cmd": 71,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bwselect_muc"
+    },
+    {
+      "index": 173,
+      "cmd": 72,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ackpolicy"
+    },
+    {
+      "index": 174,
+      "cmd": 72,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ackpolicy"
+    },
+    {
+      "index": 175,
+      "cmd": 73,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "legacyselect"
+    },
+    {
+      "index": 176,
+      "cmd": 73,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_legacyselect"
+    },
+    {
+      "index": 177,
+      "cmd": 306,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "max_aggsize"
+    },
+    {
+      "index": 178,
+      "cmd": 306,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_maxaggsize"
+    },
+    {
+      "index": 179,
+      "cmd": 77,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "txbf_ctrl"
+    },
+    {
+      "index": 180,
+      "cmd": 77,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_txbfctrl"
+    },
+    {
+      "index": 181,
+      "cmd": 78,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "txbf_period"
+    },
+    {
+      "index": 182,
+      "cmd": 78,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_txbfperiod"
+    },
+    {
+      "index": 183,
+      "cmd": 80,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "htba_seq"
+    },
+    {
+      "index": 184,
+      "cmd": 80,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_htba_seq"
+    },
+    {
+      "index": 185,
+      "cmd": 81,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "htba_size"
+    },
+    {
+      "index": 186,
+      "cmd": 81,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_htba_size"
+    },
+    {
+      "index": 187,
+      "cmd": 82,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "htba_time"
+    },
+    {
+      "index": 188,
+      "cmd": 82,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_htba_time"
+    },
+    {
+      "index": 189,
+      "cmd": 83,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "htba_addba"
+    },
+    {
+      "index": 190,
+      "cmd": 83,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_htba_addba"
+    },
+    {
+      "index": 191,
+      "cmd": 84,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "htba_delba"
+    },
+    {
+      "index": 192,
+      "cmd": 84,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_htba_delba"
+    },
+    {
+      "index": 193,
+      "cmd": 85,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "disablescan"
+    },
+    {
+      "index": 194,
+      "cmd": 85,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_disablescan"
+    },
+    {
+      "index": 195,
+      "cmd": 86,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_profile"
+    },
+    {
+      "index": 196,
+      "cmd": 86,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "muc_profile"
+    },
+    {
+      "index": 197,
+      "cmd": 87,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_set_phystat"
+    },
+    {
+      "index": 198,
+      "cmd": 87,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "muc_get_phystat"
+    },
+    {
+      "index": 199,
+      "cmd": 88,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_set_partnum"
+    },
+    {
+      "index": 200,
+      "cmd": 88,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "muc_get_partnum"
+    },
+    {
+      "index": 201,
+      "cmd": 89,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ena_gain_adapt"
+    },
+    {
+      "index": 202,
+      "cmd": 89,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_gain_adapt"
+    },
+    {
+      "index": 203,
+      "cmd": 90,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rfchipid"
+    },
+    {
+      "index": 204,
+      "cmd": 90,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rfchipid"
+    },
+    {
+      "index": 205,
+      "cmd": 91,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rfchip_verid"
+    },
+    {
+      "index": 206,
+      "cmd": 91,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rfchip_verid"
+    },
+    {
+      "index": 207,
+      "cmd": 93,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "short_gi"
+    },
+    {
+      "index": 208,
+      "cmd": 93,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_short_gi"
+    },
+    {
+      "index": 209,
+      "cmd": 96,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "forcesmps"
+    },
+    {
+      "index": 210,
+      "cmd": 97,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "forcemicerror"
+    },
+    {
+      "index": 211,
+      "cmd": 98,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "en_cmsures"
+    },
+    {
+      "index": 212,
+      "cmd": 99,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "implicit_ba"
+    },
+    {
+      "index": 213,
+      "cmd": 99,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_implicit_ba"
+    },
+    {
+      "index": 214,
+      "cmd": 100,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cl_remove"
+    },
+    {
+      "index": 215,
+      "cmd": 101,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "showmem"
+    },
+    {
+      "index": 216,
+      "cmd": 102,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "scanstatus"
+    },
+    {
+      "index": 217,
+      "cmd": 102,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scanstatus"
+    },
+    {
+      "index": 218,
+      "cmd": 220,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_cacstatus"
+    },
+    {
+      "index": 219,
+      "cmd": 103,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ba_control"
+    },
+    {
+      "index": 220,
+      "cmd": 103,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ba_control"
+    },
+    {
+      "index": 221,
+      "cmd": 104,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "no_ssid_assoc"
+    },
+    {
+      "index": 222,
+      "cmd": 106,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cfg_txpower"
+    },
+    {
+      "index": 223,
+      "cmd": 370,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "init_txpower"
+    },
+    {
+      "index": 224,
+      "cmd": 267,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cfg_bw_power"
+    },
+    {
+      "index": 225,
+      "cmd": 217,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tpc_intvl"
+    },
+    {
+      "index": 226,
+      "cmd": 217,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tpc_interval"
+    },
+    {
+      "index": 227,
+      "cmd": 219,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tpc"
+    },
+    {
+      "index": 228,
+      "cmd": 219,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tpc"
+    },
+    {
+      "index": 229,
+      "cmd": 218,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tpc_query"
+    },
+    {
+      "index": 230,
+      "cmd": 218,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tpc_query"
+    },
+    {
+      "index": 231,
+      "cmd": 210,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cfg_reg_txpower"
+    },
+    {
+      "index": 232,
+      "cmd": 107,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "skb_list_max"
+    },
+    {
+      "index": 233,
+      "cmd": 108,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "vapstats"
+    },
+    {
+      "index": 234,
+      "cmd": 109,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rate_ctrl_flags"
+    },
+    {
+      "index": 235,
+      "cmd": 110,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_ldpc"
+    },
+    {
+      "index": 236,
+      "cmd": 110,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ldpc"
+    },
+    {
+      "index": 237,
+      "cmd": 111,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dfs_fast_switch"
+    },
+    {
+      "index": 238,
+      "cmd": 111,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dfs_switch"
+    },
+    {
+      "index": 239,
+      "cmd": 126,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_blacklist"
+    },
+    {
+      "index": 240,
+      "cmd": 114,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "scan_no_dfs"
+    },
+    {
+      "index": 241,
+      "cmd": 114,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scan_dfs"
+    },
+    {
+      "index": 242,
+      "cmd": 122,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sample_rate"
+    },
+    {
+      "index": 243,
+      "cmd": 122,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_sample_rate"
+    },
+    {
+      "index": 244,
+      "cmd": 112,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_40only_mode"
+    },
+    {
+      "index": 245,
+      "cmd": 112,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_40only_mode"
+    },
+    {
+      "index": 246,
+      "cmd": 113,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_ampdu_dens"
+    },
+    {
+      "index": 247,
+      "cmd": 113,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ampdu_dens"
+    },
+    {
+      "index": 248,
+      "cmd": 115,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "region"
+    },
+    {
+      "index": 249,
+      "cmd": 115,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_region"
+    },
+    {
+      "index": 250,
+      "cmd": 260,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "country_code"
+    },
+    {
+      "index": 251,
+      "cmd": 260,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_country_code"
+    },
+    {
+      "index": 252,
+      "cmd": 123,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mcs_cap"
+    },
+    {
+      "index": 253,
+      "cmd": 123,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mcs_cap"
+    },
+    {
+      "index": 254,
+      "cmd": 124,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "max_mgmtfrms"
+    },
+    {
+      "index": 255,
+      "cmd": 124,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_max_mgtfrms"
+    },
+    {
+      "index": 256,
+      "cmd": 125,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mcs_odd_even"
+    },
+    {
+      "index": 257,
+      "cmd": 125,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mcs_oddeven"
+    },
+    {
+      "index": 258,
+      "cmd": 128,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ba_max"
+    },
+    {
+      "index": 259,
+      "cmd": 128,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ba_max"
+    },
+    {
+      "index": 260,
+      "cmd": 129,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tx_restrict"
+    },
+    {
+      "index": 261,
+      "cmd": 129,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tx_restrict"
+    },
+    {
+      "index": 262,
+      "cmd": 131,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mode_phy_stats"
+    },
+    {
+      "index": 263,
+      "cmd": 133,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "min_dt_act"
+    },
+    {
+      "index": 264,
+      "cmd": 133,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_min_dt_act"
+    },
+    {
+      "index": 265,
+      "cmd": 134,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "min_dt_pas"
+    },
+    {
+      "index": 266,
+      "cmd": 134,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_min_dt_pas"
+    },
+    {
+      "index": 267,
+      "cmd": 135,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "max_dt_act"
+    },
+    {
+      "index": 268,
+      "cmd": 135,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_max_dt_act"
+    },
+    {
+      "index": 269,
+      "cmd": 136,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "max_dt_pas"
+    },
+    {
+      "index": 270,
+      "cmd": 136,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_max_dt_pas"
+    },
+    {
+      "index": 271,
+      "cmd": 207,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dt_act"
+    },
+    {
+      "index": 272,
+      "cmd": 207,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dt_act"
+    },
+    {
+      "index": 273,
+      "cmd": 208,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dt_pas"
+    },
+    {
+      "index": 274,
+      "cmd": 208,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dt_pas"
+    },
+    {
+      "index": 275,
+      "cmd": 389,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dur_act"
+    },
+    {
+      "index": 276,
+      "cmd": 389,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dur_act"
+    },
+    {
+      "index": 277,
+      "cmd": 390,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dur_pf"
+    },
+    {
+      "index": 278,
+      "cmd": 390,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dur_pf"
+    },
+    {
+      "index": 279,
+      "cmd": 391,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dur_pn"
+    },
+    {
+      "index": 280,
+      "cmd": 391,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dur_pn"
+    },
+    {
+      "index": 281,
+      "cmd": 392,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_dur_ps"
+    },
+    {
+      "index": 282,
+      "cmd": 392,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_dur_ps"
+    },
+    {
+      "index": 283,
+      "cmd": 393,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_thr_fst"
+    },
+    {
+      "index": 284,
+      "cmd": 393,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_thr_fst"
+    },
+    {
+      "index": 285,
+      "cmd": 394,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_thr_nor"
+    },
+    {
+      "index": 286,
+      "cmd": 394,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_thr_nor"
+    },
+    {
+      "index": 287,
+      "cmd": 209,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bg_debug"
+    },
+    {
+      "index": 288,
+      "cmd": 209,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bg_debug"
+    },
+    {
+      "index": 289,
+      "cmd": 138,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "legacy_retry"
+    },
+    {
+      "index": 290,
+      "cmd": 138,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_legacyretry"
+    },
+    {
+      "index": 291,
+      "cmd": 147,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "scs_set"
+    },
+    {
+      "index": 292,
+      "cmd": 147,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "scs_get"
+    },
+    {
+      "index": 293,
+      "cmd": 203,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "scs_get_reent"
+    },
+    {
+      "index": 294,
+      "cmd": 139,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "training_count"
+    },
+    {
+      "index": 295,
+      "cmd": 140,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dynamic_ac"
+    },
+    {
+      "index": 296,
+      "cmd": 141,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dbg_dump"
+    },
+    {
+      "index": 297,
+      "cmd": 142,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dbg_dump_tcm_fd"
+    },
+    {
+      "index": 298,
+      "cmd": 143,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rxcsr_err_allow"
+    },
+    {
+      "index": 299,
+      "cmd": 144,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dbg_stop"
+    },
+    {
+      "index": 300,
+      "cmd": 145,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dbg_check"
+    },
+    {
+      "index": 301,
+      "cmd": 146,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ctrl_filter"
+    },
+    {
+      "index": 302,
+      "cmd": 148,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_alt_chan"
+    },
+    {
+      "index": 303,
+      "cmd": 148,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_alt_chan"
+    },
+    {
+      "index": 304,
+      "cmd": 149,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bcm_fixup"
+    },
+    {
+      "index": 305,
+      "cmd": 150,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "gi_select"
+    },
+    {
+      "index": 306,
+      "cmd": 150,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_gi_select"
+    },
+    {
+      "index": 307,
+      "cmd": 105,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "gi_fixed"
+    },
+    {
+      "index": 308,
+      "cmd": 105,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_gi_fixed"
+    },
+    {
+      "index": 309,
+      "cmd": 270,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bw_fixed"
+    },
+    {
+      "index": 310,
+      "cmd": 270,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bw_fixed"
+    },
+    {
+      "index": 311,
+      "cmd": 154,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_ldpc_nonqtn"
+    },
+    {
+      "index": 312,
+      "cmd": 154,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ldpc_nonqtn"
+    },
+    {
+      "index": 313,
+      "cmd": 155,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "fwd_unknown_mc"
+    },
+    {
+      "index": 314,
+      "cmd": 155,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_unknown_mc"
+    },
+    {
+      "index": 315,
+      "cmd": 156,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "reliable_bc"
+    },
+    {
+      "index": 316,
+      "cmd": 156,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_reliable_bc"
+    },
+    {
+      "index": 317,
+      "cmd": 157,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ap_fwd_lncb"
+    },
+    {
+      "index": 318,
+      "cmd": 157,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ap_fwd_lncb"
+    },
+    {
+      "index": 319,
+      "cmd": 158,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pppc"
+    },
+    {
+      "index": 320,
+      "cmd": 158,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_pppc"
+    },
+    {
+      "index": 321,
+      "cmd": 206,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pppc_step"
+    },
+    {
+      "index": 322,
+      "cmd": 206,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_pppc_step"
+    },
+    {
+      "index": 323,
+      "cmd": 159,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "test_lncb"
+    },
+    {
+      "index": 324,
+      "cmd": 160,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_stbc"
+    },
+    {
+      "index": 325,
+      "cmd": 160,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_stbc"
+    },
+    {
+      "index": 326,
+      "cmd": 161,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_rtscts"
+    },
+    {
+      "index": 327,
+      "cmd": 161,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rtscts"
+    },
+    {
+      "index": 328,
+      "cmd": 292,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_txqos_sched"
+    },
+    {
+      "index": 329,
+      "cmd": 292,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_txqos_sched"
+    },
+    {
+      "index": 330,
+      "cmd": 162,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dfs_cce"
+    },
+    {
+      "index": 331,
+      "cmd": 163,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scs_cce"
+    },
+    {
+      "index": 332,
+      "cmd": 165,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rx_agg_to"
+    },
+    {
+      "index": 333,
+      "cmd": 165,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rx_agg_to"
+    },
+    {
+      "index": 334,
+      "cmd": 166,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_halt"
+    },
+    {
+      "index": 335,
+      "cmd": 167,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tr_trig"
+    },
+    {
+      "index": 336,
+      "cmd": 168,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_tb"
+    },
+    {
+      "index": 337,
+      "cmd": 169,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_bkbitmap"
+    },
+    {
+      "index": 338,
+      "cmd": 170,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "probe_rt"
+    },
+    {
+      "index": 339,
+      "cmd": 171,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "muc_flags"
+    },
+    {
+      "index": 340,
+      "cmd": 172,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_ht_nss_cap"
+    },
+    {
+      "index": 341,
+      "cmd": 172,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ht_nss_cap"
+    },
+    {
+      "index": 342,
+      "cmd": 269,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht_nss_cap"
+    },
+    {
+      "index": 343,
+      "cmd": 269,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht_nss_cap"
+    },
+    {
+      "index": 344,
+      "cmd": 177,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "unknown_dst_arp"
+    },
+    {
+      "index": 345,
+      "cmd": 178,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "unknown_dst_fwd"
+    },
+    {
+      "index": 346,
+      "cmd": 180,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "reset_assoc_his"
+    },
+    {
+      "index": 347,
+      "cmd": 181,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "clean_csw"
+    },
+    {
+      "index": 348,
+      "cmd": 346,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_upd"
+    },
+    {
+      "index": 349,
+      "cmd": 347,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_tx_rate_set"
+    },
+    {
+      "index": 350,
+      "cmd": 348,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_dbg_lvl_set"
+    },
+    {
+      "index": 351,
+      "cmd": 349,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_enable_set"
+    },
+    {
+      "index": 352,
+      "cmd": 349,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "mu_enable_get"
+    },
+    {
+      "index": 353,
+      "cmd": 350,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_qmt_inst"
+    },
+    {
+      "index": 354,
+      "cmd": 351,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_qmt_del"
+    },
+    {
+      "index": 355,
+      "cmd": 368,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "mu_grp_qmt_get"
+    },
+    {
+      "index": 356,
+      "cmd": 353,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_qmt_ena"
+    },
+    {
+      "index": 357,
+      "cmd": 367,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_qmt_dis"
+    },
+    {
+      "index": 358,
+      "cmd": 354,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_dbg_flg_set"
+    },
+    {
+      "index": 359,
+      "cmd": 373,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_airtime_pad"
+    },
+    {
+      "index": 360,
+      "cmd": 355,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dsp_dbg_lvl_set"
+    },
+    {
+      "index": 361,
+      "cmd": 356,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dsp_dbg_flg_set"
+    },
+    {
+      "index": 362,
+      "cmd": 357,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_crc_error"
+    },
+    {
+      "index": 363,
+      "cmd": 358,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_sw_usr_pos"
+    },
+    {
+      "index": 364,
+      "cmd": 359,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_grp_snd_per"
+    },
+    {
+      "index": 365,
+      "cmd": 360,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_prec_snd_per"
+    },
+    {
+      "index": 366,
+      "cmd": 418,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_rank_toleran"
+    },
+    {
+      "index": 367,
+      "cmd": 365,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dsp_prc_alg_set"
+    },
+    {
+      "index": 368,
+      "cmd": 366,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dsp_rnk_alg_set"
+    },
+    {
+      "index": 369,
+      "cmd": 369,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_set_use_eq"
+    },
+    {
+      "index": 370,
+      "cmd": 369,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "mu_get_use_eq"
+    },
+    {
+      "index": 371,
+      "cmd": 374,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mu_amsdu_size"
+    },
+    {
+      "index": 372,
+      "cmd": 399,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_bmps"
+    },
+    {
+      "index": 373,
+      "cmd": 399,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bmps"
+    },
+    {
+      "index": 374,
+      "cmd": 35837,
+      "set_args": 0,
+      "get_args": 6728,
+      "name": ""
+    },
+    {
+      "index": 375,
+      "cmd": 180,
+      "set_args": 0,
+      "get_args": 6728,
+      "name": "assoc_history"
+    },
+    {
+      "index": 376,
+      "cmd": 181,
+      "set_args": 0,
+      "get_args": 6728,
+      "name": "get_csw_record"
+    },
+    {
+      "index": 377,
+      "cmd": 182,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "restrict_rts"
+    },
+    {
+      "index": 378,
+      "cmd": 182,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rstrict_rts"
+    },
+    {
+      "index": 379,
+      "cmd": 183,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "restrict_max"
+    },
+    {
+      "index": 380,
+      "cmd": 183,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rstrict_max"
+    },
+    {
+      "index": 381,
+      "cmd": 186,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "swret_agg"
+    },
+    {
+      "index": 382,
+      "cmd": 186,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_swret_agg"
+    },
+    {
+      "index": 383,
+      "cmd": 187,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "swret_noagg"
+    },
+    {
+      "index": 384,
+      "cmd": 187,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_swret_noagg"
+    },
+    {
+      "index": 385,
+      "cmd": 191,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_cca_pri"
+    },
+    {
+      "index": 386,
+      "cmd": 192,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_cca_sec"
+    },
+    {
+      "index": 387,
+      "cmd": 332,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_cca_sec40"
+    },
+    {
+      "index": 388,
+      "cmd": 331,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_cca_fixed"
+    },
+    {
+      "index": 389,
+      "cmd": 196,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pm"
+    },
+    {
+      "index": 390,
+      "cmd": 196,
+      "set_args": 0,
+      "get_args": 6728,
+      "name": "get_pm"
+    },
+    {
+      "index": 391,
+      "cmd": 195,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ps_cmd"
+    },
+    {
+      "index": 392,
+      "cmd": 199,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "fast_reassoc"
+    },
+    {
+      "index": 393,
+      "cmd": 201,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "test_traffic"
+    },
+    {
+      "index": 394,
+      "cmd": 204,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "qcat_state"
+    },
+    {
+      "index": 395,
+      "cmd": 205,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ralg_dbg"
+    },
+    {
+      "index": 396,
+      "cmd": 212,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "csa_flag"
+    },
+    {
+      "index": 397,
+      "cmd": 212,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_csa_flag"
+    },
+    {
+      "index": 398,
+      "cmd": 215,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "def_matrix"
+    },
+    {
+      "index": 399,
+      "cmd": 215,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_def_matrix"
+    },
+    {
+      "index": 400,
+      "cmd": 272,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tunepd"
+    },
+    {
+      "index": 401,
+      "cmd": 273,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tunepd_done"
+    },
+    {
+      "index": 402,
+      "cmd": 221,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rtshold"
+    },
+    {
+      "index": 403,
+      "cmd": 239,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "carrier_id"
+    },
+    {
+      "index": 404,
+      "cmd": 239,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_carrier_id"
+    },
+    {
+      "index": 405,
+      "cmd": 222,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ba_throt"
+    },
+    {
+      "index": 406,
+      "cmd": 223,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "queuing_alg"
+    },
+    {
+      "index": 407,
+      "cmd": 223,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_queuing_alg"
+    },
+    {
+      "index": 408,
+      "cmd": 226,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wme_throt"
+    },
+    {
+      "index": 409,
+      "cmd": 2,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht"
+    },
+    {
+      "index": 410,
+      "cmd": 2,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht"
+    },
+    {
+      "index": 411,
+      "cmd": 227,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "enable_11ac"
+    },
+    {
+      "index": 412,
+      "cmd": 227,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_11ac_status"
+    },
+    {
+      "index": 413,
+      "cmd": 228,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_11ac_mcs"
+    },
+    {
+      "index": 414,
+      "cmd": 228,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_11ac_mcs"
+    },
+    {
+      "index": 415,
+      "cmd": 234,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auc_tx"
+    },
+    {
+      "index": 416,
+      "cmd": 347,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_mu_mcs"
+    },
+    {
+      "index": 417,
+      "cmd": 243,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auc_rx_dbg"
+    },
+    {
+      "index": 418,
+      "cmd": 252,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auc_tx_dbg"
+    },
+    {
+      "index": 419,
+      "cmd": 244,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rx_accel"
+    },
+    {
+      "index": 420,
+      "cmd": 245,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rx_accel_lu_sa"
+    },
+    {
+      "index": 421,
+      "cmd": 255,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tacmap"
+    },
+    {
+      "index": 422,
+      "cmd": 256,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "vap_pri"
+    },
+    {
+      "index": 423,
+      "cmd": 256,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vap_pri"
+    },
+    {
+      "index": 424,
+      "cmd": 288,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "airfair"
+    },
+    {
+      "index": 425,
+      "cmd": 288,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_airfair"
+    },
+    {
+      "index": 426,
+      "cmd": 257,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auc_qos_sch"
+    },
+    {
+      "index": 427,
+      "cmd": 263,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "vap_pri_wme"
+    },
+    {
+      "index": 428,
+      "cmd": 266,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "emi_pwr_sw"
+    },
+    {
+      "index": 429,
+      "cmd": 266,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_emi_pwr"
+    },
+    {
+      "index": 430,
+      "cmd": 300,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "aggressive_agg"
+    },
+    {
+      "index": 431,
+      "cmd": 307,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tqew_descrs"
+    },
+    {
+      "index": 432,
+      "cmd": 307,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tqew_descrs"
+    },
+    {
+      "index": 433,
+      "cmd": 213,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "br_ip"
+    },
+    {
+      "index": 434,
+      "cmd": 229,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "genpcap"
+    },
+    {
+      "index": 435,
+      "cmd": 236,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_disc_int"
+    },
+    {
+      "index": 436,
+      "cmd": 237,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_path_wgt"
+    },
+    {
+      "index": 437,
+      "cmd": 318,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_min_rssi"
+    },
+    {
+      "index": 438,
+      "cmd": 319,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_swit_ints"
+    },
+    {
+      "index": 439,
+      "cmd": 320,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_rate_wgt"
+    },
+    {
+      "index": 440,
+      "cmd": 324,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_offchan"
+    },
+    {
+      "index": 441,
+      "cmd": 324,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tdls_offchan"
+    },
+    {
+      "index": 442,
+      "cmd": 325,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tdls_offchbw"
+    },
+    {
+      "index": 443,
+      "cmd": 325,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tdls_offchbw"
+    },
+    {
+      "index": 444,
+      "cmd": 232,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ocac_set"
+    },
+    {
+      "index": 445,
+      "cmd": 232,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "ocac_get"
+    },
+    {
+      "index": 446,
+      "cmd": 375,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sdfs_set"
+    },
+    {
+      "index": 447,
+      "cmd": 375,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "sdfs_get"
+    },
+    {
+      "index": 448,
+      "cmd": 241,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "deact_chan_pri"
+    },
+    {
+      "index": 449,
+      "cmd": 242,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "restrict_rt"
+    },
+    {
+      "index": 450,
+      "cmd": 242,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_restrict_rt"
+    },
+    {
+      "index": 451,
+      "cmd": 251,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "training_restart"
+    },
+    {
+      "index": 452,
+      "cmd": 381,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vco_lock"
+    },
+    {
+      "index": 453,
+      "cmd": 381,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vco_lock"
+    },
+    {
+      "index": 454,
+      "cmd": 274,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pmf_set"
+    },
+    {
+      "index": 455,
+      "cmd": 274,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "pmf_get"
+    },
+    {
+      "index": 456,
+      "cmd": 268,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "scan_cancel"
+    },
+    {
+      "index": 457,
+      "cmd": 275,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auto_cca_enable"
+    },
+    {
+      "index": 458,
+      "cmd": 276,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auto_cca_param"
+    },
+    {
+      "index": 459,
+      "cmd": 277,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auto_cca_dbg"
+    },
+    {
+      "index": 460,
+      "cmd": 387,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "autocs_enable"
+    },
+    {
+      "index": 461,
+      "cmd": 388,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "autocs_param"
+    },
+    {
+      "index": 462,
+      "cmd": 278,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "intra_bss"
+    },
+    {
+      "index": 463,
+      "cmd": 278,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_intra_bss"
+    },
+    {
+      "index": 464,
+      "cmd": 279,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bss_isolate"
+    },
+    {
+      "index": 465,
+      "cmd": 279,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bss_iso"
+    },
+    {
+      "index": 466,
+      "cmd": 280,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bf_rxsts"
+    },
+    {
+      "index": 467,
+      "cmd": 280,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bf_rxsts"
+    },
+    {
+      "index": 468,
+      "cmd": 303,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pc_override"
+    },
+    {
+      "index": 469,
+      "cmd": 303,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_pc_override"
+    },
+    {
+      "index": 470,
+      "cmd": 281,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wowlan_set"
+    },
+    {
+      "index": 471,
+      "cmd": 281,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "wowlan_get"
+    },
+    {
+      "index": 472,
+      "cmd": 290,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rx_amsdu"
+    },
+    {
+      "index": 473,
+      "cmd": 290,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rx_amsdu"
+    },
+    {
+      "index": 474,
+      "cmd": 291,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "disassoc_reason"
+    },
+    {
+      "index": 475,
+      "cmd": 297,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "peer_rts"
+    },
+    {
+      "index": 476,
+      "cmd": 297,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_peer_rts"
+    },
+    {
+      "index": 477,
+      "cmd": 298,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dyn_wmm"
+    },
+    {
+      "index": 478,
+      "cmd": 298,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dyn_wmm"
+    },
+    {
+      "index": 479,
+      "cmd": 299,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rssi_for_ba_set"
+    },
+    {
+      "index": 480,
+      "cmd": 301,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_bb_param"
+    },
+    {
+      "index": 481,
+      "cmd": 301,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bb_param"
+    },
+    {
+      "index": 482,
+      "cmd": 302,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "vap_txamsdu"
+    },
+    {
+      "index": 483,
+      "cmd": 302,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vap_txamsdu"
+    },
+    {
+      "index": 484,
+      "cmd": 309,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cs_thres"
+    },
+    {
+      "index": 485,
+      "cmd": 309,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_cs_thres"
+    },
+    {
+      "index": 486,
+      "cmd": 333,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "cs_thres_dbm"
+    },
+    {
+      "index": 487,
+      "cmd": 363,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scan_inv"
+    },
+    {
+      "index": 488,
+      "cmd": 363,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_scan_inv"
+    },
+    {
+      "index": 489,
+      "cmd": 271,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sfs"
+    },
+    {
+      "index": 490,
+      "cmd": 361,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "def_1ss_mat_en"
+    },
+    {
+      "index": 491,
+      "cmd": 362,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "def_1ss_mat_th"
+    },
+    {
+      "index": 492,
+      "cmd": 329,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "swfeat_disable"
+    },
+    {
+      "index": 493,
+      "cmd": 335,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "flush_scan"
+    },
+    {
+      "index": 494,
+      "cmd": 336,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_scan_opch"
+    },
+    {
+      "index": 495,
+      "cmd": 336,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_scan_opch"
+    },
+    {
+      "index": 496,
+      "cmd": 337,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dump_scale_base"
+    },
+    {
+      "index": 497,
+      "cmd": 342,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tx_scale_index"
+    },
+    {
+      "index": 498,
+      "cmd": 345,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "pm_corrupt_debug"
+    },
+    {
+      "index": 499,
+      "cmd": 371,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "l2_ext_filter"
+    },
+    {
+      "index": 500,
+      "cmd": 371,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_l2_ext_filt"
+    },
+    {
+      "index": 501,
+      "cmd": 378,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_optim_stats"
+    },
+    {
+      "index": 502,
+      "cmd": 379,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "unicast_qcnt"
+    },
+    {
+      "index": 503,
+      "cmd": 382,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "obss_exe_req"
+    },
+    {
+      "index": 504,
+      "cmd": 383,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_obss_int"
+    },
+    {
+      "index": 505,
+      "cmd": 383,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_obss_int"
+    },
+    {
+      "index": 506,
+      "cmd": 386,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht_tkip"
+    },
+    {
+      "index": 507,
+      "cmd": 386,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht_tkip"
+    },
+    {
+      "index": 508,
+      "cmd": 396,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht_24g"
+    },
+    {
+      "index": 509,
+      "cmd": 396,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht_24g"
+    },
+    {
+      "index": 510,
+      "cmd": 398,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bcn_scheme"
+    },
+    {
+      "index": 511,
+      "cmd": 398,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bcn_scheme"
+    },
+    {
+      "index": 512,
+      "cmd": 400,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "40mhz_intol"
+    },
+    {
+      "index": 513,
+      "cmd": 400,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_40mhz_intol"
+    },
+    {
+      "index": 514,
+      "cmd": 404,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "vap_state"
+    },
+    {
+      "index": 515,
+      "cmd": 404,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vap_state"
+    },
+    {
+      "index": 516,
+      "cmd": 401,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_antenna_usg"
+    },
+    {
+      "index": 517,
+      "cmd": 401,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_antenna_usg"
+    },
+    {
+      "index": 518,
+      "cmd": 409,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_rts_bw"
+    },
+    {
+      "index": 519,
+      "cmd": 409,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rts_bw"
+    },
+    {
+      "index": 520,
+      "cmd": 410,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_cts_bw"
+    },
+    {
+      "index": 521,
+      "cmd": 410,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_cts_bw"
+    },
+    {
+      "index": 522,
+      "cmd": 411,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht_mcs_cap"
+    },
+    {
+      "index": 523,
+      "cmd": 411,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht_mcs_cap"
+    },
+    {
+      "index": 524,
+      "cmd": 412,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vht_opmntf"
+    },
+    {
+      "index": 525,
+      "cmd": 412,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vht_opmntf"
+    },
+    {
+      "index": 526,
+      "cmd": 414,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_mu_non_ht"
+    },
+    {
+      "index": 527,
+      "cmd": 414,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mu_non_ht"
+    },
+    {
+      "index": 528,
+      "cmd": 415,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "11g_protect"
+    },
+    {
+      "index": 529,
+      "cmd": 415,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_11g_protect"
+    },
+    {
+      "index": 530,
+      "cmd": 420,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_rx_bws_ndpa"
+    },
+    {
+      "index": 531,
+      "cmd": 420,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rx_bws_ndpa"
+    },
+    {
+      "index": 532,
+      "cmd": 421,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_rstrict_wip"
+    },
+    {
+      "index": 533,
+      "cmd": 421,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rstrict_wip"
+    },
+    {
+      "index": 534,
+      "cmd": 422,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_mc_to_uc"
+    },
+    {
+      "index": 535,
+      "cmd": 422,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mc_to_uc"
+    },
+    {
+      "index": 536,
+      "cmd": 424,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "hostap_state"
+    },
+    {
+      "index": 537,
+      "cmd": 424,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_hostap_state"
+    },
+    {
+      "index": 538,
+      "cmd": 425,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wpa_state"
+    },
+    {
+      "index": 539,
+      "cmd": 425,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_wpa_state"
+    },
+    {
+      "index": 540,
+      "cmd": 428,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ep_status"
+    },
+    {
+      "index": 541,
+      "cmd": 430,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_bcast_pps"
+    },
+    {
+      "index": 542,
+      "cmd": 432,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_ssid_grpid"
+    },
+    {
+      "index": 543,
+      "cmd": 432,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ssid_grpid"
+    },
+    {
+      "index": 544,
+      "cmd": 433,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_assoc_rsrv"
+    },
+    {
+      "index": 545,
+      "cmd": 433,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_assoc_rsrv"
+    },
+    {
+      "index": 546,
+      "cmd": 434,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_boot_cac"
+    },
+    {
+      "index": 547,
+      "cmd": 435,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_rx_bar_sync"
+    },
+    {
+      "index": 548,
+      "cmd": 435,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_rx_bar_sync"
+    },
+    {
+      "index": 549,
+      "cmd": 436,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_reg_is_eu"
+    },
+    {
+      "index": 550,
+      "cmd": 437,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "auc_tx_agg_dur"
+    },
+    {
+      "index": 551,
+      "cmd": 438,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "chan_avail_stat"
+    },
+    {
+      "index": 552,
+      "cmd": 439,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "stop_icac"
+    },
+    {
+      "index": 553,
+      "cmd": 440,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sta_dfs_strict"
+    },
+    {
+      "index": 554,
+      "cmd": 441,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sta_dfs_msr_cac"
+    },
+    {
+      "index": 555,
+      "cmd": 442,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "sta_dfs_end_tx"
+    },
+    {
+      "index": 556,
+      "cmd": 443,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_nbr_thrshd"
+    },
+    {
+      "index": 557,
+      "cmd": 444,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_nbr_type"
+    },
+    {
+      "index": 558,
+      "cmd": 445,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_nbr_cnt"
+    },
+    {
+      "index": 559,
+      "cmd": 151,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "radar_nop_time"
+    },
+    {
+      "index": 560,
+      "cmd": 151,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "gt_radar_nop"
+    },
+    {
+      "index": 561,
+      "cmd": 447,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "dfs_csa_cnt"
+    },
+    {
+      "index": 562,
+      "cmd": 447,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dfs_csa_cnt"
+    },
+    {
+      "index": 563,
+      "cmd": 440,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "gt_stdfs_strict"
+    },
+    {
+      "index": 564,
+      "cmd": 441,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "gt_stdfs_msrcac"
+    },
+    {
+      "index": 565,
+      "cmd": 442,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "gt_stdfs_end_tx"
+    }
+  ]
+}

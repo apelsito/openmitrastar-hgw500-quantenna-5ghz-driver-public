@@ -1,0 +1,27 @@
+{
+  "schema": "openmitrastar.f370-module-qualification/v1",
+  "status": "PASS_OFFLINE_COMPLETE_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "full_baseline_comparison_status": "PASS_FULL_BASELINE_RECONSTRUCTION",
+  "module": {
+    "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/arc700-20261021-r2/f370-module-20261021T221200Z-r2/a/qdrv.ko",
+    "bytes": 686144,
+    "sha256": "d5e1f58303eaaa02123e0cf6352bd40c40df3027be300d2a1143b07f54a05dae"
+  },
+  "reproducible": true,
+  "inputs_unchanged": true,
+  "imports_unchanged": 369,
+  "exports_unchanged": 15,
+  "new_parameters_0444": [
+    "openmitrastar_auc_busy_free",
+    "openmitrastar_auc_raw_ok",
+    "openmitrastar_auc_raw_other",
+    "openmitrastar_auc_return_success"
+  ],
+  "code_allocated_bytes": 312852,
+  "baseline_functions": 831,
+  "baseline_relocations": 14034,
+  "baseline_symbols": 1932
+}

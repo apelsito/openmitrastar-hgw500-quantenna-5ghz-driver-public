@@ -1,0 +1,49 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/actual-abi-import-audit.json",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/actual-abi-import-audit.json",
+      "bytes": 11388,
+      "sha256": "6b9d18afb7679091ba4867c5f989065ff66479bf7dc342a403ca5ce562cd7d56",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/abi-build.log",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/abi-build.log",
+      "bytes": 1754,
+      "sha256": "630bf731c00f52b87a3dced78819e34e6ef6dd870580681dcd1d0a1fbb042259",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/emac-result.json",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/emac-result.json",
+      "bytes": 4399,
+      "sha256": "cff44a66bbeea687e12fc3cc9f88f9a248c2c0c9c6e453f402ccfbbb12bc0721",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/emac-build.log",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/emac-build.log",
+      "bytes": 608,
+      "sha256": "1e9c4baee85f97ec6604a9fa59dbfea65dd4e07791b2397bd3349c19e60f1fd9",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/emac-input-pins.json",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/emac-input-pins.json",
+      "bytes": 3181,
+      "sha256": "2c6ea321eab0f52703a5a4fe5209b95d05a9ccd5a09f113d5551c68319f4570e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-pair-source-pin-audit-20261023T021000Z-r1/full-input-pins-116819.json",
+      "source": "outputs/rea/linux73-r20-pair-source-pin-audit-20261023T021000Z-r1/full-input-pins-116819.json",
+      "bytes": 24062693,
+      "sha256": "e9a0ac5ed7cae6323d22544ba23fbe59a3a595706975a30414f2926a14f3e669",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

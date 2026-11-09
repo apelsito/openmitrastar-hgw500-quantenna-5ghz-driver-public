@@ -1,0 +1,91 @@
+{
+  "ok": false,
+  "error": {
+    "code": "invalid_request",
+    "category": "invalid_input",
+    "message": "Analysis input is invalid. Check the arguments and try again.",
+    "retryable": true,
+    "remediation": {
+      "action": "Correct the listed arguments and retry."
+    },
+    "details": {
+      "operation": "analyze_function",
+      "issues": [
+        {
+          "path": [],
+          "reason": "invalid_value",
+          "message": "No procedure exists at the requested address: 0x40730; Ghidra image base: 0x10000. Choose an observed analysis address. CLI: rea search <path> . --kind procedures --mode regex --provider ghidra --json; MCP: list_procedures. Inspect the loaded base and source mappings with CLI rea analyze <path> --provider ghidra --json and rea inspect-native-load-image <path> --provider ghidra --json, or MCP binary_overview and inspect_native_load_image. Repeat the original target options. For decompile, select source coordinates explicitly with --file-offset=0x... or MCP procedure file-offset:0x...."
+        }
+      ],
+      "diagnostics": {
+        "target_path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/oem-qdrv-missingops-20261022T132800Z-linked/qdrv-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+        "target_sha256": "60a15998175652d70fa4e1e75a6e1ee997a2e5144f9fe446af06f66641717f77",
+        "transport": "unix-socket",
+        "provider_version": "12.1.4",
+        "profile_digest": "3539a3a92dfe40ad929c8f6775c18bd79bab1ead3eeffe10989b6a1d998309b9",
+        "run_id": "f7dc8c61-de36-488d-8d32-95a7dcfea71e",
+        "runtime_root": "/tmp/rea-ghidra-jPjtzh",
+        "endpoint_path": "/tmp/rea-ghidra-jPjtzh/bridge.sock",
+        "project_root": "/tmp/rea-ghidra-jPjtzh/project",
+        "ghidra_log_path": "/tmp/rea-ghidra-jPjtzh/ghidra.log",
+        "script_log_path": "/tmp/rea-ghidra-jPjtzh/script.log",
+        "process_id": 189224,
+        "launch_support": [
+          {
+            "mode": "-envvars",
+            "stderr": "NOTE: Picked up JDK_JAVA_OPTIONS: \nPicked up JAVA_TOOL_OPTIONS: \nPicked up _JAVA_OPTIONS: \n",
+            "stderr_bytes": 91,
+            "stderr_truncated": false
+          },
+          {
+            "mode": "-vmargs",
+            "stderr": "NOTE: Picked up JDK_JAVA_OPTIONS: \nPicked up JAVA_TOOL_OPTIONS: \nPicked up _JAVA_OPTIONS: \n",
+            "stderr_bytes": 91,
+            "stderr_truncated": false
+          }
+        ],
+        "configured_jvm_max_heap": "2G",
+        "exit_code": null,
+        "exit_signal": null,
+        "diagnostic_truncated": false,
+        "output_incomplete": false,
+        "stdout": {
+          "text": "INFO  Using log config file: jar:file:/home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  \nINFO  Using log file: /tmp/rea-ghidra-jPjtzh/ghidra.log (LoggingInitialization)  \nINFO  Loading user preferences: /tmp/rea-ghidra-jPjtzh/config/root-ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  \nINFO  Searching for classes... (ClassSearcher)  \nINFO  Class search complete (1185 ms) (ClassSearcher)  \nINFO  Initializing SSL Context (DefaultSSLContextInitializer)  \nINFO  Initializing Random Number Generator... (SecureRandomFactory)  \nINFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  \nINFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  \nINFO  Starting cache cleanup: /tmp/rea-ghidra-jPjtzh/cache/root-ghidra/fscache2 (FileCacheMaintenanceDaemon)  \nINFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  \nINFO  Headless startup complete (3386 ms) (AnalyzeHeadless)  \nINFO  Class searcher loaded 177 extension points (88 false positives) (ClassSearcher)  \nINFO  HEADLESS Script Paths:\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/BSim/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts\n    /home/rea/openmitrastar-oem-abi3-ops-20261022T131800Z/rea-agents/bridge/ghidra\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/PDB/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Processors/8051/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/Base/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts\n    /home/rea/openmitrastar-arc700-lab-20261021-r2/ghidra_12.1.4_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts (HeadlessAnalyzer)  \nINFO  HEADLESS: execution starts (HeadlessAnalyzer)  \nINFO  Creating temporary project: /tmp/rea-ghidra-jPjtzh/project/rea-project (HeadlessAnalyzer)  \nINFO  Creating project: /tmp/rea-ghidra-jPjtzh/project/rea-project (DefaultProject)  \nINFO  REPORT: Processing input files:  (HeadlessAnalyzer)  \nINFO       project: /tmp/rea-ghidra-jPjtzh/project/rea-project (HeadlessAnalyzer)  \nINFO  IMPORTING: file:///tmp/rea-ghidra-jPjtzh/target-60a159981756.elf (HeadlessAnalyzer)  \nINFO  Using Loader: Executable and Linking Format (ELF) (ProgramLoader)  \nINFO  Using Language/Compiler: ARCompact:LE:32:default:default (ProgramLoader)  \nINFO  Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /usr/lib/x86_64-linux-gnu, /usr/lib/jni] (ProgramLoader)  \nINFO  Additional info:\nLoading file:///tmp/rea-ghidra-jPjtzh/target-60a159981756.elf?MD5=ed3d3d55292f0185b797947db9b6a3c3...\n------------------------------------------------\n\n (ProgramLoader)  \nINFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  \nINFO  ANALYZING all memory and code: file:///tmp/rea-ghidra-jPjtzh/target-60a159981756.elf (HeadlessAnalyzer)  \nWARN  Decompiling ram:0004da6c, pcode error at ram:0f0009f0: Could not follow disassembly flow into non-existing memory at ram:0f0009f0 (DecompileCallback)  \nWARN  Decompiling ram:000334cc, pcode error at ram:0f001150: Could not follow disassembly flow into non-existing memory at ram:0f001150 (DecompileCallback)  \nWARN  Decompiling ram:00044258: Unable to read bytes at ram:000c1e78 (DecompileCallback)  \nINFO  Packed database cache: /tmp/rea-ghidra-jPjtzh/cache/root-ghidra/packed-db-cache (PackedDatabaseCache)  \nINFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  \nWARN  Decompiling ram:0001fbd4, pcode error at ram:0f001150: Could not follow disassembly flow into non-existing memory at ram:0f001150 (DecompileCallback)  \nWARN  Decompiling ram:0001fbd4, pcode error at ram:0f001950: Could not follow disassembly flow into non-existing memory at ram:0f001950 (DecompileCallback)  \nWARN  Decompiling ram:00012cf0, pcode error at ram:0f001150: Could not follow disassembly flow into non-existing memory at ram:0f001150 (DecompileCallback)  \nINFO  -----------------------------------------------------\n    ASCII Strings                              1.201 secs\n    Apply Data Archives                        2.149 secs\n    Basic Constant Reference Analyzer         10.150 secs\n    Call Convention ID                         0.275 secs\n    Call-Fixup Installer                       0.013 secs\n    Create Address Tables                      0.229 secs\n    Create Address Tables - One Time           0.864 secs\n    Create Function                            0.510 secs\n    Data Reference                             0.858 secs\n    Decompiler Switch Analysis                15.978 secs\n    Demangler GNU                              0.311 secs\n    Disassemble Entry Points                   2.214 secs\n    Embedded Media                             0.028 secs\n    External Entry References                  0.006 secs\n    Function ID                                0.135 secs\n    Non-Returning Functions - Discovered       0.026 secs\n    Non-Returning Functions - Known            0.005 secs\n    Reference                                  1.226 secs\n    Shared Return Calls                        0.176 secs\n    Stack                                      5.265 secs\n    Subroutine References                      1.399 secs\n    Subroutine References - One Time           0.317 secs\n-----------------------------------------------------\n     Total Time   43 secs\n-----------------------------------------------------\n (AutoAnalysisManager)  \nINFO  REPORT: Analysis succeeded for file: file:///tmp/rea-ghidra-jPjtzh/target-60a159981756.elf (HeadlessAnalyzer)  \nINFO  REPORT: Execute script: /home/rea/openmitrastar-oem-abi3-ops-20261022T131800Z/rea-agents/bridge/ghidra/ReaGhidraNoReturnFix.java  (HeadlessAnalyzer)  \nINFO  SCRIPT: /home/rea/openmitrastar-oem-abi3-ops-20261022T131800Z/rea-agents/bridge/ghidra/ReaGhidraNoReturnFix.java (HeadlessAnalyzer)  \nINFO  ReaGhidraNoReturnFix.java> REA no-return fix: cleared=0 sites=0 refit=0 (GhidraScript)  \nINFO  REPORT: Execute script: /home/rea/openmitrastar-oem-abi3-ops-20261022T131800Z/rea-agents/bridge/ghidra/ReaGhidraBridge.java '/tmp/rea-ghidra-jPjtzh/session.json'  (HeadlessAnalyzer)  \nINFO  SCRIPT: /home/rea/openmitrastar-oem-abi3-ops-20261022T131800Z/rea-agents/bridge/ghidra/ReaGhidraBridge.java (HeadlessAnalyzer)  \n",
+          "bytes": 8482,
+          "retained_bytes": 8482
+        },
+        "stderr": {
+          "text": "NOTE: Picked up JDK_JAVA_OPTIONS: \nPicked up JAVA_TOOL_OPTIONS: \nPicked up _JAVA_OPTIONS: \nopenjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode)\n",
+          "bytes": 269,
+          "retained_bytes": 269
+        },
+        "failure_output": {
+          "stdout": {
+            "text": "",
+            "bytes": 0,
+            "retained_bytes": 0
+          },
+          "stderr": {
+            "text": "",
+            "bytes": 0,
+            "retained_bytes": 0
+          },
+          "complete": true
+        },
+        "failure_cause": {
+          "name": "GhidraRemoteError",
+          "message": "No procedure exists at the requested address: 0x40730; Ghidra image base: 0x10000. Choose an observed analysis address. CLI: rea search <path> . --kind procedures --mode regex --provider ghidra --json; MCP: list_procedures. Inspect the loaded base and source mappings with CLI rea analyze <path> --provider ghidra --json and rea inspect-native-load-image <path> --provider ghidra --json, or MCP binary_overview and inspect_native_load_image. Repeat the original target options. For decompile, select source coordinates explicitly with --file-offset=0x... or MCP procedure file-offset:0x....",
+          "code": "not_found"
+        },
+        "failure_kind": "remote",
+        "failure_message": "No procedure exists at the requested address: 0x40730; Ghidra image base: 0x10000. Choose an observed analysis address. CLI: rea search <path> . --kind procedures --mode regex --provider ghidra --json; MCP: list_procedures. Inspect the loaded base and source mappings with CLI rea analyze <path> --provider ghidra --json and rea inspect-native-load-image <path> --provider ghidra --json, or MCP binary_overview and inspect_native_load_image. Repeat the original target options. For decompile, select source coordinates explicitly with --file-offset=0x... or MCP procedure file-offset:0x....",
+        "remote_code": "not_found",
+        "remote_message": "No procedure exists at the requested address: 0x40730; Ghidra image base: 0x10000. Choose an observed analysis address. CLI: rea search <path> . --kind procedures --mode regex --provider ghidra --json; MCP: list_procedures. Inspect the loaded base and source mappings with CLI rea analyze <path> --provider ghidra --json and rea inspect-native-load-image <path> --provider ghidra --json, or MCP binary_overview and inspect_native_load_image. Repeat the original target options. For decompile, select source coordinates explicitly with --file-offset=0x... or MCP procedure file-offset:0x...."
+      }
+    }
+  },
+  "meta": {
+    "command": "function",
+    "duration": "55293ms"
+  }
+}

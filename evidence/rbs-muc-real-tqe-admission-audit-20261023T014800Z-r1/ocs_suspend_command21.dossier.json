@@ -1,0 +1,56 @@
+{
+  "source_directory": "outputs\\rea\\rbs-muc-ocs-suspend-command21-20261023T014200Z-r1",
+  "procedure": {
+    "address": "0x156550",
+    "name": "FUN_ram_00156550",
+    "classification": {
+      "external": false,
+      "thunk": false,
+      "thunk_target": null,
+      "provenance": "ghidra-function-manager"
+    },
+    "body": {
+      "available": true,
+      "provenance": "ghidra-function-body-address-set",
+      "ranges": [
+        {
+          "start": "0x156550",
+          "end": "0x15655f"
+        }
+      ],
+      "total_bytes": 16,
+      "span_bytes": 16,
+      "non_contiguous": false,
+      "contains_entry": true
+    },
+    "signature": "undefined FUN_ram_00156550()",
+    "locals": []
+  },
+  "callees": [
+    {
+      "address": "0x1563ac",
+      "name": "FUN_ram_001563ac"
+    }
+  ],
+  "callers": [
+    {
+      "address": "0x10cca4",
+      "name": "FUN_ram_0010cca4"
+    },
+    {
+      "address": "0x10cd00",
+      "name": "FUN_ram_0010cd00"
+    }
+  ],
+  "limitations": [
+    "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+    "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+    "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+    "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+    "Ghidra Listing reports a terminal call at 0x156558 to 0x1563ac FUN_ram_001563ac (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+  ],
+  "pseudocode_sha256": "00f331488ea0922409bf96d81e1cfb04735aeeffd1825183840f731023f1d207",
+  "rea_sha256": "7e1adbf10d4fe237c50c10309176d806e2cd12dfd2139f7f9b53f1d517e5e677",
+  "started_utc": "2026-10-22T22:39:10.031887+00:00",
+  "finished_utc": "2026-10-22T22:40:29.673643+00:00"
+}

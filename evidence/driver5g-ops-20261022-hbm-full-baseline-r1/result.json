@@ -1,0 +1,28 @@
+{
+  "schema": "openmitrastar.hbm-full-baseline/v1",
+  "status": "PASS_FULL_HBM_BASELINE_X2_BYTE_IDENTICAL",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "modules": [
+    {
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-hbm-full-baseline-r1/a/hbm.ko",
+      "bytes": 21284,
+      "sha256": "f3b8b78ffda138c5c8287c923086c51cd896e51539ff7a17caa394c0bc6cebb8",
+      "functions": 28,
+      "relocations": 259,
+      "symbols": 138
+    },
+    {
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-hbm-full-baseline-r1/b/hbm.ko",
+      "bytes": 21284,
+      "sha256": "f3b8b78ffda138c5c8287c923086c51cd896e51539ff7a17caa394c0bc6cebb8",
+      "functions": 28,
+      "relocations": 259,
+      "symbols": 138
+    }
+  ],
+  "reproducible": true,
+  "pins_verified": 1006
+}

@@ -1,0 +1,78 @@
+--- a/source/wlan/ieee80211_input.c
++++ b/source/wlan/ieee80211_input.c
+@@ -5456,6 +5456,7 @@
+ 			uint8_t se_pri_chan, uint8_t se_sec_chan)
+ {
+ 	struct ieee80211com *ic = vap->iv_ic;
++	struct ieee80211_channel *bss = READ_ONCE(ic->ic_bsschan);
+ 	uint16_t affected_start;
+ 	uint16_t affected_end;
+ 	uint8_t pri_chan;
+@@ -5465,12 +5466,15 @@
+ 	uint16_t se_pri_freq;
+ 	uint16_t se_sec_freq;
+ 
+-	pri_chan = ic->ic_curchan->ic_ieee;
+-	pri_freq = ic->ic_curchan->ic_freq;
+-	if (ic->ic_curchan->ic_flags & IEEE80211_CHAN_HT40U) {
++	/* OEM449 uses BSS geometry even while a scan has another current channel. */
++	if (!bss || bss == IEEE80211_CHAN_ANYC)
++		return 0;
++	pri_chan = bss->ic_ieee;
++	pri_freq = bss->ic_freq;
++	if (bss->ic_flags & IEEE80211_CHAN_HT40U) {
+ 		sec_chan = pri_chan + IEEE80211_SEC_CHAN_OFFSET;
+ 		sec_freq = pri_freq + IEEE80211_SEC_CHAN_OFFSET * IEEE80211_CHAN_SPACE;
+-	} else if (ic->ic_curchan->ic_flags & IEEE80211_CHAN_HT40D) {
++	} else if (bss->ic_flags & IEEE80211_CHAN_HT40D) {
+ 		sec_chan = pri_chan - IEEE80211_SEC_CHAN_OFFSET;
+ 		sec_freq = pri_freq - IEEE80211_SEC_CHAN_OFFSET * IEEE80211_CHAN_SPACE;
+ 	} else {
+@@ -5481,17 +5485,17 @@
+ 	affected_start = ((pri_freq + sec_freq) >> 1) - IEEE80211_BW_RANGE;
+ 	affected_end = ((pri_freq + sec_freq) >> 1) + IEEE80211_BW_RANGE;
+ 
+-	se_pri_freq = ieee80211_ieee2mhz(se_pri_chan, 0);
+-	se_sec_freq = (se_sec_chan != 0) ? ieee80211_ieee2mhz(se_sec_chan, 0) : 0;
++	se_pri_freq = ieee80211_ieee2mhz((int8_t)se_pri_chan, 0);
++	se_sec_freq = (se_sec_chan != 0) ? ieee80211_ieee2mhz((int8_t)se_sec_chan, 0) : 0;
+ 	if (((se_pri_freq > affected_start) && (se_pri_freq < affected_end)) ||
+ 			((se_sec_freq > affected_start) && (se_sec_freq < affected_end))) {
+-		if ((pri_chan == se_pri_chan) && (se_sec_chan == 0))
++		if (((int)pri_chan == (int8_t)se_pri_chan) && (se_sec_chan == 0))
+ 		      /*
+ 		       * The scanned 20M bandwidth AP shares same channel
+ 		       * with the primary channel of current AP
+ 		       */
+ 		      return 1;
+-		else if ((pri_chan == se_pri_chan) && (sec_chan == se_sec_chan))
++		else if (((int)pri_chan == (int8_t)se_pri_chan) && ((int8_t)sec_chan == (int8_t)se_sec_chan))
+ 		      /*
+ 		       * The scanned 40M bandwidth AP shares same primary channel
+ 		       * and secondary channel with current AP
+@@ -5508,18 +5512,21 @@
+ ieee80211_is_40_allowed(struct ieee80211vap *vap, int channel)
+ {
+ 	struct ieee80211com *ic = vap->iv_ic;
++	struct ieee80211_channel *bss = READ_ONCE(ic->ic_bsschan);
+ 	uint16_t ch_freq;
+ 	uint16_t affected_start;
+ 	uint16_t affected_end;
+ 	uint16_t pri_freq;
+ 	uint16_t sec_freq;
+ 
++	if (!bss || bss == IEEE80211_CHAN_ANYC)
++		return 0;
+ 	ch_freq = ieee80211_ieee2mhz(channel, 0);
+-	pri_freq = ic->ic_curchan->ic_freq;
+-
+-	if (ic->ic_curchan->ic_flags & IEEE80211_CHAN_HT40U)
++	pri_freq = bss->ic_freq;
++
++	if (bss->ic_flags & IEEE80211_CHAN_HT40U)
+ 		sec_freq = pri_freq + 20;
+-	else if (ic->ic_curchan->ic_flags & IEEE80211_CHAN_HT40D)
++	else if (bss->ic_flags & IEEE80211_CHAN_HT40D)
+ 		sec_freq = pri_freq - 20;
+ 	else {
+ 		return 0;

@@ -1,0 +1,23 @@
+{
+  "schema": "openmitrastar.tqe-bounded-provider-pair/v1",
+  "status": "SOURCE_ONLY_PROVIDER_PAIR_PENDING_FIXTURES_AND_COMPLETE_BUILD",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "provider": "topaz_congest_queue",
+  "consumer": "switch_tqe",
+  "provider_imports_consumer": false,
+  "ledger_capacity": 256,
+  "typed_owner_token": true,
+  "first_admission_module_pins": "both consumer and provider; reboot-only; no release API",
+  "input_parent_sha256": "0774db3a2200ac5de2e46d938b01d1ddecdb249f9ec59406df223d14ac326608",
+  "files": {
+    "switch_tqe.c": "61cc67ddab5b6128234a15c0c25f19792ae112d79dcf6b6112be156b2eb935b0",
+    "topaz_congest_queue.c": "b27bf2147519a574b629c7e36515f2b0913077e6c779d1c7462f38f6312440ab",
+    "openmitrastar_tqe_bounded_ownership.h": "a327fbfe7e178576bac4301d21ff02ab746cc7ff4872334bc8c491939a377d47"
+  },
+  "limits": [
+    "Ledger saturation counts unrecorded refs but never overwrites; incomplete catalog remains NO_GO.",
+    "No release/recovery/reset qualified; pins and payload retention are reboot-only.",
+    "Foreign bank writes, HBM whole-function waits and physical acceptance remain UNRUN."
+  ]
+}

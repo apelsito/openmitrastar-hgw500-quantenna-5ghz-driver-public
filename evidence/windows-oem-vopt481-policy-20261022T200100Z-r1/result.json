@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-10-22T19:44:49.363670+00:00",
+  "finished_utc": "2026-10-22T19:46:48.168469+00:00",
+  "command": [
+    "D:\\Tools\\REA\\node-v24.16.0-win-x64\\node.exe",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\rea-agents\\scripts\\rea.mjs",
+    "function",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\vopt481-explicit-entries-20261022T200000Z-r1\\wlan-VOPT-EXPLICIT-ENTRIES-ANALYSIS_ONLY.elf",
+    "--procedure",
+    "om_oem_vopt_peer_policy",
+    "--provider",
+    "ghidra",
+    "--format",
+    "json",
+    "--full-output"
+  ],
+  "exit_code": 0,
+  "target_sha256": "4a7db7427670a80543918e269a51d82cf9cde75a04b02214121022e31eeb6d3a",
+  "target_unchanged": true,
+  "hardware_accessed": false,
+  "installed_runtime_modified": false,
+  "lab_manifest_sha256": "4eaee5f0e843a04da5021aeec00918660b3a133059a574afcd77e44d96e0110e",
+  "rea_output_sha256": "191cf9343a528f4112d8daf6f883d414390e6473e211bbb16f241c8c1a705476"
+}

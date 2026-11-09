@@ -1,0 +1,25 @@
+# Linux7.3ownerQuantenna candidate; offlineonly.
+QTN_GPL ?= $(src)/original-Quantenna-GPL
+ccflags-y += -I$(src)/headers -I$(src)/source/wlan -I$(src)/source/qdrv
+ccflags-y += -I$(src)/source/qdrv/compat/include -include $(src)/source/qdrv/compat/include/openmitrastar_qdrv_compat.h
+ccflags-y += -I$(QTN_GPL) -I$(QTN_GPL)/drivers -I$(QTN_GPL)/drivers/ruby
+ccflags-y += -I$(QTN_GPL)/include -I$(QTN_GPL)/drivers/include/shared -I$(QTN_GPL)/drivers/include/kernel -I$(QTN_GPL)/common
+ccflags-y += -DQDRV -DQSCS_ENABLED -DQTN_BG_SCAN -DQBMPS_ENABLE -DCONFIG_ARCH_ARC=1 -DCONFIG_RUBY=1
+ccflags-y += -DCONFIG_QTN_80211K_SUPPORT -DQTN_DYN_CCA=1 -DQTN_ENABLE_TRACE_BUFFER=0 -DQTN_DEBUG -mlong-calls -mno-millicode
+ccflags-y += -DOPENMITRASTAR_QDRV_V89_PAIR=1 -DOPENMITRASTAR_QDRV_NO_IPV6_OFFLOAD -DOPENMITRASTAR_NO_LEGACY_PROC
+ccflags-y += -Wall -Wno-unused-function -Wno-unused-variable -Werror=implicit-function-declaration
+qdrv-y := source/qdrv/qdrv_f355_lifetime.o source/qdrv/qdrv_kernel_compat.o source/qdrv/qdrv_radar_compat.o source/qdrv/qdrv_fwt_compat.o source/qdrv/qdrv_module.o source/qdrv/qdrv_control.o source/qdrv/qdrv_soc.o source/qdrv/qdrv_hal.o source/qdrv/qdrv_muc.o source/qdrv/qdrv_mac.o source/qdrv/qdrv_mac_reserve.o source/qdrv/qdrv_comm.o source/qdrv/qdrv_wlan.o source/qdrv/qdrv_tx.o source/qdrv/qdrv_rx.o source/qdrv/qdrv_scan.o source/qdrv/qdrv_hostlink.o source/qdrv/qdrv_vap.o source/qdrv/qdrv_dsp.o source/qdrv/qdrv_txbf.o source/qdrv/qdrv_muc_stats.o source/qdrv/qdrv_radar.o source/qdrv/qdrv_math.o source/qdrv/qdrv_bridge.o source/qdrv/qdrv_uc_print.o source/qdrv/qdrv_sch.o source/qdrv/qdrv_sch_pm.o source/qdrv/qdrv_pktlogger.o source/qdrv/qdrv_auc.o source/qdrv/qdrv_pcap.o source/qdrv/qdrv_vlan.o source/qdrv/qdrv_show.o source/qdrv/qdrv_mu.o source/qdrv/qdrv_fw.o
+wlan-y := source/wlan/wlan_fwt_compat.o source/wlan/if_media.o source/wlan/ieee80211_beacon.o source/wlan/ieee80211_beacon_desc.o source/wlan/ieee80211_crypto.o source/wlan/ieee80211_crypto_none.o source/wlan/ieee80211_proto.o source/wlan/ieee80211_output.o source/wlan/ieee80211_power.o source/wlan/ieee80211_scan.o source/wlan/ieee80211_wireless.o source/wlan/ieee80211_linux.o source/wlan/ieee80211_rate.o source/wlan/ieee80211_input.o source/wlan/ieee80211_node.o source/wlan/ieee80211_tdls.o source/wlan/ieee80211_tpc.o source/wlan/ieee80211_mlme_statistics.o source/wlan/ieee80211.o
+wlan_scan_ap-y := source/wlan/ieee80211_scan_ap.o
+wlan_scan_sta-y := source/wlan/ieee80211_scan_sta.o
+wlan_ccmp-y := source/wlan/ieee80211_crypto_ccmp.o
+wlan_tkip-y := source/wlan/ieee80211_crypto_tkip.o
+wlan_xauth-y := source/wlan/ieee80211_xauth.o
+obj-m += qdrv.o wlan.o wlan_scan_ap.o wlan_scan_sta.o wlan_ccmp.o wlan_tkip.o wlan_xauth.o
+
+ccflags-y += -I$(src)/providers/include
+qtn_pm_qos_compat-y := providers/qtn_pm_qos_compat.o
+qtn_platform_support-y := providers/qtn_platform_support.o
+board_compat-y := providers/board_compat.o
+runtime_compat-y := providers/runtime_compat.o
+obj-m += qtn_pm_qos_compat.o qtn_platform_support.o board_compat.o runtime_compat.o

@@ -1,0 +1,14 @@
+{
+  "status": "SOURCE_ONLY_15_TABLE_RECORDS_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent_sha256": "022dc5388da1dddc161673c13faaca5de468054ee9ed071bf0286a1d3ae22f6b",
+  "candidate_sha256": "538da528ed69173af54bb5f7c8001e75254fadc883b6464e6674cff2d83e9cb2",
+  "total_original_entries_added": 15,
+  "functional_ops_added": 13,
+  "faithful_unsupported": 2,
+  "remaining_original_table_gaps": 29,
+  "field": "ic->ic_chan_is_set",
+  "evidence": "OEMexportcleanup_before_reload clear4e2c +464setterwrite4e2c; sourceequivalent clearsnamedfield",
+  "limits": "Fullpairmodules andprefixedpolicyintegration gatepending, noRFactivations"
+}

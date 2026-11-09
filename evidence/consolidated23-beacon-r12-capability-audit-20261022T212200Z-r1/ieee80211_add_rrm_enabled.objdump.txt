@@ -1,0 +1,41 @@
+
+/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/lib/modules/2.6.35.12/extra/wlan/wlan.ko:     file format elf32-littlearc
+
+
+Disassembly of section .text:
+
+0000a678 <ieee80211_add_rrm_enabled>:
+    a678:	c0f1                	push_s	blink
+    a67a:	1cfc b348           	st.aw	r13,[sp,-4]
+    a67e:	c1a2                	sub_s	sp,sp,0x8
+    a680:	7528                	mov_s	r13,r1
+    a682:	da07                	mov_s	r2,0x7
+    a684:	d900                	mov_s	r1,0
+    a686:	73cf 0000 0000      	mov_s	r3,0
+			a688: R_ARC_32_ME	memset
+    a68c:	2023 00c0           	jl.d	[r3]
+    a690:	c041                	st_s	r0,[sp,0x4]
+    a692:	1404 301a           	ld	gp,[sp,4]
+    a696:	da46                	mov_s	r2,0x46
+    a698:	1a00 3082           	stb	r2,[gp]
+    a69c:	da05                	mov_s	r2,0x5
+    a69e:	1a01 3082           	stb	r2,[gp,1]
+    a6a2:	1541 1602           	ld.as	r2,[r13,65]
+    a6a6:	72c7 0000 5e18      	add_s	r2,r2,0x5e18
+    a6ac:	8240                	ld_s	r2,[r2,0]
+    a6ae:	2244 8042           	and.f	r2,r2,0x1
+    a6b2:	000e 0001           	beq	14	;a6be <ieee80211_add_rrm_enabled+0x46>
+    a6b6:	1202 3082           	ldb	r2,[gp,2]
+    a6ba:	2245 0082           	or	r2,r2,0x2
+    a6be:	1a02 3082           	stb	r2,[gp,2]
+    a6c2:	2240 31c0           	add	r0,gp,0x7
+    a6c6:	1403 361f           	ld.as	blink,[sp,3]
+    a6ca:	1408 320d           	ld.aw	r13,[sp,8]
+    a6ce:	7fe0                	j_s.d	[blink]
+    a6d0:	c0a2                	add_s	sp,sp,0x8
+
+Disassembly of section .fixup:
+
+Disassembly of section .exit.text:
+
+Disassembly of section .init.text:

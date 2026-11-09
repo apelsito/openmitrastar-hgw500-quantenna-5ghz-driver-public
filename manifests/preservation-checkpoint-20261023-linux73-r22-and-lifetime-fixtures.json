@@ -1,0 +1,160 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-typed-sram-dma-fixture-20261023T041300Z-r22/actual-typed-dma.c",
+      "source": "outputs/rea/linux73-typed-sram-dma-fixture-20261023T041300Z-r22/actual-typed-dma.c",
+      "bytes": 11527,
+      "sha256": "5a32b7d97d11e14b7959594a328623443da1b63bddfa3fd7aa61314672f2ef3c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-dma-fixture-20261023T041300Z-r22/compile.log",
+      "source": "outputs/rea/linux73-typed-sram-dma-fixture-20261023T041300Z-r22/compile.log",
+      "bytes": 1017,
+      "sha256": "ee603cb0989afabad19d09f4c9178a1e0f66180ebb7d48149e125a6cb450bf77",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-dma-fixture-20261023T041300Z-r22/result.json",
+      "source": "outputs/rea/linux73-typed-sram-dma-fixture-20261023T041300Z-r22/result.json",
+      "bytes": 1357,
+      "sha256": "fe7636596ec1450556a00047cf8a9d851fd9ea63595db221e69807bf0bd3dacb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-dma-fixture-20261023T041300Z-r22/run.log",
+      "source": "outputs/rea/linux73-typed-sram-dma-fixture-20261023T041300Z-r22/run.log",
+      "bytes": 68,
+      "sha256": "5138d081ceb6b0234314c0397a9e034ae7ef8db200aa99e34e808889c81adebf",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/compile.log",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/fixture.c",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/fixture.c",
+      "bytes": 3871,
+      "sha256": "d037eaa3c38bd007e4d361b3117328566eff57836bdcefa3b292f6d540a39d13",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/result.json",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/result.json",
+      "bytes": 1269,
+      "sha256": "06553b85abcadaa4c8e4268908f630b980b11467f66c8308d3206956b5daee36",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/run.log",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/run.log",
+      "bytes": 91,
+      "sha256": "3ac287e5e6992275e3c2af3f3055942e20a3bb2ce99051e86ebcea17b5ecc8f0",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/shim.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/shim.h",
+      "bytes": 3066,
+      "sha256": "02e09dada1c35b6dbabce4be40d935bc629b7ae9ad44587ff050bcf05d217b9b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/asm/page.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/asm/page.h",
+      "bytes": 39,
+      "sha256": "76a9f69d1609150795234d15d32beabb0c22b27912c4bfb1289ae3e73cde74fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/errno.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/errno.h",
+      "bytes": 39,
+      "sha256": "76a9f69d1609150795234d15d32beabb0c22b27912c4bfb1289ae3e73cde74fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/io.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/io.h",
+      "bytes": 39,
+      "sha256": "76a9f69d1609150795234d15d32beabb0c22b27912c4bfb1289ae3e73cde74fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/ioport.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/ioport.h",
+      "bytes": 39,
+      "sha256": "76a9f69d1609150795234d15d32beabb0c22b27912c4bfb1289ae3e73cde74fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/log2.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/log2.h",
+      "bytes": 39,
+      "sha256": "76a9f69d1609150795234d15d32beabb0c22b27912c4bfb1289ae3e73cde74fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/module.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/module.h",
+      "bytes": 39,
+      "sha256": "76a9f69d1609150795234d15d32beabb0c22b27912c4bfb1289ae3e73cde74fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/mutex.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/mutex.h",
+      "bytes": 39,
+      "sha256": "76a9f69d1609150795234d15d32beabb0c22b27912c4bfb1289ae3e73cde74fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/overflow.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/overflow.h",
+      "bytes": 39,
+      "sha256": "76a9f69d1609150795234d15d32beabb0c22b27912c4bfb1289ae3e73cde74fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/spinlock.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/spinlock.h",
+      "bytes": 39,
+      "sha256": "76a9f69d1609150795234d15d32beabb0c22b27912c4bfb1289ae3e73cde74fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/string.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/string.h",
+      "bytes": 39,
+      "sha256": "76a9f69d1609150795234d15d32beabb0c22b27912c4bfb1289ae3e73cde74fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/types.h",
+      "source": "outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/include/linux/types.h",
+      "bytes": 39,
+      "sha256": "76a9f69d1609150795234d15d32beabb0c22b27912c4bfb1289ae3e73cde74fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-sram-lifetime-fixture-20261022T224400Z-r2/actual-lifetime.c",
+      "source": "outputs/rea/linux73-sram-lifetime-fixture-20261022T224400Z-r2/actual-lifetime.c",
+      "bytes": 3597,
+      "sha256": "421448c741377e8f1615d03b48619f9a13fc626c4b0e860a5baa2dbb63365b3c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-sram-lifetime-fixture-20261022T224400Z-r2/result.json",
+      "source": "outputs/rea/linux73-sram-lifetime-fixture-20261022T224400Z-r2/result.json",
+      "bytes": 1702,
+      "sha256": "9e3360942b42e4057f91ccb1c096406b7500bd4874cc00ac0c350e178e304b5a",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "hardware_accessed": false
+}

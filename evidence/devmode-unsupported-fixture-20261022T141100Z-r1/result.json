@@ -1,0 +1,13 @@
+{
+  "status": "PASS_OFFLINE_DEVMODE_STUB_FIXTURE_AND_ARC_UNIT",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "candidate_sha256": "7a128781902eb6cc58f71e2b4a30ae005de7ebf168a10a9ae4139557b93a9be8",
+  "actual_source_compiled": true,
+  "role_cases": 256,
+  "flag_cases": 2,
+  "high16_samples_per_role": 256,
+  "unsupported_high16_cases": 65536,
+  "source_unchanged": true,
+  "limit": "FullWLAN/QDRV modules remain unqualified; setter stubs activate nofeature"
+}

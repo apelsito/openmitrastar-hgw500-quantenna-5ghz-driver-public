@@ -1,0 +1,211 @@
+{
+  "source_sha256": "5cb72b501f3af7bc574d939d9c9403ebda9e6311c345840e1861a257fdd78c4f",
+  "authority": "GPL header definition; AuC firmware instruction consumer not qualified",
+  "commands": [
+    {
+      "name": "SHARED_PARAMS_IPC_NONE_CMD",
+      "value": 0,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_CFG_PARAMS_MIN",
+      "value": 1,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_SLOW_NODE_CREATE_CMD",
+      "value": 2,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_NODE_CREATE_CMD",
+      "value": 3,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_NODE_DESTROY_CMD",
+      "value": 4,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_SLOW_TID_CREATE_CMD",
+      "value": 5,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TID_CREATE_CMD",
+      "value": 6,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TID_DESTROY_CMD",
+      "value": 7,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TID_ACTIVATE_CMD",
+      "value": 8,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TID_DEACTIVATE_CMD",
+      "value": 9,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TID_CHECK_IDLE_CMD",
+      "value": 10,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TID_BA_CTL_CMD",
+      "value": 11,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TX_SCALE_CMD",
+      "value": 12,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TX_SCALE_BASE_CMD",
+      "value": 13,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TX_SCALE_MAX_CMD",
+      "value": 14,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TX_AGG_TIMEOUT_CMD",
+      "value": 15,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TX_DBG_CMD",
+      "value": 16,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TX_QOS_SCH_CMD",
+      "value": 17,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TX_AGG_DURATION",
+      "value": 18,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_FCS_GIVE_CMD",
+      "value": 19,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_NODE_RATEDATA_CHANGE_CMD",
+      "value": 20,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_OCS_TX_SUSPEND_CMD",
+      "value": 21,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_TQEW_DESCR_LIMIT_CMD",
+      "value": 22,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_ENABLE_VLAN_CMD",
+      "value": 23,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_MU_GRP_UPDATE_CMD",
+      "value": 24,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_MU_DBG_FLAG_UPDATE_CMD",
+      "value": 25,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_MU_AIRTIME_PADDING_UPDATE_CMD",
+      "value": 26,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_CFG_PARAMS_MAX",
+      "value": 27,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_MU_QMAT_UPDATE_CMD",
+      "value": 28,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_SRESET_BEGIN_CMD",
+      "value": 29,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_SRESET_END_CMD",
+      "value": 30,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_PAUSE_ON_CMD",
+      "value": 31,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_M2A_PAUSE_OFF_CMD",
+      "value": 32,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_A2M_FIRST_CMD",
+      "value": 256,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_A2M_AUC_BOOTED_CMD",
+      "value": 257,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_A2M_BA_ADD_START_CMD",
+      "value": 258,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_A2M_PANIC",
+      "value": 259,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_A2M_TDLS_PTI_CMD",
+      "value": 260,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_A2M_BB_RESET",
+      "value": 261,
+      "conditional": false
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_A2M_PUSH_WMAC1_FCS",
+      "value": 262,
+      "conditional": true
+    },
+    {
+      "name": "SHARED_PARAMS_IPC_A2M_LAST_CMD",
+      "value": 263,
+      "conditional": false
+    }
+  ]
+}

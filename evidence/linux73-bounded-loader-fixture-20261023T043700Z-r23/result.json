@@ -1,0 +1,24 @@
+{
+  "status": "PASS_ACTUAL_BOUNDED_LOADER_SELECTED_CARRIERS_AND_32BIT_MUTATIONS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 1321,
+  "carriers": 3,
+  "preflight_error_mapping_calls": 0,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_linux73_firmware_loader_bounds.py": "3cfa03e0bff36e74946582451a295b19abab8a5e95493846061682005d60db14",
+    "outputs\\rea\\linux73-bounded-loader-candidate-20261023T043000Z-r23\\source\\qdrv\\qdrv_fw.c": "f3ea6b0363432d7ec7319c2caf47ddcb93c22158b12f38494b4a9531d2f89b12",
+    "outputs\\rea\\linux73-bounded-loader-fixture-20261023T043700Z-r23\\actual-loader.c": "255c76af36f99cf84ec0d4fc8234526111392f442ad384e245d064f928645d0b",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\i686-w64-mingw32-clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+    "outputs\\rea\\linux73-bounded-loader-fixture-20261023T043700Z-r23\\fixture.exe": "9186b33a48f1a4ffe7eab2daca3d4e996dbc6663c17e8679080479526697883c",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\hgw500-rootfs-live\\squashfs-root\\etc\\firmware\\qtn_driver.qtn_ruby.0.bin": "71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\hgw500-rootfs-live\\squashfs-root\\etc\\firmware\\auc_driver.nomu.0.bin": "c10018f4fe384d753a800bbbcd5ef3c85c568d0852c221009063282d30fd85f6",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\hgw500-rootfs-live\\squashfs-root\\etc\\firmware\\rdsp_driver.0.bin": "87c882910d87cd29ba2004c4154e9240291aaad6aedb0ff4d90c7a5570be79fd"
+  },
+  "limits": [
+    "Actual C preflight/install bodies; fake mapping/address helpers/CCM writes.",
+    "Selected OEM packed carriers pass; negative structural/metadata/address inputs never map.",
+    "Map failure may follow earlier segment writes but does not publish the firmware entry.",
+    "No actual memory/bus/core execution or complete SRAM writer exclusion proof."
+  ]
+}

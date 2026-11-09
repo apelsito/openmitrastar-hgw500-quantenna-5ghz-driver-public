@@ -1,0 +1,56 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-r20-sram-load-limit-20261022T220300Z-r1/AELITA_LOAD_LIMITS.md",
+      "source": "outputs/rea/linux73-r20-sram-load-limit-20261022T220300Z-r1/AELITA_LOAD_LIMITS.md",
+      "bytes": 1180,
+      "sha256": "1fdb449b68c9edd1ad2cee8806726b88af673e2c65c6afe4758702eb0d9eb26e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-sram-load-limit-20261022T220300Z-r1/current-heap-allocator.c",
+      "source": "outputs/rea/linux73-r20-sram-load-limit-20261022T220300Z-r1/current-heap-allocator.c",
+      "bytes": 443,
+      "sha256": "a8da73beea8d4027797be3775e14c5ead9fbabc63b1937b8a34bb39e546d4db7",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-sram-load-limit-20261022T220300Z-r1/current-heap-free.c",
+      "source": "outputs/rea/linux73-r20-sram-load-limit-20261022T220300Z-r1/current-heap-free.c",
+      "bytes": 150,
+      "sha256": "1be711cc85a6846902e28998f75408e18d9ca7a306a568d63523ecdf0895284f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-sram-load-limit-20261022T220300Z-r1/result.json",
+      "source": "outputs/rea/linux73-r20-sram-load-limit-20261022T220300Z-r1/result.json",
+      "bytes": 6467,
+      "sha256": "ba650d5aa03473d650e59879ee11a358fbd3e7d1bedae2da502d8b770833a1ed",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-sram-load-limit-20261022T220300Z-r1/scheduler-optional-sram.c",
+      "source": "outputs/rea/linux73-r20-sram-load-limit-20261022T220300Z-r1/scheduler-optional-sram.c",
+      "bytes": 237,
+      "sha256": "45e1d09294571fb71f25db45510f15a3a1fd89e7451ee4ec792d07fbb79fe216",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-sram-load-limit-20261022T220300Z-r1/tqe-load-gate.c",
+      "source": "outputs/rea/linux73-r20-sram-load-limit-20261022T220300Z-r1/tqe-load-gate.c",
+      "bytes": 1404,
+      "sha256": "572e38fca5351d69f042625d903b23d40f5eb3abfc4e3be697783da746dc5f7a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-sram-load-limit-20261022T220300Z-r1/tqe-required-sram-ring.c",
+      "source": "outputs/rea/linux73-r20-sram-load-limit-20261022T220300Z-r1/tqe-required-sram-ring.c",
+      "bytes": 1352,
+      "sha256": "ea92a52c57424839c7f6d88abedb0225b70d8b9693e84200ab35b6e9fbabd95b",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

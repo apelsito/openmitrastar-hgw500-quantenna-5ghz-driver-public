@@ -1,0 +1,68 @@
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -78,6 +78,7 @@
+ #include <qdrv/qdrv_vap.h>
+ #include <qtn/qtn_debug.h>
+ #include <qtn/shared_params.h>
++#include "openmitrastar_nac_getter.h"
+ #include <qtn/qtn_bb_mutex.h>
+ #include <qtn/qtn_vlan.h>
+ #include <linux/net/bridge/br_public.h>
+@@ -121,6 +122,7 @@
+  * enable DFS, change radio state, or assert measured retry behavior. */
+ /* OEM451 reports role1/2 first, else repeater3 or normal0. Two advertised
+  * OEM entries below remain unsupported; adding their records enables no feature. */
++#define OM_OEM_PARAM_NAC_MODE 457
+ #define OM_OEM_PARAM_DEVICE_MODE 451
+ #define OM_OEM_PARAM_IGNORE_ICAC_SELECTION 465
+ #define OM_OEM_PARAM_FT_OVER_DS 495
+@@ -13926,6 +13928,28 @@
+ 			"Legay VAP QHOP mode: %s\n", wds_mode);
+ }
+ 
++/* Exact OEM457 getter prefix; no per-client NAC entries are exposed.
++ * MuC can update the three fields asynchronously, so this is a sampled tuple.
++ * Guard the zero-initialized/not-ready denominator; OEM itself had no guard. */
++static int om_oem_get_nac_mode_sample(struct qtn_nac_mon_info_v89 *nac,
++                                    int *value)
++{
++    u16 value0, value1;
++    u8 enabled;
++    u32 percent;
++
++    if (!nac)
++        return -EAGAIN;
++    value0 = READ_ONCE(nac->config_value0);
++    value1 = READ_ONCE(nac->config_value1);
++    enabled = (u8)READ_ONCE(nac->enabled);
++    if (!value1)
++        return -EAGAIN;
++    percent = ((u32)value0 * 100U) / value1;
++    *value = ((u32)value1 << 16) | ((percent & 0xffU) << 8) | enabled;
++    return 0;
++}
++
+ static int
+ ieee80211_ioctl_getparam(struct net_device *dev, struct iw_request_info *info,
+ 	void *w, char *extra)
+@@ -13940,6 +13964,11 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_NAC_MODE:
++		return om_oem_get_nac_mode_sample(
++		    (struct qtn_nac_mon_info_v89 *)READ_ONCE(soc_shared_params->nac_mon_info_lhost),
++		    &param[0]);
++
+ 	case OM_OEM_PARAM_DEVICE_MODE:
+ 		if (ic->ic_extender_role == IEEE80211_EXTENDER_ROLE_MBS)
+ 			param[0] = 1;
+@@ -20883,6 +20912,8 @@
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "ignr_icac_sel" },
+ 	{ OM_OEM_PARAM_FT_OVER_DS,
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_ft_over_ds" },
++	{ OM_OEM_PARAM_NAC_MODE,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_nac_mode" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

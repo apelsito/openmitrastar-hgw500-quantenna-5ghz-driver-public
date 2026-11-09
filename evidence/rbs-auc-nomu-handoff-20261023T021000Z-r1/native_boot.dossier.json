@@ -1,0 +1,45 @@
+{
+  "directory": "outputs\\rea\\rbs-auc-nomu-native-boot-20261023T015400Z-r1",
+  "procedure": {
+    "address": "0xe50073b0",
+    "name": "FUN_ram_e50073b0",
+    "classification": {
+      "external": false,
+      "thunk": false,
+      "thunk_target": null,
+      "provenance": "ghidra-function-manager"
+    },
+    "body": {
+      "available": true,
+      "provenance": "ghidra-function-body-address-set",
+      "ranges": [
+        {
+          "start": "0xe50073b0",
+          "end": "0xe5007403"
+        }
+      ],
+      "total_bytes": 84,
+      "span_bytes": 84,
+      "non_contiguous": false,
+      "contains_entry": true
+    },
+    "signature": "undefined FUN_ram_e50073b0()",
+    "locals": []
+  },
+  "callees": [
+    {
+      "address": "0xe5007434",
+      "name": "FUN_ram_e5007434"
+    }
+  ],
+  "limitations": [
+    "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+    "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+    "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+    "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+    "Ghidra Listing reports a terminal call at 0xe5007400 to 0xe5007434 FUN_ram_e5007434 (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+  ],
+  "rea_sha256": "e1178a4442c7ffda6a19cb991d1112a39da04df14f5c47e982688784fc60d49b",
+  "started_utc": "2026-10-22T22:47:46.497156+00:00",
+  "finished_utc": "2026-10-22T22:48:02.653929+00:00"
+}

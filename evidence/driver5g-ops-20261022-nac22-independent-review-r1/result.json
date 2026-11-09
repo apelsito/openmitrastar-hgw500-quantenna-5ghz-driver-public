@@ -1,0 +1,15 @@
+{
+  "status": "PASS_INDEPENDENT_NAC22_SAMPLED_SOURCE_MODULE_SCOPE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "WLAN_bytes": 630628,
+  "WLAN_sha256": "dd4896a969b3033e41f8c63eac27b12b1844bd86dd1a506e69c7be5a485b4621",
+  "fresh_actual_audit": "PASS_EXACT_RESIDUAL_NAC22_MODULE_DELTA",
+  "limits": [
+    "READ_ONCE prefixscalar sample maymixMuCgenerations;not coherentmonitor",
+    "Missingprefix orzero denominator returnsEAGAIN deliberateOEMsafetydeviation",
+    "F355retainedallocation/VAPstartlifecycle assumption separate gate",
+    "Twolegacyunsupportedentries and22originalmissing entries persist",
+    "NoNAC monitor/client/RF/runtimeacceptance"
+  ]
+}

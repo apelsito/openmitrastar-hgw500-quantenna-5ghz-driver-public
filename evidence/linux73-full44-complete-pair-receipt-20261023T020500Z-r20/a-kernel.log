@@ -1,0 +1,1695 @@
+make: Entering directory '/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source'
+make[1]: Entering directory '/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-complete-pair-r20/a/kernel'
+  UPD     include/generated/uapi/linux/version.h
+  UPD     include/generated/compile.h
+  UPD     arch/arc/include/generated/uapi/asm/ucontext.h
+  UPD     include/config/kernel.release
+  UPD     arch/arc/include/generated/uapi/asm/auxvec.h
+  UPD     arch/arc/include/generated/uapi/asm/bitsperlong.h
+  UPD     arch/arc/include/generated/uapi/asm/errno.h
+  HOSTCC  scripts/dtc/dtc.o
+  UPD     arch/arc/include/generated/uapi/asm/fcntl.h
+  HOSTCC  scripts/dtc/flattree.o
+  UPD     include/generated/utsrelease.h
+  UPD     arch/arc/include/generated/uapi/asm/ioctl.h
+  UPD     arch/arc/include/generated/uapi/asm/ioctls.h
+  UPD     arch/arc/include/generated/uapi/asm/ipcbuf.h
+  UPD     arch/arc/include/generated/uapi/asm/mman.h
+  UPD     arch/arc/include/generated/uapi/asm/msgbuf.h
+  UPD     arch/arc/include/generated/uapi/asm/param.h
+  UPD     arch/arc/include/generated/uapi/asm/poll.h
+  HOSTCC  scripts/dtc/fstree.o
+  UPD     arch/arc/include/generated/uapi/asm/posix_types.h
+  UPD     arch/arc/include/generated/uapi/asm/resource.h
+  UPD     arch/arc/include/generated/uapi/asm/sembuf.h
+  UPD     arch/arc/include/generated/uapi/asm/shmbuf.h
+  UPD     arch/arc/include/generated/uapi/asm/siginfo.h
+  UPD     arch/arc/include/generated/uapi/asm/socket.h
+  UPD     arch/arc/include/generated/uapi/asm/sockios.h
+  UPD     arch/arc/include/generated/uapi/asm/stat.h
+  UPD     arch/arc/include/generated/uapi/asm/statfs.h
+  UPD     arch/arc/include/generated/uapi/asm/termbits.h
+  UPD     arch/arc/include/generated/uapi/asm/termios.h
+  UPD     arch/arc/include/generated/uapi/asm/types.h
+  SYSHDR  arch/arc/include/generated/uapi/asm/unistd_32.h
+  HOSTCC  scripts/dtc/data.o
+  HOSTCC  scripts/dtc/livetree.o
+  HOSTCC  scripts/dtc/treesource.o
+  HOSTCC  scripts/dtc/srcpos.o
+  HOSTCC  scripts/dtc/checks.o
+  HOSTCC  scripts/dtc/util.o
+  LEX     scripts/dtc/dtc-lexer.lex.c
+  YACC    scripts/dtc/dtc-parser.tab.[ch]
+  HOSTCC  scripts/dtc/libfdt/fdt.o
+  HOSTCC  scripts/dtc/libfdt/fdt_ro.o
+  HOSTCC  scripts/dtc/libfdt/fdt_wip.o
+  HOSTCC  scripts/dtc/libfdt/fdt_sw.o
+  UPD     arch/arc/include/generated/asm/extable.h
+  UPD     arch/arc/include/generated/asm/kvm_para.h
+  UPD     arch/arc/include/generated/asm/mcs_spinlock.h
+  UPD     arch/arc/include/generated/asm/parport.h
+  UPD     arch/arc/include/generated/asm/ring_buffer.h
+  UPD     arch/arc/include/generated/asm/user.h
+  UPD     arch/arc/include/generated/asm/text-patching.h
+  UPD     arch/arc/include/generated/asm/archrandom.h
+  UPD     arch/arc/include/generated/asm/cfi.h
+  UPD     arch/arc/include/generated/asm/compat.h
+  UPD     arch/arc/include/generated/asm/device.h
+  UPD     arch/arc/include/generated/asm/div64.h
+  UPD     arch/arc/include/generated/asm/dma-mapping.h
+  UPD     arch/arc/include/generated/asm/emergency-restart.h
+  UPD     arch/arc/include/generated/asm/ftrace.h
+  UPD     arch/arc/include/generated/asm/hardirq.h
+  UPD     arch/arc/include/generated/asm/hw_irq.h
+  UPD     arch/arc/include/generated/asm/irq_regs.h
+  UPD     arch/arc/include/generated/asm/irq_work.h
+  UPD     arch/arc/include/generated/asm/kmap_size.h
+  UPD     arch/arc/include/generated/asm/kvm_types.h
+  HOSTCC  scripts/dtc/libfdt/fdt_rw.o
+  UPD     arch/arc/include/generated/asm/local.h
+  UPD     arch/arc/include/generated/asm/local64.h
+  UPD     arch/arc/include/generated/asm/mmiowb.h
+  UPD     arch/arc/include/generated/asm/module.lds.h
+  UPD     arch/arc/include/generated/asm/msi.h
+  UPD     arch/arc/include/generated/asm/percpu.h
+  UPD     arch/arc/include/generated/asm/percpu_types.h
+  UPD     arch/arc/include/generated/asm/preempt.h
+  HOSTCC  scripts/dtc/libfdt/fdt_strerror.o
+  UPD     arch/arc/include/generated/asm/rqspinlock.h
+  UPD     arch/arc/include/generated/asm/runtime-const.h
+  UPD     arch/arc/include/generated/asm/rwonce.h
+  UPD     arch/arc/include/generated/asm/simd.h
+  UPD     arch/arc/include/generated/asm/softirq_stack.h
+  UPD     arch/arc/include/generated/asm/timex.h
+  UPD     arch/arc/include/generated/asm/topology.h
+  HOSTCC  scripts/dtc/libfdt/fdt_empty_tree.o
+  UPD     arch/arc/include/generated/asm/trace_clock.h
+  UPD     arch/arc/include/generated/asm/unwind_user.h
+  HOSTCC  scripts/dtc/libfdt/fdt_addresses.o
+  UPD     arch/arc/include/generated/asm/vdso/clocksource.h
+  UPD     arch/arc/include/generated/asm/vga.h
+  UPD     arch/arc/include/generated/asm/video.h
+  UPD     arch/arc/include/generated/asm/word-at-a-time.h
+  SYSTBL  arch/arc/include/generated/asm/syscall_table_32.h
+  HOSTCC  scripts/dtc/libfdt/fdt_overlay.o
+  HOSTCC  scripts/dtc/fdtoverlay.o
+  HOSTCC  scripts/dtc/dtc-lexer.lex.o
+  HOSTCC  scripts/dtc/dtc-parser.tab.o
+  HOSTLD  scripts/dtc/fdtoverlay
+  HOSTLD  scripts/dtc/dtc
+  HOSTCC  scripts/sorttable.o
+  HOSTCC  scripts/elf-parse.o
+  HOSTCC  scripts/asn1_compiler
+  DTC     arch/arc/boot/dts/topaz_mitrastar_eth73.dtb
+/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source/arch/arc/boot/dts/topaz_mitrastar_eth73.dts:119.17-132.5: Warning (interrupt_provider): /soc/pcie@cf000000: '#interrupt-cells' found, but node is not an interrupt provider
+  HOSTLD  scripts/sorttable
+  CC      scripts/mod/empty.o
+  HOSTCC  scripts/mod/mk_elfconfig
+  CC      scripts/mod/devicetable-offsets.s
+  UPD     scripts/mod/devicetable-offsets.h
+  MKELF   scripts/mod/elfconfig.h
+  HOSTCC  scripts/mod/modpost.o
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTCC  scripts/mod/sumversion.o
+  HOSTCC  scripts/mod/symsearch.o
+  HOSTLD  scripts/mod/modpost
+  CC      kernel/bounds.s
+  CHKSHA1 /home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source/include/linux/atomic/atomic-arch-fallback.h
+  CHKSHA1 /home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source/include/linux/atomic/atomic-instrumented.h
+  UPD     include/generated/timeconst.h
+  CHKSHA1 /home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source/include/linux/atomic/atomic-long.h
+  UPD     include/generated/bounds.h
+  CC      arch/arc/kernel/asm-offsets.s
+  UPD     include/generated/asm-offsets.h
+  CC      kernel/sched/rq-offsets.s
+  UPD     include/generated/rq-offsets.h
+  CALL    /home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source/scripts/checksyscalls.sh 
+  LDS     scripts/module.lds
+  HOSTCC  usr/gen_init_cpio
+  CC      init/main.o
+  CC      arch/arc/plat-sim/platform.o
+  AS      arch/arc/kernel/head.o
+  AR      arch/arc/plat-sim/built-in.a
+  CC      arch/arc/kernel/arcksyms.o
+  CC      arch/arc/kernel/setup.o
+  CC      arch/arc/kernel/irq.o
+  GEN     usr/initramfs_data.cpio
+  COPY    usr/initramfs_inc_data
+  AS      usr/initramfs_data.o
+  AR      usr/built-in.a
+  CC      arch/arc/kernel/reset.o
+  CC      arch/arc/plat-topaz-basic/platform.o
+  AR      arch/arc/plat-topaz-basic/built-in.a
+  UPD     init/utsversion-tmp.h
+  CC      kernel/locking/mutex.o
+  CC      kernel/sched/core.o
+  CC      arch/arc/kernel/ptrace.o
+  CC      init/do_mounts.o
+  CC      kernel/locking/semaphore.o
+  CC      arch/arc/kernel/process.o
+  CC      kernel/locking/rwsem.o
+  CC      init/do_mounts_initrd.o
+  CC      arch/arc/kernel/devtree.o
+  CC      kernel/locking/percpu-rwsem.o
+  CC      arch/arc/kernel/signal.o
+  CC      init/initramfs.o
+  CC      kernel/sched/fair.o
+  CC      kernel/locking/rtmutex_api.o
+  CC      arch/arc/kernel/traps.o
+  CC      init/calibrate.o
+  CC      init/init_task.o
+  AR      kernel/locking/built-in.a
+  CC      arch/arc/kernel/sys.o
+  CC      init/version.o
+  CC      arch/arc/kernel/troubleshoot.o
+  AR      init/built-in.a
+  CC      arch/arc/kernel/stacktrace.o
+  CC      certs/system_keyring.o
+  HOSTCC  certs/extract-cert
+  CC      mm/filemap.o
+  CC      arch/arc/kernel/disasm.o
+  CC      kernel/sched/build_policy.o
+  CERT    certs/x509_certificate_list
+  CERT    certs/signing_key.x509
+  AS      certs/system_certificates.o
+  AR      certs/built-in.a
+  CC      kernel/sched/build_utility.o
+  AS      arch/arc/kernel/ctx_sw_asm.o
+  AS      arch/arc/kernel/entry-compact.o
+  CC      arch/arc/kernel/intc-compact.o
+  CC      arch/arc/kernel/module.o
+  LDS     arch/arc/kernel/vmlinux.lds
+  AR      arch/arc/kernel/built-in.a
+  CC      arch/arc/mm/extable.o
+  CC      arch/arc/mm/ioremap.o
+  CC      mm/mempool.o
+  CC      arch/arc/mm/dma.o
+  CC      arch/arc/mm/fault.o
+  CC      arch/arc/mm/init.o
+  CC      mm/oom_kill.o
+  CC      arch/arc/mm/tlb.o
+  AR      arch/arc/net/built-in.a
+  AS      arch/arc/mm/tlbex.o
+  CC      arch/arc/mm/cache.o
+  AR      kernel/sched/built-in.a
+  CC      kernel/power/qos.o
+  CC      mm/fadvise.o
+  CC      mm/maccess.o
+  CC      arch/arc/mm/mmap.o
+  AR      kernel/power/built-in.a
+  CC      kernel/printk/printk.o
+  CC      kernel/irq/irqdesc.o
+  AR      arch/arc/mm/built-in.a
+  AR      arch/arc/built-in.a
+  CC      kernel/irq/handle.o
+  CC      mm/page-writeback.o
+  CC      mm/folio-compat.o
+  CC      kernel/irq/manage.o
+  CC      kernel/irq/spurious.o
+  CC      mm/readahead.o
+  AR      fs/notify/dnotify/built-in.a
+  AR      fs/notify/inotify/built-in.a
+  AR      fs/notify/fanotify/built-in.a
+  AR      fs/notify/built-in.a
+  AR      fs/iomap/built-in.a
+  CC      kernel/irq/resend.o
+  CC      kernel/printk/printk_safe.o
+  AR      fs/quota/built-in.a
+  CC      fs/proc/task_mmu.o
+  CC      kernel/irq/chip.o
+  CC      kernel/printk/nbcon.o
+  CC      mm/folio.o
+  CC      kernel/irq/dummychip.o
+  CC      kernel/printk/printk_ringbuffer.o
+  CC      fs/proc/inode.o
+  CC      kernel/irq/devres.o
+  CC      mm/truncate.o
+  CC      kernel/printk/sysctl.o
+  CC      kernel/irq/kexec.o
+  CC      fs/proc/root.o
+  AR      kernel/printk/built-in.a
+  CC      mm/vmscan.o
+  CC      kernel/irq/irqdomain.o
+  CC      kernel/irq/proc.o
+  CC      fs/proc/base.o
+  CC      fs/proc/generic.o
+  AR      kernel/irq/built-in.a
+  CC      kernel/rcu/update.o
+  CC      mm/shrinker.o
+  CC      kernel/rcu/sync.o
+  CC      kernel/rcu/srcutiny.o
+  AR      kernel/livepatch/built-in.a
+  CC      mm/shmem.o
+  CC      fs/proc/array.o
+  CC      kernel/rcu/tiny.o
+  CC      mm/util.o
+  CC      mm/mmzone.o
+  AR      kernel/rcu/built-in.a
+  AR      kernel/liveupdate/built-in.a
+  CC      kernel/dma/mapping.o
+  CC      fs/proc/fd.o
+  AR      kernel/entry/built-in.a
+  CC      fs/proc/proc_tty.o
+  CC      mm/vmstat.o
+  CC      mm/backing-dev.o
+  CC      fs/proc/cmdline.o
+  CC      kernel/dma/direct.o
+  CC      fs/proc/consoles.o
+  CC      kernel/dma/coherent.o
+  CC      mm/mm_init.o
+  CC      mm/percpu.o
+  CC      fs/proc/cpuinfo.o
+  CC      kernel/dma/pool.o
+  CC      fs/proc/devices.o
+  CC      kernel/dma/remap.o
+  CC      mm/slab_common.o
+  CC      fs/proc/loadavg.o
+  AR      kernel/unwind/built-in.a
+  CC      mm/compaction.o
+  AR      kernel/dma/built-in.a
+  CC      kernel/module/main.o
+  CC      fs/proc/meminfo.o
+  CC      fs/proc/stat.o
+  CC      mm/show_mem.o
+  CC      mm/interval_tree.o
+  CC      fs/proc/uptime.o
+  CC      fs/proc/util.o
+  CC      fs/kernfs/mount.o
+  CC      mm/list_lru.o
+  CC      fs/proc/version.o
+  CC      kernel/module/strict_rwx.o
+  CC      fs/proc/softirqs.o
+  CC      mm/workingset.o
+  CC      fs/kernfs/inode.o
+  CC      kernel/module/kmod.o
+  CC      fs/proc/namespaces.o
+  CC      kernel/module/procfs.o
+  CC      fs/kernfs/dir.o
+  CC      mm/debug.o
+  CC      fs/proc/self.o
+  CC      kernel/module/sysfs.o
+  CC      mm/gup.o
+  CC      fs/proc/thread_self.o
+  AR      kernel/module/built-in.a
+  CC      kernel/time/time.o
+  CC      fs/kernfs/file.o
+  CC      fs/proc/proc_sysctl.o
+  CC      kernel/time/timer.o
+  CC      fs/kernfs/symlink.o
+  CC      mm/mmap_lock.o
+  CC      fs/proc/proc_net.o
+  AR      fs/kernfs/built-in.a
+  CC      mm/vma_init.o
+  CC      kernel/time/hrtimer.o
+  CC      fs/proc/kmsg.o
+  CC      fs/sysfs/file.o
+  CC      fs/proc/page.o
+  CC      mm/highmem.o
+  CC      kernel/time/sleep_timeout.o
+  CC      fs/sysfs/dir.o
+  CC      mm/memory.o
+  AR      fs/proc/built-in.a
+  CC      mm/mincore.o
+  CC      kernel/time/timekeeping.o
+  CC      fs/sysfs/symlink.o
+  CC      kernel/time/ntp.o
+  CC      fs/sysfs/mount.o
+  CC      mm/mlock.o
+  CC      fs/sysfs/group.o
+  CC      kernel/time/clocksource.o
+  AR      fs/sysfs/built-in.a
+  CC      fs/devpts/inode.o
+  CC      fs/ramfs/inode.o
+  CC      kernel/time/jiffies.o
+  CC      kernel/time/timer_list.o
+  CC      mm/mmap.o
+  CC      fs/ramfs/file-mmu.o
+  AR      fs/devpts/built-in.a
+  CC      kernel/time/timeconv.o
+  CC      mm/mmu_gather.o
+  CC      kernel/time/timecounter.o
+  CC      kernel/time/alarmtimer.o
+  AR      fs/ramfs/built-in.a
+  AR      fs/unicode/built-in.a
+  AR      fs/hostfs/built-in.a
+  CC      fs/open.o
+  CC      fs/read_write.o
+  CC      mm/mprotect.o
+  CC      kernel/time/posix-timers.o
+  CC      mm/mremap.o
+  CC      kernel/time/posix-cpu-timers.o
+  CC      mm/msync.o
+  CC      fs/file_table.o
+  CC      fs/super.o
+  CC      mm/page_vma_mapped.o
+  CC      kernel/time/posix-clock.o
+  CC      kernel/time/itimer.o
+  CC      mm/pagewalk.o
+  CC      mm/pgtable-generic.o
+  CC      kernel/time/clockevents.o
+  CC      fs/char_dev.o
+  CC      fs/stat.o
+  CC      mm/rmap.o
+  CC      kernel/time/tick-common.o
+  CC      mm/vmalloc.o
+  CC      kernel/time/sched_clock.o
+  CC      fs/exec.o
+  AR      kernel/time/built-in.a
+  CC      kernel/bpf/core.o
+  CC      kernel/fork.o
+  CC      fs/pipe.o
+  CC      mm/vma.o
+  CC      mm/vma_exec.o
+  AR      kernel/bpf/built-in.a
+  CC      kernel/exec_domain.o
+  CC      fs/namei.o
+  CC      kernel/exec_state.o
+  CC      fs/fcntl.o
+  CC      kernel/panic.o
+  CC      mm/page_alloc.o
+  CC      mm/page_frag_cache.o
+  CC      kernel/cpu.o
+  CC      fs/ioctl.o
+  CC      kernel/exit.o
+  CC      kernel/softirq.o
+  CC      fs/readdir.o
+  CC      mm/init-mm.o
+  CC      mm/memblock.o
+  CC      fs/select.o
+  CC      mm/slub.o
+  CC      kernel/resource.o
+  CC      kernel/sysctl.o
+  CC      mm/dmapool.o
+  CC      fs/dcache.o
+  CC      kernel/capability.o
+  CC      mm/ioremap.o
+  CC      mm/execmem.o
+  CC      kernel/ptrace.o
+  CC      kernel/user.o
+  AR      mm/built-in.a
+  CC      kernel/signal.o
+  CC      fs/inode.o
+  CC      fs/attr.o
+  CC      fs/bad_inode.o
+  CC      kernel/sys.o
+  CC      kernel/umh.o
+  CC      fs/file.o
+  CC      fs/filesystems.o
+  CC      fs/namespace.o
+  CC      kernel/workqueue.o
+  CC      fs/seq_file.o
+  CC      kernel/pid.o
+  CC      kernel/task_work.o
+  CC      fs/xattr.o
+  CC      fs/libfs.o
+  CC      kernel/extable.o
+  CC      fs/fs-writeback.o
+  CC      kernel/params.o
+  CC      kernel/kthread.o
+  CC      fs/pnode.o
+  CC      kernel/sys_ni.o
+  CC      fs/splice.o
+  CC      kernel/nsproxy.o
+  CC      fs/sync.o
+  CC      fs/utimes.o
+  CC      kernel/nstree.o
+  CC      kernel/nscommon.o
+  CC      kernel/notifier.o
+  CC      fs/d_path.o
+  CC      kernel/ksysfs.o
+  CC      fs/stack.o
+  CC      fs/fs_struct.o
+  CC      kernel/cred.o
+  CC      kernel/reboot.o
+  CC      kernel/async.o
+  CC      fs/statfs.o
+  CC      fs/fs_pin.o
+  CC      fs/nsfs.o
+  CC      kernel/range.o
+  CC      fs/fs_dirent.o
+  CC      kernel/smpboot.o
+  CC      kernel/ucount.o
+  CC      fs/fs_context.o
+  CC      fs/fs_parser.o
+  CC      kernel/regset.o
+  CC      kernel/ksyms_common.o
+  CC      fs/fsopen.o
+  CC      kernel/groups.o
+  CC      kernel/stacktrace.o
+  CC      fs/init.o
+  CC      kernel/up.o
+  CC      fs/kernel_read_file.o
+  CC      fs/mnt_idmapping.o
+  CC      kernel/utsname_sysctl.o
+  CC      fs/remap_range.o
+  CC      kernel/irq_work.o
+  CC      kernel/iomem.o
+  CC      fs/pidfs.o
+  CC      fs/file_attr.o
+  AR      kernel/built-in.a
+  AR      ipc/built-in.a
+  CC      security/keys/gc.o
+  CC      security/keys/key.o
+  CC      security/commoncap.o
+  CC      security/keys/keyring.o
+  CC      fs/fserror.o
+  CC      fs/nullfs.o
+  CC      security/min_addr.o
+  CC      fs/failfs.o
+  CC      security/keys/keyctl.o
+  CC      fs/proc_namespace.o
+  CC      security/keys/permission.o
+  CC      security/keys/process_keys.o
+  CC      fs/eventpoll.o
+  CC      security/keys/request_key.o
+  CC      fs/anon_inodes.o
+  CC      fs/signalfd.o
+  CC      security/keys/request_key_auth.o
+  CC      fs/timerfd.o
+  CC      security/keys/user_defined.o
+  CC      security/keys/proc.o
+  CC      security/keys/sysctl.o
+  CC      fs/eventfd.o
+  CC      fs/binfmt_elf.o
+  CC      fs/drop_caches.o
+  CC      security/keys/keyctl_pkey.o
+  AR      security/keys/built-in.a
+  CC      fs/sysctls.o
+  AR      security/built-in.a
+  AR      lib/kunit/built-in.a
+  AR      lib/math/tests/built-in.a
+  CC      lib/math/div64.o
+  CC      crypto/asymmetric_keys/asymmetric_type.o
+  CC      crypto/asymmetric_keys/restrict.o
+  AR      fs/built-in.a
+  CC      crypto/api.o
+  CC      lib/math/gcd.o
+  CC      lib/math/lcm.o
+  CC      lib/math/int_log.o
+  CC      lib/math/int_pow.o
+  CC      lib/math/int_sqrt.o
+  CC      crypto/asymmetric_keys/signature.o
+  CC      lib/math/reciprocal_div.o
+  CC      crypto/cipher.o
+  CC      lib/math/rational.o
+  CC      crypto/asymmetric_keys/public_key.o
+  AS      arch/arc/lib/memcmp.o
+  AS      arch/arc/lib/memcpy-700.o
+  AS      arch/arc/lib/memset.o
+  AS      arch/arc/lib/strchr-700.o
+  AR      lib/math/built-in.a
+  AS      arch/arc/lib/strcmp.o
+  AR      lib/crc/tests/built-in.a
+  AS      arch/arc/lib/strcpy-700.o
+  HOSTCC  lib/crc/gen_crc32table
+  AS      arch/arc/lib/strlen.o
+  AR      arch/arc/lib/built-in.a
+  AR      arch/arc/lib/lib.a
+  CC      crypto/algapi.o
+  AR      drivers/cache/built-in.a
+  CC      drivers/irqchip/irqchip.o
+  ASN.1   crypto/asymmetric_keys/x509.asn1.[ch]
+  ASN.1   crypto/asymmetric_keys/x509_akid.asn1.[ch]
+  CC      crypto/asymmetric_keys/x509_loader.o
+  GEN     lib/crc/crc32table.h
+  CC      lib/crc/crc32-main.o
+  CC      drivers/irqchip/irq-qtn-topaz-uart-basic.o
+  CC      crypto/asymmetric_keys/x509_public_key.o
+  AR      lib/crc/built-in.a
+  CC      lib/crypto/mpi/generic_mpih-lshift.o
+  AR      drivers/irqchip/built-in.a
+  AR      drivers/bus/mhi/built-in.a
+  CC      drivers/bus/simple-pm-bus.o
+  AR      drivers/phy/built-in.a
+  ASN.1   crypto/asymmetric_keys/pkcs7.asn1.[ch]
+  CC      crypto/asymmetric_keys/pkcs7_trust.o
+  CC      crypto/asymmetric_keys/pkcs7_verify.o
+  CC      lib/crypto/mpi/generic_mpih-mul1.o
+  AR      drivers/bus/built-in.a
+  CC      drivers/gpio/gpiolib.o
+  AR      drivers/pwm/built-in.a
+  AR      drivers/leds/blink/built-in.a
+  AR      drivers/leds/simatic/built-in.a
+  AR      drivers/leds/built-in.a
+  CC      crypto/asymmetric_keys/x509.asn1.o
+  CC      drivers/pci/msi/pcidev_msi.o
+  CC      crypto/asymmetric_keys/x509_akid.asn1.o
+  CC      crypto/asymmetric_keys/x509_cert_parser.o
+  CC      lib/crypto/mpi/generic_mpih-mul2.o
+  AR      drivers/pci/msi/built-in.a
+  CC      drivers/pci/pcie/aspm.o
+  CC      lib/crypto/mpi/generic_mpih-mul3.o
+  CC      crypto/asymmetric_keys/pkcs7.asn1.o
+  CC      crypto/asymmetric_keys/pkcs7_parser.o
+  CC      lib/crypto/mpi/generic_mpih-rshift.o
+  AR      crypto/asymmetric_keys/built-in.a
+  CC      crypto/scatterwalk.o
+  CC      lib/crypto/mpi/generic_mpih-sub1.o
+  CC      drivers/gpio/gpiolib-devres.o
+  AR      drivers/pci/pcie/built-in.a
+  AR      drivers/pci/pwrctrl/built-in.a
+  AR      drivers/pci/controller/dwc/built-in.a
+  AR      drivers/pci/controller/mobiveil/built-in.a
+  AR      drivers/pci/controller/plda/built-in.a
+  CC      drivers/pci/controller/pcie-qtn-topaz.o
+  CC      crypto/proc.o
+  CC      lib/crypto/mpi/generic_mpih-add1.o
+  CC      drivers/gpio/gpiolib-legacy.o
+  CC      crypto/ahash.o
+  AR      drivers/pci/controller/built-in.a
+  AR      drivers/pci/switch/built-in.a
+  CC      drivers/pci/access.o
+  CC      lib/crypto/mpi/mpicoder.o
+  CC      drivers/gpio/gpiolib-of.o
+  CC      drivers/gpio/gpiolib-cdev.o
+  CC      lib/crypto/mpi/mpi-add.o
+  CC      drivers/pci/bus.o
+  CC      crypto/shash.o
+  CC      lib/crypto/mpi/mpi-bit.o
+  CC      drivers/pci/probe.o
+  CC      crypto/akcipher.o
+  CC      lib/crypto/mpi/mpi-cmp.o
+  CC      drivers/gpio/gpiolib-swnode.o
+  CC      lib/crypto/mpi/mpi-sub-ui.o
+  AR      drivers/gpio/built-in.a
+  CC      crypto/sig.o
+  AR      drivers/video/backlight/built-in.a
+  AR      drivers/video/fbdev/core/built-in.a
+  AR      drivers/video/fbdev/omap/built-in.a
+  AR      drivers/video/fbdev/omap2/omapfb/dss/built-in.a
+  AR      drivers/video/fbdev/omap2/omapfb/displays/built-in.a
+  AR      drivers/video/fbdev/omap2/omapfb/built-in.a
+  AR      drivers/video/fbdev/omap2/built-in.a
+  AR      drivers/video/fbdev/built-in.a
+  AR      drivers/video/built-in.a
+  CC      lib/crypto/mpi/mpi-div.o
+  AR      drivers/idle/built-in.a
+  CC      drivers/pci/host-bridge.o
+  CC      lib/crypto/hash_info.o
+  ASN.1   crypto/rsapubkey.asn1.[ch]
+  ASN.1   crypto/rsaprivkey.asn1.[ch]
+  CC      crypto/rsa.o
+  CC      lib/crypto/mpi/mpi-mod.o
+  CC      lib/crypto/mpi/mpi-mul.o
+  CC      drivers/pci/remove.o
+  CC      crypto/rsa_helper.o
+  CC      drivers/pci/pci.o
+  CC      lib/crypto/mpi/mpih-cmp.o
+  CC      crypto/rsa-pkcs1pad.o
+  AR      drivers/char/ipmi/built-in.a
+  CC      drivers/pci/pci-driver.o
+  CC      lib/crypto/mpi/mpih-div.o
+  CC      crypto/rsassa-pkcs1.o
+  AR      drivers/amba/built-in.a
+  CC      drivers/pci/search.o
+  CC      lib/crypto/mpi/mpih-mul.o
+  CC      crypto/algboss.o
+  CC      crypto/testmgr.o
+  CC      lib/crypto/mpi/mpi-pow.o
+  CC      drivers/pci/rebar.o
+  CC [M]  crypto/aead.o
+  CC      lib/crypto/mpi/mpiutil.o
+  CC      lib/crypto/memneq.o
+  CC      drivers/pci/rom.o
+  AR      lib/crypto/mpi/built-in.a
+  CC      lib/crypto/utils.o
+  AR      lib/tests/built-in.a
+  CC      drivers/pci/setup-res.o
+  CC [M]  crypto/lskcipher.o
+  CC      lib/crypto/blake2s.o
+  CC      lib/crypto/chacha-block-generic.o
+  CC [M]  crypto/skcipher.o
+  CC      drivers/pci/irq.o
+  CC      lib/crypto/sha1.o
+  AR      lib/vdso/built-in.a
+  CC [M]  crypto/cmac.o
+  CC      lib/crypto/sha256.o
+  CC      drivers/pci/vpd.o
+  CC      drivers/pci/setup-bus.o
+  CC [M]  lib/crypto/aes.o
+  CC [M]  crypto/sha256.o
+  CC [M]  crypto/ecb.o
+  AR      lib/raid/xor/tests/built-in.a
+  AR      lib/raid/xor/built-in.a
+  AR      lib/raid/raid6/built-in.a
+  AR      lib/raid/built-in.a
+  CC [M]  crypto/ctr.o
+  CC      drivers/pci/vc.o
+  CC [M]  lib/crypto/arc4.o
+  CC [M]  crypto/gcm.o
+  CC [M]  lib/crypto/gf128hash.o
+  CC [M]  crypto/ccm.o
+  CC      drivers/pci/mmap.o
+  LD [M]  lib/crypto/libaes.o
+  LD [M]  lib/crypto/libarc4.o
+  LD [M]  lib/crypto/libgf128hash.o
+  AR      lib/crypto/built-in.a
+  CC      lib/zlib_inflate/inffast.o
+  CC      lib/zlib_inflate/inflate.o
+  CC [M]  crypto/aes.o
+  CC      drivers/pci/devres.o
+  AR      drivers/clk/actions/built-in.a
+  AR      drivers/clk/analogbits/built-in.a
+  AR      drivers/clk/aspeed/built-in.a
+  AR      drivers/clk/bcm/built-in.a
+  AR      drivers/clk/cix/built-in.a
+  AR      drivers/clk/imgtec/built-in.a
+  AR      drivers/clk/imx/built-in.a
+  AR      drivers/clk/ingenic/built-in.a
+  AR      drivers/clk/keystone/built-in.a
+  AR      drivers/clk/mediatek/built-in.a
+  CC      lib/zlib_inflate/infutil.o
+  AR      drivers/clk/microchip/built-in.a
+  AR      drivers/clk/mstar/built-in.a
+  AR      drivers/clk/mvebu/built-in.a
+  AR      drivers/clk/ralink/built-in.a
+  AR      drivers/clk/renesas/built-in.a
+  AR      drivers/clk/socfpga/built-in.a
+  AR      drivers/clk/sophgo/built-in.a
+  AR      drivers/clk/spacemit/built-in.a
+  AR      drivers/clk/sprd/built-in.a
+  AR      drivers/clk/starfive/built-in.a
+  AR      drivers/clk/sunxi-ng/built-in.a
+  AR      drivers/clk/tenstorrent/built-in.a
+  AR      drivers/clk/thead/built-in.a
+  AR      drivers/clk/ti/built-in.a
+  AR      drivers/clk/ultrarisc/built-in.a
+  AR      drivers/clk/versatile/built-in.a
+  AR      drivers/clk/xilinx/built-in.a
+  CC      drivers/clk/clk-devres.o
+  CC      lib/zlib_inflate/inftrees.o
+  CC      drivers/pci/proc.o
+  CC      lib/zlib_inflate/inflate_syms.o
+  LD [M]  crypto/crypto_skcipher.o
+  CC      crypto/rsapubkey.asn1.o
+  CC      crypto/rsaprivkey.asn1.o
+  AR      crypto/built-in.a
+  CC      drivers/pci/pci-sysfs.o
+  CC      drivers/clk/clk-bulk.o
+  AR      lib/zlib_inflate/built-in.a
+  CC      lib/xz/xz_dec_syms.o
+  CC      drivers/clk/clkdev.o
+  CC      lib/xz/xz_dec_stream.o
+  CC      drivers/pci/slot.o
+  CC      drivers/clk/clk.o
+  CC      lib/xz/xz_dec_lzma2.o
+  CC      drivers/clk/clk-divider.o
+  CC      drivers/pci/iomap.o
+  CC      lib/xz/xz_dec_bcj.o
+  CC      drivers/pci/of.o
+  CC      drivers/clk/clk-fixed-factor.o
+  AR      lib/xz/built-in.a
+  CC      lib/dim/dim.o
+  CC      lib/dim/net_dim.o
+  CC      lib/argv_split.o
+  CC      drivers/pci/quirks.o
+  CC      drivers/clk/clk-fixed-rate.o
+  CC      drivers/clk/clk-gate.o
+  CC      drivers/pci/syscall.o
+  CC      drivers/clk/clk-multiplier.o
+  CC      lib/dim/rdma_dim.o
+  CC      drivers/clk/clk-mux.o
+  AR      lib/dim/built-in.a
+  CC      lib/buildid.o
+  CC      lib/clz_tab.o
+  CC      drivers/clk/clk-composite.o
+  CC      drivers/clk/clk-fractional-divider.o
+  AR      drivers/pci/built-in.a
+  CC      drivers/clk/clk-gpio.o
+  CC      lib/cmdline.o
+  AR      drivers/soc/apple/built-in.a
+  AR      drivers/soc/aspeed/built-in.a
+  AR      drivers/soc/bcm/built-in.a
+  AR      drivers/soc/fsl/built-in.a
+  AR      drivers/soc/fujitsu/built-in.a
+  AR      drivers/soc/hisilicon/built-in.a
+  AR      drivers/soc/imx/built-in.a
+  AR      drivers/soc/ixp4xx/built-in.a
+  AR      drivers/soc/loongson/built-in.a
+  AR      drivers/soc/mediatek/built-in.a
+  AR      drivers/soc/microchip/built-in.a
+  CC      lib/ctype.o
+  AR      drivers/soc/nuvoton/built-in.a
+  AR      drivers/soc/pxa/built-in.a
+  CC      lib/dec_and_lock.o
+  AR      drivers/soc/amlogic/built-in.a
+  AR      drivers/soc/qcom/built-in.a
+  AR      drivers/soc/renesas/built-in.a
+  AR      drivers/soc/rockchip/built-in.a
+  AR      drivers/soc/sophgo/built-in.a
+  AR      drivers/soc/sunxi/built-in.a
+  AR      drivers/soc/ti/built-in.a
+  AR      drivers/soc/versatile/built-in.a
+  AR      drivers/soc/vt8500/built-in.a
+  AR      drivers/soc/xilinx/built-in.a
+  AR      drivers/soc/built-in.a
+  CC      lib/decompress.o
+  AR      drivers/virtio/built-in.a
+  CC      drivers/clk/clk-conf.o
+  CC      lib/decompress_inflate.o
+  CC      lib/dump_stack.o
+  CC      lib/earlycpio.o
+  AR      drivers/tty/vt/built-in.a
+  CC      drivers/tty/serial/8250/8250_core.o
+  CC      drivers/tty/serial/8250/8250_platform.o
+  AR      drivers/clk/built-in.a
+  CC      lib/extable.o
+  AR      drivers/char/agp/built-in.a
+  CC      drivers/char/mem.o
+  CC      lib/fdt.o
+  CC      lib/fdt_addresses.o
+  CC      lib/fdt_empty_tree.o
+  CC      lib/fdt_ro.o
+  CC      drivers/char/random.o
+  CC      drivers/tty/serial/8250/8250_port.o
+  CC      lib/fdt_rw.o
+  CC      lib/fdt_strerror.o
+  CC      drivers/char/misc.o
+  CC      lib/fdt_sw.o
+  CC      lib/fdt_wip.o
+  CC      lib/flex_proportions.o
+  CC      lib/idr.o
+  CC      drivers/tty/serial/serial_core.o
+  AR      drivers/char/built-in.a
+  CC      drivers/tty/serial/serial_base_bus.o
+  CC      lib/iomem_copy.o
+  CC      drivers/tty/serial/8250/8250_pcilib.o
+  CC      lib/irq_regs.o
+  CC      lib/is_single_threaded.o
+  CC      drivers/tty/serial/serial_ctrl.o
+  CC      lib/klist.o
+  CC      drivers/tty/serial/8250/8250_early.o
+  CC      lib/kobject.o
+  CC      lib/kobject_uevent.o
+  CC      drivers/tty/serial/8250/8250_exar.o
+  CC      drivers/tty/serial/serial_port.o
+  AR      drivers/iommu/arm/arm-smmu/built-in.a
+  AR      drivers/iommu/arm/arm-smmu-v3/built-in.a
+  AR      drivers/iommu/arm/built-in.a
+  AR      drivers/iommu/iommufd/built-in.a
+  AR      drivers/iommu/built-in.a
+  CC      drivers/tty/serial/earlycon.o
+  CC      lib/logic_pio.o
+  CC      lib/maple_tree.o
+  CC      drivers/tty/serial/8250/8250_mxpcie.o
+  CC      drivers/tty/serial/8250/8250_of.o
+  AR      drivers/gpu/host1x/built-in.a
+  AR      drivers/gpu/drm/tests/built-in.a
+  AR      drivers/gpu/drm/arm/built-in.a
+  AR      drivers/gpu/drm/clients/built-in.a
+  AR      drivers/gpu/drm/display/built-in.a
+  AR      drivers/gpu/drm/renesas/rcar-du/built-in.a
+  AR      drivers/gpu/drm/renesas/rz-du/built-in.a
+  AR      drivers/gpu/drm/renesas/built-in.a
+  AR      drivers/gpu/drm/omapdrm/built-in.a
+  AR      drivers/gpu/drm/tilcdc/built-in.a
+  AR      drivers/gpu/drm/imx/built-in.a
+  AR      drivers/gpu/drm/panel/built-in.a
+  AR      drivers/gpu/drm/bridge/analogix/built-in.a
+  AR      drivers/gpu/drm/bridge/cadence/built-in.a
+  AR      drivers/gpu/drm/bridge/imx/built-in.a
+  AR      drivers/gpu/drm/bridge/synopsys/built-in.a
+  AR      drivers/gpu/drm/bridge/built-in.a
+  AR      drivers/gpu/drm/hisilicon/built-in.a
+  CC      drivers/tty/serial/8250/8250_pci.o
+  AR      drivers/gpu/drm/mxsfb/built-in.a
+  AR      drivers/gpu/drm/sysfb/built-in.a
+  CC      drivers/base/power/clock_ops.o
+  AR      drivers/gpu/drm/tiny/built-in.a
+  AR      drivers/gpu/drm/xlnx/built-in.a
+  AR      drivers/gpu/drm/gud/built-in.a
+  AR      drivers/gpu/drm/sitronix/built-in.a
+  AR      drivers/gpu/drm/solomon/built-in.a
+  AR      drivers/gpu/drm/built-in.a
+  AR      drivers/gpu/vga/built-in.a
+  AR      drivers/gpu/tests/built-in.a
+  AR      drivers/gpu/built-in.a
+  AR      drivers/block/built-in.a
+  CC      drivers/base/firmware_loader/builtin/main.o
+  AR      drivers/base/power/built-in.a
+  AR      drivers/base/test/built-in.a
+  CC      drivers/base/component.o
+  AR      drivers/base/firmware_loader/builtin/built-in.a
+  CC [M]  drivers/base/firmware_loader/main.o
+  CC      drivers/tty/serial/8250/8250_pericom.o
+  CC      drivers/misc/eeprom/eeprom_93cx6.o
+  CC      lib/memcat_p.o
+  AR      drivers/base/firmware_loader/built-in.a
+  LD [M]  drivers/base/firmware_loader/firmware_class.o
+  CC      drivers/base/core.o
+  AR      drivers/misc/eeprom/built-in.a
+  AR      drivers/misc/cb710/built-in.a
+  AR      drivers/misc/lis3lv02d/built-in.a
+  AR      drivers/misc/cardreader/built-in.a
+  CC      lib/nmi_backtrace.o
+  AR      drivers/misc/keba/built-in.a
+  AR      drivers/misc/amd-sbi/built-in.a
+  AR      drivers/misc/built-in.a
+  CC      lib/objpool.o
+  AR      drivers/tty/serial/8250/built-in.a
+  CC      drivers/tty/serial/serial_mctrl_gpio.o
+  CC      drivers/base/bus.o
+  CC      lib/plist.o
+  CC      lib/radix-tree.o
+  AR      drivers/tty/serial/built-in.a
+  CC      drivers/tty/tty_io.o
+  CC      lib/ratelimit.o
+  AR      drivers/mfd/built-in.a
+  CC      lib/rbtree.o
+  AR      drivers/nfc/built-in.a
+  CC      lib/seq_buf.o
+  CC      drivers/base/dd.o
+  CC      lib/siphash.o
+  AR      drivers/dax/hmem/built-in.a
+  AR      drivers/dax/built-in.a
+  CC      drivers/tty/n_tty.o
+  AR      drivers/cxl/core/built-in.a
+  AR      drivers/cxl/built-in.a
+  CC      drivers/tty/tty_ioctl.o
+  CC      drivers/base/syscore.o
+  CC      lib/string.o
+  CC      lib/sys_info.o
+  CC      drivers/base/driver.o
+  CC      drivers/tty/tty_ldisc.o
+  CC      lib/timerqueue.o
+  CC      drivers/tty/tty_buffer.o
+  CC      drivers/base/class.o
+  CC      lib/vsprintf.o
+  CC      lib/win_minmax.o
+  CC      drivers/tty/tty_port.o
+  CC      drivers/base/platform.o
+  CC      drivers/base/cpu.o
+  CC      drivers/tty/tty_mutex.o
+  CC      drivers/tty/tty_ldsem.o
+  CC      drivers/base/firmware.o
+  CC      drivers/base/init.o
+  CC      drivers/tty/tty_baudrate.o
+  CC      drivers/tty/tty_jobctrl.o
+  CC      lib/xarray.o
+  CC      drivers/base/map.o
+  CC      drivers/base/devres.o
+  CC      drivers/tty/n_null.o
+  CC      lib/lockref.o
+  AR      drivers/macintosh/built-in.a
+  CC      drivers/tty/pty.o
+  CC      lib/bcd.o
+  CC      lib/sort.o
+  CC      drivers/base/attribute_container.o
+  AR      drivers/scsi/built-in.a
+  CC      lib/parser.o
+  AR      drivers/nvme/common/built-in.a
+  AR      drivers/nvme/host/built-in.a
+  AR      drivers/nvme/target/built-in.a
+  AR      drivers/nvme/built-in.a
+  AR      drivers/net/phy/mediatek/built-in.a
+  AR      drivers/net/phy/qcom/built-in.a
+  AR      drivers/net/phy/built-in.a
+  AR      drivers/net/pse-pd/built-in.a
+  AR      drivers/net/mdio/built-in.a
+  AR      drivers/net/pcs/built-in.a
+  AR      drivers/net/ethernet/3com/built-in.a
+  CC      lib/debug_locks.o
+  AR      drivers/net/ethernet/8390/built-in.a
+  AR      drivers/net/ethernet/adaptec/built-in.a
+  AR      drivers/net/ethernet/agere/built-in.a
+  AR      drivers/net/ethernet/alacritech/built-in.a
+  AR      drivers/net/ethernet/alibaba/built-in.a
+  CC      drivers/base/transport_class.o
+  AR      drivers/net/ethernet/amazon/built-in.a
+  AR      drivers/net/ethernet/amd/built-in.a
+  AR      drivers/net/ethernet/aquantia/built-in.a
+  AR      drivers/net/ethernet/arc/built-in.a
+  AR      drivers/net/ethernet/asix/built-in.a
+  AR      drivers/net/ethernet/atheros/built-in.a
+  AR      drivers/net/ethernet/cadence/built-in.a
+  AR      drivers/net/ethernet/broadcom/built-in.a
+  AR      drivers/net/ethernet/brocade/built-in.a
+  AR      drivers/net/ethernet/cavium/common/built-in.a
+  AR      drivers/net/ethernet/cavium/thunder/built-in.a
+  AR      drivers/net/ethernet/cavium/liquidio/built-in.a
+  CC      lib/random32.o
+  AR      drivers/net/ethernet/cavium/octeon/built-in.a
+  AR      drivers/net/ethernet/cavium/built-in.a
+  AR      drivers/net/ethernet/chelsio/built-in.a
+  AR      drivers/net/ethernet/cisco/built-in.a
+  AR      drivers/net/ethernet/cortina/built-in.a
+  AR      drivers/net/ethernet/dec/built-in.a
+  AR      drivers/net/ethernet/dlink/built-in.a
+  AR      drivers/net/ethernet/emulex/built-in.a
+  AR      drivers/net/ethernet/engleder/built-in.a
+  AR      drivers/net/ethernet/ezchip/built-in.a
+  AR      drivers/net/ethernet/fungible/built-in.a
+  AR      drivers/net/ethernet/google/built-in.a
+  AR      drivers/net/ethernet/hisilicon/built-in.a
+  AR      drivers/net/ethernet/huawei/built-in.a
+  AR      drivers/tty/built-in.a
+  AR      drivers/net/ethernet/intel/libie/built-in.a
+  AR      drivers/net/ethernet/intel/built-in.a
+  AR      drivers/firewire/built-in.a
+  AR      drivers/net/ethernet/i825xx/built-in.a
+  AR      drivers/net/ethernet/microsoft/built-in.a
+  AR      drivers/cdrom/built-in.a
+  AR      drivers/net/ethernet/litex/built-in.a
+  AR      drivers/auxdisplay/built-in.a
+  AR      drivers/net/ethernet/marvell/octeon_ep/built-in.a
+  AR      drivers/net/ethernet/marvell/octeon_ep_vf/built-in.a
+  AR      drivers/usb/built-in.a
+  AR      drivers/net/ethernet/marvell/octeontx2/built-in.a
+  AR      drivers/net/ethernet/mellanox/built-in.a
+  AR      drivers/net/ethernet/marvell/prestera/built-in.a
+  AR      drivers/net/ethernet/marvell/built-in.a
+  CC      drivers/base/topology.o
+  AR      drivers/net/ethernet/meta/built-in.a
+  AR      sound/built-in.a
+  AR      drivers/net/ethernet/micrel/built-in.a
+  AR      drivers/net/ethernet/microchip/built-in.a
+  AR      drivers/net/ethernet/mscc/built-in.a
+  CC      net/core/sock.o
+  AR      drivers/net/ethernet/mucse/built-in.a
+  AR      drivers/net/ethernet/myricom/built-in.a
+  CC      lib/bust_spinlocks.o
+  AR      drivers/net/ethernet/natsemi/built-in.a
+  AR      drivers/net/ethernet/netronome/built-in.a
+  AR      drivers/net/ethernet/ni/built-in.a
+  AR      drivers/net/ethernet/nvidia/built-in.a
+  AR      drivers/net/ethernet/oki-semi/built-in.a
+  AR      drivers/net/ethernet/qlogic/built-in.a
+  AR      drivers/net/ethernet/qualcomm/emac/built-in.a
+  AR      drivers/net/ethernet/qualcomm/built-in.a
+  AR      drivers/net/ethernet/realtek/built-in.a
+  AR      drivers/net/ethernet/renesas/built-in.a
+  AR      drivers/net/ethernet/rdc/built-in.a
+  AR      drivers/net/ethernet/rocker/built-in.a
+  AR      drivers/net/ethernet/samsung/built-in.a
+  AR      drivers/net/ethernet/seeq/built-in.a
+  AR      drivers/net/ethernet/silan/built-in.a
+  AR      drivers/net/ethernet/sis/built-in.a
+  AR      drivers/net/ethernet/sfc/built-in.a
+  AR      drivers/net/ethernet/smsc/built-in.a
+  AR      drivers/net/ethernet/socionext/built-in.a
+  AR      drivers/net/ethernet/stmicro/built-in.a
+  AR      drivers/net/ethernet/sun/built-in.a
+  AR      drivers/net/ethernet/tehuti/built-in.a
+  AR      drivers/net/ethernet/ti/built-in.a
+  AR      drivers/net/ethernet/vertexcom/built-in.a
+  AR      drivers/net/ethernet/via/built-in.a
+  AR      drivers/net/ethernet/wangxun/built-in.a
+  AR      drivers/net/ethernet/wiznet/built-in.a
+  AR      drivers/net/ethernet/xilinx/built-in.a
+  AR      drivers/net/ethernet/synopsys/built-in.a
+  AR      drivers/net/ethernet/pensando/built-in.a
+  AR      drivers/net/ethernet/zte/built-in.a
+  AR      drivers/net/ethernet/built-in.a
+  AR      drivers/net/wireless/admtek/built-in.a
+  AR      drivers/net/wireless/ath/built-in.a
+  AR      drivers/net/wireless/atmel/built-in.a
+  AR      drivers/net/wireless/broadcom/built-in.a
+  AR      drivers/net/wireless/intel/built-in.a
+  AR      drivers/net/wireless/intersil/built-in.a
+  AR      drivers/net/wireless/marvell/built-in.a
+  CC      drivers/base/container.o
+  AR      drivers/net/wireless/mediatek/built-in.a
+  AR      drivers/net/wireless/microchip/built-in.a
+  AR      drivers/net/wireless/morsemicro/built-in.a
+  AR      drivers/net/wireless/nxp/built-in.a
+  CC      lib/kasprintf.o
+  AR      drivers/net/wireless/purelifi/built-in.a
+  AR      drivers/net/wireless/quantenna/built-in.a
+  AR      drivers/net/wireless/ralink/built-in.a
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8192e2ant.o
+  CC      drivers/base/property.o
+  CC      lib/bitmap.o
+  CC      lib/scatterlist.o
+  CC      drivers/base/cacheinfo.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8723b1ant.o
+  CC      lib/list_sort.o
+  CC      lib/uuid.o
+  CC      net/core/skbuff.o
+  CC      lib/iov_iter.o
+  CC      drivers/base/swnode.o
+  CC      drivers/base/faux.o
+  CC      drivers/base/module.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8723b2ant.o
+  AR      drivers/base/built-in.a
+  CC      net/core/datagram.o
+  CC      lib/clz_ctz.o
+  CC      lib/bsearch.o
+  CC      lib/find_bit.o
+  CC      lib/llist.o
+  CC      lib/lwq.o
+  CC      lib/memweight.o
+  CC      lib/kfifo.o
+  AR      drivers/i2c/algos/built-in.a
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8821a1ant.o
+  AR      drivers/i2c/busses/built-in.a
+  AR      drivers/i2c/muxes/built-in.a
+  CC      drivers/i2c/i2c-boardinfo.o
+  CC      drivers/i2c/i2c-core-base.o
+  CC      lib/percpu-refcount.o
+  CC      net/core/stream.o
+  CC      lib/rhashtable.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8821a2ant.o
+  CC      net/core/scm.o
+  CC      drivers/i2c/i2c-core-smbus.o
+  CC      lib/base64.o
+  CC      lib/once.o
+  CC      lib/refcount.o
+  CC      drivers/i2c/i2c-core-of.o
+  CC      net/core/gen_stats.o
+  CC      lib/rcuref.o
+  CC      lib/usercopy.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtcoutsrc.o
+  CC      lib/errseq.o
+  AR      drivers/i2c/built-in.a
+  CC      lib/bucket_locks.o
+  CC      lib/generic-radix-tree.o
+  CC      net/core/gen_estimator.o
+  AR      drivers/i3c/built-in.a
+  CC      lib/bitmap-str.o
+  AR      drivers/media/i2c/built-in.a
+  AR      drivers/media/tuners/built-in.a
+  AR      drivers/media/rc/keymaps/built-in.a
+  AR      drivers/media/rc/built-in.a
+  AR      drivers/media/common/b2c2/built-in.a
+  AR      drivers/media/common/saa7146/built-in.a
+  AR      drivers/media/common/siano/built-in.a
+  AR      drivers/media/common/v4l2-tpg/built-in.a
+  AR      drivers/media/common/videobuf2/built-in.a
+  AR      drivers/media/common/built-in.a
+  AR      drivers/media/platform/allegro-dvt/built-in.a
+  AR      drivers/media/platform/amd/isp4/built-in.a
+  AR      drivers/media/platform/amd/built-in.a
+  AR      drivers/media/platform/amlogic/c3/isp/built-in.a
+  AR      drivers/media/platform/amlogic/c3/mipi-adapter/built-in.a
+  AR      drivers/media/platform/amlogic/c3/mipi-csi2/built-in.a
+  AR      drivers/media/platform/amlogic/c3/built-in.a
+  AR      drivers/media/platform/amlogic/meson-ge2d/built-in.a
+  AR      drivers/media/platform/amlogic/built-in.a
+  AR      drivers/media/platform/amphion/built-in.a
+  AR      drivers/media/platform/arm/mali-c55/built-in.a
+  AR      drivers/media/platform/arm/built-in.a
+  AR      drivers/media/platform/aspeed/built-in.a
+  AR      drivers/media/platform/atmel/built-in.a
+  AR      drivers/media/platform/broadcom/built-in.a
+  AR      drivers/media/platform/cadence/built-in.a
+  AR      drivers/media/platform/chips-media/coda/built-in.a
+  AR      drivers/media/platform/chips-media/wave5/built-in.a
+  AR      drivers/media/platform/chips-media/built-in.a
+  AR      drivers/media/platform/dreamchip/rppx1/built-in.a
+  AR      drivers/media/platform/dreamchip/built-in.a
+  AR      drivers/media/platform/imagination/built-in.a
+  AR      drivers/media/platform/intel/built-in.a
+  AR      drivers/media/platform/marvell/built-in.a
+  CC      lib/string_helpers.o
+  AR      drivers/media/platform/mediatek/jpeg/built-in.a
+  AR      drivers/media/platform/mediatek/mdp/built-in.a
+  AR      drivers/media/platform/mediatek/vcodec/common/built-in.a
+  AR      drivers/media/platform/mediatek/vcodec/encoder/built-in.a
+  AR      drivers/media/platform/mediatek/vcodec/decoder/built-in.a
+  AR      drivers/media/platform/mediatek/vcodec/built-in.a
+  AR      drivers/media/platform/mediatek/vpu/built-in.a
+  AR      drivers/media/platform/mediatek/mdp3/built-in.a
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/btcoexist/rtl_btc.o
+  AR      drivers/media/platform/mediatek/built-in.a
+  AR      drivers/media/platform/microchip/built-in.a
+  AR      drivers/media/platform/nuvoton/built-in.a
+  AR      drivers/media/platform/nvidia/tegra-vde/built-in.a
+  AR      drivers/media/platform/nvidia/built-in.a
+  AR      drivers/media/platform/nxp/dw100/built-in.a
+  AR      drivers/media/platform/nxp/imx-jpeg/built-in.a
+  AR      drivers/media/platform/nxp/imx8-isi/built-in.a
+  AR      drivers/media/platform/nxp/built-in.a
+  AR      drivers/media/platform/qcom/camss/built-in.a
+  CC      net/core/net_namespace.o
+  AR      drivers/media/platform/qcom/iris/built-in.a
+  AR      drivers/media/platform/qcom/venus/built-in.a
+  AR      drivers/media/platform/qcom/built-in.a
+  AR      drivers/media/platform/raspberrypi/pisp_be/built-in.a
+  AR      drivers/media/platform/raspberrypi/rp1-cfe/built-in.a
+  AR      drivers/media/platform/raspberrypi/built-in.a
+  AR      drivers/media/platform/renesas/rcar-isp/built-in.a
+  AR      drivers/media/platform/renesas/rcar-vin/built-in.a
+  AR      drivers/media/platform/renesas/rzg2l-cru/built-in.a
+  AR      drivers/media/platform/renesas/rzv2h-ivc/built-in.a
+  AR      drivers/media/platform/renesas/vsp1/built-in.a
+  AR      drivers/media/platform/renesas/built-in.a
+  AR      drivers/media/platform/rockchip/rga/built-in.a
+  AR      drivers/media/platform/rockchip/rkcif/built-in.a
+  AR      drivers/media/platform/rockchip/rkisp1/built-in.a
+  AR      drivers/media/platform/rockchip/rkvdec/built-in.a
+  AR      drivers/media/platform/rockchip/built-in.a
+  AR      drivers/media/platform/samsung/exynos-gsc/built-in.a
+  AR      drivers/media/platform/samsung/exynos4-is/built-in.a
+  AR      drivers/media/platform/samsung/s3c-camif/built-in.a
+  AR      drivers/media/platform/samsung/s5p-g2d/built-in.a
+  AR      drivers/media/platform/samsung/s5p-jpeg/built-in.a
+  AR      drivers/media/platform/samsung/s5p-mfc/built-in.a
+  AR      drivers/media/platform/samsung/built-in.a
+  AR      drivers/media/platform/st/sti/bdisp/built-in.a
+  AR      drivers/media/platform/st/sti/delta/built-in.a
+  AR      drivers/media/platform/st/sti/hva/built-in.a
+  AR      drivers/media/platform/st/stm32/built-in.a
+  AR      drivers/media/platform/st/built-in.a
+  AR      drivers/media/platform/sunxi/sun4i-csi/built-in.a
+  AR      drivers/media/platform/sunxi/sun6i-csi/built-in.a
+  AR      drivers/media/platform/sunxi/sun6i-mipi-csi2/built-in.a
+  AR      drivers/media/platform/sunxi/sun8i-a83t-mipi-csi2/built-in.a
+  CC      lib/hexdump.o
+  AR      drivers/media/platform/sunxi/sun8i-di/built-in.a
+  AR      drivers/media/platform/sunxi/sun8i-rotate/built-in.a
+  AR      drivers/media/platform/sunxi/built-in.a
+  AR      drivers/media/platform/synopsys/hdmirx/built-in.a
+  AR      drivers/media/platform/synopsys/built-in.a
+  AR      drivers/media/platform/ti/am437x/built-in.a
+  AR      drivers/media/platform/ti/cal/built-in.a
+  AR      drivers/media/platform/ti/vpe/built-in.a
+  AR      drivers/media/platform/ti/davinci/built-in.a
+  AR      drivers/media/platform/ti/j721e-csi2rx/built-in.a
+  AR      drivers/media/platform/ti/omap/built-in.a
+  AR      drivers/media/platform/ti/omap3isp/built-in.a
+  AR      drivers/media/platform/ti/built-in.a
+  CC      lib/kstrtox.o
+  AR      drivers/media/platform/verisilicon/built-in.a
+  AR      drivers/media/platform/via/built-in.a
+  AR      drivers/media/platform/xilinx/built-in.a
+  AR      drivers/media/platform/built-in.a
+  AR      drivers/media/pci/ttpci/built-in.a
+  AR      drivers/media/pci/b2c2/built-in.a
+  LD [M]  drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.o
+  AR      drivers/media/pci/pluto2/built-in.a
+  AR      drivers/media/pci/dm1105/built-in.a
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/dm.o
+  AR      drivers/media/pci/pt1/built-in.a
+  AR      drivers/media/pci/pt3/built-in.a
+  AR      drivers/media/pci/mantis/built-in.a
+  AR      drivers/media/pci/ngene/built-in.a
+  AR      drivers/media/pci/ddbridge/built-in.a
+  AR      drivers/media/pci/saa7146/built-in.a
+  AR      drivers/media/pci/smipcie/built-in.a
+  AR      drivers/media/pci/netup_unidvb/built-in.a
+  AR      drivers/media/pci/intel/ipu3/built-in.a
+  AR      drivers/media/pci/intel/ivsc/built-in.a
+  AR      drivers/media/pci/intel/built-in.a
+  AR      drivers/media/pci/built-in.a
+  AR      drivers/media/usb/b2c2/built-in.a
+  CC      lib/iomap_copy.o
+  AR      drivers/media/usb/dvb-usb/built-in.a
+  CC      net/core/secure_seq.o
+  AR      drivers/media/usb/dvb-usb-v2/built-in.a
+  AR      drivers/media/usb/s2255/built-in.a
+  AR      drivers/media/usb/siano/built-in.a
+  AR      drivers/media/usb/ttusb-budget/built-in.a
+  AR      drivers/media/usb/ttusb-dec/built-in.a
+  AR      drivers/media/usb/built-in.a
+  AR      drivers/media/mmc/siano/built-in.a
+  AR      drivers/media/mmc/built-in.a
+  AR      drivers/media/firewire/built-in.a
+  AR      drivers/media/spi/built-in.a
+  AR      drivers/media/test-drivers/built-in.a
+  AR      drivers/media/built-in.a
+  CC      lib/devres.o
+  AR      drivers/pps/clients/built-in.a
+  CC      drivers/pps/pps.o
+  CC      lib/hweight.o
+  CC      lib/assoc_array.o
+  CC      drivers/pps/kapi.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/fw.o
+  CC      net/core/flow_dissector.o
+  CC      drivers/pps/sysfs.o
+  CC      lib/bitrev.o
+  AR      drivers/pps/built-in.a
+  CC      lib/genalloc.o
+  CC      drivers/ptp/ptp_clock.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.o
+  CC      lib/syscall.o
+  CC      net/core/sysctl_net_core.o
+  CC      drivers/ptp/ptp_chardev.o
+  CC      lib/cmpxchg-emu.o
+  CC      lib/nlattr.o
+  CC      drivers/ptp/ptp_sysfs.o
+  CC      net/core/dev.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/led.o
+  CC      lib/checksum.o
+  CC      lib/atomic64.o
+  CC      lib/dynamic_queue_limits.o
+  CC      drivers/ptp/ptp_vclock.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/phy.o
+  AR      drivers/ptp/built-in.a
+  CC      lib/strncpy_from_user.o
+  AR      drivers/power/built-in.a
+  CC      lib/strnlen_user.o
+  AR      drivers/mmc/built-in.a
+  CC      lib/net_utils.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/pwrseq.o
+  CC      lib/asn1_decoder.o
+  CC      net/core/dev_api.o
+  GEN     lib/oid_registry_data.c
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rf.o
+  CC      lib/group_cpus.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/sw.o
+  AR      drivers/ufs/built-in.a
+  AR      drivers/firmware/arm_ffa/built-in.a
+  AR      drivers/firmware/arm_scmi/built-in.a
+  AR      drivers/firmware/broadcom/built-in.a
+  AR      drivers/firmware/cirrus/test/built-in.a
+  AR      drivers/firmware/cirrus/built-in.a
+  AR      drivers/firmware/meson/built-in.a
+  AR      drivers/firmware/microchip/built-in.a
+  AR      drivers/firmware/efi/built-in.a
+  AR      drivers/firmware/imx/built-in.a
+  AR      drivers/firmware/psci/built-in.a
+  AR      drivers/firmware/qcom/built-in.a
+  AR      drivers/firmware/samsung/built-in.a
+  AR      drivers/firmware/smccc/built-in.a
+  AR      drivers/firmware/tegra/built-in.a
+  AR      drivers/firmware/xilinx/built-in.a
+  AR      drivers/firmware/built-in.a
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/base.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/table.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.o
+  CC      net/core/dev_addr_lists.o
+  AR      drivers/crypto/stm32/built-in.a
+  AR      drivers/crypto/inside-secure/eip93/built-in.a
+  AR      drivers/crypto/inside-secure/built-in.a
+  AR      drivers/crypto/xilinx/built-in.a
+  AR      drivers/crypto/hisilicon/built-in.a
+  AR      drivers/crypto/intel/keembay/built-in.a
+  AR      drivers/crypto/intel/ixp4xx/built-in.a
+  AR      drivers/crypto/intel/built-in.a
+  AR      drivers/crypto/starfive/built-in.a
+  AR      drivers/crypto/cavium/built-in.a
+  AR      drivers/crypto/ti/built-in.a
+  AR      drivers/crypto/built-in.a
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/cam.o
+  CC      net/core/dst.o
+  LD [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.o
+  CC      net/core/netevent.o
+  AR      lib/lib.a
+  CC      lib/oid_registry.o
+  AR      lib/built-in.a
+  AR      drivers/net/wireless/realtek/built-in.a
+  AR      virt/lib/built-in.a
+  AR      virt/built-in.a
+  CC      drivers/clocksource/timer-of.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/core.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/debug.o
+  CC      net/core/neighbour.o
+  CC      drivers/clocksource/timer-probe.o
+  CC      drivers/clocksource/arc_timer.o
+  CC      net/core/rtnetlink.o
+  AR      drivers/clocksource/built-in.a
+  CC      net/core/utils.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/efuse.o
+  AR      drivers/net/wireless/rsi/built-in.a
+  CC      drivers/of/base.o
+  CC      drivers/of/cpu.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/ps.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rc.o
+  CC      drivers/of/device.o
+  CC      drivers/of/module.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/regd.o
+  AR      drivers/net/wireless/silabs/built-in.a
+  CC      drivers/of/platform.o
+  CC      net/core/link_watch.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/stats.o
+  CC      drivers/of/property.o
+  CC      drivers/of/kobj.o
+  CC      net/core/filter.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/pci.o
+  AR      drivers/platform/built-in.a
+  CC      drivers/of/fdt.o
+  LD [M]  drivers/net/wireless/realtek/rtlwifi/rtlwifi.o
+  DTC     drivers/of/empty_root.dtb
+  AR      drivers/virt/vboxguest/built-in.a
+  AR      drivers/virt/coco/built-in.a
+  AR      drivers/virt/built-in.a
+  CC      drivers/of/fdt_address.o
+  CC      net/core/sock_diag.o
+  CC      drivers/of/address.o
+  CC      drivers/of/irq.o
+  AR      drivers/hwtracing/intel_th/built-in.a
+  CC      drivers/of/of_reserved_mem.o
+  LD [M]  drivers/net/wireless/realtek/rtlwifi/rtl_pci.o
+  AR      drivers/net/wireless/st/built-in.a
+  AR      drivers/net/wireless/ti/built-in.a
+  AR      drivers/net/wireless/zydas/built-in.a
+  AR      drivers/net/wireless/virtual/built-in.a
+  AR      drivers/net/wireless/built-in.a
+  CC      drivers/net/loopback.o
+  AR      drivers/android/built-in.a
+  WRAP    drivers/of/empty_root.dtb.S
+  AR      drivers/resctrl/built-in.a
+  CC      net/core/dev_ioctl.o
+  AS      drivers/of/empty_root.dtb.o
+  AR      drivers/of/built-in.a
+  CC      net/core/tso.o
+  AR      drivers/net/built-in.a
+  AR      drivers/built-in.a
+  CC      net/core/sock_reuseport.o
+  CC      net/core/fib_notifier.o
+  CC      net/core/xdp.o
+  CC      net/core/flow_offload.o
+  CC      net/core/gro.o
+  CC      net/core/netdev-genl.o
+  CC      net/core/netdev-genl-gen.o
+  CC      net/core/netdev_work.o
+  CC      net/core/gso.o
+  CC      net/core/net-sysfs.o
+  CC      net/core/hotdata.o
+  CC      net/ethernet/eth.o
+  AR      net/802/built-in.a
+  CC [M]  net/802/psnap.o
+  CC [M]  net/802/stp.o
+  CC      net/core/netdev_config.o
+  AR      net/ethernet/built-in.a
+  CC      net/sched/sch_generic.o
+  CC      net/sched/sch_mq.o
+  CC      net/sched/sch_frag.o
+  CC      net/core/netdev_rx_queue.o
+  CC      net/core/netdev_queues.o
+  CC      net/core/net-procfs.o
+  CC      net/sched/sch_api.o
+  CC      net/sched/sch_blackhole.o
+  CC      net/sched/sch_fifo.o
+  CC      net/core/ptp_classifier.o
+  CC      net/core/dst_cache.o
+  CC      net/core/gro_cells.o
+  CC      net/netlink/af_netlink.o
+  AR      net/sched/built-in.a
+  CC      net/netlink/genetlink.o
+  CC      net/netlink/policy.o
+  CC      net/core/of_net.o
+  AR      net/bpf/built-in.a
+  CC      net/ethtool/ioctl.o
+  AR      net/core/built-in.a
+  CC      net/ipv4/route.o
+  CC      net/unix/af_unix.o
+  AR      net/netlink/built-in.a
+  CC      net/unix/garbage.o
+  CC      net/ipv4/inetpeer.o
+  CC      net/ethtool/common.o
+  CC      net/ethtool/netlink.o
+  CC      net/unix/sysctl_net_unix.o
+  CC      net/ipv4/protocol.o
+  AR      net/unix/built-in.a
+  CC      net/ipv4/ip_input.o
+  CC      net/ethtool/bitset.o
+  CC      net/ipv4/ip_fragment.o
+  CC      net/ipv4/ip_forward.o
+  CC      net/ethtool/strset.o
+  CC      net/ipv4/ip_options.o
+  CC      net/ethtool/linkinfo.o
+  CC      net/ethtool/linkmodes.o
+  CC      net/ipv4/ip_output.o
+  CC      net/ipv4/ip_sockglue.o
+  CC      net/ethtool/rss.o
+  CC      net/ipv4/inet_hashtables.o
+  CC      net/ethtool/linkstate.o
+  CC      net/ethtool/debug.o
+  CC      net/ipv4/inet_timewait_sock.o
+  CC      net/ethtool/wol.o
+  CC      net/ipv4/inet_connection_sock.o
+  CC      net/ipv6/af_inet6.o
+  CC      net/ethtool/features.o
+  CC      net/ethtool/privflags.o
+  CC      net/ipv6/anycast.o
+  CC      net/ipv4/tcp.o
+  CC      net/ethtool/rings.o
+  CC      net/ethtool/channels.o
+  CC      net/ipv6/ip6_output.o
+  CC      net/ethtool/coalesce.o
+  CC      net/ethtool/pause.o
+  CC      net/ipv4/tcp_input.o
+  CC      net/ethtool/eee.o
+  CC      net/ethtool/tsinfo.o
+  CC      net/ethtool/cabletest.o
+  CC      net/ipv6/ip6_input.o
+  CC      net/ipv4/tcp_output.o
+  CC      net/ethtool/tunnels.o
+  CC      net/ipv6/addrconf.o
+  CC      net/ethtool/fec.o
+  CC      net/ethtool/eeprom.o
+  CC      net/ipv4/tcp_timer.o
+  CC      net/ethtool/stats.o
+  CC      net/ethtool/phc_vclocks.o
+  CC      net/ipv4/tcp_ipv4.o
+  CC      net/ipv4/tcp_minisocks.o
+  CC      net/ethtool/mm.o
+  CC      net/ipv6/addrlabel.o
+  CC      net/ethtool/module.o
+  CC      net/ipv6/route.o
+  CC      net/ipv6/ip6_fib.o
+  CC      net/ipv4/tcp_cong.o
+  CC      net/ethtool/cmis_fw_update.o
+  CC      net/ethtool/cmis_cdb.o
+  CC      net/ipv6/ipv6_sockglue.o
+  CC      net/ipv4/tcp_metrics.o
+  CC      net/ethtool/pse-pd.o
+  CC      net/ipv4/tcp_fastopen.o
+  CC      net/ipv6/ndisc.o
+  CC      net/ipv4/tcp_recovery.o
+  CC      net/ethtool/plca.o
+  CC      net/ipv6/udp.o
+  CC      net/ipv4/tcp_ulp.o
+  CC      net/ethtool/phy.o
+  CC      net/ethtool/tsconfig.o
+  CC      net/ipv4/tcp_offload.o
+  CC      net/ipv4/tcp_plb.o
+  CC      net/ethtool/mse.o
+  CC      net/ipv6/raw.o
+  CC      net/ipv6/icmp.o
+  CC      net/ipv4/datagram.o
+  AR      net/ethtool/built-in.a
+  CC      net/ipv4/raw.o
+  CC      net/packet/af_packet.o
+  CC      net/ipv6/mcast.o
+  AR      net/dsa/built-in.a
+  CC      net/ipv6/reassembly.o
+  CC      net/ipv4/udp.o
+  CC      net/ipv4/udp_offload.o
+  CC      net/ipv6/tcp_ipv6.o
+  AR      net/packet/built-in.a
+  CC      net/ipv6/ping.o
+  CC      net/ipv6/exthdrs.o
+  CC      net/ipv4/arp.o
+  CC      net/ipv4/icmp.o
+  CC      net/ipv4/devinet.o
+  CC      net/ipv6/datagram.o
+  CC      net/ipv6/ip6_flowlabel.o
+  CC      net/ipv6/inet6_connection_sock.o
+  CC      net/ipv4/af_inet.o
+  CC      net/ipv4/igmp.o
+  CC      net/ipv6/udp_offload.o
+  CC      net/ipv4/fib_frontend.o
+  CC      net/ipv6/seg6.o
+  CC      net/ipv6/fib6_notifier.o
+  CC      net/ipv6/rpl.o
+  CC      net/ipv4/fib_semantics.o
+  CC      net/ipv4/fib_trie.o
+  CC      net/ipv4/fib_notifier.o
+  CC      net/ipv6/ioam6.o
+  CC      net/ipv6/sysctl_net_ipv6.o
+  CC      net/ipv6/proc.o
+  CC      net/ipv6/addrconf_core.o
+  CC      net/ipv4/inet_fragment.o
+  CC      net/ipv4/ping.o
+  CC      net/ipv6/exthdrs_core.o
+  CC      net/ipv4/ip_tunnel_core.o
+  CC      net/ipv4/gre_offload.o
+  CC      net/ipv6/ip6_checksum.o
+  CC      net/ipv4/metrics.o
+  CC      net/ipv6/ip6_icmp.o
+  CC      net/ipv6/output_core.o
+  CC      net/ipv4/netlink.o
+  CC      net/ipv6/protocol.o
+  CC      net/ipv4/nexthop.o
+  CC      net/ipv6/ip6_offload.o
+  CC      net/ipv4/udp_tunnel_stub.o
+  CC      net/ipv4/sysctl_net_ipv4.o
+  CC      net/ipv6/exthdrs_offload.o
+  CC      net/ipv4/proc.o
+  CC      net/ipv6/inet6_hashtables.o
+  CC      net/ipv4/inet_diag.o
+  CC      net/ipv6/mcast_snoop.o
+  CC      net/ipv6/ndisc_snoop.o
+  CC      net/ipv4/tcp_diag.o
+  CC      net/ipv4/tcp_cubic.o
+  AR      net/wireless/tests/built-in.a
+  CC      net/wireless/wext-core.o
+  CC [M]  net/ipv6/sit.o
+  CC [M]  net/ipv4/ip_tunnel.o
+  CC      net/wireless/wext-proc.o
+  CC [M]  net/ipv4/tunnel4.o
+  CC      net/wireless/wext-priv.o
+  AR      net/ipv6/built-in.a
+  CC      net/rfkill/core.o
+  CC [M]  net/llc/llc_core.o
+  CC [M]  net/wireless/core.o
+  AR      net/ipv4/built-in.a
+  CC [M]  net/wireless/sysfs.o
+  AR      net/rfkill/built-in.a
+  CC [M]  net/wireless/radiotap.o
+  CC [M]  net/llc/llc_input.o
+  CC [M]  net/bridge/br.o
+  CC [M]  net/mac80211/main.o
+  CC [M]  net/llc/llc_output.o
+  CC [M]  net/wireless/util.o
+  LD [M]  net/llc/llc.o
+  CC [M]  net/wireless/reg.o
+  CC [M]  net/bridge/br_device.o
+  CC [M]  net/mac80211/status.o
+  CC [M]  net/bridge/br_fdb.o
+  CC [M]  net/bridge/br_forward.o
+  CC [M]  net/wireless/scan.o
+  CC [M]  net/mac80211/driver-ops.o
+  CC [M]  net/wireless/nl80211.o
+  CC [M]  net/bridge/br_if.o
+  CC [M]  net/mac80211/sta_info.o
+  CC [M]  net/bridge/br_input.o
+  CC [M]  net/wireless/mlme.o
+  CC [M]  net/bridge/br_ioctl.o
+  CC [M]  net/bridge/br_stp.o
+  CC [M]  net/mac80211/wep.o
+  CC [M]  net/mac80211/aead_api.o
+  CC [M]  net/bridge/br_stp_bpdu.o
+  CC [M]  net/bridge/br_stp_if.o
+  CC [M]  net/mac80211/wpa.o
+  CC [M]  net/mac80211/scan.o
+  CC [M]  net/bridge/br_stp_timer.o
+  CC [M]  net/bridge/br_netlink.o
+  CC      net/devres.o
+  CC [M]  net/mac80211/offchannel.o
+  CC [M]  net/bridge/br_netlink_tunnel.o
+  CC [M]  net/mac80211/ht.o
+  CC [M]  net/wireless/ibss.o
+  CC [M]  net/bridge/br_arp_nd_proxy.o
+  CC [M]  net/bridge/br_sysfs_if.o
+  CC [M]  net/mac80211/agg-tx.o
+  CC [M]  net/wireless/sme.o
+  CC [M]  net/wireless/chan.o
+  CC [M]  net/bridge/br_sysfs_br.o
+  CC [M]  net/mac80211/agg-rx.o
+  CC [M]  net/bridge/br_multicast.o
+  CC [M]  net/wireless/ethtool.o
+  CC [M]  net/mac80211/vht.o
+  CC [M]  net/bridge/br_mdb.o
+  CC [M]  net/wireless/mesh.o
+  CC [M]  net/mac80211/he.o
+  CC [M]  net/wireless/ap.o
+  CC [M]  net/wireless/trace.o
+  CC [M]  net/mac80211/s1g.o
+  CC [M]  net/mac80211/ibss.o
+  CC [M]  net/wireless/ocb.o
+  CC [M]  net/bridge/br_multicast_eht.o
+  CC [M]  net/wireless/michael-mic.o
+  CC [M]  net/mac80211/iface.o
+  LD [M]  net/bridge/bridge.o
+  CC [M]  net/mac80211/link.o
+  CC [M]  net/mac80211/rate.o
+  CC [M]  net/wireless/pmsr.o
+  CC [M]  net/wireless/of.o
+  CC      net/socket.o
+  CC      net/sysctl_net.o
+  CC [M]  net/mac80211/tkip.o
+  GEN     net/wireless/shipped-certs.c
+  AR      net/wireless/built-in.a
+  CC [M]  net/wireless/shipped-certs.o
+  CC [M]  net/mac80211/aes_cmac.o
+  CC [M]  net/mac80211/aes_gmac.o
+  LD [M]  net/wireless/cfg80211.o
+  CC [M]  net/mac80211/fils_aead.o
+  CC [M]  net/mac80211/cfg.o
+  CC [M]  net/mac80211/ethtool.o
+  CC [M]  net/mac80211/rx.o
+  CC [M]  net/mac80211/spectmgmt.o
+  CC [M]  net/mac80211/tx.o
+  CC [M]  net/mac80211/key.o
+  CC [M]  net/mac80211/util.o
+  CC [M]  net/mac80211/parse.o
+  CC [M]  net/mac80211/wme.o
+  CC [M]  net/mac80211/chan.o
+  CC [M]  net/mac80211/ap.o
+  CC [M]  net/mac80211/trace.o
+  CC [M]  net/mac80211/mlme.o
+  CC [M]  net/mac80211/tdls.o
+  CC [M]  net/mac80211/ocb.o
+  CC [M]  net/mac80211/airtime.o
+  CC [M]  net/mac80211/eht.o
+  CC [M]  net/mac80211/uhr.o
+  CC [M]  net/mac80211/nan.o
+  CC [M]  net/mac80211/rc80211_minstrel_ht.o
+  CC [M]  net/mac80211/wbrf.o
+  AR      net/built-in.a
+  LD [M]  net/mac80211/mac80211.o
+  AR      built-in.a
+  AR      built-in-fixup.a
+  COPY    vmlinux.a
+  LD      vmlinux.o
+  MODPOST Module.symvers
+  CC      .vmlinux.export.o
+  GEN     .builtin-dtbs-list
+  CC [M]  crypto/aead.mod.o
+  WRAP    .builtin-dtbs.S
+  CC [M]  .module-common.o
+  CC [M]  crypto/crypto_skcipher.mod.o
+  CC [M]  crypto/cmac.mod.o
+  CC [M]  crypto/sha256.mod.o
+  AS      .builtin-dtbs.o
+  CC [M]  crypto/ecb.mod.o
+  CC [M]  crypto/ctr.mod.o
+  CC [M]  crypto/gcm.mod.o
+  CC [M]  crypto/ccm.mod.o
+  UPD     include/generated/utsversion.h
+  CC      init/version-timestamp.o
+  CC [M]  crypto/aes.mod.o
+  CC [M]  lib/crypto/libaes.mod.o
+  CC [M]  lib/crypto/libarc4.mod.o
+  CC [M]  lib/crypto/libgf128hash.mod.o
+  CC [M]  drivers/base/firmware_loader/firmware_class.mod.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtlwifi.mod.o
+  LD      vmlinux.unstripped
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl_pci.mod.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.mod.o
+  CC [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.mod.o
+  NM      System.map
+  SORTTAB vmlinux.unstripped
+  CC [M]  net/802/psnap.mod.o
+  CC [M]  net/802/stp.mod.o
+  OBJCOPY vmlinux
+  CC [M]  net/ipv4/ip_tunnel.mod.o
+  GEN     modules.builtin.modinfo
+  GEN     modules.builtin
+  CC [M]  net/ipv4/tunnel4.mod.o
+  CC [M]  net/ipv6/sit.mod.o
+  CC [M]  net/wireless/cfg80211.mod.o
+  CC [M]  net/llc/llc.mod.o
+  CC [M]  net/bridge/bridge.mod.o
+  CC [M]  net/mac80211/mac80211.mod.o
+  LD [M]  crypto/aead.ko
+  LD [M]  crypto/crypto_skcipher.ko
+  LD [M]  crypto/cmac.ko
+  LD [M]  crypto/sha256.ko
+  LD [M]  crypto/ecb.ko
+  LD [M]  crypto/ctr.ko
+  LD [M]  crypto/gcm.ko
+  LD [M]  crypto/ccm.ko
+  LD [M]  crypto/aes.ko
+  LD [M]  lib/crypto/libaes.ko
+  LD [M]  lib/crypto/libarc4.ko
+  LD [M]  lib/crypto/libgf128hash.ko
+  LD [M]  drivers/base/firmware_loader/firmware_class.ko
+  LD [M]  drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko
+  LD [M]  drivers/net/wireless/realtek/rtlwifi/rtl_pci.ko
+  LD [M]  drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.ko
+  LD [M]  drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.ko
+  LD [M]  net/802/psnap.ko
+  LD [M]  net/802/stp.ko
+  LD [M]  net/ipv4/ip_tunnel.ko
+  LD [M]  net/ipv4/tunnel4.ko
+  LD [M]  net/ipv6/sit.ko
+  LD [M]  net/wireless/cfg80211.ko
+  LD [M]  net/llc/llc.ko
+  LD [M]  net/bridge/bridge.ko
+  LD [M]  net/mac80211/mac80211.ko
+make[1]: Leaving directory '/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-complete-pair-r20/a/kernel'
+make: Leaving directory '/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source'

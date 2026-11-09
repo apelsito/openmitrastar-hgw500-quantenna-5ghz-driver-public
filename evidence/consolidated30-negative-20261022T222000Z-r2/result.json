@@ -1,0 +1,80 @@
+{
+  "status": "PASS_ELEVEN_CONSOLIDATED30_PARSED_NEGATIVE_DELTA_CASES",
+  "hardware_accessed": false,
+  "files_modified": false,
+  "cases": 11,
+  "rows": [
+    {
+      "component": "qdrv",
+      "case": "function",
+      "rejected": true,
+      "reason": "('unrelated function', ('qdrv_hostlink_msg_cmd', '.text', 2, 0))"
+    },
+    {
+      "component": "qdrv",
+      "case": "anonymous",
+      "rejected": true,
+      "reason": "every anonymous executable body .text"
+    },
+    {
+      "component": "qdrv",
+      "case": "data",
+      "rejected": true,
+      "reason": "allocated data .data.once"
+    },
+    {
+      "component": "qdrv",
+      "case": "relocation",
+      "rejected": true,
+      "reason": "all residual RELA [(('object', ('qdrv_f355_claim', '.text', 2, 0), 92), 27, ('printk', '', 0, 1, 0)), (('object', ('qdrv_f355_claim', '.text', 2, 0), 92), 27, ('printk', '', 0, 1, 4))]"
+    },
+    {
+      "component": "qdrv",
+      "case": "symbol",
+      "rejected": true,
+      "reason": "('old symbol attrs', ('qdrv_hostlink_msg_cmd', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan",
+      "case": "function",
+      "rejected": true,
+      "reason": "('unrelated function', ('ieee80211_setmode', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan",
+      "case": "anonymous",
+      "rejected": true,
+      "reason": "every anonymous executable body .text"
+    },
+    {
+      "component": "wlan",
+      "case": "data",
+      "rejected": true,
+      "reason": "allocated data .data.once"
+    },
+    {
+      "component": "wlan",
+      "case": "relocation",
+      "rejected": true,
+      "reason": "all residual RELA [(('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 56), 27, ('printk', '', 0, 1, 0)), (('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 56), 27, ('printk', '', 0, 1, 4))]"
+    },
+    {
+      "component": "wlan",
+      "case": "symbol",
+      "rejected": true,
+      "reason": "('old symbol attrs', ('ieee80211_setmode', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan",
+      "case": "diagnostic",
+      "rejected": true,
+      "reason": "non diagnostic bytes ieee80211_param_from_qdrv"
+    }
+  ],
+  "adaptation_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_consolidated30_negative_delta.py": "97a155cc5bbef3784859541c145111b74e077c934cb27ea61946660f76d570d8",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_hgw5g_coex26_r3_delta_negative.py": "07d18af43f66aa5a15358f5e4f430bd9060b971f46acb123e037bf673d40aac4",
+    "outputs\\rea\\consolidated30-negative-20261022T222000Z-r2\\adapted-eleven-negative.py": "23dd6d58f884f093e8ef229a10eda9fb26a1d0c726008cc40152a68a77706341",
+    "outputs\\rea\\consolidated30-residual-20261022T221800Z-r4\\adapted-strict-auditor.py": "6f2d0ec13ccdc9f6f3a8190b471268ac1e2f37fd7de534ec449d6eebd80b6224"
+  }
+}

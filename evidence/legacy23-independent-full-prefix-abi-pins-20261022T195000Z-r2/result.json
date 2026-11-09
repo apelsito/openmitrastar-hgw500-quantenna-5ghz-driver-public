@@ -1,0 +1,11 @@
+{
+  "status": "PASS_CURRENT_ACTUAL_ARC_WITNESS_DEPENDENCY_HASH_CLOSURE",
+  "pins": 912,
+  "actual_compiler_depcounts": {
+    "old": 886,
+    "new": 886
+  },
+  "retroactive_hash_scope": "Usedheaders/tool/witnessbytes hashed aftersuccessfulcompile; originalinitial6pins verified inbasewitness, notclaimedfullprebuildpins",
+  "hardware_accessed": false,
+  "source_witness": "/workspace/user-home/Desktop/MitraStar/outputs/rea/legacy23-independent-full-prefix-abi-20261022T194700Z-r1"
+}

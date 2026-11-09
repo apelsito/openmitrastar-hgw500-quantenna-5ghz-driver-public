@@ -1,0 +1,72 @@
+{
+  "status": "PASS_INDEPENDENT_R22_TYPED_DMA_RISK_SOURCE_CURRENT_ELF610_ALL44_AND_COMMENTS_REVIEW",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "table": {
+    "bytes": 14640,
+    "records": 610,
+    "handler_private_count": 610,
+    "handler_args_RELA_exact": true
+  },
+  "exact_original_records": 44,
+  "WLAN_pair": [
+    {
+      "lane": "a",
+      "sha256": "4588ed600b937086eacc33bd5d5f9ee7b74013a58cbcd71d26088c1060ef519b",
+      "records": 610
+    },
+    {
+      "lane": "b",
+      "sha256": "4588ed600b937086eacc33bd5d5f9ee7b74013a58cbcd71d26088c1060ef519b",
+      "records": 610
+    }
+  ],
+  "fixturebindings": [
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-typed-sram-dma-fixture-20261023T041300Z-r22/result.json",
+      "sha256": "fe7636596ec1450556a00047cf8a9d851fd9ea63595db221e69807bf0bd3dacb",
+      "status": "PASS_ACTUAL_TYPED_SRAM_DMA_OWNER_BUS_MAP_AND_32BIT_BOUNDS_FIXTURE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-typed-sram-backend-fixture-20261023T035100Z-r4/result.json",
+      "sha256": "06553b85abcadaa4c8e4268908f630b980b11467f66c8308d3206956b5daee36",
+      "status": "PASS_ACTUAL_OEM_CORE_TYPED_SRAM_BACKEND_FAKE_RESOURCE_MAPPING_OWNERSHIP"
+    }
+  ],
+  "comments": {
+    "file_count": 178,
+    "comment_count": 7165,
+    "raw_comment_bytes": 724025,
+    "raw_comment_sha256": "34f80fa7acf1e6c8e7f4a82382a1ddaf303b2d35d8b90d845140c1d86e7df52a",
+    "unterminated_comments": 0
+  },
+  "reviewed_behavior": [
+    "SRAMalignment followsphysicaloffset thenaliasesameoffset; virtualmapnotusedasbus address.",
+    "SRAMbranchusespoolioremap/memset_io only; genericDRAMioremap/flush/virt_to_bus branchseparate.",
+    "Poolkeyisuniqueprivateom_dma_allocation record; duplicatepreparingrace rollbackfreesloserrecord, notwinnerpublicowner.",
+    "Failedpoolfree retainsproviderallocation+privatekey; deliberatequarantinememoryretainednotincorrectunmap/free.",
+    "Poolglobalirqsave stateguardserializesalloc/query/free versus acquire/close; close corebusy preventsactivefree."
+  ],
+  "risklimits": [
+    "Reservation admission isabsentbydefault; nonzeroboardhashesonlyidentifycontractverifiedbya trustedkernelcaller, notproofoffreebank.",
+    "DMAfreeerrorretainsprivateallocationafterpublicdcleared; no callerretry/cleanup path. Reporting/quarantine lifetime required; noclaimsrecovery.",
+    "Callerownsdevicequiescebeforefree andserializesalloc/freeforpublicowner; hostfixturesdonotprovehardwareorLinux concurrency.",
+    "Poolgenerationwrapavoidzero doesnotestablishuniversalABAcontract; no consumergenerationreuseprotocolclaimed.",
+    "No new immediate wrongwinnerfree/addressconversion source defect identified withinthisscope. Fullmoduledelta/ABIpair areseparate.",
+    "No functionalopsincrease from610table/44records. No registeredSRAMprovider/runtime/RF/clientacceptance."
+  ],
+  "public_wire_fixture_bytes": 20,
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/review_linux73_r22_typed_dma.py": "9049df1ba401878bf0cd0b2001cad67edb1d6b620baa1ce05d021854ecbfc14c",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-typed-sram-dma-candidate-20261023T041000Z-r22/source/platform/ruby/dmautil.c": "ec92020a22d87286ddfb2232ee32e859bf070a3901ef370f1908538fb5ca18e7",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-typed-sram-dma-candidate-20261023T041000Z-r22/providers/sram73/om73_sram_backend.c": "ebbc75e2f22cfc8b3260947bf63daff451fee207a2a51ee9d300fe7a8c24357b",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-typed-sram-dma-candidate-20261023T041000Z-r22/providers/sram73/om73_sram_backend.h": "4c0ecfeb3f7bc6caf1a9766c8e7ed05e46024b801b2604907eb7fbf43be8f247",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-typed-sram-dma-candidate-20261023T041000Z-r22/result.json": "3f73a62cd2a838d5ad6d5eca8f9b7cbbe37a2bdb325e5398a462db7be9dfb45c",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-typed-sram-dma-candidate-20261023T041000Z-r22/Kbuild": "c23aba39a28e3151c2ec8782a744883ca0fa326a9cca6133ddb984763f264d43",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/ops-inventory-20261022T134000Z-r6/comparisons.json": "3fe72e89e5ab01ff7a6b541a55d83b011b3e30ec16a2fe6a92ea31d8d7715aff",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r22-comments-20261023T044000Z-r1/manifest.json": "c19993feb5b6edc45ed8a4572d8280b58238dba054d94be62c2a735e1fc5e7c5",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r22-comments-20261023T044000Z-r1/artifact-hashes.json": "53e203d253916bbd0cda9fec9c6e8d5ffd6a7b3d96c04b812126c56a1876919f",
+    "/home/rea/linux73-typed-sram-dma-r22-native-pair-r1/a/wlan.ko": "4588ed600b937086eacc33bd5d5f9ee7b74013a58cbcd71d26088c1060ef519b",
+    "/home/rea/linux73-typed-sram-dma-r22-native-pair-r1/b/wlan.ko": "4588ed600b937086eacc33bd5d5f9ee7b74013a58cbcd71d26088c1060ef519b"
+  }
+}

@@ -1,0 +1,1941 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/coex449-bss-geometry.patch",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/coex449-bss-geometry.patch",
+      "bytes": 3065,
+      "sha256": "607c75ceaabca26f2596f81efc378ed24560f5dc6ba20f7ecabf695d2cbc47c2",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/headers/net80211/ieee80211_var.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/headers/net80211/ieee80211_var.h",
+      "bytes": 99900,
+      "sha256": "fb8a937e2ec3aea643473e4e7795e4e01f8eaa5ab59814225a7dc58912aff757",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/result.json",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/result.json",
+      "bytes": 2100,
+      "sha256": "2a593d896718ed5336aa5e0353026c792c4adcc5ff976c67d12ef7068c69296f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/board_config.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/board_config.h",
+      "bytes": 400,
+      "sha256": "6654f0ccce4caf24659ff4d6baced6fb709847d063ccd77c78443a0f3d0e5147",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/dma_cache_ops.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/dma_cache_ops.h",
+      "bytes": 633,
+      "sha256": "96f7914dda30dc484d2887f7b8b7db97dbabcfd26d01fe8d9fadb8dedfdb347b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/gpio.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/gpio.h",
+      "bytes": 416,
+      "sha256": "ec9f0f8e74ae336f12c5d460a4b0cab01dee1aaa7794abf38c2f4763f07fee45",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/kdump.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/kdump.h",
+      "bytes": 233,
+      "sha256": "67242abd1335e954da1f2bcccaaebea71b776baf93fd6ae64e35e20226612f6a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/platform.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/platform.h",
+      "bytes": 166,
+      "sha256": "3736f6f368212e15a579ed9cf820b8dc8b900be760fdd50b613c4c5a3f3a7f69",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/pm.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/pm.h",
+      "bytes": 267,
+      "sha256": "eb5a6bf8305b73c8a25099e0a8d4b27a2f687038cfd4df5d16ab891419bbaa32",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/soc.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/soc.h",
+      "bytes": 148,
+      "sha256": "64bca498fa4c29d1e3bab6bae1d56f1902fc701b5285272db406090ff7631f80",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/troubleshoot.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/board/troubleshoot.h",
+      "bytes": 472,
+      "sha256": "7e5b2ff25100cfbb2097b978cf6194dae7faab5a162589c4ae3d9964a17bbf2a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/gpio.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/gpio.h",
+      "bytes": 99,
+      "sha256": "195b97775c1e231f4cae4ec6fa579efe87d61c3a84a2dee03e8dc9b23d4529d3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/hardware.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/asm/hardware.h",
+      "bytes": 451,
+      "sha256": "778e9f99607c95d470fa17074eee90ef7aaa3509ac20f106aa17209c0b98946e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/current_platform.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/current_platform.h",
+      "bytes": 398,
+      "sha256": "5b546dc962dbefe6537c3db13fe0f65585bc60f3c4021525939adea01287e394",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/linux/config.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/linux/config.h",
+      "bytes": 70,
+      "sha256": "bbed9045704f192c50d4c68fec88f2678a08a20f4e089dc626cbb6fbfc0be718",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/linux/net/bridge/br_public.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/linux/net/bridge/br_public.h",
+      "bytes": 546,
+      "sha256": "0d49d79e719bcebe6fc68669984681117655fac7de627a03cdb1d7ca20e93695",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/linux/pm_qos_params.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/linux/pm_qos_params.h",
+      "bytes": 838,
+      "sha256": "88295077cf5b20a0ad3dd475655de2fb57c1b62254707e4d45503bff57247d6d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/openmitrastar_qdrv_compat.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/openmitrastar_qdrv_compat.h",
+      "bytes": 3968,
+      "sha256": "651d94fd4fc81b4d889103f8d64e3d5c6764758b55061ebdc935d0f361c878ad",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/qtn/br_types.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/qtn/br_types.h",
+      "bytes": 528,
+      "sha256": "9b56c5419e253c7abf6e0d540b7fc72f254f735367eb536c61935ad40cb162b1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/qtn/qtn_skb_cb.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/qtn/qtn_skb_cb.h",
+      "bytes": 1729,
+      "sha256": "e115c7a1491bbab189b6f89d21a03221c7a5c835c00150a695656b35984ce5e8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/qtn_platform_support.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/qtn_platform_support.h",
+      "bytes": 211,
+      "sha256": "f242a93ab72053145b323621a3fc54297b1592e537b4807889c974f5adc9bb2d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/trace/ippkt.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/trace/ippkt.h",
+      "bytes": 1380,
+      "sha256": "8f8f5ca4a1899e2ab9187931484109d8da701f80993d98deb5ecc3c3bedfd767",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/trace/skb.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/compat/include/trace/skb.h",
+      "bytes": 333,
+      "sha256": "6804434ce8ad570b810ffdff0ab20459538b82506723170efd008fe847a42149",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/f355_lifetime.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/f355_lifetime.h",
+      "bytes": 1436,
+      "sha256": "7a9042ef6b27f0cee01ea49376e61bac6abe00f2069d38331e4212dd518f2996",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/Makefile",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/Makefile",
+      "bytes": 1476,
+      "sha256": "7381dbe83f251410e6a880e9511dc9ceca171d7491c86466635d3fc1f71a31f4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_abi_v89.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_abi_v89.h",
+      "bytes": 16376,
+      "sha256": "a91c0808d8ad2dcfb2410ae8740563ac664eeebc5778b0fb6926a0a4bee13558",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_auc.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_auc.c",
+      "bytes": 4803,
+      "sha256": "70eb8cc1a7761addb9d14b48c97d5bc5362656137bb048fcd3238fd77891c723",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_auc.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_auc.h",
+      "bytes": 1084,
+      "sha256": "6725d51d84a574914536c11283fd99856270749b1bcb74fc65820ac9daece6eb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_bld.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_bld.h",
+      "bytes": 404,
+      "sha256": "4fe2e7693e096771809b14f225b55aeb68fc018fb97d824f52f7e7b09f9f58ff",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_bridge.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_bridge.c",
+      "bytes": 32204,
+      "sha256": "05bbba44e4cb1641deea8aed511dfa6d68198f25cd7bbb7b8a68387d37a867fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_bridge.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_bridge.h",
+      "bytes": 3966,
+      "sha256": "db05eaab018d9cc1fbe80c0cb740b1be1aad2453101186f62a74a13316e51c70",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_comm.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_comm.c",
+      "bytes": 26656,
+      "sha256": "56c5d3d660a512c17dfc3903f606d3dc529542bcdeffeb266d04ab1219113f40",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_comm.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_comm.h",
+      "bytes": 1139,
+      "sha256": "e8e83658405005027cefac985a0634cadf9bdc2471c42c79e70b1883b7cd09bc",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_config.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_config.h",
+      "bytes": 135,
+      "sha256": "6f2ee77f2040df44f37c77ea3552f49e9a141e32fdbddb71d507e7c6ebe84a97",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_control.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_control.c",
+      "bytes": 174490,
+      "sha256": "ae586fc6db8b94ce7d128309b7c3add6563fbc37907488726ac95fc02242d398",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_control.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_control.h",
+      "bytes": 3187,
+      "sha256": "6f0656cf77128f496213c74edfc97591eca792e7d5ab220f662a9378961274a8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_debug.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_debug.h",
+      "bytes": 3689,
+      "sha256": "1e01e89b2e47e7a3594e6ccc2baeea7e862312348991eeaea11e787f6e976c88",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_dma_wire.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_dma_wire.h",
+      "bytes": 548,
+      "sha256": "a9f6847592d7568a577de3fb260c1b705dd632c2a035454840fdf892db40d4db",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_dsp.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_dsp.c",
+      "bytes": 1844,
+      "sha256": "a8210e6df122dc38548a39e6004b534fece563b0af962721eb9e1955f31a560e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_dsp.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_dsp.h",
+      "bytes": 924,
+      "sha256": "8f49757755232a73eb200e9e8931093e935b61348a782e1cda60091f40e08af1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_f355_lifetime.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_f355_lifetime.c",
+      "bytes": 2550,
+      "sha256": "cc9e7520ec286c3f26b02510175dd9f9fb7f9096b55ee0c005558ca4f0198b67",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_f355_lifetime.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_f355_lifetime.h",
+      "bytes": 433,
+      "sha256": "75b70497d9f6a9f99f8b959c10e214ce16d5d7ac3eb4f11e6c4932cc9e4e9612",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_features.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_features.h",
+      "bytes": 1128,
+      "sha256": "e0f280b96f0a1f2d3d47c62046c05a08ccdda533153760105827cba7b679bf82",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_fw.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_fw.c",
+      "bytes": 8316,
+      "sha256": "0bdc6c022f3dfe8b19a3294f5697722e7b83a3124383aeac872a91c807746a78",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_fw.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_fw.h",
+      "bytes": 1241,
+      "sha256": "ec91cc1bbb1bf21f02add85863c58c3daa85b3483fd2a159c8a7fafd8a3c5444",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_fwt_compat.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_fwt_compat.c",
+      "bytes": 1372,
+      "sha256": "c92d173db3e4fc52be1496721192bdf26bc98639dfa220cda20542ad0c513cb1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_hal.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_hal.c",
+      "bytes": 9958,
+      "sha256": "9073f72099b28a93e8794282ae5b87d7d32fca0ee5ebaf9b90cc6716f64a6691",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_hal.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_hal.h",
+      "bytes": 1600,
+      "sha256": "6cdf94d4075b18a5532be930068efe02ad60aa8b4266275269ab9061c7991e6f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_hostlink.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_hostlink.c",
+      "bytes": 34301,
+      "sha256": "236089b781c9af1d5cf791694934f0dd72f9c119d21261b46d7db991b4e359bb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_kernel_compat.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_kernel_compat.c",
+      "bytes": 1946,
+      "sha256": "493de8af98db94c8feb70a71221cf3e37904a01edabcbb3e08000d4f3cca68d1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mac.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mac.c",
+      "bytes": 11337,
+      "sha256": "43946f44a7dbd5cfe71873175bbf6262e3224093eb5ef65a737a8061984a4e98",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mac.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mac.h",
+      "bytes": 4037,
+      "sha256": "0cdba30af6d70f085832fab93ab0e6eddbe1c3140c951033d2223a80217db2fa",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mac_reserve.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mac_reserve.c",
+      "bytes": 3976,
+      "sha256": "b1c97d65f4a8cb516634d36cb6f4a21a03a72e9703ec1d8f40f09c033528d67f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mac_reserve.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mac_reserve.h",
+      "bytes": 1188,
+      "sha256": "98d812ad7bd8616b324be5bf92db80312ac535e9131987f2a8e7df50e6696d83",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_math.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_math.c",
+      "bytes": 876,
+      "sha256": "c1045ac057bddda8f4a2f8c6a52d6ee7d4dca2c563d3e83883edafc71e8acc32",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_module.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_module.c",
+      "bytes": 10909,
+      "sha256": "cfecaacfe7256ed17458553a594cbf927a9923c1f6d119950fa5cfb4d7ed39a3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mu.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mu.c",
+      "bytes": 4898,
+      "sha256": "1dc0ca7d74c52afcfb49a3359473e542deee409e0a989155b947578a9a6ef85b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mu.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_mu.h",
+      "bytes": 930,
+      "sha256": "dd7d393342b347968726cd596ce547873a4a7265f8adee5053731e0311e781f6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_muc.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_muc.c",
+      "bytes": 3608,
+      "sha256": "daf6f06bf5d82ee84dcf66a9ff2706692e6e4a52d155817381d5a9a066f54fde",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_muc.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_muc.h",
+      "bytes": 924,
+      "sha256": "3f0fb4d12fcc307ef1ce8681c71b1f3d7519a1bf08d83c9879a14e9da6e94285",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_muc_stats.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_muc_stats.c",
+      "bytes": 39729,
+      "sha256": "d2b9ae154179138b8c80933ff7f1fc4d7600f20dfd52ec9f33412061d7e74768",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_muc_stats.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_muc_stats.h",
+      "bytes": 3150,
+      "sha256": "2a685c28c9ee35639b7e15dcd4f54a7086d184a7ec3a487e469191cde4671966",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_netdebug_checksum.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_netdebug_checksum.h",
+      "bytes": 128,
+      "sha256": "52dd7a821fcb65da5c6258f9d99d5cf9b4592afc845c6c0c87549ef9ceb3f77c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_pcap.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_pcap.c",
+      "bytes": 5968,
+      "sha256": "7185ef1ce323bae02d481ff102797bd615c18a46a9719d1b4bbe7d5c668459a5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_pcap.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_pcap.h",
+      "bytes": 1470,
+      "sha256": "4fd7b28b17b1237d0000c27e50d79922603cb123e91b3f2f11d5ed9f6003376e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_pktlogger.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_pktlogger.c",
+      "bytes": 53145,
+      "sha256": "f1ef936e9519e6bc2e75912b71f870011b8699936ed364b2221e189106732717",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_pktlogger.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_pktlogger.h",
+      "bytes": 3261,
+      "sha256": "990592fd84fc10afff04c97e4baf586f69e1ab3d497e11850f7f4925a7b95af6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_radar.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_radar.c",
+      "bytes": 58944,
+      "sha256": "c261b6777d9322a4baf641a37861bf588e754e5411f7f993ea16725d00c395dc",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_radar.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_radar.h",
+      "bytes": 1939,
+      "sha256": "992433b333f63ea08b14f84befebb347f8bf80e7097bee7702a2831887472aa2",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_radar_compat.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_radar_compat.c",
+      "bytes": 1804,
+      "sha256": "2f0401ff643896a3ef099f941359a4cbbf336ff6f601ccb46cad25c61fe16712",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_rx.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_rx.c",
+      "bytes": 74852,
+      "sha256": "7b1126f6ce00111ded62f36204d13736a51bdc94906b3de5f4308c7a7691ba2a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_scan.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_scan.c",
+      "bytes": 4959,
+      "sha256": "17cefa0744c2fe8bd00ccb0d29ca8ff0a5b4a013cc41d2b9caaf71df49d2145d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_sch.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_sch.c",
+      "bytes": 29700,
+      "sha256": "64edce498abe520db3c3fcb7a51505af750456b54284b1e2dc25af7519d99035",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_sch_pm.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_sch_pm.c",
+      "bytes": 3308,
+      "sha256": "b2a14cc8aff687f23b7d792fb0eb47cd0b3a3fb5940f791f521f17d02fb43812",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_sch_pm.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_sch_pm.h",
+      "bytes": 1274,
+      "sha256": "2557a0ba57133c728af6a710357514f4c7ac3a69a2396fbc8c8a7fb42ce9d2f6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_sch_wmm.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_sch_wmm.h",
+      "bytes": 1009,
+      "sha256": "7dc95e1b32177b0f9540639e8f22728e5d848d44efc4a9dcb95907b68686c618",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_show.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_show.c",
+      "bytes": 12521,
+      "sha256": "996ee4f1294ad79623f10f41c1c57bce98f8a47ee9c1cb99c74acdb11b05bda9",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_show.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_show.h",
+      "bytes": 1659,
+      "sha256": "78b3025636ba67cbca91303b7d04bf7a07b05a4a148067c77746d38b7c42ae7c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_slab_def.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_slab_def.h",
+      "bytes": 2576,
+      "sha256": "4ed06903cdbef21e3d812696b68ced031d55ff9d965c14ae80c486c913e8401b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_slab_watch.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_slab_watch.h",
+      "bytes": 152,
+      "sha256": "5cb3ae80b0c2f5f80244bd1ece1e5f968b4f8eb3405aac08b69ee6b4c62451e3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_soc.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_soc.c",
+      "bytes": 28362,
+      "sha256": "a179bebe0f469b4156e03139d6e06c99d51720c2bc9e292d5426a37d607603c4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_soc.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_soc.h",
+      "bytes": 5151,
+      "sha256": "a21236a19e0e37950bc8b0b294f8b9ae2f18bbc4b5bf9b2865caa478f5c940ae",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_tx.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_tx.c",
+      "bytes": 87130,
+      "sha256": "2f93045dc3937074300c571e1b5f1d49c95e51de91d8e00b0742db1177438c1d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_txbf.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_txbf.c",
+      "bytes": 21710,
+      "sha256": "953a080fd97c9f794cdce56decdc70be121439635d5e421282ead0c93ef143d8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_txbf.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_txbf.h",
+      "bytes": 1942,
+      "sha256": "649d561e00f4ecacf49bb8328c54d750cf5b50738d385c2b28ca03959f8b8098",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_uc_print.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_uc_print.c",
+      "bytes": 5739,
+      "sha256": "f8dc7d8b7101568c3ee0b92bb69b45aae972e0df241e6468ec2199d5e03e9d98",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_uc_print.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_uc_print.h",
+      "bytes": 1026,
+      "sha256": "b1d259990e2c753ef839fd1398982de6313851c649a4e8fdfaf22635a0442820",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_vap.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_vap.c",
+      "bytes": 22478,
+      "sha256": "8a7e19a8066392468797602735e6d78039ac6b5ab6bcdf1a5d5baa860d59f485",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_vap.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_vap.h",
+      "bytes": 5828,
+      "sha256": "1f9ea973f15ad341bf7064fdc319e56dfc3f4c25e8627f2ab9d4ecc60717533a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_vlan.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_vlan.c",
+      "bytes": 2737,
+      "sha256": "466b6e1263cdbb633d05e096287dfcaea967d59594897246d9c4778d65802eb3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_vlan.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_vlan.h",
+      "bytes": 1051,
+      "sha256": "0626e7203ef79e44b168de12b48b44e970c9cf12b388a52b7060c63e9ddeb50d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_wlan.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_wlan.c",
+      "bytes": 309112,
+      "sha256": "160babfba42598fed9fcab7630581a9e282cc1d9f2cb5ea49bf9fbf0fe045f20",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_wlan.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/qdrv_wlan.h",
+      "bytes": 50826,
+      "sha256": "deaa788ae7b90cfd85d64bd59d5f4daec6b8ef04b71538f06686b5f8e7c45bcd",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/soc.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/qdrv/soc.h",
+      "bytes": 177,
+      "sha256": "54905b37dbe250218832f5c478a7b15fa60ff22ec6c2d12eac1ccf109bb592ff",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211.c",
+      "bytes": 106471,
+      "sha256": "1d2b8e6464d8e0f03eb9d7d91b2518f8ae484069e5f026a1d4359bbf6d56c02d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_acl.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_acl.c",
+      "bytes": 7815,
+      "sha256": "2592c8c83a60276851e0c8eec88bebbd2db949e82d53afc686ffb39412ae24ad",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_beacon.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_beacon.c",
+      "bytes": 20298,
+      "sha256": "4c253a21a481e19bc16d96f9483cfabdd10d10e0110186ee09504b79b63e98a6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_beacon_desc.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_beacon_desc.c",
+      "bytes": 19074,
+      "sha256": "9653fc07b44e31b6b3814fea43f26bd6898cc8953711fa7f604d5164baf12b31",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_crypto.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_crypto.c",
+      "bytes": 18373,
+      "sha256": "8b0dd020dfae158dd3bbe9baf7fe0614913e2b05b6bcbc0a0a28f80e0a020a9e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_crypto_ccmp.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_crypto_ccmp.c",
+      "bytes": 17900,
+      "sha256": "90aad4e58ac1ffb3f098a3eb065eb517665ce1ccffb4e630a9a24a7c47bd80c5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_crypto_none.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_crypto_none.c",
+      "bytes": 4520,
+      "sha256": "13bb0971a3eb6562abfb5501a430d12e960c4f6eba9a5683b085b08dc8f0fed7",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_crypto_tkip.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_crypto_tkip.c",
+      "bytes": 30212,
+      "sha256": "14202a45f14ede03add64eeafa9b4802594ff0b3f38b4478aff694a5302b9e2b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_crypto_wep.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_crypto_wep.c",
+      "bytes": 15649,
+      "sha256": "8148cd4acc02e1a618a047c8aa5ec16e8349e3bd18a2358f930f52634b673c37",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_input.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_input.c",
+      "bytes": 342372,
+      "sha256": "65a1fcf4b47eb54611123fed1577c1f6f8784ae9df43bc41b16b21a06c2f86f4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_linux.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_linux.c",
+      "bytes": 28563,
+      "sha256": "db40c95e0bebbfef107c7035f6cafc4be4c32492e87cdc98745b8dd7d56b8b40",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_mlme_statistics.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_mlme_statistics.c",
+      "bytes": 18974,
+      "sha256": "aefed7036fd0630b19c34e00607f6f1de1b023476aa5e8459885ff35a42f12a5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_node.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_node.c",
+      "bytes": 122316,
+      "sha256": "817fde17b08518cd1a98f4ea192f1fd9853f604e6856e967d281dbed5447a2c9",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_output.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_output.c",
+      "bytes": 191847,
+      "sha256": "d26f520bff2d54d058b330944b4ed30ab921a854288dcbd7b257a599d214cd3f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_power.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_power.c",
+      "bytes": 10193,
+      "sha256": "7e95aa12acf29f852eefa26bcc6870177a3bcb70e3da1ccc0086e41f1b0340fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_proto.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_proto.c",
+      "bytes": 70939,
+      "sha256": "ed779617c71365303a3421faae95b92461e845d580034988e3dc458f3a3df4c8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_rate.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_rate.c",
+      "bytes": 3637,
+      "sha256": "289e8aecd31b945659003ee65a3923b716a8784e5ef2df5daf3b9c40a3117fe5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_scan.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_scan.c",
+      "bytes": 58874,
+      "sha256": "6cd7d90fb319f1bdcad5fb97f5a99e93e81f385eab8acaa992f599e79cae3231",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_scan_ap.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_scan_ap.c",
+      "bytes": 34397,
+      "sha256": "be5fb4d720800aacccacc75c53e3d7e9dc9f0a7c28e7307589e9007ff78eae0e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_scan_sta.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_scan_sta.c",
+      "bytes": 50055,
+      "sha256": "73e0b28b5e74693bd3b50c72883df46dc238201da2232dc066bdef76badd5d93",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_tdls.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_tdls.c",
+      "bytes": 129155,
+      "sha256": "073fdd13f9cc304ab39450d8838b16e953862ec954f9c6e2bcb003340cd581bc",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_tpc.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_tpc.c",
+      "bytes": 10611,
+      "sha256": "4f784c885634221281e8f19a05dc8f21bbed62f4a65bf958f68a415f4febb9d3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_wireless.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_wireless.c",
+      "bytes": 674809,
+      "sha256": "82dd0c8a6f574bb70ce0144d4369eafd0261bd853f5cd868a9950f2c8a244c25",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_xauth.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/ieee80211_xauth.c",
+      "bytes": 3616,
+      "sha256": "5feaec3e92676651a090e6dd8e1d4cae2d70738843c8156df30afc601eb01745",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/if_media.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/if_media.c",
+      "bytes": 13136,
+      "sha256": "6fda06d57cf55daeb0256e6aec69e166592f1860d16ec0f972da9eecf27f38e0",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/openmitrastar_beacon_preflight.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/openmitrastar_beacon_preflight.h",
+      "bytes": 933,
+      "sha256": "5043d3f04160269e3bda6b5badb576dd7db7c1e66d632b368989f04449e9bb52",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/release.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/release.h",
+      "bytes": 2085,
+      "sha256": "ee4f529b52e004517d502fbbcfb88d484c877a90af0f3af5f2a1b4168d25e8bf",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/version.h",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/version.h",
+      "bytes": 1983,
+      "sha256": "1d6edc89dc9d52a1a7f8794e8030739e88bced883fc0a43aeb9f586dd6ecf8bb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/wlan_fwt_compat.c",
+      "source": "outputs/rea/coex449-source26-bss-geometry-20261022T192600Z-r3/source/wlan/wlan_fwt_compat.c",
+      "bytes": 487,
+      "sha256": "cac94258272e9f7df805505cad378780248c998ef70de590127da3a73ba168d4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/chanset461-kernel.patch",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/chanset461-kernel.patch",
+      "bytes": 72931,
+      "sha256": "017c173057081ed47401414208a3d1c6b51e2bee4f53be491825d35256cdc030",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/headers/net80211/ieee80211_scan.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/headers/net80211/ieee80211_scan.h",
+      "bytes": 18540,
+      "sha256": "ce8aa604aef47981aec79f28fd01ce4412e7c7882c59882155fe11751bd9bfec",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/headers/net80211/ieee80211_var.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/headers/net80211/ieee80211_var.h",
+      "bytes": 99827,
+      "sha256": "f2f301bdf5283cc2c6e99453d39ff79aff909d464fc65c6dadef22d460b57017",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/result.json",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/result.json",
+      "bytes": 4458,
+      "sha256": "b07ce2246d74c0ba6e92c1ff34a0b854e37f3ed11e3e0dc8bac45501807e17f3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/board_config.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/board_config.h",
+      "bytes": 400,
+      "sha256": "6654f0ccce4caf24659ff4d6baced6fb709847d063ccd77c78443a0f3d0e5147",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/dma_cache_ops.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/dma_cache_ops.h",
+      "bytes": 633,
+      "sha256": "96f7914dda30dc484d2887f7b8b7db97dbabcfd26d01fe8d9fadb8dedfdb347b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/gpio.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/gpio.h",
+      "bytes": 416,
+      "sha256": "ec9f0f8e74ae336f12c5d460a4b0cab01dee1aaa7794abf38c2f4763f07fee45",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/kdump.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/kdump.h",
+      "bytes": 233,
+      "sha256": "67242abd1335e954da1f2bcccaaebea71b776baf93fd6ae64e35e20226612f6a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/platform.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/platform.h",
+      "bytes": 166,
+      "sha256": "3736f6f368212e15a579ed9cf820b8dc8b900be760fdd50b613c4c5a3f3a7f69",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/pm.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/pm.h",
+      "bytes": 267,
+      "sha256": "eb5a6bf8305b73c8a25099e0a8d4b27a2f687038cfd4df5d16ab891419bbaa32",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/soc.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/soc.h",
+      "bytes": 148,
+      "sha256": "64bca498fa4c29d1e3bab6bae1d56f1902fc701b5285272db406090ff7631f80",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/troubleshoot.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/board/troubleshoot.h",
+      "bytes": 472,
+      "sha256": "7e5b2ff25100cfbb2097b978cf6194dae7faab5a162589c4ae3d9964a17bbf2a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/gpio.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/gpio.h",
+      "bytes": 99,
+      "sha256": "195b97775c1e231f4cae4ec6fa579efe87d61c3a84a2dee03e8dc9b23d4529d3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/hardware.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/asm/hardware.h",
+      "bytes": 451,
+      "sha256": "778e9f99607c95d470fa17074eee90ef7aaa3509ac20f106aa17209c0b98946e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/current_platform.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/current_platform.h",
+      "bytes": 398,
+      "sha256": "5b546dc962dbefe6537c3db13fe0f65585bc60f3c4021525939adea01287e394",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/linux/config.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/linux/config.h",
+      "bytes": 70,
+      "sha256": "bbed9045704f192c50d4c68fec88f2678a08a20f4e089dc626cbb6fbfc0be718",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/linux/net/bridge/br_public.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/linux/net/bridge/br_public.h",
+      "bytes": 546,
+      "sha256": "0d49d79e719bcebe6fc68669984681117655fac7de627a03cdb1d7ca20e93695",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/linux/pm_qos_params.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/linux/pm_qos_params.h",
+      "bytes": 838,
+      "sha256": "88295077cf5b20a0ad3dd475655de2fb57c1b62254707e4d45503bff57247d6d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/openmitrastar_qdrv_compat.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/openmitrastar_qdrv_compat.h",
+      "bytes": 3968,
+      "sha256": "651d94fd4fc81b4d889103f8d64e3d5c6764758b55061ebdc935d0f361c878ad",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/qtn/br_types.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/qtn/br_types.h",
+      "bytes": 528,
+      "sha256": "9b56c5419e253c7abf6e0d540b7fc72f254f735367eb536c61935ad40cb162b1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/qtn/qtn_skb_cb.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/qtn/qtn_skb_cb.h",
+      "bytes": 1729,
+      "sha256": "e115c7a1491bbab189b6f89d21a03221c7a5c835c00150a695656b35984ce5e8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/qtn_platform_support.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/qtn_platform_support.h",
+      "bytes": 211,
+      "sha256": "f242a93ab72053145b323621a3fc54297b1592e537b4807889c974f5adc9bb2d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/trace/ippkt.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/trace/ippkt.h",
+      "bytes": 1380,
+      "sha256": "8f8f5ca4a1899e2ab9187931484109d8da701f80993d98deb5ecc3c3bedfd767",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/trace/skb.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/compat/include/trace/skb.h",
+      "bytes": 333,
+      "sha256": "6804434ce8ad570b810ffdff0ab20459538b82506723170efd008fe847a42149",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/f355_lifetime.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/f355_lifetime.h",
+      "bytes": 1436,
+      "sha256": "7a9042ef6b27f0cee01ea49376e61bac6abe00f2069d38331e4212dd518f2996",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/Makefile",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/Makefile",
+      "bytes": 1476,
+      "sha256": "7381dbe83f251410e6a880e9511dc9ceca171d7491c86466635d3fc1f71a31f4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_abi_v89.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_abi_v89.h",
+      "bytes": 16376,
+      "sha256": "a91c0808d8ad2dcfb2410ae8740563ac664eeebc5778b0fb6926a0a4bee13558",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_auc.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_auc.c",
+      "bytes": 4803,
+      "sha256": "70eb8cc1a7761addb9d14b48c97d5bc5362656137bb048fcd3238fd77891c723",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_auc.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_auc.h",
+      "bytes": 1084,
+      "sha256": "6725d51d84a574914536c11283fd99856270749b1bcb74fc65820ac9daece6eb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_bld.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_bld.h",
+      "bytes": 404,
+      "sha256": "4fe2e7693e096771809b14f225b55aeb68fc018fb97d824f52f7e7b09f9f58ff",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_bridge.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_bridge.c",
+      "bytes": 32204,
+      "sha256": "05bbba44e4cb1641deea8aed511dfa6d68198f25cd7bbb7b8a68387d37a867fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_bridge.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_bridge.h",
+      "bytes": 3966,
+      "sha256": "db05eaab018d9cc1fbe80c0cb740b1be1aad2453101186f62a74a13316e51c70",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_comm.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_comm.c",
+      "bytes": 26656,
+      "sha256": "56c5d3d660a512c17dfc3903f606d3dc529542bcdeffeb266d04ab1219113f40",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_comm.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_comm.h",
+      "bytes": 1139,
+      "sha256": "e8e83658405005027cefac985a0634cadf9bdc2471c42c79e70b1883b7cd09bc",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_config.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_config.h",
+      "bytes": 135,
+      "sha256": "6f2ee77f2040df44f37c77ea3552f49e9a141e32fdbddb71d507e7c6ebe84a97",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_control.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_control.c",
+      "bytes": 174490,
+      "sha256": "ae586fc6db8b94ce7d128309b7c3add6563fbc37907488726ac95fc02242d398",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_control.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_control.h",
+      "bytes": 3187,
+      "sha256": "6f0656cf77128f496213c74edfc97591eca792e7d5ab220f662a9378961274a8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_debug.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_debug.h",
+      "bytes": 3689,
+      "sha256": "1e01e89b2e47e7a3594e6ccc2baeea7e862312348991eeaea11e787f6e976c88",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_dma_wire.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_dma_wire.h",
+      "bytes": 548,
+      "sha256": "a9f6847592d7568a577de3fb260c1b705dd632c2a035454840fdf892db40d4db",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_dsp.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_dsp.c",
+      "bytes": 1844,
+      "sha256": "a8210e6df122dc38548a39e6004b534fece563b0af962721eb9e1955f31a560e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_dsp.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_dsp.h",
+      "bytes": 924,
+      "sha256": "8f49757755232a73eb200e9e8931093e935b61348a782e1cda60091f40e08af1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_f355_lifetime.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_f355_lifetime.c",
+      "bytes": 2550,
+      "sha256": "cc9e7520ec286c3f26b02510175dd9f9fb7f9096b55ee0c005558ca4f0198b67",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_f355_lifetime.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_f355_lifetime.h",
+      "bytes": 433,
+      "sha256": "75b70497d9f6a9f99f8b959c10e214ce16d5d7ac3eb4f11e6c4932cc9e4e9612",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_features.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_features.h",
+      "bytes": 1128,
+      "sha256": "e0f280b96f0a1f2d3d47c62046c05a08ccdda533153760105827cba7b679bf82",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_fw.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_fw.c",
+      "bytes": 8316,
+      "sha256": "0bdc6c022f3dfe8b19a3294f5697722e7b83a3124383aeac872a91c807746a78",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_fw.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_fw.h",
+      "bytes": 1241,
+      "sha256": "ec91cc1bbb1bf21f02add85863c58c3daa85b3483fd2a159c8a7fafd8a3c5444",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_fwt_compat.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_fwt_compat.c",
+      "bytes": 1372,
+      "sha256": "c92d173db3e4fc52be1496721192bdf26bc98639dfa220cda20542ad0c513cb1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_hal.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_hal.c",
+      "bytes": 9958,
+      "sha256": "9073f72099b28a93e8794282ae5b87d7d32fca0ee5ebaf9b90cc6716f64a6691",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_hal.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_hal.h",
+      "bytes": 1600,
+      "sha256": "6cdf94d4075b18a5532be930068efe02ad60aa8b4266275269ab9061c7991e6f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_hostlink.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_hostlink.c",
+      "bytes": 34301,
+      "sha256": "236089b781c9af1d5cf791694934f0dd72f9c119d21261b46d7db991b4e359bb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_kernel_compat.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_kernel_compat.c",
+      "bytes": 1946,
+      "sha256": "493de8af98db94c8feb70a71221cf3e37904a01edabcbb3e08000d4f3cca68d1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mac.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mac.c",
+      "bytes": 11337,
+      "sha256": "43946f44a7dbd5cfe71873175bbf6262e3224093eb5ef65a737a8061984a4e98",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mac.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mac.h",
+      "bytes": 4037,
+      "sha256": "0cdba30af6d70f085832fab93ab0e6eddbe1c3140c951033d2223a80217db2fa",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mac_reserve.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mac_reserve.c",
+      "bytes": 3976,
+      "sha256": "b1c97d65f4a8cb516634d36cb6f4a21a03a72e9703ec1d8f40f09c033528d67f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mac_reserve.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mac_reserve.h",
+      "bytes": 1188,
+      "sha256": "98d812ad7bd8616b324be5bf92db80312ac535e9131987f2a8e7df50e6696d83",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_math.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_math.c",
+      "bytes": 876,
+      "sha256": "c1045ac057bddda8f4a2f8c6a52d6ee7d4dca2c563d3e83883edafc71e8acc32",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_module.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_module.c",
+      "bytes": 10909,
+      "sha256": "cfecaacfe7256ed17458553a594cbf927a9923c1f6d119950fa5cfb4d7ed39a3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mu.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mu.c",
+      "bytes": 4898,
+      "sha256": "1dc0ca7d74c52afcfb49a3359473e542deee409e0a989155b947578a9a6ef85b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mu.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_mu.h",
+      "bytes": 930,
+      "sha256": "dd7d393342b347968726cd596ce547873a4a7265f8adee5053731e0311e781f6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_muc.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_muc.c",
+      "bytes": 3608,
+      "sha256": "daf6f06bf5d82ee84dcf66a9ff2706692e6e4a52d155817381d5a9a066f54fde",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_muc.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_muc.h",
+      "bytes": 924,
+      "sha256": "3f0fb4d12fcc307ef1ce8681c71b1f3d7519a1bf08d83c9879a14e9da6e94285",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_muc_stats.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_muc_stats.c",
+      "bytes": 39729,
+      "sha256": "d2b9ae154179138b8c80933ff7f1fc4d7600f20dfd52ec9f33412061d7e74768",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_muc_stats.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_muc_stats.h",
+      "bytes": 3150,
+      "sha256": "2a685c28c9ee35639b7e15dcd4f54a7086d184a7ec3a487e469191cde4671966",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_netdebug_checksum.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_netdebug_checksum.h",
+      "bytes": 128,
+      "sha256": "52dd7a821fcb65da5c6258f9d99d5cf9b4592afc845c6c0c87549ef9ceb3f77c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_pcap.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_pcap.c",
+      "bytes": 5968,
+      "sha256": "7185ef1ce323bae02d481ff102797bd615c18a46a9719d1b4bbe7d5c668459a5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_pcap.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_pcap.h",
+      "bytes": 1470,
+      "sha256": "4fd7b28b17b1237d0000c27e50d79922603cb123e91b3f2f11d5ed9f6003376e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_pktlogger.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_pktlogger.c",
+      "bytes": 53145,
+      "sha256": "f1ef936e9519e6bc2e75912b71f870011b8699936ed364b2221e189106732717",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_pktlogger.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_pktlogger.h",
+      "bytes": 3261,
+      "sha256": "990592fd84fc10afff04c97e4baf586f69e1ab3d497e11850f7f4925a7b95af6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_radar.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_radar.c",
+      "bytes": 58944,
+      "sha256": "c261b6777d9322a4baf641a37861bf588e754e5411f7f993ea16725d00c395dc",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_radar.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_radar.h",
+      "bytes": 1939,
+      "sha256": "992433b333f63ea08b14f84befebb347f8bf80e7097bee7702a2831887472aa2",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_radar_compat.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_radar_compat.c",
+      "bytes": 1804,
+      "sha256": "2f0401ff643896a3ef099f941359a4cbbf336ff6f601ccb46cad25c61fe16712",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_rx.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_rx.c",
+      "bytes": 74852,
+      "sha256": "7b1126f6ce00111ded62f36204d13736a51bdc94906b3de5f4308c7a7691ba2a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_scan.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_scan.c",
+      "bytes": 4959,
+      "sha256": "17cefa0744c2fe8bd00ccb0d29ca8ff0a5b4a013cc41d2b9caaf71df49d2145d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_sch.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_sch.c",
+      "bytes": 29700,
+      "sha256": "64edce498abe520db3c3fcb7a51505af750456b54284b1e2dc25af7519d99035",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_sch_pm.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_sch_pm.c",
+      "bytes": 3308,
+      "sha256": "b2a14cc8aff687f23b7d792fb0eb47cd0b3a3fb5940f791f521f17d02fb43812",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_sch_pm.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_sch_pm.h",
+      "bytes": 1274,
+      "sha256": "2557a0ba57133c728af6a710357514f4c7ac3a69a2396fbc8c8a7fb42ce9d2f6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_sch_wmm.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_sch_wmm.h",
+      "bytes": 1009,
+      "sha256": "7dc95e1b32177b0f9540639e8f22728e5d848d44efc4a9dcb95907b68686c618",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_show.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_show.c",
+      "bytes": 12521,
+      "sha256": "996ee4f1294ad79623f10f41c1c57bce98f8a47ee9c1cb99c74acdb11b05bda9",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_show.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_show.h",
+      "bytes": 1659,
+      "sha256": "78b3025636ba67cbca91303b7d04bf7a07b05a4a148067c77746d38b7c42ae7c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_slab_def.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_slab_def.h",
+      "bytes": 2576,
+      "sha256": "4ed06903cdbef21e3d812696b68ced031d55ff9d965c14ae80c486c913e8401b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_slab_watch.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_slab_watch.h",
+      "bytes": 152,
+      "sha256": "5cb3ae80b0c2f5f80244bd1ece1e5f968b4f8eb3405aac08b69ee6b4c62451e3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_soc.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_soc.c",
+      "bytes": 28362,
+      "sha256": "a179bebe0f469b4156e03139d6e06c99d51720c2bc9e292d5426a37d607603c4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_soc.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_soc.h",
+      "bytes": 5151,
+      "sha256": "a21236a19e0e37950bc8b0b294f8b9ae2f18bbc4b5bf9b2865caa478f5c940ae",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_tx.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_tx.c",
+      "bytes": 87130,
+      "sha256": "2f93045dc3937074300c571e1b5f1d49c95e51de91d8e00b0742db1177438c1d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_txbf.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_txbf.c",
+      "bytes": 21710,
+      "sha256": "953a080fd97c9f794cdce56decdc70be121439635d5e421282ead0c93ef143d8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_txbf.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_txbf.h",
+      "bytes": 1942,
+      "sha256": "649d561e00f4ecacf49bb8328c54d750cf5b50738d385c2b28ca03959f8b8098",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_uc_print.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_uc_print.c",
+      "bytes": 5739,
+      "sha256": "f8dc7d8b7101568c3ee0b92bb69b45aae972e0df241e6468ec2199d5e03e9d98",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_uc_print.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_uc_print.h",
+      "bytes": 1026,
+      "sha256": "b1d259990e2c753ef839fd1398982de6313851c649a4e8fdfaf22635a0442820",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_vap.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_vap.c",
+      "bytes": 22478,
+      "sha256": "8a7e19a8066392468797602735e6d78039ac6b5ab6bcdf1a5d5baa860d59f485",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_vap.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_vap.h",
+      "bytes": 5828,
+      "sha256": "1f9ea973f15ad341bf7064fdc319e56dfc3f4c25e8627f2ab9d4ecc60717533a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_vlan.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_vlan.c",
+      "bytes": 2737,
+      "sha256": "466b6e1263cdbb633d05e096287dfcaea967d59594897246d9c4778d65802eb3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_vlan.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_vlan.h",
+      "bytes": 1051,
+      "sha256": "0626e7203ef79e44b168de12b48b44e970c9cf12b388a52b7060c63e9ddeb50d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_wlan.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_wlan.c",
+      "bytes": 309084,
+      "sha256": "7801ca2b0b85cc2c33beecca2535e8231e5f5c64853a5669a179d69ac5a3dbfd",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_wlan.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/qdrv_wlan.h",
+      "bytes": 50826,
+      "sha256": "deaa788ae7b90cfd85d64bd59d5f4daec6b8ef04b71538f06686b5f8e7c45bcd",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/soc.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/qdrv/soc.h",
+      "bytes": 177,
+      "sha256": "54905b37dbe250218832f5c478a7b15fa60ff22ec6c2d12eac1ccf109bb592ff",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211.c",
+      "bytes": 106471,
+      "sha256": "1d2b8e6464d8e0f03eb9d7d91b2518f8ae484069e5f026a1d4359bbf6d56c02d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_acl.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_acl.c",
+      "bytes": 7815,
+      "sha256": "2592c8c83a60276851e0c8eec88bebbd2db949e82d53afc686ffb39412ae24ad",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_beacon.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_beacon.c",
+      "bytes": 20298,
+      "sha256": "4c253a21a481e19bc16d96f9483cfabdd10d10e0110186ee09504b79b63e98a6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_beacon_desc.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_beacon_desc.c",
+      "bytes": 19074,
+      "sha256": "9653fc07b44e31b6b3814fea43f26bd6898cc8953711fa7f604d5164baf12b31",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_crypto.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_crypto.c",
+      "bytes": 18373,
+      "sha256": "8b0dd020dfae158dd3bbe9baf7fe0614913e2b05b6bcbc0a0a28f80e0a020a9e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_crypto_ccmp.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_crypto_ccmp.c",
+      "bytes": 17900,
+      "sha256": "90aad4e58ac1ffb3f098a3eb065eb517665ce1ccffb4e630a9a24a7c47bd80c5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_crypto_none.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_crypto_none.c",
+      "bytes": 4520,
+      "sha256": "13bb0971a3eb6562abfb5501a430d12e960c4f6eba9a5683b085b08dc8f0fed7",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_crypto_tkip.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_crypto_tkip.c",
+      "bytes": 30212,
+      "sha256": "14202a45f14ede03add64eeafa9b4802594ff0b3f38b4478aff694a5302b9e2b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_crypto_wep.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_crypto_wep.c",
+      "bytes": 15649,
+      "sha256": "8148cd4acc02e1a618a047c8aa5ec16e8349e3bd18a2358f930f52634b673c37",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_input.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_input.c",
+      "bytes": 341633,
+      "sha256": "0a9fe5e65d41cdfcc13cdbf063673935c79bfd082726067cf354f06a00cb4c45",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_linux.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_linux.c",
+      "bytes": 28563,
+      "sha256": "db40c95e0bebbfef107c7035f6cafc4be4c32492e87cdc98745b8dd7d56b8b40",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_mlme_statistics.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_mlme_statistics.c",
+      "bytes": 18974,
+      "sha256": "aefed7036fd0630b19c34e00607f6f1de1b023476aa5e8459885ff35a42f12a5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_node.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_node.c",
+      "bytes": 120616,
+      "sha256": "2e3460805d7c1ee05902fada9dceb40c6e88c59ed4d5f7dece4b9262b3c95f27",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_output.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_output.c",
+      "bytes": 191847,
+      "sha256": "d26f520bff2d54d058b330944b4ed30ab921a854288dcbd7b257a599d214cd3f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_power.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_power.c",
+      "bytes": 10193,
+      "sha256": "7e95aa12acf29f852eefa26bcc6870177a3bcb70e3da1ccc0086e41f1b0340fe",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_proto.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_proto.c",
+      "bytes": 71109,
+      "sha256": "06bda8e42fc757dcf92c46eaf5b74b3d7c4f2a944ef8e89b52d2ae2ff28512c5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_rate.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_rate.c",
+      "bytes": 3637,
+      "sha256": "289e8aecd31b945659003ee65a3923b716a8784e5ef2df5daf3b9c40a3117fe5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_scan.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_scan.c",
+      "bytes": 62502,
+      "sha256": "5d2dcc8878be78849b964665bfb51ef75827be67eeea798c71ca5bc7a1f6d42f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_scan_ap.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_scan_ap.c",
+      "bytes": 34627,
+      "sha256": "8ba977a250dab981c8ef394b171b0b41fc8058915784766348db8dca21a23d9a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_scan_sta.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_scan_sta.c",
+      "bytes": 50055,
+      "sha256": "73e0b28b5e74693bd3b50c72883df46dc238201da2232dc066bdef76badd5d93",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_tdls.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_tdls.c",
+      "bytes": 129155,
+      "sha256": "073fdd13f9cc304ab39450d8838b16e953862ec954f9c6e2bcb003340cd581bc",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_tpc.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_tpc.c",
+      "bytes": 10611,
+      "sha256": "4f784c885634221281e8f19a05dc8f21bbed62f4a65bf958f68a415f4febb9d3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_wireless.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_wireless.c",
+      "bytes": 676600,
+      "sha256": "9ee5011ecf663a3ebee5dc29ec8aea2fe197a78b8dce7db57c195ace7499f776",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_xauth.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/ieee80211_xauth.c",
+      "bytes": 3616,
+      "sha256": "5feaec3e92676651a090e6dd8e1d4cae2d70738843c8156df30afc601eb01745",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/if_media.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/if_media.c",
+      "bytes": 13136,
+      "sha256": "6fda06d57cf55daeb0256e6aec69e166592f1860d16ec0f972da9eecf27f38e0",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/openmitrastar_beacon_preflight.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/openmitrastar_beacon_preflight.h",
+      "bytes": 933,
+      "sha256": "5043d3f04160269e3bda6b5badb576dd7db7c1e66d632b368989f04449e9bb52",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/openmitrastar_chanset_kernel.inc",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/openmitrastar_chanset_kernel.inc",
+      "bytes": 14434,
+      "sha256": "42cad6124219aeb9278f81eadc52cb0438d2cbe2bdc8cac572e5a3b9db37af93",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/openmitrastar_chanset_recovered.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/openmitrastar_chanset_recovered.c",
+      "bytes": 19113,
+      "sha256": "72458854f8208e6fb4ae2e4265df9ad6da8ac89085947433623bb15c8ce68408",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/openmitrastar_chanset_recovered.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/openmitrastar_chanset_recovered.h",
+      "bytes": 4802,
+      "sha256": "bd0dd1247dbd534a0461e1462b4270c38e247bdf593cb721ff3f4d2a559e4245",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/openmitrastar_chanset_tables.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/openmitrastar_chanset_tables.h",
+      "bytes": 10259,
+      "sha256": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/release.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/release.h",
+      "bytes": 2085,
+      "sha256": "ee4f529b52e004517d502fbbcfb88d484c877a90af0f3af5f2a1b4168d25e8bf",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/version.h",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/version.h",
+      "bytes": 1983,
+      "sha256": "1d6edc89dc9d52a1a7f8794e8030739e88bced883fc0a43aeb9f586dd6ecf8bb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/wlan_fwt_compat.c",
+      "source": "outputs/rea/chanset461-kernel-adapter-20261022T192700Z-r13/source/wlan/wlan_fwt_compat.c",
+      "bytes": 487,
+      "sha256": "cac94258272e9f7df805505cad378780248c998ef70de590127da3a73ba168d4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-coex26-qualification-r3/complete-module-audit.json",
+      "source": "outputs/rea/driver5g-ops-20261022-coex26-qualification-r3/complete-module-audit.json",
+      "bytes": 6434,
+      "sha256": "59f9387c5e5d7d11c0661184b782b02ced1836e26bf3af1e3044feb7ffa41382",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-coex26-qualification-r3/qualification-input-pins.json",
+      "source": "outputs/rea/driver5g-ops-20261022-coex26-qualification-r3/qualification-input-pins.json",
+      "bytes": 652100,
+      "sha256": "6b7fe1ee1b47700879bfba94f259c43346a16596061b4c88cb40e3df74113be4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-coex26-qualification-r3/qualify_hgw5g_coex26_r3_closure.py",
+      "source": "outputs/rea/driver5g-ops-20261022-coex26-qualification-r3/qualify_hgw5g_coex26_r3_closure.py",
+      "bytes": 9161,
+      "sha256": "1b8ef46e95c1a10da5ee2deda0335858c67e68bae881f556b93c960c7fa6136a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-coex26-qualification-r3/result.json",
+      "source": "outputs/rea/driver5g-ops-20261022-coex26-qualification-r3/result.json",
+      "bytes": 3196,
+      "sha256": "4bd311834052a7b421094bd148f61a341b71c41efbfdff10a2f301c0b095adb3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/coex449-r3-independent-final-modules-20261022T220300Z-r1/result.json",
+      "source": "outputs/rea/coex449-r3-independent-final-modules-20261022T220300Z-r1/result.json",
+      "bytes": 10456,
+      "sha256": "961e08fb17444daff7d7c9491301a37f73af55f1f733fa4ec2ba709db5c702b3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/coex449-r3-independent-final-modules-20261022T220300Z-r1/seal.py",
+      "source": "outputs/rea/coex449-r3-independent-final-modules-20261022T220300Z-r1/seal.py",
+      "bytes": 2967,
+      "sha256": "cf93e8e7e6ced1d2b1b9c01aac40522cdf9204170e040e658b4ac256a0bc8f27",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/coex26-handoff-20261022T191800Z-r3/HANDOFF.md",
+      "source": "outputs/rea/coex26-handoff-20261022T191800Z-r3/HANDOFF.md",
+      "bytes": 7371,
+      "sha256": "91e767d6e99796cdacb38569d4dee66c4c44a21c8161492565dfd063f9d6807e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/coex26-handoff-20261022T191800Z-r3/remaining-records.json",
+      "source": "outputs/rea/coex26-handoff-20261022T191800Z-r3/remaining-records.json",
+      "bytes": 8267,
+      "sha256": "d38b1d6ffc8ca3144e576a32589d0458dcdb614f5fd5572838657b644c2f41c2",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-kernel-adapter-syntax-20261022T192800Z-r13/input-pins.json",
+      "source": "outputs/rea/chanset461-kernel-adapter-syntax-20261022T192800Z-r13/input-pins.json",
+      "bytes": 197258,
+      "sha256": "4324500d3040dfbf65109b6ae632d85c4a0cfb030a20302b7a748b00aafae039",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-kernel-adapter-syntax-20261022T192800Z-r13/result.json",
+      "source": "outputs/rea/chanset461-kernel-adapter-syntax-20261022T192800Z-r13/result.json",
+      "bytes": 531,
+      "sha256": "3fadfc67a2fb78bea79f641ac2ed3ffa28dd1bea84d737f4235b4a957135f9eb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r13-independent-kernel-fixed-20261022T224600Z-r1/actual-kernel-review.c",
+      "source": "outputs/rea/chanset461-r13-independent-kernel-fixed-20261022T224600Z-r1/actual-kernel-review.c",
+      "bytes": 23535,
+      "sha256": "5f0badb5a8abb08d73c1c87074308d8e575af910845fbe403bef21c01ba4c6cc",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r13-independent-kernel-fixed-20261022T224600Z-r1/compile.stderr",
+      "source": "outputs/rea/chanset461-r13-independent-kernel-fixed-20261022T224600Z-r1/compile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r13-independent-kernel-fixed-20261022T224600Z-r1/result.json",
+      "source": "outputs/rea/chanset461-r13-independent-kernel-fixed-20261022T224600Z-r1/result.json",
+      "bytes": 2192,
+      "sha256": "a039cefec1bb5fd0cf0959cc794a70b747e46ac2130c1bcce87d564e04928ef8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r13-independent-kernel-fixed-20261022T224600Z-r1/run.stderr",
+      "source": "outputs/rea/chanset461-r13-independent-kernel-fixed-20261022T224600Z-r1/run.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r13-actual-vdetach-fixed-20261022T224500Z-r1/actual-vdetach-rearm.c",
+      "source": "outputs/rea/chanset461-r13-actual-vdetach-fixed-20261022T224500Z-r1/actual-vdetach-rearm.c",
+      "bytes": 5799,
+      "sha256": "ce662079ac07b167d4a8aa480fad791ad3511012d0da5e13c0b29a8c6ebbcaca",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r13-actual-vdetach-fixed-20261022T224500Z-r1/compile.stderr",
+      "source": "outputs/rea/chanset461-r13-actual-vdetach-fixed-20261022T224500Z-r1/compile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r13-actual-vdetach-fixed-20261022T224500Z-r1/result.json",
+      "source": "outputs/rea/chanset461-r13-actual-vdetach-fixed-20261022T224500Z-r1/result.json",
+      "bytes": 615,
+      "sha256": "683343486cea19f8c3ac2fef73061431cf3d273e54eb1e0c6c03d8117298d818",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r13-actual-vdetach-fixed-20261022T224500Z-r1/run.stderr",
+      "source": "outputs/rea/chanset461-r13-actual-vdetach-fixed-20261022T224500Z-r1/run.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r12-actual-start-guard-20261022T224000Z-r1/actual-start-reservation.c",
+      "source": "outputs/rea/chanset461-r12-actual-start-guard-20261022T224000Z-r1/actual-start-reservation.c",
+      "bytes": 26771,
+      "sha256": "91cb751c00858abf984ae66c4974879c39efb6a3deb2ae27bac5ec5610965556",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r12-actual-start-guard-20261022T224000Z-r1/compile.stderr",
+      "source": "outputs/rea/chanset461-r12-actual-start-guard-20261022T224000Z-r1/compile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r12-actual-start-guard-20261022T224000Z-r1/result.json",
+      "source": "outputs/rea/chanset461-r12-actual-start-guard-20261022T224000Z-r1/result.json",
+      "bytes": 1849,
+      "sha256": "a3fd9ddb3db8c34de80506cd38eb1ab44d1dd8d416dc3f221547da6e27c01c08",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/chanset461-r12-actual-start-guard-20261022T224000Z-r1/run.stderr",
+      "source": "outputs/rea/chanset461-r12-actual-start-guard-20261022T224000Z-r1/run.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/chanset461-r13/test_chanset461_kernel_critical_review.py",
+      "source": "tools/test_chanset461_kernel_critical_review.py",
+      "bytes": 15636,
+      "sha256": "7d09ab6eb7e4be16885216757f8cd33cf1e5706d0548c6722d86e6b15547f0c6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/chanset461-r13/test_chanset461_actual_scan_start.py",
+      "source": "tools/test_chanset461_actual_scan_start.py",
+      "bytes": 6735,
+      "sha256": "99e9f725cbe3ffa8097e2097760c4c2bd42a268e87120edd9f1b34411791d916",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/chanset461-r13/test_chanset461_actual_detach_rearm.py",
+      "source": "tools/test_chanset461_actual_detach_rearm.py",
+      "bytes": 5998,
+      "sha256": "c7d0e1203b85ba82d61bc961e1ee75462c00b013afb578de9367b501214bf704",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "hardware_accessed": false,
+  "selected_combined_qualified_records": 29,
+  "coex449_scope": "qualified separately on CoC25; combined30 pending",
+  "chanset461_scope": "r13 source and bounded fixtures only; unqualified full flow"
+}

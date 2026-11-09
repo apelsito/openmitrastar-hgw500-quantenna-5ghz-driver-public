@@ -1,0 +1,1869 @@
+{
+  "qdrv": {
+    "status": "SOURCE_IDENTICAL_HEADER_ONLY_COMPILER_DELTA_INVENTORY_NOT_INSTRUCTION_EQUIVALENCE",
+    "changed_functions": [
+      {
+        "key": [
+          "qdrv_control_get_br_isolate",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 68,
+        "new_bytes": 68,
+        "old_sha256": "e6350c7ce96bb4211e611b1394234c9071fb6c5cf097fb706dc9cd86624568f4",
+        "new_sha256": "503c7166dcb0415288f4f27fc830f4c25b41b9f284ba52ae8ff85afb178bfc21"
+      },
+      {
+        "key": [
+          "qdrv_command_bridge",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 508,
+        "new_bytes": 508,
+        "old_sha256": "c9f88c8554c17de2bd201c956ddae116d656f72426d79c863aa0ed7381bfcf1b",
+        "new_sha256": "9482a9052ff10b34005d573a092dc55be723f582aa9ad34d67df0e295a1452f0"
+      },
+      {
+        "key": [
+          "qdrv_command_memdebug",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 566,
+        "new_bytes": 566,
+        "old_sha256": "319739235aead489663ec5a9d5de5cb6cd5598a38fffbe72d877d055cceab5a0",
+        "new_sha256": "5737934eff6ebfe8bb80e870cd8014fc21a4dea093ce20e08780956055764425"
+      },
+      {
+        "key": [
+          "qdrv_show_uc_rx_stats",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 756,
+        "new_bytes": 756,
+        "old_sha256": "a90e35567185b32f59c57d024f626cbe765db7b0321b5ab4bc2df25b5b0ad459",
+        "new_sha256": "21334108a31102df288b80caba2464004299140c3299d9ac52b6ec2224fb6b4c"
+      },
+      {
+        "key": [
+          "qdrv_show_uc_tx_stats",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 226,
+        "new_bytes": 226,
+        "old_sha256": "2b188b21d5e10e437b5ffefbb73219c207405bbc442f59b292e1e5e3306a0d2e",
+        "new_sha256": "73201e5df549383fb03d65d5e665d8e11f075468c7ce18fed07154f8e9228d71"
+      },
+      {
+        "key": [
+          "qdrv_command_muc_memdbg",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 438,
+        "new_bytes": 438,
+        "old_sha256": "7201b4b05fce211b5b11fa8f6b687ea9fdfd19935d62cbcebfdcbb049b8e4d2f",
+        "new_sha256": "1763ad4a8fb858af7d2c0b02d13ed262f16334bb33d59025829e294f39f4d28e"
+      },
+      {
+        "key": [
+          "qdrv_command_set",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 4592,
+        "new_bytes": 4592,
+        "old_sha256": "97a3c1bbd08c9b06fa52151f45d4fc4c704f41528d1868f8a5d4a8d1519a7e59",
+        "new_sha256": "42c057df2ece89d8476224dac7c1fb3e7f2fcdc2fe63d3b05310a2be1f3e3421"
+      },
+      {
+        "key": [
+          "qdrv_command_calcmd",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 3804,
+        "new_bytes": 3804,
+        "old_sha256": "15ad1f1e59d4cc12cf749666bad36cd4be4889a257710e61bfb88cd2ff407f07",
+        "new_sha256": "85773f078a32613014e7ff1b83e839aeab849a1ef0145134786d8cdd200e81db"
+      },
+      {
+        "key": [
+          "qdrv_command_get",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 2738,
+        "new_bytes": 2738,
+        "old_sha256": "c60a0998dc07a19160f76c863b5c3e46f765c441de59e4b175bebdefeec4eca0",
+        "new_sha256": "3feaa5648e16cd650bd2769998f836eeba93bf59ece1d60dfdd9d4a39c6faf41"
+      },
+      {
+        "key": [
+          "qdrv_wlan_stats_prot_ip",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 280,
+        "new_bytes": 280,
+        "old_sha256": "6e98120d965ab71b3a7277f4766e7eddd991bdc89a680cafd01cc8eab8e4b76d",
+        "new_sha256": "8caf64dcc914b3e448507e805dd638e57d6b6ce73d8b4fbfa23d03834fe9a39c"
+      },
+      {
+        "key": [
+          "qdrv_wlan_muc_node_thresh_set",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 148,
+        "new_bytes": 148,
+        "old_sha256": "49da29e38f48dfea1603d1e5f1804dd85bfe92ed0732dd28691236f0caee1544",
+        "new_sha256": "74249aa8047e25f85a08aa47dae13da9efb68bd28a56778ef1ee49a189953cca"
+      },
+      {
+        "key": [
+          "qdrv_wlan_80211_start",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 162,
+        "new_bytes": 164,
+        "old_sha256": "99693eb56e7b4f0c44c52efa5ad1f2e903688b0b4a9acff1f62c39eca3755763",
+        "new_sha256": "b4c947b52b52e93578c59bd65cd7ae40f34f284a9f7d050a4615a63ba912b1ea"
+      },
+      {
+        "key": [
+          "qdrv_show_wlan_stats",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 2222,
+        "new_bytes": 2222,
+        "old_sha256": "b9c0de6bb597617d4000ae872bdcd1502e275ec965f5b6950dc3fd8756f812aa",
+        "new_sha256": "5611c5cd74f0d158e6109bbfecf233fcd98350c97c33d475c0480cda6b7579f1"
+      },
+      {
+        "key": [
+          "qdrv_wlan_show_assoc_queue_info",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 228,
+        "new_bytes": 228,
+        "old_sha256": "f5517afff9406bbfe3141ea216212a1f39009caf2bd1f0cc544a78ae8270c9f1",
+        "new_sha256": "eb2b2fbbe66144d9c4c52df105b02b378de3664c4bb8c1dbf5dd8c66e35395d5"
+      },
+      {
+        "key": [
+          "meas_work",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 508,
+        "new_bytes": 508,
+        "old_sha256": "2da56f1376799dd72cf50f029f1a2d7b32580bd4cf2d48158230689e0eb0c353",
+        "new_sha256": "9ec329351aeaadfac344bacc99e0e1af873fbbd6f2c8d736a678b56184050275"
+      },
+      {
+        "key": [
+          "csa_work",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 232,
+        "new_bytes": 232,
+        "old_sha256": "747dfcd9648eae2618647da9953d7bacc2e932cda09443937c18d2349f66e0e1",
+        "new_sha256": "49f754efcd0a427952efe7f89a80613e4a4487743957215c7535de140087c58b"
+      },
+      {
+        "key": [
+          "set_rates",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 710,
+        "new_bytes": 710,
+        "old_sha256": "4ec72363e41534dca857c4e9be42a372a03feead6610436122e5067766e00571",
+        "new_sha256": "5ba739cc86df799bfdc879e9ba53ba4c57e7af32dde34023d81971d262e1d7f6"
+      },
+      {
+        "key": [
+          "qdrv_pm_notify",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 384,
+        "new_bytes": 384,
+        "old_sha256": "2e36e648c29b568e15644eb22cd35527d61836ef967971a353944a7dad2b9cda",
+        "new_sha256": "5d293ff178f997069c043293bb4d2c9c69d83a52c1876590f365a0ea0259abf9"
+      },
+      {
+        "key": [
+          "scan_work",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 234,
+        "new_bytes": 234,
+        "old_sha256": "529d719adbde8441e5eea2aac8002c4e39bf0d3ba2e34a2faf55c4babbe18340",
+        "new_sha256": "a8f56fa3b6c0cb576008d211114d2adee5b547b6642e9e0eca07daa72a11a30d"
+      },
+      {
+        "key": [
+          "cca_work",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 370,
+        "new_bytes": 370,
+        "old_sha256": "953d66fd16ea9978e23f95ac5a8b62018df0ac9671b2906a9c556b02bc1d2f06",
+        "new_sha256": "c99c5666a1595a37321f0b0d6198bf4dad8c50bd6900c5fd196a649413ecd10f"
+      },
+      {
+        "key": [
+          "channel_work",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 28,
+        "new_bytes": 28,
+        "old_sha256": "e58cca56b59ecc34e1d1e430a665f4e6c1ee5678d148c5ceb9006f1436ae151a",
+        "new_sha256": "87a8d5a4ebc39e3a4c2adca026909fb454a29e6293283f925ac18751dbb7aa16"
+      },
+      {
+        "key": [
+          "remain_channel_work",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 114,
+        "new_bytes": 114,
+        "old_sha256": "d5c094b275b9d3bf7aac524280a2eae2101ac5d2d028a6a3654c2248c9a05ff9",
+        "new_sha256": "93f351bdd01abdd58300b967de08abb9566b44109aeed8387198ad7c4c73e16e"
+      },
+      {
+        "key": [
+          "qdrv_set_channel_deferred",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 698,
+        "new_bytes": 698,
+        "old_sha256": "8cea5599d7fe391decb845d35956054a2dd9a0778f5a1f6de97635a29bf4ae8e",
+        "new_sha256": "4f73341b0d15a189bdce37de2dcaf3879a30274571600b2e3a5a944ba17bc0ff"
+      },
+      {
+        "key": [
+          "qdrv_set_channel",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 408,
+        "new_bytes": 408,
+        "old_sha256": "2b2e6f99db77e30d6d50ee0cf5350f931c622526aa8d8d4999297818c0d5333b",
+        "new_sha256": "3f17f4006a7075eb7c0adadc67d49abf9e8ba37dccc02b889b20f77066cd0e8d"
+      },
+      {
+        "key": [
+          "qdrv_remain_on_channel",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 694,
+        "new_bytes": 694,
+        "old_sha256": "1844a14ea37965b08ea5eafe7f01afc521b5abd9dc8204622beacc2754697ac8",
+        "new_sha256": "e0b8b1dcaff93c7e95d3116b241b9bbf1a5d0f2f5b28396dc88799becae3c435"
+      },
+      {
+        "key": [
+          "qdrv_wlan_80211_get_phy_stats",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 22,
+        "new_bytes": 22,
+        "old_sha256": "d182e3054c214c6e0b61af14e8cbf5851c6197f1774c6cd85dc4e8e3ee744735",
+        "new_sha256": "35c1fcef9363aa7d64d257618c998c4ac5c9d4a78d02551988ca7bf2c85eb390"
+      },
+      {
+        "key": [
+          "qdrv_wlan_enable_hr",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 154,
+        "new_bytes": 154,
+        "old_sha256": "34e58c6b952c75feeb0ae1b9057b51d38e1d6f2513fcbae833354d0d78f2cb0d",
+        "new_sha256": "524dc44fb66826907c1dc72916dc095092c2b2f4b590a37247980d95241c26a7"
+      },
+      {
+        "key": [
+          "qdrv_node_free",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 274,
+        "new_bytes": 274,
+        "old_sha256": "83d377aca2097c8347d917500a4f6ce9a632df8d1501cb9752889bac760fb36c",
+        "new_sha256": "bc82ac5b6d944ebd25a3aba09a0837181cb84ce182933d5d96eab731bc44a9f9"
+      },
+      {
+        "key": [
+          "qdrv_node_alloc",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 688,
+        "new_bytes": 694,
+        "old_sha256": "6ea4550e5293f1bb66cdf62f827693ed0e72e0112752ccdc1b542b812f8a572f",
+        "new_sha256": "61b07b821e9f82c36d73299cd89c161c8072820604773f30a85a963a9f3ea1e2"
+      },
+      {
+        "key": [
+          "qdrv_troubleshoot_start_cb",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 84,
+        "new_bytes": 84,
+        "old_sha256": "08e242b653297acec078678c0c53f8f826d642a998949c6335e4045cdf5d9c30",
+        "new_sha256": "bec3abf14712003a884bf71c42fb1831cd358ab04734b1ac88d1fa22c65b8096"
+      },
+      {
+        "key": [
+          "qdrv_wlan_igmp_query_timer_handler",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 650,
+        "new_bytes": 650,
+        "old_sha256": "a0e59119df69ba7a8dc730bacd84ff708573d9dd4c947edb25a639b5c53abadc",
+        "new_sha256": "b09d83ba4aede46e8805de5d2f241b5adb6a2194b897907b69da3167ce58b0fa"
+      },
+      {
+        "key": [
+          "qdrv_wlan_auth_state_change",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 946,
+        "new_bytes": 946,
+        "old_sha256": "4dabb87e6c13c36cdeeb7e053a7b3111da3dfeb6403f0449a9150a000af07268",
+        "new_sha256": "905fecfefbaf469f6e0daff5eff597fb0e7d6e99b4d704ab6e21c4078790adfc"
+      },
+      {
+        "key": [
+          "qdrv_txpow_cal_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 734,
+        "new_bytes": 734,
+        "old_sha256": "076f6967e07f5bf033a24c3c900cdca137af50a8db4d650cfc208c205ccb81cb",
+        "new_sha256": "2ac93965465a0c0cd39ed20f3acc3ab459bc15c1a715090fef72cd39e34cdb23"
+      },
+      {
+        "key": [
+          "qdrv_scan_irqhandler",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 104,
+        "new_bytes": 104,
+        "old_sha256": "4d184c923f0f9f80e47892db0ddf468488356a5424d946ab2dfcee52407a6db4",
+        "new_sha256": "d28f057cc12829befb8f7f41b56304859bacf122afa0871b82595bd93e3c7aa3"
+      },
+      {
+        "key": [
+          "qdrv_meas_irqhandler",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 14,
+        "new_bytes": 14,
+        "old_sha256": "4fa47f4dc41a623a3b9602389daf7cdec8c8695b6a4e3a7ab80216dee16cf593",
+        "new_sha256": "5a61bd25668962a5f2d73c77d3cb70e1d88d4f3fa1ac1a5a2d7915ed079f8447"
+      },
+      {
+        "key": [
+          "qdrv_cca_irqhandler",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 60,
+        "new_bytes": 60,
+        "old_sha256": "7356bb2222fcc390a967b85ca62c301c1f6cf7f65458f9ed46ceec0b23428b84",
+        "new_sha256": "86c186e5b1558b9ca943629c1fc5714fd5a3245c20046e1b31798ff16d411860"
+      },
+      {
+        "key": [
+          "qdrv_csa_irqhandler",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 308,
+        "new_bytes": 308,
+        "old_sha256": "44cafbf913bb7c9bdfa7b1e4664d968a2f7c511afd05f4e91b9d10582e9ab434",
+        "new_sha256": "27b88cbfd79e7120ce62ba1237e0eab9c5fd242088b6758adfbf2a0ad472b919"
+      },
+      {
+        "key": [
+          "qdrv_wlan_80211_beacon_update",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 298,
+        "new_bytes": 298,
+        "old_sha256": "97305ace8685b24fb19dd73de8f548d7cc72311d59ba022b2777e05b59254e48",
+        "new_sha256": "50a1d68b3801278b48a203802b1c786c24fc96e91570cdd918280cf45b1f12b4"
+      },
+      {
+        "key": [
+          "qdrv_wlan_80211_getparam",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 3044,
+        "new_bytes": 3044,
+        "old_sha256": "0f14e8cd062e39b51ba9e43ee8e571e53ccf652c7c370fafce22af104c55c416",
+        "new_sha256": "18698a7fc06c1fa737292595c3db691816d970a52ac5d570281e9beeeaa260a4"
+      },
+      {
+        "key": [
+          "qdrv_wlan_release_ocs_frame",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 208,
+        "new_bytes": 208,
+        "old_sha256": "7595c8bc201bf052b2d2a5013e84cd4e41ec11d9adc9eba8e6d30f0665530b96",
+        "new_sha256": "ce176b9a81599fde7ea9271d6ba4fe9a8d4ea2c1e74afcd67bf3bbe2f0db55c6"
+      },
+      {
+        "key": [
+          "qdrv_wlan_get_ocs_frame",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 554,
+        "new_bytes": 554,
+        "old_sha256": "35184c2d84a89bfe094975eea037fa1e7bc063ed4019633bdf73f19a036eb6b5",
+        "new_sha256": "181bc18ecd22181b6eb7db5aa0a8f717dd65fc2dfc945baa77158cc74535653b"
+      },
+      {
+        "key": [
+          "qdrv_set_ocac",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 718,
+        "new_bytes": 718,
+        "old_sha256": "ad3ac15714d9c9c6ae426f714004a4e1c6d9f5a3a0e68b94e10b4a82d24e04c5",
+        "new_sha256": "50424796af419aa1123ec3d5143dfd3c5bf11a5ce642ff42231a1c42bff474fd"
+      },
+      {
+        "key": [
+          "qdrv_sample_channel",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 1054,
+        "new_bytes": 1054,
+        "old_sha256": "0e22e4c3556ac86b0cc96f3267988a41dedd8e94a1deda788658f8f6bc8646ae",
+        "new_sha256": "4c495211fcf536ef9325cc8e5c7e4f518dc81ab8ee5fe25d9436a8755aeb0087"
+      },
+      {
+        "key": [
+          "qdrv_bgscan_channel",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 1190,
+        "new_bytes": 1190,
+        "old_sha256": "ba69007e81a3c3bcbd89d15f086690a322a58461e4204d41c628d9c085b1c062",
+        "new_sha256": "6cbf2f9c814984e6043223ea69a4128f76bc93728f6ef9e885f60bb601b09cfa"
+      },
+      {
+        "key": [
+          "qdrv_wlan_beacon_work",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 2024,
+        "new_bytes": 2024,
+        "old_sha256": "60230eda214527feb9098a84d13a7478960756e3ceb6b5b3ed6b990b32aceb32",
+        "new_sha256": "415e740b24bbdd8eae4d2ae9911ca90612baf9709b9e24250de797bbaade64c6"
+      },
+      {
+        "key": [
+          "qdrv_wlan_80211_setparam",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 4334,
+        "new_bytes": 4334,
+        "old_sha256": "d397b3f9c606872c4ff9fd0756f79a18b1753076e49d39e14372e463aefb665f",
+        "new_sha256": "2b3f14e5010b492c5f27deaccea6118635a23740cfff08530dbe148ece090524"
+      },
+      {
+        "key": [
+          "qdrv_tx_dropped",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 48,
+        "new_bytes": 48,
+        "old_sha256": "a17f5cbee4f117055b7b1d27972001bbc98015773a7fb24c9b226cd69bb3dc0d",
+        "new_sha256": "dad6451cb4bb03a2e6c4f5558929713b1379347be4d75e46097352002a210724"
+      },
+      {
+        "key": [
+          "qdrv_tx_sch_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 36,
+        "new_bytes": 36,
+        "old_sha256": "211abc33ecdedf8d360513d9b5a3bcb764e9be0e0dfdde68423783b2ab4eb565",
+        "new_sha256": "32f6856e4f5401352ab7e0b69eced403d2693b62a52400cb083c9dc2b2f70f37"
+      },
+      {
+        "key": [
+          "qdrv_tx_skb_return",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 184,
+        "new_bytes": 184,
+        "old_sha256": "8160ec5df0a8785a273d1a757d3846a67fb6076806b1d2fcabdae902eb98a1c2",
+        "new_sha256": "a38e47a54d3e7edfac74a00424f9ba1794547810653088d6171d2a8b92017737"
+      },
+      {
+        "key": [
+          "qdrv_tx_unauth_node_data_drop",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 156,
+        "new_bytes": 156,
+        "old_sha256": "4c2eb4e60e7db250ae1702557eb98128caa4452ca9a18d993033bad2140f19de",
+        "new_sha256": "38a34c8ed5fab28c39c38d777e16f925d0c66cef200be5cd1cfe5cc3127902f4"
+      },
+      {
+        "key": [
+          "qdrv_tx_alloc_txdesc",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 272,
+        "new_bytes": 272,
+        "old_sha256": "0318a999426a788975d0545c180f3c031e2463416aae376c054b41a52bbd4429",
+        "new_sha256": "6d6deb89acaef9f36865597be6187ebd40abc71ead64d629a79e6b051cc4011b"
+      },
+      {
+        "key": [
+          "qdrv_tx_enable_queues",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 102,
+        "new_bytes": 102,
+        "old_sha256": "e71c5114ebd412d1df4df4c914980b01aea4e97d3fdb05f8904528b0ce0a8924",
+        "new_sha256": "fbe5c78bdaa6399327ee6d3e2883b38d8357c0115e6b50b93e46f93638a0e0f4"
+      },
+      {
+        "key": [
+          "qdrv_tx_sch_enqueue_to_node",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 1634,
+        "new_bytes": 1634,
+        "old_sha256": "03e68daa2444373a1aff1f4a330d97090c8f2857fe844693ad7942f64ae0c2ef",
+        "new_sha256": "14a5e8670ddd1e522adc5d5fcdaf247a4c71aae17a23782479c78fd6e52ab200"
+      },
+      {
+        "key": [
+          "qdrv_tx_disable_queues.part.0",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 276,
+        "new_bytes": 276,
+        "old_sha256": "07438f09645873ef6948a3a512e7fe4d7d36b3b78e8e78ed5ae0028d5dcb4102",
+        "new_sha256": "e7cf03e3be064fa92b83fe586773b4b76060baa6eb96f3737d4b7905ebef97a5"
+      },
+      {
+        "key": [
+          "qdrv_tx_sch_dequeue",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 722,
+        "new_bytes": 722,
+        "old_sha256": "024236b3c85dc858159530a47ab6599ab16ec629668b5e8f6496ab2d159b5266",
+        "new_sha256": "aefb1dd79a8239ce5ed9f30c1ef9a2279b1dadc239d18b74ba2d20632bf63a40"
+      },
+      {
+        "key": [
+          "qdrv_tx_done_irq",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 498,
+        "new_bytes": 498,
+        "old_sha256": "de2aaed6f719e736fecbef73557d353f1762799478c0bc0f36c8adc8ec01daf7",
+        "new_sha256": "5aed113bd98303c1552633d0e72f63753b58558d27b85d33f863824ba256daec"
+      },
+      {
+        "key": [
+          "qdrv_tx_prepare_data_frame",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 2506,
+        "new_bytes": 2506,
+        "old_sha256": "d733e0567b31b5b6157f4f9358445cdb7ecc2317891c97d445f93cf90bed7976",
+        "new_sha256": "ef518d745b1c0ee53d66d87eede2489bb6e4edcab4533d802bd60d2279f44513"
+      },
+      {
+        "key": [
+          "qdrv_tx_copy_to_node_cb",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 324,
+        "new_bytes": 324,
+        "old_sha256": "bb1ce2947beb352932b6f3ec56d21978216ff8077af0f1a4a17b1e6b25188264",
+        "new_sha256": "a5119d59cedb3eaf27109dda79875451a74f4dcf63d714c385c6c3942e330aec"
+      },
+      {
+        "key": [
+          "qdrv_tx_copy_to_nodes.isra.0",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 570,
+        "new_bytes": 570,
+        "old_sha256": "a9a22577a56f5e5f17ae53bdcd5eae37338c353e248a2553d8aba2d03a0b1eb2",
+        "new_sha256": "de074fdc3b0ed1077223eb55c32fae8a283c87bf9c9ebe9024628419d0163cdd"
+      },
+      {
+        "key": [
+          "qdrv_tx_sch_enqueue_data",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 2832,
+        "new_bytes": 2760,
+        "old_sha256": "9425c21d92db6a401b02d3191a323517fc0d8a7d56e6c244d0b09aaaae3aacec",
+        "new_sha256": "93e7703e8d73d11b521e01bc5f41c21256f4008e10c69994f147458c01331757"
+      },
+      {
+        "key": [
+          "qdrv_tx_sch_enqueue",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 1474,
+        "new_bytes": 1500,
+        "old_sha256": "1ff2631eb30c0f4c25d3486a75c0cfb5df2c57cfaeaa614035cfc0d4ee16a218",
+        "new_sha256": "81e1b4dece23aee5b8d5e434ddea7393a6706418eb3baf6262158f51592419c2"
+      },
+      {
+        "key": [
+          "qdrv_rx_decap_data_ratelimit",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 132,
+        "new_bytes": 132,
+        "old_sha256": "ec672e120b4dd4ea032b380aa10b6103203e0348d014ec27cf8e91f2ebde9da5",
+        "new_sha256": "a71fb310ae3df06c72b4f1233bf264312e6807189203b5d43831817e77c10fe4"
+      },
+      {
+        "key": [
+          "qdrv_rx_irq",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 390,
+        "new_bytes": 392,
+        "old_sha256": "95859c2652efb2f28f2b47d9b3453134ff1813a4041df1a11579fa5e4943047b",
+        "new_sha256": "985078229e2c40e0af36303068b2e06f5dba0e38300088d12bd6551ee24e29f9"
+      },
+      {
+        "key": [
+          "qdrv_rx_set_dest_mac.isra.0",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 44,
+        "new_bytes": 44,
+        "old_sha256": "22913fefa0b5a3a8618fe666458e29286a34262641d4fadc8126a56b8ffd4db1",
+        "new_sha256": "e77a5970eda37111cddc265b9039eab8f25ec4680ae5b579eabc3c9e897be52d"
+      },
+      {
+        "key": [
+          "handle_rx_msdu",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 2938,
+        "new_bytes": 2938,
+        "old_sha256": "5da811be9de3ba43ab611922617f5a0509d0d9cc3451ad99e5c5c881488a9647",
+        "new_sha256": "176991c30abffce6b1581408f6fc1f8fbfac8f6a38af21ac46637187a3020e71"
+      },
+      {
+        "key": [
+          "qdrv_rx_tqe_rx_handler",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 604,
+        "new_bytes": 600,
+        "old_sha256": "da14c85cb02d298d6122d43d1dad777c74908615228d8e96d4cb1ce8433425fa",
+        "new_sha256": "2d1da6b69a007ddb2f4cd1971ac6a680e897dd537cccd60c6ec0212946e82642"
+      },
+      {
+        "key": [
+          "qdrv_scan_irq",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 56,
+        "new_bytes": 56,
+        "old_sha256": "010a86b552c64c8a459e70c8e22d227bb9938c2c3621bbccf91108e215ac9620",
+        "new_sha256": "d532251b20952c052bbcba12a716a435cb1806049f671da5e470d829e13076e0"
+      },
+      {
+        "key": [
+          "qdrv_alloc_ioctl",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 338,
+        "new_bytes": 338,
+        "old_sha256": "f9d32416ddb2ce2bdc7ac4ef77522276aacd57688f39951340c46fcba1c5a92a",
+        "new_sha256": "435f431d0ecc7c7f25173947c2fcb0cb70a20f0e770af543835edd47f59600ac"
+      },
+      {
+        "key": [
+          "qdrv_send_ioctl_owned",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 2144,
+        "new_bytes": 2144,
+        "old_sha256": "febe1c21e9ffab572e78684363bb024c1a5608bf65b0dcea611428b413da383f",
+        "new_sha256": "4f354a73f1cddb1eb7d497a69971d2e51f0ea74388bb35d44b604925cf0a1071"
+      },
+      {
+        "key": [
+          "qdrv_vap_80211_newstate_callback",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 1434,
+        "new_bytes": 1434,
+        "old_sha256": "9e3240cabd2780962b8d30151d48f56c6121663e7e01599a7589ec831d918c3a",
+        "new_sha256": "0971dd72d27b17c18c12ac677aad18e61106a54e75f7f4d7cbe2f18cc629e986"
+      },
+      {
+        "key": [
+          "qdrv_txbf_mbox_interrupt",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 226,
+        "new_bytes": 226,
+        "old_sha256": "6cb17cd03a743c2d1d03e8eba15729c3c490087e71321966e51f6b7f1bf8171b",
+        "new_sha256": "317aa2bf61564f59ba98d317af0250604f36811dbabb38c392335d57b7094fce"
+      },
+      {
+        "key": [
+          "qdrv_txbf_mbox_tasklet",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 940,
+        "new_bytes": 940,
+        "old_sha256": "957eb6a7fe0a66ab0d75cee6a219d159884fe65ba44b203fb5df80a5ae5d9cb2",
+        "new_sha256": "1af2a9d31d55bab79b73e9f7474ce37922d2d21ea81dd545786f7a2260b48628"
+      },
+      {
+        "key": [
+          "raw_stop_cac",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 294,
+        "new_bytes": 294,
+        "old_sha256": "e449b702970ed558ab87742b68e291d2d20280f78cc46f6e0fb170279c3d7d4a",
+        "new_sha256": "ee3086d0c327c5b10a36dd637bc50ae4695bfa8e656690686687f0d80cd1eab1"
+      },
+      {
+        "key": [
+          "cac_completed_action",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 504,
+        "new_bytes": 504,
+        "old_sha256": "21f2615aef2706d82c2d6bc757cc64a45d866f3ee0e265eb00380b554523d29f",
+        "new_sha256": "20b1d4918e1accf697a37bb5f5dc5a425af83f435dc822a99c7a9a8596786259"
+      },
+      {
+        "key": [
+          "start_cac",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 390,
+        "new_bytes": 390,
+        "old_sha256": "437275c93d67e761387f109f81c22908ca6b959b27d8a56dbbbf0ccd005d821e",
+        "new_sha256": "445475e9b11c08e0a668f3528cb811b9a49265c417ceff86325f1fd6098b9fce"
+      },
+      {
+        "key": [
+          "qdrv_radar_enable_action",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 400,
+        "new_bytes": 400,
+        "old_sha256": "30d282f4dc37ed528b002ed737acf3a4167fe031be915c2ded583476f00bbd49",
+        "new_sha256": "29886b49cbe3a0428166dbf6795ecb16ccaf0c5ec5260db78d843bc851d788c9"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_ip_event",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 70,
+        "new_bytes": 70,
+        "old_sha256": "da0693a5fc08e3174802a940d23dfe1d14a6336f4bbbb01dd0695f2261064709",
+        "new_sha256": "76fbb15c33e181ad630913fa2bd982d4abb28c91e19d0d71c21df6da28aa6dcb"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_set_auc_status_ptr",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 262,
+        "new_bytes": 262,
+        "old_sha256": "8440997e28dd78227a02c2cc893340a209b91c2996c063f0c2f8bff50d47fc17",
+        "new_sha256": "e0f1e20053bd6623b7645ee740fa8765b4e7de316e9b2ffe38741e2dbabdba66"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_stop_phy_stats",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 58,
+        "new_bytes": 58,
+        "old_sha256": "d14883a2f86db8c8a0b72dbef87efdaaf5ee2aaf269faa8acc455c4c901863d9",
+        "new_sha256": "f236852df9fb34d66a692091b931cc9b6c6fe2f5a098892f48cc78d40ef408d1"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_stop_rate",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 58,
+        "new_bytes": 58,
+        "old_sha256": "47c539fe6128b6b206cf84d9e933d818bf8d7763035170a63987751447b2f9f7",
+        "new_sha256": "31fda4215307585ee1c524eac2c9b8a1e5972e680842e2f49c34194ed8f87a1a"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_stop_stats",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 72,
+        "new_bytes": 72,
+        "old_sha256": "d31da1e883f537d2cecd7f44b5c6579191ce2aa9def89526ed346f1d7c3201f5",
+        "new_sha256": "cffb314b930f12938a81bcf16183d9d41b183e2927aac658133ce9fa9a5bad03"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_stop_mem",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 98,
+        "new_bytes": 98,
+        "old_sha256": "55f868bee973dbafa5220a607f1784d05d7db9e03556bc6e994ecdf210d039c1",
+        "new_sha256": "a60347c3295eed24f87876669f50fb799677d0a4066195fb308c6d8080cd8702"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_stop_radar",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 46,
+        "new_bytes": 46,
+        "old_sha256": "0e467b28214bbc363c6e9131059051b6e3fc055db19ed6d671792844b42a5900",
+        "new_sha256": "cec05f8b7e4a5b04e1c52a0d0fde46d7062b1257a66bad773f6bab8c26712f66"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_start_radar",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 52,
+        "new_bytes": 52,
+        "old_sha256": "dbd3ec49eee96ea0c1c6c6cbc6da7fb0ca3939654331faf18e0414d1af36948d",
+        "new_sha256": "7af792c2f0ba84237a1cedafad2d5610597f5e0c84c4e52be4ed93c349f462fd"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_stop_netlink",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 62,
+        "new_bytes": 62,
+        "old_sha256": "c93bc7c99d119a5a00f6ee7f30999010e95e9a5aad3089b5bb1a58b494c11340",
+        "new_sha256": "04f77a21321cb8573f23b419f65de55585e37e170c2e918f7c6bb791aa4e4f0a"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_stop_sysmsg",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 72,
+        "new_bytes": 72,
+        "old_sha256": "b52dc504c1f2d90bacdcd0d35ad73f57172f9e795369c686a303889d4d3e8f36",
+        "new_sha256": "cd7f57ca3530965fac90133b1660697f38dd319b9bbe32784eb4fe32d1d51a72"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_stop_iwevent",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 30,
+        "new_bytes": 30,
+        "old_sha256": "5497df80f4751ebc6bf301094afd18fce35d2d958aba2d448145f620aa11c330",
+        "new_sha256": "3ec73922b399b56dea4baf143e6e6944ecb237c00d5de734e6b2235ee3ae20de"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_start_netlink",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 142,
+        "new_bytes": 142,
+        "old_sha256": "8b03f2b4e864742c6e3ff00f904216da6128f6aaaf422cf239c19501775c1882",
+        "new_sha256": "bf302aab6d6f3d453ef4ac050e529a4b3e96585dcd47896a900b5d9474fae236"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_start_iwevent",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 34,
+        "new_bytes": 34,
+        "old_sha256": "be0a33f2e8d7dacdd58cee72cb949b0c1dadb7b5d3c68abf9b6392eb9ec19961",
+        "new_sha256": "2abb2371bab920dfa170b61e460019c05b66f088fa11b8b5ac612cb4b285b2e3"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_map",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 608,
+        "new_bytes": 612,
+        "old_sha256": "b60b3f90eb673e8224875bb52847befe9440b730beaf7a89c9e4cedaa4df3dea",
+        "new_sha256": "02e570eb1a8202884fa5d329bf603ea30298412a2f539cb8dd2d597979ccf0cd"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_start_phy_stats",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 168,
+        "new_bytes": 168,
+        "old_sha256": "ad1dd2b5219f5db2588c97fe32641d73619ae6adc3762ebbacc57624f50cdfd6",
+        "new_sha256": "6c51cc9abcb15003d2f5cddca1bb5ee1ebab2df8073a4b2fe0ef83ef99565e7f"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_start_rate",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 184,
+        "new_bytes": 184,
+        "old_sha256": "ca20604f0e339758570bf9f346a1879bfacc83cfde9f3d89ec1684a7d0079fe4",
+        "new_sha256": "53e82f1bb51583f2873a38e8f514f749bbb3a212ccbf802eb4298dcb3f8c60c4"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_ratedebug_send",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 832,
+        "new_bytes": 832,
+        "old_sha256": "eec5f664bf74200ca3ffedcceb3afc9af5c6a86ff4713c092a341f8b552cedd8",
+        "new_sha256": "680a9ff6b9141c5d9392252e023b661e7fd2fc123277abcfd42fbf9f9441346c"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_start_mem",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 172,
+        "new_bytes": 172,
+        "old_sha256": "787ad45c12ccaf60d311835efa10fd801afdc0d1b719dc853e2c695f19851404",
+        "new_sha256": "f172c76f92b63b3852233f9ae8a962a7fdc9b97d765acb151a9d825a815eb456"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_mem_send",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 368,
+        "new_bytes": 368,
+        "old_sha256": "910b0682537795dba5560560f1855fce837ce9091eb94983bddf0736485049ce",
+        "new_sha256": "d68c29835ab67c17063275b9f2e24dce4d63f6cc76cc1c12def4486acbd4d87a"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_start_sysmsg",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 168,
+        "new_bytes": 168,
+        "old_sha256": "a5b7b25eab67886c8fb8d24112c346abc87b2041671623942f19ddc72f9bfc30",
+        "new_sha256": "26bb7e522e7763a69dc36ad70449e39ce1048abf3bea748264c49db6d5122922"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_start_stats",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 192,
+        "new_bytes": 192,
+        "old_sha256": "afcfd1552912da4f4a2e7ba3551222a23ce274bc761993ce2df4102ce1385b1b",
+        "new_sha256": "611af4bd25d7133a14fc5876ecb06028868b0dbb0e3c76fa135900d832e604f0"
+      },
+      {
+        "key": [
+          "qdrv_tqe_send_l2_ext_filter",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 118,
+        "new_bytes": 118,
+        "old_sha256": "a7f08f3614896be64773cd3e83e255a0e124cb04af50df1bab5b2f01120a4fbb",
+        "new_sha256": "6b0b327871ac81ac33817d61a051ab6d35ab27aa8f4a8ee416b5f38e49e6f474"
+      },
+      {
+        "key": [
+          "qdrv_dump_log",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 286,
+        "new_bytes": 286,
+        "old_sha256": "df9ac013d9d8bc3aed9625851d6336e2ae58f6313725ecdd2b76d659d66702e3",
+        "new_sha256": "fc5e7abedde894ca06da752ccc5481ed7970e5b6da0eaeb3d48d1b59a6155029"
+      },
+      {
+        "key": [
+          "qdrv_get_br_ipaddr",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 44,
+        "new_bytes": 44,
+        "old_sha256": "481c61f63e1cf9da19fe2b96e1a90bea9b694f3ac9d1ee4c2698e0b2642b13eb",
+        "new_sha256": "7403586af72c23c7edb3eb93a7bb2d90fb56a21a7041d47a895cee08b5724a3f"
+      },
+      {
+        "key": [
+          "qdrv_tx_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 800,
+        "new_bytes": 800,
+        "old_sha256": "45f0707f8f992c42d584970b16c0ffcab1b96484d25795515aa28c76ba6c54fc",
+        "new_sha256": "21e8d860ec7a6f687ee101444a10d52a55e5c17eeb165d7b419367d0ba1bdf1b"
+      },
+      {
+        "key": [
+          "qdrv_wlan_coex_stats_update",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 66,
+        "new_bytes": 66,
+        "old_sha256": "a95d2a4666955ce8993682263b9117235daeb7941322b3377070f6d9ab1e908d",
+        "new_sha256": "c21ff3a55a3c52c312126530255b8431686a6c377314ca42202e1e60acc7af27"
+      },
+      {
+        "key": [
+          "qdrv_control_sysmsg_timer",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 86,
+        "new_bytes": 86,
+        "old_sha256": "cb243fc043dba7ce6654dbf9a9309c3d6f032416bbb19db5ae017982a403a75d",
+        "new_sha256": "cb5f78deff8c108345652b48ab8d5b72d1387e085639d5ce9fb3df5353e5ffe5"
+      },
+      {
+        "key": [
+          "qdrv_wlan_exit",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 1010,
+        "new_bytes": 1008,
+        "old_sha256": "030d5cc7533032ee714146c48b59bbb751b4ccaf11c08f5642f713966f2619b2",
+        "new_sha256": "0a7135cfe11ae7db85633ddafc87aee1b9cffc90fb547c8ee2c2e7659fd35eaf"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 624,
+        "new_bytes": 624,
+        "old_sha256": "03025ea7138c334b5edc22b1763dd2e0de991123cf89446cabf80eff506ff0a2",
+        "new_sha256": "010e70a0ec83229087629eae34fca51ba6442fb31b017a455d6b538cb067a064"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_show",
+          ".text.unlikely",
+          2,
+          0
+        ],
+        "old_bytes": 332,
+        "new_bytes": 336,
+        "old_sha256": "8114b401ad948c08d45f6b1d58d4d0ea77716a741e47d24c224be36955818ff2",
+        "new_sha256": "4c920ec11d32c34a81208c8576d8495739c3ad63db7bf4369768bdc07b2d299b"
+      },
+      {
+        "key": [
+          "qdrv_channel_switch_reason_record",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 258,
+        "new_bytes": 258,
+        "old_sha256": "5f67279e563daf95e86bb529ecea622d7ae163765c039a7461bd6102dec773fa",
+        "new_sha256": "a36d31f5b24e1a7ac0c609e0bad29010da402f179fcbe55d3fc3be743c13f2c9"
+      },
+      {
+        "key": [
+          "qdrv_radar_before_newchan",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 204,
+        "new_bytes": 204,
+        "old_sha256": "d2e6e4c14008970e9aab4db4410fa15160b08e96c6f5ecb4f1968fe46a61617a",
+        "new_sha256": "d1c6c6a37266118597e50c6e1c689e5f5af8ba5f6c07e08d3d021a9bf8f705dd"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_set",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 374,
+        "new_bytes": 372,
+        "old_sha256": "39af06349b017ea15c0eddaea600ceefd40f49f6b4f4dde118c34774148355c8",
+        "new_sha256": "111eefe08d950a729717737a6285cae5a5e1bd17617a91b8c228032ae46ef094"
+      },
+      {
+        "key": [
+          "qdrv_rx_exit",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 174,
+        "new_bytes": 174,
+        "old_sha256": "74c052229d19c9cf5bca06fd3cbd9af84c05cf75fd02c82eb44f0131a49f3d3b",
+        "new_sha256": "42b7fd98c0318b964858d969392370318edb128c4010119d48b4d8add4ee1afb"
+      },
+      {
+        "key": [
+          "qdrv_rx_poll",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 4972,
+        "new_bytes": 4992,
+        "old_sha256": "de74dcfd68cb97614c332cfe7ce62c32531d46a2866ccbee7a81a8ad1b3ed19b",
+        "new_sha256": "6910f5bfdc2a59a9344cdc1cc50d6af8cc43f04abead7e40b4fc9ada01e4e44f"
+      },
+      {
+        "key": [
+          "qdrv_scan_stop",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 200,
+        "new_bytes": 200,
+        "old_sha256": "a6456eda942e1039ca544b639799a48682daa903c6602fc3879a24556d39d7ea",
+        "new_sha256": "3b1c08aedafe2c6d32a95f6bbfeea391fd355d128f7b9d59731f1b4a45e2ad5c"
+      },
+      {
+        "key": [
+          "qdrv_rx_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 1236,
+        "new_bytes": 1244,
+        "old_sha256": "bf51353d1d0f595cf648fe40f3b6899a75d502a83fbb917dedd60a708146e162",
+        "new_sha256": "3b01d46906062fbe3105d2a1b7629aa5b45dde8f23b7b544ded0eaaf5e3b7600"
+      },
+      {
+        "key": [
+          "qdrv_wlan_igmp_query_timer_start",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 66,
+        "new_bytes": 66,
+        "old_sha256": "88416f96b73e6531aa892e01b7a7972c6cda5a0629a79e26dc0eb39dba1c1ec9",
+        "new_sha256": "b5cdbff7a50d91d471e2b133246b44ff9af82e6133375e4f4093e4ccc1c9c57d"
+      },
+      {
+        "key": [
+          "qdrv_tx_stop",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 38,
+        "new_bytes": 38,
+        "old_sha256": "becd9ff24fd6e22739fac8ca4a870d5462e361a9784c8bec8fcf1939c73b485e",
+        "new_sha256": "5719c0dbfdf1ebb390c36cfdb3f24a7efad341d3097cfe4e0d0dd0b8327f61bc"
+      },
+      {
+        "key": [
+          "qdrv_tx_hardstart",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 2584,
+        "new_bytes": 2580,
+        "old_sha256": "a3e644d6f8aa2cba226c39dfdfeff86bfce1f43d3fcbf1829df427b25d415e69",
+        "new_sha256": "b5475f6f087a5fc5006fd86a46fbe2d09fcab8f120debad8b437b32907c9897e"
+      },
+      {
+        "key": [
+          "qdrv_radar_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 588,
+        "new_bytes": 588,
+        "old_sha256": "01e538898542d971c6502dccbf2d72671db2819d4ee232c2bd4eb2138d530db6",
+        "new_sha256": "9cdb506907bd69484bfc956fbcb041e2bb63d5e5ee6a84c0a3e0f48327e0efbf"
+      },
+      {
+        "key": [
+          "qdrv_hostlink_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 332,
+        "new_bytes": 332,
+        "old_sha256": "3c98571cdb11b0a8ba3e2ae88298ffba159f22640b7ea4c69cd92a81b7049b4b",
+        "new_sha256": "a8c6d37b80ba8be03d5b9f36b61897646d035d0bfa9b6bb47c7b15f12ddb7947"
+      },
+      {
+        "key": [
+          "qdrv_hostlink_store_txpow",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 208,
+        "new_bytes": 208,
+        "old_sha256": "202a04bc9aaa422ba689eb04b45cef23187ed40abc250a38f0e0b11d88dea995",
+        "new_sha256": "aebedfd53de582bec9486b3c7cb10dfbf8f72dc0fffee5bcabd680797a209a0f"
+      },
+      {
+        "key": [
+          "qdrv_radar_disable",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 756,
+        "new_bytes": 756,
+        "old_sha256": "f9a6659563082ba4cb6c6c838de73ec1600c4ff132f04062d9f4a0c20a314050",
+        "new_sha256": "0f2dc4873dc7febdd8426f4316298f8d474f556b80dd0bfd6c3a387dc7993389"
+      },
+      {
+        "key": [
+          "qdrv_wlan_stats_prot",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 300,
+        "new_bytes": 300,
+        "old_sha256": "45170cf8562b95fe9674a3ad55e36fe1e3e5cfe0ff9a868206e571a0589a9b08",
+        "new_sha256": "ecceee3dd12a0d089d902c0a440ab8f610bd81092999228cfbbee49369eb2bec"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_phystats_send",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 542,
+        "new_bytes": 542,
+        "old_sha256": "ffc0d44ae48ce58e33f88a5dadec3a38cc8fcec64298cbc36db4e0f9eed3c6e7",
+        "new_sha256": "1f7907c4140011228d423f39e48abb605aa085d7db5e458b38bef6f1e53f100f"
+      },
+      {
+        "key": [
+          "qdrv_txbf_config_set",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 410,
+        "new_bytes": 410,
+        "old_sha256": "66b4b7688ade5f7c2c446d837c54d90c34157c51857eb469160e890ea5006f76",
+        "new_sha256": "cd880f8e15b91c9e8ca5443b5c25fb42f4572bc899540c372bf4013a2697833b"
+      },
+      {
+        "key": [
+          "qdrv_wlan_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 5728,
+        "new_bytes": 5724,
+        "old_sha256": "0a1e6f4c595a8be2acef2fc1d7543664afc58819690a4529e30a8b7982238a13",
+        "new_sha256": "3e0605e00b1d52e4e0d66f836af123a87c0437ec3fac5c682d5814be7a312760"
+      },
+      {
+        "key": [
+          "qdrv_wlan_igmp_timer_stop",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 14,
+        "new_bytes": 14,
+        "old_sha256": "1cabcf437ce5a8685efebe810af4157e140162ff0358c9238c9089d5b7f533cd",
+        "new_sha256": "f99073cf449d5d1c9d07b131459ad2fef7042bc6188031218f7958ab3ea2ab73"
+      },
+      {
+        "key": [
+          "qdrv_scan_exit",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 148,
+        "new_bytes": 148,
+        "old_sha256": "2a424da4e1093f80b5b22dd16e1703b03260eb7f8de7b77916de263a027e435a",
+        "new_sha256": "b3a2313732ec19b9d5ce645f2222d1a08cacc6c3509344d26841076b6dcc148a"
+      },
+      {
+        "key": [
+          "qdrv_is_bridge_ipaddr",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 52,
+        "new_bytes": 52,
+        "old_sha256": "857996d61c5cec9e6cd5aadcf0abcd0572208a3d598fef17aa3a9ac9ecc44020",
+        "new_sha256": "7f0aa3885e4152ebd8dd48d3a50520ab7dac4fe0542ea472e816dbe2b1748668"
+      },
+      {
+        "key": [
+          "qdrv_txbf_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 530,
+        "new_bytes": 530,
+        "old_sha256": "08d06048567aa283de71a257f3ffbe0330edb402badd45a3a95fcf4615313432",
+        "new_sha256": "dcf154eba53984c61bea059d7fcae8ee53768c235ef98c719d0bb2ab580dbfb3"
+      },
+      {
+        "key": [
+          "qdrv_update_cgq_stats",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 30,
+        "new_bytes": 30,
+        "old_sha256": "2c794a330e3b64cb8092147b6577b9d8a0194ef34a5fd412b20a92bfc4bdaccd",
+        "new_sha256": "594698438882ed8d6775760da13292916631adc512ed0f2eca6a5bbb6c06610d"
+      },
+      {
+        "key": [
+          "qdrv_tx_release_txdesc",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 184,
+        "new_bytes": 184,
+        "old_sha256": "bda1eefaab5190401d04f35fbbfa5c1e2798ca8fb5421fad109984ed7bc244f2",
+        "new_sha256": "cef10dbe89a7d27dab0d58f3c0181f8b83534233c26f9b6a2520a3076ee8f764"
+      },
+      {
+        "key": [
+          "qtn_async_cca_read",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 204,
+        "new_bytes": 204,
+        "old_sha256": "7a1d11bec2e8ae6179699c945f57a648c965fd72e8c936a369debf922e5a24a0",
+        "new_sha256": "d55c68f2ae170d05ed70b2b02d0a14c95be79c3d564ce09529b6f02462367240"
+      },
+      {
+        "key": [
+          "qdrv_radar_detected",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 3060,
+        "new_bytes": 3060,
+        "old_sha256": "07e528901151d22be9dd6b4ac13021657023105ece33a287c231c343a73f2568",
+        "new_sha256": "aedd5f5c07f0182bf39cd9f689912bb187f621654310c7a487129f346bd9d2e6"
+      },
+      {
+        "key": [
+          "qdrv_hostlink_msg_create_vap",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 492,
+        "new_bytes": 492,
+        "old_sha256": "dd56e34bfe5a370453dade23cdbce1d8e4a41d3156ebc88d05c5b1e09cc42097",
+        "new_sha256": "4f0decf329d9acb3aaa67d554d45bbd65d078271659714e4c121ac8b16f7002b"
+      },
+      {
+        "key": [
+          "qdrv_control_sysmsg_send",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 388,
+        "new_bytes": 388,
+        "old_sha256": "17001c75ab7a0682ced889a2adff2db31fd0f64d270dd4d51bf3b4cf5fcdd622",
+        "new_sha256": "0cb78c52c746f49b6f50d6c5e9a867094374d0167dedd79259bdda1560c026d8"
+      },
+      {
+        "key": [
+          "qdrv_wlan_beacon_vap_detach",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 190,
+        "new_bytes": 190,
+        "old_sha256": "dbcec3976aa8743b147cd941d0a4993a4c14f49e8ead94018d065fda95d1db43",
+        "new_sha256": "41422f63f175d0f54c608658b56a9fe2d8086fc6be51504a58b2a0c2b22d5fbc"
+      },
+      {
+        "key": [
+          "qdrv_hostlink_msg_delete_vap",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 314,
+        "new_bytes": 314,
+        "old_sha256": "194d17c1e80319614a58f5f57ea665dec99aadcb7d06514efd75126b24bf4a8b",
+        "new_sha256": "9f5bd150c30a87a99ca51d5fef3dff182f3a337f4d99d6e2afa72cd3515d8d59"
+      },
+      {
+        "key": [
+          "qdrv_tx_exit",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 126,
+        "new_bytes": 126,
+        "old_sha256": "c5fdd03d223731e8d4f1c96a16eda410b1d3692021eb02e3eeff0bdc851f13ff",
+        "new_sha256": "41c296e619f45107c915669c41a5a659ae39f282ae25c0096cf794478b7982bd"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_hdr_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 440,
+        "new_bytes": 440,
+        "old_sha256": "dceb15967bdb148b35c1d573a17d8b714cd71641d3c8b015add30531fbe52c18",
+        "new_sha256": "596f2a930bb7bf3449351aae0c4c935fc63b1d41b965b000b50e96936179a6c6"
+      },
+      {
+        "key": [
+          "qdrv_txbf_config_get",
+          ".text.unlikely",
+          2,
+          0
+        ],
+        "old_bytes": 782,
+        "new_bytes": 782,
+        "old_sha256": "5dedf8a97ecd7caedce19bb91ab06d46f812395634a29c2ffd3ee66f75775dfa",
+        "new_sha256": "0b16abaf1e9371c3ae3ed8db057dccbf8ef513dbbbd40ad5974144ffe4cb13d9"
+      },
+      {
+        "key": [
+          "qdrv_scan_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 358,
+        "new_bytes": 358,
+        "old_sha256": "91876ed2eecfa8554486bd22d259f0390fa7286bbabcdb838448b4add9b04bcd",
+        "new_sha256": "6fc31112af70bd2a558bc4545926546fba20dbe6d52b88324f9047fa3aec203c"
+      },
+      {
+        "key": [
+          "qdrv_mac_reserved",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 126,
+        "new_bytes": 126,
+        "old_sha256": "765043a15d1680bc7260fdf96d566bdd3840726e2bd288cc88ecfa35204519ac",
+        "new_sha256": "3574be396bac2243a79356bd2c644c5b4f528915dd331b8adf17673d78f96ea5"
+      },
+      {
+        "key": [
+          "qdrv_txbf_exit",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 96,
+        "new_bytes": 96,
+        "old_sha256": "9b7b13ee30aee302de9f5a373b40ce9c5b2bb8f484b4d2dd469ff6d683d82854",
+        "new_sha256": "54fa76d5584caf17ed7662ba774b80040cc9c2eb8a55fd126c112246e3bde67d"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_exit",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 258,
+        "new_bytes": 258,
+        "old_sha256": "b6012303a06b6e96a9604e1426b39f65a671ddbb73272984861c98fb89c6fc87",
+        "new_sha256": "16e4ef3b04ab9614dd413bc2d2ce800f5c0ec4bd5d1f183aced310ad97e83214"
+      },
+      {
+        "key": [
+          "qdrv_rx_start",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 378,
+        "new_bytes": 366,
+        "old_sha256": "f95f1774a968dbf7ab70672fddc41236964b8c7a81c9c8a96d9e2e492a9d9595",
+        "new_sha256": "45bff4f8d101d236d5d7a4bfeedbae79a3d5f68bc40a4c27819cff7b54341eba"
+      },
+      {
+        "key": [
+          "qdrv_scan_start",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 386,
+        "new_bytes": 390,
+        "old_sha256": "9fb314048b8f4f317b94da9c6d9d4fd02dac3060747c42b4934dbdf5b3e4fc6a",
+        "new_sha256": "5318361ee959b4fe411194d8c7c4e36393947cfec87d03d2f7f32070f2a03efc"
+      },
+      {
+        "key": [
+          "qdrv_hostlink_exit",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 200,
+        "new_bytes": 200,
+        "old_sha256": "1d59a9f1fe65e433fdf42a5c4016797ff2a261c4855e09c9e903be17299e6f38",
+        "new_sha256": "fb4e8b2d36873a68be46fec46a13580b51385221cb5ba2367db63d006074b213"
+      },
+      {
+        "key": [
+          "qdrv_tx_get_mgt_txdesc",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 494,
+        "new_bytes": 494,
+        "old_sha256": "378eecd69659ed7594dbd759e2724ad361b57da06698dd387ce09b8376d99919",
+        "new_sha256": "5523668132bab810f8ed71e4e409df5a9e1967b5b55b8524cebd5629a67902b6"
+      },
+      {
+        "key": [
+          "qdrv_tx_done_flush_vap",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 752,
+        "new_bytes": 752,
+        "old_sha256": "74c8e636a1cf03691c2997f6a8788a04abd8024cef6ffc591444ddac1dc486dc",
+        "new_sha256": "4bbc6d2b46c9a2f0bad51a22d704fb7d34529c62984c03349789eceb30584665"
+      },
+      {
+        "key": [
+          "qdrv_wlan_80211_stats",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 358,
+        "new_bytes": 358,
+        "old_sha256": "e9f50681252cadc6afb1eaf0169fd69bcd875788eb7305556f88bb54516d9fd2",
+        "new_sha256": "0edd7ad9ad89d9a3a7ae2108517492a01888a9a762e0419acbce7c8fa2e8922d"
+      },
+      {
+        "key": [
+          "qdrv_rx_stop",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 164,
+        "new_bytes": 162,
+        "old_sha256": "45de92b262559750d792c11b283b24b91664e1a0a4c3cf482f0a4536f5fe7d25",
+        "new_sha256": "a7efd462a2c62c282414807fe290d9bd7536c558005367f00b43fb54d20c26da"
+      },
+      {
+        "key": [
+          "qdrv_tx_start",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 190,
+        "new_bytes": 190,
+        "old_sha256": "6df8e8f816ad00dc16ab2a52ee80e3bea18f972da2569e4fb83d77cf949492a6",
+        "new_sha256": "474a8989e40b9b145688339163d030ac5cafab2c5a3ae6847801717ac42ef1cc"
+      },
+      {
+        "key": [
+          "qdrv_vap_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 2036,
+        "new_bytes": 2036,
+        "old_sha256": "ffacf3e05b88a36052c7f0f00fde2c8dfc7bf1d2b9bb73e1ad0e95b9a476257b",
+        "new_sha256": "ebf6516297a29a0c7d9d65bd808738c36832d8076a3ec6bf837b2d9bdc6cd33e"
+      },
+      {
+        "key": [
+          "qdrv_proxy_arp",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 326,
+        "new_bytes": 326,
+        "old_sha256": "3a25e8e880325c5a76faa890e7998844d4211b1f1bb22d83b5789a63a3182723",
+        "new_sha256": "0b747b8c4fe55ea69e77c6ee1dc6a5386dbeca61306ba430958481410524aaff"
+      },
+      {
+        "key": [
+          "qdrv_pktlogger_netdebug_stats_send",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 2190,
+        "new_bytes": 2190,
+        "old_sha256": "a0402f8288175d8033c1a2c13e6558bf51cdeb977bc304ecb4ab3cf13c248f49",
+        "new_sha256": "bca9f8744e3e0627ae0301286dc964e17424a848c4280c0c9ae817f8803c917f"
+      }
+    ],
+    "old_relocations": 14035,
+    "new_relocations": 14035,
+    "old_sha256": "f79e2836e3a18c64216be197ea371d4a4c314056451c30394404ecb0581ea913",
+    "control_sha256": "ca6fcb24a2c6e9c051d27a7220a70e034fd3479378f7c7d68c951982b6e802f6",
+    "limits": "All parsed old IC offsets and QDRV +8 field layout witnessed; source identity and closure pinned. No broad executable mask used in selected candidate audit."
+  },
+  "wlan": {
+    "status": "SOURCE_IDENTICAL_HEADER_ONLY_COMPILER_DELTA_INVENTORY_NOT_INSTRUCTION_EQUIVALENCE",
+    "changed_functions": [],
+    "old_relocations": 9555,
+    "new_relocations": 9555,
+    "old_sha256": "dd4896a969b3033e41f8c63eac27b12b1844bd86dd1a506e69c7be5a485b4621",
+    "control_sha256": "dd4896a969b3033e41f8c63eac27b12b1844bd86dd1a506e69c7be5a485b4621",
+    "limits": "All parsed old IC offsets and QDRV +8 field layout witnessed; source identity and closure pinned. No broad executable mask used in selected candidate audit."
+  }
+}

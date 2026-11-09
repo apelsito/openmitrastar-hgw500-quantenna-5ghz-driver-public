@@ -1,0 +1,21 @@
+{
+  "status": "PASS_EXACT_PRIVATE_TOOLCHAIN_TAR_XZ_CONTENTS_HASHES_MODES_SYMLINKS",
+  "private": true,
+  "hardware_accessed": false,
+  "uploaded": false,
+  "archive": "/workspace/user-home/Desktop/MitraStar/outputs/rea/aelita-toolchain-private-20261022T230500Z-r1/arc-snps-linux-uclibc-gcc15.2.0-10504-aelita.tar.xz",
+  "archive_bytes": 59864216,
+  "archive_sha256": "cb37498e50328183732b84d93cba670076888f66868c3c7385119f1e8e45825a",
+  "manifest_sha256": "2f9fd1c815727259a42cd15b422656f379ffc70b2529bd48a4faac1e8b531a69",
+  "entries_verified": 2777,
+  "regular_files": 2430,
+  "symlinks": 108,
+  "total_regular_bytes": 268311843,
+  "license_files": 112,
+  "gcc_sha256": "3918a0da3c9f2cfde359f6fed1d0df19e737438dfd2cc60edae63f2dcbf14263",
+  "limits": [
+    "ExactownedTCruntime/header/library/licensecarrierpackaged; noGitHubuploadperformed",
+    "NoAELITAextraction/executionyet",
+    "OriginalbuildsourceforGCC/binutils/libcnotfullyembedded; ct-ngconfigandcomponentlicensespresent"
+  ]
+}

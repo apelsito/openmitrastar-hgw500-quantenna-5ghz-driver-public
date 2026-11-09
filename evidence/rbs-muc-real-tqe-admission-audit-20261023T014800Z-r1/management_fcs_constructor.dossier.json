@@ -1,0 +1,160 @@
+{
+  "source_directory": "outputs\\rea\\rbs-muc-real-mgmt-fcs-builder-20261023T014200Z-r1",
+  "procedure": {
+    "address": "0x12d3c8",
+    "name": "FUN_ram_0012d3c8",
+    "classification": {
+      "external": false,
+      "thunk": false,
+      "thunk_target": null,
+      "provenance": "ghidra-function-manager"
+    },
+    "body": {
+      "available": true,
+      "provenance": "ghidra-function-body-address-set",
+      "ranges": [
+        {
+          "start": "0x12d3c8",
+          "end": "0x12d5f9"
+        },
+        {
+          "start": "0x12d638",
+          "end": "0x12d9ff"
+        }
+      ],
+      "total_bytes": 1530,
+      "span_bytes": 1592,
+      "non_contiguous": true,
+      "contains_entry": true
+    },
+    "signature": "undefined FUN_ram_0012d3c8()",
+    "locals": [
+      {
+        "description": "undefined4 local_10 @ Stack[-0x10]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_14 @ Stack[-0x14]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_18 @ Stack[-0x18]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_1c @ Stack[-0x1c]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_20 @ Stack[-0x20]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_24 @ Stack[-0x24]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_28 @ Stack[-0x28]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_34 @ Stack[-0x34]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_38 @ Stack[-0x38]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_3c @ Stack[-0x3c]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_4 @ Stack[-0x4]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_40 @ Stack[-0x40]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_44 @ Stack[-0x44]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_48 @ Stack[-0x48]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_4c @ Stack[-0x4c]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_50 @ Stack[-0x50]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_54 @ Stack[-0x54]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_58 @ Stack[-0x58]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_60 @ Stack[-0x60]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_64 @ Stack[-0x64]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_8 @ Stack[-0x8]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_c @ Stack[-0xc]:4",
+        "provenance": "ghidra-function-database"
+      }
+    ]
+  },
+  "callees": [
+    {
+      "address": "0xe433c",
+      "name": "FUN_ram_000e433c"
+    },
+    {
+      "address": "0xeea80",
+      "name": "FUN_ram_000eea80"
+    },
+    {
+      "address": "0xeeb74",
+      "name": "FUN_ram_000eeb74"
+    },
+    {
+      "address": "0x151ca0",
+      "name": "FUN_ram_00151ca0"
+    },
+    {
+      "address": "0x39fe00",
+      "name": "FUN_ram_0039fe00"
+    }
+  ],
+  "callers": [
+    {
+      "address": "0x155ec8",
+      "name": "FUN_ram_00155ec8"
+    }
+  ],
+  "limitations": [
+    "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+    "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+    "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+    "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+  ],
+  "pseudocode_sha256": "8390aef64e73273a8bfa8af25d2ad08923527161f7610cf93d1f578177e1d6a7",
+  "rea_sha256": "2efc0ca0aaf41b20d582b58db6f1e0538584d880a7d5f4950be68695c22a3eaf",
+  "started_utc": "2026-10-22T22:39:10.021063+00:00",
+  "finished_utc": "2026-10-22T22:40:30.488306+00:00"
+}

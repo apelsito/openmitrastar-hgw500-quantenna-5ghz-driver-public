@@ -1,0 +1,301 @@
+{
+  "status": "EXACT21_ORIGINAL_PRIVATE_TABLE_GAPS_SOURCE23",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "module_sha256": "486818be02666694706d1660f49ad3b41a05b197d4c4b5bc42dd6476cd3b2d11",
+  "ledger_sha256": "37f32f9626965e49c67394a8a5a33912a7ceb668ae9f8453374b6d3d084b8ba5",
+  "records": [
+    {
+      "cmd": 449,
+      "name": "20_40_bss_coex",
+      "direction": "set",
+      "set_args": 18433,
+      "get_args": 0,
+      "operation_evidence": {
+        "kind": "local_bool",
+        "oem_field": "ic+0x5dac:u8",
+        "set": "!!value,return0",
+        "dependency": "20/40coexistence consumers absent or not reconciled; requires append-only ABIstate and actual beacon/control integration"
+      }
+    },
+    {
+      "cmd": 461,
+      "name": "set_bw_autosel",
+      "direction": "set",
+      "set_args": 18433,
+      "get_args": 0,
+      "operation_evidence": {
+        "kind": "local_u8",
+        "oem_field": "ic+0x4df0:u8",
+        "set": "low8value,return0",
+        "get": "u8",
+        "dependency": "Portretainedic_max_system_bw adjacentlayout differs; newfieldnotidentified; preserveconsumersbeforeextension"
+      }
+    },
+    {
+      "cmd": 461,
+      "name": "get_bw_autosel",
+      "direction": "get",
+      "set_args": 0,
+      "get_args": 18433,
+      "operation_evidence": {
+        "kind": "local_u8",
+        "oem_field": "ic+0x4df0:u8",
+        "set": "low8value,return0",
+        "get": "u8",
+        "dependency": "Portretainedic_max_system_bw adjacentlayout differs; newfieldnotidentified; preserveconsumersbeforeextension"
+      }
+    },
+    {
+      "cmd": 467,
+      "name": "dfs_chan_avail",
+      "direction": "get",
+      "set_args": 0,
+      "get_args": 18433,
+      "operation_evidence": {
+        "kind": "indirect_callback",
+        "oem_field": "ic+0x54a0:functionptr\u2192QDRV.text+0x2740c",
+        "get": "refresh_scan_module_chan_list(ic),pickchannel(ic,0x130000)\u21921 or-95",
+        "dependency": "Portcallbackic_dfs_chans_available_for_cac hasdifferentbool/sideeffects; missingrefreshexport/source, noequivalence"
+      }
+    },
+    {
+      "cmd": 466,
+      "name": "rbs_dfs_msr_cac",
+      "direction": "set",
+      "set_args": 18433,
+      "get_args": 0,
+      "operation_evidence": {
+        "kind": "local_bool",
+        "oem_field": "ic+0x5d88:u8",
+        "set": "!!value,return0",
+        "get": "u8",
+        "dependency": "RBSspecificstateabsent; mustnotmaptoSTAstrictfieldwithdifferentvalidation"
+      }
+    },
+    {
+      "cmd": 466,
+      "name": "g_rbsdfs_msrcac",
+      "direction": "get",
+      "set_args": 0,
+      "get_args": 18433,
+      "operation_evidence": {
+        "kind": "local_bool",
+        "oem_field": "ic+0x5d88:u8",
+        "set": "!!value,return0",
+        "get": "u8",
+        "dependency": "RBSspecificstateabsent; mustnotmaptoSTAstrictfieldwithdifferentvalidation"
+      }
+    },
+    {
+      "cmd": 468,
+      "name": "rbs_dfs_end_tx",
+      "direction": "set",
+      "set_args": 18433,
+      "get_args": 0,
+      "operation_evidence": {
+        "kind": "local_u32_validated",
+        "oem_field": "ic+0x5da8:u32",
+        "set": "1..1000 inclusive else-EINVAL",
+        "get": "u32",
+        "dependency": "RBSclosingtimefieldabsent; OEMinit500, STAtimefielddifferentcontract"
+      }
+    },
+    {
+      "cmd": 468,
+      "name": "g_rbsdfs_end_tx",
+      "direction": "get",
+      "set_args": 0,
+      "get_args": 18433,
+      "operation_evidence": {
+        "kind": "local_u32_validated",
+        "oem_field": "ic+0x5da8:u32",
+        "set": "1..1000 inclusive else-EINVAL",
+        "get": "u32",
+        "dependency": "RBSclosingtimefieldabsent; OEMinit500, STAtimefielddifferentcontract"
+      }
+    },
+    {
+      "cmd": 492,
+      "name": "neigh_repo",
+      "direction": "set",
+      "set_args": 18433,
+      "get_args": 0,
+      "operation_evidence": {
+        "kind": "local_bit_beacon",
+        "oem_field": "ic+0x5e18:u32bit0",
+        "set": "value==1setelseclear;beacon_update_all(ic)",
+        "get": "bit0",
+        "dependency": "11kneighborreport IEconsumersabsent ornotreconciled; appendhoststate + IEgenerationneeded"
+      }
+    },
+    {
+      "cmd": 492,
+      "name": "get_neigh_repo",
+      "direction": "get",
+      "set_args": 0,
+      "get_args": 18433,
+      "operation_evidence": {
+        "kind": "local_bit_beacon",
+        "oem_field": "ic+0x5e18:u32bit0",
+        "set": "value==1setelseclear;beacon_update_all(ic)",
+        "get": "bit0",
+        "dependency": "11kneighborreport IEconsumersabsent ornotreconciled; appendhoststate + IEgenerationneeded"
+      }
+    },
+    {
+      "cmd": 478,
+      "name": "wea_cac_en",
+      "direction": "set",
+      "set_args": 18433,
+      "get_args": 0,
+      "operation_evidence": {
+        "kind": "local_bool",
+        "oem_field": "ic+0xbf4:u8",
+        "set": "!!value,return0",
+        "get": "u8",
+        "dependency": "WeatherCACpolicyfieldabsent; consumerrecovery/regulatorygate required"
+      }
+    },
+    {
+      "cmd": 478,
+      "name": "get_wea_cac_en",
+      "direction": "get",
+      "set_args": 0,
+      "get_args": 18433,
+      "operation_evidence": {
+        "kind": "local_bool",
+        "oem_field": "ic+0xbf4:u8",
+        "set": "!!value,return0",
+        "get": "u8",
+        "dependency": "WeatherCACpolicyfieldabsent; consumerrecovery/regulatorygate required"
+      }
+    },
+    {
+      "cmd": 481,
+      "name": "set_vopt",
+      "direction": "set",
+      "set_args": 18433,
+      "get_args": 0,
+      "operation_evidence": {
+        "kind": "local_u8_policy",
+        "oem_field": "ic+0x4df4:u8 request,ic+0x4df5:u8 effective",
+        "set": "ic_opmodeHOSTAP andvalue0..2 else-EOPNOTSUPP; storelow8",
+        "get": "HOSTAP:(request&15)<<4|effective else0",
+        "dependency": "Currentportlackstwofields; effectivevaluewriterneededbeforeclaimingbehavior"
+      }
+    },
+    {
+      "cmd": 481,
+      "name": "get_vopt",
+      "direction": "get",
+      "set_args": 0,
+      "get_args": 18433,
+      "operation_evidence": {
+        "kind": "local_u8_policy",
+        "oem_field": "ic+0x4df4:u8 request,ic+0x4df5:u8 effective",
+        "set": "ic_opmodeHOSTAP andvalue0..2 else-EOPNOTSUPP; storelow8",
+        "get": "HOSTAP:(request&15)<<4|effective else0",
+        "dependency": "Currentportlackstwofields; effectivevaluewriterneededbeforeclaimingbehavior"
+      }
+    },
+    {
+      "cmd": 491,
+      "name": "coc_mv_to_ndfs",
+      "direction": "set",
+      "set_args": 18433,
+      "get_args": 0,
+      "operation_evidence": {
+        "kind": "local_u32",
+        "oem_field": "ic+0x5e14:u32",
+        "set": "value,return0",
+        "get": "u32",
+        "dependency": "CoCmovementstateabsent, behaviorconsumerunknown"
+      }
+    },
+    {
+      "cmd": 491,
+      "name": "g_coc_mv_to_ndfs",
+      "direction": "get",
+      "set_args": 0,
+      "get_args": 18433,
+      "operation_evidence": {
+        "kind": "local_u32",
+        "oem_field": "ic+0x5e14:u32",
+        "set": "value,return0",
+        "get": "u32",
+        "dependency": "CoCmovementstateabsent, behaviorconsumerunknown"
+      }
+    },
+    {
+      "cmd": 493,
+      "name": "bss_tm",
+      "direction": "set",
+      "set_args": 18433,
+      "get_args": 0,
+      "operation_evidence": {
+        "kind": "local_bit_beacon",
+        "oem_field": "ic+0x5e1c:u32bit0",
+        "set": "value==1setelseclear;beacon_update_all(ic)",
+        "get": "bit0",
+        "dependency": "BSSTMextendedcap/managementactionconsumerrecoveryneeded"
+      }
+    },
+    {
+      "cmd": 493,
+      "name": "get_bss_tm",
+      "direction": "get",
+      "set_args": 0,
+      "get_args": 18433,
+      "operation_evidence": {
+        "kind": "local_bit_beacon",
+        "oem_field": "ic+0x5e1c:u32bit0",
+        "set": "value==1setelseclear;beacon_update_all(ic)",
+        "get": "bit0",
+        "dependency": "BSSTMextendedcap/managementactionconsumerrecoveryneeded"
+      }
+    },
+    {
+      "cmd": 494,
+      "name": "mdid",
+      "direction": "set",
+      "set_args": 18433,
+      "get_args": 0,
+      "operation_evidence": {
+        "kind": "vap_u16_callback",
+        "oem_field": "vap+0xf8c:u16",
+        "set": "HOSTAPonly else-EINVAL;storelow16 thenic+0x5444callback",
+        "get": "u16",
+        "dependency": "MDIE/FTauthsourceabsent; callbackmapsOEMbeaconupdate; cannotclaimFTsupportfromfieldsetter"
+      }
+    },
+    {
+      "cmd": 494,
+      "name": "get_mdid",
+      "direction": "get",
+      "set_args": 0,
+      "get_args": 18433,
+      "operation_evidence": {
+        "kind": "vap_u16_callback",
+        "oem_field": "vap+0xf8c:u16",
+        "set": "HOSTAPonly else-EINVAL;storelow16 thenic+0x5444callback",
+        "get": "u16",
+        "dependency": "MDIE/FTauthsourceabsent; callbackmapsOEMbeaconupdate; cannotclaimFTsupportfromfieldsetter"
+      }
+    },
+    {
+      "cmd": 495,
+      "name": "ft_over_ds",
+      "direction": "set",
+      "set_args": 18433,
+      "get_args": 0,
+      "operation_evidence": {
+        "kind": "vap_u8",
+        "oem_field": "vap+0xf8e:u8",
+        "set": "HOSTAPonlyelse-EINVAL;storelow8",
+        "get": "-EOPNOTSUPP default",
+        "dependency": "FTOverDShandlersabsent; getstubPASSED butsetterstillrequiresconsumers"
+      }
+    }
+  ]
+}

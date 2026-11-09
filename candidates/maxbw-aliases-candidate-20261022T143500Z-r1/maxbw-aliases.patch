@@ -1,0 +1,44 @@
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -121,6 +121,7 @@
+  * enable DFS, change radio state, or assert measured retry behavior. */
+ /* OEM451 reports role1/2 first, else repeater3 or normal0. Two advertised
+  * OEM entries below remain unsupported; adding their records enables no feature. */
++#define OM_OEM_PARAM_MAX_BANDWIDTH 460
+ #define OM_OEM_PARAM_DEVICE_MODE 451
+ #define OM_OEM_PARAM_IGNORE_ICAC_SELECTION 465
+ #define OM_OEM_PARAM_FT_OVER_DS 495
+@@ -11368,6 +11369,11 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	/* OEM460 stores the lowbyte only; no channel/RF command is sent. */
++	case OM_OEM_PARAM_MAX_BANDWIDTH:
++		ic->ic_max_system_bw = (u_int8_t)value;
++		break;
++
+ 	case OM_OEM_PARAM_IGNORE_ICAC_SELECTION:
+ 		return -EOPNOTSUPP;
+ 
+@@ -13940,6 +13946,10 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_MAX_BANDWIDTH:
++		param[0] = ic->ic_max_system_bw;
++		break;
++
+ 	case OM_OEM_PARAM_DEVICE_MODE:
+ 		if (ic->ic_extender_role == IEEE80211_EXTENDER_ROLE_MBS)
+ 			param[0] = 1;
+@@ -20883,6 +20893,10 @@
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "ignr_icac_sel" },
+ 	{ OM_OEM_PARAM_FT_OVER_DS,
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_ft_over_ds" },
++	{ OM_OEM_PARAM_MAX_BANDWIDTH,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "set_max_bw" },
++	{ OM_OEM_PARAM_MAX_BANDWIDTH,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_max_bw" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

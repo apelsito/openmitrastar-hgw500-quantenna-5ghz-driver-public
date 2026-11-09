@@ -1,0 +1,47 @@
+e50056c8:	7b6f                	extb_s	r3,r3
+e50056ca:	0b23 0093           	brge	r3,0x2,34	;0xe50056ea
+e50056ce:	2200 30c1           	add	r1,gp,r3
+e50056d2:	7343                	add_s	r3,r3,gp
+e50056d4:	1396 0080           	ldb	r0,[r3,150]
+e50056d8:	11b8 8081           	ldb	r1,[r1,-72]
+e50056dc:	7110                	cmp_s	r1,r0
+e50056de:	04fa ffca           	bge	-774	;0xe50053d6
+e50056e2:	0e16 fdaf           	bl.d	-18924	;0xe5000cf4
+e50056e6:	70a9                	mov_s	r0,r13
+e50056e8:	f1bb                	b_s	-138	;0xe500565e
+e50056ea:	d03a                	ld_s	r0,[pcl,0xe8]	;0xe50057d0
+e50056ec:	d23a                	ld_s	r2,[pcl,0xe8]	;0xe50057d4
+e50056ee:	0655 00e0           	b.d	7764	;0xe5007540
+e50056f2:	d96f                	mov_s	r1,0x6f
+e50056f4:	c837                	ld_s	r0,[gp,220]
+e50056f6:	0d2b 1000           	breq	r13,r0,42	;0xe500571e
+e50056fa:	1a37 3358           	st.as	r13,[gp,55]
+e50056fe:	ed07                	breq_s	r13,0,14	;0xe500570a
+e5005700:	d136                	ld_s	r1,[pcl,0xd8]	;0xe50057d8
+e5005702:	8119                	ld_s	r0,[r1,0x64]
+e5005704:	e001                	add_s	r0,r0,0x1
+e5005706:	a119                	st_s	r0,[r1,0x64]
+e5005708:	f00b                	b_s	22	;0xe500571e
+e500570a:	c84e                	ld_s	r0,[gp,312]
+e500570c:	1a38 3018           	st.as	r0,[gp,56]
+e5005710:	1218 360e           	ld.as	r14,[gp,24]
+e5005714:	ee88                	brne_s	r14,0,16	;0xe5005724
+e5005716:	d131                	ld_s	r1,[pcl,0xc4]	;0xe50057d8
+e5005718:	811a                	ld_s	r0,[r1,0x68]
+e500571a:	e001                	add_s	r0,r0,0x1
+e500571c:	a11a                	st_s	r0,[r1,0x68]
+e500571e:	1a39 3358           	st.as	r13,[gp,57]
+e5005722:	f19f                	b_s	-194	;0xe500565e
+e5005724:	ce18                	add_s	r0,gp,96
+e5005726:	8001                	ld_s	r0,[r0,0x4]
+e5005728:	8001                	ld_s	r0,[r0,0x4]
+e500572a:	1000 0010           	ld	r16,[r0]
+e500572e:	86e6                	ld_s	r15,[r14,0x18]
+e5005730:	70c9                	mov_s	r0,r14
+e5005732:	0842 fe2f           	bl.d	-16320	;0xe5001770
+e5005736:	d901                	mov_s	r1,0x1
+e5005738:	7612                	cmp_s	r14,r16
+e500573a:	27cc 9022           	cmp.ne	r15,0
+e500573e:	f3ed                	beq_s	-38	;0xe5005716
+e5005740:	76e9                	mov_s	r14,r15
+e5005742:	f1f7                	b_s	-18	;0xe500572e

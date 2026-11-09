@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "path": "evidence/beacon-r11c-sealed-qualification-20261022T202800Z-r1/input-pins.json",
+      "bytes": 569601,
+      "sha256": "4f10db75ede28f4167ce930cc02af14e646e060ccadf69e6eefdae0082038de8"
+    },
+    {
+      "path": "evidence/beacon-r11c-sealed-qualification-20261022T202800Z-r1/result.json",
+      "bytes": 7700,
+      "sha256": "f476fc1547969d10c64906baab499b07d6cc4957159e393fed707bc4ef282735"
+    },
+    {
+      "path": "evidence/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/input-pins.json",
+      "bytes": 564513,
+      "sha256": "ebd7fdb5566c9f9666e48607f1ecbcc7f63a5c7e2143710425b70694bc447b3c"
+    },
+    {
+      "path": "evidence/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/result.json",
+      "bytes": 4954,
+      "sha256": "367eecf5ca0a8947ab1070fa7292f0c965323656a20a03859401da72f20f5147"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-outer-multicast-fixture-r1/actual-outer-ip-fwt-multicast.c",
+      "bytes": 33994,
+      "sha256": "06fb93525fa8116fc4ec85110cad3dc3d55b24cb30e0ba9cafd6dd84804b07c0"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-outer-multicast-fixture-r1/result.json",
+      "bytes": 600,
+      "sha256": "15ee216e2037e1a2c951b84d009e7f8f566beca72f573e9ffda8ca2341baac21"
+    }
+  ],
+  "hardware_accessed": false
+}

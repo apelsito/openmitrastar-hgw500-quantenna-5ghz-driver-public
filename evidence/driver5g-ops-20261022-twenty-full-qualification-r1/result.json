@@ -1,0 +1,116 @@
+{
+  "status": "PASS_OFFLINE_COMPLETE_TWENTY_TYPED_HEADER_CLOSURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "main_pair_pass": true,
+  "ancillary_count_built": 5,
+  "ancillary_original_manifest_sha256": "aeae6659a25137e9358f34f7eefc70e186ef3b884362a17923649b430fa5bc1b",
+  "private_table_records": 586,
+  "remaining_original_table_gaps": 24,
+  "modules": [
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/a/qdrv/qdrv.ko",
+      "sha256": "f79e2836e3a18c64216be197ea371d4a4c314056451c30394404ecb0581ea913",
+      "bytes": 684772
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/a/wlan/wlan.ko",
+      "sha256": "aa00ffd4fa3fba0f7871fdea14c76f2a6816c7add9fd3ff0d9a7b0c9fa6c2c02",
+      "bytes": 630312
+    },
+    {
+      "lane": "a",
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/a/wlan_scan_ap/wlan_scan_ap.ko",
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093",
+      "bytes": 15508
+    },
+    {
+      "lane": "a",
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/a/wlan_scan_sta/wlan_scan_sta.ko",
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5",
+      "bytes": 18740
+    },
+    {
+      "lane": "a",
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/a/wlan_ccmp/wlan_ccmp.ko",
+      "sha256": "7c54b944fd3f2d214dd8a4d0c98615a48b6fed1acb0b29d86176dff05c9d700f",
+      "bytes": 9792
+    },
+    {
+      "lane": "a",
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/a/wlan_tkip/wlan_tkip.ko",
+      "sha256": "5a625b63d6a86b8f43bc28a2cae90f5a8270cdc6298711029a9aac59f58a4f22",
+      "bytes": 13472
+    },
+    {
+      "lane": "a",
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/a/wlan_xauth/wlan_xauth.ko",
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989",
+      "bytes": 3340
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/b/qdrv/qdrv.ko",
+      "sha256": "f79e2836e3a18c64216be197ea371d4a4c314056451c30394404ecb0581ea913",
+      "bytes": 684772
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/b/wlan/wlan.ko",
+      "sha256": "aa00ffd4fa3fba0f7871fdea14c76f2a6816c7add9fd3ff0d9a7b0c9fa6c2c02",
+      "bytes": 630312
+    },
+    {
+      "lane": "b",
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/b/wlan_scan_ap/wlan_scan_ap.ko",
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093",
+      "bytes": 15508
+    },
+    {
+      "lane": "b",
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/b/wlan_scan_sta/wlan_scan_sta.ko",
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5",
+      "bytes": 18740
+    },
+    {
+      "lane": "b",
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/b/wlan_ccmp/wlan_ccmp.ko",
+      "sha256": "7c54b944fd3f2d214dd8a4d0c98615a48b6fed1acb0b29d86176dff05c9d700f",
+      "bytes": 9792
+    },
+    {
+      "lane": "b",
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/b/wlan_tkip/wlan_tkip.ko",
+      "sha256": "5a625b63d6a86b8f43bc28a2cae90f5a8270cdc6298711029a9aac59f58a4f22",
+      "bytes": 13472
+    },
+    {
+      "lane": "b",
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1/b/wlan_xauth/wlan_xauth.ko",
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989",
+      "bytes": 3340
+    }
+  ],
+  "abi_sha256": "86609a79df1e78bc973fb48e7b451be234b6795c82da25447741f25190a1b64d",
+  "fixture_sha256": "4ed890c1ef05bb0cbf1074cea8bba173538bd3753106886644a066fbc8184431",
+  "negative_proof_sha256": "2e58f3d899b6a607073fcab569cd701daa954ae0db0ccbf748e7fd273c852767",
+  "negative_cases": 7,
+  "pins_verified": 1511,
+  "limits": "Exact20source/7moduletypedclosurequalified offline; noaggregation/throughput/RF/client/persistence/rollbackrelease acceptance"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ACTUAL449_BOOL_SETTER_NO_OTHER_MUTATION",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 196608,
+  "source_sha256": "20faa3192b9f4239e17aee4c60e13ab5a6487907ff8a379682ab1a3e9e3758c3",
+  "case_sha256": "25a75423074f9338de0ee1056c043cd31c44f0fdf63b29016043818db12287a6",
+  "adaptation": "Onlynextcaseboundprecise; actual449setterbodyunmodified",
+  "tool_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_consolidated30_setter.py": "6869e63f97c566339ef9b463037778e0babb65d659873fcf4774742fbbc06fb0",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_hgw5g_coex449_setter.py": "66ee1f18a31bfc0437ae743980029d678a34e0c1f160d81b4bcd264e4231bd94",
+    "outputs\\rea\\consolidated30-setter-fixture-20261022T221300Z-r2\\adapted-actual-setter.py": "ee5d8e7e79e73a43ace0bb43720a8ffe06780fef7409c38a31c2a238f506e2d4"
+  }
+}

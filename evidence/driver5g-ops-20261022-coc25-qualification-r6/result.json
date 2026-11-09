@@ -1,0 +1,69 @@
+{
+  "status": "PASS_OFFLINE_COC25_INITIALIZED_RETAINED_IC_SEVEN_MODULE_CLOSURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "reproducible": true,
+  "candidate_source_units_fresh": 116,
+  "control_exact_unchanged_units_reused": 54,
+  "control_changed_units_compiled": 4,
+  "private_records": 591,
+  "original_records_recovered": 25,
+  "remaining_original_records": 19,
+  "worker_cases": 165888,
+  "ioctl_cases": 262144,
+  "producer_interleavings": 9,
+  "canceljoin_contract_model": true,
+  "abi_old_members": {
+    "ieee80211com": 376,
+    "ieee80211vap": 210,
+    "qdrv_wlan": 72
+  },
+  "host_layout_delta": 20,
+  "negative_cases": 11,
+  "pins_verified": 2378,
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coc25-joint-a-r6/qdrv/qdrv.ko",
+      "bytes": 684776,
+      "sha256": "7c53487f459328d12eb7952b9672a7410d621302da1215a539d600c5de75f1c5"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coc25-joint-a-r6/wlan/wlan.ko",
+      "bytes": 633096,
+      "sha256": "06680ba7a6a67ef2003e61f84378aa16d6e4697b78c98fcd300b6c64c2731f29"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coc25-joint-a-r6/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15508,
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coc25-joint-a-r6/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coc25-joint-a-r6/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9792,
+      "sha256": "7c54b944fd3f2d214dd8a4d0c98615a48b6fed1acb0b29d86176dff05c9d700f"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coc25-joint-a-r6/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13472,
+      "sha256": "5a625b63d6a86b8f43bc28a2cae90f5a8270cdc6298711029a9aac59f58a4f22"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coc25-joint-a-r6/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "limits": "InitializedretainedIC scope only; preinitifattachfailure/forcedunload/externalentireCSAteardown excluded. TimerQoS/log safelydeferred, scalarstate notcoherenttuple. Twofaithfulunsupportedrecords/NACsnapshotlimits retained. NoPM/CSA/RF/client/traffic/boot/persistence/rollback/releaseacceptance."
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "manifests/r26-module-handoff.json",
+      "source": "outputs/rea/linux73-r26-module-handoff-20261023T072000Z-r1/manifest.json",
+      "bytes": 6443,
+      "sha256": "cd148d6b14d1f7a2b6a44dd00f577fa7a97b65d4a0f864b01afb93fbf616fc75",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-module-handoff-20261023T072000Z-r1/result.json",
+      "source": "outputs/rea/linux73-r26-module-handoff-20261023T072000Z-r1/result.json",
+      "bytes": 689,
+      "sha256": "4a803263fec36b509e47a542f317478b4ae1269a30e12d092b0fc45985e1d9a8",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

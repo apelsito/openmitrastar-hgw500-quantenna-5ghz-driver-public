@@ -1,0 +1,586 @@
+{
+  "schema": "openmitrastar.hgw5g-driver-ops/v1",
+  "status": "PASS_OFFLINE_METADATA_RECOVERY",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "raw_binary_data_exported": false,
+  "inputs_unchanged": true,
+  "modules": {
+    "oem_qdrv": {
+      "path": "work/hgw500-rootfs-live/squashfs-root/lib/modules/2.6.35.12/extra/qdrv/qdrv.ko",
+      "bytes": 832600,
+      "sha256": "faf2327c92d9d90c29d24b1e861037d7b46fef1d6fe0933484b0b87bd86f7103",
+      "symbols_total": 834,
+      "relocation_count": 16987,
+      "allocated_data_relocation_count": 2328,
+      "function_pointer_relocation_count": 16,
+      "functions": 351,
+      "imports": 416,
+      "exports": 14,
+      "callback_objects": 6
+    },
+    "oem_wlan": {
+      "path": "work/hgw500-rootfs-live/squashfs-root/lib/modules/2.6.35.12/extra/wlan/wlan.ko",
+      "bytes": 829864,
+      "sha256": "5238b02b1c3c9e900ed3e8f141f4fcc9252442c88b02554af87197880c2e061c",
+      "symbols_total": 858,
+      "relocation_count": 14343,
+      "allocated_data_relocation_count": 4025,
+      "function_pointer_relocation_count": 259,
+      "functions": 643,
+      "imports": 144,
+      "exports": 275,
+      "callback_objects": 6
+    },
+    "oem_switch_tqe": {
+      "path": "work/hgw500-rootfs-live/squashfs-root/lib/modules/2.6.35.12/extra/topaz/switch_tqe.ko",
+      "bytes": 36060,
+      "sha256": "5dfd98ffde413a0a4393e1d33460ef7ae67f6ec5662270c7c6917e161354f631",
+      "symbols_total": 145,
+      "relocation_count": 498,
+      "allocated_data_relocation_count": 71,
+      "function_pointer_relocation_count": 19,
+      "functions": 33,
+      "imports": 63,
+      "exports": 25,
+      "callback_objects": 2
+    },
+    "f365_qdrv": {
+      "path": "outputs/rea/arc700-20261021-r2/f365-ram-activation/r3/payload/modules/qdrv.ko",
+      "bytes": 685332,
+      "sha256": "cfb1b5c49eba15a0b114bb695d68dce07629d9600387a26d3c65d7ae573a4b01",
+      "symbols_total": 1932,
+      "relocation_count": 14034,
+      "allocated_data_relocation_count": 1286,
+      "function_pointer_relocation_count": 108,
+      "functions": 831,
+      "imports": 369,
+      "exports": 15,
+      "callback_objects": 34
+    },
+    "f365_wlan": {
+      "path": "outputs/rea/arc700-20261021-r2/f365-ram-activation/r3/payload/modules/wlan.ko",
+      "bytes": 629180,
+      "sha256": "f4f6099b43dd675dd44e7021374f1ea2f4380a4d9d9fd81b1d35ea411984897f",
+      "symbols_total": 2250,
+      "relocation_count": 9543,
+      "allocated_data_relocation_count": 1363,
+      "function_pointer_relocation_count": 330,
+      "functions": 959,
+      "imports": 138,
+      "exports": 252,
+      "callback_objects": 240
+    },
+    "active_lineage_switch_tqe": {
+      "path": "outputs/rea/arc700-20261021-r2/tqe-current/switch_tqe.ko",
+      "bytes": 35552,
+      "sha256": "bd5ab1018d293dc6bed655ec2bbc6da64a3969f28a3de578c04fa9c3f4af635f",
+      "symbols_total": 275,
+      "relocation_count": 464,
+      "allocated_data_relocation_count": 100,
+      "function_pointer_relocation_count": 24,
+      "functions": 52,
+      "imports": 67,
+      "exports": 25,
+      "callback_objects": 21
+    },
+    "f370_qdrv": {
+      "path": "outputs/rea/arc700-20261021-r2/f370-module-20261021T221200Z-r2/a/qdrv.ko",
+      "bytes": 686144,
+      "sha256": "d5e1f58303eaaa02123e0cf6352bd40c40df3027be300d2a1143b07f54a05dae",
+      "symbols_total": 1948,
+      "relocation_count": 14050,
+      "allocated_data_relocation_count": 1302,
+      "function_pointer_relocation_count": 108,
+      "functions": 831,
+      "imports": 369,
+      "exports": 15,
+      "callback_objects": 34
+    }
+  },
+  "source": {
+    "files": 203,
+    "callback_declarations": 148,
+    "assignments": 653,
+    "registrations": 174,
+    "cfg80211_ops_occurrences": 0
+  },
+  "independent_rea_provenance": {
+    "getparam": {
+      "path": "outputs/rea/oem-wlan-missingops-20261022T131900Z-getparam-r2/rea.json",
+      "sha256": "294fee39538182aed0e2a16151340134f066a6e44af9f98b88dec73d7e771bb2",
+      "evidence_id": "ev_de04f46b6670c239edb9c24b58de20d003ecdfae4450ddc9b17210bc5ba03dac",
+      "target_sha256": "79fbcbd4634a9fc32fdf8ac0c997f3bd0329131162a1ea4948794e4986c7e40a",
+      "operation": "analyze_function",
+      "procedure": {
+        "address": "0x3741c",
+        "name": "FUN_ram_0003741c",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x3741c",
+              "end": "0x3981f"
+            }
+          ],
+          "total_bytes": 9220,
+          "span_bytes": 9220,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "undefined FUN_ram_0003741c()",
+        "locals": [
+          {
+            "description": "undefined4 local_10 @ Stack[-0x10]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_1c @ Stack[-0x1c]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_20 @ Stack[-0x20]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_24 @ Stack[-0x24]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_28 @ Stack[-0x28]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_2c @ Stack[-0x2c]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_30 @ Stack[-0x30]:4",
+            "provenance": "ghidra-function-database"
+          }
+        ]
+      },
+      "limits": "Independent static REA binding; no inference of complete behavior or hardware acceptance"
+    },
+    "setparam": {
+      "path": "outputs/rea/oem-wlan-missingops-20261022T131900Z-setparam-r2/rea.json",
+      "sha256": "ca1d8159bc59573e28ab194decf48bcf4fda3ce8de336a5902f08134106aef6d",
+      "evidence_id": "ev_44a857a0951921a0602b96dea7a6506921e6a4d1331ede06e633588236cd492d",
+      "target_sha256": "79fbcbd4634a9fc32fdf8ac0c997f3bd0329131162a1ea4948794e4986c7e40a",
+      "operation": "analyze_function",
+      "procedure": {
+        "address": "0x41664",
+        "name": "FUN_ram_00041664",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x41664",
+              "end": "0x46e11"
+            }
+          ],
+          "total_bytes": 22446,
+          "span_bytes": 22446,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "undefined FUN_ram_00041664()",
+        "locals": [
+          {
+            "description": "undefined4 local_10 @ Stack[-0x10]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_14 @ Stack[-0x14]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_18 @ Stack[-0x18]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_1c @ Stack[-0x1c]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_28 @ Stack[-0x28]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined2 local_2a @ Stack[-0x2a]:2",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_2d @ Stack[-0x2d]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_31 @ Stack[-0x31]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_38 @ Stack[-0x38]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_3b @ Stack[-0x3b]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_3c @ Stack[-0x3c]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_40 @ Stack[-0x40]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_44 @ Stack[-0x44]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_48 @ Stack[-0x48]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_4c @ Stack[-0x4c]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_50 @ Stack[-0x50]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_54 @ Stack[-0x54]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_58 @ Stack[-0x58]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_c @ Stack[-0xc]:4",
+            "provenance": "ghidra-function-database"
+          }
+        ]
+      },
+      "limits": "Independent static REA binding; no inference of complete behavior or hardware acceptance"
+    }
+  },
+  "comparisons": {
+    "oem_vs_f365_private_ioctls": {
+      "oem_entries": 607,
+      "port_entries": 566,
+      "preserved": 563,
+      "missing": [
+        [
+          331,
+          0,
+          18433,
+          "get_cca_fixed"
+        ],
+        [
+          246,
+          18433,
+          0,
+          "tx_maxmpdu"
+        ],
+        [
+          246,
+          0,
+          18433,
+          "get_tx_maxmpdu"
+        ],
+        [
+          275,
+          0,
+          18433,
+          "get_auto_cca_en"
+        ],
+        [
+          484,
+          18433,
+          0,
+          "txamsdu_11n"
+        ],
+        [
+          484,
+          0,
+          18433,
+          "get_txamsdu_11n"
+        ],
+        [
+          498,
+          18433,
+          0,
+          "set_dup_rts"
+        ],
+        [
+          498,
+          0,
+          18433,
+          "get_dup_rts"
+        ],
+        [
+          449,
+          18433,
+          0,
+          "20_40_bss_coex"
+        ],
+        [
+          450,
+          0,
+          18433,
+          "get_min_cac"
+        ],
+        [
+          457,
+          18433,
+          0,
+          "nac_mode"
+        ],
+        [
+          457,
+          0,
+          18433,
+          "get_nac_mode"
+        ],
+        [
+          451,
+          0,
+          18433,
+          "get_dev_mode"
+        ],
+        [
+          460,
+          18433,
+          0,
+          "set_max_bw"
+        ],
+        [
+          460,
+          0,
+          18433,
+          "get_max_bw"
+        ],
+        [
+          461,
+          18433,
+          0,
+          "set_bw_autosel"
+        ],
+        [
+          461,
+          0,
+          18433,
+          "get_bw_autosel"
+        ],
+        [
+          465,
+          18433,
+          0,
+          "ignr_icac_sel"
+        ],
+        [
+          467,
+          0,
+          18433,
+          "dfs_chan_avail"
+        ],
+        [
+          464,
+          18433,
+          0,
+          "check_cur_chan"
+        ],
+        [
+          466,
+          18433,
+          0,
+          "rbs_dfs_msr_cac"
+        ],
+        [
+          466,
+          0,
+          18433,
+          "g_rbsdfs_msrcac"
+        ],
+        [
+          468,
+          18433,
+          0,
+          "rbs_dfs_end_tx"
+        ],
+        [
+          468,
+          0,
+          18433,
+          "g_rbsdfs_end_tx"
+        ],
+        [
+          492,
+          18433,
+          0,
+          "neigh_repo"
+        ],
+        [
+          492,
+          0,
+          18433,
+          "get_neigh_repo"
+        ],
+        [
+          463,
+          18433,
+          0,
+          "set_dyn_sifs"
+        ],
+        [
+          478,
+          18433,
+          0,
+          "wea_cac_en"
+        ],
+        [
+          478,
+          0,
+          18433,
+          "get_wea_cac_en"
+        ],
+        [
+          481,
+          18433,
+          0,
+          "set_vopt"
+        ],
+        [
+          481,
+          0,
+          18433,
+          "get_vopt"
+        ],
+        [
+          483,
+          18433,
+          0,
+          "bbdf_war_en"
+        ],
+        [
+          483,
+          0,
+          18433,
+          "get_bbdfwar_en"
+        ],
+        [
+          491,
+          18433,
+          0,
+          "coc_mv_to_ndfs"
+        ],
+        [
+          491,
+          0,
+          18433,
+          "g_coc_mv_to_ndfs"
+        ],
+        [
+          493,
+          18433,
+          0,
+          "bss_tm"
+        ],
+        [
+          493,
+          0,
+          18433,
+          "get_bss_tm"
+        ],
+        [
+          494,
+          18433,
+          0,
+          "mdid"
+        ],
+        [
+          494,
+          0,
+          18433,
+          "get_mdid"
+        ],
+        [
+          495,
+          18433,
+          0,
+          "ft_over_ds"
+        ],
+        [
+          495,
+          0,
+          18433,
+          "get_ft_over_ds"
+        ],
+        [
+          496,
+          0,
+          18433,
+          "get_sretry_lmt"
+        ],
+        [
+          497,
+          0,
+          18433,
+          "get_lretry_lmt"
+        ],
+        [
+          490,
+          18433,
+          0,
+          "fix_legacy_rate"
+        ]
+      ],
+      "additional": [
+        [
+          17,
+          18433,
+          0,
+          "maccmd"
+        ],
+        [
+          170,
+          18433,
+          0,
+          "probe_rt"
+        ],
+        [
+          234,
+          18433,
+          0,
+          "auc_tx"
+        ]
+      ]
+    }
+  },
+  "limits": [
+    "All symbols and all allocated-data REL/RELA records of the selected exact modules are enumerated.",
+    "Function pointer evidence is STT_FUNC or exact section-plus-addend match; unresolved records remain explicit.",
+    "Names are not semantic contracts. Data references include kernel exports and metadata as well as operation tables.",
+    "Mutable/BSS callback installation needs source and instruction analysis; lexical assignments are not CFG proof.",
+    "Source scans are direct files only, include inactive preprocessor branches, and are not whole-tree completeness claims.",
+    "No binary strings, key material, calibration bytes, raw sections or complete firmware images are exported.",
+    "Modern cfg80211/mac80211 reconstruction, complete MuC/AuC firmware semantics and physical acceptance remain unproven."
+  ]
+}

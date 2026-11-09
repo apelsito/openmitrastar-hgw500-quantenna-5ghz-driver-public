@@ -1,0 +1,16 @@
+[
+  "/usr/bin/python3",
+  "/workspace/user-home/Desktop/MitraStar/tools/compose_hgw5g_joint_modules_dedup.py",
+  "--source-build",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/b",
+  "--candidate",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-source34-20261022T210000Z-r1",
+  "--lane",
+  "a",
+  "--qdrv-baseline-build",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/arc700-20261021-r2/f370-module-20261021T221200Z-r2",
+  "--wlan-baseline-build",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-wlan-baseline-r2",
+  "--output",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/b-joint"
+]

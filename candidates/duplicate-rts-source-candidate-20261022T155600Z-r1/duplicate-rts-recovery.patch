@@ -1,0 +1,86 @@
+--- a/src/qdrv/qdrv_wlan.h
++++ b/src/qdrv/qdrv_wlan.h
+@@ -1247,6 +1247,8 @@
+ 	struct shared_params *sp;
+ 	/* Recovered OEM483 local state; private append preserves earlier offsets. */
+ 	bool om_bbdf_war_enabled;
++	/* OEM498reportedlow8state; privateappend avoids sharedhostABI change. */
++	u8 om_duplicate_rts_value;
+ };
+ 
+ /**************/
+--- a/src/qdrv/qdrv_wlan.c
++++ b/src/qdrv/qdrv_wlan.c
+@@ -101,6 +101,7 @@
+ #define QDRV_DFLT_MAX_TXPOW	19
+ 
+ #define QDRV_WLAN_IGMP_QUERY_INTERVAL 125
++#define OM_OEM_PARAM_DUPLICATE_RTS 498
+ #define OM_OEM_PARAM_BBDF_WAR 483
+ #define NET_IP_ALIGN 2
+ 
+@@ -4511,6 +4512,10 @@
+ 	u_int16_t seq, size, time;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_DUPLICATE_RTS:
++		qw->om_duplicate_rts_value = (u8)value;
++		break;
++
+ 	case OM_OEM_PARAM_BBDF_WAR:
+ 		qw->om_bbdf_war_enabled = !!value;
+ 		break;
+@@ -5550,6 +5555,10 @@
+ 	DBGPRINTF(DBG_LL_ALL, QDRV_LF_TRACE, "-->Enter\n");
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_DUPLICATE_RTS:
++		*value = qw->om_duplicate_rts_value;
++		break;
++
+ 	case OM_OEM_PARAM_BBDF_WAR:
+ 		*value = !!qw->om_bbdf_war_enabled;
+ 		break;
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -125,6 +125,7 @@
+ #define OM_OEM_PARAM_BBDF_WAR 483
+ #define OM_OEM_PARAM_CHECK_CURRENT_CHANNEL 464
+ #define OM_OEM_PARAM_DYNAMIC_SIFS 463
++#define OM_OEM_PARAM_DUPLICATE_RTS 498
+ #define OM_OEM_PARAM_DEVICE_MODE 451
+ #define OM_OEM_PARAM_IGNORE_ICAC_SELECTION 465
+ #define OM_OEM_PARAM_FT_OVER_DS 495
+@@ -11372,6 +11373,10 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_DUPLICATE_RTS:
++		ieee80211_param_to_qdrv(vap, param, value, NULL, 0);
++		break;
++
+ 	/* ExactOEM463 genericwire forwarding; MuC validatesselectortriplet. */
+ 	case OM_OEM_PARAM_DYNAMIC_SIFS:
+ 		ieee80211_param_to_qdrv(vap, param, value, NULL, 0);
+@@ -13962,6 +13967,10 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_DUPLICATE_RTS:
++		ieee80211_param_from_qdrv(vap, param[0] & 0xffff, &param[0], NULL, 0);
++		break;
++
+ 	case OM_OEM_PARAM_BBDF_WAR:
+ 		ieee80211_param_from_qdrv(vap, param[0] & 0xffff, &param[0], NULL, 0);
+ 		break;
+@@ -20925,6 +20934,10 @@
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "check_cur_chan" },
+ 	{ OM_OEM_PARAM_DYNAMIC_SIFS,
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "set_dyn_sifs" },
++	{ OM_OEM_PARAM_DUPLICATE_RTS,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "set_dup_rts" },
++	{ OM_OEM_PARAM_DUPLICATE_RTS,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_dup_rts" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

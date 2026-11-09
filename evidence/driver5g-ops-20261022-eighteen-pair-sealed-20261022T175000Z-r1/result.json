@@ -1,0 +1,83 @@
+{
+  "status": "PASS_OFFLINE_COMPLETE_EIGHTEEN_ENTRY_PAIR",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "modules": [
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "bytes": 684772,
+      "sha256": "f79e2836e3a18c64216be197ea371d4a4c314056451c30394404ecb0581ea913"
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "bytes": 630136,
+      "sha256": "ce526cf5fa10f23d75f7eb315beeae65da73754fc6220b630db745fc80c009cc"
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "bytes": 684772,
+      "sha256": "f79e2836e3a18c64216be197ea371d4a4c314056451c30394404ecb0581ea913"
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "bytes": 630136,
+      "sha256": "ce526cf5fa10f23d75f7eb315beeae65da73754fc6220b630db745fc80c009cc"
+    }
+  ],
+  "original_entries_added": 18,
+  "functional_source_entries": 16,
+  "faithful_unsupported": 2,
+  "remaining_oem_table_gaps": 26,
+  "all_c_compilations": 106,
+  "compiled_input_pins": 2224,
+  "header_abi": {
+    "size": 30556,
+    "bbdf": 30552,
+    "duplicate_rts": 30553,
+    "prefix_unchanged": true
+  },
+  "fixtures": {
+    "layout": {
+      "path": "outputs\\rea\\driver5g-ops-20261022-eighteen-private-layout-20261022T173500Z-r1\\result.json",
+      "sha256": "c56145818e88e07ebc7e5b6f24bb85ca586eddcf6aede4d5dd5c3ba7a558b2eb",
+      "status": "PASS_ACTUAL_ARC_PRIVATE_APPEND_PREFIX_LAYOUT"
+    },
+    "duplicate_rts": {
+      "path": "outputs\\rea\\duplicate-rts-host-fixture-20261022T155700Z-r1\\result.json",
+      "sha256": "c65a95abb16c311b0b7af5785d1842d0c9d437b0ee3c900de5c31fe810154881",
+      "status": "PASS_ACTUAL_HOST_DUPLICATE_RTS_STATE_FIXTURE"
+    },
+    "dynamic_sifs": {
+      "path": "outputs\\rea\\dynamic-sifs-source-fixture-20261022T155400Z-r1\\result.json",
+      "sha256": "763979132a516a88adcac8feebfbd518c1767ed487347cf4f099c58ca9fac5b5",
+      "status": "PASS_ACTUAL_HOST_DYNAMIC_SIFS_FORWARD_FIXTURE"
+    },
+    "faults": {
+      "path": "outputs\\rea\\driver5g-ops-20261022-eighteen-fault-tests-20261022T174700Z-r1\\result.json",
+      "sha256": "347021e1ad2a21e15a8f03ab15c1cad95c51e3f1a5dab4d0e4dca096c33f2d64",
+      "status": "PASS_ACTUAL_EIGHTEEN_MODULE_FAULT_CHECKS"
+    },
+    "qdrv_parent": {
+      "path": "outputs\\rea\\driver5g-ops-20261022-fourteen-full-qualification-r5\\result.json",
+      "sha256": "4f5c151e0e06744820a2b2cae4af422a53b8e42d58f8eb1393890525c692e7f7",
+      "status": "PASS_OFFLINE_COMPLETE_FOURTEEN_ENTRY_PAIR"
+    },
+    "wlan_parent": {
+      "path": "outputs\\rea\\driver5g-ops-20261022-fifteen-pair-sealed-r1\\result.json",
+      "sha256": "c3b69288b3f713361ae1125d9ce344f60dd0914b5c707e1653139fcab90b7349",
+      "status": "PASS_OFFLINE_COMPLETE_FIFTEEN_ENTRY_PAIR"
+    }
+  },
+  "qualification_input_pins": 20,
+  "negative_cases": 7,
+  "limitations": [
+    "Actualhoststate recovery/ABI/layout proven offline; MuCeffects static only",
+    "Everytableparententry preserved584records;26originalops unresolved",
+    "RFvisibility/association/traffic/recovery/release unrun"
+  ]
+}

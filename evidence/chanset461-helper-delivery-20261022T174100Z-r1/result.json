@@ -1,0 +1,22 @@
+{
+  "status": "PASS_OFFLINE_PARTIAL461_SOURCE_HELPERS_NOT_REGISTERED_OPERATION",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "receipts": {
+    "chanset461-helpers-source-20261022T171200Z-r4": "SOURCE_ONLY461_SCAN_QUEUE_EDGES_COST_HELPERS_NOT_DRIVER",
+    "chanset461-helpers-host-fixture-20261022T171300Z-r2": "PASS_HOST_ACTUAL461_QUEUE_EDGES_WRAP_COST_HELPERS",
+    "chanset461-full-helper-tables-fixture-20261022T172000Z-r2": "PASS_HOST_COMPILED_EXACT130_ROWS_AND_BOUNDED_FIRST_LOOKUP",
+    "chanset461-helpers-arc-compile-20261022T171600Z-r2": "PASS_ARC_COMPILED461_SIX_HELPERS_EXACT130_TABLES",
+    "chanset461-cost-loop-with-register-context-20261022T170700Z-r2": "PASS_EXACT_UNOWNED_ARC_COST_LOOP_DECODE"
+  },
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-helpers-source-20261022T171200Z-r4\\result.json": "f21cac6be3c1299d4f04027122785b788fff94d9f68521fccb5e87c30f4d0d6e",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-helpers-host-fixture-20261022T171300Z-r2\\result.json": "0c5e4fb6337b24302194f1ddb4fdb1c15cc9db9e4caf42162d2a8b8a243b2aa3",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-full-helper-tables-fixture-20261022T172000Z-r2\\result.json": "8f9cccfcab7b7992ec6e3bf78126c9049cee222d9bbe6c450b91a1156148de74",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-helpers-arc-compile-20261022T171600Z-r2\\result.json": "68dacf8aea63f82d25b465ae27868cc1537ee96a236d3b7e243b2c493be15295",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-cost-loop-with-register-context-20261022T170700Z-r2\\result.json": "c9d232b006c51ad82bfcd27dd1025d1dcfc74c3cabef474aff15f9f4fd923878"
+  },
+  "remaining_original_table_gaps": 22,
+  "does_not_reduce_gap_count": true,
+  "scope": "130exactrows lookup/queue/defaults/edges/wrapcost only; actualscan metrics/finalselect/lifecycle integration unrun"
+}

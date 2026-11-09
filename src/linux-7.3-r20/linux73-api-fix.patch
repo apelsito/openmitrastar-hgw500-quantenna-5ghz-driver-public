@@ -1,0 +1,43 @@
+--- a/source/qdrv/compat/include/openmitrastar_qdrv_compat.h
++++ b/source/qdrv/compat/include/openmitrastar_qdrv_compat.h
+@@ -7,6 +7,9 @@
+ #include <common/ruby_mem.h>
+ #include <linux/etherdevice.h>
+ #include <linux/fs.h>
++#include <linux/preempt.h>
++#include <linux/interrupt.h>
++#include <linux/string.h>
+ #include <linux/interrupt.h>
+ #include <linux/string.h>
+ #include <linux/openmitrastar_bridge.h>
+@@ -156,4 +159,19 @@
+ #define flush_and_inv_dcache_range openmitrastar_flush_inv_dcache_range
+ #define inv_dcache_range openmitrastar_inv_dcache_range
+ 
++
++/* Linux7.3removed in_irq alias: same hardIRQcount contract, not softIRQ. */
++#ifndef in_irq
++#define in_irq in_hardirq
+ #endif
++/* Preserve original strncpy copy/pad/truncation semantics for historical ABI
++ * buffers; replacing all callers with strscpy would alter nonterminated fields. */
++static inline char *om_linux73_strncpy(char *destination,const char *source,size_t count)
++{
++    size_t copied=strnlen(source,count);
++    memcpy(destination,source,copied);
++    if(copied<count)memset(destination+copied,0,count-copied);
++    return destination;
++}
++#define strncpy om_linux73_strncpy
++#endif
+--- a/source/qdrv/qdrv_soc.h
++++ b/source/qdrv/qdrv_soc.h
+@@ -167,7 +167,7 @@
+ 
+ static __always_inline void _writel_wmb(u32 val, u32 addr)
+ {
+-	writel(val, addr);
++	writel(val, (void __iomem *)(uintptr_t)addr);
+ 	wmb();
+ 	qtn_addr_wmb(addr);
+ }

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "node",
+    "/home/rea/openmitrastar-arc700-lab-20261021-r2/rea-agents/scripts/rea.mjs",
+    "function",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/arc700-20261021-r2/f365-performance-linked/qdrv-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+    "--procedure",
+    "qdrv_wlan_init",
+    "--provider",
+    "ghidra",
+    "--format",
+    "json",
+    "--full-output"
+  ],
+  "started_utc": "2026-10-22T13:15:21.048964+00:00",
+  "finished_utc": "2026-10-22T13:16:03.486093+00:00",
+  "exit_code": 0,
+  "target_sha256": "9b90c3d18497d3b9ab4ad11ebc8140d2cb80b1fbe4254682a771c930cdbf60b7",
+  "target_unchanged": true,
+  "hardware_accessed": false,
+  "rea_output_sha256": "67cbe805da042a1adc8ec0eacce8148ebe1e6427d500292393027263d43d78a3",
+  "lab_manifest_sha256": "3d0e77d17af8bd3399772642436478d664ae0073892f71985c6a9b5de940d361"
+}

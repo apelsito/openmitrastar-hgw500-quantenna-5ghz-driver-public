@@ -1,0 +1,38 @@
+{
+  "schema": "openmitrastar.typed-header-closure/v1",
+  "status": "PASS_ACTUAL_TYPED_HEADER_SYNTAX_UNITS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "candidate": "/workspace/user-home/Desktop/MitraStar/outputs/rea/amsdu11n-typed-vap-source-20261022T161300Z-r1",
+  "candidate_schema": null,
+  "syntax_only": true,
+  "units": [
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211",
+      "source_sha256": "6076fe2e1fb483078acf2ba259e153b0fff1b599e03511339b73f325dc8e1967",
+      "object_sha256": "af539251105af91b5d632f2b429fa38b82b3c81ec07f515bbecf8c7e81901f08"
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_wireless",
+      "source_sha256": "45c578641ea27a7e1760faa15413acad3b81b5d18235f8d58185f770a81f0819",
+      "object_sha256": "156d6e0bafc40657ccf2b8f47ae2bb4712aa9e2c1efb1b8b036faed116e50fe0"
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_output",
+      "source_sha256": "d26f520bff2d54d058b330944b4ed30ab921a854288dcbd7b257a599d214cd3f",
+      "object_sha256": "f64fb8e3f78eebee6a91cfed70c27e0832623086d98d49a1450c947be77fcdd3"
+    }
+  ],
+  "modules": [],
+  "no_baseline_objects_reused": true,
+  "limits": "Sourcecompile/linkclosure only; exhaustiveABI/deltaverification andphysicalgates separate",
+  "inputs_unchanged": true,
+  "reproducible": false,
+  "complete_closure_modules": 0
+}

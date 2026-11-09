@@ -1,0 +1,191 @@
+{
+  "group": "common",
+  "source_files": 22,
+  "comments": 653,
+  "raw_bytes": 54896,
+  "raw_sha256": "48ced0f4681d3529671e2c0adea9bbbb3fd6298ac1e127bc201e3f93b809acf8",
+  "unterminated_comments": 0,
+  "files": [
+    {
+      "path": "common/common_mem.h",
+      "git_object": "61b106e9baabd03cf17248923b9019c0aae3728d",
+      "mode": "100644",
+      "bytes": 8647,
+      "sha256": "93729b5eb5a409814ba7a28080085ee5caed60e5cc71a4859c5633e9b51f2868",
+      "comments": 33
+    },
+    {
+      "path": "common/doxygen/qcsapi_doc/vsp_doc.c",
+      "git_object": "f74a81a522ae971c80e36fdeb04824693d88c9a2",
+      "mode": "100644",
+      "bytes": 10674,
+      "sha256": "3bae218fe844c6a3937b6f6e28fabf4f225ff7b3fadcaf5008f733d99d0da5cc",
+      "comments": 1
+    },
+    {
+      "path": "common/queue.h",
+      "git_object": "c384592cd92854965169d59601cbc1e008e47e3f",
+      "mode": "100644",
+      "bytes": 21006,
+      "sha256": "dc01e52d5fad4000d8e23051411d2405b1f35aac6ac47c7f0a9c52cdfe4fa877",
+      "comments": 31
+    },
+    {
+      "path": "common/ruby_arasan_emac_ahb.h",
+      "git_object": "2d36410884da785adda04cf34e26a35b7a49d9eb",
+      "mode": "100755",
+      "bytes": 13023,
+      "sha256": "47790794908226736b71dc9eecaf11023aacbf36446b0f0ec280d2ead0e632cd",
+      "comments": 33
+    },
+    {
+      "path": "common/ruby_board_cfg.h",
+      "git_object": "dc5275a3be07df570e721811a59b0535096e8fc6",
+      "mode": "100644",
+      "bytes": 3434,
+      "sha256": "e563ce1bc24259cfdc47c1091675127e1e54b0859f76a1ad423f2958ad457024",
+      "comments": 20
+    },
+    {
+      "path": "common/ruby_board_db.h",
+      "git_object": "da7883d86aa7a0d94f94787c7f8b38bb9215247a",
+      "mode": "100644",
+      "bytes": 43661,
+      "sha256": "625f5753b91daca456d741f4f7b23e163b4c9b080c7648d6995d1030067d6cfb",
+      "comments": 83
+    },
+    {
+      "path": "common/ruby_config.h",
+      "git_object": "c50e98adcb596d5d721bedf33ebcccada0c7be7a",
+      "mode": "100644",
+      "bytes": 5738,
+      "sha256": "852869fd9223f00fa07f13e2a4567c1b034e35f734e31c0488657ae2e42e675e",
+      "comments": 25
+    },
+    {
+      "path": "common/ruby_mem.h",
+      "git_object": "06c97bfa8f1c16e57d55a345e3daf5b124e416be",
+      "mode": "100644",
+      "bytes": 18896,
+      "sha256": "ddb69e6842ed04c5c254065357a798ef6273393b99e1174feaac663432707808",
+      "comments": 38
+    },
+    {
+      "path": "common/ruby_partitions.h",
+      "git_object": "1af2bc5a337b0e86fdab1bf35f1d6c9123314e87",
+      "mode": "100644",
+      "bytes": 3576,
+      "sha256": "9b82add30df62facc53f3752221cf8f1c4e50d28091bc7cc86e6083ebf42ae7f",
+      "comments": 4
+    },
+    {
+      "path": "common/ruby_pcie_bda.h",
+      "git_object": "89091ae1bcd785e8efbb6b5aa1b48231add9ba37",
+      "mode": "100644",
+      "bytes": 5337,
+      "sha256": "4f1677e286a186da35723eb1d8c231e498c322f5402d19768e7d0e6c429fa924",
+      "comments": 30
+    },
+    {
+      "path": "common/ruby_platform.h",
+      "git_object": "9708d63e49ace8253e99bee9527c929b33d249fd",
+      "mode": "100644",
+      "bytes": 40298,
+      "sha256": "d878ff34eff510110994cea174c1a216413bc774cbeaba2d27f23e7f778d1e64",
+      "comments": 146
+    },
+    {
+      "path": "common/ruby_pm.h",
+      "git_object": "052b46e8c43c64be1bb11acd12f606fab07503c2",
+      "mode": "100644",
+      "bytes": 5953,
+      "sha256": "222457c02595151bb8c04d37011f60220325802431a51e406e4e177d6e0b0219",
+      "comments": 59
+    },
+    {
+      "path": "common/ruby_pm_mproc.h",
+      "git_object": "869303c0f8d441a0098d4ca44568b987d54bbbb1",
+      "mode": "100644",
+      "bytes": 2573,
+      "sha256": "f770051ec860fe787bed88918a74e7cee6beaf657aa8494734032b1c817e0e44",
+      "comments": 3
+    },
+    {
+      "path": "common/ruby_spi_api.h",
+      "git_object": "1612a0dd45e7a70ab017b1b533670250bb05e89e",
+      "mode": "100644",
+      "bytes": 3914,
+      "sha256": "8da80a678169e109da3cd9f86d87120108826b63a8c40fe2296e67e92effd84c",
+      "comments": 9
+    },
+    {
+      "path": "common/ruby_spi_flash_data.h",
+      "git_object": "3006f73c8aa51441421dcbab302c0209bb1c9451",
+      "mode": "100644",
+      "bytes": 6854,
+      "sha256": "c590f8496c98678fd97e2043052a2c7135aac5c747f1c9f4e9b7fece715b18af",
+      "comments": 16
+    },
+    {
+      "path": "common/ruby_version.h",
+      "git_object": "7664b11fd9a3a204d1a66b81fae15a2873bf1777",
+      "mode": "100644",
+      "bytes": 432,
+      "sha256": "b8af6d94077fb3d0b7977f267f3f7c8d19adf699dcfb2c1b20558205d8294c7e",
+      "comments": 5
+    },
+    {
+      "path": "common/topaz_config.h",
+      "git_object": "5be0113ae59bfcb19aa49b7275c763525336f377",
+      "mode": "100644",
+      "bytes": 3682,
+      "sha256": "3cbd988a2bf1324b8c8b6c2bc313c917f1ba3fd56673cc87e73cf00863e93e73",
+      "comments": 13
+    },
+    {
+      "path": "common/topaz_emac.h",
+      "git_object": "b6c0bcc41f0e926eb46466ef7fca5d0eaa3070ee",
+      "mode": "100644",
+      "bytes": 10376,
+      "sha256": "b3e8f2dc3a684e670711d007e0af5ded6c914dac501a15fb1dab71b008c23487",
+      "comments": 5
+    },
+    {
+      "path": "common/topaz_platform.h",
+      "git_object": "be27da5b6fb1ae06944e5461d991f46b38010ea8",
+      "mode": "100644",
+      "bytes": 22782,
+      "sha256": "71e18f2d6a7149a638ccc0eea372944898a46506f616d28febeb671a920f881a",
+      "comments": 41
+    },
+    {
+      "path": "common/topaz_reset.h",
+      "git_object": "fab73936720fabe52ed32ca0ea769c4e3036faec",
+      "mode": "100644",
+      "bytes": 2798,
+      "sha256": "367f233ca158b71b702ca6517cdda0ac33e6ca4d9a08fb8268dafd4b31682dbb",
+      "comments": 6
+    },
+    {
+      "path": "common/uboot_header.h",
+      "git_object": "478cf06aad5bde627db5c739c803d8d53e70c9c0",
+      "mode": "100644",
+      "bytes": 2664,
+      "sha256": "070bfa37f815e1673a9bffb76880f81fc3d465931e673ba72023f44bb377bff8",
+      "comments": 18
+    },
+    {
+      "path": "common/ums_platform.h",
+      "git_object": "ff8e7bd3ae0ccb50feccdfdab82968904f85678a",
+      "mode": "100755",
+      "bytes": 11084,
+      "sha256": "617e307c97908b522b9f5985e5cf6ea5ae3d18d227ad689df6a17fc3789d328e",
+      "comments": 34
+    }
+  ],
+  "artifacts": {
+    "comments.raw.gz": "1b0d2117fdd6705de241d52f2ab7ab857b85e6b081e2a1fe9a6bbca02da13d50",
+    "comments.jsonl.gz": "790ebb19e94b8e31d6ca7ffeb44ede3b6cb2552105ad85d744e800c3edaff031",
+    "COMMENTS.md.gz": "7d91e67d5cf8003aa515f58ccd59c070faa7c87bf866971b43c1de894bfdd321"
+  }
+}

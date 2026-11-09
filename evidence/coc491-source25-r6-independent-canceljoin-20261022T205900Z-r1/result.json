@@ -1,0 +1,17 @@
+{
+  "status": "PASS_ACTUAL_COC491_R6_HELPERS_RUNNING_WORKER_CANCEL_JOIN_MODEL",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "facts": {
+    "running_worker_joined_before_stop_return": true,
+    "stopped_producers_refused": true,
+    "running_worker_cannot_arm_CSA_after_stop": true
+  },
+  "source_bound_reference_sha256": "1339abb6365b448be8006ee0c5aa20c4e1a78ba78ecb5698b3dba7a424d215c7",
+  "fixture_sha256": "f0f038d4958eebe3a87446f1870fbaf45b9eaaf739cd9bcace1147f3d0798cbe",
+  "limits": [
+    "ActualhelperswithWindowsmodelcanceljoin/lock; Linuxcancel_delayed_work_sync actualschedulerunrun.",
+    "Objectsinitializedandretained; inheritedpreinitifattachfailure, F355forcedunload, externalCSAproducerquiescenceexcluded.",
+    "ExistingfinishCSAcallbackbody usesfakecallback; workerblockedQoScannotarmnewCSAafterstopguard."
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "outputs\\rea\\coc491-source25-trigger-snapshot-20261022T180700Z-r5\\source\\wlan\\ieee80211_wireless.c": "8b519bc98edf7c2a15a92df2fe0060dedf111c065d57d55772f05bd5ba2d5459",
+  "tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+  "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_hgw5g_coc491_ioctl_fixture.py": "d9b7bee1427dcbe8af60c705fc7889608f369fb2ba9a0077908831f472ce0675"
+}

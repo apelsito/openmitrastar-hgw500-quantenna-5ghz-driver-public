@@ -1,0 +1,15 @@
+{
+  "schema": "openmitrastar.beacon-parent19-control/v1",
+  "status": "SOURCE_ONLY_INHERITED19_CONTROL_NO_SEMANTIC_ACCEPTANCE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "R9_source_parent_sha256": "96f927b50983f1b45ddaef646fdee6b880bf4004ee458ffb3a29212bda87182d",
+  "original19_source_sha256": "6fff232c11a9bdd519ea469d94329dbea9f9d8b7f627d4940c409846b8447f9e",
+  "reverted_only_lifetime_sources": {
+    "source/wlan/ieee80211_beacon.c": "547716424ee81d87da52a925f5aa4c58aa80f40fca98db5418d627b03f2d4d4e",
+    "source/wlan/ieee80211_beacon_desc.c": "b1033a98d8eb2dd32e6890a5b117834862084ced7915a66c25204cb512874062",
+    "source/qdrv/qdrv_wlan.c": "7c163a0d0fa57197e2f0ebc138f79caaf927c6a037f63b1fcd8b36809a48603f",
+    "headers/net80211/ieee80211_beacon_desc.h": "73794740bed5ccefbf5039104df2b056802c6eabb65f8b36d3dbcfac1a632782"
+  },
+  "limits": "ControlforR9bugfix machinecode delta only. Inherited19capabilityentries NOTsemantically/physicallyaccepted."
+}

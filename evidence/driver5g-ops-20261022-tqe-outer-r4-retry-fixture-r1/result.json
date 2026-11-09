@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ACTUAL_R4_OUTER_IP_FWT_TYPED_INITIAL_QUEUE_RETRY_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 109,
+  "selected_source_sha256": "138254175e53b1fa380cec890bb310717f1590b57caaf1e7e55cfb2b86a71639",
+  "actual_IPFWT_outer_and_decoder": true,
+  "actual_credit_preEC_and_typedcaller": true,
+  "confirmed_CN_to_sameownedqueue_then_success": true,
+  "fullqueue_refusal_before_EC": true,
+  "retry_unknown_payload_retained": true,
+  "fixture_sha256": "40093d19102268f5cfbcf808fcc894ce2a416d4308cc5d3681a380fe746b2182",
+  "limits": "FakeFWT/MMIO/cache/HBM/VLAN/queueallocator; selectedmalformed/hook/credit states only, no allpacket/allnodes/foreignhardware/recoveryacceptance."
+}

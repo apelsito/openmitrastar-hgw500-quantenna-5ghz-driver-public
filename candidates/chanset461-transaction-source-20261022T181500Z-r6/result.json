@@ -1,0 +1,21 @@
+{
+  "status": "SOURCE_ONLY461_CALLER_OWNED_SCAN_TRANSACTION_NO_KERNEL_ADAPTER",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "inputs": {
+    "outputs\\rea\\chanset461-scan-select-source-20261022T175500Z-r5\\result.json": "1f18f70b71cbf0d089e5e20392cc779226885d98b9cd87f7050d7307fff5b1af",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\prepare_hgw5g_chanset_transaction.py": "7606624da0a6837d410b81e5f4c7b736ccf4fa5096fb1648edf505f86a02bb1c"
+  },
+  "source_hashes": {
+    "openmitrastar_chanset_recovered.c": "ab0d6a4977f81470d9334ed7be9ece7e4c0f750c3585fc135c40836d029a569c",
+    "openmitrastar_chanset_recovered.h": "bb69abfda48dd270ddd1eec4370c73135a0579c21253ea38cc58556fa5d6e2be",
+    "openmitrastar_chanset_tables.h": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492",
+    "tables.json": "8d37396ee20d6902ea9c2948579c57b4e69c307d332904717aa4889ba6a98538"
+  },
+  "limits": [
+    "Caller-owned serialized memory; not a kernel module or stack allocation.",
+    "Callbacks/allowed channels/scan token cancellation require a real kernel adapter.",
+    "Table preparation/sample collection only; neighbor metrics/cost updates/finalchoice integration pending.",
+    "No461 WEXT records, RF/DFS, traffic or release acceptance."
+  ]
+}

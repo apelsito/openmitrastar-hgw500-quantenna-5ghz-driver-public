@@ -1,0 +1,30 @@
+{
+  "status": "SOURCE_ONLY_NEIGHBOR_DESCRIPTOR_ADMISSION_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "total_original_entries_added": 19,
+  "functional_entries_source": 17,
+  "unsupported_faithful": 2,
+  "remaining_original_table_gaps": 25,
+  "changed_sources": {
+    "ieee80211_beacon.c": "547716424ee81d87da52a925f5aa4c58aa80f40fca98db5418d627b03f2d4d4e",
+    "ieee80211_beacon_desc.c": "b1033a98d8eb2dd32e6890a5b117834862084ced7915a66c25204cb512874062",
+    "ieee80211_output.c": "e393a8c3cb66b53609298a90cc01c0ac5ad6897911f3ee1a5bda86fef0df66c4",
+    "ieee80211_wireless.c": "b65681c0022672e0dd4b93a49f0a5fae38b798b163b9e80a2860ef8a3a3fc5a9"
+  },
+  "host_headers": {
+    "ieee80211_proto.h": "84841210beb7746c134eae7829d70d663151b18e57d2640531f42c33424abf45",
+    "ieee80211_var.h": "5f9ccf334e8d264be3eacaea4a04b773be802615c2ed95024280ba443475df22"
+  },
+  "helper_sha256": "b8aa2c5f0d4b5a02965521ccefc04b24ca50ead66c1afcf6ab2d64389de879f7",
+  "explicit_behavior_delta": "Beaconkeeps7byteRRMIEwithzeroNeighborbitwhen disabledforreversibleupdates; OEMconditionalpresence",
+  "limits": [
+    "No80211kactionhandlerorclientproof.",
+    "FullQDRV/WLAN/scan/cryptoheader-userrebuild required.",
+    "Flagwritersserialization anddescriptorupdatesconsistencyunproven untiltests.",
+    "Descriptoradmissionrefusalmustpropagatetoofflineandruntimeacceptance; rawtableentryaloneisnotcapabilityPASS."
+  ],
+  "parent_manifest_sha256": "51eb4ba67cc60317b0e3f603a12316da3ceea59808b885693249d4a4ecb85c7e",
+  "descriptor_arena_capacity_unchanged": true,
+  "descriptor_failure_behavior": "NoRRMIEdescriptor/payload/pointer onrefusal; noframe/RF/featureacceptanceclaim"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ACTUAL_TYPED_PROVIDER_QUEUE_RETRY_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 10,
+  "confirmed_CN_keeps_same_marker_and_owner": true,
+  "successful_retry_consumes_marker_and_credit_once": true,
+  "published_unknown_keeps_head_no_retry": true,
+  "pre_ec_global_capacity_refusal": true,
+  "fixture_sha256": "82192b8f073aaeaf931af60ee76e746d19a772d8632f34a63dbb78c311b4d96a",
+  "limits": "Queueenqueuecapacity fake; provider/token/queuexmit actualcandidateC. Furtherallwriter/fullmodule/ABI/globaldelta required."
+}

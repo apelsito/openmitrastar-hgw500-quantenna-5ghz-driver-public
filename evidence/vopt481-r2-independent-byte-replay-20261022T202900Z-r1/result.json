@@ -1,0 +1,20 @@
+{
+  "status": "PASS_INDEPENDENT_R2_UNSIGNED_SAVED_BYTES_SIGNED_ONLY_MODE482",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 1,
+  "saved78_actual": 255,
+  "saved78_oem_expected": 255,
+  "saved195_actual": 128,
+  "saved195_oem_expected": 128,
+  "mode482_actual": -1,
+  "mode482_oem_expected": -1,
+  "input_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\review_hgw5g_vopt481_unsigned_r2.py": "b4a53c4b008439ebc2d7b7ff4283e66a394d27af5fc55074e98b189ee73f64b0",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\review_hgw5g_vopt481_unsigned_saved_bytes.py": "c3b93b56c7890949ded9fc81a5f4504381ca4503115656d9f301eb44507b5029",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\vopt481-recovered-core-20261022T202100Z-r2\\openmitrastar_vopt481_recovered.c": "6feb5e8af6980f109ec1295f8a254497903ddff09cbdd7c3d2231a0483ffaaaa",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\vopt481-recovered-core-20261022T202100Z-r2\\openmitrastar_vopt481_recovered.h": "dfa5a344f0f6faa7615306bea98f87d0a0a65bc5529fcd1e8772184f82a378da"
+  },
+  "fixture_sha256": "932cae0105ebbfa2b8b91b7a01ee7c82d35cdfb1ded10188f14b34ddee391ffe"
+}

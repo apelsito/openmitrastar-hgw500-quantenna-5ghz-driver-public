@@ -1,0 +1,6 @@
+   395da:	c204                	ld_s	r2,[sp,0x10]
+   395dc:	72c7 0000 4df0      	add_s	r2,r2,0x4df0
+   395e2:	8a40                	ldb_s	r2,[r2,0]
+   395e4:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   395ec:	1a00 3080           	st	r2,[gp]
+   395f0:	0221 0000           	b	544	;39810 <ieee80211_find_channel_by_ieee+0x2484>

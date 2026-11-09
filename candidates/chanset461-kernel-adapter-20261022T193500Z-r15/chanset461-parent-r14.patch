@@ -1,0 +1,11 @@
+--- a/source/wlan/ieee80211_scan.c
++++ b/source/wlan/ieee80211_scan.c
+@@ -1270,7 +1270,7 @@
+ 				    if((om_type>=2&&om_type<=4)&&(!isset(ic->ic_chan_active_40,chan->ic_ieee)||
+ 				        !secondary||secondary>=IEEE80211_CHAN_MAX||
+ 				        !isset(ic->ic_chan_active_40,secondary))){
+-				        ss->ss_next++;goto again;
++				        goto again; /* The channel fetch already advanced ss_next once. */
+ 				    }
+ 				}
+ 				if(om_type>=2&&om_type<=4){

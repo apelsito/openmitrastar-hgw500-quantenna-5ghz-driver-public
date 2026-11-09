@@ -1,0 +1,50 @@
+{
+  "status": "PASS_ALL_COMPRESSED_COMMENT_RECORDS",
+  "records": 1331535,
+  "raw_bytes": 104725712,
+  "groups": [
+    {
+      "group": "buildroot",
+      "comments": 77663,
+      "raw_bytes": 8240680,
+      "all_record_hashes_verified": true
+    },
+    {
+      "group": "common",
+      "comments": 653,
+      "raw_bytes": 54896,
+      "all_record_hashes_verified": true
+    },
+    {
+      "group": "drivers",
+      "comments": 9759,
+      "raw_bytes": 779569,
+      "all_record_hashes_verified": true
+    },
+    {
+      "group": "host",
+      "comments": 69,
+      "raw_bytes": 10710,
+      "all_record_hashes_verified": true
+    },
+    {
+      "group": "include",
+      "comments": 1309,
+      "raw_bytes": 152067,
+      "all_record_hashes_verified": true
+    },
+    {
+      "group": "linux_2.6.35.12",
+      "comments": 1021518,
+      "raw_bytes": 79913937,
+      "all_record_hashes_verified": true
+    },
+    {
+      "group": "u-boot-2009.06",
+      "comments": 220564,
+      "raw_bytes": 15573853,
+      "all_record_hashes_verified": true
+    }
+  ],
+  "hardware_accessed": false
+}

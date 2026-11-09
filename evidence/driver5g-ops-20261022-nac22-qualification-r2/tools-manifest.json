@@ -1,0 +1,7 @@
+{
+  "prepare_hgw5g_nac22_source.py": "0c80b8b711e45ec3c4b41b9ddca7920b724549686057d0d58e7cdbd7f6f9f657",
+  "test_hgw5g_nac22_source.py": "e890059fcda38e7f1a043e0f72f04d3b30a4e6368edb2c3c1d58f71a92b08b21",
+  "build_hgw5g_wlan_incremental_from_closure.py": "bb849b1cebfb4c49a89c93cfda362385b941d059ae5167d6eff8dd3c3added4a",
+  "qualify_hgw5g_nac22_closure.py": "2ede9d7758e54f70afe8055091ca3c9f8d16d6a4e9125bd904e9f8c1ceca1f34",
+  "test_hgw5g_nac22_delta_negative.py": "46a71c2b8c3e9d17cef1aa710fcb8582e4b7edb2086f7798e6d3b6f193ee34a4"
+}

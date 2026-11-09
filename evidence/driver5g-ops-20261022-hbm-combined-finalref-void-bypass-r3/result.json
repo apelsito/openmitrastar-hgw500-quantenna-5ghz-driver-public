@@ -1,0 +1,19 @@
+{
+  "schema": "openmitrastar.hbm-combined-finalref-void-bypass/v1",
+  "status": "PASS_COMBINED_TYPED_PATH_AND_REPRODUCED_ORIGINAL_VOID_BYPASS_BLOCKER",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 147692,
+  "original_void_bypass_reproduced": true,
+  "actual_oem_bodies": 7,
+  "original_recycle_ec1_fc0_kept": true,
+  "typed_unknown_retained_no_retry": true,
+  "fixture_sha256": "7bca71ad35e02917d72b248d4b3b51776dd63fa9e40d17dde184c63fafb75d13",
+  "input_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_hbm_combined_finalref_and_void_bypass.py": "716ffe422a30100825eb934119fb83912f775b7e4bfd393f58ac068917cc6e67",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\include\\qtn\\topaz_hbm_cpuif.h": "8e99a3d830c4697bea0fa8cab9e3827089e9d1bfd7cf1a4b86538d0d1077ee67",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-hbm-bounded-core-source-r1\\bounded-hbm-transaction-core.h": "8a457119ca9ac543c2e1e96ee0f63c52a0eb48f9c9bbe9e1da792a4fc1bd500c",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-hbm-final-ref-abi-source-r1\\typed-final-ref-preserve-abi.h": "86e4c928fbf14bff2787be4e6ade1a9482078701ae212b4df9aa530b81e7f12f"
+  },
+  "limits": "Source-only fake MMIO. Original void APIs demonstrably bypass typed quarantine; all header consumers and ownership admission/provider pinning must change together before integration. Not a global fence or module change."
+}

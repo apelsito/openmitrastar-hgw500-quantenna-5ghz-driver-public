@@ -1,0 +1,17 @@
+{
+  "status": "PASS_CURRENT_ACTUAL_LINUX_BUILD_AND_GLOBAL_PIN_CLOSURE",
+  "reports": [
+    {
+      "input": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/input-pins.json",
+      "pins": 1140,
+      "sha256": "2b10a4e3cfc745e927707508a673625de199bf1bb4433cf6bda659bfbe0d74de",
+      "all_current_actual_bytes_verified": true
+    },
+    {
+      "input": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-global-r10/input-pins.json",
+      "pins": 527,
+      "sha256": "72e14bc51c959aa8c67935651ee82a1def53942e05bb83f8e9cae786387893b4",
+      "all_current_actual_bytes_verified": true
+    }
+  ]
+}

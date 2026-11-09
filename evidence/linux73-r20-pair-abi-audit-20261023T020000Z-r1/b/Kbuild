@@ -1,0 +1,2 @@
+obj-m := abi_probe.o
+ccflags-y += -I/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/headers -I/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/qdrv/compat/include -I/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL -I/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/include -I/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common

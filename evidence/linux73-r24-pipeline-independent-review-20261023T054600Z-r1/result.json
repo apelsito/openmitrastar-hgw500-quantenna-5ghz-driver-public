@@ -1,0 +1,58 @@
+{
+  "status": "PASS_R24_ACTUAL_LOAD_PIPELINE_HASH_AND_TASK_WRITER_LEASE_FIXTURES_OFFLINE_ONLY",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "candidate": "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-carrier-writer-candidate-20261023T053000Z-r24",
+  "candidate_result_sha256": "4f72c9ea6fcada43e9c7a1031835703162dc6f1eb1e2b70432d5e6362be42a4c",
+  "loader_source_sha256": "baa34c67323422362c15461194ef1a8aa348d4c1cabf471185b6e90143c2bb1b",
+  "provider_source_sha256": "d35ce0d0a70cb3f3b7e54cde3aea314588379e127d479bb6883bb95507ad4dad",
+  "profiles_sha256": "301a427f90314c089dd2cf811745567cf7be28189e2d66c86c0bd934e235e30f",
+  "pipeline_cases": 273,
+  "provider_cases_including_core": 410,
+  "provider_core_baseline_cases": 362,
+  "concurrent_writer_acquire_close_waiters": 3,
+  "hash_backend": "OpenSSL3.0.13SHA256hostrealcrypto",
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "checks": [
+    "Selectedthreefullcarriers pass request/hash/profile/preflight/writercheck/install/end/releasepipeline.",
+    "Onebitheader/metadata/payloadmutations,wrongCPU/size/profileandDSP28Btailchanges rejectbeforefirstmap andentry staysunchanged.",
+    "AllmemszdestinationsincludinglastMuCBSS arecheckedagainstactivepoolbeforeinstallmaps; overlaprefuseswithoutpayloadwrites.",
+    "Request/beginfailurecleanupandreleases,bothstartentryunchanged; endfailuredoesnotpublishentry.",
+    "Actualproviderusesstacktokenidentity/taskTLS/generation; copied/stale/foreign/nestedtokensrefuse andwriter/acquire/closewaituntilsame-taskend.",
+    "Loaderhashandmapsinsidelease; no poolregistration/init orphysicalmemorywritesbyfixtures."
+  ],
+  "limitations": [
+    "Pipelinepool/request/address/CCM/maps arefakes; providerfixtureusesactualcodebutpthreadlocks/TLSandfakehardware. NoLinuxscheduler/MMIO/core/RFproof.",
+    "ActualOpenSSLhashverifiesbytes, notOEMsignatureauthenticity. Kernelsha256APIwasvalidatedseparately butnotexecutedondevice.",
+    "Mapfailurecanleaveprevioussegmentwrites;F355mustretainpartialownership. Failedwriter_endmayretainlease;noautomaticunlock/rollbackclaimed.",
+    "Writerleasecoversqdrv_fw_loadpipeline only. R24doesnotwraphal_reset,clearsram,AuCclear_memoutsideFWloadorallMCu/DSPindirectwriters.",
+    "Boardreservationstillabsent/defaultclosed. ExacthashprofilesdonotcloseQmatrixnomuoverlap orcompletewritersmap.",
+    "Nofunctionaloperationcountincrease,driverloadacceptance,SRAMreservation,physicaltraffic/persistence/release claim."
+  ],
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/seal_linux73_r24_pipeline_review.py": "5d9685aa39894f3cc8cc99ac2f92a3cc15b457ec7409c3f6da4a9c095a93af97",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-carrier-writer-candidate-20261023T053000Z-r24/source/qdrv/qdrv_fw.c": "baa34c67323422362c15461194ef1a8aa348d4c1cabf471185b6e90143c2bb1b",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-carrier-writer-candidate-20261023T053000Z-r24/providers/sram73/om73_sram_backend.c": "d35ce0d0a70cb3f3b7e54cde3aea314588379e127d479bb6883bb95507ad4dad",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-carrier-writer-candidate-20261023T053000Z-r24/providers/sram73/om73_sram_backend.h": "4214cd7a9b406161ee91909c04ec1ff0733f5ac6bea4f8848022fdd05b91b57a",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-carrier-writer-candidate-20261023T053000Z-r24/source/qdrv/om73_fw_profiles.h": "301a427f90314c089dd2cf811745567cf7be28189e2d66c86c0bd934e235e30f",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-carrier-writer-candidate-20261023T053000Z-r24/result.json": "4f72c9ea6fcada43e9c7a1031835703162dc6f1eb1e2b70432d5e6362be42a4c",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/result.json": "84bb1e6f6b78f0631c76aae595e65fb58af0dec856978978f5ed48d77a166db5",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/result.json": "38b4fb56c86e92ba200e11434b1035043023cb1241578f0d72370e9182867743",
+    "/workspace/user-home/Desktop/MitraStar/tools/test_linux73_r24_load_pipeline.py": "032c080f80a10a4ec45667a235300c8215febcf7e75fe133d6d61181984113ac",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/actual-r24-load.c": "dc278c5076465aeef7e12b3ad41b1f643bf80e4cc45e7e6ad14595b987a4301d",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/fixture": "8210abc9309eddf5b858f000b96f619121a0886693d4fd7e88ca4c0b0b548865",
+    "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/qtn_driver.qtn_ruby.0.bin": "71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4",
+    "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/auc_driver.nomu.0.bin": "c10018f4fe384d753a800bbbcd5ef3c85c568d0852c221009063282d30fd85f6",
+    "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/rdsp_driver.0.bin": "87c882910d87cd29ba2004c4154e9240291aaad6aedb0ff4d90c7a5570be79fd",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/run.log": "12bb8cf80358112449d7c66e21c2bf1ede1d1558a5960389ce28b2261f723c4c",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/fixture": "1d4c531d561ce3910210d927ff0a10483e234ec40ac2c2c4a5295ad2bb9910e6",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/fixture.c": "527888e7215834a4cc57c20320649d6f54ba0ab0900ebd8ca0a8d09dca556f02",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/run.log": "b64fa1f53dc89a58244984ed18bbf66b24635feedfabc72615a6e69ad533c959",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/shim.h": "19b082aca76918d4882a3b98d5e22488753c68f4bad51193d9f98b024bac0086"
+  }
+}

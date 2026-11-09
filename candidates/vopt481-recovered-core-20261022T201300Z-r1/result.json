@@ -1,0 +1,26 @@
+{
+  "status": "SOURCE_ONLY_OEM481_POLICY_EFFECTIVE_CONSUMER_CORE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "qualified_records_added": 0,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-oem-vopt481-apply-20261022T200100Z-r1\\rea.json": "edfcff0990cab7fcf6e01eec7c8cb56773c4425adacb93e8ee7a2b9563252b72",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-oem-vopt481-policy-20261022T200100Z-r1\\rea.json": "191cf9343a528f4112d8daf6f883d414390e6473e211bbb16f241c8c1a705476",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-oem-vopt481-peer-classifier-20261022T200900Z-r1\\rea.json": "71e206b1adb5d852e0f5be5128ef7aa370037e7e6bca6e0e784bcdfeceba4229",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-wlan-case-map-20261022T132100Z-r1\\481-set_vopt-set.objdump.txt": "99d6220e3d281ac4bc9c0b33ac85c828a214b6a7fc8ad15bf06e3b742b74f861",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-wlan-case-map-20261022T132100Z-r1\\481-get_vopt-get.objdump.txt": "bec4489d66d5c85445b317ca4b258191c93c834abe0f90cd9cf68b5cb9bd5913",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\prepare_hgw5g_vopt481_core.py": "aa62ae3329b17b6a817c321a782266b039ee267357df523bccab2b53ec8e1ef1"
+  },
+  "source_files": {
+    "openmitrastar_vopt481_recovered.c": "1370a38b94d83ac5395189d1305689f69c92bf4d95c1d0c1a3ee461233c88ad1",
+    "openmitrastar_vopt481_recovered.h": "dfa5a344f0f6faa7615306bea98f87d0a0a65bc5529fcd1e8772184f82a378da"
+  },
+  "limits": [
+    "No Linux IC/VAP ABI, caller/timer or QDRV provider implementation.",
+    "OEM482 callback remains an exact numeric callback contract, not an existing Linux parameter alias.",
+    "SCS/OCAC/background/beamforming/MuC behavior only established when provider contract is independently verified.",
+    "Guard against absent mandatory provider before mutation is explicit; successful callbacks retain OEM ordering/errors.",
+    "OEM shared global backoff ownership preserved as caller-supplied global state; no invented per-radio equivalence.",
+    "No RF/client/traffic/physical/persistence/release acceptance."
+  ]
+}

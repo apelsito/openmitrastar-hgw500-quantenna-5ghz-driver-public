@@ -1,0 +1,38 @@
+{
+  "status": "SOURCE_ONLY_COC491_POSTCOMPLETION_BSS_SNAPSHOT_25_RECORDS_PENDING_GATES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "total_original_entries_added": 25,
+  "remaining_original_table_gaps": 19,
+  "parent_manifest_sha256": "4d510884bec7bce4f18f62c530983220c8052ec800325e33269d4951fd90cf5e",
+  "changed_sources": {
+    "headers/net80211/ieee80211_var.h": "54e7ee3c271782bf07dcf5323021c197f87999e8de2918e0faea577f45c6fde3",
+    "source/wlan/ieee80211.c": "1d2b8e6464d8e0f03eb9d7d91b2518f8ae484069e5f026a1d4359bbf6d56c02d",
+    "source/wlan/ieee80211_node.c": "2e3460805d7c1ee05902fada9dceb40c6e88c59ed4d5f7dece4b9262b3c95f27",
+    "source/wlan/ieee80211_wireless.c": "8b519bc98edf7c2a15a92df2fe0060dedf111c065d57d55772f05bd5ba2d5459",
+    "source/qdrv/qdrv_wlan.c": "7801ca2b0b85cc2c33beecca2535e8231e5f5c64853a5669a179d69ac5a3dbfd"
+  },
+  "host_fields": "three u32 at ICtail: policy exactu32, lastCoCCSA9/0, PMtrigger nodejoin13 versusallother0",
+  "consumer_entries": [
+    "OEM0x83da0 fullconsumer390B",
+    "OEM0x83f28 worker256B",
+    "OEM0x84028 CSAcallback184B"
+  ],
+  "safety_deviation": "Invalid/ANYCBSS snapshot refuses PMtransaction rather thanOEMuncheckedpointer; localIRQalwaysrestored",
+  "trigger_projection": "Only equality13 consumed; genericqueue mapsallothertriggerreasons0; nodejoinqueue publishes13. No aliaschannel-switchreason.",
+  "gates": [
+    "Actualconsumer/worker/callback/queuefixtures",
+    "ARCfulloldfieldABI/newQDRV+12layout",
+    "All58source/headerusers rebuildx2",
+    "SameheaderSOURCE23control globaldelta",
+    "PM/CSAownership/lifetime unchangedcontract andqueuedcallbackvalidation"
+  ],
+  "limits": "FullARCABI/pairedmodules/controlglobaldelta/review/physicalgates remain separate",
+  "parent_source": "outputs\\rea\\coc491-source25-trigger-snapshot-20261022T180700Z-r5",
+  "linux510_adaptation": "CSA timer queues completion; existingprocessPMworker owns mutexQoS/log/event; sampledlevel preserved",
+  "lifetime": "queuepublicationserializedwithstop; quiesce marksstopping beforecancel_delayed_work_sync; joinCSAtimer afterPMproducerclosure; reuseexistingwork/timer",
+  "new_host_state": "3u32policy/last/trigger plusqueue_spinlock/stop/pending/completedlevel; fullABIneeded",
+  "completion_coalescing": "OnlyactualPMqueueproducersmarkpending; workeratomicallytakesrequest, drainscompletion thenevaluatesrequestifpresent; laterproducersstaypendingandqueueafutureworker",
+  "request_snapshot": "pendingandtrigger capturedtogetherunderqueue_lock; currentrun consumesit, concurrentproducer remains pending forlaterworker",
+  "postcompletion_channel": "BSSresampledaftercompletionpublication beforeactualpendingrequestdecision"
+}

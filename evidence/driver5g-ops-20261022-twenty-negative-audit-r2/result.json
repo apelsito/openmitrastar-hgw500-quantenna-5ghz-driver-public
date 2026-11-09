@@ -1,0 +1,43 @@
+{
+  "status": "PASS_SEVEN_NEGATIVE_TYPED_DELTA_CASES",
+  "cases": 7,
+  "hardware_accessed": false,
+  "files_modified": false,
+  "rows": [
+    {
+      "case": "unrelated_function_code",
+      "rejected": true,
+      "reason": "unrelatedfunctionchanged ieee80211_setmode"
+    },
+    {
+      "case": "unowned_section_padding",
+      "rejected": true,
+      "reason": "unrelatedfunctionchanged init_wlan"
+    },
+    {
+      "case": "allocated_data",
+      "rejected": true,
+      "reason": "allocateddata .data.once"
+    },
+    {
+      "case": "readonly_table_prefix",
+      "rejected": true,
+      "reason": "allocatedrodataoutside48Btable"
+    },
+    {
+      "case": "external_relocation",
+      "rejected": true,
+      "reason": "relocationsoutsideactualbodies [(('object', 2229, 'fwt_db_get_macs_behind_node', '.text', 56), 27, ('printk', '', 0, 1, 0)), (('object', 2229, 'fwt_db_get_macs_behind_node', '.text', 56), 27, ('printk', '', 0, 1, 4))]"
+    },
+    {
+      "case": "symbol_size",
+      "rejected": true,
+      "reason": "unrelatedfunctionchanged ieee80211_setmode"
+    },
+    {
+      "case": "diagnostic_extra_instruction",
+      "rejected": true,
+      "reason": "otherbyteschanged ieee80211_chan2mode"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "status": "PASS_BEACON_R9_GLOBAL_NEGATIVE_FIXTURES",
+  "hardware_accessed": false,
+  "artifact_modified": false,
+  "cases": 11,
+  "tests": [
+    {
+      "module": "qdrv",
+      "fault": "old_symbol_other",
+      "result": "REJECT",
+      "reason": "('symbolattrs', ('arch_local_irq_save', '.text', 2, 0))"
+    },
+    {
+      "module": "qdrv",
+      "fault": "old_unrelated_code",
+      "result": "REJECT",
+      "reason": "('unrelated function', ('arch_local_irq_save', '.text', 2, 0))"
+    },
+    {
+      "module": "qdrv",
+      "fault": "old_unrelated_rela",
+      "result": "REJECT",
+      "reason": "residualRELA [(('object', ('__ksymtab_dfs_reentry_chan_switch_notify',"
+    },
+    {
+      "module": "qdrv",
+      "fault": "unowned_text_byte",
+      "result": "REJECT",
+      "reason": "all residual executable bytes .text"
+    },
+    {
+      "module": "wlan",
+      "fault": "old_symbol_other",
+      "result": "REJECT",
+      "reason": "('symbolattrs', ('fls', '.text', 2, 0))"
+    },
+    {
+      "module": "wlan",
+      "fault": "old_unrelated_code",
+      "result": "REJECT",
+      "reason": "('unrelated function', ('fls', '.text', 2, 0))"
+    },
+    {
+      "module": "wlan",
+      "fault": "old_unrelated_rela",
+      "result": "REJECT",
+      "reason": "residualRELA [(('object', ('__ksymtab__ieee80211_tmp_node', '__ksymtab"
+    },
+    {
+      "module": "wlan",
+      "fault": "unowned_text_byte",
+      "result": "REJECT",
+      "reason": "all residual executable bytes .text"
+    },
+    {
+      "module": "wlan",
+      "fault": "new_helper_other",
+      "result": "REJECT",
+      "reason": "exact new helper symbol om_beacon_chain_valid"
+    },
+    {
+      "module": "wlan",
+      "fault": "new_export_name_pointer",
+      "result": "REJECT",
+      "reason": "export name or namespace literal"
+    },
+    {
+      "module": "wlan",
+      "fault": "anonymous_rodata",
+      "result": "REJECT",
+      "reason": "residualRELA [(('object', ('fwt_db_get_macs_behind_node', '.text', 2, "
+    }
+  ]
+}

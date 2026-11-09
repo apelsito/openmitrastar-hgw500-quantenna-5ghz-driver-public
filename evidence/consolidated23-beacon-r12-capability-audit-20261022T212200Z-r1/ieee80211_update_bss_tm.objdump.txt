@@ -1,0 +1,52 @@
+
+/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/lib/modules/2.6.35.12/extra/wlan/wlan.ko:     file format elf32-littlearc
+
+
+Disassembly of section .text:
+
+00009644 <ieee80211_update_bss_tm>:
+    9644:	c0f1                	push_s	blink
+    9646:	c1a1                	sub_s	sp,sp,0x4
+    9648:	72f8                	mov_s	r7,r2
+    964a:	73d8                	mov_s	r6,r3
+    964c:	0071 0000           	b	112	;96bc <ieee80211_update_bss_tm+0x78>
+    9650:	8861                	ldb_s	r3,[r0,0x1]
+    9652:	1201 3485           	ldb.ab	r5,[gp,1]
+    9656:	0c33 00e5           	brhs.d	r4,r3,50	;9686 <ieee80211_update_bss_tm+0x42>
+    965a:	2402 00c1           	sub	r1,r4,r3
+    965e:	1642 0602           	ld.as	r2,[r6,66]
+    9662:	2204 0f82 0200 0000 	and	r2,r2,0x2000000
+    966a:	ea2f                	breq_s	r2,0,94	;96c6 <ieee80211_update_bss_tm+0x82>
+    966c:	70c8                	mov_s	r0,r6
+    966e:	71cf 0000 0000      	mov_s	r1,0
+			9670: R_ARC_32_ME	.rodata.str1.4+0x15f0
+    9674:	220a 3f80 0000 0000 	mov	gp,0
+			9678: R_ARC_32_ME	ieee80211_note
+    967c:	2023 0680           	jl.d	[gp]
+    9680:	72a8                	mov_s	r2,r5
+    9682:	0047 0000           	b	70	;96c6 <ieee80211_update_bss_tm+0x82>
+    9686:	2240 3042           	add	r2,gp,0x1
+    968a:	6278                	add_s	r0,r2,r3
+    968c:	0d31 0f81 0000 007f 	brne	r5,0x7f,48	;96bc <ieee80211_update_bss_tm+0x78>
+    9694:	2700 0f82 0000 5e1c 	add	r2,r7,0x5e1c
+    969c:	8240                	ld_s	r2,[r2,0]
+    969e:	1203 3083           	ldb	r3,[gp,3]
+    96a2:	2244 0042           	and	r2,r2,0x1
+    96a6:	ea06                	breq_s	r2,0,12	;96b0 <ieee80211_update_bss_tm+0x6c>
+    96a8:	2345 0202           	or	r2,r3,0x8
+    96ac:	0009 0000           	b	8	;96b4 <ieee80211_update_bss_tm+0x70>
+    96b0:	2350 00c2           	bclr	r2,r3,0x3
+    96b4:	1a03 3082           	stb	r2,[gp,3]
+    96b8:	000f 0000           	b	14	;96c6 <ieee80211_update_bss_tm+0x82>
+    96bc:	2142 0084           	sub	r4,r1,0x2
+    96c0:	0991 80b5           	brhs.d	r1,0x2,-112	;9650 <ieee80211_update_bss_tm+0xc>
+    96c4:	705b                	mov_s	gp,r0
+    96c6:	1404 321f           	ld.aw	blink,[sp,4]
+    96ca:	7fe0                	j_s.d	[blink]
+    96cc:	c0a1                	add_s	sp,sp,0x4
+
+Disassembly of section .fixup:
+
+Disassembly of section .exit.text:
+
+Disassembly of section .init.text:

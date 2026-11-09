@@ -1,0 +1,43 @@
+{
+  "status": "PASS_SEVEN_SOURCE23_NEGATIVE_AUDIT_CASES",
+  "cases": 7,
+  "hardware_accessed": false,
+  "files_modified": false,
+  "rows": [
+    {
+      "case": "function",
+      "rejected": true,
+      "reason": "unrelated function ieee80211_setmode"
+    },
+    {
+      "case": "padding",
+      "rejected": true,
+      "reason": "unrelated function init_wlan"
+    },
+    {
+      "case": "data",
+      "rejected": true,
+      "reason": "allocated data .data.once"
+    },
+    {
+      "case": "table",
+      "rejected": true,
+      "reason": "data outside private record"
+    },
+    {
+      "case": "relocation",
+      "rejected": true,
+      "reason": "residual RELA [(('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 56), 27, ('printk', '', 0, 1, 0)), (('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 56), 27, ('printk', '', 0, 1, 4))]"
+    },
+    {
+      "case": "symbol",
+      "rejected": true,
+      "reason": "unrelated function ieee80211_setmode"
+    },
+    {
+      "case": "diagnostic",
+      "rejected": true,
+      "reason": "non diagnostic body bytes ieee80211_param_from_qdrv"
+    }
+  ]
+}

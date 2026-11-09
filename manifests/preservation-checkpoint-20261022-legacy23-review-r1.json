@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "path": "evidence/driver5g-ops-20261022-legacy23-independent-final-review-r1/audit.json",
+      "bytes": 758,
+      "sha256": "2186c6632cd231c22fe78997d377e3087cee53e4c96ad0011c006adfeab84c1a"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-legacy23-independent-final-review-r1/result.json",
+      "bytes": 9144,
+      "sha256": "fee2fecea1e9ceba36b82e81504b4c3b53217383732a00494dba8a235fee2908"
+    },
+    {
+      "path": "evidence/legacy23-handoff-20261022T172500Z-r1/HANDOFF.md",
+      "bytes": 6407,
+      "sha256": "ab7668c3f92b26facac6bb8cc9ea85385c6beaed29e8e199cf40edc959f1fbd6"
+    },
+    {
+      "path": "evidence/legacy23-handoff-20261022T172500Z-r1/remaining-records.json",
+      "bytes": 9548,
+      "sha256": "43e02b2c1c765b5af815ca59db2114b2337616640547aff410e657c56e24485a"
+    }
+  ],
+  "hardware_accessed": false
+}

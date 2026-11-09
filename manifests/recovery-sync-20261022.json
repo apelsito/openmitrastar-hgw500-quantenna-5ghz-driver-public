@@ -1,0 +1,1459 @@
+{
+  "files": [
+    {
+      "path": "candidates/named-cca-getters-r2/actual-cca-getters-fixture.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/actual-cca-getters-fixture.c",
+      "bytes": 1020,
+      "sha256": "d0f3e567bf748ed0a3cfb8bab11a4b5495ae28499e3546d18c4696adf20ce05c"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/ieee80211_wireless.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/ieee80211_wireless.c",
+      "bytes": 667173,
+      "sha256": "20eb551bac555ecc1df370c3c33dc0509eee82fd45bb2ad43d447c3ce429f955"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/named-cca-getters.patch",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/named-cca-getters.patch",
+      "bytes": 1541,
+      "sha256": "46d2be8cb654c60187e142eea63bbeaee0cee5ff223bc1c410cd116907e12e53"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/result.json",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/result.json",
+      "bytes": 11025,
+      "sha256": "736042d9a5f90c212f7eb61a5f19ee11a2cbe4bdbc24e9f2a2ff56250d11dc49"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/asm/board/board_config.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/asm/board/board_config.h",
+      "bytes": 400,
+      "sha256": "6654f0ccce4caf24659ff4d6baced6fb709847d063ccd77c78443a0f3d0e5147"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/asm/board/dma_cache_ops.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/asm/board/dma_cache_ops.h",
+      "bytes": 633,
+      "sha256": "96f7914dda30dc484d2887f7b8b7db97dbabcfd26d01fe8d9fadb8dedfdb347b"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/asm/board/gpio.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/asm/board/gpio.h",
+      "bytes": 416,
+      "sha256": "ec9f0f8e74ae336f12c5d460a4b0cab01dee1aaa7794abf38c2f4763f07fee45"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/asm/board/kdump.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/asm/board/kdump.h",
+      "bytes": 233,
+      "sha256": "67242abd1335e954da1f2bcccaaebea71b776baf93fd6ae64e35e20226612f6a"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/asm/board/platform.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/asm/board/platform.h",
+      "bytes": 166,
+      "sha256": "3736f6f368212e15a579ed9cf820b8dc8b900be760fdd50b613c4c5a3f3a7f69"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/asm/board/pm.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/asm/board/pm.h",
+      "bytes": 267,
+      "sha256": "eb5a6bf8305b73c8a25099e0a8d4b27a2f687038cfd4df5d16ab891419bbaa32"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/asm/board/soc.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/asm/board/soc.h",
+      "bytes": 148,
+      "sha256": "64bca498fa4c29d1e3bab6bae1d56f1902fc701b5285272db406090ff7631f80"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/asm/board/troubleshoot.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/asm/board/troubleshoot.h",
+      "bytes": 472,
+      "sha256": "7e5b2ff25100cfbb2097b978cf6194dae7faab5a162589c4ae3d9964a17bbf2a"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/asm/gpio.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/asm/gpio.h",
+      "bytes": 99,
+      "sha256": "195b97775c1e231f4cae4ec6fa579efe87d61c3a84a2dee03e8dc9b23d4529d3"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/asm/hardware.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/asm/hardware.h",
+      "bytes": 451,
+      "sha256": "778e9f99607c95d470fa17074eee90ef7aaa3509ac20f106aa17209c0b98946e"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/current_platform.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/current_platform.h",
+      "bytes": 398,
+      "sha256": "5b546dc962dbefe6537c3db13fe0f65585bc60f3c4021525939adea01287e394"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/linux/config.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/linux/config.h",
+      "bytes": 70,
+      "sha256": "bbed9045704f192c50d4c68fec88f2678a08a20f4e089dc626cbb6fbfc0be718"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/linux/net/bridge/br_public.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/linux/net/bridge/br_public.h",
+      "bytes": 546,
+      "sha256": "0d49d79e719bcebe6fc68669984681117655fac7de627a03cdb1d7ca20e93695"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/linux/pm_qos_params.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/linux/pm_qos_params.h",
+      "bytes": 838,
+      "sha256": "88295077cf5b20a0ad3dd475655de2fb57c1b62254707e4d45503bff57247d6d"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/openmitrastar_qdrv_compat.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/openmitrastar_qdrv_compat.h",
+      "bytes": 3968,
+      "sha256": "651d94fd4fc81b4d889103f8d64e3d5c6764758b55061ebdc935d0f361c878ad"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/qtn/br_types.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/qtn/br_types.h",
+      "bytes": 528,
+      "sha256": "9b56c5419e253c7abf6e0d540b7fc72f254f735367eb536c61935ad40cb162b1"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/qtn/qtn_skb_cb.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/qtn/qtn_skb_cb.h",
+      "bytes": 1729,
+      "sha256": "e115c7a1491bbab189b6f89d21a03221c7a5c835c00150a695656b35984ce5e8"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/qtn_platform_support.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/qtn_platform_support.h",
+      "bytes": 211,
+      "sha256": "f242a93ab72053145b323621a3fc54297b1592e537b4807889c974f5adc9bb2d"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/trace/ippkt.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/trace/ippkt.h",
+      "bytes": 1380,
+      "sha256": "8f8f5ca4a1899e2ab9187931484109d8da701f80993d98deb5ecc3c3bedfd767"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/compat/include/trace/skb.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/compat/include/trace/skb.h",
+      "bytes": 333,
+      "sha256": "6804434ce8ad570b810ffdff0ab20459538b82506723170efd008fe847a42149"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/f355_lifetime.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/f355_lifetime.h",
+      "bytes": 1436,
+      "sha256": "7a9042ef6b27f0cee01ea49376e61bac6abe00f2069d38331e4212dd518f2996"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_abi_v89.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_abi_v89.h",
+      "bytes": 16376,
+      "sha256": "a91c0808d8ad2dcfb2410ae8740563ac664eeebc5778b0fb6926a0a4bee13558"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_auc.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_auc.c",
+      "bytes": 4803,
+      "sha256": "70eb8cc1a7761addb9d14b48c97d5bc5362656137bb048fcd3238fd77891c723"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_auc.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_auc.h",
+      "bytes": 1084,
+      "sha256": "6725d51d84a574914536c11283fd99856270749b1bcb74fc65820ac9daece6eb"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_bld.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_bld.h",
+      "bytes": 404,
+      "sha256": "4fe2e7693e096771809b14f225b55aeb68fc018fb97d824f52f7e7b09f9f58ff"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_bridge.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_bridge.c",
+      "bytes": 32204,
+      "sha256": "05bbba44e4cb1641deea8aed511dfa6d68198f25cd7bbb7b8a68387d37a867fe"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_bridge.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_bridge.h",
+      "bytes": 3966,
+      "sha256": "db05eaab018d9cc1fbe80c0cb740b1be1aad2453101186f62a74a13316e51c70"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_comm.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_comm.c",
+      "bytes": 26656,
+      "sha256": "56c5d3d660a512c17dfc3903f606d3dc529542bcdeffeb266d04ab1219113f40"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_comm.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_comm.h",
+      "bytes": 1139,
+      "sha256": "e8e83658405005027cefac985a0634cadf9bdc2471c42c79e70b1883b7cd09bc"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_config.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_config.h",
+      "bytes": 135,
+      "sha256": "6f2ee77f2040df44f37c77ea3552f49e9a141e32fdbddb71d507e7c6ebe84a97"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_control.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_control.c",
+      "bytes": 174490,
+      "sha256": "ae586fc6db8b94ce7d128309b7c3add6563fbc37907488726ac95fc02242d398"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_control.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_control.h",
+      "bytes": 3187,
+      "sha256": "6f0656cf77128f496213c74edfc97591eca792e7d5ab220f662a9378961274a8"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_debug.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_debug.h",
+      "bytes": 3689,
+      "sha256": "1e01e89b2e47e7a3594e6ccc2baeea7e862312348991eeaea11e787f6e976c88"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_dma_wire.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_dma_wire.h",
+      "bytes": 548,
+      "sha256": "a9f6847592d7568a577de3fb260c1b705dd632c2a035454840fdf892db40d4db"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_dsp.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_dsp.c",
+      "bytes": 1844,
+      "sha256": "a8210e6df122dc38548a39e6004b534fece563b0af962721eb9e1955f31a560e"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_dsp.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_dsp.h",
+      "bytes": 924,
+      "sha256": "8f49757755232a73eb200e9e8931093e935b61348a782e1cda60091f40e08af1"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_f355_lifetime.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_f355_lifetime.c",
+      "bytes": 2550,
+      "sha256": "cc9e7520ec286c3f26b02510175dd9f9fb7f9096b55ee0c005558ca4f0198b67"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_f355_lifetime.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_f355_lifetime.h",
+      "bytes": 433,
+      "sha256": "75b70497d9f6a9f99f8b959c10e214ce16d5d7ac3eb4f11e6c4932cc9e4e9612"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_features.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_features.h",
+      "bytes": 1128,
+      "sha256": "e0f280b96f0a1f2d3d47c62046c05a08ccdda533153760105827cba7b679bf82"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_fw.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_fw.c",
+      "bytes": 8316,
+      "sha256": "0bdc6c022f3dfe8b19a3294f5697722e7b83a3124383aeac872a91c807746a78"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_fw.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_fw.h",
+      "bytes": 1241,
+      "sha256": "ec91cc1bbb1bf21f02add85863c58c3daa85b3483fd2a159c8a7fafd8a3c5444"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_fwt_compat.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_fwt_compat.c",
+      "bytes": 1372,
+      "sha256": "c92d173db3e4fc52be1496721192bdf26bc98639dfa220cda20542ad0c513cb1"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_hal.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_hal.c",
+      "bytes": 9958,
+      "sha256": "9073f72099b28a93e8794282ae5b87d7d32fca0ee5ebaf9b90cc6716f64a6691"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_hal.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_hal.h",
+      "bytes": 1600,
+      "sha256": "6cdf94d4075b18a5532be930068efe02ad60aa8b4266275269ab9061c7991e6f"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_hostlink.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_hostlink.c",
+      "bytes": 34301,
+      "sha256": "236089b781c9af1d5cf791694934f0dd72f9c119d21261b46d7db991b4e359bb"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_kernel_compat.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_kernel_compat.c",
+      "bytes": 1946,
+      "sha256": "493de8af98db94c8feb70a71221cf3e37904a01edabcbb3e08000d4f3cca68d1"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_mac.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_mac.c",
+      "bytes": 11337,
+      "sha256": "43946f44a7dbd5cfe71873175bbf6262e3224093eb5ef65a737a8061984a4e98"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_mac.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_mac.h",
+      "bytes": 4037,
+      "sha256": "0cdba30af6d70f085832fab93ab0e6eddbe1c3140c951033d2223a80217db2fa"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_mac_reserve.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_mac_reserve.c",
+      "bytes": 3976,
+      "sha256": "b1c97d65f4a8cb516634d36cb6f4a21a03a72e9703ec1d8f40f09c033528d67f"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_mac_reserve.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_mac_reserve.h",
+      "bytes": 1188,
+      "sha256": "98d812ad7bd8616b324be5bf92db80312ac535e9131987f2a8e7df50e6696d83"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_math.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_math.c",
+      "bytes": 876,
+      "sha256": "c1045ac057bddda8f4a2f8c6a52d6ee7d4dca2c563d3e83883edafc71e8acc32"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_module.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_module.c",
+      "bytes": 10909,
+      "sha256": "cfecaacfe7256ed17458553a594cbf927a9923c1f6d119950fa5cfb4d7ed39a3"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_mu.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_mu.c",
+      "bytes": 4898,
+      "sha256": "1dc0ca7d74c52afcfb49a3359473e542deee409e0a989155b947578a9a6ef85b"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_mu.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_mu.h",
+      "bytes": 930,
+      "sha256": "dd7d393342b347968726cd596ce547873a4a7265f8adee5053731e0311e781f6"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_muc.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_muc.c",
+      "bytes": 3608,
+      "sha256": "daf6f06bf5d82ee84dcf66a9ff2706692e6e4a52d155817381d5a9a066f54fde"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_muc.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_muc.h",
+      "bytes": 924,
+      "sha256": "3f0fb4d12fcc307ef1ce8681c71b1f3d7519a1bf08d83c9879a14e9da6e94285"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_muc_stats.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_muc_stats.c",
+      "bytes": 39729,
+      "sha256": "d2b9ae154179138b8c80933ff7f1fc4d7600f20dfd52ec9f33412061d7e74768"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_muc_stats.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_muc_stats.h",
+      "bytes": 3150,
+      "sha256": "2a685c28c9ee35639b7e15dcd4f54a7086d184a7ec3a487e469191cde4671966"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_netdebug_checksum.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_netdebug_checksum.h",
+      "bytes": 128,
+      "sha256": "52dd7a821fcb65da5c6258f9d99d5cf9b4592afc845c6c0c87549ef9ceb3f77c"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_pcap.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_pcap.c",
+      "bytes": 5968,
+      "sha256": "7185ef1ce323bae02d481ff102797bd615c18a46a9719d1b4bbe7d5c668459a5"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_pcap.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_pcap.h",
+      "bytes": 1470,
+      "sha256": "4fd7b28b17b1237d0000c27e50d79922603cb123e91b3f2f11d5ed9f6003376e"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_pktlogger.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_pktlogger.c",
+      "bytes": 53145,
+      "sha256": "f1ef936e9519e6bc2e75912b71f870011b8699936ed364b2221e189106732717"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_pktlogger.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_pktlogger.h",
+      "bytes": 3261,
+      "sha256": "990592fd84fc10afff04c97e4baf586f69e1ab3d497e11850f7f4925a7b95af6"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_radar.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_radar.c",
+      "bytes": 58944,
+      "sha256": "c261b6777d9322a4baf641a37861bf588e754e5411f7f993ea16725d00c395dc"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_radar.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_radar.h",
+      "bytes": 1939,
+      "sha256": "992433b333f63ea08b14f84befebb347f8bf80e7097bee7702a2831887472aa2"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_radar_compat.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_radar_compat.c",
+      "bytes": 1804,
+      "sha256": "2f0401ff643896a3ef099f941359a4cbbf336ff6f601ccb46cad25c61fe16712"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_rx.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_rx.c",
+      "bytes": 74852,
+      "sha256": "7b1126f6ce00111ded62f36204d13736a51bdc94906b3de5f4308c7a7691ba2a"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_scan.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_scan.c",
+      "bytes": 4959,
+      "sha256": "17cefa0744c2fe8bd00ccb0d29ca8ff0a5b4a013cc41d2b9caaf71df49d2145d"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_sch.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_sch.c",
+      "bytes": 29700,
+      "sha256": "64edce498abe520db3c3fcb7a51505af750456b54284b1e2dc25af7519d99035"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_sch_pm.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_sch_pm.c",
+      "bytes": 3308,
+      "sha256": "b2a14cc8aff687f23b7d792fb0eb47cd0b3a3fb5940f791f521f17d02fb43812"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_sch_pm.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_sch_pm.h",
+      "bytes": 1274,
+      "sha256": "2557a0ba57133c728af6a710357514f4c7ac3a69a2396fbc8c8a7fb42ce9d2f6"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_sch_wmm.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_sch_wmm.h",
+      "bytes": 1009,
+      "sha256": "7dc95e1b32177b0f9540639e8f22728e5d848d44efc4a9dcb95907b68686c618"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_show.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_show.c",
+      "bytes": 12521,
+      "sha256": "996ee4f1294ad79623f10f41c1c57bce98f8a47ee9c1cb99c74acdb11b05bda9"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_show.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_show.h",
+      "bytes": 1659,
+      "sha256": "78b3025636ba67cbca91303b7d04bf7a07b05a4a148067c77746d38b7c42ae7c"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_slab_def.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_slab_def.h",
+      "bytes": 2576,
+      "sha256": "4ed06903cdbef21e3d812696b68ced031d55ff9d965c14ae80c486c913e8401b"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_slab_watch.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_slab_watch.h",
+      "bytes": 152,
+      "sha256": "5cb3ae80b0c2f5f80244bd1ece1e5f968b4f8eb3405aac08b69ee6b4c62451e3"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_soc.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_soc.c",
+      "bytes": 28362,
+      "sha256": "a179bebe0f469b4156e03139d6e06c99d51720c2bc9e292d5426a37d607603c4"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_soc.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_soc.h",
+      "bytes": 5151,
+      "sha256": "a21236a19e0e37950bc8b0b294f8b9ae2f18bbc4b5bf9b2865caa478f5c940ae"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_tx.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_tx.c",
+      "bytes": 87130,
+      "sha256": "2f93045dc3937074300c571e1b5f1d49c95e51de91d8e00b0742db1177438c1d"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_txbf.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_txbf.c",
+      "bytes": 21710,
+      "sha256": "953a080fd97c9f794cdce56decdc70be121439635d5e421282ead0c93ef143d8"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_txbf.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_txbf.h",
+      "bytes": 1942,
+      "sha256": "649d561e00f4ecacf49bb8328c54d750cf5b50738d385c2b28ca03959f8b8098"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_uc_print.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_uc_print.c",
+      "bytes": 5739,
+      "sha256": "f8dc7d8b7101568c3ee0b92bb69b45aae972e0df241e6468ec2199d5e03e9d98"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_uc_print.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_uc_print.h",
+      "bytes": 1026,
+      "sha256": "b1d259990e2c753ef839fd1398982de6313851c649a4e8fdfaf22635a0442820"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_vap.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_vap.c",
+      "bytes": 22478,
+      "sha256": "8a7e19a8066392468797602735e6d78039ac6b5ab6bcdf1a5d5baa860d59f485"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_vap.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_vap.h",
+      "bytes": 5828,
+      "sha256": "1f9ea973f15ad341bf7064fdc319e56dfc3f4c25e8627f2ab9d4ecc60717533a"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_vlan.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_vlan.c",
+      "bytes": 2737,
+      "sha256": "466b6e1263cdbb633d05e096287dfcaea967d59594897246d9c4778d65802eb3"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_vlan.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_vlan.h",
+      "bytes": 1051,
+      "sha256": "0626e7203ef79e44b168de12b48b44e970c9cf12b388a52b7060c63e9ddeb50d"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_wlan.c",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_wlan.c",
+      "bytes": 308658,
+      "sha256": "bd5d98aef3e1411fe93b30d195df3ea40827c403818d7fd5c629328431a6ae2f"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/qdrv_wlan.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/qdrv_wlan.h",
+      "bytes": 50617,
+      "sha256": "9cd8170a4d57fa7854a12654c2f11536a99d1572a9b5ee84a8e3797d49a365c0"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/qdrv/soc.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/qdrv/soc.h",
+      "bytes": 177,
+      "sha256": "54905b37dbe250218832f5c478a7b15fa60ff22ec6c2d12eac1ccf109bb592ff"
+    },
+    {
+      "path": "candidates/named-cca-getters-r2/source/wlan/openmitrastar_beacon_preflight.h",
+      "source": "outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2/source/wlan/openmitrastar_beacon_preflight.h",
+      "bytes": 933,
+      "sha256": "5043d3f04160269e3bda6b5badb576dd7db7c1e66d632b368989f04449e9bb52"
+    },
+    {
+      "path": "tools/integration/compile_hgw5g_cca_abi_fixture.py",
+      "source": "tools/compile_hgw5g_cca_abi_fixture.py",
+      "bytes": 5607,
+      "sha256": "c2071935f42099517a916488d7a28431e3be9cca6e757b58fbec69e618753611"
+    },
+    {
+      "path": "tools/integration/label_oem_qdrv_analysis_callbacks.py",
+      "source": "tools/label_oem_qdrv_analysis_callbacks.py",
+      "bytes": 3253,
+      "sha256": "1917e7a4cb1a846b1b435ec320fd7c78a4eb5dafc3b80d778f297caede1c3512"
+    },
+    {
+      "path": "tools/integration/prepare_hgw5g_named_cca_getters.py",
+      "source": "tools/prepare_hgw5g_named_cca_getters.py",
+      "bytes": 6736,
+      "sha256": "c2a41eb742274c820b46af129dc8a78d2ccc24060c259f55f8063a82d03617dc"
+    },
+    {
+      "path": "tools/integration/prepare_rea_arc700_oem_abi3_lane.py",
+      "source": "tools/prepare_rea_arc700_oem_abi3_lane.py",
+      "bytes": 2561,
+      "sha256": "b28f535c882e61fcb954f2f746c63c64d53a88a44d7991089942b19261b78a42"
+    },
+    {
+      "path": "tools/integration/recover_oem_wlan_missing_case_map.py",
+      "source": "tools/recover_oem_wlan_missing_case_map.py",
+      "bytes": 5278,
+      "sha256": "2c50e9214e252fa0575d567c7440679511c420f40136ecd5a799d417a327c968"
+    },
+    {
+      "path": "tools/integration/summarize_oem_wlan_case_evidence.py",
+      "source": "tools/summarize_oem_wlan_case_evidence.py",
+      "bytes": 5348,
+      "sha256": "cb61f85c863bafa9c347039dec41955f1c1ced9358b135f24c09726f871c2356"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133300Z-r1/compile-arc-qdrv-wlan.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133300Z-r1/compile-arc-qdrv-wlan.command.json",
+      "bytes": 5813,
+      "sha256": "e1fa95fbb8c095746bc0bb3c63e2468e90f2b517ca5bad7a0bbdba68a011db89"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133300Z-r1/compile-arc-witness.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133300Z-r1/compile-arc-witness.command.json",
+      "bytes": 5911,
+      "sha256": "2ad6b9fa042a4968f37a02ca8c5a07188df852370d745cd80392c88ec6818816"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133300Z-r1/compile-fake-fixture.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133300Z-r1/compile-fake-fixture.command.json",
+      "bytes": 324,
+      "sha256": "579bf6587579e94dc4a68b5c5e3812a55fd4e92e7fd95e800b19984ec7e43857"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133300Z-r1/result.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133300Z-r1/result.json",
+      "bytes": 865,
+      "sha256": "616b557838712a191497d1e4d5cb6f9c2e726154ea350ae75258d4c165598006"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133300Z-r1/run-fake-fixture.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133300Z-r1/run-fake-fixture.command.json",
+      "bytes": 111,
+      "sha256": "54000736d7e44b180290dc81a8dcfce6973131c740fa317d89dde3028679d50c"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133300Z-r1/witness.c",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133300Z-r1/witness.c",
+      "bytes": 3032,
+      "sha256": "5061205c4906e7304371b802fa79ab714ec6b9aab5390797180f9f873e66f243"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133500Z-r2/actual-wlan-forward-fixture.c",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133500Z-r2/actual-wlan-forward-fixture.c",
+      "bytes": 656,
+      "sha256": "1a052543f8caed55bb6b073c14a9ffb24d62da47c16653d1a69671635b90bc58"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133500Z-r2/compile-arc-qdrv-wlan.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133500Z-r2/compile-arc-qdrv-wlan.command.json",
+      "bytes": 5813,
+      "sha256": "6bd087d85c0044a52190aaee0e4285d588802aee88a0aa335fd990f4c88eb5a0"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133500Z-r2/compile-arc-witness.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133500Z-r2/compile-arc-witness.command.json",
+      "bytes": 5911,
+      "sha256": "ad558cd897a5960e72e55918658751ac6e5dc96a502df288f70162a4f090557f"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133500Z-r2/compile-fake-fixture.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133500Z-r2/compile-fake-fixture.command.json",
+      "bytes": 324,
+      "sha256": "a1e52e8f2b694287eea7eecbf660e99c041f621ccbafd27c01707240baf575b1"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133500Z-r2/compile-forward-fixture.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133500Z-r2/compile-forward-fixture.command.json",
+      "bytes": 331,
+      "sha256": "82ff3118f9661f5a13755e963c5c3b87434785f4354281c74d06599895e40405"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133500Z-r2/result.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133500Z-r2/result.json",
+      "bytes": 1405,
+      "sha256": "026b37b1e03efc8b75fceafaf9d4d253b3e44e4adc56f92515e19aae7a53f4d4"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133500Z-r2/run-fake-fixture.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133500Z-r2/run-fake-fixture.command.json",
+      "bytes": 111,
+      "sha256": "e63e02baeb052e7a85827b51b54e5f4b9a6b2fe971ebc73fe3852180547889c8"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133500Z-r2/witness.c",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133500Z-r2/witness.c",
+      "bytes": 3032,
+      "sha256": "5061205c4906e7304371b802fa79ab714ec6b9aab5390797180f9f873e66f243"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133600Z-r3/actual-wlan-forward-fixture.c",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133600Z-r3/actual-wlan-forward-fixture.c",
+      "bytes": 676,
+      "sha256": "00899306ca618e67a9ad4324bd1703b979706e6d019b0e51ac8cf67eace76724"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133600Z-r3/compile-arc-qdrv-wlan.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133600Z-r3/compile-arc-qdrv-wlan.command.json",
+      "bytes": 5813,
+      "sha256": "8352c210e64de683d121c386945958bfd0429bea4ad1f298b51de1a131e840a9"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133600Z-r3/compile-arc-witness.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133600Z-r3/compile-arc-witness.command.json",
+      "bytes": 5911,
+      "sha256": "52ae98cc620c30e58205d23cbf0d937a20f1ab694650935c7a114874dcb29f71"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133600Z-r3/compile-fake-fixture.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133600Z-r3/compile-fake-fixture.command.json",
+      "bytes": 324,
+      "sha256": "b0d93d5ec82b9fbf41cfff91bedc55865b7d17c17e04ee51b4fc4f0fcd6206a8"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133600Z-r3/compile-forward-fixture.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133600Z-r3/compile-forward-fixture.command.json",
+      "bytes": 331,
+      "sha256": "ef1ff2790e369de364671d7c20ef3dfccae63b5b7b7b9f230830f9fe8ab5623c"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133600Z-r3/HANDOFF.md",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133600Z-r3/HANDOFF.md",
+      "bytes": 4780,
+      "sha256": "7b413680f061ef6df229fad553438da9e3812217840de99510fab48344494899"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133600Z-r3/result.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133600Z-r3/result.json",
+      "bytes": 943,
+      "sha256": "91ebb9baf08af32010e60f689ae867573166e09c72349ca9450ff8a5d5f0a628"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133600Z-r3/run-fake-fixture.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133600Z-r3/run-fake-fixture.command.json",
+      "bytes": 111,
+      "sha256": "30a556d209214683356b31598d0335f774cccaf0ed1190edbdb5eafd89033d0d"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133600Z-r3/run-forward-fixture.command.json",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133600Z-r3/run-forward-fixture.command.json",
+      "bytes": 119,
+      "sha256": "54158e70b85b9d1624214730d3a69428cbb821df6665cc8033320821947b2d3f"
+    },
+    {
+      "path": "evidence/named-cca-getters-fixture-20261022T133600Z-r3/witness.c",
+      "source": "outputs/rea/named-cca-getters-fixture-20261022T133600Z-r3/witness.c",
+      "bytes": 3032,
+      "sha256": "5061205c4906e7304371b802fa79ab714ec6b9aab5390797180f9f873e66f243"
+    },
+    {
+      "path": "evidence/oem-qdrv-callback-label-20261022T132700Z-r1/manifest.json",
+      "source": "outputs/rea/oem-qdrv-callback-label-20261022T132700Z-r1/manifest.json",
+      "bytes": 1569,
+      "sha256": "975dc08f608e66bc49d2c466a17de6002c9a24b24945e7abf1ccc3f75471b947"
+    },
+    {
+      "path": "evidence/oem-qdrv-callback-label-20261022T132700Z-r1/stderr.txt",
+      "source": "outputs/rea/oem-qdrv-callback-label-20261022T132700Z-r1/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/oem-qdrv-callback-label-20261022T132700Z-r1/stdout.txt",
+      "source": "outputs/rea/oem-qdrv-callback-label-20261022T132700Z-r1/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/oem-qdrv-missingops-20261022T132500Z-getparam/rea.json",
+      "source": "outputs/rea/oem-qdrv-missingops-20261022T132500Z-getparam/rea.json",
+      "bytes": 13191,
+      "sha256": "1682c82b90227b3aef784e3e0271d103f2baf00780edf1f5a3eebd950a8a9544"
+    },
+    {
+      "path": "evidence/oem-qdrv-missingops-20261022T132500Z-getparam/result.json",
+      "source": "outputs/rea/oem-qdrv-missingops-20261022T132500Z-getparam/result.json",
+      "bytes": 843,
+      "sha256": "53d22360bff13e7e4d216a06a93a4002631d39a9ab48f27512e4fa190a0552ec"
+    },
+    {
+      "path": "evidence/oem-qdrv-missingops-20261022T132700Z-getparam-r2/getparam.pseudocode.c",
+      "source": "outputs/rea/oem-qdrv-missingops-20261022T132700Z-getparam-r2/getparam.pseudocode.c",
+      "bytes": 17734,
+      "sha256": "6254e59eb9b8548d07db27747420c0ff0dd94f9de30a25723037618e29eff492"
+    },
+    {
+      "path": "evidence/oem-qdrv-missingops-20261022T132700Z-getparam-r2/rea.json",
+      "source": "outputs/rea/oem-qdrv-missingops-20261022T132700Z-getparam-r2/rea.json",
+      "bytes": 2807637,
+      "sha256": "0b83e367a2cf12882c8bc6a1fd63c7f463cc5154f704fe7ea4481065454fcf6e"
+    },
+    {
+      "path": "evidence/oem-qdrv-missingops-20261022T132700Z-getparam-r2/result.json",
+      "source": "outputs/rea/oem-qdrv-missingops-20261022T132700Z-getparam-r2/result.json",
+      "bytes": 869,
+      "sha256": "481ebd8cd6c66b91dd8e5f8fead23e0ee30e348718464a13198d6ea6985d0a96"
+    },
+    {
+      "path": "evidence/oem-qdrv-missingops-20261022T132800Z-init/init.pseudocode.c",
+      "source": "outputs/rea/oem-qdrv-missingops-20261022T132800Z-init/init.pseudocode.c",
+      "bytes": 42373,
+      "sha256": "dd5d78dcbdb8824a34cd200074c1fde513befa2dee07373add0632e0e323753e"
+    },
+    {
+      "path": "evidence/oem-qdrv-missingops-20261022T132800Z-init/rea.json",
+      "source": "outputs/rea/oem-qdrv-missingops-20261022T132800Z-init/rea.json",
+      "bytes": 4784559,
+      "sha256": "e996d8d167ec0977711794e13dbb74d4d6be14656d8a699a3af950acd2a6f689"
+    },
+    {
+      "path": "evidence/oem-qdrv-missingops-20261022T132800Z-init/result.json",
+      "source": "outputs/rea/oem-qdrv-missingops-20261022T132800Z-init/result.json",
+      "bytes": 850,
+      "sha256": "8157a3a9519575d1890f610144b12ae24b88d24bcce6cc3d42e0bba62f94ec72"
+    },
+    {
+      "path": "evidence/oem-qdrv-missingops-20261022T132800Z-linked/layout.txt",
+      "source": "outputs/rea/oem-qdrv-missingops-20261022T132800Z-linked/layout.txt",
+      "bytes": 4610,
+      "sha256": "9e39bb6890c5746ad51e42cf004da9201fe68932a59dcca558d575067f7d962e"
+    },
+    {
+      "path": "evidence/oem-qdrv-missingops-20261022T132800Z-linked/manifest.json",
+      "source": "outputs/rea/oem-qdrv-missingops-20261022T132800Z-linked/manifest.json",
+      "bytes": 17410,
+      "sha256": "47e49dfab3b742e15bca462bbe74653932b851d0e49303a6459c0f7e7a889d7c"
+    },
+    {
+      "path": "evidence/oem-qdrv-missingops-20261022T132800Z-linked/symbols.txt",
+      "source": "outputs/rea/oem-qdrv-missingops-20261022T132800Z-linked/symbols.txt",
+      "bytes": 24959,
+      "sha256": "39cf0ac95f7810ff79db8b241dee69ba6dba5f9352863d8b224eb3cb951b92a5"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/246-get_tx_maxmpdu-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/246-get_tx_maxmpdu-get.derived.c",
+      "bytes": 161,
+      "sha256": "a6f8a57d28d94d655388fea7877b53e92a27f9eb8a394fea41e79280687fa487"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/246-tx_maxmpdu-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/246-tx_maxmpdu-set.derived.c",
+      "bytes": 343,
+      "sha256": "4f589101a176f20e27139d3f3bfe440c8fd25bef6778d91b3a889b93c5996e82"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/275-get_auto_cca_en-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/275-get_auto_cca_en-get.derived.c",
+      "bytes": 96,
+      "sha256": "0d18130a14ab872d9cdc38837a055e8f0fc18798ca4a4db7c7018e6069379710"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/331-get_cca_fixed-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/331-get_cca_fixed-get.derived.c",
+      "bytes": 96,
+      "sha256": "aecedadd6bed3aff87da8abe6033989aafd76223e8692f78c58601a0bfb5c6fc"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/449-20_40_bss_coex-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/449-20_40_bss_coex-set.derived.c",
+      "bytes": 159,
+      "sha256": "7fca9327789b604d782e3340e14c642759a4f52795088bbc96cdb258929698ad"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/450-get_min_cac-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/450-get_min_cac-get.derived.c",
+      "bytes": 134,
+      "sha256": "3b58dadcf0b5fee172cf27524e4eb64aebe3723b7fdfad0f7f86f6905ca801d1"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/451-get_dev_mode-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/451-get_dev_mode-get.derived.c",
+      "bytes": 460,
+      "sha256": "67dcb7524915a2f0938f81747715003fec604c96e326bb0f544aefc60267da0f"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/457-get_nac_mode-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/457-get_nac_mode-get.derived.c",
+      "bytes": 351,
+      "sha256": "24dd616adb5339eb2c8764573e6c9d2f053c9e8e5bbf0dcdd017aea98fd1b6df"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/457-nac_mode-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/457-nac_mode-set.derived.c",
+      "bytes": 252,
+      "sha256": "10c9180d614921164f34bede2895f79328132552fce998ac1c04a44026d9fc87"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/460-get_max_bw-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/460-get_max_bw-get.derived.c",
+      "bytes": 161,
+      "sha256": "bfad543c288b5a9a78a5957c0e6ac900bc705f0b497b3a6b63f5e22854de9deb"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/460-set_max_bw-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/460-set_max_bw-set.derived.c",
+      "bytes": 153,
+      "sha256": "0130977327ca16db2d699fd9cb041d0dd9e18c59387a38e4fed18381c369e4dc"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/461-get_bw_autosel-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/461-get_bw_autosel-get.derived.c",
+      "bytes": 161,
+      "sha256": "071e302221b18bf1becfd288305e4130e248708d1bef289110e7ce0995597740"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/461-set_bw_autosel-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/461-set_bw_autosel-set.derived.c",
+      "bytes": 153,
+      "sha256": "0db9cd9c5b2d5abf5ab1ba99445d9dd5c56e9638ec9eee46b928cf1d6037394d"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/464-check_cur_chan-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/464-check_cur_chan-set.derived.c",
+      "bytes": 154,
+      "sha256": "475bfa84a4711b4d126c1caa0a3dac1705e8a30ef95a427496d9be903983ad51"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/465-ignr_icac_sel-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/465-ignr_icac_sel-set.derived.c",
+      "bytes": 96,
+      "sha256": "a6df69dc82e0d9c7d8af3f16786d70dfe76258405d8bf0052eb02c25479f40c2"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/466-g_rbsdfs_msrcac-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/466-g_rbsdfs_msrcac-get.derived.c",
+      "bytes": 161,
+      "sha256": "deece5bfe3385cc740f00a7dd0b981bce9dc6583ccf86450277cffaff795ae4f"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/466-rbs_dfs_msr_cac-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/466-rbs_dfs_msr_cac-set.derived.c",
+      "bytes": 159,
+      "sha256": "ca38cfa3283b95c9b13323b048cb20cd501e22a72b9f7819c9e32ed992a5505a"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/467-dfs_chan_avail-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/467-dfs_chan_avail-get.derived.c",
+      "bytes": 192,
+      "sha256": "997cd508bf0a241dadc75d48c91dedd9043dae353bc7526f02486c9056fcb8c2"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/468-g_rbsdfs_end_tx-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/468-g_rbsdfs_end_tx-get.derived.c",
+      "bytes": 155,
+      "sha256": "367177b8c19da45441455a5d0d6e2e4c73506cce029e3668c61942752f2678bf"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/468-rbs_dfs_end_tx-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/468-rbs_dfs_end_tx-set.derived.c",
+      "bytes": 211,
+      "sha256": "9ffa9213b0ca177c986a854ff7138fc4f886f27996f7e394e8d30d8eaa0ac2c9"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/478-get_wea_cac_en-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/478-get_wea_cac_en-get.derived.c",
+      "bytes": 160,
+      "sha256": "8f8facccf078524e68ca686bee101e43091baced7911aaf6d2b9e563b7aa53e2"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/478-wea_cac_en-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/478-wea_cac_en-set.derived.c",
+      "bytes": 158,
+      "sha256": "89c37d77d2565ac1384c4c27ddce33ffe3b57f6da9aecfde30a9319b75e7c1b5"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/481-get_vopt-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/481-get_vopt-get.derived.c",
+      "bytes": 314,
+      "sha256": "9ac98b781a241144ad2763e7b8a0952ca3783e70bd9be5e960edf00b14fadbb0"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/481-set_vopt-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/481-set_vopt-set.derived.c",
+      "bytes": 334,
+      "sha256": "ae74a148d83f59b251e7d4d25b3eca75dfaadf42c3d16c1ce119d44e0c90dd4c"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/483-get_bbdfwar_en-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/483-get_bbdfwar_en-get.derived.c",
+      "bytes": 96,
+      "sha256": "b7309859d8929d63c417850318b81e9dab962c354b3c578ec73ac861a8cd05dd"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/484-get_txamsdu_11n-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/484-get_txamsdu_11n-get.derived.c",
+      "bytes": 162,
+      "sha256": "58757254844957cab4b2fed756f9d3b94cceaa8c5b9598cba52aa15332ad02be"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/484-txamsdu_11n-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/484-txamsdu_11n-set.derived.c",
+      "bytes": 390,
+      "sha256": "00b6717f849adcbf09dd7190176d5e2dc76b146f83402862f3d2b9389f959f59"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/490-fix_legacy_rate-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/490-fix_legacy_rate-set.derived.c",
+      "bytes": 2022,
+      "sha256": "d7480a41822e86df369753ac444265f1c7c6571844e07f3657e46f80c6534f00"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/491-coc_mv_to_ndfs-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/491-coc_mv_to_ndfs-set.derived.c",
+      "bytes": 154,
+      "sha256": "bcc214e248962eba1ebb2604db911b49c1560dbe73b08cd30b18feac4268f4ba"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/491-g_coc_mv_to_ndfs-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/491-g_coc_mv_to_ndfs-get.derived.c",
+      "bytes": 155,
+      "sha256": "e0fe7ad02d314f343c9362d9afc64592bed735152b0b2fb8e5c87ab066b99d35"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/492-get_neigh_repo-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/492-get_neigh_repo-get.derived.c",
+      "bytes": 159,
+      "sha256": "d2c734337e61709f7e6e58c31f871577b26e2bd4769775f3f2ff06472a416938"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/492-neigh_repo-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/492-neigh_repo-set.derived.c",
+      "bytes": 353,
+      "sha256": "1a1303be99f10ca0882f968bdd03a4712c20cb4c383f29526d982933eec73764"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/493-bss_tm-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/493-bss_tm-set.derived.c",
+      "bytes": 353,
+      "sha256": "81d77e692cb947106d79c9870a6f30f97ff1cc4447613d13975928b8873f2031"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/493-get_bss_tm-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/493-get_bss_tm-get.derived.c",
+      "bytes": 159,
+      "sha256": "25539f944ec8e6085e506631c38a444a87b23d289260d17011115601c0cc6dff"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/494-get_mdid-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/494-get_mdid-get.derived.c",
+      "bytes": 164,
+      "sha256": "98ceecf96e7825df6a2f88bff97dcd0983c0c45f4887b2b999ac0f292a388ae3"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/494-mdid-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/494-mdid-set.derived.c",
+      "bytes": 272,
+      "sha256": "89f5e7fa3b06da53609b1956e37f5fedf57edf0563f3eaf24c605e26aa5892a7"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/495-ft_over_ds-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/495-ft_over_ds-set.derived.c",
+      "bytes": 224,
+      "sha256": "7b8aab795443150dc204b5060c5a2771702f4f567f2800f430df8e3e7ffa8337"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/496-get_sretry_lmt-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/496-get_sretry_lmt-get.derived.c",
+      "bytes": 185,
+      "sha256": "4d6aa9bbfaa34a353bbdccf70644ed45dee4970114586ce8465bb96457bbb337"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/497-get_lretry_lmt-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/497-get_lretry_lmt-get.derived.c",
+      "bytes": 170,
+      "sha256": "7e02dff75add45e617d53e3d6dde62af9f3357ab6f783d7d46f3446a730d3a10"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/498-get_dup_rts-get.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/498-get_dup_rts-get.derived.c",
+      "bytes": 147,
+      "sha256": "9a17528f444c5b8fb9930358a92a9099a5e12e164f289901dac6a55f44f4fdf9"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/498-set_dup_rts-set.derived.c",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/498-set_dup_rts-set.derived.c",
+      "bytes": 195,
+      "sha256": "03b47b95df27881fbc94ad1f4e821da32a4135af412fb4397225078632a66f22"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/manifest.json",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/manifest.json",
+      "bytes": 4398,
+      "sha256": "3367add50ac77d5365af3b92c3461898f6d3a0195fd6d9b9ffbb03f7aba93755"
+    },
+    {
+      "path": "evidence/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/result.json",
+      "source": "outputs/rea/oem-wlan-44-recovered-evidence-20261022T132500Z-r1/result.json",
+      "bytes": 38766,
+      "sha256": "3160213b99e24527eb9bb790d35d6e795f2092bba0403c4e546719624d8de0c0"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/246-get_tx_maxmpdu-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/246-get_tx_maxmpdu-get.objdump.txt",
+      "bytes": 313,
+      "sha256": "e41271f6b69bf66cc8d8777ca16060ee479f13c7f972cf4ae0be83f7442be3f3"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/246-tx_maxmpdu-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/246-tx_maxmpdu-set.objdump.txt",
+      "bytes": 845,
+      "sha256": "1a6f0ba20e7f6d7f0a808ad131d87f5c1455afd99d351ab82d256a6c43a2fb09"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/275-get_auto_cca_en-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/275-get_auto_cca_en-get.objdump.txt",
+      "bytes": 432,
+      "sha256": "05fa7f021f78b24eacc111bd20de594137dde10fb6f58131b1c24805363fd594"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/331-get_cca_fixed-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/331-get_cca_fixed-get.objdump.txt",
+      "bytes": 432,
+      "sha256": "05fa7f021f78b24eacc111bd20de594137dde10fb6f58131b1c24805363fd594"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/449-20_40_bss_coex-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/449-20_40_bss_coex-set.objdump.txt",
+      "bytes": 342,
+      "sha256": "03b77e5426b99c744f3a76f23b7430e4e2d17ce40a9026d041e67d38f675e226"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/450-get_min_cac-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/450-get_min_cac-get.objdump.txt",
+      "bytes": 215,
+      "sha256": "6cc0c86dfcae02daac66cbf231ff105f9b8f847713fb9a6a969243ddeede083f"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/451-get_dev_mode-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/451-get_dev_mode-get.objdump.txt",
+      "bytes": 1072,
+      "sha256": "a8c4ca3310aa0acdf7cfc50374ec4efbe34c0d6b941353e56dd8ee0e7d74c0ce"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/457-get_nac_mode-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/457-get_nac_mode-get.objdump.txt",
+      "bytes": 802,
+      "sha256": "99beda058ed25ecbed9aaae9135c3c1bc0c16b3534a5d3fb440e33e371453470"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/457-nac_mode-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/457-nac_mode-set.objdump.txt",
+      "bytes": 675,
+      "sha256": "84d97fcb294cc64f0e3a8ade05bf901fcf3184284059cf84b433c8e98e939ec8"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/460-get_max_bw-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/460-get_max_bw-get.objdump.txt",
+      "bytes": 316,
+      "sha256": "18e5b4508125e4bee2feafc3dee1b79fed4cbf29fa4e0ea1fc4fba8373b804d7"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/460-set_max_bw-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/460-set_max_bw-set.objdump.txt",
+      "bytes": 211,
+      "sha256": "33adc792e44b25cd17c8fbdd35195469bc6e828bfff79e9543cde1d76eeb5e5b"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/461-get_bw_autosel-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/461-get_bw_autosel-get.objdump.txt",
+      "bytes": 316,
+      "sha256": "cc7e19d0c85ae7740824cfa384e78a60ba1b6a3b0f408c0d1d1cb725d24d121e"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/461-set_bw_autosel-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/461-set_bw_autosel-set.objdump.txt",
+      "bytes": 211,
+      "sha256": "b19436a74b24d173fe42da519d985259e4681c74ddb617b6a533ed1b1a4a8340"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/463-set_dyn_sifs-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/463-set_dyn_sifs-set.objdump.txt",
+      "bytes": 421,
+      "sha256": "ee0024d67711f1022d4e46e12c72825720ba55874ec2bce52dc12d66216b3833"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/464-check_cur_chan-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/464-check_cur_chan-set.objdump.txt",
+      "bytes": 210,
+      "sha256": "b51b185864ce762ed231c713c97c75c74ccf66d060eed15a93b494167f027011"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/465-ignr_icac_sel-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/465-ignr_icac_sel-set.objdump.txt",
+      "bytes": 7101,
+      "sha256": "45af27bd825badb7db0b86077927fe1f7aca1bc723981d650eefd7fdff11945f"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/466-g_rbsdfs_msrcac-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/466-g_rbsdfs_msrcac-get.objdump.txt",
+      "bytes": 316,
+      "sha256": "7d5db0de53b23700cc4fa6f47dfa501712fec08169af4988cecba035c6d92fc0"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/466-rbs_dfs_msr_cac-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/466-rbs_dfs_msr_cac-set.objdump.txt",
+      "bytes": 342,
+      "sha256": "229dbd42772ff3f28092b305b7d80c46799d617dcc352fb385b51357454f560a"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/467-dfs_chan_avail-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/467-dfs_chan_avail-get.objdump.txt",
+      "bytes": 537,
+      "sha256": "110784aff62ea811f98b272bcc8cfcca9f905e52a08f43baa939464f02232c66"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/468-g_rbsdfs_end_tx-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/468-g_rbsdfs_end_tx-get.objdump.txt",
+      "bytes": 315,
+      "sha256": "c0c0d6ddbba1f7ed9f14a54fd6059ecb9821c2fa5b28b8343ef351f89269c0a5"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/468-rbs_dfs_end_tx-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/468-rbs_dfs_end_tx-set.objdump.txt",
+      "bytes": 372,
+      "sha256": "63fbbf2a732b917b0d8c141685ef2435da34b001b18d59029d9b8674e517fef5"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/478-get_wea_cac_en-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/478-get_wea_cac_en-get.objdump.txt",
+      "bytes": 312,
+      "sha256": "dd04336178f58e51f0db3c3131904affea9e1c3916807a41cf1d337237212807"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/478-wea_cac_en-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/478-wea_cac_en-set.objdump.txt",
+      "bytes": 340,
+      "sha256": "757655257fb8a9dce5d9a3ecddd2a836794f3f7d14a47989358e80ce43b92b86"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/481-get_vopt-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/481-get_vopt-get.objdump.txt",
+      "bytes": 980,
+      "sha256": "bec4489d66d5c85445b317ca4b258191c93c834abe0f90cd9cf68b5cb9bd5913"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/481-set_vopt-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/481-set_vopt-set.objdump.txt",
+      "bytes": 609,
+      "sha256": "99d6220e3d281ac4bc9c0b33ac85c828a214b6a7fc8ad15bf06e3b742b74f861"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/483-bbdf_war_en-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/483-bbdf_war_en-set.objdump.txt",
+      "bytes": 421,
+      "sha256": "ee0024d67711f1022d4e46e12c72825720ba55874ec2bce52dc12d66216b3833"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/483-get_bbdfwar_en-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/483-get_bbdfwar_en-get.objdump.txt",
+      "bytes": 432,
+      "sha256": "05fa7f021f78b24eacc111bd20de594137dde10fb6f58131b1c24805363fd594"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/484-get_txamsdu_11n-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/484-get_txamsdu_11n-get.objdump.txt",
+      "bytes": 314,
+      "sha256": "52ed1a0e82e6a9d12f39a39b29db1eec650d31b62cb8033a58abd7d24f97d8e3"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/484-txamsdu_11n-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/484-txamsdu_11n-set.objdump.txt",
+      "bytes": 1195,
+      "sha256": "e3c430a39719c1bd8c1d6e7d5cc7f01439deebe3c7b075b1defb88d0af6bdc73"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/490-fix_legacy_rate-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/490-fix_legacy_rate-set.objdump.txt",
+      "bytes": 6970,
+      "sha256": "35af4e458d59c11acc0adc696e3bc7b77127b0d2caea0f5bab8261b868c5cc0a"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/491-coc_mv_to_ndfs-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/491-coc_mv_to_ndfs-set.objdump.txt",
+      "bytes": 209,
+      "sha256": "69060877633684fce8781e829e3e4971e57da6f150329c4c1898cf0692b636a3"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/491-g_coc_mv_to_ndfs-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/491-g_coc_mv_to_ndfs-get.objdump.txt",
+      "bytes": 315,
+      "sha256": "38750b65162d2b9213295f89c529228a147bf301f958de93556fd2fe400b68ee"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/492-get_neigh_repo-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/492-get_neigh_repo-get.objdump.txt",
+      "bytes": 360,
+      "sha256": "62f36bb785d16be9fca48c35e113446900109836796167476d515feb05596ab5"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/492-neigh_repo-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/492-neigh_repo-set.objdump.txt",
+      "bytes": 621,
+      "sha256": "ed635e9b9319bb710ae3a2ff9a38abf2845b1f9cdb98aa445796104c48322d44"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/493-bss_tm-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/493-bss_tm-set.objdump.txt",
+      "bytes": 622,
+      "sha256": "1b8bfbc1ce169a58e5bb45165a856dd2c70adb83cc0ecd294c032f1c48cf992d"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/493-get_bss_tm-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/493-get_bss_tm-get.objdump.txt",
+      "bytes": 359,
+      "sha256": "99d1773825570d6416d36ad13500e5af0c559ee0a9eed7a8247a725cf97d1a1a"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/494-get_mdid-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/494-get_mdid-get.objdump.txt",
+      "bytes": 442,
+      "sha256": "a9a73813b412a64a7c9f729441c5205fa5008bbab1385f88620919604169ec09"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/494-mdid-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/494-mdid-set.objdump.txt",
+      "bytes": 695,
+      "sha256": "4dd754d754e467a1e3b832357baa58e161b596ab8b5f6f5dcc15c620e7cd862c"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/495-ft_over_ds-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/495-ft_over_ds-set.objdump.txt",
+      "bytes": 513,
+      "sha256": "7c6ea0d6e872fb64bbc5790c199ef23a4bfca4332e4dc5f7442be78bfa4eaf43"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/495-get_ft_over_ds-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/495-get_ft_over_ds-get.objdump.txt",
+      "bytes": 7856,
+      "sha256": "c2dc292f7b2164e7ee2bb364a77c94bc7d65daa1670e11e443c0859cef4b815e"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/496-get_sretry_lmt-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/496-get_sretry_lmt-get.objdump.txt",
+      "bytes": 432,
+      "sha256": "05fa7f021f78b24eacc111bd20de594137dde10fb6f58131b1c24805363fd594"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/497-get_lretry_lmt-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/497-get_lretry_lmt-get.objdump.txt",
+      "bytes": 432,
+      "sha256": "05fa7f021f78b24eacc111bd20de594137dde10fb6f58131b1c24805363fd594"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/498-get_dup_rts-get.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/498-get_dup_rts-get.objdump.txt",
+      "bytes": 317,
+      "sha256": "75f0278949f09342acc1a8100143848ba65da7efdfb7431722780252f43f34c9"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/498-set_dup_rts-set.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/498-set_dup_rts-set.objdump.txt",
+      "bytes": 516,
+      "sha256": "0b1c3b567d6746e724f2e3bcdb385203aed814ce76649eff7cf837b95cd43228"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/manifest.json",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/manifest.json",
+      "bytes": 4854,
+      "sha256": "dd7fde009d568c840e5d594743c0fba0c779f875efc67a419aaba0af37043527"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/oem-wlan-text.objdump.txt",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/oem-wlan-text.objdump.txt",
+      "bytes": 6131321,
+      "sha256": "bf36c5f50e89410e435de11a2a0e4d9a4a6ca76469be258973b37dec714fffce"
+    },
+    {
+      "path": "evidence/oem-wlan-case-map-20261022T132100Z-r1/result.json",
+      "source": "outputs/rea/oem-wlan-case-map-20261022T132100Z-r1/result.json",
+      "bytes": 45462,
+      "sha256": "e3716033ed6e39c1e71fc9ca8e9ede85a0aa98efa69fd4e1b1a09ac8462d11bd"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T131900Z-getparam-r2/getparam.pseudocode.c",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T131900Z-getparam-r2/getparam.pseudocode.c",
+      "bytes": 35272,
+      "sha256": "c81259bc1e46ff04a9393bc83b783ac1173bf9690cf9ba13fa0bd748da09c9ab"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T131900Z-getparam-r2/rea.json",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T131900Z-getparam-r2/rea.json",
+      "bytes": 5865869,
+      "sha256": "294fee39538182aed0e2a16151340134f066a6e44af9f98b88dec73d7e771bb2"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T131900Z-getparam-r2/result.json",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T131900Z-getparam-r2/result.json",
+      "bytes": 843,
+      "sha256": "e45664ccbeedcc0e54e19c1c0b881c207a946ef670cde1f994386d8914898465"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T131900Z-setparam-r2/rea.json",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T131900Z-setparam-r2/rea.json",
+      "bytes": 8970503,
+      "sha256": "ca1d8159bc59573e28ab194decf48bcf4fda3ce8de336a5902f08134106aef6d"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T131900Z-setparam-r2/result.json",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T131900Z-setparam-r2/result.json",
+      "bytes": 843,
+      "sha256": "d7b372ad0a39b1c552c010c493adf42007e35e981ac63c21b538b2cc16f70e63"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T131900Z-setparam-r2/setparam.pseudocode.c",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T131900Z-setparam-r2/setparam.pseudocode.c",
+      "bytes": 104735,
+      "sha256": "917b232d41e33a7a18345c53840c60556302ac50525824d8b98d0d722c0da523"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T134300Z-linked/layout.txt",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T134300Z-linked/layout.txt",
+      "bytes": 4691,
+      "sha256": "d48e64f62df4d48d0221f59b1c0420ed5f04f4af094f47e499ed36a1a1e3ed68"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T134300Z-linked/manifest.json",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T134300Z-linked/manifest.json",
+      "bytes": 6348,
+      "sha256": "a65dc8e78ecff5e3f0714ce014c286e31d76ced37a31f79ede37a8dcd4a942b6"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T134300Z-linked/symbols.txt",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T134300Z-linked/symbols.txt",
+      "bytes": 29669,
+      "sha256": "5edf8a4818eaab8ab79a274c486667faa97953b0aebb31ed48a8b8cd021c5adf"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T134500Z-getparam/rea.json",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T134500Z-getparam/rea.json",
+      "bytes": 626,
+      "sha256": "d620c5965badbe6615ecb2d0960221a54e86f81dd088c683f07441a588bb0a99"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T134500Z-getparam/result.json",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T134500Z-getparam/result.json",
+      "bytes": 836,
+      "sha256": "107a303a3e6720a82232b38ee398d8883f2c384b8c4068da95eadb6cd1ace767"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T134500Z-setparam/rea.json",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T134500Z-setparam/rea.json",
+      "bytes": 626,
+      "sha256": "1f3ed8b2a4aa1c865735110678948730ef31bfee88426491a9c785bcbbbac4de"
+    },
+    {
+      "path": "evidence/oem-wlan-missingops-20261022T134500Z-setparam/result.json",
+      "source": "outputs/rea/oem-wlan-missingops-20261022T134500Z-setparam/result.json",
+      "bytes": 836,
+      "sha256": "ebcde4a4870b1df65a0d4f5cadd86d4ce8702e440dfce0a383935ab8d5f93d69"
+    }
+  ],
+  "hardware_accessed": false,
+  "all_copies_exact": true,
+  "candidate_status": "SOURCE_AND_ACTUAL_FUNCTION_FIXTURE_PASS_FULL_PAIR_UNBUILT"
+}

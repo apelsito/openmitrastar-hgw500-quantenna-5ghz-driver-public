@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-10-22T14:59:21.129998+00:00",
+  "finished_utc": "2026-10-22T15:01:20.406136+00:00",
+  "command": [
+    "D:\\Tools\\REA\\node-v24.16.0-win-x64\\node.exe",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\rea-agents\\scripts\\rea.mjs",
+    "function",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\muc-code-window-analysis-20261022T145500Z-r1\\muc-CODE_WINDOW-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+    "--procedure",
+    "0x1573e0",
+    "--provider",
+    "ghidra",
+    "--format",
+    "json",
+    "--full-output"
+  ],
+  "exit_code": 0,
+  "target_sha256": "2a9e1e7920d529fe376748be4b06260589d1bfef28ade0850883ae9c423ba27a",
+  "target_unchanged": true,
+  "hardware_accessed": false,
+  "installed_runtime_modified": false,
+  "lab_manifest_sha256": "4eaee5f0e843a04da5021aeec00918660b3a133059a574afcd77e44d96e0110e",
+  "rea_output_sha256": "fa85779cf85210038c4d6f389c806014f5f4659492da7d12038c983ea0a77c53"
+}

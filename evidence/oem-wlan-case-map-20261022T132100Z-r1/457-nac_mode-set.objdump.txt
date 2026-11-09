@@ -1,0 +1,14 @@
+   467ae:	c206                	ld_s	r2,[sp,0x18]
+   467b0:	2280 0211           	add	r2,r2,1096
+   467b4:	8240                	ld_s	r2,[r2,0]
+   467b6:	e286                	cmp_s	r2,0x6
+   467b8:	0554 0002           	bne	1364	;46d0c <findchannel_any+0x5704>
+   467bc:	c006                	ld_s	r0,[sp,0x18]
+   467be:	72c9                	mov_s	r2,r14
+   467c0:	218a 0247           	mov	r1,457
+   467c4:	db00                	mov_s	r3,0
+   467c6:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   467ce:	220a 3f80 0003 3ddc 	mov	gp,0x33ddc
+   467d6:	2023 0680           	jl.d	[gp]
+   467da:	244a 0000           	mov	r4,0
+   467de:	04ab 0000           	b	1194	;46c86 <findchannel_any+0x567e>

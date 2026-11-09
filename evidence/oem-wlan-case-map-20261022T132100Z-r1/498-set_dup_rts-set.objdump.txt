@@ -1,0 +1,11 @@
+   42a10:	2700 1f82 0000 535c 	add	r2,r15,0x535c
+   42a18:	aac0                	stb_s	r14,[r2,0]
+   42a1a:	c006                	ld_s	r0,[sp,0x18]
+   42a1c:	72c9                	mov_s	r2,r14
+   42a1e:	218a 0c87           	mov	r1,498
+   42a22:	db00                	mov_s	r3,0
+   42a24:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   42a2c:	220a 3f80 0003 3ddc 	mov	gp,0x33ddc
+   42a34:	2023 0680           	jl.d	[gp]
+   42a38:	244a 0000           	mov	r4,0
+   42a3c:	024b 0200           	b	16970	;46c86 <findchannel_any+0x567e>

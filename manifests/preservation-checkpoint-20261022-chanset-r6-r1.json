@@ -1,0 +1,75 @@
+{
+  "files": [
+    {
+      "path": "candidates/chanset461-transaction-source-20261022T181500Z-r6/openmitrastar_chanset_recovered.c",
+      "bytes": 14301,
+      "sha256": "ab0d6a4977f81470d9334ed7be9ece7e4c0f750c3585fc135c40836d029a569c"
+    },
+    {
+      "path": "candidates/chanset461-transaction-source-20261022T181500Z-r6/openmitrastar_chanset_recovered.h",
+      "bytes": 4249,
+      "sha256": "bb69abfda48dd270ddd1eec4370c73135a0579c21253ea38cc58556fa5d6e2be"
+    },
+    {
+      "path": "candidates/chanset461-transaction-source-20261022T181500Z-r6/openmitrastar_chanset_tables.h",
+      "bytes": 10259,
+      "sha256": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492"
+    },
+    {
+      "path": "candidates/chanset461-transaction-source-20261022T181500Z-r6/result.json",
+      "bytes": 1290,
+      "sha256": "99b1c91d185b136f92f1a563b3a1939d296b317bd7f828a7e4e92dd2f3a0cb21"
+    },
+    {
+      "path": "candidates/chanset461-transaction-source-20261022T181500Z-r6/tables.json",
+      "bytes": 35561,
+      "sha256": "8d37396ee20d6902ea9c2948579c57b4e69c307d332904717aa4889ba6a98538"
+    },
+    {
+      "path": "evidence/chanset461-transaction-host-fixture-20261022T182500Z-r1/compile.command.json",
+      "bytes": 518,
+      "sha256": "5fc64caa55c67ae5d0839497478d968d601fd85422946a11de186541b9ad5597"
+    },
+    {
+      "path": "evidence/chanset461-transaction-host-fixture-20261022T182500Z-r1/fixture.c",
+      "bytes": 3210,
+      "sha256": "93a51edd1f39b8aff6ae48bdad0a443c6de89abe714cda0eed0c5de3da75fe06"
+    },
+    {
+      "path": "evidence/chanset461-transaction-host-fixture-20261022T182500Z-r1/input-pins.json",
+      "bytes": 976,
+      "sha256": "fe6ecdaba9964a961bdabddcf2e551303289b2191640c601f6a417e328c2a10b"
+    },
+    {
+      "path": "evidence/chanset461-transaction-host-fixture-20261022T182500Z-r1/result.json",
+      "bytes": 437,
+      "sha256": "e03bdd4abb9850cdf172e6f63ac76414b618c14e29021cb3b4aa153def7ecb58"
+    },
+    {
+      "path": "evidence/chanset461-transaction-arc-compile-20261022T183500Z-r1/compile.command.json",
+      "bytes": 5167,
+      "sha256": "375ab6e07995e22f86a28ba1d113b0a2ccec92906612977d62a8badc5161e994"
+    },
+    {
+      "path": "evidence/chanset461-transaction-arc-compile-20261022T183500Z-r1/input-pins.json",
+      "bytes": 178004,
+      "sha256": "0e5a6d3501445875ce4475db472b92f86ecb3b40f03a1da5f0cca38ecfde10ae"
+    },
+    {
+      "path": "evidence/chanset461-transaction-arc-compile-20261022T183500Z-r1/result.json",
+      "bytes": 1476,
+      "sha256": "cfec20442f1169ee85284cdfffbdd01e047e12e1a1a236969c7cc7cdc25a0f93"
+    },
+    {
+      "path": "tools/integration/prepare_hgw5g_chanset_transaction.py",
+      "bytes": 7374,
+      "sha256": "7606624da0a6837d410b81e5f4c7b736ccf4fa5096fb1648edf505f86a02bb1c"
+    },
+    {
+      "path": "tools/integration/test_hgw5g_chanset_transaction.py",
+      "bytes": 5211,
+      "sha256": "6623f8437484932f8a59224a0b40adf0dec3c7a03f6fb229d96171971f54b038"
+    }
+  ],
+  "hardware_accessed": false
+}

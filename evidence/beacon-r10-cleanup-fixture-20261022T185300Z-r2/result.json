@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ACTUAL_PREPUBLICATION_HOSTLINK_CLEANUP",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "facts": {
+    "paths": 4,
+    "owned_resources_freed_once_each": true,
+    "all_hostlink_slots_available": true,
+    "publication_zero": true
+  },
+  "qdrv_source_sha256": "35c3b912c1d4e0a0fda0db2300627deef11cb7b042ed5fba56e577feb23d6445",
+  "hostlink_source_sha256": "236089b781c9af1d5cf791694934f0dd72f9c119d21261b46d7db991b4e359bb",
+  "limits": "Actual cleanup spans/allocator; synthetic resourcefreecallbacks, not fullkernelMuCtiming/lifecycle."
+}

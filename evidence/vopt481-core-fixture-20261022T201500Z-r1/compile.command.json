@@ -1,0 +1,10 @@
+[
+  "tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\clang.exe",
+  "-std=c11",
+  "-O2",
+  "-Ioutputs\\rea\\vopt481-recovered-core-20261022T201300Z-r1",
+  "outputs\\rea\\vopt481-core-fixture-20261022T201500Z-r1\\fixture.c",
+  "outputs\\rea\\vopt481-recovered-core-20261022T201300Z-r1\\openmitrastar_vopt481_recovered.c",
+  "-o",
+  "outputs\\rea\\vopt481-core-fixture-20261022T201500Z-r1\\fixture.exe"
+]

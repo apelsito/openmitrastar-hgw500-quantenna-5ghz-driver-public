@@ -1,0 +1,46 @@
+{
+  "status": "PASS_ARC_TYPED_HEADER_SOURCE_UNITS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "module_built": false,
+  "units": [
+    {
+      "component": "wlan",
+      "name": "ieee80211_wireless",
+      "source_sha256": "52ea94042aeb5f23b8efa1866ab32c96e9f172fc05fac59851abe236cdd7de22",
+      "object_sha256": "5ef0c245e3e67b461af5c55abd624bf66b6bded09d34137d9c144a5302af64e8",
+      "object_bytes": 236460,
+      "machine": 93,
+      "functions": 253
+    },
+    {
+      "component": "wlan",
+      "name": "ieee80211_output",
+      "source_sha256": "6a353651d6d8f3a84a454f9ec51effceabd6af6b0378a35f13b681fa8abdba6d",
+      "object_sha256": "696f89ab8b546c8a7b157aaccba00e8f1d5510d5fdd712541e76da50a65fc0c9",
+      "object_bytes": 66552,
+      "machine": 93,
+      "functions": 110
+    },
+    {
+      "component": "wlan",
+      "name": "ieee80211",
+      "source_sha256": "ab62a89f0c8d670a028267184dae98000398ae1caefde44353b9cfd62f98d8dd",
+      "object_sha256": "e28ca4957a6cc981c37c74e46f5acabcc38cb538b1af2ef6424fa8e571893c29",
+      "object_bytes": 46164,
+      "machine": 93,
+      "functions": 60
+    },
+    {
+      "component": "wlan",
+      "name": "ieee80211_beacon",
+      "source_sha256": "712d34d4ef45d23d9e146d15702baf6df1c1265b5be52dbcbb376eb4dbc1e64d",
+      "object_sha256": "875c5724d65403f0e0b2fd6f850f7fb406cfb1b258738c4994354663b54af019",
+      "object_bytes": 8144,
+      "machine": 93,
+      "functions": 12
+    }
+  ],
+  "input_pins": 1180,
+  "inputs_unchanged": true
+}

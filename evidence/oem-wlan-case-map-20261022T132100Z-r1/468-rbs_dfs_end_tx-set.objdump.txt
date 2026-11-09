@@ -1,0 +1,7 @@
+   46882:	6e49                	sub_s	r2,r14,0x1
+   46884:	228c 89cf           	cmp	r2,999
+   46888:	0408 000d           	bhi	1032	;46c90 <findchannel_any+0x5688>
+   4688c:	2700 1f82 0000 5da8 	add	r2,r15,0x5da8
+   46894:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   4689c:	a2c0                	st_s	r14,[r2,0]
+   4689e:	03eb 0000           	b	1002	;46c86 <findchannel_any+0x567e>

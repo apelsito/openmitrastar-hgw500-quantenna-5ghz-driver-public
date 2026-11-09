@@ -1,0 +1,20 @@
+{
+  "status": "PASS_ACTUAL_TYPED_SRAM_DMA_OWNER_BUS_MAP_AND_32BIT_BOUNDS_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 61,
+  "wire_layout_bytes": 20,
+  "SRAM_generic_mapping_calls": 0,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_linux73_typed_sram_dma.py": "e93553d35f8f2d6d920374305ffd498d9a4ec95c622abc92257220f1bf1ecf3e",
+    "outputs\\rea\\linux73-typed-sram-dma-candidate-20261023T041000Z-r22\\source\\platform\\ruby\\dmautil.c": "ec92020a22d87286ddfb2232ee32e859bf070a3901ef370f1908538fb5ca18e7",
+    "outputs\\rea\\linux73-typed-sram-dma-fixture-20261023T041300Z-r22\\actual-typed-dma.c": "5a32b7d97d11e14b7959594a328623443da1b63bddfa3fd7aa61314672f2ef3c",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\i686-w64-mingw32-clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+    "outputs\\rea\\linux73-typed-sram-dma-fixture-20261023T041300Z-r22\\fixture.exe": "ac66ba6549760d570db4b863fd7a7cc535e89b4fcb1ae2eb1e7ed70e4af6b14a"
+  },
+  "limits": [
+    "Actual DMA bodies with fake memory/pool/locking/MMIO.",
+    "Virtual/physical/bus aliases differ; SRAM generic mapping/flush paths must not execute.",
+    "No actual SRAM bank reservation, concurrency, hardware reset, or RF acceptance."
+  ]
+}

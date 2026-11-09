@@ -1,0 +1,84 @@
+{
+  "schema": "openmitrastar.tqe-lhost-writer-serialization/v1",
+  "status": "SOURCE_ONLY_LHOST_PUBLICATION_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "source_sha256": "929d89801045c2b5f421d4d40ca312c32feaf93612de6a575b9b362ab97d9aef",
+  "parent_module_sha256": "bd5ab1018d293dc6bed655ec2bbc6da64a3969f28a3de578c04fa9c3f4af635f",
+  "candidate_sha256": "1b6286841ec9caa27db13d52458b4d8efb22b24cd18365a54a6fc827d55d5888",
+  "configuration": "Exact UP/PREEMPT_NONE/non-PCIe compile guards",
+  "config_sha256": "ee4c4d98622b2c5caf94bebd4e4e3afa7888f1eb4630b4e86958dbbffdb7a61a",
+  "direct_source_writers": 4,
+  "single_candidate_publication_site": 1,
+  "binary_bank0_anchors": [
+    {
+      "offset": 300,
+      "owning_functions": [
+        "topaz_tqe_xmit"
+      ]
+    },
+    {
+      "offset": 412,
+      "owning_functions": [
+        "topaz_tqe_xmit"
+      ]
+    },
+    {
+      "offset": 4102,
+      "owning_functions": [
+        "tqe_tx"
+      ]
+    },
+    {
+      "offset": 5138,
+      "owning_functions": [
+        "tqe_push_mcast"
+      ]
+    },
+    {
+      "offset": 8430,
+      "owning_functions": [
+        "tqe_rx_napi_handler"
+      ]
+    }
+  ],
+  "source_function_deltas": {
+    "static void __sram_text tqe_push_mcast(": {
+      "before_sha256": "0bbd74f5f1a48a12349b47613127ef0f8d0062054c85635f59c1a8f2fb8c32cb",
+      "after_sha256": "ccec48c9ed42be7cb6321ea013761699d0e5206e62efe100c9b542319ed9ce9f"
+    },
+    "static int topaz_swfwd_tqe_xmit(": {
+      "before_sha256": "813afc5c7be26e5e3bb947aaf305d3db913986cf7cfce2c6239d2e93b53d39e0",
+      "after_sha256": "5a2b14ec6e35708970a15b3a4cf5fbe07b6791acf72e93e23a90e7d5b11eb79e"
+    },
+    "static int tqe_tx_buf(": {
+      "before_sha256": "c746b95a20c0627a52c254ec13031a199c5bcb2a6b9333f570138b35feecc7bb",
+      "after_sha256": "c9d316fe009d191f6927b88d9cc229a172870436bbee977a6bdf6dbc20a973b9"
+    }
+  },
+  "skb_hbm_ownership_function_unchanged": true,
+  "banks": {
+    "LHOST": {
+      "port": 4,
+      "bank": 0,
+      "TXSTART": "0xe1034038"
+    },
+    "MUC": {
+      "port": 5,
+      "bank": 1,
+      "TXSTART": "0xe1035038"
+    },
+    "AUC": {
+      "port": 7,
+      "bank": 3,
+      "TXSTART": "0xe1037038"
+    }
+  },
+  "limits": [
+    "Existing READY/HBM/MMIO waits remain unbounded; IRQ starvation remains possible.",
+    "No universal arbitration claim: firmware writing LHOST bank outside the source contract remains a counterexample.",
+    "The congest-queue completion/status IRQ interval is longer; no physical latency or throughput improvement proven.",
+    "All refcounts, skb consumption and queue/drop returns remain original; no BUSY backpressure fix.",
+    "Complete candidate module rebuild/code delta and physical gates UNRUN."
+  ]
+}

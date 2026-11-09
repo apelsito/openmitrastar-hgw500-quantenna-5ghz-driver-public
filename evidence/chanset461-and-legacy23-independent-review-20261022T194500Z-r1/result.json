@@ -1,0 +1,36 @@
+{
+  "status": "PASS_SOURCE_HELPERS_AND_LEGACY_FLOW_PENDING_FULL_INTEGRATION_ABI",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "helpers": {
+    "table_rows": 130,
+    "struct80bytes": true,
+    "exactcost_unsigned_low32wrap": true,
+    "unconditional_dfs_subtract": true,
+    "queue_bounds_errors_no_mutation": true,
+    "queue_saturation_refuses": true,
+    "edges_signed64checked": true,
+    "helpers_do_not_grant_channel_use": true
+  },
+  "legacy23": {
+    "actual_host_replay_sequences": 17550,
+    "actual_error_cases": 3,
+    "wire62_repeatedrate0to12_or255restore": true,
+    "state_before_voidwirecallback": true,
+    "modecallback_CSA_reassoc_HOSTAPchannel_order": true,
+    "preserves_first_saved_mode_until_restore": true,
+    "runtime_failure_atomicity_not_proven": "voidcallbacks cannotconfirm hardwarecompletion",
+    "sampled_ABI_witness_only7ICfields_notallrequired": true
+  },
+  "required_gates": [
+    "Legacyfull374IC+209VAPprefixwidthoffsetwitness andallmoduleheaderuserclosure",
+    "Full461metriccollection/scaledcost/finalchoice/timer/lifetimeintegration before registering461record",
+    "Caller-ownedviewpayloads/capacity trusted; noarbitraryinvalidpointerproof",
+    "Legacycallbacksactualruntime/RFstate notverified"
+  ],
+  "limits": [
+    "No461registereddriver record; modulebuildnotclaimed",
+    "No23operablefeaturesclaim; BSS/RRM/NACsamplelimits retained",
+    "NoRF/calibration/clienttraffic/persistence/release"
+  ]
+}

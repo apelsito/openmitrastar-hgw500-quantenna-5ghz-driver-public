@@ -1,0 +1,430 @@
+{
+  "status": "PASS_BOUNDED_FULL_MUC_PAYLOAD_SEARCH_PROVIDER_UNRESOLVED",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "qualified_ops_added": 0,
+  "adapter_added": false,
+  "source_muc_sha256": "71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4",
+  "analysis_map_sha256": "f5878c74735e08516b4345e36a30e9a5c9f610c7439b471bf8cb2b9264722906",
+  "fresh_functions": {
+    "mailbox_init": {
+      "address": "0xf0bdc",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0xf0bdc",
+            "end": "0xf0d37"
+          }
+        ],
+        "total_bytes": 348,
+        "span_bytes": 348,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "rea_sha256": "c1ca51aa88867357c56d6ca6af6dacadb09445df0578931364bbab009ab3c4a2",
+      "pseudocode_sha256": "1ebaad91d00e46a5d05e525b7c807b5a5f28bcb3ef4dbfe8a0e0e59a02e1a8af",
+      "started_utc": "2026-10-22T22:22:40.621726+00:00",
+      "finished_utc": "2026-10-22T22:23:59.820634+00:00",
+      "callees": [
+        {
+          "address": "0xee734",
+          "name": "FUN_ram_000ee734"
+        },
+        {
+          "address": "0xee73c",
+          "name": "FUN_ram_000ee73c"
+        },
+        {
+          "address": "0xee834",
+          "name": "FUN_ram_000ee834"
+        },
+        {
+          "address": "0xf0ba4",
+          "name": "FUN_ram_000f0ba4"
+        },
+        {
+          "address": "0xf1c6c",
+          "name": "FUN_ram_000f1c6c"
+        },
+        {
+          "address": "0x18bb84",
+          "name": "FUN_ram_0018bb84"
+        }
+      ],
+      "warnings_retained": true
+    },
+    "response_message_post": {
+      "address": "0xefe3c",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0xefe3c",
+            "end": "0xeffb7"
+          }
+        ],
+        "total_bytes": 380,
+        "span_bytes": 380,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "rea_sha256": "ece5ea61b86cf0642f7aa99343d6f6a3c036c1f1a97f50cfcd1dacfc0df69739",
+      "pseudocode_sha256": "9ba05d49e54ed99904d22ec0ef591b93dcf523285e4493dfa84c60fa153f4518",
+      "started_utc": "2026-10-22T22:24:15.924556+00:00",
+      "finished_utc": "2026-10-22T22:25:44.688236+00:00",
+      "callees": [
+        {
+          "address": "0xee260",
+          "name": "FUN_ram_000ee260"
+        },
+        {
+          "address": "0xefd2c",
+          "name": "FUN_ram_000efd2c"
+        },
+        {
+          "address": "0xf1ae8",
+          "name": "FUN_ram_000f1ae8"
+        },
+        {
+          "address": "0xf1b6c",
+          "name": "FUN_ram_000f1b6c"
+        }
+      ],
+      "warnings_retained": true
+    },
+    "name_tx_restrict_actual_global_time": {
+      "address": "0x12dbb4",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x12dbb4",
+            "end": "0x12dbc7"
+          }
+        ],
+        "total_bytes": 20,
+        "span_bytes": 20,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "rea_sha256": "2e2196f8a5d608cb123fe1043c5e281ae0de3d0a2692088f6eec638a638d7d37",
+      "pseudocode_sha256": "f0636de7eba78accb63a52a1d071190e6d758f104e3375d0533174f2d997e751",
+      "started_utc": "2026-10-22T22:24:55.820237+00:00",
+      "finished_utc": "2026-10-22T22:26:35.975386+00:00",
+      "callees": [],
+      "warnings_retained": true
+    },
+    "name_scheduler_actual_rx_tqe": {
+      "address": "0x800239d8",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x800239d8",
+            "end": "0x80023b77"
+          }
+        ],
+        "total_bytes": 416,
+        "span_bytes": 416,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "rea_sha256": "901ea3babfb512f8ad298ae1d75f28b114ed67dfb48d6cae7223a7ff4aabf948",
+      "pseudocode_sha256": "599d62a1da03ee73e610f9256f370e2425e9db5e6e9bbab381fab08d88176f33",
+      "started_utc": "2026-10-22T22:27:12.612224+00:00",
+      "finished_utc": "2026-10-22T22:28:42.479869+00:00",
+      "callees": [
+        {
+          "address": "0xee260",
+          "name": "FUN_ram_000ee260"
+        },
+        {
+          "address": "0x80025dec",
+          "name": "FUN_ram_80025dec"
+        },
+        {
+          "address": "0x80025e74",
+          "name": "FUN_ram_80025e74"
+        }
+      ],
+      "warnings_retained": true
+    },
+    "tx_queue_setup_cleanup": {
+      "address": "0x12a34c",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x12a34c",
+            "end": "0x12a4cd"
+          }
+        ],
+        "total_bytes": 386,
+        "span_bytes": 386,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "rea_sha256": "7d6cd97025b99cdf4f1841b5c288174a059ff74d30d33701fbfd35bdef13d5ea",
+      "pseudocode_sha256": "07b15261966b3cc4a671a0cbd7a5a8e3d5861883c3feec7504a15170bebc4e86",
+      "started_utc": "2026-10-22T22:27:34.733153+00:00",
+      "finished_utc": "2026-10-22T22:29:00.338401+00:00",
+      "callees": [
+        {
+          "address": "0x10252c",
+          "name": "FUN_ram_0010252c"
+        },
+        {
+          "address": "0x102688",
+          "name": "FUN_ram_00102688"
+        }
+      ],
+      "warnings_retained": true
+    },
+    "actual_tasklet_scheduler": {
+      "address": "0x80023900",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x80023900",
+            "end": "0x800239d7"
+          }
+        ],
+        "total_bytes": 216,
+        "span_bytes": 216,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "rea_sha256": "e755123e8fdca0dd0f61d9290286f20e00acc47fc95867db99467df3c1a48258",
+      "pseudocode_sha256": "fc40fa40689ad7a5d732d1578d3920e93c84d709ea91ed1b71e5771327a61385",
+      "started_utc": "2026-10-22T22:29:06.518714+00:00",
+      "finished_utc": "2026-10-22T22:30:15.713746+00:00",
+      "callees": [
+        {
+          "address": "0x18bae8",
+          "name": "FUN_ram_0018bae8"
+        }
+      ],
+      "warnings_retained": true
+    },
+    "actual_netdev_init_callback": {
+      "address": "0x10862c",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10862c",
+            "end": "0x108a2b"
+          }
+        ],
+        "total_bytes": 1024,
+        "span_bytes": 1024,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "rea_sha256": "6d7845b2d264642bd075e063e0ce2ccfd8c4f79794420636f6847d42db2a6684",
+      "pseudocode_sha256": "10542b2c154641d2fd6a7747b48ab73da98d2b6d8abb4d97d5536a24585ef40e",
+      "started_utc": "2026-10-22T22:29:24.141991+00:00",
+      "finished_utc": "2026-10-22T22:30:33.278784+00:00",
+      "callees": [
+        {
+          "address": "0xe82a4",
+          "name": "FUN_ram_000e82a4"
+        },
+        {
+          "address": "0xe82dc",
+          "name": "FUN_ram_000e82dc"
+        },
+        {
+          "address": "0xee260",
+          "name": "FUN_ram_000ee260"
+        },
+        {
+          "address": "0xefbbc",
+          "name": "FUN_ram_000efbbc"
+        },
+        {
+          "address": "0xf1d2c",
+          "name": "FUN_ram_000f1d2c"
+        },
+        {
+          "address": "0xf2ccc",
+          "name": "FUN_ram_000f2ccc"
+        },
+        {
+          "address": "0xf2ddc",
+          "name": "FUN_ram_000f2ddc"
+        },
+        {
+          "address": "0xf7c10",
+          "name": "FUN_ram_000f7c10"
+        },
+        {
+          "address": "0xf8be8",
+          "name": "FUN_ram_000f8be8"
+        },
+        {
+          "address": "0xf94b4",
+          "name": "FUN_ram_000f94b4"
+        },
+        {
+          "address": "0xf94c4",
+          "name": "FUN_ram_000f94c4"
+        },
+        {
+          "address": "0xf94ec",
+          "name": "FUN_ram_000f94ec"
+        },
+        {
+          "address": "0xf990c",
+          "name": "FUN_ram_000f990c"
+        },
+        {
+          "address": "0xfd2e4",
+          "name": "FUN_ram_000fd2e4"
+        },
+        {
+          "address": "0x1055d8",
+          "name": "FUN_ram_001055d8"
+        },
+        {
+          "address": "0x108288",
+          "name": "FUN_ram_00108288"
+        },
+        {
+          "address": "0x108354",
+          "name": "FUN_ram_00108354"
+        },
+        {
+          "address": "0x108464",
+          "name": "FUN_ram_00108464"
+        },
+        {
+          "address": "0x1135e4",
+          "name": "FUN_ram_001135e4"
+        },
+        {
+          "address": "0x11be2c",
+          "name": "FUN_ram_0011be2c"
+        },
+        {
+          "address": "0x12a4d0",
+          "name": "FUN_ram_0012a4d0"
+        },
+        {
+          "address": "0x13db5c",
+          "name": "FUN_ram_0013db5c"
+        },
+        {
+          "address": "0x14bf74",
+          "name": "FUN_ram_0014bf74"
+        },
+        {
+          "address": "0x15cc94",
+          "name": "FUN_ram_0015cc94"
+        },
+        {
+          "address": "0x163ea4",
+          "name": "FUN_ram_00163ea4"
+        },
+        {
+          "address": "0x163f48",
+          "name": "FUN_ram_00163f48"
+        },
+        {
+          "address": "0x16ed08",
+          "name": "FUN_ram_0016ed08"
+        },
+        {
+          "address": "0x18a920",
+          "name": "FUN_ram_0018a920"
+        },
+        {
+          "address": "0x80030314",
+          "name": "FUN_ram_80030314"
+        }
+      ],
+      "warnings_retained": true
+    },
+    "name_mgmt_xmit_actual_sync_auc_ipc": {
+      "address": "0x1563ac",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1563ac",
+            "end": "0x15654f"
+          }
+        ],
+        "total_bytes": 420,
+        "span_bytes": 420,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "rea_sha256": "5269bfcb02798a5b248f551441bf9785f44403ac9caaa4495f2cb28e7b1d7810",
+      "pseudocode_sha256": "f3186533526358acc293d51a08dac717bbd54b50001a5cb4273e0964af35c119",
+      "started_utc": "2026-10-22T22:30:41.621298+00:00",
+      "finished_utc": "2026-10-22T22:31:44.580071+00:00",
+      "callees": [
+        {
+          "address": "0xee260",
+          "name": "FUN_ram_000ee260"
+        },
+        {
+          "address": "0x80030314",
+          "name": "FUN_ram_80030314"
+        }
+      ],
+      "warnings_retained": true
+    }
+  },
+  "mailbox_contract": {
+    "mailbox_count": 130,
+    "mailbox_bytes": 520,
+    "netdev_mailbox_pointer_offset": "0x2c",
+    "netdev_records_pointer_offset": "0x44",
+    "record_bytes": 32,
+    "mailbox0_type": 6,
+    "mailbox1_type": 1,
+    "node_mailbox_indices": "2..129; type1"
+  },
+  "verified_paths": [
+    "Host qdrv_tx_muc_post_hostdesc publishes management descriptor physical address in mailbox1 under semmap; chains hd_nextpa when occupied.",
+    "0xf0ba4 initializes per-mailbox record status/semaphore and head/tail fields; it is initialization, not packet transmit.",
+    "0xf11c8 selects record0, consumes ioctl linked list using descriptor+28 and netdev callback+124; it is not mailbox1 TX ingress.",
+    "0xefe3c posts a 40-byte response/control message into shared6003a3c8/cc and raises host interrupt; not a frame-bound grant.",
+    "0xe7b84 reads hd_muc_txdone_cb+48 and flags+448 (ARC ld.as112) and handles NO_RETURN/IMM_RETURN descriptor completion.",
+    "0x80023900 schedules pending tasklets by callback pointers; the callbacks and runtime ordering are not resolved by its loop alone.",
+    "0x800239d8 polls TQE and moves RX software-ring records to TQE; no management CAC authorization observed.",
+    "0x12a34c clears TX queue state and invokes HAL setup/reset; it is not an exact-frame grant.",
+    "0x10862c is radio/netdev initialization and channel/reset setup; the earlier tx callback filename is a discovery label, not established TX ingress.",
+    "0x1563ac writes a synchronous AuC IPC command record via18c260, rings e0000178 and waits for command completion with loopout/halt handling; it is not the management-frame TQE publisher."
+  ],
+  "label_corrections": [
+    "Original name uc_scheduler points800239d8 but instructions and embedded diagnostic string identify RXsoft-ring-to-TQE; actual tasklet loop80023900.",
+    "Original name qtn_tx_restrict_process points12dbb4 but exact20-byte body returns global20fd44 times10.",
+    "Original getsemaphore pointsf13f4 but body is semaphore release tail-call; actual semaphore acquire spin startsf13bc.",
+    "Original release_semaphore pointsf1404 but body begins host-interface information setup.",
+    "Original qtn_framedesc_acquire109450 had BA diagnostic body in preceding receipt; names are not sufficient function qualification.",
+    "Original qtn_auc_tqe_mgmt_xmit points1563ac but its diagnostic strings/body identify qtn_mproc_sync_auc_ipc_wait_done; command-specific callers/AuC consumer remain unqualified."
+  ],
+  "physical_load_map_correction": "Segment3 VA80020000 has paddr46e004; map it at46e004, never overlay segment2 at80020000. Segment5 exact bytes also appear at a declared6003a3c0 virtual alias; cache/hardware alias proof remains unrun.",
+  "bounded_negative": "No exact-frame CAC provider contract established in examined queue/init/completion/TQE/tasklet paths. This is not proof of absence in the full MuC or AuC firmware.",
+  "remaining": [
+    "Identify actual mailbox1 descriptor consumer and admission callback, including any AuC or shared-firmware ownership.",
+    "Map frame identity/channel/role/deadline from host TX descriptor to scheduling, grant/revoke and completion.",
+    "Resolve runtime initialized callbacks and SRAM relocation/aliases without confusing original metadata with code.",
+    "AuC default e1fd397e and nomu c10018f4 remain distinct; neither received instruction analysis in this lane."
+  ],
+  "provider_source_state": "R20 reference providerNULL, no globalTX fallback; R24 sources were not edited.",
+  "no_active_jobs_expected": true
+}

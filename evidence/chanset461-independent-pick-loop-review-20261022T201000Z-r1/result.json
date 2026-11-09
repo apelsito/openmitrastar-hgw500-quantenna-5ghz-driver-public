@@ -1,0 +1,37 @@
+{
+  "status": "PASS_INDEPENDENT_ANALYSIS_ONLY_OEM_SIGNED_PICK_LOOP_DECODE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "range_start": "0x14dd2",
+  "range_end_exclusive": "0x14ee6",
+  "fragment_bytes": 276,
+  "fragment_sha256": "bfece326c26668aa5c9348837db47c1299bd43b85cd0e3eae5024489223cb2be",
+  "confirmed": [
+    "80-byte candidate stride.",
+    "Candidate cost at offset0x4c loads into r3; prior width-class winner cost loads into r2.",
+    "Signed brlt replaces width-class winner only when candidate cost is strictly less.",
+    "Equal costs retain first winner."
+  ],
+  "limits": [
+    "Synthetic linked analysis ELF contains synthetic external addresses and must never enter firmware.",
+    "Fragment confirms per-width-class ranking; final cross-width benefit ranking is separate evidence.",
+    "No operational461 capability, device/channel state or RF acceptance."
+  ],
+  "evidence_pins": [
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-wlan-missingops-20261022T134300Z-linked\\wlan-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+      "bytes": 669096,
+      "sha256": "79fbcbd4634a9fc32fdf8ac0c997f3bd0329131162a1ea4948794e4986c7e40a"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-independent-pick-loop-decode-20261022T200000Z-r1\\DumpPick.java",
+      "bytes": 601,
+      "sha256": "1b0b7b6f36dfb9ffd85b3fc5f1e5a8c01978e2535e92e7642aef515d7caad79c"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-independent-pick-loop-decode-20261022T200000Z-r1\\ghidra.log",
+      "bytes": 20802,
+      "sha256": "932fb74490d9d6a8d83920744a7ee9febb19ea87f07279872144a7a19a0ca2ac"
+    }
+  ]
+}

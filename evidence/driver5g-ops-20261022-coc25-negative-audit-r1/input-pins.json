@@ -1,0 +1,8 @@
+{
+  "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_hgw5g_coc25_delta_negative.py": "a6a7f8a6cad60a0527232f472c58220d482bc70f41f33fa0134a0df65c75faa7",
+  "/workspace/user-home\\Desktop\\MitraStar\\tools\\audit_hgw5g_coc25_controlled_modules.py": "5e31fd47a85aee869d21ee4ddb0e159b3d549385f22af33c766ab3f426871019",
+  "outputs\\rea\\driver5g-ops-20261022-coc25-control-joint-r6\\qdrv\\qdrv.ko": "eedfe39f7896048bbdea2a1703e1ee82c6fdb1e8c910ad621474ab3149dd5ba2",
+  "outputs\\rea\\driver5g-ops-20261022-coc25-joint-a-r6\\qdrv\\qdrv.ko": "7c53487f459328d12eb7952b9672a7410d621302da1215a539d600c5de75f1c5",
+  "outputs\\rea\\driver5g-ops-20261022-coc25-control-joint-r6\\wlan\\wlan.ko": "486818be02666694706d1660f49ad3b41a05b197d4c4b5bc42dd6476cd3b2d11",
+  "outputs\\rea\\driver5g-ops-20261022-coc25-joint-a-r6\\wlan\\wlan.ko": "06680ba7a6a67ef2003e61f84378aa16d6e4697b78c98fcd300b6c64c2731f29"
+}

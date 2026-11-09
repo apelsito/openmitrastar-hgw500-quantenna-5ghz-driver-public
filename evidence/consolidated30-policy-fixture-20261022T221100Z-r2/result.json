@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ACTUAL_COEX26_TIMER_SCAN_ASSOC_STA_OBSS_CONSUMER_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 248254,
+  "timer_cases": 480,
+  "scan_cases": 244800,
+  "assoc_cases": 1024,
+  "sta_cases": 1920,
+  "nonht_cases": 30,
+  "fragment_hashes": {
+    "timer": "d3ec24cc0bf077cbf363b40eaf505eb0d5c689d8a658425ebc3d111c9a9bc793",
+    "scan": "46f741a9608d0b03c6be3944e7381c931d8cd01f9a7331e0076260af492ce172",
+    "assoc": "5e6da013e238d5d4526b4f6882c232a1da851d79c1af55edd67a8fa2cc7bde6e",
+    "sta": "e81c8760bac84c128a52b8f8fcf15c9cda6aa30741048247237b1ce8ae8df688",
+    "nonht": "a674fb8e1a402c084343025bd03bdb6190962754789d28f210dd3890f9428e88"
+  },
+  "limits": "Actualfunctions/conditions withfakecallbacks; incomingmanagementparsersotherthanpubliccoex notfullreplayed; noRX/RF/PHY/trafficacceptance"
+}

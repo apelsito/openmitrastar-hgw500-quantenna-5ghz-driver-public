@@ -1,0 +1,26 @@
+{
+  "status": "PASS_SOURCE_WLAN_INCREMENTAL_PARENT_CLOSURE_PENDING_DELTA",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "modules": [
+    {
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-nac22-module-r1/a/wlan/wlan.ko",
+      "bytes": 630628,
+      "sha256": "dd4896a969b3033e41f8c63eac27b12b1844bd86dd1a506e69c7be5a485b4621"
+    },
+    {
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-nac22-module-r1/b/wlan/wlan.ko",
+      "bytes": 630628,
+      "sha256": "dd4896a969b3033e41f8c63eac27b12b1844bd86dd1a506e69c7be5a485b4621"
+    }
+  ],
+  "parent_build": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-twenty-full-closure-r1",
+  "candidate": "/workspace/user-home/Desktop/MitraStar/outputs/rea/nac22-source-20261022T171000Z-r1",
+  "unchanged_units_reused": 18,
+  "new_source_unit_compiles": 2,
+  "header_context_unchanged": true,
+  "reproducible": true,
+  "inputs_unchanged": true
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "openmitrastar.bss-tm-independent-source-review/v1",
+  "status": "PASS_BOUNDED_SOURCE_FIXTURE_WITH_NO_GO_MODULE_CLOSURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "reviewed_candidate": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\bss-tm-consumer-integration-20261022T150800Z-r2",
+  "reviewed_revision": "r2",
+  "original_r1_missing_stddef_header": "r2 includes linux/stddef.h; r1 preserved",
+  "host_fixture": {
+    "actual_set_get_flag_cases": 65536,
+    "actual_tlv_cases": 512,
+    "status": "PASS"
+  },
+  "observations": [
+    "Recovered493 changes bit0 hostflag only; value1 enables, every other value disables; getter masksbit0 and setter queuesexistingbeaconupdate_all.",
+    "Helper guards TLV2byteheader and n<=remaining-2 before reading/mutating payloadbyte2 bit3; first existingIE127>=3 only; no IE synthesis.",
+    "Each beacon/probe/association call transforms copiedbuffer before frm advances and passes its own actualcopiedlength.",
+    "Original appIE data remains unmodified; repeated output copies apply latestflag.",
+    "RTNL wraps actual Linux5.10 WEXTdispatcher, serializing WEXTflagsetter/getter; F363 CONFIG_SMP disabled.",
+    "qdrv_wlan_init kmalloc(sizeof(*qw)) then memset(qw,0,sizeof(struct qdrv_wlan)) giveszero newflag only after fullnewlayoutcompile.",
+    "ic is firstfield in qdrv_wlan, so appendingfield preserves icprefix but shifts qdrv_wlan unit and every following member.",
+    "Existing WNM outgoingcase copies rawpayload; incoming WNM category no case and default incrementsmgtdiscard.",
+    "No newtimers,dialogtokens,neighborcandidateprocessing or BSStransitionresponsecallbacks added."
+  ],
+  "required_gates": [
+    "Recompile all complete QDRVobjects and all WLANobjects plus scan/crypto ancillaryheaderconsumers against identicalcandidateheader; no mixoldqwlayout.",
+    "Generate ARC layoutmanifest comparing everyprioricfieldoffset, newsize/alignment, qdrv_wlan followingoffsets, and anyproviderhostsharedlayouts.",
+    "Pin overlayheaderfirst includeclosure from each actualcompiler.d; currentGPL/header copies mayshadow selectedcandidate.",
+    "Audit complete modulefunction/relocation/data delta asnewlayout shifts manyqwfieldimmediates; restrictivechangedfunctionallowlist alone insufficient.",
+    "Build/test complete matchingmoduleclosure x2 and keep explicitSOURCE_ONLY untildone."
+  ],
+  "limits": [
+    "Capabilityadvertisementtoggle only; nofull80211v,BSStransitionsteering,responseorclientacceptanceclaim.",
+    "Helperignoredreturn means malformed/truncated/absentIE leavescopiedframe unchanged; it doesnot guaranteeflagadvertisement.",
+    "Newflagreader concurrency across asyncbeaconworker remains semanticallybounded but notatomiccoherentpublicationproof.",
+    "Appending hoststructure is not permission to modify firmwarewireABI; protectnamedDMA/muc/sharedstructures separately."
+  ],
+  "source_result_counts": {
+    "total_original_table_entries_added": 17,
+    "actual_functional_entries_recovered": 15,
+    "faithful_unsupported_entries": 2,
+    "remaining_original_table_gaps": 27
+  },
+  "input_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\bss-tm-consumer-integration-20261022T150800Z-r2\\result.json": "4778afaa74c243685afc698515aafa5f92d5677e1a904e3aa4c7faeabe30a4d5",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\bss-tm-consumer-integration-20261022T150800Z-r2\\source\\wlan\\openmitrastar_bss_tm.h": "8f267ccf13bf29b60013cea6bd6ad2933b9e76f60956d797a90aa1dbd30e0439",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\bss-tm-consumer-integration-20261022T150800Z-r2\\headers\\net80211\\ieee80211_var.h": "598cc9be384e03f556c00e4bd5c21b4664a5fabf532341cb2771d2a0cde6fab1",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\bss-tm-consumer-integration-20261022T150800Z-r2\\source\\wlan\\ieee80211_wireless.c": "c824381346ee08a1bb23746fedc0bcce84f43c8e3b44da9c991e931895b24b4f",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\bss-tm-consumer-integration-20261022T150800Z-r2\\source\\wlan\\ieee80211_beacon_desc.c": "9bab3263aebcb0a3a67aa816a56767d4185d5631107dd28cb38d9621c8599bb3",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\bss-tm-consumer-integration-20261022T150800Z-r2\\source\\wlan\\ieee80211_output.c": "348fb63c5df5955f817ead15e29b7da7bd1b13131e84e8fa75e26f047bf19e34",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\bss-tm-consumer-integration-20261022T150800Z-r2\\source\\wlan\\ieee80211_input.c": "0a9fe5e65d41cdfcc13cdbf063673935c79bfd082726067cf354f06a00cb4c45",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna-f364-lifetime\\qdrv\\qdrv_wlan.h": "9cd8170a4d57fa7854a12654c2f11536a99d1572a9b5ee84a8e3797d49a365c0",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna-f364-lifetime\\qdrv\\qdrv_wlan.c": "633768cf405a1c86f11e13a306039f8630e4a0bfefef1087f7ac5ca149821ff1",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-bss-tm-independent-fixture-r1\\result.json": "8d14b7df7a96338c6514ccf8df040565b526cba2a6ebc55337b92a331fc9a971",
+    "\\\\wsl.localhost\\REA-Linux\\home\\rea\\openmitrastar-f368-build-20261021\\linux-5.10.260\\net\\wireless\\wext-core.c": "40172a36f097094e9b7d201f653773ce9ba03f81d37507e0cd2951773483b164"
+  }
+}

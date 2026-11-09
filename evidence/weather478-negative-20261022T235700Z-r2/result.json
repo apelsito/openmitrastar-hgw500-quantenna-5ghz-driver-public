@@ -1,0 +1,104 @@
+{
+  "status": "PASS_SIXTEEN_WEATHER478_PARSED_NEGATIVE_DELTA_CASES",
+  "hardware_accessed": false,
+  "files_modified": false,
+  "cases": 16,
+  "rows": [
+    {
+      "component": "qdrv",
+      "case": "function",
+      "rejected": true,
+      "reason": "('unrelated function', ('qdrv_wlan_stats', '.text', 2, 0))"
+    },
+    {
+      "component": "qdrv",
+      "case": "anonymous",
+      "rejected": true,
+      "reason": "('unrelated function', ('qdrv_f355_claim', '.text', 2, 0))"
+    },
+    {
+      "component": "qdrv",
+      "case": "data",
+      "rejected": true,
+      "reason": "allocated data .data.once"
+    },
+    {
+      "component": "qdrv",
+      "case": "relocation",
+      "rejected": true,
+      "reason": "all residual RELA [(('object', ('qdrv_f355_claim', '.text', 2, 0), 92), 27, ('printk', '', 0, 1, 0)), (('object', ('qdrv_f355_claim', '.text', 2, 0), 92), 27, ('printk', '', 0, 1, 4))]"
+    },
+    {
+      "component": "qdrv",
+      "case": "symbol",
+      "rejected": true,
+      "reason": "('old symbol attrs', ('qdrv_wlan_stats', '.text', 2, 0))"
+    },
+    {
+      "component": "qdrv",
+      "case": "diagnostic",
+      "rejected": true,
+      "reason": "non diagnostic bytes qdrv_wlan_exit"
+    },
+    {
+      "component": "wlan",
+      "case": "function",
+      "rejected": true,
+      "reason": "('unrelated function', ('ieee80211_setmode', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan",
+      "case": "anonymous",
+      "rejected": true,
+      "reason": "every anonymous executable body .text"
+    },
+    {
+      "component": "wlan",
+      "case": "data",
+      "rejected": true,
+      "reason": "allocated data .data.once"
+    },
+    {
+      "component": "wlan",
+      "case": "relocation",
+      "rejected": true,
+      "reason": "all residual RELA [(('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 56), 27, ('printk', '', 0, 1, 0)), (('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 56), 27, ('printk', '', 0, 1, 4))]"
+    },
+    {
+      "component": "wlan",
+      "case": "symbol",
+      "rejected": true,
+      "reason": "('old symbol attrs', ('ieee80211_setmode', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan",
+      "case": "diagnostic",
+      "rejected": true,
+      "reason": "non diagnostic bytes ieee80211_param_from_qdrv"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "case": "function",
+      "rejected": true,
+      "reason": "('unrelated function', ('ap_start', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "case": "data",
+      "rejected": true,
+      "reason": "allocated data .data.once"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "case": "relocation",
+      "rejected": true,
+      "reason": "all residual RELA [(('object', ('ap_start', '.text', 2, 0), 556), 27, ('printk', '', 0, 1, 0)), (('object', ('ap_start', '.text', 2, 0), 556), 27, ('printk', '', 0, 1, 4))]"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "case": "symbol",
+      "rejected": true,
+      "reason": "('old symbol attrs', ('ap_start', '.text', 2, 0))"
+    }
+  ]
+}

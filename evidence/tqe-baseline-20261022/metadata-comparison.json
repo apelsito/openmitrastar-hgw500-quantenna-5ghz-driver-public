@@ -1,0 +1,53 @@
+{
+  "parent": {
+    "license": [
+      "GPL"
+    ],
+    "parm": [
+      "w3_fwt_reset_probe_enable:Explicit MitraStar-only FWT arbitration probe around TQE CPU reset",
+      "w3_rx_ring_entries:MitraStar-only compact TQE RX ring; default 512, validated compact value 256",
+      "w3_switch_tqe_only_enable:Explicit MitraStar W3 switch-TQE-only hardware gate"
+    ],
+    "parmtype": [
+      "tqe_sem_en:int",
+      "w3_fwt_reset_probe_enable:int",
+      "w3_rx_ring_entries:uint",
+      "w3_switch_tqe_only_enable:int"
+    ],
+    "depends": [
+      "topaz_congest_queue,dmautil,hbm,iputil,switch_vlan,qtn_platform_support"
+    ],
+    "name": [
+      "switch_tqe"
+    ],
+    "vermagic": [
+      "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+    ]
+  },
+  "rebuild": {
+    "license": [
+      "GPL"
+    ],
+    "parm": [
+      "w3_fwt_reset_probe_enable:Explicit MitraStar-only FWT arbitration probe around TQE CPU reset",
+      "w3_rx_ring_entries:MitraStar-only compact TQE RX ring; default 512, validated compact value 256",
+      "w3_switch_tqe_only_enable:Explicit MitraStar W3 switch-TQE-only hardware gate"
+    ],
+    "parmtype": [
+      "tqe_sem_en:int",
+      "w3_fwt_reset_probe_enable:int",
+      "w3_rx_ring_entries:uint",
+      "w3_switch_tqe_only_enable:int"
+    ],
+    "depends": [
+      "topaz_congest_queue,dmautil,hbm,iputil,switch_vlan,qtn_platform_support"
+    ],
+    "name": [
+      "switch_tqe"
+    ],
+    "vermagic": [
+      "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+    ]
+  },
+  "errors": []
+}

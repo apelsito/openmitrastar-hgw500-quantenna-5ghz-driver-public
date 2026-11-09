@@ -1,0 +1,27 @@
+{
+  "status": "PASS_INDEPENDENT_R9_LIFETIME_SEVEN_MODULE_CONTROLLED_SCOPE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "fresh_all7_module_audits": {
+    "qdrv": "PASS_R9_LIFETIME_SCOPE_AGAINST_FULL_PARENT19_CONTROL",
+    "wlan": "PASS_R9_LIFETIME_SCOPE_AGAINST_FULL_PARENT19_CONTROL",
+    "wlan_scan_ap": "PASS_EXACT_ANCILLARY_CODE_DATA_ALL_SYMBOLS_RELA_AFTER_DECLARED_PATH_MAP",
+    "wlan_scan_sta": "PASS_EXACT_ANCILLARY_CODE_DATA_ALL_SYMBOLS_RELA_AFTER_DECLARED_PATH_MAP",
+    "wlan_ccmp": "PASS_EXACT_ANCILLARY_CODE_DATA_ALL_SYMBOLS_RELA_AFTER_DECLARED_PATH_MAP",
+    "wlan_tkip": "PASS_EXACT_ANCILLARY_CODE_DATA_ALL_SYMBOLS_RELA_AFTER_DECLARED_PATH_MAP",
+    "wlan_xauth": "PASS_EXACT_ANCILLARY_CODE_DATA_ALL_SYMBOLS_RELA_AFTER_DECLARED_PATH_MAP"
+  },
+  "qualified_pins": 2342,
+  "negativecases": 11,
+  "original_comments_retained": true,
+  "lifetime_only_scope": true,
+  "host_header_growth_must_not_mix_old_modules": true,
+  "descriptor1000arena20wire_unchanged": true,
+  "R10prepublication_ioctl_leak_fix_separate": true,
+  "R11APPsource_synchronization_unresolved_module_gate_separate": true,
+  "limits": [
+    "Inherited19ops partial/sourcecapability notfullbehavior orclientacceptance",
+    "Changedsourcebodies sourcefixturebounded notmachineinstructionequivalence",
+    "MuC/RF/traffic/persistence/rollbackreleaseUNRUN"
+  ]
+}

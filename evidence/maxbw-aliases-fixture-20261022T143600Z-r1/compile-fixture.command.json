@@ -1,0 +1,10 @@
+[
+  "gcc",
+  "-std=c11",
+  "-O1",
+  "-g",
+  "-fsanitize=address,undefined",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/maxbw-aliases-fixture-20261022T143600Z-r1/fixture.c",
+  "-o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/maxbw-aliases-fixture-20261022T143600Z-r1/fixture"
+]

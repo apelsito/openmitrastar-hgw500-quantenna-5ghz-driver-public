@@ -1,0 +1,21 @@
+{
+  "status": "SOURCE_ONLY461_CALLER_OWNED_RANK_TRANSACTION_PENDING_FIXTURE_ADAPTER",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "inputs": {
+    "outputs\\rea\\chanset461-transaction-source-20261022T181500Z-r6\\result.json": "99b1c91d185b136f92f1a563b3a1939d296b317bd7f828a7e4e92dd2f3a0cb21",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\prepare_hgw5g_chanset_metrics.py": "68c34e6212dcacc32cfb8cb1574aa8c2cb65ef3f1b7f5c77d9f6825161b40579"
+  },
+  "source_hashes": {
+    "openmitrastar_chanset_recovered.c": "72458854f8208e6fb4ae2e4265df9ad6da8ac89085947433623bb15c8ce68408",
+    "openmitrastar_chanset_recovered.h": "e8e369803f1ec56609009d97076fad1fb8529624e11c76f23f3bc1879317cc27",
+    "openmitrastar_chanset_tables.h": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492",
+    "tables.json": "8d37396ee20d6902ea9c2948579c57b4e69c307d332904717aa4889ba6a98538"
+  },
+  "limits": [
+    "No driver registration or kernel callbacks/scan locks/lifetime integration.",
+    "Caller supplies eligibility/DFS/power range state from validated channels.",
+    "Neighbor observations bounded255 and contain no MAC/SSID/identity.",
+    "Ranking still needs independent assembly/reference/ABI/full module proof."
+  ]
+}

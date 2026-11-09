@@ -1,0 +1,20 @@
+{
+  "status": "PASS_ACTUAL_VOPT34_LINUX_WORKER_SOURCE_FAKE_CALLBACK_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 270,
+  "actualworker_queue_policy_quiesce_resume": true,
+  "unknown482_stops414_reassoc": true,
+  "allcount_includingnonblacklist": true,
+  "RTNLtrylock_nojoin_deadlock": true,
+  "input_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_hgw5g_vopt34_linux_worker.py": "d7844d8730381a1bf667824222994f34c9ffb51a2975dd01d13dd55441b45dce",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\hgw5g-linux73-all-ops-source-20261022T210000Z-r4\\source\\wlan\\openmitrastar_vopt481_kernel_core.inc": "300b27a214deaaf516da0bc9181e8235c41fa6cc4b56f108c9e92447d06ecab9",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\hgw5g-linux73-all-ops-source-20261022T210000Z-r4\\source\\wlan\\openmitrastar_vopt481_kernel.inc": "75d3a7a3255fddc1019d12539d9f902f6d09b09eee09334442cbb3fad7871c9d",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\hgw5g-linux73-all-ops-source-20261022T210000Z-r4\\headers\\net80211\\openmitrastar_vopt482_state.h": "9c34bd508dd76b936759c42d5f76613344c500db53a45a56c03ff5a0cfd59dcf",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\hgw5g-linux73-all-ops-source-20261022T210000Z-r4\\source\\wlan\\openmitrastar_vopt481_recovered.h": "dfa5a344f0f6faa7615306bea98f87d0a0a65bc5529fcd1e8772184f82a378da"
+  },
+  "fixture_sha256": "7ae5adaf32aee2cae02c4f91f372dcf85c5ce369df664ab27365104a1f46fd85",
+  "limits": "Actualadapter/corevariant source; LinuxRTNL/spinlock/timers/scheduler/hostlinkcallbacks fake. Fullmodule/ABI/physicalgates remain."
+}

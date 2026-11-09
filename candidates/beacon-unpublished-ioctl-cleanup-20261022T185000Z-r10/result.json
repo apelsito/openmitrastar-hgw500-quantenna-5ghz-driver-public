@@ -1,0 +1,16 @@
+{
+  "status": "SOURCE_ONLY_BEACON_R10_UNPUBLISHED_IOCTL_CLEANUP_PENDING_BUILD",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent_result_sha256": "96f927b50983f1b45ddaef646fdee6b880bf4004ee458ffb3a29212bda87182d",
+  "parent_source_sha256": "bd89f8b4fe774b43c747f91fe907f684a398ba85a191ca0cde38f4c4e4d8f739",
+  "candidate_qdrv_source_sha256": "35c3b912c1d4e0a0fda0db2300627deef11cb7b042ed5fba56e577feb23d6445",
+  "added_calls": 2,
+  "wire_or_header_changes": false,
+  "fixed_paths": [
+    "optional preflight error",
+    "v89 encoding error"
+  ],
+  "ownership_precondition": "vnet_alloc_ioctl reserved hostlink slot; coherent args and skb/param allocated; no vnet_send_ioctl_owned reached",
+  "limits": "Needs actual source cleanup fixture and minimum changed-unit/relink qualification; no hardware or published-owner release claim."
+}

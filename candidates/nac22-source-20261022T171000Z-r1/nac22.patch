@@ -1,0 +1,77 @@
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -127,6 +127,7 @@
+ #define OM_OEM_PARAM_DYNAMIC_SIFS 463
+ #define OM_OEM_PARAM_DUPLICATE_RTS 498
+ #define OM_OEM_PARAM_TX_AMSDU_11N 484
++#define OM_OEM_PARAM_NAC_MODE 457
+ #define OM_OEM_PARAM_DEVICE_MODE 451
+ #define OM_OEM_PARAM_IGNORE_ICAC_SELECTION 465
+ #define OM_OEM_PARAM_FT_OVER_DS 495
+@@ -11374,6 +11375,12 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_NAC_MODE:
++		/* OEMnon-HOSTAPcase is a successfulno-op; no mode activation here. */
++		if(vap->iv_opmode == IEEE80211_M_HOSTAP)
++			ieee80211_param_to_qdrv(vap,param,value,NULL,0);
++		break;
++
+ 	case OM_OEM_PARAM_TX_AMSDU_11N:
+ 		/* ExactOEMchangedboolpath; fulloriginalvalue reachesMuCparam484. */
+ 		if (vap->iv_tx_amsdu_11n != !!value) {
+@@ -13963,6 +13970,26 @@
+ 			"Legay VAP QHOP mode: %s\n", wds_mode);
+ }
+ 
++/* ExactOEM457sharedprefixsample. F355retains the owning sharedallocation
++ * after core-start; WEXTVAP access follows that start. No entry/clientdata read.
++ * Scalarreads can span MuCupdates, so no coherent generation is asserted.
++ * Guard zero-initialized/not-ready state rather than reproducing OEMdivision0. */
++struct om_nac_prefix {u16 value0;u16 value1;u16 enabled;u16 reserved;};
++static int om_nac_prefix_sample(struct om_nac_prefix *nac,int *value)
++{
++    u16 first,second;
++    u8 enabled;
++    u32 percent;
++    if(!nac)return -EAGAIN;
++    first=READ_ONCE(nac->value0);
++    second=READ_ONCE(nac->value1);
++    enabled=(u8)READ_ONCE(nac->enabled);
++    if(!second)return -EAGAIN;
++    percent=((u32)first*100U)/second;
++    *value=((u32)second<<16)|((percent&255U)<<8)|enabled;
++    return 0;
++}
++
+ static int
+ ieee80211_ioctl_getparam(struct net_device *dev, struct iw_request_info *info,
+ 	void *w, char *extra)
+@@ -13977,6 +14004,15 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_NAC_MODE:
++		{
++			struct shared_params *shared=READ_ONCE(soc_shared_params);
++			if(!shared)return -EAGAIN;
++			return om_nac_prefix_sample(
++			    (struct om_nac_prefix *)READ_ONCE(shared->nac_mon_info_lhost),
++			    &param[0]);
++		}
++
+ 	case OM_OEM_PARAM_TX_AMSDU_11N:
+ 		param[0] = vap->iv_tx_amsdu_11n;
+ 		break;
+@@ -20956,6 +20992,10 @@
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "txamsdu_11n" },
+ 	{ OM_OEM_PARAM_TX_AMSDU_11N,
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_txamsdu_11n" },
++	{ OM_OEM_PARAM_NAC_MODE,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1,0,"nac_mode" },
++	{ OM_OEM_PARAM_NAC_MODE,
++	  0,IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1,"get_nac_mode" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

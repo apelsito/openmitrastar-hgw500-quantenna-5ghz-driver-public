@@ -1,0 +1,138 @@
+   46d24:	1c14 3f80 0000 005f 	st	0x5f,[sp,20]
+   46d2c:	075b ffcf           	b	-166	;46c86 <findchannel_any+0x567e>
+   46d30:	1c14 3f80 0000 0016 	st	0x16,[sp,20]
+   46d38:	074f ffcf           	b	-178	;46c86 <findchannel_any+0x567e>
+   46d3c:	1c14 3f80 ffff ffea 	st	0xffffffea,[sp,20]
+   46d44:	0743 ffcf           	b	-190	;46c86 <findchannel_any+0x567e>
+   46d48:	2e40 1403           	asl	r3,r14,0x10
+   46d4c:	2653 11c2           	bmsk	r2,r14,0x7
+   46d50:	2304 0f83 00ff 0000 	and	r3,r3,0xff0000
+   46d58:	2205 0f82 7f00 0000 	or	r2,r2,0x7f000000
+   46d60:	2205 00c2           	or	r2,r2,r3
+   46d64:	c306                	ld_s	r3,[sp,0x18]
+   46d66:	2e40 1204           	asl	r4,r14,0x8
+   46d6a:	d97b                	mov_s	r1,0x7b
+   46d6c:	2404 0f84 0000 ff00 	and	r4,r4,0xff00
+   46d74:	2395 074a           	add2	r3,r3,669
+   46d78:	2205 0102           	or	r2,r2,r4
+   46d7c:	a340                	st_s	r2,[r3,0]
+   46d7e:	c006                	ld_s	r0,[sp,0x18]
+   46d80:	72c9                	mov_s	r2,r14
+   46d82:	db00                	mov_s	r3,0
+   46d84:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   46d8c:	220a 3f80 0003 3ddc 	mov	gp,0x33ddc
+   46d94:	2023 0680           	jl.d	[gp]
+   46d98:	244a 0000           	mov	r4,0
+   46d9c:	06eb ffcf           	b	-278	;46c86 <findchannel_any+0x567e>
+   46da0:	2e41 1402           	lsr	r2,r14,0x10
+   46da4:	2e41 1612           	lsr	r18,r14,0x18
+   46da8:	7a4f                	extb_s	r2,r2
+   46daa:	7a4b                	tst_s	r2,r2
+   46dac:	0542 fec2           	bne	-8894	;44aee <findchannel_any+0x34e6>
+   46db0:	05e9 fecf           	b	-8728	;44b98 <findchannel_any+0x3590>
+   46db4:	c306                	ld_s	r3,[sp,0x18]
+   46db6:	1342 0602           	ld.as	r2,[r3,66]
+   46dba:	2204 0f82 4000 0000 	and	r2,r2,0x40000000
+   46dc2:	0a59 8010           	breq	r2,0,-168	;46d18 <findchannel_any+0x5710>
+   46dc6:	0755 ff0f           	b	-6316	;45518 <findchannel_any+0x3f10>
+   46dca:	1418 3004           	ld	r4,[sp,24]
+   46dce:	1442 0602           	ld.as	r2,[r4,66]
+   46dd2:	2204 0f82 4000 0000 	and	r2,r2,0x40000000
+   46dda:	0a41 8010           	breq	r2,0,-192	;46d18 <findchannel_any+0x5710>
+   46dde:	001b ff4f           	b	-6118	;455f6 <findchannel_any+0x3fee>
+   46de2:	1c14 3f80 0000 0016 	st	0x16,[sp,20]
+   46dea:	069f ffcf           	b	-354	;46c86 <findchannel_any+0x567e>
+   46dee:	1415 361f           	ld.as	blink,[sp,21]
+   46df2:	1430 320d           	ld.aw	r13,[sp,48]
+   46df6:	c601                	ld_s	r14,[sp,0x4]
+   46df8:	c702                	ld_s	r15,[sp,0x8]
+   46dfa:	140c 3010           	ld	r16,[sp,12]
+   46dfe:	1410 3011           	ld	r17,[sp,16]
+   46e02:	1414 3012           	ld	r18,[sp,20]
+   46e06:	1418 3013           	ld	r19,[sp,24]
+   46e0a:	141c 3014           	ld	r20,[sp,28]
+   46e0e:	7fe0                	j_s.d	[blink]
+   46e10:	c0aa                	add_s	sp,sp,0x28
+   46e12:	78e0                	nop_s
+   46e14:	c0f1                	push_s	blink
+   46e16:	c1a3                	sub_s	sp,sp,0xc
+   46e18:	1206 0104           	ldh	r4,[r2,6]
+   46e1c:	2453 02c3           	bmsk	r3,r4,0xb
+   46e20:	e38a                	cmp_s	r3,0xa
+   46e22:	01ea 000d           	bhi	490	;4700a <findchannel_any+0x5a02>
+   46e26:	1200 0005           	ld	r5,[r2]
+   46e2a:	220a 0f80 0008 7f44 	mov	r2,0x87f44
+   46e32:	22f0 00c2           	ld.as	r2,[r2,r3]
+   46e36:	7a00                	j_s	[r2]
+   46e38:	2544 0182           	and	r2,r5,0x6
+   46e3c:	e286                	cmp_s	r2,0x6
+   46e3e:	015a 0001           	beq	346	;46f96 <findchannel_any+0x598e>
+   46e42:	2544 0102           	and	r2,r5,0x4
+   46e46:	7a4b                	tst_s	r2,r2
+   46e48:	22ca 00a2           	mov.ne	r2,0x2
+   46e4c:	014c 0002           	bne	332	;46f98 <findchannel_any+0x5990>
+   46e50:	2544 8082           	and.f	r2,r5,0x2
+   46e54:	22ca 0062           	mov.ne	r2,0x1
+   46e58:	0141 0000           	b	320	;46f98 <findchannel_any+0x5990>
+   46e5c:	da08                	mov_s	r2,0x8
+   46e5e:	c240                	st_s	r2,[sp,0]
+   46e60:	2542 0042           	sub	r2,r5,0x1
+   46e64:	0a19 0415           	brhs	r2,0x10,24	;46e7c <findchannel_any+0x5874>
+   46e68:	230a 0f80 0008 7f70 	mov	r3,0x87f70
+   46e70:	23f0 0083           	ld.as	r3,[r3,r2]
+   46e74:	7b00                	j_s	[r3]
+   46e76:	da03                	mov_s	r2,0x3
+   46e78:	001b 0000           	b	26	;46e92 <findchannel_any+0x588a>
+   46e7c:	228a 0fff           	mov	r2,-1
+   46e80:	0013 0000           	b	18	;46e92 <findchannel_any+0x588a>
+   46e84:	da06                	mov_s	r2,0x6
+   46e86:	000f 0000           	b	14	;46e92 <findchannel_any+0x588a>
+   46e8a:	da00                	mov_s	r2,0
+   46e8c:	0007 0000           	b	6	;46e92 <findchannel_any+0x588a>
+   46e90:	da01                	mov_s	r2,0x1
+   46e92:	0a61 0033           	brge.d	r2,0,96	;46ef0 <findchannel_any+0x58e8>
+   46e96:	c241                	st_s	r2,[sp,0x4]
+   46e98:	7108                	mov_s	r1,r0
+   46e9a:	72a8                	mov_s	r2,r5
+   46e9c:	70cf 0009 a770      	mov_s	r0,0x9a770
+   46ea2:	0175 0000           	b	372	;47014 <findchannel_any+0x5a0c>
+   46ea6:	da05                	mov_s	r2,0x5
+   46ea8:	c240                	st_s	r2,[sp,0]
+   46eaa:	2542 0042           	sub	r2,r5,0x1
+   46eae:	0a1b 0415           	brhs	r2,0x10,26	;46ec6 <findchannel_any+0x58be>
+   46eb2:	230a 0f80 0008 7fb0 	mov	r3,0x87fb0
+   46eba:	23f0 0083           	ld.as	r3,[r3,r2]
+   46ebe:	7b00                	j_s	[r3]
+   46ec0:	da03                	mov_s	r2,0x3
+   46ec2:	001d 0000           	b	28	;46edc <findchannel_any+0x58d4>
+   46ec6:	228a 0fff           	mov	r2,-1
+   46eca:	0015 0000           	b	20	;46edc <findchannel_any+0x58d4>
+   46ece:	da06                	mov_s	r2,0x6
+   46ed0:	000d 0000           	b	12	;46edc <findchannel_any+0x58d4>
+   46ed4:	da00                	mov_s	r2,0
+   46ed6:	0009 0000           	b	8	;46edc <findchannel_any+0x58d4>
+   46eda:	da01                	mov_s	r2,0x1
+   46edc:	0a15 0033           	brge.d	r2,0,20	;46ef0 <findchannel_any+0x58e8>
+   46ee0:	c241                	st_s	r2,[sp,0x4]
+   46ee2:	7108                	mov_s	r1,r0
+   46ee4:	72a8                	mov_s	r2,r5
+   46ee6:	70cf 0009 a794      	mov_s	r0,0x9a794
+   46eec:	0129 0000           	b	296	;47014 <findchannel_any+0x5a0c>
+   46ef0:	d900                	mov_s	r1,0
+   46ef2:	da00                	mov_s	r2,0
+   46ef4:	738b                	mov_s	r3,sp
+   46ef6:	220a 3f80 0004 1664 	mov	gp,0x41664
+   46efe:	2022 0680           	jl	[gp]
+   46f02:	0125 0000           	b	292	;47024 <findchannel_any+0x5a1c>
+   46f06:	da00                	mov_s	r2,0
+   46f08:	c241                	st_s	r2,[sp,0x4]
+   46f0a:	2544 0042           	and	r2,r5,0x1
+   46f0e:	ea04                	breq_s	r2,0,8	;46f14 <findchannel_any+0x590c>
+   46f10:	da01                	mov_s	r2,0x1
+   46f12:	c241                	st_s	r2,[sp,0x4]
+   46f14:	2544 0082           	and	r2,r5,0x2
+   46f18:	ea05                	breq_s	r2,0,10	;46f22 <findchannel_any+0x591a>
+   46f1a:	c201                	ld_s	r2,[sp,0x4]
+   46f1c:	2245 0082           	or	r2,r2,0x2
+   46f20:	c241                	st_s	r2,[sp,0x4]
+   46f22:	d900                	mov_s	r1,0

@@ -1,0 +1,14 @@
+   46a6a:	c206                	ld_s	r2,[sp,0x18]
+   46a6c:	2280 0211           	add	r2,r2,1096
+   46a70:	8240                	ld_s	r2,[r2,0]
+   46a72:	e286                	cmp_s	r2,0x6
+   46a74:	021c 0002           	bne	540	;46c90 <findchannel_any+0x5688>
+   46a78:	c206                	ld_s	r2,[sp,0x18]
+   46a7a:	2295 08cc           	add2	r2,r2,803
+   46a7e:	b2c0                	stw_s	r14,[r2,0]
+   46a80:	2700 1f82 0000 5444 	add	r2,r15,0x5444
+   46a88:	8240                	ld_s	r2,[r2,0]
+   46a8a:	c006                	ld_s	r0,[sp,0x18]
+   46a8c:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   46a94:	2022 0080           	jl	[r2]
+   46a98:	01ef 0000           	b	494	;46c86 <findchannel_any+0x567e>

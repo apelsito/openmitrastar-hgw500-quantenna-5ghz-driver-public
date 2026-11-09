@@ -1,0 +1,260 @@
+{
+  "status": "PASS_ROOT_INDEPENDENT_DFS467_BOUNDED_STABLE_5GHZ_SOURCE_MODULE_REVIEW",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "allmode_oem467_recovery": false,
+  "promote_full_original_record_count": false,
+  "evidence_pins": [
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\tools\\review_hgw5g_dfs467_bounded_root.py",
+      "sha256": "724a2ada1e1e020c28a8cd5357c9daab22fa8ce3d480c3b96d246d1ae4f3a42e"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-root-independent-actual-pick-20261022T202000Z-r1\\result.json",
+      "sha256": "b5abe06c5915a698a62d2a458e2880d02d9dceca0d755f72f3c1544307b434bc"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated29-full-pair-20261022T214100Z-r2\\a-joint\\qdrv\\qdrv.ko",
+      "sha256": "e456176906d31c34d71b52944e3c8cdaf9ac700b4a7cf5b6ad97d5967c9ea743"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-a-20261022T225300Z-r2\\qdrv\\qdrv.ko",
+      "sha256": "e456176906d31c34d71b52944e3c8cdaf9ac700b4a7cf5b6ad97d5967c9ea743"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-b-20261022T225300Z-r2\\qdrv\\qdrv.ko",
+      "sha256": "e456176906d31c34d71b52944e3c8cdaf9ac700b4a7cf5b6ad97d5967c9ea743"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated29-full-pair-20261022T214100Z-r2\\a-joint\\wlan\\wlan.ko",
+      "sha256": "12f57262e3c42dd03b0550bb133e1dbbb23559c773e43184bbb5dedf6c4503e0"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-a-20261022T225300Z-r2\\wlan\\wlan.ko",
+      "sha256": "db1d386286b7e0208b4abd43ce819cd4976a3681ad6e7474d14cd0dc9a3e9675"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-b-20261022T225300Z-r2\\wlan\\wlan.ko",
+      "sha256": "db1d386286b7e0208b4abd43ce819cd4976a3681ad6e7474d14cd0dc9a3e9675"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated29-full-pair-20261022T214100Z-r2\\a-joint\\wlan_scan_ap\\wlan_scan_ap.ko",
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-a-20261022T225300Z-r2\\wlan_scan_ap\\wlan_scan_ap.ko",
+      "sha256": "9422f2245defece656cc1d2fcc31b09d1983abec9bc6b572bb05657544f3e595"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-b-20261022T225300Z-r2\\wlan_scan_ap\\wlan_scan_ap.ko",
+      "sha256": "9422f2245defece656cc1d2fcc31b09d1983abec9bc6b572bb05657544f3e595"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated29-full-pair-20261022T214100Z-r2\\a-joint\\wlan_scan_sta\\wlan_scan_sta.ko",
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-a-20261022T225300Z-r2\\wlan_scan_sta\\wlan_scan_sta.ko",
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-b-20261022T225300Z-r2\\wlan_scan_sta\\wlan_scan_sta.ko",
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated29-full-pair-20261022T214100Z-r2\\a-joint\\wlan_ccmp\\wlan_ccmp.ko",
+      "sha256": "1eb355a9b96b2ee2a75382565f6a628d62c583aa21600f9b922d038f657d96d5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-a-20261022T225300Z-r2\\wlan_ccmp\\wlan_ccmp.ko",
+      "sha256": "1eb355a9b96b2ee2a75382565f6a628d62c583aa21600f9b922d038f657d96d5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-b-20261022T225300Z-r2\\wlan_ccmp\\wlan_ccmp.ko",
+      "sha256": "1eb355a9b96b2ee2a75382565f6a628d62c583aa21600f9b922d038f657d96d5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated29-full-pair-20261022T214100Z-r2\\a-joint\\wlan_tkip\\wlan_tkip.ko",
+      "sha256": "02f83895c1e3343ee3cc0b2162e37e9428c66de36fa0e2b8a5ddd834d20dbf5f"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-a-20261022T225300Z-r2\\wlan_tkip\\wlan_tkip.ko",
+      "sha256": "02f83895c1e3343ee3cc0b2162e37e9428c66de36fa0e2b8a5ddd834d20dbf5f"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-b-20261022T225300Z-r2\\wlan_tkip\\wlan_tkip.ko",
+      "sha256": "02f83895c1e3343ee3cc0b2162e37e9428c66de36fa0e2b8a5ddd834d20dbf5f"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated29-full-pair-20261022T214100Z-r2\\a-joint\\wlan_xauth\\wlan_xauth.ko",
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-a-20261022T225300Z-r2\\wlan_xauth\\wlan_xauth.ko",
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-joint-b-20261022T225300Z-r2\\wlan_xauth\\wlan_xauth.ko",
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-source-20261022T225000Z-r2\\result.json",
+      "sha256": "2457a58116f1ac480717a095214c1f936d04317795fdc2b220f7b8bbdfb74327"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-source-20261022T225000Z-r2\\source\\wlan\\ieee80211_scan.c",
+      "sha256": "9219ffd27f27f75ae5490b35e9fd67faaab74500956bb2ab030e4f68aa958b7a"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-source-20261022T225000Z-r2\\source\\wlan\\ieee80211_scan_ap.c",
+      "sha256": "248bc59a177fe7af940e51a5f4949e422eec2d4caadfeaf482eadb1805737b10"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-source-20261022T225000Z-r2\\source\\wlan\\ieee80211_wireless.c",
+      "sha256": "e94a4915a10a3b7a29cebfe911f055f72885009a5ba6d7c59bdd8853fc1760be"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-source-20261022T225000Z-r2\\headers\\net80211\\ieee80211_var.h",
+      "sha256": "ff7a9e72d0edafd54af9125b056cba8a695a879a371c1d9e3799ab564f2df548"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\tools\\audit_hgw5g_dfs467_modules.py",
+      "sha256": "a0df4384c6e7c483a65d424df957178de23636be8889f5f22bae78009b09a02a"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\dfs467-bounded-negative-20261022T225500Z-r1\\result.json",
+      "sha256": "8ffe27ea13fd6930dd2a0b6a429dbe08cf4c8a1f5e80715f3e52c4a8d65d26ca"
+    }
+  ],
+  "module_audits": {
+    "wlan": {
+      "status": "PASS_COMPLETE_DFS467_BOUNDED_RESIDUAL_MODULE_SCOPE",
+      "component": "wlan",
+      "fixture_bound_functions": [
+        {
+          "key": [
+            "ieee80211_ioctl_getparam",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 5988,
+          "new_bytes": 6004,
+          "old_sha256": "90ed8b9e7a36b9c0d03441c694d063f26922e074bed6129f228fbcd6573dd48a",
+          "new_sha256": "b08eec8f308c6cebfec7d433839992dd2a215b10bfbbeff845e42272b76262f5"
+        }
+      ],
+      "new_functions": [
+        "om_ieee80211_dfs_channel_available"
+      ],
+      "diagnostics": [
+        "ieee80211_delete_wlanunit",
+        "ieee80211_ioctl_giwfreq",
+        "ieee80211_param_from_qdrv",
+        "ieee80211_ioctl_setparam"
+      ],
+      "unchanged_functions": 970,
+      "residual_relocations": 9606,
+      "old_symbols": 2284,
+      "new_symbols": 2288,
+      "executable_residue": [
+        {
+          "section": ".text",
+          "anonymous_body_bytes": 2810,
+          "anonymous_body_count": 19,
+          "old_nop_bytes": 950,
+          "new_nop_bytes": 952,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".text.unlikely",
+          "anonymous_body_bytes": 0,
+          "anonymous_body_count": 0,
+          "old_nop_bytes": 6,
+          "new_nop_bytes": 6,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".init.text",
+          "anonymous_body_bytes": 0,
+          "anonymous_body_count": 0,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".exit.text",
+          "anonymous_body_bytes": 2,
+          "anonymous_body_count": 1,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        }
+      ],
+      "limits": "Semanticrangesfixturebound; noinstructionequivalence/PM/CSA/RF/physicalacceptance"
+    },
+    "wlan_scan_ap": {
+      "status": "PASS_COMPLETE_DFS467_BOUNDED_RESIDUAL_MODULE_SCOPE",
+      "component": "wlan_scan_ap",
+      "fixture_bound_functions": [
+        {
+          "key": [
+            "ap_pick_channel",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 2492,
+          "new_bytes": 2506,
+          "old_sha256": "e8f451e788a02f9f6caa513ce43de94e4f8ec8b2486b99402b8128701c4b8e2a",
+          "new_sha256": "3f3ada3a8fc7628133e10156772dfa073e9fc32e25b70793094f05b240967955"
+        }
+      ],
+      "new_functions": [],
+      "diagnostics": [
+        "ap_end"
+      ],
+      "unchanged_functions": 26,
+      "residual_relocations": 138,
+      "old_symbols": 107,
+      "new_symbols": 107,
+      "executable_residue": [
+        {
+          "section": ".text",
+          "anonymous_body_bytes": 0,
+          "anonymous_body_count": 0,
+          "old_nop_bytes": 20,
+          "new_nop_bytes": 22,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".init.text",
+          "anonymous_body_bytes": 2,
+          "anonymous_body_count": 1,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".exit.text",
+          "anonymous_body_bytes": 2,
+          "anonymous_body_count": 1,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        }
+      ],
+      "limits": "Semanticrangesfixturebound; noinstructionequivalence/PM/CSA/RF/physicalacceptance"
+    }
+  },
+  "actual_source_fixture_cases": 28672,
+  "missing_mode_cases": 96,
+  "limits": [
+    "Only stable initialized AP scanner in admitted5GHz modes,20MHz deterministic fixture with declared fake callbacks.",
+    "Complete OEM AP metric/alternate/fallback equivalence and40/80MHz behavior remain unproved.",
+    "ANYC fallback may return first nonDFS entry; no general DFScapability or CACready claim.",
+    "Overlapping scans/hotdetach are excluded from this bounded receipt; live-query serialization still required before deployment.",
+    "464 host state/CAC callbacks untouched; no radio/runtime/firmware operation.",
+    "This review qualifies only the explicitly bounded source/module contract and cannot close full467 recovery."
+  ]
+}

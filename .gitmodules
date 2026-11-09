@@ -1,0 +1,9 @@
+[submodule "legacy-firmware-source"]
+	path = vendor/legacy-firmware-source
+	url = https://github.com/christianheyl/Quantenna-GPL.git
+[submodule "linux-7.3-upstream"]
+	path = vendor/linux-7.3-upstream
+	url = https://github.com/torvalds/linux.git
+[submodule "hgw-realtek-linux73"]
+	path = components/realtek-hgw500
+	url = https://github.com/apelsito/Realtek-2.4GHz-HGW500-public.git

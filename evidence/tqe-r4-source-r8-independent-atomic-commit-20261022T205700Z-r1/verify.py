@@ -1,0 +1,15 @@
+import hashlib,json,subprocess,sys
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[3];sys.path.insert(0,str(ROOT/'tools'));from prepare_tqe_bounded_admission_prototype import function
+out=Path(__file__).parent;old=ROOT/'outputs/rea/driver5g-ops-20261022-tqe-r4-typed-queue-source-r7/topaz_congest_queue.c';new=ROOT/'outputs/rea/driver5g-ops-20261022-tqe-r4-typed-queue-source-r8/topaz_congest_queue.c';body='static void '+function(new.read_text(),'omcgq_typed_success(');needle='\t\tomcgq_queue_reserved = 0;\n\t\tomcgq_credit_queue = NULL;';assert body.count(needle)==1;body=body.replace(needle,'\t\tomcgq_queue_reserved = 0;\n\t\tinjected_producer();\n\t\tomcgq_credit_queue = NULL;',1)
+caller=function(new.read_text(),'__attribute__((section(".sram.text"))) int topaz_congest_queue_xmit(');start=caller.index('\t\tif (typed) {',caller.index('Typed owner/credit/head state'));end=caller.index('\n\t\tif (--budget',start);block=caller[start:end]
+base=(ROOT/'outputs/rea/tqe-r4-source-r7-independent-credit-race-20261022T205300Z-r1/actual-typed-success-counterexample.c').read_text();pre=base[:base.index('static void omcgq_typed_success(')];a=pre.index('static void injected_producer(void)');pre=pre[:a]+r'''
+static unsigned irq,pending,head_commits;
+static void producer(void){assert(!omcgq_batch.active&&!omcgq_queue_reserved&&!omcgq_queue_pending);assert(head_commits==1);omcgq_credit_queue=&newq;omcgq_queue_reserved=2;omcgq_batch.active=true;omcgq_held_count++;}
+static void injected_producer(void){if(irq)pending=1;else producer();}
+#define local_irq_save(f) do{(f)=irq;irq=1;}while(0)
+#define local_irq_restore(f) do{irq=(f);if(!irq&&pending){pending=0;producer();}}while(0)
+static void topaz_congest_dequeue(void*q){(void)q;assert(irq);head_commits++;}
+'''
+post='\nint main(void){struct omcgq_queue_marker m={true};struct omcgq_queue_marker*typed=&m;void*queue=NULL;unsigned retry_irq_flags;omcgq_credit_queue=&oldq;omcgq_batch.completed=omcgq_batch.expected=1;omcgq_batch.active=true;omcgq_queue_pending=omcgq_held_count=1;\n'+block+'\nassert(omcgq_batch.active&&omcgq_queue_reserved==2&&omcgq_credit_queue==&newq&&!irq&&!pending&&head_commits==1);puts("{\\"newbatch_credit_pointer_preserved\\":true}");return 0;}'
+f=out/'actual-atomic-success-dequeue.c';f.write_text(pre+body+post);cc=ROOT/'tools/external/llvm-mingw-20260616-ucrt-x86_64/bin/clang.exe';r=subprocess.run([str(cc),'-std=c11','-O1',str(f),'-o',str(out/'fixture.exe')],capture_output=True);assert not r.returncode,r.stderr;r=subprocess.run([str(out/'fixture.exe')],capture_output=True);assert not r.returncode,r.stderr;sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();result={'status':'PASS_SOURCE_R8_ACTUAL_ATOMIC_TYPED_SUCCESS_DEQUEUE_BLOCK','hardware_accessed':False,'firmware_eligible':False,'facts':json.loads(r.stdout),'source_sha256':sha(new),'fixture_sha256':sha(f),'limits':'Selectedlastsuccessproducerinterruptionfixture withfakeIRQ/dequeue. Actualnewcallerblock+actualhelper used; noSMP/universalqueueallwriteracceptance.'};(out/'result.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

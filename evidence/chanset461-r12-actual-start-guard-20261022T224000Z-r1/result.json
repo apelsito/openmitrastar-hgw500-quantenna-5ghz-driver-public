@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ACTUAL_KERNEL_START_LEGACY_RESERVATION_GUARD",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 1,
+  "legacy_start_steals_reservation": false,
+  "false_success": 1,
+  "requested_owner_matches_scanner": true,
+  "input_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_chanset461_actual_scan_start.py": "99e9f725cbe3ffa8097e2097760c4c2bd42a268e87120edd9f1b34411791d916",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-kernel-adapter-20261022T192500Z-r12\\source\\wlan\\ieee80211_scan.c": "5a505b37dbd03839059c211941dfd6e02cd167f377d73c37daa95c6f9da3c023",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-kernel-adapter-20261022T192500Z-r12\\source\\wlan\\openmitrastar_chanset_kernel.inc": "42cad6124219aeb9278f81eadc52cb0438d2cbe2bdc8cac572e5a3b9db37af93",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-kernel-adapter-20261022T192500Z-r12\\source\\wlan\\openmitrastar_chanset_recovered.c": "72458854f8208e6fb4ae2e4265df9ad6da8ac89085947433623bb15c8ce68408",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-kernel-adapter-20261022T192500Z-r12\\source\\wlan\\openmitrastar_chanset_recovered.h": "bd0dd1247dbd534a0461e1462b4270c38e247bdf593cb721ff3f4d2a559e4245",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-kernel-adapter-20261022T192500Z-r12\\source\\wlan\\openmitrastar_chanset_tables.h": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492"
+  },
+  "fixture_sha256": "91cb751c00858abf984ae66c4974879c39efb6a3deb2ae27bac5ec5610965556",
+  "limits": "Actual complete start function/adapter; one wrapper inserts legacy start between reservation and actual requestedstart. Scanner hooks/IRQ locks fake; source counterexample, no kernel runtime acceptance."
+}

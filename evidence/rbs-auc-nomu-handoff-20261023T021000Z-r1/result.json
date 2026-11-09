@@ -1,0 +1,417 @@
+{
+  "status": "PASS_BOUNDED_EXACT_NOMU_AUC_M2A_FLAGS_AND_OCS_COMMAND_CAC_UNRESOLVED",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "qualified_ops_added": 0,
+  "adapter_added": false,
+  "carrier_sha256": "c10018f4fe384d753a800bbbcd5ef3c85c568d0852c221009063282d30fd85f6",
+  "carrier_bytes": 33342,
+  "default_carrier_sha256": "e1fd397ef56b061af7c91cbd422973dcfcf1382933afa226f8f428dd315f65af",
+  "initial_analysis_sha256": "d52e91bdaba98c86611cfe13866a809c3bf14156469bb3e46683d781b2dc0a51",
+  "poststart_model_sha256": "501513f36ec7f347a3722f9fb806472445ccbd40f9a8a9f8dcb877d16dbb1293",
+  "queries": {
+    "entry": {
+      "directory": "outputs\\rea\\rbs-auc-nomu-entry-20261023T015200Z-r1",
+      "procedure": {
+        "address": "0xe5000000",
+        "name": "entry",
+        "classification": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0xe50073b0",
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0xe5000000",
+              "end": "0xe5000007"
+            }
+          ],
+          "total_bytes": 8,
+          "span_bytes": 8,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "undefined entry()",
+        "locals": []
+      },
+      "callees": [],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ],
+      "rea_sha256": "c2507174be1db03f308bc02ef6a7fc29bc6bb051cf6b40daef42525db8e5acbb",
+      "started_utc": "2026-10-22T22:47:05.071416+00:00",
+      "finished_utc": "2026-10-22T22:47:21.522861+00:00"
+    },
+    "native_boot": {
+      "directory": "outputs\\rea\\rbs-auc-nomu-native-boot-20261023T015400Z-r1",
+      "procedure": {
+        "address": "0xe50073b0",
+        "name": "FUN_ram_e50073b0",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0xe50073b0",
+              "end": "0xe5007403"
+            }
+          ],
+          "total_bytes": 84,
+          "span_bytes": 84,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "undefined FUN_ram_e50073b0()",
+        "locals": []
+      },
+      "callees": [
+        {
+          "address": "0xe5007434",
+          "name": "FUN_ram_e5007434"
+        }
+      ],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+        "Ghidra Listing reports a terminal call at 0xe5007400 to 0xe5007434 FUN_ram_e5007434 (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+      ],
+      "rea_sha256": "e1178a4442c7ffda6a19cb991d1112a39da04df14f5c47e982688784fc60d49b",
+      "started_utc": "2026-10-22T22:47:46.497156+00:00",
+      "finished_utc": "2026-10-22T22:48:02.653929+00:00"
+    },
+    "ipc_irq_initial_failed": {
+      "status": "UNRESOLVED_NO_AUTOCREATED_PROCEDURE",
+      "directory": "outputs\\rea\\rbs-auc-nomu-ipc-handler-20261023T015600Z-r1",
+      "exit_code": 1,
+      "rea_sha256": "ff0e9b68e5b27a3a7742844bfb6dda30665ea436191fb3d99f1bc5ceeff2d9df"
+    },
+    "copy_helper": {
+      "directory": "outputs\\rea\\rbs-auc-nomu-codecopy-helper-20261023T015800Z-r1",
+      "procedure": {
+        "address": "0xe5005c50",
+        "name": "FUN_ram_e5005c50",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0xe5005c50",
+              "end": "0xe5005cff"
+            }
+          ],
+          "total_bytes": 176,
+          "span_bytes": 176,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "undefined FUN_ram_e5005c50()",
+        "locals": []
+      },
+      "callees": [],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ],
+      "rea_sha256": "477cb8f2beab03e82623adb5aa2389a52591eb139ba0c8e8ecca89243ba17110",
+      "started_utc": "2026-10-22T22:48:59.560074+00:00",
+      "finished_utc": "2026-10-22T22:49:27.036215+00:00"
+    },
+    "ocs21_clause": {
+      "directory": "outputs\\rea\\rbs-auc-nomu-ocs21-clause-20261023T020400Z-r1",
+      "procedure": {
+        "address": "0xe50056f4",
+        "name": "om_auc_ocs_suspend_command21_clause",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0xe50056f4",
+              "end": "0xe5005743"
+            }
+          ],
+          "total_bytes": 80,
+          "span_bytes": 80,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "undefined om_auc_ocs_suspend_command21_clause()",
+        "locals": []
+      },
+      "callees": [
+        {
+          "address": "0xe5001770",
+          "name": "FUN_ram_e5001770"
+        }
+      ],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ],
+      "rea_sha256": "00d90cdc3e73afdc91042dc09042b6be2796b4769af56b919b8c233680d41757",
+      "started_utc": "2026-10-22T22:51:03.065026+00:00",
+      "finished_utc": "2026-10-22T22:51:36.029948+00:00"
+    },
+    "ipc_dispatch": {
+      "directory": "outputs\\rea\\rbs-auc-nomu-ipc-dispatch-20261023T020400Z-r1",
+      "procedure": {
+        "address": "0xe500518c",
+        "name": "om_auc_ipc_config_dispatch",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0xe500518c",
+              "end": "0xe50051af"
+            },
+            {
+              "start": "0xe50051dc",
+              "end": "0xe500533b"
+            },
+            {
+              "start": "0xe5005384",
+              "end": "0xe50056f3"
+            },
+            {
+              "start": "0xe5005744",
+              "end": "0xe50057bf"
+            },
+            {
+              "start": "0xe50057f6",
+              "end": "0xe50058bf"
+            }
+          ],
+          "total_bytes": 1594,
+          "span_bytes": 1844,
+          "non_contiguous": true,
+          "contains_entry": true
+        },
+        "signature": "undefined om_auc_ipc_config_dispatch()",
+        "locals": [
+          {
+            "description": "undefined2 local_10 @ Stack[-0x10]:2",
+            "provenance": "ghidra-function-database"
+          }
+        ]
+      },
+      "callees": [
+        {
+          "address": "0xe50001d4",
+          "name": "FUN_ram_e50001d4"
+        },
+        {
+          "address": "0xe5000288",
+          "name": "FUN_ram_e5000288"
+        },
+        {
+          "address": "0xe5000290",
+          "name": "FUN_ram_e5000290"
+        },
+        {
+          "address": "0xe50002e4",
+          "name": "FUN_ram_e50002e4"
+        },
+        {
+          "address": "0xe50002f8",
+          "name": "FUN_ram_e50002f8"
+        },
+        {
+          "address": "0xe50006d4",
+          "name": "FUN_ram_e50006d4"
+        },
+        {
+          "address": "0xe50007b8",
+          "name": "FUN_ram_e50007b8"
+        },
+        {
+          "address": "0xe5000cf4",
+          "name": "om_auc_management_fcs_enqueue"
+        },
+        {
+          "address": "0xe500148c",
+          "name": "FUN_ram_e500148c"
+        },
+        {
+          "address": "0xe5001668",
+          "name": "FUN_ram_e5001668"
+        },
+        {
+          "address": "0xe5001740",
+          "name": "FUN_ram_e5001740"
+        },
+        {
+          "address": "0xe5001828",
+          "name": "FUN_ram_e5001828"
+        },
+        {
+          "address": "0xe5004c68",
+          "name": "FUN_ram_e5004c68"
+        },
+        {
+          "address": "0xe5004d48",
+          "name": "FUN_ram_e5004d48"
+        },
+        {
+          "address": "0xe5004dcc",
+          "name": "FUN_ram_e5004dcc"
+        },
+        {
+          "address": "0xe5004df4",
+          "name": "FUN_ram_e5004df4"
+        },
+        {
+          "address": "0xe5004e1c",
+          "name": "FUN_ram_e5004e1c"
+        },
+        {
+          "address": "0xe5004e40",
+          "name": "FUN_ram_e5004e40"
+        },
+        {
+          "address": "0xe5004e68",
+          "name": "FUN_ram_e5004e68"
+        },
+        {
+          "address": "0xe5004e90",
+          "name": "FUN_ram_e5004e90"
+        },
+        {
+          "address": "0xe5004ecc",
+          "name": "FUN_ram_e5004ecc"
+        },
+        {
+          "address": "0xe5004f50",
+          "name": "FUN_ram_e5004f50"
+        },
+        {
+          "address": "0xe5004f84",
+          "name": "FUN_ram_e5004f84"
+        },
+        {
+          "address": "0xe5004fb8",
+          "name": "FUN_ram_e5004fb8"
+        },
+        {
+          "address": "0xe5005060",
+          "name": "FUN_ram_e5005060"
+        },
+        {
+          "address": "0xe5005c34",
+          "name": "FUN_ram_e5005c34"
+        },
+        {
+          "address": "0xe5005d64",
+          "name": "FUN_ram_e5005d64"
+        },
+        {
+          "address": "0xe5005db8",
+          "name": "FUN_ram_e5005db8"
+        },
+        {
+          "address": "0xe5005e50",
+          "name": "FUN_ram_e5005e50"
+        },
+        {
+          "address": "0xe5005f74",
+          "name": "FUN_ram_e5005f74"
+        },
+        {
+          "address": "0xe5007494",
+          "name": "FUN_ram_e5007494"
+        },
+        {
+          "address": "0xe5007540",
+          "name": "FUN_ram_e5007540"
+        }
+      ],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+        "Ghidra Listing reports a terminal call at 0xe500527c to 0xe5007540 FUN_ram_e5007540 (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation.",
+        "Ghidra Listing reports a terminal call at 0xe5005660 to 0xe5005db8 FUN_ram_e5005db8 (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation.",
+        "Ghidra Listing reports a terminal call at 0xe50056ee to 0xe5007540 FUN_ram_e5007540 (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+      ],
+      "rea_sha256": "84ce395771cecd7bc67983e993ebd7f1a6f755b09c2e47b7c790ff5600bc3aea",
+      "started_utc": "2026-10-22T22:51:02.947051+00:00",
+      "finished_utc": "2026-10-22T22:51:37.014847+00:00"
+    }
+  },
+  "static_codecopy_contract": [
+    "e5000000 jumps e50073b0; nativeboot sets GP=e51010c8/SP=e5104000",
+    "e5007404 copies exactseg8 from63b3b0 toe50073b0 bytes0xb34 throughmemcpy e5005c50",
+    "exception path e50001ac copies exactseg6 from63bee4 toe5000000 bytes0x1e0; not applied in poststart normal model",
+    "Originalpaddrsegments preserved initialmap; only derivativepoststart temporallyoverlaysseg7 byseg8 exactbytes; no liveboot proof"
+  ],
+  "m2a_flags_observed": [
+    "e5004956 loads TQEdescriptorword+4 high16 misc_user",
+    "bit0 sets internalframe+78 bit0 (skiprate retry semantic from matching GPLheader)",
+    "bit1 branch496e calls09e4 and sets internalframe+78 bit2; OCSsemantic source definition",
+    "bit3 branch49e0 sets internalframe+78 bits3/4; probesemantic source definition",
+    "These flags reach an AuC internalpacket object; completeWMACadmission/CACownership is not proven"
+  ],
+  "ocs_command21": {
+    "table": "e50051b0 signedhalfwordjump (cmd-2)\u2192e50056f4",
+    "clause_body": "e50056f4..e5005743 80bytes",
+    "effect": "arg1 inr13 compares/storesGP+dc=e51011a4; ifzero resumeslinkedreadyqueueGP+60 via1770 andrecordsGP+e0 timestamp; mirrorsGP+e4=e51011ac; increments globalpwr_mgmt_sleep/awake stats",
+    "frame_identity_or_deadline": "NONE IN THIS CLAUSE",
+    "policy_followup": "GP+dc tested in e5003f78..3f82 before a scheduling branch; full policy unqualified"
+  },
+  "fcs_give19": {
+    "table_target": "e50056c8",
+    "bounded_effect": "checks wmac<2 and availableFCS ring counters; enqueuehelper0cf4; nocacgrant established"
+  },
+  "limits": [
+    "5 REA successfulqueries and1 preservedprocedure-notfound; exit0doesnot imply customAuCISAqualified",
+    "CustomAuC opcodes decoded as unknown .word/r57 inGNU; Ghidra has warnings; do not infer complete scheduling/WMAC flows",
+    "SeededSTT_FUNC hints can split a switchclause fromfullbody; union andrawtable are evidence, never originalfunctionAPI",
+    "Staticpoststart overlay follows exactcopyinstructions; no actualcoprocessorstate/RF traffic/calibration evidence",
+    "Allhandles80873,65835,71754,31811,50538,36058 collected; no job active",
+    "Default e1fd carrier never analyzed/promoted; R24sources read-only androotR26 untouched"
+  ],
+  "remaining": [
+    "Decode actual selectednomu AuC M2A packet/FCS consumer through queue/WMAC policy with qualifiedcustomISA",
+    "Resolve any perframe OCS/probe scheduling exemption versusCACmeasurementpermission withrole/channel/deadline",
+    "Recover exactrevoke/completion contract, keep globalioctl26/cmd21 excluded",
+    "Current5GHz functionality andruntimeAUC_TX remainunverified; compilation delivery separate"
+  ]
+}

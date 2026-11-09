@@ -1,0 +1,35 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-r24-pipeline-independent-review-20261023T054600Z-r1/R24_PIPELINE_REVIEW.md",
+      "source": "outputs/rea/linux73-r24-pipeline-independent-review-20261023T054600Z-r1/R24_PIPELINE_REVIEW.md",
+      "bytes": 1539,
+      "sha256": "c56e254f0d80ae3b718971661b00f0b43d754e249d24efd6a66acbf8296b35ff",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-pipeline-independent-review-20261023T054600Z-r1/result.json",
+      "source": "outputs/rea/linux73-r24-pipeline-independent-review-20261023T054600Z-r1/result.json",
+      "bytes": 6543,
+      "sha256": "c23fa4ae3da9c050a9205c067558354cd0dabf65b12bd1911f4193a34d8c5e4b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r24/prepare_linux73_sram_writer_lease.py",
+      "source": "tools/prepare_linux73_sram_writer_lease.py",
+      "bytes": 6206,
+      "sha256": "4165b3e691d29aa2c07e0731e392f0aacdbda158f7e2b5d1d05461249688968c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r24/test_linux73_sram_writer_lease.py",
+      "source": "tools/test_linux73_sram_writer_lease.py",
+      "bytes": 8004,
+      "sha256": "e28d2e406e91cfe63b5038f9edd78d53f36503aa8eb2fb01dd34620305488031",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

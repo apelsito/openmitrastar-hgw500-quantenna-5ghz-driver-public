@@ -1,0 +1,23 @@
+{
+  "command": [
+    "node",
+    "/home/rea/openmitrastar-oem-abi3-ops-20261022T131800Z/rea-agents/scripts/rea.mjs",
+    "function",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/oem-qdrv-callback-label-20261022T132700Z-r1/qdrv-OEM-CALLBACK-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+    "--procedure",
+    "om_oem_qdrv_getparam",
+    "--provider",
+    "ghidra",
+    "--format",
+    "json",
+    "--full-output"
+  ],
+  "started_utc": "2026-10-22T13:26:07.856411+00:00",
+  "finished_utc": "2026-10-22T13:27:19.887342+00:00",
+  "exit_code": 0,
+  "target_sha256": "7a653701ca1807fcc6dc73de1321a35b0beaea2715f439aa24f7adeec0c84518",
+  "target_unchanged": true,
+  "hardware_accessed": false,
+  "rea_output_sha256": "0b83e367a2cf12882c8bc6a1fd63c7f463cc5154f704fe7ea4481065454fcf6e",
+  "lab_manifest_sha256": "52c6398928aa707950b03adcbac03d04a6cc04333502eb579c9acf63dbf32c64"
+}

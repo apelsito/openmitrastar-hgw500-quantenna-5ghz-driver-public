@@ -1,0 +1,132 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-r20-dma-independent-fixture-20261022T215400Z-r1/actual-dma.c",
+      "source": "outputs/rea/linux73-r20-dma-independent-fixture-20261022T215400Z-r1/actual-dma.c",
+      "bytes": 9577,
+      "sha256": "6e752010cfcb63574f67dd800af4837f936cd30d981599856c6489ab7b794f7d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-dma-independent-fixture-20261022T215400Z-r1/result.json",
+      "source": "outputs/rea/linux73-r20-dma-independent-fixture-20261022T215400Z-r1/result.json",
+      "bytes": 1268,
+      "sha256": "47916d87edc3b344145fba407b6bcad94c4732ee472f5b39c30cf8bc868a5a0f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-gpio-owner-fixture-20261022T215600Z-r1/actual-gpio-init-exit.c",
+      "source": "outputs/rea/linux73-r20-gpio-owner-fixture-20261022T215600Z-r1/actual-gpio-init-exit.c",
+      "bytes": 2469,
+      "sha256": "7d9e701914ffec4f7b794e9306db598a490d12e2bcd9317d76db190ba32b4109",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-gpio-owner-fixture-20261022T215600Z-r1/result.json",
+      "source": "outputs/rea/linux73-r20-gpio-owner-fixture-20261022T215600Z-r1/result.json",
+      "bytes": 1187,
+      "sha256": "37761f34b84f3004f5acdecd5569d5d4eb2860a711b4726ac7cbe6cc2df5b45b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/compile.log",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/fixture.c",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/fixture.c",
+      "bytes": 2381,
+      "sha256": "c20e6df2a1f49a47cd90587f7f39fd6d672858b32f01fb285640f733899b2647",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/result.json",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/result.json",
+      "bytes": 1100,
+      "sha256": "8262a25441acef88ce59612f6cd25e3aa433aefe58e238780bccc55ab3a22deb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/run.log",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/run.log",
+      "bytes": 75,
+      "sha256": "3e5b1986a37aa475e2df915dd2db209d9f126a2c69bf0a7300e066a0130c8075",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/shim.h",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/shim.h",
+      "bytes": 3076,
+      "sha256": "2b1e45b80cfa7e11522344260a29ace49969ad4eed0d72a77a19aae6bfd4edb7",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/asm/cacheflush.h",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/asm/cacheflush.h",
+      "bytes": 35,
+      "sha256": "7023aabb2df0ecac13d48c6b59e8641d6d5f9fe0b2f0521420b36d4f55a3f29e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/asm/io.h",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/asm/io.h",
+      "bytes": 35,
+      "sha256": "7023aabb2df0ecac13d48c6b59e8641d6d5f9fe0b2f0521420b36d4f55a3f29e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/list.h",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/list.h",
+      "bytes": 35,
+      "sha256": "7023aabb2df0ecac13d48c6b59e8641d6d5f9fe0b2f0521420b36d4f55a3f29e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/log2.h",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/log2.h",
+      "bytes": 35,
+      "sha256": "7023aabb2df0ecac13d48c6b59e8641d6d5f9fe0b2f0521420b36d4f55a3f29e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/module.h",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/module.h",
+      "bytes": 35,
+      "sha256": "7023aabb2df0ecac13d48c6b59e8641d6d5f9fe0b2f0521420b36d4f55a3f29e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/overflow.h",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/overflow.h",
+      "bytes": 35,
+      "sha256": "7023aabb2df0ecac13d48c6b59e8641d6d5f9fe0b2f0521420b36d4f55a3f29e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/slab.h",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/slab.h",
+      "bytes": 35,
+      "sha256": "7023aabb2df0ecac13d48c6b59e8641d6d5f9fe0b2f0521420b36d4f55a3f29e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/spinlock.h",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/linux/spinlock.h",
+      "bytes": 35,
+      "sha256": "7023aabb2df0ecac13d48c6b59e8641d6d5f9fe0b2f0521420b36d4f55a3f29e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/qtn/dmautil.h",
+      "source": "outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/include/qtn/dmautil.h",
+      "bytes": 35,
+      "sha256": "7023aabb2df0ecac13d48c6b59e8641d6d5f9fe0b2f0521420b36d4f55a3f29e",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "hardware_accessed": false
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SOURCE_R8_ACTUAL_ATOMIC_TYPED_SUCCESS_DEQUEUE_BLOCK",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "facts": {
+    "newbatch_credit_pointer_preserved": true
+  },
+  "source_sha256": "659c422a7f0c97ddc4c7b08c31df8047ef8e040c97e6c863c719f260a9bb9e6b",
+  "fixture_sha256": "3699f7fe6a629022f5a4fcb92d4144f2e51afe3691166c69b14bd036e30ad07a",
+  "limits": "Selectedlastsuccessproducerinterruptionfixture withfakeIRQ/dequeue. Actualnewcallerblock+actualhelper used; noSMP/universalqueueallwriteracceptance."
+}

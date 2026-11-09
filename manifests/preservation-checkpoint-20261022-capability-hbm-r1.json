@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "path": "evidence/consolidated23-beacon-r12-capability-audit-20261022T212200Z-r1/ieee80211_add_rrm_enabled.objdump.txt",
+      "bytes": 1654,
+      "sha256": "03181b56e019ac59827ebf956f993609ca404bdcc60b56f129042eaafbb7d620"
+    },
+    {
+      "path": "evidence/consolidated23-beacon-r12-capability-audit-20261022T212200Z-r1/ieee80211_update_bss_tm.objdump.txt",
+      "bytes": 2432,
+      "sha256": "4c65e7bbc940513d7f08e216598ea13ca5e917f9f08cdcd0f1e66122505dd71b"
+    },
+    {
+      "path": "evidence/consolidated23-beacon-r12-capability-audit-20261022T212200Z-r1/result.json",
+      "bytes": 9620,
+      "sha256": "69fecb1762e2ae2e4ac761805f80010e9db0656b340c2b6eb2b715e5d7572970"
+    },
+    {
+      "path": "evidence/consolidated23-beacon-r12-capability-audit-20261022T212200Z-r1/seal.py",
+      "bytes": 7172,
+      "sha256": "fef4e4a81195f03c3e67927709e9f1bef3a3c05734b2b704e86a75516c621a37"
+    },
+    {
+      "path": "evidence/consolidated23-beacon-r12-capability-paths-20261022T212000Z-r2/actual-capability-paths.c",
+      "bytes": 12924,
+      "sha256": "51abe70917ec2fbd9d0906a10e3a53a51ca795c2721f9d7bfbe081b6f9799f32"
+    },
+    {
+      "path": "evidence/consolidated23-beacon-r12-capability-paths-20261022T212000Z-r2/result.json",
+      "bytes": 3963,
+      "sha256": "72c6f47efc1f71a7f13476caac19e8923cf6c3bcc19052b2b2d62f7e65a0eca3"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-hbm-full-baseline-r1/input-pins.json",
+      "bytes": 168519,
+      "sha256": "4e3e95bee48dab6daaa0bab9a03d19bf6c4fb684b69339d7261446cdcc3d47b4"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-hbm-full-baseline-r1/result.json",
+      "bytes": 889,
+      "sha256": "84dc594a9c740bbc7d0cf0986a2c3a0078672bfca961cc6409613a9b71c1b551"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-hbm-combined-finalref-void-bypass-r3/actual-combined-finalref-void-bypass.c",
+      "bytes": 11754,
+      "sha256": "7bca71ad35e02917d72b248d4b3b51776dd63fa9e40d17dde184c63fafb75d13"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-hbm-combined-finalref-void-bypass-r3/result.json",
+      "bytes": 1507,
+      "sha256": "7eb106116a7e86917e9b2349c296e94893fef92540cd68dd6c7176997dba76a1"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-hbm-lhost-header-closure-r1/result.json",
+      "bytes": 11192,
+      "sha256": "69205c7fa6e0e077bde88eb1ee6b9f3f8a0249c9effafa909bcda4b168b24fe0"
+    }
+  ],
+  "hardware_accessed": false
+}

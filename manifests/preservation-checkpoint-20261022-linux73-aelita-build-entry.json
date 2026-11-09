@@ -1,0 +1,175 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "tools/linux73_build_aelita.py",
+      "source": "repos/openmitrastar-hgw500-quantenna-5ghz-driver/tools/linux73_build_aelita.py",
+      "bytes": 15669,
+      "sha256": "6eb8199d80b6ccb1aa4486194d302b5646b2ddf5c43bfdc658c55c3a5a2d56a4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-BRIDGE.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-BRIDGE.config",
+      "bytes": 53546,
+      "sha256": "a22a16ce68a7a077e63ccacc1d13d2b1b432eb519cc5f56ad976d648558b4419",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-CFG80211.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-CFG80211.config",
+      "bytes": 53544,
+      "sha256": "5c16ab2a284226f5727b947fc62a4b7beae8a9e1d708b88b3d4c9a43478a8c3f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-CFG80211_REQUIRE_SIGNED_REGDB.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-CFG80211_REQUIRE_SIGNED_REGDB.config",
+      "bytes": 53523,
+      "sha256": "de36909b7fc87a2b46ff8a42cb012e6cf35c3e64e3e879f97f97295546cd4a4e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-CFG80211_USE_KERNEL_REGDB_KEYS.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-CFG80211_USE_KERNEL_REGDB_KEYS.config",
+      "bytes": 53522,
+      "sha256": "61d401a218d40e685f08fc0d84553e4f8fa6fad711ee0b6b9bbd989e4d2f4157",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-CRYPTO_LIB_AES.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-CRYPTO_LIB_AES.config",
+      "bytes": 53538,
+      "sha256": "7dd7505b710d992974c4c08529e4ffa9b8cbafd43b212c129e10c268853488ad",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-GPIOLIB.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-GPIOLIB.config",
+      "bytes": 53545,
+      "sha256": "cf38e653d5e76c33bf0cb68cbf3ddb9e77f9716f0dc9a32db2260635f18930b4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-I2C.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-I2C.config",
+      "bytes": 53549,
+      "sha256": "e634f2fa14d78dbc37e64ef7311806fa26a433b0ed4118e8da06cd8f339f8ae2",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-IPV6.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-IPV6.config",
+      "bytes": 53548,
+      "sha256": "db5ede8502811050b9b4dc5158da89691ffee9d6326e7dfe4c1e32d3d5d56ea0",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-MAC80211.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-MAC80211.config",
+      "bytes": 53544,
+      "sha256": "b468cc2986d0eb2b7d966b4631603e64084c40d99fe8b47418d1a6646e873f1e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-NET_SCHED.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-NET_SCHED.config",
+      "bytes": 53543,
+      "sha256": "5192602254646950e11f032806c8f3bf6dcbb035a6ca57ec6287975de96ec9a5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-OPENMITRASTAR_QDRV_COMPAT.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-OPENMITRASTAR_QDRV_COMPAT.config",
+      "bytes": 53527,
+      "sha256": "9307a9d35132408c9d51b2bef2aac4531a6a0b068ff3ebf5536a1fc543d1ced5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-QTN_TOPAZ_ETH73.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-QTN_TOPAZ_ETH73.config",
+      "bytes": 53537,
+      "sha256": "2a491c93306d3bdfc889bc22756b4e42a371be3f215dd55c79e7aff21cd1f6e7",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-RTL8192EE.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-RTL8192EE.config",
+      "bytes": 53543,
+      "sha256": "5916fcfa1e50fe47ae76ca11e9590b22631e815adb70a6b671b0a3b56101394e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-WEXT_CORE.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-WEXT_CORE.config",
+      "bytes": 53543,
+      "sha256": "7b467a6e81226c1322e73f59b60cba399966e150a10b480027868e63b61a7d6f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-WEXT_PRIV.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-WEXT_PRIV.config",
+      "bytes": 53543,
+      "sha256": "29b1150f49d751fd8e86955bbc507044432aa18592d2b452516f88c27d8195cd",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-WIRELESS_EXT.config",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/dropped-WIRELESS_EXT.config",
+      "bytes": 53540,
+      "sha256": "c1974cac3a9a03b0fed911ee4ec6ebc92b9ee7e01d0870076fc910a79e74e832",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/input-pins.json",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/input-pins.json",
+      "bytes": 1388,
+      "sha256": "ddce510a82c6b13b610e850673645a4cfe5fbf85e9c9e276d0aa8f38be78f65a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/result.json",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/result.json",
+      "bytes": 3030,
+      "sha256": "22c5edeb98959b6e124135a5956433badce698b6b0394784f15484fefe4dde0e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/valid.stderr",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/valid.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-actual-plan-20261022T234200Z-r1/valid.stdout",
+      "source": "outputs/rea/linux73-aelita-actual-plan-20261022T234200Z-r1/valid.stdout",
+      "bytes": 8785,
+      "sha256": "004d4f065fe3a3decff947efe4a32ece61608a8cd43e5b6fed62ccfc409f43a2",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-build-aelita-derivation-20261022T234000Z-r1/result.json",
+      "source": "outputs/rea/linux73-build-aelita-derivation-20261022T234000Z-r1/result.json",
+      "bytes": 889,
+      "sha256": "74d4967f405c568a18ca602aaa7da8cc4ad2ebd7cf5022e68de0e8cd101ece0a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-aelita/create_linux73_build_aelita.py",
+      "source": "tools/create_linux73_build_aelita.py",
+      "bytes": 4557,
+      "sha256": "6f45f8cfde7ee642f24bf56039b76c7a960581741ef19c0bd36ce99ab5efc8e2",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-aelita/test_linux73_build_aelita_actual_plan.py",
+      "source": "tools/test_linux73_build_aelita_actual_plan.py",
+      "bytes": 4449,
+      "sha256": "2d7d1644650eb3fc693ecefc092779faad67142f5a0df3be74e6b6b85a991c88",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

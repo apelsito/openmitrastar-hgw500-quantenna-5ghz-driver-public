@@ -1,0 +1,30 @@
+{
+  "status": "PASS_OFFLINE_NAC22_RECORD_SEMANTICS_AND_PARENT_CLOSURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "private_records": 588,
+  "original_records_recovered": 22,
+  "remaining_original_records": 22,
+  "modules": [
+    {
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-nac22-module-r1/a/wlan/wlan.ko",
+      "bytes": 630628,
+      "sha256": "dd4896a969b3033e41f8c63eac27b12b1844bd86dd1a506e69c7be5a485b4621"
+    },
+    {
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-nac22-module-r1/b/wlan/wlan.ko",
+      "bytes": 630628,
+      "sha256": "dd4896a969b3033e41f8c63eac27b12b1844bd86dd1a506e69c7be5a485b4621"
+    }
+  ],
+  "parent_unchanged_units_verified": 36,
+  "fixture_prefix_samples": 16711680,
+  "fixture_setter_cases": 1048576,
+  "negative_cases": 7,
+  "pins_verified": 1652,
+  "getter_semantics": "Sampledscalarpacking; notcoherenttuple; missing/zero EAGAIN safetydeviation",
+  "lifecycle": "F355/VAPstartlifetime retained baseline, newmonitorphysicalacceptance UNRUN",
+  "limits": "TwolegacyEOPNOTSUPP plusNACsnapshotlimitations; no22feature/radio/traffic/releaseacceptanceclaim"
+}

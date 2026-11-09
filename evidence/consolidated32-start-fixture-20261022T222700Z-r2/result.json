@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ACTUAL_KERNEL_START_LEGACY_RESERVATION_GUARD",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 5,
+  "legacy_start_steals_reservation": false,
+  "typed_start_return": 1,
+  "requested_owner_matches_scanner": true,
+  "input_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_chanset461_actual_scan_start.py": "cec7c55cb16c79a44608f347d0da97445b9211dff7931f7a4d0bb4190019e1c7",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_chanset461_kernel_critical_review.py": "7d09ab6eb7e4be16885216757f8cd33cf1e5706d0548c6722d86e6b15547f0c6",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\prepare_tqe_bounded_admission_prototype.py": "5ccf2122d233ee5c6e81640df5f659518e8099621fefe58eb8ef09851717ad27",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated32-source-20261022T222600Z-r2\\source\\wlan\\ieee80211_scan.c": "539ba2dc423ea36feaf4151411bda59c2ba8c07503a1241dfaa38c29fad7f266",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated32-source-20261022T222600Z-r2\\source\\wlan\\openmitrastar_chanset_kernel.inc": "42cad6124219aeb9278f81eadc52cb0438d2cbe2bdc8cac572e5a3b9db37af93",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated32-source-20261022T222600Z-r2\\source\\wlan\\openmitrastar_chanset_recovered.c": "72458854f8208e6fb4ae2e4265df9ad6da8ac89085947433623bb15c8ce68408",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated32-source-20261022T222600Z-r2\\source\\wlan\\openmitrastar_chanset_recovered.h": "bd0dd1247dbd534a0461e1462b4270c38e247bdf593cb721ff3f4d2a559e4245",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated32-source-20261022T222600Z-r2\\source\\wlan\\openmitrastar_chanset_tables.h": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492"
+  },
+  "fixture_sha256": "64e1876e596341c84019c1b3db13c357c52bce75826bf59d67b03d80585a67e5",
+  "limits": "Actual complete start function/adapter; one wrapper inserts legacy start between reservation and actual requestedstart. Scanner hooks/IRQ locks fake; source counterexample, no kernel runtime acceptance."
+}

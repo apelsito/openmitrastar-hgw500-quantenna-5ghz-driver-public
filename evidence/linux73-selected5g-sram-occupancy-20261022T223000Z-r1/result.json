@@ -1,0 +1,557 @@
+{
+  "status": "PASS_STATIC_SELECTED5G_CARRIERS_AND_KERNEL_SRAM_OCCUPANCY_LEDGER_RESERVATION_UNPROVEN",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "carrier_selection": "RetainedF365reference hashes+fw_no_mu1; current7.3driverloaderpresentbutno7.3firmwarebootselectionphysicallyverified",
+  "carriers": [
+    {
+      "role": "MuC",
+      "file": "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/qtn_driver.qtn_ruby.0.bin",
+      "sha256": "71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4",
+      "bytes": 1094927,
+      "entry": "0xe0000",
+      "PT_LOAD": [
+        {
+          "index": 0,
+          "offset": 340,
+          "vaddr": 3800576,
+          "paddr": 0,
+          "filesz": 508,
+          "memsz": 508,
+          "flags": 5,
+          "align": 4096,
+          "loader_address": 3800576,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 1,
+          "offset": 848,
+          "vaddr": 4294901760,
+          "paddr": 0,
+          "filesz": 16,
+          "memsz": 16,
+          "flags": 6,
+          "align": 4096,
+          "loader_address": 4294901760,
+          "FWINFO_metadata_skipped": true,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 2,
+          "offset": 864,
+          "vaddr": 2147614720,
+          "paddr": 0,
+          "filesz": 65136,
+          "memsz": 65136,
+          "flags": 7,
+          "align": 4096,
+          "loader_address": 2147614720,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": {
+            "mapping": "BUS_OR_MUC",
+            "start": 131072,
+            "end": 196208
+          }
+        },
+        {
+          "index": 3,
+          "offset": 66000,
+          "vaddr": 2147614720,
+          "paddr": 4644868,
+          "filesz": 1732,
+          "memsz": 1732,
+          "flags": 5,
+          "align": 4096,
+          "loader_address": 4644868,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 4,
+          "offset": 67732,
+          "vaddr": 2147680256,
+          "paddr": 0,
+          "filesz": 38496,
+          "memsz": 38496,
+          "flags": 7,
+          "align": 4096,
+          "loader_address": 2147680256,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": {
+            "mapping": "BUS_OR_MUC",
+            "start": 196608,
+            "end": 235104
+          }
+        },
+        {
+          "index": 5,
+          "offset": 106228,
+          "vaddr": 1610851264,
+          "paddr": 2147722176,
+          "filesz": 18976,
+          "memsz": 18976,
+          "flags": 4,
+          "align": 4096,
+          "loader_address": 2147722176,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": {
+            "mapping": "BUS_OR_MUC",
+            "start": 238528,
+            "end": 257504
+          }
+        },
+        {
+          "index": 6,
+          "offset": 125204,
+          "vaddr": 2147545088,
+          "paddr": 0,
+          "filesz": 6592,
+          "memsz": 6592,
+          "flags": 6,
+          "align": 4096,
+          "loader_address": 2147545088,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": {
+            "mapping": "BUS_OR_MUC",
+            "start": 61440,
+            "end": 68032
+          }
+        },
+        {
+          "index": 7,
+          "offset": 125204,
+          "vaddr": 2147741632,
+          "paddr": 0,
+          "filesz": 0,
+          "memsz": 4096,
+          "flags": 6,
+          "align": 4096,
+          "loader_address": 2147741632,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": {
+            "mapping": "BUS_OR_MUC",
+            "start": 257984,
+            "end": 262080
+          }
+        },
+        {
+          "index": 8,
+          "offset": 131796,
+          "vaddr": 917504,
+          "paddr": 0,
+          "filesz": 963131,
+          "memsz": 2883072,
+          "flags": 7,
+          "align": 65536,
+          "loader_address": 917504,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        }
+      ]
+    },
+    {
+      "role": "AuC_nomU",
+      "file": "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/auc_driver.nomu.0.bin",
+      "sha256": "c10018f4fe384d753a800bbbcd5ef3c85c568d0852c221009063282d30fd85f6",
+      "bytes": 33342,
+      "entry": "0xe5000000",
+      "PT_LOAD": [
+        {
+          "index": 0,
+          "offset": 340,
+          "vaddr": 4294901760,
+          "paddr": 0,
+          "filesz": 16,
+          "memsz": 16,
+          "flags": 6,
+          "align": 4096,
+          "loader_address": 4294901760,
+          "FWINFO_metadata_skipped": true,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 1,
+          "offset": 356,
+          "vaddr": 4661248,
+          "paddr": 0,
+          "filesz": 2762,
+          "memsz": 1829472,
+          "flags": 6,
+          "align": 4096,
+          "loader_address": 4661248,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 2,
+          "offset": 3118,
+          "vaddr": 2147745792,
+          "paddr": 0,
+          "filesz": 0,
+          "memsz": 236544,
+          "flags": 6,
+          "align": 4096,
+          "loader_address": 2147745792,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": {
+            "mapping": "BUS_OR_MUC",
+            "start": 262144,
+            "end": 498688
+          }
+        },
+        {
+          "index": 3,
+          "offset": 3118,
+          "vaddr": 3843035136,
+          "paddr": 0,
+          "filesz": 704,
+          "memsz": 10124,
+          "flags": 6,
+          "align": 4096,
+          "loader_address": 3843035136,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 4,
+          "offset": 3822,
+          "vaddr": 3841982464,
+          "paddr": 0,
+          "filesz": 24832,
+          "memsz": 24832,
+          "flags": 5,
+          "align": 4096,
+          "loader_address": 3841982464,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 5,
+          "offset": 3822,
+          "vaddr": 3843046376,
+          "paddr": 0,
+          "filesz": 0,
+          "memsz": 1048,
+          "flags": 6,
+          "align": 4096,
+          "loader_address": 3843046376,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 6,
+          "offset": 28654,
+          "vaddr": 3841982464,
+          "paddr": 6536932,
+          "filesz": 480,
+          "memsz": 480,
+          "flags": 5,
+          "align": 4096,
+          "loader_address": 6536932,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 7,
+          "offset": 29134,
+          "vaddr": 3842012080,
+          "paddr": 0,
+          "filesz": 1340,
+          "memsz": 1340,
+          "flags": 5,
+          "align": 4096,
+          "loader_address": 3842012080,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 8,
+          "offset": 30474,
+          "vaddr": 3842012080,
+          "paddr": 6534064,
+          "filesz": 2868,
+          "memsz": 2868,
+          "flags": 5,
+          "align": 4096,
+          "loader_address": 6534064,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        }
+      ]
+    },
+    {
+      "role": "DSP",
+      "file": "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/rdsp_driver.0.bin",
+      "sha256": "87c882910d87cd29ba2004c4154e9240291aaad6aedb0ff4d90c7a5570be79fd",
+      "bytes": 246244,
+      "entry": "0x20000",
+      "PT_LOAD": [
+        {
+          "index": 0,
+          "offset": 180,
+          "vaddr": 4294901760,
+          "paddr": 0,
+          "filesz": 16,
+          "memsz": 16,
+          "flags": 6,
+          "align": 4096,
+          "loader_address": 4294901760,
+          "FWINFO_metadata_skipped": true,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 1,
+          "offset": 196,
+          "vaddr": 131072,
+          "paddr": 0,
+          "filesz": 246020,
+          "memsz": 633760,
+          "flags": 7,
+          "align": 65536,
+          "loader_address": 131072,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": false,
+          "SRAM": null
+        },
+        {
+          "index": 2,
+          "offset": 246216,
+          "vaddr": 3707240448,
+          "paddr": 0,
+          "filesz": 0,
+          "memsz": 16320,
+          "flags": 6,
+          "align": 4096,
+          "loader_address": 3707240448,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": true,
+          "SRAM": null
+        },
+        {
+          "index": 3,
+          "offset": 246216,
+          "vaddr": 3707371520,
+          "paddr": 0,
+          "filesz": 0,
+          "memsz": 16384,
+          "flags": 6,
+          "align": 4096,
+          "loader_address": 3707371520,
+          "FWINFO_metadata_skipped": false,
+          "DSP_XY_memory_skipped": true,
+          "SRAM": null
+        }
+      ]
+    }
+  ],
+  "kernel": {
+    "sha256": "335f792bc0e82d112db27c3b39c757ea1190df276154d44e23dc218a74b2e16f",
+    "entry": "0x84ca4000",
+    "PT_LOAD": [
+      {
+        "index": 0,
+        "offset": 8192,
+        "vaddr": 2224267264,
+        "paddr": 2224267264,
+        "filesz": 7296352,
+        "memsz": 7504172,
+        "flags": 7,
+        "align": 8192
+      }
+    ],
+    "SRAM_load_overlap_bytes": 0,
+    "SRAM_linker_symbols": []
+  },
+  "module_section_placement": [
+    {
+      "module": "hbm",
+      "sha256": "cd6df7a8dfeb338c45cde61b2c212e7da7ca60eb8dcf2545b80028290ed517d0",
+      "SRAM_named_sections": [
+        "[10] .sram.text        PROGBITS        00000000 001b08 00015c 00  AX  0   0  4",
+        "[11] .rela.sram.text   RELA            00000000 004e1c 000060 0c   I 31  10  4",
+        "[18] .sram.data        PROGBITS        00000000 001cb4 000004 00  WA  0   0  4"
+      ],
+      "placement": "Genericmoduleexecmem_RAM;notfixedSRAMaddressfromsectionname"
+    },
+    {
+      "module": "qdrv",
+      "sha256": "8ea3a3e08a6861a46ff36b542f3655d3f3db332e02d3794d578c3cb4e1661b74",
+      "SRAM_named_sections": [],
+      "placement": "Genericmoduleexecmem_RAM;notfixedSRAMaddressfromsectionname"
+    },
+    {
+      "module": "qtn_platform_support",
+      "sha256": "bfddd845d9e83fcdb07464d92317e7aa8d8b3cabaa3a2d91a842ac7c28fb2352",
+      "SRAM_named_sections": [],
+      "placement": "Genericmoduleexecmem_RAM;notfixedSRAMaddressfromsectionname"
+    }
+  ],
+  "known_host_ranges": [
+    {
+      "owner": "HBM_EMAC_pointer_pool",
+      "start": 0,
+      "end": 32768,
+      "evidence": "HBMfixedpointerwrites+ARCmacroprofile"
+    },
+    {
+      "owner": "HBM_WMAC_pointer_pool",
+      "start": 32768,
+      "end": 40960,
+      "evidence": "HBMfixedpointerwrites+ARCmacroprofile"
+    },
+    {
+      "owner": "HBM_TXDONE_pointer_pool",
+      "start": 40960,
+      "end": 57344,
+      "evidence": "HBMfixedpointerwrites+ARCmacroprofile"
+    },
+    {
+      "owner": "FWT_profile_reserved",
+      "start": 57344,
+      "end": 61440,
+      "evidence": "Headerreservationnotclaimedallruntimewrites"
+    },
+    {
+      "owner": "MuC_extra_profile_reserved",
+      "start": 61440,
+      "end": 69632,
+      "evidence": "HeaderreservationincludesMuCloadf000-109c0"
+    },
+    {
+      "owner": "AuCclear_mem",
+      "start": 262144,
+      "end": 458752,
+      "evidence": "qdrv_auc.c exactclearcall"
+    }
+  ],
+  "proposed_interval": {
+    "start": 73728,
+    "end": 131072
+  },
+  "known_overlaps": [],
+  "known_static_overlap_bytes": 0,
+  "universal_runtime_overlap": "UNKNOWN",
+  "AuC_nomU_vs_GPL_qmatrix_overlap": [
+    {
+      "mapping": "BUS_OR_MUC",
+      "start": 262144,
+      "end": 498688,
+      "owner": "AuC_nomU_PT_LOAD_2",
+      "evidence": "EXACT_SELECTED_CARRIER_LOAD_MEMSZ",
+      "overlap_bytes": 39936
+    }
+  ],
+  "fixed_source_hits": [
+    {
+      "path": "source/qdrv/qdrv_auc.c",
+      "line": 58,
+      "text": "auc_clear_addr_range(RUBY_SRAM_BEGIN + CONFIG_ARC_AUC_SRAM_BASE, CONFIG_ARC_AUC_SRAM_SIZE);"
+    },
+    {
+      "path": "source/qdrv/qdrv_control.c",
+      "line": 3338,
+      "text": ".allowed_start = RUBY_SRAM_BEGIN,"
+    },
+    {
+      "path": "source/qdrv/qdrv_control.c",
+      "line": 3342,
+      "text": "{ \"muc-sram-b1\", RUBY_SRAM_BEGIN + CONFIG_ARC_MUC_SRAM_B1_BASE,"
+    },
+    {
+      "path": "source/qdrv/qdrv_control.c",
+      "line": 3343,
+      "text": "CONFIG_ARC_MUC_SRAM_B1_SIZE, RUBY_SRAM_BEGIN, RUBY_SRAM_SIZE },"
+    },
+    {
+      "path": "source/qdrv/qdrv_control.c",
+      "line": 3344,
+      "text": "{ \"muc-sram-b2\", RUBY_SRAM_BEGIN + CONFIG_ARC_MUC_SRAM_B2_BASE,"
+    },
+    {
+      "path": "source/qdrv/qdrv_control.c",
+      "line": 3345,
+      "text": "CONFIG_ARC_MUC_SRAM_B2_SIZE, RUBY_SRAM_BEGIN, RUBY_SRAM_SIZE },"
+    },
+    {
+      "path": "source/qdrv/qdrv_control.c",
+      "line": 3347,
+      "text": "RUBY_SRAM_BEGIN, RUBY_SRAM_SIZE },"
+    },
+    {
+      "path": "source/qdrv/qdrv_control.c",
+      "line": 6075,
+      "text": "auc_sram_start = RUBY_SRAM_BEGIN + CONFIG_ARC_AUC_SRAM_BASE;"
+    },
+    {
+      "path": "source/qdrv/qdrv_control.c",
+      "line": 6076,
+      "text": "auc_sram_end = RUBY_SRAM_BEGIN + CONFIG_ARC_AUC_SRAM_END;"
+    },
+    {
+      "path": "source/platform/topaz/hbm.c",
+      "line": 509,
+      "text": "uintptr_t *topaz_hbm_emac_rx_ptrs = (void *) (RUBY_SRAM_BEGIN + TOPAZ_HBM_POOL_EMAC_RX_START);"
+    },
+    {
+      "path": "source/platform/topaz/hbm.c",
+      "line": 510,
+      "text": "uintptr_t *topaz_hbm_wmac_rx_ptrs = (void *) (RUBY_SRAM_BEGIN + TOPAZ_HBM_POOL_WMAC_RX_START);"
+    },
+    {
+      "path": "source/platform/topaz/hbm.c",
+      "line": 511,
+      "text": "uintptr_t *topaz_hbm_emac_free_ptrs = (void *) (RUBY_SRAM_BEGIN + TOPAZ_HBM_POOL_EMAC_TX_DONE_START);"
+    }
+  ],
+  "reservation_proposal": "reservation-proposal.json",
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/audit_linux73_firmware_sram_occupancy.py": "9ff2d704ccc273f19a771a69dd77d63cfb324ef4f396d53c47ca4318a1be5894",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/arc700-20261021-r2/f365-ram-activation/r3/payload/share/artifacts.sha256": "a8047f27a8853b8de258afa1639e0f9dab73f2ca274b1372972fee2219181e53",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/arc700-20261021-r2/f365-ram-activation/r3/payload/donor/om-radio5-start": "ff06739f9c05e33904a3248fe858d0e9ec236f2a49fe31b7816ca4afda5468f5",
+    "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/qtn_driver.qtn_ruby.0.bin": "71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4",
+    "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/auc_driver.nomu.0.bin": "c10018f4fe384d753a800bbbcd5ef3c85c568d0852c221009063282d30fd85f6",
+    "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/rdsp_driver.0.bin": "87c882910d87cd29ba2004c4154e9240291aaad6aedb0ff4d90c7a5570be79fd",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-kernel-v6/vmlinux": "335f792bc0e82d112db27c3b39c757ea1190df276154d44e23dc218a74b2e16f",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-oem-sram-map-witness-20261022T221600Z-r1/result.json": "4956ed1591f12ec4984e3fef05a60274342ffb151ee34efc63a819871f60e384",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/qdrv/qdrv_fw.c": "0bdc6c022f3dfe8b19a3294f5697722e7b83a3124383aeac872a91c807746a78",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/qdrv/qdrv_auc.c": "70eb8cc1a7761addb9d14b48c97d5bc5362656137bb048fcd3238fd77891c723",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/qdrv/qdrv_control.c": "04a03eb69951dbd0c30451a6e4b8dea35d5706d7659cfd696eaf18ece4c04d16",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/qdrv/qdrv_hal.c": "9073f72099b28a93e8794282ae5b87d7d32fca0ee5ebaf9b90cc6716f64a6691",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/platform/topaz/hbm.c": "154b557dfb36353f16809b2efe9884e6f21a0d3f4d7d846caf804744e141d39c",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/platform/topaz/fwt_if.c": "3469dae21a32f9c4901a7602a38665a5dec05ac62d8bf0ecfff3a757c02a9fbf",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-probe-v3/kernel-source/arch/arc/kernel/module.c": "86a4acae96e4e2a92407efeae3f6389ac192b1905357ed84e6a7d55ab3604fc8",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-probe-v3/kernel-source/kernel/module/main.c": "1f5d5be6ab700c727b43eac28664fa5cefae747ce431f4e167a3a5523ca15da8",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-probe-v3/kernel-source/mm/execmem.c": "444ee1d9ee500a22c04ee2335009c721417fd78e126e1375f71912d6a8019e79",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-probe-v3/kernel-source/arch/arc/include/asm/processor.h": "4d6f4f468f10ad1ffac2ba25c77472ef00222b0e7b2f05dae80520b2f5e0ed87",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-module-v8-r20/hbm.ko": "cd6df7a8dfeb338c45cde61b2c212e7da7ca60eb8dcf2545b80028290ed517d0",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-module-v8-r20/qdrv.ko": "8ea3a3e08a6861a46ff36b542f3655d3f3db332e02d3794d578c3cb4e1661b74",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-module-v8-r20/qtn_platform_support.ko": "bfddd845d9e83fcdb07464d92317e7aa8d8b3cabaa3a2d91a842ac7c28fb2352"
+  },
+  "limits": [
+    "PT_LOADmemszload/BSSincludesexactloaderpaddr/vaddr+FWINFOmetadata/DSPXYskips; nofirmwarecodeexecution.",
+    "Staticselectedcarriers+kernel+hostfixedwritesgive0overlapfor12000-20000. ArbitraryindirectMCu/runtimewritesandresetlifetime are notboundedbyPT_LOAD.",
+    "AuCnomu/SRAMqmatrixoverlapisrealprofileconflictoutsidecandidate; selectedfw_no_mu1 doesnotproveallwritersdisabled.",
+    "Generic73moduleloaderplaces.sramnamedsectionsinmoduleexecmemordinaryRAM; sectionlabelalone doesnotreserveSRAM.",
+    "NoDTprivate/calibration/keys/MTD/RAMread/MMIO/TX/ioctl26/reservation/init/heapexports or driverchanges."
+  ]
+}

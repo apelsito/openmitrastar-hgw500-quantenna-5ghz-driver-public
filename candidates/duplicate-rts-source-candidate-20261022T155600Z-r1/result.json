@@ -1,0 +1,20 @@
+{
+  "status": "SOURCE_ONLY_DUP_RTS_PRIVATE_STATE_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "qdrv_source_sha256": "1f528c7fd2fef8d78d292282ef8296f6071d411898a9e0261d9b0a8e60a5994e",
+  "qdrv_header_sha256": "deaa788ae7b90cfd85d64bd59d5f4daec6b8ef04b71538f06686b5f8e7c45bcd",
+  "wlan_source_sha256": "8969d9885b4c9e3f8cef2b53e59f5cca7ad69955369345dc9600409dee36de8f",
+  "muc_evidence_sha256": "7d189be568965d12638dda61dbf82c14711246f4392b14a904f239b241f58b26",
+  "entries_total_added": 18,
+  "functional_source_ops": 16,
+  "unsupported_faithful": 2,
+  "remaining_original_table_gaps": 26,
+  "behavior_delta": "Reportedlow8state movedOEMWLANic\u2192privateQDRVtail; fullu32SETPARAM11payload preserved",
+  "limits": [
+    "PairednewQDRVrequired forgetter; staleWLAN-onlyactivationforbidden",
+    "EveryQDRVheaderuserneedsrebuild/prefixABI audit",
+    "UnderlyingMuCbit0/bit4effectsarestaticproofnotruntimeacceptance",
+    "NoPHY/regulatory/clientdatamutationexecuted"
+  ]
+}

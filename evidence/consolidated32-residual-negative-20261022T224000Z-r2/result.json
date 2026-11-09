@@ -1,0 +1,203 @@
+{
+  "status": "PASS_CONSOLIDATED32_COMPLETE_RESIDUALS_AND_ELEVEN_PARSED_NEGATIVES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "audits": {
+    "wlan": {
+      "status": "PASS_CONSOLIDATED32_COMPLETE_CODE_DATA_SYMBOL_RELA_SCOPE",
+      "component": "wlan",
+      "same_functions": 960,
+      "source_changed_functions": [
+        "__ieee80211_newstate.isra.0",
+        "_ieee80211_cancel_scan",
+        "ieee80211_ioctl_getparam",
+        "ieee80211_ioctl_setparam",
+        "ieee80211_scan_attach",
+        "ieee80211_scan_detach",
+        "ieee80211_scan_vdetach",
+        "ieee80211_start_scan",
+        "scan_next",
+        "scan_restart_pwrsav",
+        "send_probes"
+      ],
+      "source_new_functions": [
+        "change_channel.part.0",
+        "om_chanset_add_scan_type",
+        "om_chanset_cost",
+        "om_chanset_edges",
+        "om_chanset_end",
+        "om_chanset_find",
+        "om_chanset_kernel_active",
+        "om_chanset_kernel_allowed",
+        "om_chanset_kernel_cancel",
+        "om_chanset_kernel_finished",
+        "om_chanset_kernel_pick",
+        "om_chanset_kernel_policy",
+        "om_chanset_kernel_scan_type",
+        "om_chanset_kernel_start",
+        "om_chanset_normalize_sample",
+        "om_chanset_prepare",
+        "om_chanset_rank",
+        "om_chanset_rank_defaults",
+        "om_chanset_scan_advance",
+        "om_chanset_scan_request",
+        "om_chanset_scan_sample",
+        "om_chanset_select",
+        "om_chanset_template",
+        "om_chanset_update_scan_entry",
+        "om_cs_neighbor_record",
+        "om_cs_scale"
+      ],
+      "diagnostic_functions": [
+        "ieee80211_newstate",
+        "ieee80211_delete_wlanunit",
+        "ieee80211_ioctl_giwfreq",
+        "ieee80211_param_from_qdrv",
+        "ieee80211_should_scan"
+      ],
+      "residual_relocations": 9004,
+      "anonymous_gaps": [
+        {
+          "section": ".text",
+          "old_nop_bytes": 954,
+          "new_nop_bytes": 982,
+          "old_anonymous_bytes": 2810,
+          "anonymous_owner_exact": true
+        },
+        {
+          "section": ".text.unlikely",
+          "old_nop_bytes": 6,
+          "new_nop_bytes": 6,
+          "old_anonymous_bytes": 0,
+          "anonymous_owner_exact": true
+        },
+        {
+          "section": ".init.text",
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "old_anonymous_bytes": 0,
+          "anonymous_owner_exact": true
+        },
+        {
+          "section": ".exit.text",
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "old_anonymous_bytes": 2,
+          "anonymous_owner_exact": true
+        }
+      ],
+      "old_symbols": 2288,
+      "new_symbols": 2346,
+      "limits": "Changed/newsourcefunctionsfixturebound; nooriginaluniversalmetric/lifetime/RFproof."
+    },
+    "wlan_scan_ap": {
+      "status": "PASS_CONSOLIDATED32_COMPLETE_CODE_DATA_SYMBOL_RELA_SCOPE",
+      "component": "wlan_scan_ap",
+      "same_functions": 24,
+      "source_changed_functions": [
+        "ap_detach",
+        "ap_end",
+        "ap_pick_channel",
+        "unlock_ap_list.isra.0"
+      ],
+      "source_new_functions": [],
+      "diagnostic_functions": [],
+      "residual_relocations": 118,
+      "anonymous_gaps": [
+        {
+          "section": ".text",
+          "old_nop_bytes": 20,
+          "new_nop_bytes": 20,
+          "old_anonymous_bytes": 0,
+          "anonymous_owner_exact": true
+        },
+        {
+          "section": ".init.text",
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "old_anonymous_bytes": 2,
+          "anonymous_owner_exact": true
+        },
+        {
+          "section": ".exit.text",
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "old_anonymous_bytes": 2,
+          "anonymous_owner_exact": true
+        }
+      ],
+      "old_symbols": 107,
+      "new_symbols": 111,
+      "limits": "Changed/newsourcefunctionsfixturebound; nooriginaluniversalmetric/lifetime/RFproof."
+    }
+  },
+  "negative_cases": [
+    {
+      "component": "wlan",
+      "case": "function",
+      "rejected": true,
+      "reason": "('unrelatedfunction', ('ieee80211_setmode', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan",
+      "case": "anonymous",
+      "rejected": true,
+      "reason": "anonymousbytes .text"
+    },
+    {
+      "component": "wlan",
+      "case": "data",
+      "rejected": true,
+      "reason": "allresidualRELA [(('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 22), 27, ('function_literal', b'fwt_db_get_macs_behind_node\\x00', 0))][(('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 22), 27, ('function_literal', b'gwt_db_get_macs_behind_node\\x00', 0))]"
+    },
+    {
+      "component": "wlan",
+      "case": "relocation",
+      "rejected": true,
+      "reason": "allresidualRELA [(('object', ('ieee80211_setmode', '.text', 2, 0), 34), 27, ('ieee80211_reset_erp', '.text', 2, 1, 0))][(('object', ('ieee80211_setmode', '.text', 2, 0), 34), 27, ('ieee80211_reset_erp', '.text', 2, 1, 4))]"
+    },
+    {
+      "component": "wlan",
+      "case": "symbol",
+      "rejected": true,
+      "reason": "('oldsymattrs', ('ieee80211_setmode', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan",
+      "case": "new_symbol",
+      "rejected": true,
+      "reason": ""
+    },
+    {
+      "component": "wlan_scan_ap",
+      "case": "function",
+      "rejected": true,
+      "reason": "('unrelatedfunction', ('ap_start', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "case": "data",
+      "rejected": true,
+      "reason": "allocateddata .rodata"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "case": "relocation",
+      "rejected": true,
+      "reason": "allresidualRELA [(('object', ('ap_start', '.text', 2, 0), 56), 27, ('memset', '', 0, 1, 0))][(('object', ('ap_start', '.text', 2, 0), 56), 27, ('memset', '', 0, 1, 4))]"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "case": "symbol",
+      "rejected": true,
+      "reason": "('oldsymattrs', ('ap_start', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "case": "new_symbol",
+      "rejected": true,
+      "reason": ""
+    }
+  ],
+  "negative_count": 11
+}

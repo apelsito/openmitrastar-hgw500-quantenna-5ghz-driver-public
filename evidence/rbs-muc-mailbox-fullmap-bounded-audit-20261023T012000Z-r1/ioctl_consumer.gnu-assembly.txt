@@ -1,0 +1,90 @@
+   f11c8:	1ce8 b348           	st.aw	r13,[sp,-24]
+   f11cc:	1c04 37c0           	st	blink,[sp,4]
+   f11d0:	c642                	st_s	r14,[sp,0x8]
+   f11d2:	c743                	st_s	r15,[sp,0xc]
+   f11d4:	1c10 3400           	st	r16,[sp,16]
+   f11d8:	1600 700f 001c b26c 	ld	r15,[0x1cb26c]
+   f11e0:	1c14 3440           	st	r17,[sp,20]
+   f11e4:	274c 9000           	cmp	r15,0
+   f11e8:	00ec 0021           	beq.d	236	;0xf12d4
+   f11ec:	204a 2000           	mov	r16,0
+   f11f0:	170e 1102           	ldh	r2,[r15,14]
+   f11f4:	0ad9 01bf           	bbit1.d	r2,0x6,216	;0xf12cc
+   f11f8:	204a 2000           	mov	r16,0
+   f11fc:	1744 100d           	ld	r13,[r15,68]
+   f1200:	1500 1086           	ldb	r6,[r13]
+   f1204:	2644 0186           	and	r6,r6,0x6
+   f1208:	0ec5 01b1           	brne.d	r6,0x6,196	;0xf12cc
+   f120c:	2740 1b0e           	add	r14,r15,0x2c
+   f1210:	1508 1011           	ld	r17,[r13,8]
+   f1214:	094d 2011           	brne	r17,0,76	;0xf1260
+   f1218:	8731                	ld_s	r1,[r15,0x44]
+   f121a:	1101 0091           	ldb	r17,[r1,1]
+   f121e:	702a                	mov_s	r0,r17
+   f1220:	2022 0f80 000f 1ae8 	jl	0xf1ae8
+   f1228:	0811 0011           	brne	r0,0,16	;0xf1238
+   f122c:	702a                	mov_s	r0,r17
+   f122e:	2022 0f80 000f 1ae8 	jl	0xf1ae8
+   f1236:	e87c                	breq_s	r0,0,-8	;0xf122c
+   f1238:	1600 1000           	ld	r0,[r14]
+   f123c:	1000 0011           	ld	r17,[r0]
+   f1240:	090d 2010           	breq	r17,0,12	;0xf124c
+   f1244:	234a 1000           	mov	r11,0
+   f1248:	1800 02c0           	st	r11,[r0]
+   f124c:	1744 1008           	ld	r8,[r15,68]
+   f1250:	1001 1080           	ldb	r0,[r8,1]
+   f1254:	2022 0f80 000f 1b6c 	jl	0xf1b6c
+   f125c:	0971 2010           	breq	r17,0,112	;0xf12cc
+   f1260:	111c 2007           	ld	r7,[r17,28]
+   f1264:	1d0c 1440           	st	r17,[r13,12]
+   f1268:	1100 2100           	ldh	r0,[r17]
+   f126c:	1d08 11c0           	st	r7,[r13,8]
+   f1270:	2022 0f80 000e 81c4 	jl	0xe81c4
+   f1278:	e888                	brne_s	r0,0,16	;0xf1288
+   f127a:	1118 2003           	ld	r3,[r17,24]
+   f127e:	bb80                	bset_s	r3,r3,0
+   f1280:	1918 20c0           	st	r3,[r17,24]
+   f1284:	0039 0000           	b	56	;0xf12bc
+   f1288:	1100 200a           	ld	r10,[r17]
+   f128c:	71cf 0018 cc88      	mov_s	r1,0x18cc88
+   f1292:	2115 0281           	add2	r1,r1,r10
+   f1296:	8140                	ld_s	r2,[r1,0]
+   f1298:	e201                	add_s	r2,r2,0x1
+   f129a:	a140                	st_s	r2,[r1,0]
+   f129c:	107c 0009           	ld	r9,[r0,124]
+   f12a0:	2023 0240           	jl.d	[r9]
+   f12a4:	210a 0440           	mov	r1,r17
+   f12a8:	1118 2005           	ld	r5,[r17,24]
+   f12ac:	254f 0005           	bset	r5,r5,0
+   f12b0:	1918 2140           	st	r5,[r17,24]
+   f12b4:	0815 0030           	breq.d	r0,0,20	;0xf12c8
+   f12b8:	2040 2050           	add	r16,r16,0x1
+   f12bc:	1118 2004           	ld	r4,[r17,24]
+   f12c0:	244f 0044           	bset	r4,r4,0x1
+   f12c4:	1918 2100           	st	r4,[r17,24]
+   f12c8:	0849 a292           	brlt	r16,0xa,-184	;0xf1210
+   f12cc:	1760 100f           	ld	r15,[r15,96]
+   f12d0:	0f21 9011           	brne	r15,0,-224	;0xf11f0
+   f12d4:	1404 301f           	ld	blink,[sp,4]
+   f12d8:	700a                	mov_s	r0,r16
+   f12da:	c602                	ld_s	r14,[sp,0x8]
+   f12dc:	c703                	ld_s	r15,[sp,0xc]
+   f12de:	1410 3010           	ld	r16,[sp,16]
+   f12e2:	1414 3011           	ld	r17,[sp,20]
+   f12e6:	7fe0                	j_s.d	[blink]
+   f12e8:	1418 340d           	ld.ab	r13,[sp,24]
+   f12ec:	1030 0004           	ld	r4,[r0,48]
+   f12f0:	244d 8000           	rcmp	r4,0
+   f12f4:	20e0 07ca           	jge	[blink]
+   f12f8:	1044 0005           	ld	r5,[r0,68]
+   f12fc:	240a 7100           	mov	lp_count,r4
+   f1300:	214a 0000           	mov	r1,0
+   f1304:	20a8 0280           	lp	20	;0xf1318
+   f1308:	6955                	asl_s	r2,r1,0x5
+   f130a:	2532 0083           	ldb	r3,[r5,r2]
+   f130e:	72a0                	add_s	r2,r2,r5
+   f1310:	e101                	add_s	r1,r1,0x1
+   f1312:	bb82                	bset_s	r3,r3,0x2
+   f1314:	1a00 00c2           	stb	r3,[r2]
+   f1318:	7ee0                	j_s	[blink]
+   f131a:	78e0                	nop_s

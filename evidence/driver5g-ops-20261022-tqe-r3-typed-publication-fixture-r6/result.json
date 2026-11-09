@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ACTUAL_TYPED_BATCH_BOUNDED_PUBLICATION_AND_OWNER_CATALOG",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 142,
+  "fanout_all1to135": true,
+  "full_catalog_refusal_preownership": true,
+  "partial135refs_onecatalog_owner": true,
+  "VLANdenied_no_forward_no_HBM_drop": true,
+  "no_catalog_growth_after_quarantine": true,
+  "fixture_sha256": "fe38ab11c93aef58a2fb9436d55ff5c158e0f25ddd39bd9d3e2fd8a0945c44f0",
+  "limits": "FakeIRQ/MMIO/VLAN; congestionretry policychanged to quarantine; no foreignfirmware/recovery/physicalacceptance."
+}

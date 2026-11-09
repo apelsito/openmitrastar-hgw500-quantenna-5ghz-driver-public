@@ -1,0 +1,64 @@
+{
+  "status": "PASS_WEATHER478_OFFLINE34_ROOT_REVIEW_BOUND_SOURCE37_PENDING",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "qualified_original_records": 34,
+  "remaining_original_records": 10,
+  "private_table_records": 600,
+  "qualifier_pins": 5544,
+  "root_review_status": "PASS_ROOT_INDEPENDENT_WEATHER478_SOURCE34_MODULE_REVIEW",
+  "source37_only": true,
+  "bounded467_in_source37": false,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\weather478-qualification-20261023T000100Z-r1\\result.json": "1c6296d7ee0111d757d19d9147971d3635df0d7c4e73c665ee5ad8bdea0187e7",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\weather478-qualification-20261023T000100Z-r1\\qualification-input-pins.json": "a712d6a32426e70f806de8c9c094f0a3448ac9538e297042a2e623d2780ca6f2",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\weather478-qualification-20261023T000100Z-r1\\complete-module-audit.json": "e3fdf1f02eca8f99abca99269b1d8921219e3418f13ed6f8a8a90d888981280e",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\weather478-root-independent-review-20261022T212000Z-r1\\result.json": "b6b7a11e59636476e7c16d8b38d4c66210ac4c2a63360c894d0f40f8629ada3c",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\mdid35-weather478-source37-20261023T000600Z-r1\\result.json": "b43b7271699d4e4fc4cbc2a2404a566a02847ce02ec9f9d3cfd73aabb015d1b0",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\weather478-handoff-20261023T000500Z-r1\\HANDOFF.md": "d6e7839c4d2335c2b1999ae6bc63f302a89724064ed73eac3da09f9aa4885ac7"
+  },
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/qdrv/qdrv.ko",
+      "bytes": 684948,
+      "sha256": "9fe3fc4001cc43e0dbd3b4beb449e7f3db928f0e71453760e47f201c28aa1e09"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan/wlan.ko",
+      "bytes": 660792,
+      "sha256": "89305c00819f74e0607679834b8e2c9c1b93d9c8c880c5e676b55fbe05af1404"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15868,
+      "sha256": "ff9d0c3a123a00b6b7dc1a68b4dd61bcb0175d16f0999e8732113d9ecf144148"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9760,
+      "sha256": "1eb355a9b96b2ee2a75382565f6a628d62c583aa21600f9b922d038f657d96d5"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13440,
+      "sha256": "02f83895c1e3343ee3cc0b2162e37e9428c66de36fa0e2b8a5ddd834d20dbf5f"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ]
+}

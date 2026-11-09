@@ -1,0 +1,39 @@
+{
+  "directory": "outputs\\rea\\rbs-auc-nomu-entry-20261023T015200Z-r1",
+  "procedure": {
+    "address": "0xe5000000",
+    "name": "entry",
+    "classification": {
+      "external": false,
+      "thunk": true,
+      "thunk_target": "0xe50073b0",
+      "provenance": "ghidra-function-manager"
+    },
+    "body": {
+      "available": true,
+      "provenance": "ghidra-function-body-address-set",
+      "ranges": [
+        {
+          "start": "0xe5000000",
+          "end": "0xe5000007"
+        }
+      ],
+      "total_bytes": 8,
+      "span_bytes": 8,
+      "non_contiguous": false,
+      "contains_entry": true
+    },
+    "signature": "undefined entry()",
+    "locals": []
+  },
+  "callees": [],
+  "limitations": [
+    "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+    "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+    "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+    "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+  ],
+  "rea_sha256": "c2507174be1db03f308bc02ef6a7fc29bc6bb051cf6b40daef42525db8e5acbb",
+  "started_utc": "2026-10-22T22:47:05.071416+00:00",
+  "finished_utc": "2026-10-22T22:47:21.522861+00:00"
+}

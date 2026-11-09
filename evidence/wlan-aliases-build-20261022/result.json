@@ -1,0 +1,33 @@
+{
+  "schema": "openmitrastar.wlan-txmaxmpdu-alias-module/v1",
+  "status": "PASS_FULL_LINKED_MODULE_PENDING_DELTA_QUALIFICATION",
+  "hardware_accessed": false,
+  "firmware_image": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "modules": [
+    {
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-wlan-alias-module-r2/a/wlan.ko",
+      "bytes": 629228,
+      "sha256": "0d86d01d2d89bedd54ce618b8a075cc922a6d55b547bc6ab30927bfc865e89b1"
+    },
+    {
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-wlan-alias-module-r2/b/wlan.ko",
+      "bytes": 629228,
+      "sha256": "0d86d01d2d89bedd54ce618b8a075cc922a6d55b547bc6ab30927bfc865e89b1"
+    }
+  ],
+  "changed_source": "/workspace/user-home/Desktop/MitraStar/outputs/rea/ioctl-alias-candidate-20261022T132600Z-r1/ieee80211_wireless.c",
+  "baseline_build": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-wlan-baseline-r2",
+  "limits": "Full source-built module linkage; whole module table/code/data/relocation delta qualification pending.",
+  "reproducible": true,
+  "baseline_compiled_units_reused": 18,
+  "changed_source_units_compiled_per_lane": 1,
+  "all_nineteen_source_built_units_linked": true,
+  "protected_inputs_unchanged": true,
+  "functions": 959,
+  "relocations": 9543,
+  "symbols": 2250
+}

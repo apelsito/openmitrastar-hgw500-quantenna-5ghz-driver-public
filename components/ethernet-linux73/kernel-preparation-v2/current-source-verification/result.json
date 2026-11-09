@@ -1,0 +1,19 @@
+{
+  "status": "PASS_PREPARED_PUBLIC_KERNEL73_SOURCE_HASHES_EXPLICIT_V6_R20_DELTA_NO_BUILD",
+  "hardware_accessed": false,
+  "source_files_verified": 95986,
+  "v6_changed_or_new_paths_exact": 34,
+  "declared_source_deltas": [
+    {
+      "path": "include/linux/soc/qtn/topaz-ethernet.h",
+      "v6_sha256": "59e06f782d8afa0eb0da5db7a9723d28c82678fe422dd51f34d7914b8a9f18c9",
+      "new_sha256": "b76ed50ef43801e20d91b5889445f19c54eb0758a445356133116a0d22f835d4"
+    }
+  ],
+  "new_packet_ABI_headers_selected": true,
+  "current_ETH_register_header_selected": true,
+  "private_DT_initramfs_identity_absent_from_selectedinputs": true,
+  "config_sha256": "39c4ba514fdb6c5a1491f96ac2352bb9964af5d86dd78cf0831d1fb161614f70",
+  "full_kernel_build": "UNRUN",
+  "generated_context": "ABSENT_UNTIL_ACTUAL_KERNEL_BUILD"
+}

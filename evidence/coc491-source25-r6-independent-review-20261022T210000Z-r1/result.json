@@ -1,0 +1,75 @@
+{
+  "status": "PASS_INDEPENDENT_COC491_R6_SOURCE_SEMANTICS_FOR_INITIALIZED_RETAINED_IC_PENDING_FULL_MODULES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "worker_reference_cases": 165888,
+  "callback_cases": 66,
+  "queue_cases": 64,
+  "basic_stop_cases": 6,
+  "producer_interleavings": 9,
+  "running_worker_canceljoin_model": {
+    "running_worker_joined_before_stop_return": true,
+    "stopped_producers_refused": true,
+    "running_worker_cannot_arm_CSA_after_stop": true
+  },
+  "observations": [
+    "TimercallbackdefersmutexQoS/log/eventtoexistingPMwork.",
+    "Requestpendingandtriggerconsumedunderqueue_lock; completiondrainprecedesfreshBSSsample.",
+    "stop->cancel_delayed_work_sync->del_timer_sync(CSA)->ifdetach orderverifiedinQDRV.",
+    "Actualplatformproviderusesmod_delayed_work(system_wq)/cancel_delayed_work_sync."
+  ],
+  "limits": [
+    "OnlyinitializedretainedICobjects: qdrv_wlan_80211_init ignoresieee80211_ifattacherrorinherited; preinitfailurecleanupnotproven.",
+    "WindowscanceljoinfixturemodelsLinuxcontract; physicalscheduler/work/CSAexecutionunrun.",
+    "Existingieee80211_finish_csa andotherCSAproducers remainexternal/unqualified; noentireIC/VAPteardownorcoherenttuplesafetyclaim.",
+    "F355normalunloadblockedaftercorestart; noforceunload/recovery/RFclienttrafficpersistence/releaseacceptance.",
+    "Full58unit2x+ARCABI/sameheadercontrolglobalscope stillrequired; no491mergeintoR12."
+  ],
+  "evidence_pins": [
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\coc491-source25-postcompletion-20261022T181500Z-r6\\source\\wlan\\ieee80211.c",
+      "bytes": 106471,
+      "sha256": "1d2b8e6464d8e0f03eb9d7d91b2518f8ae484069e5f026a1d4359bbf6d56c02d"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\coc491-source25-postcompletion-20261022T181500Z-r6\\source\\qdrv\\qdrv_wlan.c",
+      "bytes": 309084,
+      "sha256": "7801ca2b0b85cc2c33beecca2535e8231e5f5c64853a5669a179d69ac5a3dbfd"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\coc491-source25-postcompletion-20261022T181500Z-r6\\headers\\net80211\\ieee80211_var.h",
+      "bytes": 99767,
+      "sha256": "54e7ee3c271782bf07dcf5323021c197f87999e8de2918e0faea577f45c6fde3"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\coc491-source25-postcompletion-20261022T181500Z-r6\\result.json",
+      "bytes": 2736,
+      "sha256": "413b62f0b383a31043d6e32f7030a977050e69d1a3186d09c339147541b0f25c"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\ruby\\qtn_platform_support.c",
+      "bytes": 3540,
+      "sha256": "cb4c5dba83caebbcb84a31f881c5f547ba498f7b847d5cc227a68c9dc9eca38a"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\ruby\\qtn_pm_qos_compat.c",
+      "bytes": 4573,
+      "sha256": "a10dc9ae50b27504efbeb008899cbea78064781e14e69b00a79b57f27c62985e"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\coc491-source25-r6-independent-reference-20261022T205100Z-r1\\result.json",
+      "bytes": 803,
+      "sha256": "c1ff82a321b91c9851e2377396e79ec2e4e56b0cee6793b71128cbbdd017d24b"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\coc491-source25-r6-independent-interleaving-20261022T205600Z-r1\\result.json",
+      "bytes": 514,
+      "sha256": "1b288b2195069e61464fcbb400998eddc46d93c541bcda5abf56c7a4e1338e6c"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\coc491-source25-r6-independent-canceljoin-20261022T205900Z-r1\\result.json",
+      "bytes": 866,
+      "sha256": "b79a92ae138f3f904fc0bf098a352f4d6d379d2bd68721f5292d1e9af72696fa"
+    }
+  ]
+}

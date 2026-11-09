@@ -1,0 +1,21 @@
+{
+  "status": "PASS_ACTUAL_APP_HELPER_LENGTH_ALLOCATION_BH_TRANSACTION_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 1034,
+  "lengths": 1025,
+  "BH_injection_phases": 6,
+  "reentrant_lock_windows": 0,
+  "source_pins": {
+    "outputs\\rea\\consolidated23-beacon-r12-source-20261022T203200Z-r2\\source\\wlan\\ieee80211_wireless.c": "2accb30429544d7b07b1588efa12bfb30840d742e281ed0f205edcb2aaaa9ab5",
+    "outputs\\rea\\consolidated23-beacon-r12-source-20261022T203200Z-r2\\source\\wlan\\ieee80211_output.c": "6a353651d6d8f3a84a454f9ec51effceabd6af6b0378a35f13b681fa8abdba6d"
+  },
+  "fixture_sha256": "48861b5ae3919529e98f4cf620b8d80016c26b99bee8a792f06a3daff2d266d2",
+  "executable_sha256": "3bf69bf2df96e9f98a7c3c36f16e758d115e4495978d0ae288acbc7edf40d53e",
+  "compiler_sha256": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+  "limits": [
+    "Validator/allocation/lock/copy operate as host fakes. IE syntax validator not included.",
+    "APP helpers and1024byteownedframecopy tested; otherfullframeIEencodersnotexecuted.",
+    "BH exclusion modeledin6phases; noactualkernelSMP/hardIRQ/reentrancyorVAPobjectlifetimeacceptance."
+  ]
+}

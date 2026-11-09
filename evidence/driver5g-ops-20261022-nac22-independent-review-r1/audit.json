@@ -1,0 +1,27 @@
+{
+  "status": "PASS_EXACT_RESIDUAL_NAC22_MODULE_DELTA",
+  "changed": [
+    {
+      "index": 735,
+      "name": "ieee80211_ioctl_getparam",
+      "old_bytes": 5848,
+      "new_bytes": 5928,
+      "scope": "SOURCEFIXTUREEXACTNACSETANDGUARDEDGET"
+    },
+    {
+      "index": 759,
+      "name": "ieee80211_ioctl_setparam",
+      "old_bytes": 16404,
+      "new_bytes": 16512,
+      "scope": "SOURCEFIXTUREEXACTNACSETANDGUARDEDGET"
+    }
+  ],
+  "diagnostics": [
+    "ieee80211_delete_wlanunit",
+    "ieee80211_ioctl_giwfreq",
+    "ieee80211_param_from_qdrv"
+  ],
+  "residual_relocations": 9151,
+  "symbols": 2250,
+  "functions": 959
+}

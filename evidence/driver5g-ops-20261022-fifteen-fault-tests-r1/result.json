@@ -1,0 +1,43 @@
+{
+  "status": "PASS_ACTUAL_WLAN_15_DELTA_FAULT_CHECKS",
+  "cases": 7,
+  "outcomes": [
+    {
+      "case": "correct",
+      "outcome": "PASS",
+      "error": null
+    },
+    {
+      "case": "text",
+      "outcome": "REJECTED",
+      "error": "otherfunctionbus_to_virt"
+    },
+    {
+      "case": "relocation",
+      "outcome": "REJECTED",
+      "error": "unrelatedrelocations[(('section', '.text', 178), 27, ('section', '.rodata', 0))]"
+    },
+    {
+      "case": "rodata",
+      "outcome": "REJECTED",
+      "error": ""
+    },
+    {
+      "case": "string",
+      "outcome": "REJECTED",
+      "error": "unrelatedrelocations[(('section', '.text', 204), 27, ('string', '\\x016OMWLAN stage=fwt-client-list result=unsupported\\n'))]"
+    },
+    {
+      "case": "section",
+      "outcome": "REJECTED",
+      "error": "section membership"
+    },
+    {
+      "case": "flags",
+      "outcome": "REJECTED",
+      "error": "sectionattrs.rodata"
+    }
+  ],
+  "hardware_accessed": false,
+  "modules_modified": false
+}

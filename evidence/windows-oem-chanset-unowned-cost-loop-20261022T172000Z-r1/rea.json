@@ -1,0 +1,110 @@
+{
+  "ok": false,
+  "error": {
+    "code": "invalid_request",
+    "category": "invalid_input",
+    "message": "Analysis input is invalid. Check the arguments and try again.",
+    "retryable": true,
+    "remediation": {
+      "action": "Correct the listed arguments and retry."
+    },
+    "details": {
+      "operation": "analyze_function",
+      "issues": [
+        {
+          "path": [],
+          "reason": "invalid_value",
+          "message": "No procedure exists at the requested address: 0x1488e; Ghidra image base: 0x10000. Choose an observed analysis address. CLI: rea search <path> . --kind procedures --mode regex --provider ghidra --json; MCP: list_procedures. Inspect the loaded base and source mappings with CLI rea analyze <path> --provider ghidra --json and rea inspect-native-load-image <path> --provider ghidra --json, or MCP binary_overview and inspect_native_load_image. Repeat the original target options. For decompile, select source coordinates explicitly with --file-offset=0x... or MCP procedure file-offset:0x...."
+        }
+      ],
+      "diagnostics": {
+        "target_path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-wlan-missingops-20261022T134300Z-linked\\wlan-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+        "target_sha256": "79fbcbd4634a9fc32fdf8ac0c997f3bd0329131162a1ea4948794e4986c7e40a",
+        "target_admission": {
+          "source": {
+            "requestedPath": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-wlan-missingops-20261022T134300Z-linked\\wlan-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+            "finalPath": "\\\\?\\/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-wlan-missingops-20261022T134300Z-linked\\wlan-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+            "filesystem": "NTFS",
+            "volumeSerial": "fa0a08e20a089daf",
+            "fileId": "ecd54300000006000000000000000000",
+            "size": 669096,
+            "directory": false
+          },
+          "snapshot": {
+            "requestedPath": "/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\target-79fbcbd4634a.elf",
+            "finalPath": "\\\\?\\/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\target-79fbcbd4634a.elf",
+            "filesystem": "NTFS",
+            "volumeSerial": "fa0a08e20a089daf",
+            "fileId": "94bd2400000005000000000000000000",
+            "size": 669096,
+            "directory": false
+          }
+        },
+        "transport": "authenticated-loopback-tcp",
+        "provider_version": "12.1.4",
+        "profile_digest": "062cc9c84edc165607752b3a1340f7233db50ab838d8b6ea021dc50dde6c2397",
+        "run_id": "a0f0109f-e6ca-48ce-8cbc-664db5df876c",
+        "runtime_root": "/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a",
+        "endpoint_path": "/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\bridge-endpoint.json",
+        "project_root": "/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\project",
+        "ghidra_log_path": "/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\ghidra.log",
+        "script_log_path": "/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\script.log",
+        "process_id": 49048,
+        "launch_support": [
+          {
+            "mode": "-envvars",
+            "stderr": "NOTE: Picked up JDK_JAVA_OPTIONS: \"-Duser.home=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\home\" \"-Djava.io.tmpdir=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\tmp\" \"-XX:-UsePerfData\"\r\nPicked up JAVA_TOOL_OPTIONS: \nPicked up _JAVA_OPTIONS: \n",
+            "stderr_bytes": 308,
+            "stderr_truncated": false
+          },
+          {
+            "mode": "-vmargs",
+            "stderr": "NOTE: Picked up JDK_JAVA_OPTIONS: \"-Duser.home=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\home\" \"-Djava.io.tmpdir=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\tmp\" \"-XX:-UsePerfData\"\r\nPicked up JAVA_TOOL_OPTIONS: \nPicked up _JAVA_OPTIONS: \n",
+            "stderr_bytes": 308,
+            "stderr_truncated": false
+          }
+        ],
+        "exit_code": null,
+        "exit_signal": null,
+        "diagnostic_truncated": false,
+        "output_incomplete": false,
+        "stdout": {
+          "text": "INFO  Using log config file: jar:file://workspace/user-home/Desktop/MitraStar/outputs/rea/windows-arc700-static-lab-20261022T154500Z-r3/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  \r\nINFO  Using log file: /workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\ghidra.log (LoggingInitialization)  \r\nINFO  Loading user preferences: /workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\config\\ruipe-ghidra\\ghidra_12.1.4_PUBLIC\\preferences (Preferences)  \r\nINFO  Searching for classes... (ClassSearcher)  \r\nINFO  Class search complete (1701 ms) (ClassSearcher)  \r\nINFO  Initializing SSL Context (DefaultSSLContextInitializer)  \r\nINFO  Initializing Random Number Generator... (SecureRandomFactory)  \r\nINFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  \r\nINFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  \r\nINFO  Starting cache cleanup: /workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\cache\\ruipe-ghidra\\fscache2 (FileCacheMaintenanceDaemon)  \r\nINFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  \r\nINFO  Headless startup complete (8944 ms) (AnalyzeHeadless)  \r\nINFO  Class searcher loaded 177 extension points (88 false positives) (ClassSearcher)  \r\nINFO  HEADLESS Script Paths:\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\GnuDemangler\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\Base\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\FunctionID\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\WildcardAssembler\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\Decompiler\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Processors\\8051\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\BSim\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Processors\\Atmel\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\rea-agents\\bridge\\ghidra\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\MicrosoftCodeAnalyzer\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\DecompilerDependent\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\FileFormats\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\SystemEmulation\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Processors\\DATA\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Processors\\PIC\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\PDB\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Processors\\JVM\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\BytePatterns\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Debug\\Debugger\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\VersionTracking\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Debug\\Debugger-rmi-trace\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\SwiftDemangler\\ghidra_scripts\n    /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\PyGhidra\\ghidra_scripts (HeadlessAnalyzer)  \r\nINFO  HEADLESS: execution starts (HeadlessAnalyzer)  \r\nINFO  Creating temporary project: /workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\project\\rea-project (HeadlessAnalyzer)  \r\nINFO  Creating project: /workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\project\\rea-project (DefaultProject)  \r\nINFO  REPORT: Processing input files:  (HeadlessAnalyzer)  \r\nINFO       project: /workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\project\\rea-project (HeadlessAnalyzer)  \r\nINFO  IMPORTING: file:////workspace/user-home/AppData/Local/Temp/rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a/target-79fbcbd4634a.elf (HeadlessAnalyzer)  \r\nINFO  Using Loader: Executable and Linking Format (ELF) (ProgramLoader)  \r\nINFO  Using Language/Compiler: ARCompact:LE:32:default:default (ProgramLoader)  \r\nINFO  Using Library Search Path: [., C:\\WINDOWS\\SysWOW64, D:\\Tools\\REA\\jdk-21.0.12.1+1\\bin, C:\\WINDOWS\\Sun\\Java\\bin, C:\\WINDOWS\\system32, C:\\WINDOWS, D:\\Tools\\REA\\node-v24.16.0-win-x64, /workspace/user-home\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell, /workspace/user-home\\.codex\\tmp\\arg0-windows\\codex-arg0Ypd8Xz, /workspace/user-home\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\libheif\\libheif\\bin, /workspace/user-home\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\jxrlib\\jxrlib\\bin, /workspace/user-home\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin, /workspace/user-home\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\bin\\override, C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin, C:\\Program Files\\Common Files\\Oracle\\Java\\javapath, C:\\WINDOWS\\System32\\Wbem, C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\, C:\\WINDOWS\\System32\\OpenSSH\\, C:\\Program Files\\Git\\cmd, C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR, C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common, C:\\Program Files\\CMake\\bin, C:\\Program Files\\Amazon\\AWSCLIV2\\, C:\\Program Files\\nodejs\\, C:\\Program Files\\GitHub CLI\\, C:\\Program Files\\Amazon\\SessionManagerPlugin\\bin\\, C:\\Program Files\\usbipd-win\\, C:\\Program Files\\Tailscale\\, D:\\Tools\\REA, /workspace/user-home\\AppData\\Local\\Programs\\Python\\Launcher\\, /workspace/user-home\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\, /workspace/user-home\\AppData\\Local\\Programs\\Python\\Python312\\, /workspace/user-home\\AppData\\Local\\Microsoft\\WindowsApps, /workspace/user-home\\AppData\\Local\\Programs\\Microsoft VS Code\\bin, /workspace/user-home\\AppData\\Local\\Programs\\Podman\\, C:\\ffmpeg\\bin, /workspace/user-home\\AppData\\Local\\Programs\\Ollama, /workspace/user-home\\AppData\\Local\\Microsoft\\WinGet\\Links, C:\\Program Files\\Java\\jdk-21.0.11\\bin, /workspace/user-home\\Tools\\ghidra_12.0.4_PUBLIC, /workspace/user-home\\Tools\\pcsx-redux, /workspace/user-home\\AppData\\Roaming\\npm, C:\\Program Files\\IBM\\Cloud\\bin, /workspace/user-home\\.dotnet\\tools, /workspace/user-home\\bin\\terraform, C:\\Program Files\\qpdf 12.3.2\\bin, /workspace/user-home\\AppData\\Local\\Programs\\Azure Dev CLI\\, /workspace/user-home/AppData/Local/Programs/codebase-memory-mcp, /workspace/user-home\\AppData\\Local\\iBridge, D:\\Tools\\REA\\dotnet-home\\.dotnet\\tools, /workspace/user-home\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\bin\\fallback, /workspace/user-home\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin, /workspace/user-home\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\git\\cmd, /workspace/user-home\\AppData\\Local\\OpenAI\\Codex\\bin\\90ee5f622914d088, /workspace/user-home\\.codex\\provider-router] (ProgramLoader)  \r\nINFO  Additional info:\nLoading file:////workspace/user-home/AppData/Local/Temp/rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a/target-79fbcbd4634a.elf?MD5=ae4cd969ffd2a15df5ddce926dca0ee3...\n------------------------------------------------\n\n (ProgramLoader)  \r\nINFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  \r\nINFO  ANALYZING all memory and code: file:////workspace/user-home/AppData/Local/Temp/rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a/target-79fbcbd4634a.elf (HeadlessAnalyzer)  \r\nINFO  Packed database cache: /workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\cache\\ruipe-ghidra\\packed-db-cache (PackedDatabaseCache)  \r\nINFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  \r\nINFO  -----------------------------------------------------\n    ASCII Strings                              0.699 secs\n    Apply Data Archives                        1.186 secs\n    Basic Constant Reference Analyzer          7.097 secs\n    Call Convention ID                         0.012 secs\n    Call-Fixup Installer                       0.012 secs\n    Create Address Tables                      0.191 secs\n    Create Address Tables - One Time           0.484 secs\n    Create Function                            0.376 secs\n    Data Reference                             0.567 secs\n    Decompiler Switch Analysis                54.275 secs\n    Demangler GNU                              0.191 secs\n    Disassemble Entry Points                   3.690 secs\n    Embedded Media                             0.028 secs\n    External Entry References                  0.010 secs\n    Function ID                                0.174 secs\n    Non-Returning Functions - Discovered       0.035 secs\n    Non-Returning Functions - Known            0.017 secs\n    Reference                                  0.768 secs\n    Shared Return Calls                        0.196 secs\n    Stack                                      5.407 secs\n    Subroutine References                      0.506 secs\n    Subroutine References - One Time           0.154 secs\n-----------------------------------------------------\n     Total Time   76 secs\n-----------------------------------------------------\n (AutoAnalysisManager)  \r\nINFO  REPORT: Analysis succeeded for file: file:////workspace/user-home/AppData/Local/Temp/rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a/target-79fbcbd4634a.elf (HeadlessAnalyzer)  \r\nINFO  REPORT: Execute script: /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\rea-agents\\bridge\\ghidra\\ReaGhidraBridge.java '/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\session.json'  (HeadlessAnalyzer)  \r\nINFO  SCRIPT: /workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\rea-agents\\bridge\\ghidra\\ReaGhidraBridge.java (HeadlessAnalyzer)  \r\n",
+          "bytes": 11347,
+          "retained_bytes": 11347
+        },
+        "stderr": {
+          "text": "NOTE: Picked up JDK_JAVA_OPTIONS: \"-Duser.home=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\home\" \"-Djava.io.tmpdir=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\tmp\" \"-XX:-UsePerfData\"\r\nPicked up JAVA_TOOL_OPTIONS: \nPicked up _JAVA_OPTIONS: \nNOTE: Picked up JDK_JAVA_OPTIONS: \"-Duser.home=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\home\" \"-Djava.io.tmpdir=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\tmp\" \"-XX:-UsePerfData\"\r\nPicked up JAVA_TOOL_OPTIONS: \nPicked up _JAVA_OPTIONS: \nNOTE: Picked up JDK_JAVA_OPTIONS: \"-Duser.home=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\home\" \"-Djava.io.tmpdir=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\tmp\" \"-XX:-UsePerfData\"\r\nPicked up JAVA_TOOL_OPTIONS: \nPicked up _JAVA_OPTIONS: \nNOTE: Picked up JDK_JAVA_OPTIONS: \"-Duser.home=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\home\" \"-Djava.io.tmpdir=/workspace/user-home\\AppData\\Local\\Temp\\rea-ghidra-e8912f2dfdeaf6370223e1802e5dfe8a\\tmp\" \"-XX:-UsePerfData\"\r\nPicked up JAVA_TOOL_OPTIONS: \nPicked up _JAVA_OPTIONS: \n",
+          "bytes": 1232,
+          "retained_bytes": 1232
+        },
+        "failure_output": {
+          "stdout": {
+            "text": "",
+            "bytes": 0,
+            "retained_bytes": 0
+          },
+          "stderr": {
+            "text": "",
+            "bytes": 0,
+            "retained_bytes": 0
+          },
+          "complete": true
+        },
+        "failure_cause": {
+          "name": "GhidraRemoteError",
+          "message": "No procedure exists at the requested address: 0x1488e; Ghidra image base: 0x10000. Choose an observed analysis address. CLI: rea search <path> . --kind procedures --mode regex --provider ghidra --json; MCP: list_procedures. Inspect the loaded base and source mappings with CLI rea analyze <path> --provider ghidra --json and rea inspect-native-load-image <path> --provider ghidra --json, or MCP binary_overview and inspect_native_load_image. Repeat the original target options. For decompile, select source coordinates explicitly with --file-offset=0x... or MCP procedure file-offset:0x....",
+          "code": "not_found"
+        },
+        "failure_kind": "remote",
+        "failure_message": "No procedure exists at the requested address: 0x1488e; Ghidra image base: 0x10000. Choose an observed analysis address. CLI: rea search <path> . --kind procedures --mode regex --provider ghidra --json; MCP: list_procedures. Inspect the loaded base and source mappings with CLI rea analyze <path> --provider ghidra --json and rea inspect-native-load-image <path> --provider ghidra --json, or MCP binary_overview and inspect_native_load_image. Repeat the original target options. For decompile, select source coordinates explicitly with --file-offset=0x... or MCP procedure file-offset:0x....",
+        "remote_code": "not_found",
+        "remote_message": "No procedure exists at the requested address: 0x1488e; Ghidra image base: 0x10000. Choose an observed analysis address. CLI: rea search <path> . --kind procedures --mode regex --provider ghidra --json; MCP: list_procedures. Inspect the loaded base and source mappings with CLI rea analyze <path> --provider ghidra --json and rea inspect-native-load-image <path> --provider ghidra --json, or MCP binary_overview and inspect_native_load_image. Repeat the original target options. For decompile, select source coordinates explicitly with --file-offset=0x... or MCP procedure file-offset:0x...."
+      }
+    }
+  },
+  "meta": {
+    "command": "function",
+    "duration": "95049ms"
+  }
+}

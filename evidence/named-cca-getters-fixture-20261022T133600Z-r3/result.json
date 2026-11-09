@@ -1,0 +1,26 @@
+{
+  "status": "PASS_OFFLINE_ARC_ABI_AND_ACTUAL_GETTER_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "arc_port_fields": {
+    "cca_fix_disable": 20743,
+    "auto_cca_enable": 20744,
+    "ic_getparam": 20924,
+    "sizeof_ieee80211com": 22644
+  },
+  "oem_fields": {
+    "cca_fix_disable": 21344,
+    "auto_cca_enable": 21345,
+    "ic_getparam": 21540
+  },
+  "raw_oem_offsets_not_used_in_candidate": true,
+  "fixture_cases": 65536,
+  "fixture_checks": 196609,
+  "actual_source_unit_compiled": true,
+  "source_candidate_sha256": "bd5d98aef3e1411fe93b30d195df3ea40827c403818d7fd5c629328431a6ae2f",
+  "witness_sha256": "1a6abcfd9064c2e37df35c1ab699e30eb6ff453ed068389fc4267c7daac099d5",
+  "source_unchanged": true,
+  "wlan_high16_forward_cases": 65536,
+  "wlan_high16_forward_checks": 131072,
+  "limitation": "ARC object and exhaustive fake field reads only; full module pair qualification and physical gates remainUNRUN"
+}

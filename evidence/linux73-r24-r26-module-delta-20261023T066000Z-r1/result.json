@@ -1,0 +1,62 @@
+{
+  "status": "PASS_ACTUAL_R24_R26_ONLY_FIVE_CLEAR_RESET_OBJECTS_TWO_MODULES_CHANGED",
+  "lanes": [
+    {
+      "lane": "a",
+      "changed_C_objects": [
+        "providers/sram73/om73_sram_backend.o",
+        "source/qdrv/qdrv_auc.o",
+        "source/qdrv/qdrv_control.o",
+        "source/qdrv/qdrv_fw.o",
+        "source/qdrv/qdrv_soc.o"
+      ],
+      "changed_modules": [
+        "om73_sram.ko",
+        "qdrv.ko"
+      ],
+      "other_20_modules_identical": true,
+      "old_public_symbols_and_types_preserved": true,
+      "new_qdrv_symbols": [
+        "memcpy_fromio",
+        "om73_sram_reset_begin",
+        "om73_sram_reset_end",
+        "qdrv_fw_load_auc_prepared"
+      ],
+      "new_pool_symbols": [
+        "om73_sram_reset_begin",
+        "om73_sram_reset_end"
+      ]
+    },
+    {
+      "lane": "b",
+      "changed_C_objects": [
+        "providers/sram73/om73_sram_backend.o",
+        "source/qdrv/qdrv_auc.o",
+        "source/qdrv/qdrv_control.o",
+        "source/qdrv/qdrv_fw.o",
+        "source/qdrv/qdrv_soc.o"
+      ],
+      "changed_modules": [
+        "om73_sram.ko",
+        "qdrv.ko"
+      ],
+      "other_20_modules_identical": true,
+      "old_public_symbols_and_types_preserved": true,
+      "new_qdrv_symbols": [
+        "memcpy_fromio",
+        "om73_sram_reset_begin",
+        "om73_sram_reset_end",
+        "qdrv_fw_load_auc_prepared"
+      ],
+      "new_pool_symbols": [
+        "om73_sram_reset_begin",
+        "om73_sram_reset_end"
+      ]
+    }
+  ],
+  "old_pair_sha256": "c3172e07dc81692d99d241f42ab0a5c3e5519146547e74ca55860e49c7a738c9",
+  "new_pair_sha256": "eb6d927c378c6a7bc52c1a2ce24b9359f7c4bb9166d496e9a0f72a1698007e75",
+  "kernel_config_symvers_unchanged": true,
+  "hardware_accessed": false,
+  "firmware_eligible": false
+}

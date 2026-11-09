@@ -1,0 +1,16 @@
+{
+  "status": "PASS_COPIED_PUBLIC_KERNEL_SOURCE_95986_EXACT_INPUT_PINS",
+  "files_checked": 95986,
+  "expected_manifest_sha256": "0d58bf0ab674fd2beb5a47f91e254800e17c5e05ced2ee42ae9b6e549d8ec671",
+  "differences": [],
+  "input_source_r3_equals_validated_r4": true,
+  "kernel_packet_headers_r20_exact": true,
+  "header_delta_against_v6": {
+    "include/linux/soc/qtn/topaz-ethernet.h": {
+      "v6_sha256": "59e06f782d8afa0eb0da5db7a9723d28c82678fe422dd51f34d7914b8a9f18c9",
+      "new_sha256": "b76ed50ef43801e20d91b5889445f19c54eb0758a445356133116a0d22f835d4",
+      "current_ethernet_component_header_selected": true
+    }
+  },
+  "hardware_accessed": false
+}

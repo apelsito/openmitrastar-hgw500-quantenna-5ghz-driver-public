@@ -1,0 +1,13 @@
+# SRAM: lifetime ante reset y ringTQE (R20)
+
+El hal_reset compilado paraARC escribe0x4180(NETSS|MAC|BB). NOcontienebitSRAM. La referenciaSRAM_RESET sóloapareceenrama noARC.
+
+TQEpublica elringdesdeunmódulodependencia antesde qdrv_soc_init/hal_reset. Rehacerelheap“despuésde reset”perderíaownershipdelringexistente. Eladaptadoraislado rechazaresetconasignacionesvivasyexigebase/count0+CPUIFresetantesdeliberarunring.
+
+La memoriaheap podríapersistirentre resetsnondestructivos sóloconcontrato realde consumidores/registers; NETSS puedeinvalidarTQE ynohaypruebafísicadepreservación. UnSRAMresetfuturo exigeemptycore/closeantes, mappingreservadorevalidadoycoreinitexplícitoen generaciónnueva.
+
+ClearsramR20borraregionesdesdeoffset20000yaltas,noelheapcandidato12000–20000. Eladaptadorrechazacualquierclearquesolapeheap. Esto no pruebaausenciadeescriturasindirectas.
+
+Elstopnoacota todoslosescritores: hal_disable_aucvacío;DSPdisableARCcompiladofuera. F355retienevida dehardware ynoautorizaunload/reinit.
+
+AdaptadorARC 2364bytes; 6casos/45checksdecontrollerPASS. No está conectadoaldriver; noheapexports niMMIO. Usoexclusivocomo siguientecontratooffline.

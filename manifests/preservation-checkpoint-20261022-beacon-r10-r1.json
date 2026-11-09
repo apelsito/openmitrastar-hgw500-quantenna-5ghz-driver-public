@@ -1,0 +1,1686 @@
+{
+  "schema": "openmitrastar.repository-preservation-checkpoint/v1",
+  "hardware_accessed": false,
+  "files": [
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/result.json",
+      "bytes": 871,
+      "sha256": "384256c605e92004f253df4a7c787b5904863da1d3bddd8beaf5fc82ec05eee2",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/result.json"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/REVIEW.md",
+      "bytes": 3670,
+      "sha256": "d70220db5cb9a760ce44e18493f0a2f8095297b32ab034886ef4534217892e86",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/REVIEW.md"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/unpublished-ioctl-cleanup.patch",
+      "bytes": 700,
+      "sha256": "b104c724d19d1412046c43f160ec4ff7a0f6b6a51a82ddbd8505ff85f6b6cfe2",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/unpublished-ioctl-cleanup.patch"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/headers/net80211/ieee80211_beacon_desc.h",
+      "bytes": 3126,
+      "sha256": "c2a6a94196acf9fa32c934e2ce77e9e6a9485a8fbcc890537e1cc14b74310fe1",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/headers/net80211/ieee80211_beacon_desc.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/headers/net80211/ieee80211_proto.h",
+      "bytes": 24813,
+      "sha256": "84841210beb7746c134eae7829d70d663151b18e57d2640531f42c33424abf45",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/headers/net80211/ieee80211_proto.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/headers/net80211/ieee80211_var.h",
+      "bytes": 99339,
+      "sha256": "5f9ccf334e8d264be3eacaea4a04b773be802615c2ed95024280ba443475df22",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/headers/net80211/ieee80211_var.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/f355_lifetime.h",
+      "bytes": 1436,
+      "sha256": "7a9042ef6b27f0cee01ea49376e61bac6abe00f2069d38331e4212dd518f2996",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/f355_lifetime.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_abi_v89.h",
+      "bytes": 16376,
+      "sha256": "a91c0808d8ad2dcfb2410ae8740563ac664eeebc5778b0fb6926a0a4bee13558",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_abi_v89.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_auc.c",
+      "bytes": 4803,
+      "sha256": "70eb8cc1a7761addb9d14b48c97d5bc5362656137bb048fcd3238fd77891c723",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_auc.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_auc.h",
+      "bytes": 1084,
+      "sha256": "6725d51d84a574914536c11283fd99856270749b1bcb74fc65820ac9daece6eb",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_auc.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_bld.h",
+      "bytes": 404,
+      "sha256": "4fe2e7693e096771809b14f225b55aeb68fc018fb97d824f52f7e7b09f9f58ff",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_bld.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_bridge.c",
+      "bytes": 32204,
+      "sha256": "05bbba44e4cb1641deea8aed511dfa6d68198f25cd7bbb7b8a68387d37a867fe",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_bridge.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_bridge.h",
+      "bytes": 3966,
+      "sha256": "db05eaab018d9cc1fbe80c0cb740b1be1aad2453101186f62a74a13316e51c70",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_bridge.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_comm.c",
+      "bytes": 26656,
+      "sha256": "56c5d3d660a512c17dfc3903f606d3dc529542bcdeffeb266d04ab1219113f40",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_comm.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_comm.h",
+      "bytes": 1139,
+      "sha256": "e8e83658405005027cefac985a0634cadf9bdc2471c42c79e70b1883b7cd09bc",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_comm.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_config.h",
+      "bytes": 135,
+      "sha256": "6f2ee77f2040df44f37c77ea3552f49e9a141e32fdbddb71d507e7c6ebe84a97",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_config.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_control.c",
+      "bytes": 174490,
+      "sha256": "ae586fc6db8b94ce7d128309b7c3add6563fbc37907488726ac95fc02242d398",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_control.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_control.h",
+      "bytes": 3187,
+      "sha256": "6f0656cf77128f496213c74edfc97591eca792e7d5ab220f662a9378961274a8",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_control.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_debug.h",
+      "bytes": 3689,
+      "sha256": "1e01e89b2e47e7a3594e6ccc2baeea7e862312348991eeaea11e787f6e976c88",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_debug.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_dma_wire.h",
+      "bytes": 548,
+      "sha256": "a9f6847592d7568a577de3fb260c1b705dd632c2a035454840fdf892db40d4db",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_dma_wire.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_dsp.c",
+      "bytes": 1844,
+      "sha256": "a8210e6df122dc38548a39e6004b534fece563b0af962721eb9e1955f31a560e",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_dsp.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_dsp.h",
+      "bytes": 924,
+      "sha256": "8f49757755232a73eb200e9e8931093e935b61348a782e1cda60091f40e08af1",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_dsp.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_f355_lifetime.c",
+      "bytes": 2550,
+      "sha256": "cc9e7520ec286c3f26b02510175dd9f9fb7f9096b55ee0c005558ca4f0198b67",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_f355_lifetime.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_f355_lifetime.h",
+      "bytes": 433,
+      "sha256": "75b70497d9f6a9f99f8b959c10e214ce16d5d7ac3eb4f11e6c4932cc9e4e9612",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_f355_lifetime.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_features.h",
+      "bytes": 1128,
+      "sha256": "e0f280b96f0a1f2d3d47c62046c05a08ccdda533153760105827cba7b679bf82",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_features.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_fw.c",
+      "bytes": 8316,
+      "sha256": "0bdc6c022f3dfe8b19a3294f5697722e7b83a3124383aeac872a91c807746a78",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_fw.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_fw.h",
+      "bytes": 1241,
+      "sha256": "ec91cc1bbb1bf21f02add85863c58c3daa85b3483fd2a159c8a7fafd8a3c5444",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_fw.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_fwt_compat.c",
+      "bytes": 1372,
+      "sha256": "c92d173db3e4fc52be1496721192bdf26bc98639dfa220cda20542ad0c513cb1",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_fwt_compat.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_hal.c",
+      "bytes": 9958,
+      "sha256": "9073f72099b28a93e8794282ae5b87d7d32fca0ee5ebaf9b90cc6716f64a6691",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_hal.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_hal.h",
+      "bytes": 1600,
+      "sha256": "6cdf94d4075b18a5532be930068efe02ad60aa8b4266275269ab9061c7991e6f",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_hal.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_hostlink.c",
+      "bytes": 34301,
+      "sha256": "236089b781c9af1d5cf791694934f0dd72f9c119d21261b46d7db991b4e359bb",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_hostlink.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_kernel_compat.c",
+      "bytes": 1946,
+      "sha256": "493de8af98db94c8feb70a71221cf3e37904a01edabcbb3e08000d4f3cca68d1",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_kernel_compat.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mac.c",
+      "bytes": 11337,
+      "sha256": "43946f44a7dbd5cfe71873175bbf6262e3224093eb5ef65a737a8061984a4e98",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mac.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mac.h",
+      "bytes": 4037,
+      "sha256": "0cdba30af6d70f085832fab93ab0e6eddbe1c3140c951033d2223a80217db2fa",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mac.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mac_reserve.c",
+      "bytes": 3976,
+      "sha256": "b1c97d65f4a8cb516634d36cb6f4a21a03a72e9703ec1d8f40f09c033528d67f",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mac_reserve.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mac_reserve.h",
+      "bytes": 1188,
+      "sha256": "98d812ad7bd8616b324be5bf92db80312ac535e9131987f2a8e7df50e6696d83",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mac_reserve.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_math.c",
+      "bytes": 876,
+      "sha256": "c1045ac057bddda8f4a2f8c6a52d6ee7d4dca2c563d3e83883edafc71e8acc32",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_math.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_module.c",
+      "bytes": 10909,
+      "sha256": "cfecaacfe7256ed17458553a594cbf927a9923c1f6d119950fa5cfb4d7ed39a3",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_module.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mu.c",
+      "bytes": 4898,
+      "sha256": "1dc0ca7d74c52afcfb49a3359473e542deee409e0a989155b947578a9a6ef85b",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mu.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mu.h",
+      "bytes": 930,
+      "sha256": "dd7d393342b347968726cd596ce547873a4a7265f8adee5053731e0311e781f6",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_mu.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_muc.c",
+      "bytes": 3608,
+      "sha256": "daf6f06bf5d82ee84dcf66a9ff2706692e6e4a52d155817381d5a9a066f54fde",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_muc.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_muc.h",
+      "bytes": 924,
+      "sha256": "3f0fb4d12fcc307ef1ce8681c71b1f3d7519a1bf08d83c9879a14e9da6e94285",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_muc.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_muc_stats.c",
+      "bytes": 39729,
+      "sha256": "d2b9ae154179138b8c80933ff7f1fc4d7600f20dfd52ec9f33412061d7e74768",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_muc_stats.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_muc_stats.h",
+      "bytes": 3150,
+      "sha256": "2a685c28c9ee35639b7e15dcd4f54a7086d184a7ec3a487e469191cde4671966",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_muc_stats.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_netdebug_checksum.h",
+      "bytes": 128,
+      "sha256": "52dd7a821fcb65da5c6258f9d99d5cf9b4592afc845c6c0c87549ef9ceb3f77c",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_netdebug_checksum.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_pcap.c",
+      "bytes": 5968,
+      "sha256": "7185ef1ce323bae02d481ff102797bd615c18a46a9719d1b4bbe7d5c668459a5",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_pcap.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_pcap.h",
+      "bytes": 1470,
+      "sha256": "4fd7b28b17b1237d0000c27e50d79922603cb123e91b3f2f11d5ed9f6003376e",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_pcap.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_pktlogger.c",
+      "bytes": 53145,
+      "sha256": "f1ef936e9519e6bc2e75912b71f870011b8699936ed364b2221e189106732717",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_pktlogger.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_pktlogger.h",
+      "bytes": 3261,
+      "sha256": "990592fd84fc10afff04c97e4baf586f69e1ab3d497e11850f7f4925a7b95af6",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_pktlogger.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_radar.c",
+      "bytes": 58944,
+      "sha256": "c261b6777d9322a4baf641a37861bf588e754e5411f7f993ea16725d00c395dc",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_radar.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_radar.h",
+      "bytes": 1939,
+      "sha256": "992433b333f63ea08b14f84befebb347f8bf80e7097bee7702a2831887472aa2",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_radar.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_radar_compat.c",
+      "bytes": 1804,
+      "sha256": "2f0401ff643896a3ef099f941359a4cbbf336ff6f601ccb46cad25c61fe16712",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_radar_compat.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_rx.c",
+      "bytes": 74852,
+      "sha256": "7b1126f6ce00111ded62f36204d13736a51bdc94906b3de5f4308c7a7691ba2a",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_rx.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_scan.c",
+      "bytes": 4959,
+      "sha256": "17cefa0744c2fe8bd00ccb0d29ca8ff0a5b4a013cc41d2b9caaf71df49d2145d",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_scan.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_sch.c",
+      "bytes": 29700,
+      "sha256": "64edce498abe520db3c3fcb7a51505af750456b54284b1e2dc25af7519d99035",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_sch.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_sch_pm.c",
+      "bytes": 3308,
+      "sha256": "b2a14cc8aff687f23b7d792fb0eb47cd0b3a3fb5940f791f521f17d02fb43812",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_sch_pm.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_sch_pm.h",
+      "bytes": 1274,
+      "sha256": "2557a0ba57133c728af6a710357514f4c7ac3a69a2396fbc8c8a7fb42ce9d2f6",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_sch_pm.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_sch_wmm.h",
+      "bytes": 1009,
+      "sha256": "7dc95e1b32177b0f9540639e8f22728e5d848d44efc4a9dcb95907b68686c618",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_sch_wmm.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_show.c",
+      "bytes": 12521,
+      "sha256": "996ee4f1294ad79623f10f41c1c57bce98f8a47ee9c1cb99c74acdb11b05bda9",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_show.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_show.h",
+      "bytes": 1659,
+      "sha256": "78b3025636ba67cbca91303b7d04bf7a07b05a4a148067c77746d38b7c42ae7c",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_show.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_slab_def.h",
+      "bytes": 2576,
+      "sha256": "4ed06903cdbef21e3d812696b68ced031d55ff9d965c14ae80c486c913e8401b",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_slab_def.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_slab_watch.h",
+      "bytes": 152,
+      "sha256": "5cb3ae80b0c2f5f80244bd1ece1e5f968b4f8eb3405aac08b69ee6b4c62451e3",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_slab_watch.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_soc.c",
+      "bytes": 28362,
+      "sha256": "a179bebe0f469b4156e03139d6e06c99d51720c2bc9e292d5426a37d607603c4",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_soc.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_soc.h",
+      "bytes": 5151,
+      "sha256": "a21236a19e0e37950bc8b0b294f8b9ae2f18bbc4b5bf9b2865caa478f5c940ae",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_soc.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_tx.c",
+      "bytes": 87130,
+      "sha256": "2f93045dc3937074300c571e1b5f1d49c95e51de91d8e00b0742db1177438c1d",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_tx.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_txbf.c",
+      "bytes": 21710,
+      "sha256": "953a080fd97c9f794cdce56decdc70be121439635d5e421282ead0c93ef143d8",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_txbf.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_txbf.h",
+      "bytes": 1942,
+      "sha256": "649d561e00f4ecacf49bb8328c54d750cf5b50738d385c2b28ca03959f8b8098",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_txbf.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_uc_print.c",
+      "bytes": 5739,
+      "sha256": "f8dc7d8b7101568c3ee0b92bb69b45aae972e0df241e6468ec2199d5e03e9d98",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_uc_print.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_uc_print.h",
+      "bytes": 1026,
+      "sha256": "b1d259990e2c753ef839fd1398982de6313851c649a4e8fdfaf22635a0442820",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_uc_print.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_vap.c",
+      "bytes": 22478,
+      "sha256": "8a7e19a8066392468797602735e6d78039ac6b5ab6bcdf1a5d5baa860d59f485",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_vap.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_vap.h",
+      "bytes": 5828,
+      "sha256": "1f9ea973f15ad341bf7064fdc319e56dfc3f4c25e8627f2ab9d4ecc60717533a",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_vap.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_vlan.c",
+      "bytes": 2737,
+      "sha256": "466b6e1263cdbb633d05e096287dfcaea967d59594897246d9c4778d65802eb3",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_vlan.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_vlan.h",
+      "bytes": 1051,
+      "sha256": "0626e7203ef79e44b168de12b48b44e970c9cf12b388a52b7060c63e9ddeb50d",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_vlan.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_wlan.c",
+      "bytes": 309207,
+      "sha256": "35c3b912c1d4e0a0fda0db2300627deef11cb7b042ed5fba56e577feb23d6445",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_wlan.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_wlan.h",
+      "bytes": 50723,
+      "sha256": "154f0088d94f73a2a8bd708cbd543d80029d2f1cc7067cf7cf992582be083727",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/qdrv_wlan.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/soc.h",
+      "bytes": 177,
+      "sha256": "54905b37dbe250218832f5c478a7b15fa60ff22ec6c2d12eac1ccf109bb592ff",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/soc.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211.c",
+      "bytes": 100378,
+      "sha256": "864999095b73cbbe7abb90641c6b7a0c8d0b6f251bd9ef29023e3cb2659a3da8",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_acl.c",
+      "bytes": 7815,
+      "sha256": "2592c8c83a60276851e0c8eec88bebbd2db949e82d53afc686ffb39412ae24ad",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_acl.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_beacon.c",
+      "bytes": 25200,
+      "sha256": "b39205329a8a02169d7cec215e9582dc2967287833972f77337ec9baa151367b",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_beacon.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_beacon_desc.c",
+      "bytes": 29067,
+      "sha256": "198a92120083cc3c5645c71dcebc9cc285bf8fbe0474cb347f669897bad744c1",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_beacon_desc.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_crypto.c",
+      "bytes": 18373,
+      "sha256": "8b0dd020dfae158dd3bbe9baf7fe0614913e2b05b6bcbc0a0a28f80e0a020a9e",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_crypto.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_crypto_ccmp.c",
+      "bytes": 17900,
+      "sha256": "90aad4e58ac1ffb3f098a3eb065eb517665ce1ccffb4e630a9a24a7c47bd80c5",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_crypto_ccmp.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_crypto_none.c",
+      "bytes": 4520,
+      "sha256": "13bb0971a3eb6562abfb5501a430d12e960c4f6eba9a5683b085b08dc8f0fed7",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_crypto_none.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_crypto_tkip.c",
+      "bytes": 30212,
+      "sha256": "14202a45f14ede03add64eeafa9b4802594ff0b3f38b4478aff694a5302b9e2b",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_crypto_tkip.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_crypto_wep.c",
+      "bytes": 15649,
+      "sha256": "8148cd4acc02e1a618a047c8aa5ec16e8349e3bd18a2358f930f52634b673c37",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_crypto_wep.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_input.c",
+      "bytes": 341633,
+      "sha256": "0a9fe5e65d41cdfcc13cdbf063673935c79bfd082726067cf354f06a00cb4c45",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_input.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_linux.c",
+      "bytes": 28563,
+      "sha256": "db40c95e0bebbfef107c7035f6cafc4be4c32492e87cdc98745b8dd7d56b8b40",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_linux.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_mlme_statistics.c",
+      "bytes": 18974,
+      "sha256": "aefed7036fd0630b19c34e00607f6f1de1b023476aa5e8459885ff35a42f12a5",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_mlme_statistics.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_node.c",
+      "bytes": 120608,
+      "sha256": "0d51144dab4a4a027bf34993078a8d06b52366a43a9bc686b14e3e5e6f3d36d7",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_node.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_output.c",
+      "bytes": 192400,
+      "sha256": "e393a8c3cb66b53609298a90cc01c0ac5ad6897911f3ee1a5bda86fef0df66c4",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_output.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_power.c",
+      "bytes": 10193,
+      "sha256": "7e95aa12acf29f852eefa26bcc6870177a3bcb70e3da1ccc0086e41f1b0340fe",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_power.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_proto.c",
+      "bytes": 70939,
+      "sha256": "ed779617c71365303a3421faae95b92461e845d580034988e3dc458f3a3df4c8",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_proto.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_rate.c",
+      "bytes": 3637,
+      "sha256": "289e8aecd31b945659003ee65a3923b716a8784e5ef2df5daf3b9c40a3117fe5",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_rate.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_scan.c",
+      "bytes": 58874,
+      "sha256": "6cd7d90fb319f1bdcad5fb97f5a99e93e81f385eab8acaa992f599e79cae3231",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_scan.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_scan_ap.c",
+      "bytes": 34397,
+      "sha256": "be5fb4d720800aacccacc75c53e3d7e9dc9f0a7c28e7307589e9007ff78eae0e",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_scan_ap.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_scan_sta.c",
+      "bytes": 50055,
+      "sha256": "73e0b28b5e74693bd3b50c72883df46dc238201da2232dc066bdef76badd5d93",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_scan_sta.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_tdls.c",
+      "bytes": 129155,
+      "sha256": "073fdd13f9cc304ab39450d8838b16e953862ec954f9c6e2bcb003340cd581bc",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_tdls.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_tpc.c",
+      "bytes": 10611,
+      "sha256": "4f784c885634221281e8f19a05dc8f21bbed62f4a65bf958f68a415f4febb9d3",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_tpc.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_wireless.c",
+      "bytes": 670235,
+      "sha256": "b65681c0022672e0dd4b93a49f0a5fae38b798b163b9e80a2860ef8a3a3fc5a9",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_wireless.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_xauth.c",
+      "bytes": 3616,
+      "sha256": "5feaec3e92676651a090e6dd8e1d4cae2d70738843c8156df30afc601eb01745",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/ieee80211_xauth.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/if_media.c",
+      "bytes": 13136,
+      "sha256": "6fda06d57cf55daeb0256e6aec69e166592f1860d16ec0f972da9eecf27f38e0",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/if_media.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/openmitrastar_beacon_preflight.h",
+      "bytes": 933,
+      "sha256": "5043d3f04160269e3bda6b5badb576dd7db7c1e66d632b368989f04449e9bb52",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/openmitrastar_beacon_preflight.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/openmitrastar_bss_tm.h",
+      "bytes": 1008,
+      "sha256": "b8aa2c5f0d4b5a02965521ccefc04b24ca50ead66c1afcf6ab2d64389de879f7",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/openmitrastar_bss_tm.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/release.h",
+      "bytes": 2085,
+      "sha256": "ee4f529b52e004517d502fbbcfb88d484c877a90af0f3af5f2a1b4168d25e8bf",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/release.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/version.h",
+      "bytes": 1983,
+      "sha256": "1d6edc89dc9d52a1a7f8794e8030739e88bced883fc0a43aeb9f586dd6ecf8bb",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/version.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/wlan_fwt_compat.c",
+      "bytes": 487,
+      "sha256": "cac94258272e9f7df805505cad378780248c998ef70de590127da3a73ba168d4",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/wlan/wlan_fwt_compat.c"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/current_platform.h",
+      "bytes": 398,
+      "sha256": "5b546dc962dbefe6537c3db13fe0f65585bc60f3c4021525939adea01287e394",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/current_platform.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/openmitrastar_qdrv_compat.h",
+      "bytes": 3968,
+      "sha256": "651d94fd4fc81b4d889103f8d64e3d5c6764758b55061ebdc935d0f361c878ad",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/openmitrastar_qdrv_compat.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/qtn_platform_support.h",
+      "bytes": 211,
+      "sha256": "f242a93ab72053145b323621a3fc54297b1592e537b4807889c974f5adc9bb2d",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/qtn_platform_support.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/gpio.h",
+      "bytes": 99,
+      "sha256": "195b97775c1e231f4cae4ec6fa579efe87d61c3a84a2dee03e8dc9b23d4529d3",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/gpio.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/hardware.h",
+      "bytes": 451,
+      "sha256": "778e9f99607c95d470fa17074eee90ef7aaa3509ac20f106aa17209c0b98946e",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/hardware.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/linux/config.h",
+      "bytes": 70,
+      "sha256": "bbed9045704f192c50d4c68fec88f2678a08a20f4e089dc626cbb6fbfc0be718",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/linux/config.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/linux/pm_qos_params.h",
+      "bytes": 838,
+      "sha256": "88295077cf5b20a0ad3dd475655de2fb57c1b62254707e4d45503bff57247d6d",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/linux/pm_qos_params.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/qtn/br_types.h",
+      "bytes": 528,
+      "sha256": "9b56c5419e253c7abf6e0d540b7fc72f254f735367eb536c61935ad40cb162b1",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/qtn/br_types.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/qtn/qtn_skb_cb.h",
+      "bytes": 1729,
+      "sha256": "e115c7a1491bbab189b6f89d21a03221c7a5c835c00150a695656b35984ce5e8",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/qtn/qtn_skb_cb.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/trace/ippkt.h",
+      "bytes": 1380,
+      "sha256": "8f8f5ca4a1899e2ab9187931484109d8da701f80993d98deb5ecc3c3bedfd767",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/trace/ippkt.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/trace/skb.h",
+      "bytes": 333,
+      "sha256": "6804434ce8ad570b810ffdff0ab20459538b82506723170efd008fe847a42149",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/trace/skb.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/board_config.h",
+      "bytes": 400,
+      "sha256": "6654f0ccce4caf24659ff4d6baced6fb709847d063ccd77c78443a0f3d0e5147",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/board_config.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/dma_cache_ops.h",
+      "bytes": 633,
+      "sha256": "96f7914dda30dc484d2887f7b8b7db97dbabcfd26d01fe8d9fadb8dedfdb347b",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/dma_cache_ops.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/gpio.h",
+      "bytes": 416,
+      "sha256": "ec9f0f8e74ae336f12c5d460a4b0cab01dee1aaa7794abf38c2f4763f07fee45",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/gpio.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/kdump.h",
+      "bytes": 233,
+      "sha256": "67242abd1335e954da1f2bcccaaebea71b776baf93fd6ae64e35e20226612f6a",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/kdump.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/platform.h",
+      "bytes": 166,
+      "sha256": "3736f6f368212e15a579ed9cf820b8dc8b900be760fdd50b613c4c5a3f3a7f69",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/platform.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/pm.h",
+      "bytes": 267,
+      "sha256": "eb5a6bf8305b73c8a25099e0a8d4b27a2f687038cfd4df5d16ab891419bbaa32",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/pm.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/soc.h",
+      "bytes": 148,
+      "sha256": "64bca498fa4c29d1e3bab6bae1d56f1902fc701b5285272db406090ff7631f80",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/soc.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/troubleshoot.h",
+      "bytes": 472,
+      "sha256": "7e5b2ff25100cfbb2097b978cf6194dae7faab5a162589c4ae3d9964a17bbf2a",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/asm/board/troubleshoot.h"
+    },
+    {
+      "path": "candidates/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/linux/net/bridge/br_public.h",
+      "bytes": 546,
+      "sha256": "0d49d79e719bcebe6fc68669984681117655fac7de627a03cdb1d7ca20e93695",
+      "source": "outputs/rea/beacon-unpublished-ioctl-cleanup-20261022T185000Z-r10/source/qdrv/compat/include/linux/net/bridge/br_public.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/app-ie-synchronization.patch",
+      "bytes": 8196,
+      "sha256": "c65fb8286b7e9860dfeace9dd37c48fce9b791260758e28bf8d5b184e495a938",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/app-ie-synchronization.patch"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/result.json",
+      "bytes": 1335,
+      "sha256": "3565ad4c0d1c967528a10d5ff5ce1233347e59e375c64b27bc7d03612a7ebd2d",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/result.json"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/headers/net80211/ieee80211_beacon_desc.h",
+      "bytes": 3126,
+      "sha256": "c2a6a94196acf9fa32c934e2ce77e9e6a9485a8fbcc890537e1cc14b74310fe1",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/headers/net80211/ieee80211_beacon_desc.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/headers/net80211/ieee80211_proto.h",
+      "bytes": 24813,
+      "sha256": "84841210beb7746c134eae7829d70d663151b18e57d2640531f42c33424abf45",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/headers/net80211/ieee80211_proto.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/headers/net80211/ieee80211_var.h",
+      "bytes": 99339,
+      "sha256": "5f9ccf334e8d264be3eacaea4a04b773be802615c2ed95024280ba443475df22",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/headers/net80211/ieee80211_var.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/f355_lifetime.h",
+      "bytes": 1436,
+      "sha256": "7a9042ef6b27f0cee01ea49376e61bac6abe00f2069d38331e4212dd518f2996",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/f355_lifetime.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_abi_v89.h",
+      "bytes": 16376,
+      "sha256": "a91c0808d8ad2dcfb2410ae8740563ac664eeebc5778b0fb6926a0a4bee13558",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_abi_v89.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_auc.c",
+      "bytes": 4803,
+      "sha256": "70eb8cc1a7761addb9d14b48c97d5bc5362656137bb048fcd3238fd77891c723",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_auc.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_auc.h",
+      "bytes": 1084,
+      "sha256": "6725d51d84a574914536c11283fd99856270749b1bcb74fc65820ac9daece6eb",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_auc.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_bld.h",
+      "bytes": 404,
+      "sha256": "4fe2e7693e096771809b14f225b55aeb68fc018fb97d824f52f7e7b09f9f58ff",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_bld.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_bridge.c",
+      "bytes": 32204,
+      "sha256": "05bbba44e4cb1641deea8aed511dfa6d68198f25cd7bbb7b8a68387d37a867fe",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_bridge.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_bridge.h",
+      "bytes": 3966,
+      "sha256": "db05eaab018d9cc1fbe80c0cb740b1be1aad2453101186f62a74a13316e51c70",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_bridge.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_comm.c",
+      "bytes": 26656,
+      "sha256": "56c5d3d660a512c17dfc3903f606d3dc529542bcdeffeb266d04ab1219113f40",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_comm.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_comm.h",
+      "bytes": 1139,
+      "sha256": "e8e83658405005027cefac985a0634cadf9bdc2471c42c79e70b1883b7cd09bc",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_comm.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_config.h",
+      "bytes": 135,
+      "sha256": "6f2ee77f2040df44f37c77ea3552f49e9a141e32fdbddb71d507e7c6ebe84a97",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_config.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_control.c",
+      "bytes": 174490,
+      "sha256": "ae586fc6db8b94ce7d128309b7c3add6563fbc37907488726ac95fc02242d398",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_control.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_control.h",
+      "bytes": 3187,
+      "sha256": "6f0656cf77128f496213c74edfc97591eca792e7d5ab220f662a9378961274a8",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_control.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_debug.h",
+      "bytes": 3689,
+      "sha256": "1e01e89b2e47e7a3594e6ccc2baeea7e862312348991eeaea11e787f6e976c88",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_debug.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_dma_wire.h",
+      "bytes": 548,
+      "sha256": "a9f6847592d7568a577de3fb260c1b705dd632c2a035454840fdf892db40d4db",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_dma_wire.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_dsp.c",
+      "bytes": 1844,
+      "sha256": "a8210e6df122dc38548a39e6004b534fece563b0af962721eb9e1955f31a560e",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_dsp.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_dsp.h",
+      "bytes": 924,
+      "sha256": "8f49757755232a73eb200e9e8931093e935b61348a782e1cda60091f40e08af1",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_dsp.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_f355_lifetime.c",
+      "bytes": 2550,
+      "sha256": "cc9e7520ec286c3f26b02510175dd9f9fb7f9096b55ee0c005558ca4f0198b67",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_f355_lifetime.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_f355_lifetime.h",
+      "bytes": 433,
+      "sha256": "75b70497d9f6a9f99f8b959c10e214ce16d5d7ac3eb4f11e6c4932cc9e4e9612",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_f355_lifetime.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_features.h",
+      "bytes": 1128,
+      "sha256": "e0f280b96f0a1f2d3d47c62046c05a08ccdda533153760105827cba7b679bf82",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_features.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_fw.c",
+      "bytes": 8316,
+      "sha256": "0bdc6c022f3dfe8b19a3294f5697722e7b83a3124383aeac872a91c807746a78",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_fw.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_fw.h",
+      "bytes": 1241,
+      "sha256": "ec91cc1bbb1bf21f02add85863c58c3daa85b3483fd2a159c8a7fafd8a3c5444",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_fw.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_fwt_compat.c",
+      "bytes": 1372,
+      "sha256": "c92d173db3e4fc52be1496721192bdf26bc98639dfa220cda20542ad0c513cb1",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_fwt_compat.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_hal.c",
+      "bytes": 9958,
+      "sha256": "9073f72099b28a93e8794282ae5b87d7d32fca0ee5ebaf9b90cc6716f64a6691",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_hal.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_hal.h",
+      "bytes": 1600,
+      "sha256": "6cdf94d4075b18a5532be930068efe02ad60aa8b4266275269ab9061c7991e6f",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_hal.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_hostlink.c",
+      "bytes": 34301,
+      "sha256": "236089b781c9af1d5cf791694934f0dd72f9c119d21261b46d7db991b4e359bb",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_hostlink.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_kernel_compat.c",
+      "bytes": 1946,
+      "sha256": "493de8af98db94c8feb70a71221cf3e37904a01edabcbb3e08000d4f3cca68d1",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_kernel_compat.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mac.c",
+      "bytes": 11337,
+      "sha256": "43946f44a7dbd5cfe71873175bbf6262e3224093eb5ef65a737a8061984a4e98",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mac.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mac.h",
+      "bytes": 4037,
+      "sha256": "0cdba30af6d70f085832fab93ab0e6eddbe1c3140c951033d2223a80217db2fa",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mac.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mac_reserve.c",
+      "bytes": 3976,
+      "sha256": "b1c97d65f4a8cb516634d36cb6f4a21a03a72e9703ec1d8f40f09c033528d67f",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mac_reserve.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mac_reserve.h",
+      "bytes": 1188,
+      "sha256": "98d812ad7bd8616b324be5bf92db80312ac535e9131987f2a8e7df50e6696d83",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mac_reserve.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_math.c",
+      "bytes": 876,
+      "sha256": "c1045ac057bddda8f4a2f8c6a52d6ee7d4dca2c563d3e83883edafc71e8acc32",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_math.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_module.c",
+      "bytes": 10909,
+      "sha256": "cfecaacfe7256ed17458553a594cbf927a9923c1f6d119950fa5cfb4d7ed39a3",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_module.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mu.c",
+      "bytes": 4898,
+      "sha256": "1dc0ca7d74c52afcfb49a3359473e542deee409e0a989155b947578a9a6ef85b",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mu.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mu.h",
+      "bytes": 930,
+      "sha256": "dd7d393342b347968726cd596ce547873a4a7265f8adee5053731e0311e781f6",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_mu.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_muc.c",
+      "bytes": 3608,
+      "sha256": "daf6f06bf5d82ee84dcf66a9ff2706692e6e4a52d155817381d5a9a066f54fde",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_muc.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_muc.h",
+      "bytes": 924,
+      "sha256": "3f0fb4d12fcc307ef1ce8681c71b1f3d7519a1bf08d83c9879a14e9da6e94285",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_muc.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_muc_stats.c",
+      "bytes": 39729,
+      "sha256": "d2b9ae154179138b8c80933ff7f1fc4d7600f20dfd52ec9f33412061d7e74768",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_muc_stats.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_muc_stats.h",
+      "bytes": 3150,
+      "sha256": "2a685c28c9ee35639b7e15dcd4f54a7086d184a7ec3a487e469191cde4671966",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_muc_stats.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_netdebug_checksum.h",
+      "bytes": 128,
+      "sha256": "52dd7a821fcb65da5c6258f9d99d5cf9b4592afc845c6c0c87549ef9ceb3f77c",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_netdebug_checksum.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_pcap.c",
+      "bytes": 5968,
+      "sha256": "7185ef1ce323bae02d481ff102797bd615c18a46a9719d1b4bbe7d5c668459a5",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_pcap.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_pcap.h",
+      "bytes": 1470,
+      "sha256": "4fd7b28b17b1237d0000c27e50d79922603cb123e91b3f2f11d5ed9f6003376e",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_pcap.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_pktlogger.c",
+      "bytes": 53145,
+      "sha256": "f1ef936e9519e6bc2e75912b71f870011b8699936ed364b2221e189106732717",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_pktlogger.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_pktlogger.h",
+      "bytes": 3261,
+      "sha256": "990592fd84fc10afff04c97e4baf586f69e1ab3d497e11850f7f4925a7b95af6",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_pktlogger.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_radar.c",
+      "bytes": 58944,
+      "sha256": "c261b6777d9322a4baf641a37861bf588e754e5411f7f993ea16725d00c395dc",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_radar.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_radar.h",
+      "bytes": 1939,
+      "sha256": "992433b333f63ea08b14f84befebb347f8bf80e7097bee7702a2831887472aa2",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_radar.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_radar_compat.c",
+      "bytes": 1804,
+      "sha256": "2f0401ff643896a3ef099f941359a4cbbf336ff6f601ccb46cad25c61fe16712",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_radar_compat.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_rx.c",
+      "bytes": 74852,
+      "sha256": "7b1126f6ce00111ded62f36204d13736a51bdc94906b3de5f4308c7a7691ba2a",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_rx.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_scan.c",
+      "bytes": 4959,
+      "sha256": "17cefa0744c2fe8bd00ccb0d29ca8ff0a5b4a013cc41d2b9caaf71df49d2145d",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_scan.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_sch.c",
+      "bytes": 29700,
+      "sha256": "64edce498abe520db3c3fcb7a51505af750456b54284b1e2dc25af7519d99035",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_sch.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_sch_pm.c",
+      "bytes": 3308,
+      "sha256": "b2a14cc8aff687f23b7d792fb0eb47cd0b3a3fb5940f791f521f17d02fb43812",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_sch_pm.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_sch_pm.h",
+      "bytes": 1274,
+      "sha256": "2557a0ba57133c728af6a710357514f4c7ac3a69a2396fbc8c8a7fb42ce9d2f6",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_sch_pm.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_sch_wmm.h",
+      "bytes": 1009,
+      "sha256": "7dc95e1b32177b0f9540639e8f22728e5d848d44efc4a9dcb95907b68686c618",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_sch_wmm.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_show.c",
+      "bytes": 12521,
+      "sha256": "996ee4f1294ad79623f10f41c1c57bce98f8a47ee9c1cb99c74acdb11b05bda9",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_show.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_show.h",
+      "bytes": 1659,
+      "sha256": "78b3025636ba67cbca91303b7d04bf7a07b05a4a148067c77746d38b7c42ae7c",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_show.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_slab_def.h",
+      "bytes": 2576,
+      "sha256": "4ed06903cdbef21e3d812696b68ced031d55ff9d965c14ae80c486c913e8401b",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_slab_def.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_slab_watch.h",
+      "bytes": 152,
+      "sha256": "5cb3ae80b0c2f5f80244bd1ece1e5f968b4f8eb3405aac08b69ee6b4c62451e3",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_slab_watch.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_soc.c",
+      "bytes": 28362,
+      "sha256": "a179bebe0f469b4156e03139d6e06c99d51720c2bc9e292d5426a37d607603c4",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_soc.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_soc.h",
+      "bytes": 5151,
+      "sha256": "a21236a19e0e37950bc8b0b294f8b9ae2f18bbc4b5bf9b2865caa478f5c940ae",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_soc.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_tx.c",
+      "bytes": 87130,
+      "sha256": "2f93045dc3937074300c571e1b5f1d49c95e51de91d8e00b0742db1177438c1d",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_tx.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_txbf.c",
+      "bytes": 21710,
+      "sha256": "953a080fd97c9f794cdce56decdc70be121439635d5e421282ead0c93ef143d8",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_txbf.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_txbf.h",
+      "bytes": 1942,
+      "sha256": "649d561e00f4ecacf49bb8328c54d750cf5b50738d385c2b28ca03959f8b8098",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_txbf.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_uc_print.c",
+      "bytes": 5739,
+      "sha256": "f8dc7d8b7101568c3ee0b92bb69b45aae972e0df241e6468ec2199d5e03e9d98",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_uc_print.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_uc_print.h",
+      "bytes": 1026,
+      "sha256": "b1d259990e2c753ef839fd1398982de6313851c649a4e8fdfaf22635a0442820",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_uc_print.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_vap.c",
+      "bytes": 22478,
+      "sha256": "8a7e19a8066392468797602735e6d78039ac6b5ab6bcdf1a5d5baa860d59f485",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_vap.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_vap.h",
+      "bytes": 5828,
+      "sha256": "1f9ea973f15ad341bf7064fdc319e56dfc3f4c25e8627f2ab9d4ecc60717533a",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_vap.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_vlan.c",
+      "bytes": 2737,
+      "sha256": "466b6e1263cdbb633d05e096287dfcaea967d59594897246d9c4778d65802eb3",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_vlan.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_vlan.h",
+      "bytes": 1051,
+      "sha256": "0626e7203ef79e44b168de12b48b44e970c9cf12b388a52b7060c63e9ddeb50d",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_vlan.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_wlan.c",
+      "bytes": 309207,
+      "sha256": "35c3b912c1d4e0a0fda0db2300627deef11cb7b042ed5fba56e577feb23d6445",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_wlan.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_wlan.h",
+      "bytes": 50723,
+      "sha256": "154f0088d94f73a2a8bd708cbd543d80029d2f1cc7067cf7cf992582be083727",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/qdrv_wlan.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/soc.h",
+      "bytes": 177,
+      "sha256": "54905b37dbe250218832f5c478a7b15fa60ff22ec6c2d12eac1ccf109bb592ff",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/soc.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211.c",
+      "bytes": 100469,
+      "sha256": "ab62a89f0c8d670a028267184dae98000398ae1caefde44353b9cfd62f98d8dd",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_acl.c",
+      "bytes": 7815,
+      "sha256": "2592c8c83a60276851e0c8eec88bebbd2db949e82d53afc686ffb39412ae24ad",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_acl.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_beacon.c",
+      "bytes": 25206,
+      "sha256": "712d34d4ef45d23d9e146d15702baf6df1c1265b5be52dbcbb376eb4dbc1e64d",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_beacon.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_beacon_desc.c",
+      "bytes": 29067,
+      "sha256": "198a92120083cc3c5645c71dcebc9cc285bf8fbe0474cb347f669897bad744c1",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_beacon_desc.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_crypto.c",
+      "bytes": 18373,
+      "sha256": "8b0dd020dfae158dd3bbe9baf7fe0614913e2b05b6bcbc0a0a28f80e0a020a9e",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_crypto.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_crypto_ccmp.c",
+      "bytes": 17900,
+      "sha256": "90aad4e58ac1ffb3f098a3eb065eb517665ce1ccffb4e630a9a24a7c47bd80c5",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_crypto_ccmp.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_crypto_none.c",
+      "bytes": 4520,
+      "sha256": "13bb0971a3eb6562abfb5501a430d12e960c4f6eba9a5683b085b08dc8f0fed7",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_crypto_none.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_crypto_tkip.c",
+      "bytes": 30212,
+      "sha256": "14202a45f14ede03add64eeafa9b4802594ff0b3f38b4478aff694a5302b9e2b",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_crypto_tkip.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_crypto_wep.c",
+      "bytes": 15649,
+      "sha256": "8148cd4acc02e1a618a047c8aa5ec16e8349e3bd18a2358f930f52634b673c37",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_crypto_wep.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_input.c",
+      "bytes": 341633,
+      "sha256": "0a9fe5e65d41cdfcc13cdbf063673935c79bfd082726067cf354f06a00cb4c45",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_input.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_linux.c",
+      "bytes": 28563,
+      "sha256": "db40c95e0bebbfef107c7035f6cafc4be4c32492e87cdc98745b8dd7d56b8b40",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_linux.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_mlme_statistics.c",
+      "bytes": 18974,
+      "sha256": "aefed7036fd0630b19c34e00607f6f1de1b023476aa5e8459885ff35a42f12a5",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_mlme_statistics.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_node.c",
+      "bytes": 120608,
+      "sha256": "0d51144dab4a4a027bf34993078a8d06b52366a43a9bc686b14e3e5e6f3d36d7",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_node.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_output.c",
+      "bytes": 192253,
+      "sha256": "6a353651d6d8f3a84a454f9ec51effceabd6af6b0378a35f13b681fa8abdba6d",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_output.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_power.c",
+      "bytes": 10193,
+      "sha256": "7e95aa12acf29f852eefa26bcc6870177a3bcb70e3da1ccc0086e41f1b0340fe",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_power.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_proto.c",
+      "bytes": 70939,
+      "sha256": "ed779617c71365303a3421faae95b92461e845d580034988e3dc458f3a3df4c8",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_proto.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_rate.c",
+      "bytes": 3637,
+      "sha256": "289e8aecd31b945659003ee65a3923b716a8784e5ef2df5daf3b9c40a3117fe5",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_rate.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_scan.c",
+      "bytes": 58874,
+      "sha256": "6cd7d90fb319f1bdcad5fb97f5a99e93e81f385eab8acaa992f599e79cae3231",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_scan.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_scan_ap.c",
+      "bytes": 34397,
+      "sha256": "be5fb4d720800aacccacc75c53e3d7e9dc9f0a7c28e7307589e9007ff78eae0e",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_scan_ap.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_scan_sta.c",
+      "bytes": 50055,
+      "sha256": "73e0b28b5e74693bd3b50c72883df46dc238201da2232dc066bdef76badd5d93",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_scan_sta.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_tdls.c",
+      "bytes": 129155,
+      "sha256": "073fdd13f9cc304ab39450d8838b16e953862ec954f9c6e2bcb003340cd581bc",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_tdls.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_tpc.c",
+      "bytes": 10611,
+      "sha256": "4f784c885634221281e8f19a05dc8f21bbed62f4a65bf958f68a415f4febb9d3",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_tpc.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_wireless.c",
+      "bytes": 670614,
+      "sha256": "52ea94042aeb5f23b8efa1866ab32c96e9f172fc05fac59851abe236cdd7de22",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_wireless.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_xauth.c",
+      "bytes": 3616,
+      "sha256": "5feaec3e92676651a090e6dd8e1d4cae2d70738843c8156df30afc601eb01745",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/ieee80211_xauth.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/if_media.c",
+      "bytes": 13136,
+      "sha256": "6fda06d57cf55daeb0256e6aec69e166592f1860d16ec0f972da9eecf27f38e0",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/if_media.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/openmitrastar_beacon_preflight.h",
+      "bytes": 933,
+      "sha256": "5043d3f04160269e3bda6b5badb576dd7db7c1e66d632b368989f04449e9bb52",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/openmitrastar_beacon_preflight.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/openmitrastar_bss_tm.h",
+      "bytes": 1008,
+      "sha256": "b8aa2c5f0d4b5a02965521ccefc04b24ca50ead66c1afcf6ab2d64389de879f7",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/openmitrastar_bss_tm.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/release.h",
+      "bytes": 2085,
+      "sha256": "ee4f529b52e004517d502fbbcfb88d484c877a90af0f3af5f2a1b4168d25e8bf",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/release.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/version.h",
+      "bytes": 1983,
+      "sha256": "1d6edc89dc9d52a1a7f8794e8030739e88bced883fc0a43aeb9f586dd6ecf8bb",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/version.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/wlan_fwt_compat.c",
+      "bytes": 487,
+      "sha256": "cac94258272e9f7df805505cad378780248c998ef70de590127da3a73ba168d4",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/wlan/wlan_fwt_compat.c"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/current_platform.h",
+      "bytes": 398,
+      "sha256": "5b546dc962dbefe6537c3db13fe0f65585bc60f3c4021525939adea01287e394",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/current_platform.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/openmitrastar_qdrv_compat.h",
+      "bytes": 3968,
+      "sha256": "651d94fd4fc81b4d889103f8d64e3d5c6764758b55061ebdc935d0f361c878ad",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/openmitrastar_qdrv_compat.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/qtn_platform_support.h",
+      "bytes": 211,
+      "sha256": "f242a93ab72053145b323621a3fc54297b1592e537b4807889c974f5adc9bb2d",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/qtn_platform_support.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/gpio.h",
+      "bytes": 99,
+      "sha256": "195b97775c1e231f4cae4ec6fa579efe87d61c3a84a2dee03e8dc9b23d4529d3",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/gpio.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/hardware.h",
+      "bytes": 451,
+      "sha256": "778e9f99607c95d470fa17074eee90ef7aaa3509ac20f106aa17209c0b98946e",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/hardware.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/linux/config.h",
+      "bytes": 70,
+      "sha256": "bbed9045704f192c50d4c68fec88f2678a08a20f4e089dc626cbb6fbfc0be718",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/linux/config.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/linux/pm_qos_params.h",
+      "bytes": 838,
+      "sha256": "88295077cf5b20a0ad3dd475655de2fb57c1b62254707e4d45503bff57247d6d",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/linux/pm_qos_params.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/qtn/br_types.h",
+      "bytes": 528,
+      "sha256": "9b56c5419e253c7abf6e0d540b7fc72f254f735367eb536c61935ad40cb162b1",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/qtn/br_types.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/qtn/qtn_skb_cb.h",
+      "bytes": 1729,
+      "sha256": "e115c7a1491bbab189b6f89d21a03221c7a5c835c00150a695656b35984ce5e8",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/qtn/qtn_skb_cb.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/trace/ippkt.h",
+      "bytes": 1380,
+      "sha256": "8f8f5ca4a1899e2ab9187931484109d8da701f80993d98deb5ecc3c3bedfd767",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/trace/ippkt.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/trace/skb.h",
+      "bytes": 333,
+      "sha256": "6804434ce8ad570b810ffdff0ab20459538b82506723170efd008fe847a42149",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/trace/skb.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/board_config.h",
+      "bytes": 400,
+      "sha256": "6654f0ccce4caf24659ff4d6baced6fb709847d063ccd77c78443a0f3d0e5147",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/board_config.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/dma_cache_ops.h",
+      "bytes": 633,
+      "sha256": "96f7914dda30dc484d2887f7b8b7db97dbabcfd26d01fe8d9fadb8dedfdb347b",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/dma_cache_ops.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/gpio.h",
+      "bytes": 416,
+      "sha256": "ec9f0f8e74ae336f12c5d460a4b0cab01dee1aaa7794abf38c2f4763f07fee45",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/gpio.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/kdump.h",
+      "bytes": 233,
+      "sha256": "67242abd1335e954da1f2bcccaaebea71b776baf93fd6ae64e35e20226612f6a",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/kdump.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/platform.h",
+      "bytes": 166,
+      "sha256": "3736f6f368212e15a579ed9cf820b8dc8b900be760fdd50b613c4c5a3f3a7f69",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/platform.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/pm.h",
+      "bytes": 267,
+      "sha256": "eb5a6bf8305b73c8a25099e0a8d4b27a2f687038cfd4df5d16ab891419bbaa32",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/pm.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/soc.h",
+      "bytes": 148,
+      "sha256": "64bca498fa4c29d1e3bab6bae1d56f1902fc701b5285272db406090ff7631f80",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/soc.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/troubleshoot.h",
+      "bytes": 472,
+      "sha256": "7e5b2ff25100cfbb2097b978cf6194dae7faab5a162589c4ae3d9964a17bbf2a",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/asm/board/troubleshoot.h"
+    },
+    {
+      "path": "candidates/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/linux/net/bridge/br_public.h",
+      "bytes": 546,
+      "sha256": "0d49d79e719bcebe6fc68669984681117655fac7de627a03cdb1d7ca20e93695",
+      "source": "outputs/rea/beacon-app-ie-synchronization-20261022T190600Z-r11c/source/qdrv/compat/include/linux/net/bridge/br_public.h"
+    },
+    {
+      "path": "evidence/beacon-r9-qualified-delivery-20261022T192000Z-r1/result.json",
+      "bytes": 4207,
+      "sha256": "e6b711ab716d7b23dbe41f13be1f28b02fe7ce47a244e1ee34284c8cf7ddf4f9",
+      "source": "outputs/rea/beacon-r9-qualified-delivery-20261022T192000Z-r1/result.json"
+    },
+    {
+      "path": "evidence/beacon-r9-independent-final-review-20261022T193500Z-r1/fresh-audit.json",
+      "bytes": 9201,
+      "sha256": "b26851c145e5e1883d6472121f4cc1f015b40720ec24ebe515eef2d420302b26",
+      "source": "outputs/rea/beacon-r9-independent-final-review-20261022T193500Z-r1/fresh-audit.json"
+    },
+    {
+      "path": "evidence/beacon-r9-independent-final-review-20261022T193500Z-r1/result.json",
+      "bytes": 1385,
+      "sha256": "4718e749d5fb1b1f0d41bcab8bce10ff2c79488f0d3d95aa2ab18e9b44aba947",
+      "source": "outputs/rea/beacon-r9-independent-final-review-20261022T193500Z-r1/result.json"
+    },
+    {
+      "path": "evidence/beacon-r10-cleanup-fixture-20261022T185300Z-r2/actual-cleanup.c",
+      "bytes": 4805,
+      "sha256": "716cc6fee40b8365474d6cbea4a08b8eb5a3a0ecf4c364538c98a76d9ee89970",
+      "source": "outputs/rea/beacon-r10-cleanup-fixture-20261022T185300Z-r2/actual-cleanup.c"
+    },
+    {
+      "path": "evidence/beacon-r10-cleanup-fixture-20261022T185300Z-r2/result.json",
+      "bytes": 589,
+      "sha256": "24640642514c0b41aebe29bacdbcffbfe9b43ccf27170ff5fd367b741cc850cc",
+      "source": "outputs/rea/beacon-r10-cleanup-fixture-20261022T185300Z-r2/result.json"
+    },
+    {
+      "path": "evidence/beacon-r10-minimal-pair-20261022T192800Z-r2/input-pins.json",
+      "bytes": 293197,
+      "sha256": "3fbfdde296984eac9a61d452ad0f9f43c57313fbc5fe81d305b7944f3d5f5f32",
+      "source": "outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/input-pins.json"
+    },
+    {
+      "path": "evidence/beacon-r10-minimal-pair-20261022T192800Z-r2/result.json",
+      "bytes": 4666,
+      "sha256": "2e41dc816371cf61c149da694ba46a59e7a8659db9b6ac9d540a9ab1be9d46bb",
+      "source": "outputs/rea/beacon-r10-minimal-pair-20261022T192800Z-r2/result.json"
+    },
+    {
+      "path": "evidence/beacon-r10-qualified-pair-20261022T193100Z-r1/audit.json",
+      "bytes": 435,
+      "sha256": "682ae04970c11c5a2576911af6794bad439ee4e84e0ebd79db499ecccbf50df6",
+      "source": "outputs/rea/beacon-r10-qualified-pair-20261022T193100Z-r1/audit.json"
+    },
+    {
+      "path": "evidence/beacon-r10-qualified-pair-20261022T193100Z-r1/input-pins.json",
+      "bytes": 3028,
+      "sha256": "0ab0314ae0e0c4d922f63b8b667b9ce409460f8fc3a348ef804b48d05b4800a1",
+      "source": "outputs/rea/beacon-r10-qualified-pair-20261022T193100Z-r1/input-pins.json"
+    },
+    {
+      "path": "evidence/beacon-r10-qualified-pair-20261022T193100Z-r1/result.json",
+      "bytes": 4508,
+      "sha256": "a91109192b0fbce29dbf424ce4bc35f764e5c6fe3e1d6e470c9c5b2087b87736",
+      "source": "outputs/rea/beacon-r10-qualified-pair-20261022T193100Z-r1/result.json"
+    },
+    {
+      "path": "evidence/beacon-r10-sealed-delivery-20261022T193300Z-r1/build_beacon_r10_minimal_pair.py",
+      "bytes": 6449,
+      "sha256": "34a61a528866eace65ff677d8aaf69d5ddfdd1705a2efc2bb99dd1eff13064eb",
+      "source": "outputs/rea/beacon-r10-sealed-delivery-20261022T193300Z-r1/build_beacon_r10_minimal_pair.py"
+    },
+    {
+      "path": "evidence/beacon-r10-sealed-delivery-20261022T193300Z-r1/input-pins.json",
+      "bytes": 4727,
+      "sha256": "ea6de1eef01790706f04b80e3659e57d3ce99171c455e4b7d59886618dbefc4e",
+      "source": "outputs/rea/beacon-r10-sealed-delivery-20261022T193300Z-r1/input-pins.json"
+    },
+    {
+      "path": "evidence/beacon-r10-sealed-delivery-20261022T193300Z-r1/prepare_beacon_unpublished_ioctl_cleanup.py",
+      "bytes": 2723,
+      "sha256": "08568b22af1ff6bd71ca9ff51c9dabedc2f500c7d56d5d7795bb930b7bdc3619",
+      "source": "outputs/rea/beacon-r10-sealed-delivery-20261022T193300Z-r1/prepare_beacon_unpublished_ioctl_cleanup.py"
+    },
+    {
+      "path": "evidence/beacon-r10-sealed-delivery-20261022T193300Z-r1/qualify_beacon_r10_minimal_pair.py",
+      "bytes": 5088,
+      "sha256": "5b1d72de76c1e9881b38b3ec0a9b9f31d5559cdbce4dea219df4d8d68354a5c0",
+      "source": "outputs/rea/beacon-r10-sealed-delivery-20261022T193300Z-r1/qualify_beacon_r10_minimal_pair.py"
+    },
+    {
+      "path": "evidence/beacon-r10-sealed-delivery-20261022T193300Z-r1/qualify_f370_qdrv_module.py",
+      "bytes": 10000,
+      "sha256": "9609844fc1187085d17ce347ba4398f84fcd1a04abe1f7660b363dac2bc7a8a1",
+      "source": "outputs/rea/beacon-r10-sealed-delivery-20261022T193300Z-r1/qualify_f370_qdrv_module.py"
+    },
+    {
+      "path": "evidence/beacon-r10-sealed-delivery-20261022T193300Z-r1/result.json",
+      "bytes": 5135,
+      "sha256": "a8fb194f362f683ad504fc8ccc02015106ffc6a6b5b6aff919d5fee3f5b40d89",
+      "source": "outputs/rea/beacon-r10-sealed-delivery-20261022T193300Z-r1/result.json"
+    },
+    {
+      "path": "evidence/beacon-r10-sealed-delivery-20261022T193300Z-r1/test_beacon_unpublished_ioctl_cleanup.py",
+      "bytes": 5165,
+      "sha256": "f90558f18941ca7b867a5ab70ba09189b9007b1f89c0200b3756c2debdb2c789",
+      "source": "outputs/rea/beacon-r10-sealed-delivery-20261022T193300Z-r1/test_beacon_unpublished_ioctl_cleanup.py"
+    },
+    {
+      "path": "evidence/beacon-r10-verifier-negative-20261022T193000Z-r1/result.json",
+      "bytes": 793,
+      "sha256": "a249ce861df28dae5a9ef190dbb08c1685ce85ae9693afcc7bc5bf1b0ed1b054",
+      "source": "outputs/rea/beacon-r10-verifier-negative-20261022T193000Z-r1/result.json"
+    },
+    {
+      "path": "evidence/beacon-r11c-app-interleaving-fixture-20261022T191000Z-r3/fixture.c",
+      "bytes": 5327,
+      "sha256": "7861887cd1cbd35d459e123d8b55e832c7d1542fa4231e15650f4ddf0026e851",
+      "source": "outputs/rea/beacon-r11c-app-interleaving-fixture-20261022T191000Z-r3/fixture.c"
+    },
+    {
+      "path": "evidence/beacon-r11c-app-synchronization-fixture-20261022T190800Z-r2/fixture.c",
+      "bytes": 4326,
+      "sha256": "a82e97223baaf39fab4d74d1a366beda753c81306cb084f0e67b9929c7dc03bf",
+      "source": "outputs/rea/beacon-r11c-app-synchronization-fixture-20261022T190800Z-r2/fixture.c"
+    },
+    {
+      "path": "evidence/beacon-r11c-source-review-20261022T191200Z-r1/input-pins.json",
+      "bytes": 1279,
+      "sha256": "869919d45034d919513c60668879c96ec5d3bdf81c0761ca69a37f9aae6cbd42",
+      "source": "outputs/rea/beacon-r11c-source-review-20261022T191200Z-r1/input-pins.json"
+    },
+    {
+      "path": "evidence/beacon-r11c-source-review-20261022T191200Z-r1/result.json",
+      "bytes": 1453,
+      "sha256": "ea641c8eeff4cf6f94775a1f2c35bdd1992342a1359d43e8389e89e25ebccb81",
+      "source": "outputs/rea/beacon-r11c-source-review-20261022T191200Z-r1/result.json"
+    },
+    {
+      "path": "evidence/beacon-r11c-arc-four-units-20261022T192000Z-r1/input-pins.json",
+      "bytes": 205743,
+      "sha256": "f1c439d120d44c265a478dfa7d36513e6abdc6f8bef93d5479f6097719991995",
+      "source": "outputs/rea/beacon-r11c-arc-four-units-20261022T192000Z-r1/input-pins.json"
+    },
+    {
+      "path": "evidence/beacon-r11c-arc-four-units-20261022T192000Z-r1/result.json",
+      "bytes": 1514,
+      "sha256": "9f90f1f7e17016fa56fd583c7887cf6d86dd81e777eed4b626fe9f1d0209f2a8",
+      "source": "outputs/rea/beacon-r11c-arc-four-units-20261022T192000Z-r1/result.json"
+    },
+    {
+      "path": "tools/integration/prepare_beacon_unpublished_ioctl_cleanup.py",
+      "bytes": 2723,
+      "sha256": "08568b22af1ff6bd71ca9ff51c9dabedc2f500c7d56d5d7795bb930b7bdc3619",
+      "source": "tools/prepare_beacon_unpublished_ioctl_cleanup.py"
+    },
+    {
+      "path": "tools/integration/test_beacon_unpublished_ioctl_cleanup.py",
+      "bytes": 5165,
+      "sha256": "f90558f18941ca7b867a5ab70ba09189b9007b1f89c0200b3756c2debdb2c789",
+      "source": "tools/test_beacon_unpublished_ioctl_cleanup.py"
+    },
+    {
+      "path": "tools/integration/build_beacon_r10_minimal_pair.py",
+      "bytes": 6449,
+      "sha256": "34a61a528866eace65ff677d8aaf69d5ddfdd1705a2efc2bb99dd1eff13064eb",
+      "source": "tools/build_beacon_r10_minimal_pair.py"
+    },
+    {
+      "path": "tools/integration/qualify_beacon_r10_minimal_pair.py",
+      "bytes": 5088,
+      "sha256": "5b1d72de76c1e9881b38b3ec0a9b9f31d5559cdbce4dea219df4d8d68354a5c0",
+      "source": "tools/qualify_beacon_r10_minimal_pair.py"
+    },
+    {
+      "path": "tools/integration/prepare_app_ie_synchronization.py",
+      "bytes": 6962,
+      "sha256": "9c7961ba177b70507e463acc587e3c8d87f57b5e61ec6a1b52cacd4292a2a7b1",
+      "source": "tools/prepare_app_ie_synchronization.py"
+    }
+  ]
+}

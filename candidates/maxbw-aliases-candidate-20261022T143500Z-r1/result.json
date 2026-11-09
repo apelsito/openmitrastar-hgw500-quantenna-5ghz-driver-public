@@ -1,0 +1,14 @@
+{
+  "status": "SOURCE_ONLY_TWELVE_TABLE_ENTRIES_TEN_FUNCTIONAL_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent_sha256": "7a128781902eb6cc58f71e2b4a30ae005de7ebf168a10a9ae4139557b93a9be8",
+  "candidate_sha256": "9e31def106b6d73ce0d350ce292521b814bb62dd6fc86ab7e5ca24ceac91d71a",
+  "total_original_records_recovered": 12,
+  "functional_original_ops_recovered": 10,
+  "faithful_unsupported": 2,
+  "remaining_original_table_gaps": 32,
+  "field": "ic->ic_max_system_bw",
+  "fieldproof": "OEMcase460 setter/getter and exportedieee80211_get_max_system_bw all read/write byte4df1; same sourcefunction names field",
+  "limits": "Storelowbyte policy only, no validation added; fullmodule delta and policy context remain required"
+}

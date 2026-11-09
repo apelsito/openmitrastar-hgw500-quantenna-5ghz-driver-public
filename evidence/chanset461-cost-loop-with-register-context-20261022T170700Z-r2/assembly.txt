@@ -1,0 +1,47 @@
+
+/workspace/user-home/Desktop/MitraStar/outputs/rea/oem-wlan-missingops-20261022T134300Z-linked/wlan-ANALYSIS_ONLY-NOT_FIRMWARE.elf:     file format elf32-littlearc
+
+
+Disassembly of section .text:
+
+0001483e <ieee80211_chanset_pick_channel+0xa32>:
+   1483e:	254c a000           	cmp	r21,0
+   14842:	da01                	mov_s	r2,0x1
+   14844:	2540 2055           	add	r21,r21,0x1
+   14848:	22ca 054a           	mov.ge	r2,r21
+   1484c:	729f                	mov_s	lp_count,r2
+   1484e:	2700 1f92 0000 5dcc 	add	r18,r15,0x5dcc
+   14856:	2700 1f91 0000 5dbc 	add	r17,r15,0x5dbc
+   1485e:	2700 1f90 0000 5db8 	add	r16,r15,0x5db8
+   14866:	2700 1f81 0000 5dc4 	add	r1,r15,0x5dc4
+   1486e:	2700 1f80 0000 5dc0 	add	r0,r15,0x5dc0
+   14876:	2700 1f8e 0000 5dc8 	add	r14,r15,0x5dc8
+   1487e:	20a8 0dc0           	lp	110	;148ea <ieee80211_chanset_pick_channel+0xade>
+   14882:	266b 7080 0001 488e 	sr	0x1488e,[lp_start]
+   1488a:	005f 0000           	b	94	;148e6 <ieee80211_chanset_pick_channel+0xada>
+   1488e:	1100 2003           	ld	r3,[r17]
+   14892:	1000 200d           	ld	r13,[r16]
+   14896:	16e8 a002           	ld	r2,[r22,-24]
+   1489a:	16e4 a00a           	ld	r10,[r22,-28]
+   1489e:	1100 000b           	ld	r11,[r1]
+   148a2:	221a 00c2           	mpy	r2,r2,r3
+   148a6:	16f0 a004           	ld	r4,[r22,-16]
+   148aa:	8080                	ld_s	r12,[r0,0]
+   148ac:	16ec a007           	ld	r7,[r22,-20]
+   148b0:	1200 2009           	ld	r9,[r18]
+   148b4:	221a 1343           	mpy	r3,r10,r13
+   148b8:	16f8 a005           	ld	r5,[r22,-8]
+   148bc:	1600 1008           	ld	r8,[r14]
+   148c0:	16f4 a006           	ld	r6,[r22,-12]
+   148c4:	241a 02c4           	mpy	r4,r4,r11
+   148c8:	627a                	add_s	r2,r2,r3
+   148ca:	271a 0303           	mpy	r3,r7,r12
+   148ce:	7280                	add_s	r2,r2,r4
+   148d0:	211a 1144           	mpy	r4,r9,r5
+   148d4:	627a                	add_s	r2,r2,r3
+   148d6:	261a 0203           	mpy	r3,r6,r8
+   148da:	7280                	add_s	r2,r2,r4
+   148dc:	627a                	add_s	r2,r2,r3
+   148de:	2202 0242           	sub	r2,r2,r9
+   148e2:	1efc a080           	st	r2,[r22,-4]
+   148e6:	2680 2401           	add	r22,r22,80

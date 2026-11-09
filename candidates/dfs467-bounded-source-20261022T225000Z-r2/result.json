@@ -1,0 +1,33 @@
+{
+  "status": "SOURCE_ONLY_DFS467_5GHZ_REFRESHED_LIST_BOUNDS_PENDING_MODULES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent": "outputs\\rea\\consolidated29-source-20261022T212500Z-r1",
+  "parent_manifest_sha256": "9cc6a3fce4ff07548787c9eb2b8305fa0918078a205087e40b14ebedb7220d77",
+  "candidate_private_record_added": 1,
+  "combined_source_records": 30,
+  "qualified_combined_records": null,
+  "changed_sources": {
+    "headers/net80211/ieee80211_var.h": "ff7a9e72d0edafd54af9125b056cba8a695a879a371c1d9e3799ab564f2df548",
+    "source/wlan/ieee80211_scan.c": "9219ffd27f27f75ae5490b35e9fd67faaab74500956bb2ab030e4f68aa958b7a",
+    "source/wlan/ieee80211_scan_ap.c": "248bc59a177fe7af940e51a5f4949e422eec2d4caadfeaf482eadb1805737b10",
+    "source/wlan/ieee80211_wireless.c": "e94a4915a10a3b7a29cebfe911f055f72885009a5ba6d7c59bdd8853fc1760be"
+  },
+  "host_layout_changed": false,
+  "header_old_line_positions_preserved": true,
+  "exact_sequence": "scanner.scan_start(ss,vap) policyrefresh, scan_pickchannel(ic,0x130000), value1/-95, WEXTreturn0",
+  "exact_flag": "DFSonly afterexistingcheckchannel; noavail/CACcompletedcriterion",
+  "safety_deviations": [
+    "24GHz/OEM461modes2/3/8/9 andunsupportedmodes return-95",
+    "Missingstart/pick/private/scannervap refuses stalequery insteadOEMpartiallistfallback",
+    "APscannerinitializedonly; noSTA/mixedscannerclaim",
+    "Empty/out-of-range refreshedscanlist refuses beforepick toavoid retained/OEM ANYCfallbacksuccessfromstale ss_chans0"
+  ],
+  "limits": [
+    "Preservesretainedportmetric/alternate/width/fallbackmachinery; notfullOEMAPpickinstructionequivalence.",
+    "No24GHzchanset461implementationorallmode467acceptance.",
+    "NoPHY/RF/regulatory/calibration/clienttrafficpersistence/releaseacceptance.",
+    "Validinitializedscannerobjectlifetime assumed; nohotdetach/overlapscanproof"
+  ],
+  "parent_source": "outputs\\rea\\dfs467-bounded-source-20261022T224000Z-r1"
+}

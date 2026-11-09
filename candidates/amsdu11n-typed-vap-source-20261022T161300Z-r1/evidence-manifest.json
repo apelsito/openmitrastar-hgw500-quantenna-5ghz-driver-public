@@ -1,0 +1,22 @@
+{
+  "windows-oem-vap-setup-amsdu-20261022T161000Z-r1": {
+    "rea.json": "4ca0ce011ad7cad74936e9f3c648cb78cc3da3572414bea4c22c90f64cc68329",
+    "rea.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "result.json": "8b148f910aa1785c792dfa56348a48ed4a7acefeebba777fb69b861d7b0a6e4a"
+  },
+  "windows-oem-qdrv-vap-init-amsdu-20261022T161000Z-r1": {
+    "rea.json": "ad76fc75046ec0ae3f3370ce53d3dbe642687588ebc630cc41016d23b94a5e4a",
+    "rea.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "result.json": "07d1928c9f4c3de65e82a3447d9e2eaf00a0ece1b91bf178bcd970ab4a9c02e7"
+  },
+  "windows-oem-send-mgmt-amsdu-20261022T160000Z-r1": {
+    "rea.json": "b66fd0c9ce29eadfbb57afc106ea684cc10c81e5f48a88a865dd317c30be2896",
+    "rea.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "result.json": "a0925b2cd89d401ff5d5a129d4df241ca840c5ce2c2bc0b027aea0e5abacd5f8"
+  },
+  "windows-muc-11n-amsdu-consumer-20261022T160000Z-r1": {
+    "rea.json": "fa85779cf85210038c4d6f389c806014f5f4659492da7d12038c983ea0a77c53",
+    "rea.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "result.json": "588743929699244dc089d2824e2beee5468bbb261e4a7538f51a84109565e179"
+  }
+}

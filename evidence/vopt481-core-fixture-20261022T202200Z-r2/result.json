@@ -1,0 +1,17 @@
+{
+  "status": "PASS_OEM481_R2_UNSIGNED_SAVED_BYTES_AND_STATE_CALL_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 1110083,
+  "exact_callback_sequences": 2,
+  "setter_getter_state_preserved": true,
+  "auto_backoff": true,
+  "fixture_sha256": "3255fcb9efbbe3ab9c0587174fd93273afdf859d253696763cb6b3b9ed4566fc",
+  "source_sha256": "6feb5e8af6980f109ec1295f8a254497903ddff09cbdd7c3d2231a0483ffaaaa",
+  "limits": "Reconstructed C core tested with fake providers; not kernel/Lifetime/SCS/OCAC/MuC behavior, ioctl registration or physical acceptance.",
+  "correction_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_hgw5g_vopt481_unsigned_r2.py": "7884f7584c5db3e8cc73efdf2e884ad400e8cbdeac0b3902f18182b6dd8aabfe",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_hgw5g_vopt481_core.py": "4940e636a2b8cafdaa29cf77df4c483736ff37d777b3ea1e3dab5c7e328309fe",
+    "outputs\\rea\\vopt481-core-fixture-20261022T202200Z-r2\\unsigned-fixture-generator.py": "b671d9db1d01bb2369e1bc54cc017f44e097b1b1dff3d0dce1e97cd74ff0495d"
+  }
+}

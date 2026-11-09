@@ -1,0 +1,10 @@
+{
+  "status": "HANDOFF_QUALIFIED32_PLUS_BOUNDED467_PENDING_ROOT_REVIEW",
+  "hardware_accessed": false,
+  "qualification": "outputs\\rea\\consolidated32-plus-bounded467-qualification-20261022T232300Z-r1",
+  "qualification_sha256": "a5b45e0bce8273d8d58c87fd5fb54025159e3c635e03cba2071397b3d0d7d357",
+  "complete_original_records": 32,
+  "bounded_extra_records": 1,
+  "private_table_records": 599,
+  "handoff_sha256": "431e8587f7473780d11ac1d9cd5eb5fdf60f6d55ea16e9483c43e780fca20420"
+}

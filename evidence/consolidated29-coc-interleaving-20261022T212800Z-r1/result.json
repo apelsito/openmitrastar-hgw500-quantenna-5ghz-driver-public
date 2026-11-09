@@ -1,0 +1,9 @@
+{
+  "status": "PASS_ACTUAL_COC491_DEFERRED_COMPLETION_PRODUCER_INTERLEAVINGS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 9,
+  "hook_scope": "Producerinjectedafterrealqueue-lockrelease1or2; noexhaustiveconcurrencyclaim",
+  "source_sha256": "f7e866905a145548a615eef73cfb934d41d7267e69a7b0ce9e9f041e1dcb7a85",
+  "limits": "Deterministichostcallbackschedule, validobjectlifetime only; stopduringrunningworker requiresexternalcanceljoin andphysicalPM/CSAacceptance remainsUNRUN"
+}

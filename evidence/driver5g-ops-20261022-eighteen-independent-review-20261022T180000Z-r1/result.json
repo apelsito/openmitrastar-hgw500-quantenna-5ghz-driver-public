@@ -1,0 +1,17 @@
+{
+  "status": "PASS_INDEPENDENT_ACTUAL18PAIR_ARTIFACT_REVIEW",
+  "hardware_accessed": false,
+  "hash_errors": [],
+  "compiled_c_commands": 106,
+  "module_fresh_audit_status": {
+    "qdrv": "PASS_COMPLETE_MODULE_BOUNDED_EIGHTEEN_DELTA",
+    "wlan": "PASS_COMPLETE_MODULE_BOUNDED_EIGHTEEN_DELTA"
+  },
+  "qdrv_init_size_normalization_used": false,
+  "qdrv_init_raw_bytes_identical_parent14": true,
+  "private_size30556_not30552_baseline": true,
+  "changed_getset_bodies_intentionally_excluded_from_equivalence": true,
+  "semantic_evidence": "Boundactualsource+1048576duplicateRTS+196608dynamicSIFSfixture; notmachineCFG/RFproof",
+  "remaining_ops": 26,
+  "NAC_included": false
+}

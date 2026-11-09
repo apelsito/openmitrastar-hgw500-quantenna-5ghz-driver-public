@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ACTUAL490_FULL_TRANSACTION_REFERENCE_HOST_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "operations": 3548272,
+  "current_modes_exhausted": 65536,
+  "rates_exhausted": 13,
+  "profile_mode_cases": 35100,
+  "source_sha256": "2accb30429544d7b07b1588efa12bfb30840d742e281ed0f205edcb2aaaa9ab5",
+  "helper_sha256": "dc604b52019e0870932d88332ce9948a3d9a6e58162e0e5e940f3f502d72c721",
+  "limits": "Actual helper with independent reference and fake synchronous callbacks; no acceptance of physical rate/mode transition or callback success."
+}

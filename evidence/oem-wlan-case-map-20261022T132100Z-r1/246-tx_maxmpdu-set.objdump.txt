@@ -1,0 +1,17 @@
+   45810:	e682                	cmp_s	r14,0x2
+   45812:	0520 008d           	bhi	5408	;46d30 <findchannel_any+0x5728>
+   45816:	c306                	ld_s	r3,[sp,0x18]
+   45818:	2394 0ad8           	add1	r3,r3,1579
+   4581c:	8b40                	ldb_s	r2,[r3,0]
+   4581e:	72d1                	cmp_s	r2,r14
+   45820:	04ec 0081           	beq	5356	;46d0c <findchannel_any+0x5704>
+   45824:	abc0                	stb_s	r14,[r3,0]
+   45826:	c006                	ld_s	r0,[sp,0x18]
+   45828:	72c9                	mov_s	r2,r14
+   4582a:	d9f6                	mov_s	r1,0xf6
+   4582c:	db00                	mov_s	r3,0
+   4582e:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   45836:	220a 3f80 0003 3ddc 	mov	gp,0x33ddc
+   4583e:	2023 0680           	jl.d	[gp]
+   45842:	244a 0000           	mov	r4,0
+   45846:	0443 0080           	b	5186	;46c86 <findchannel_any+0x567e>

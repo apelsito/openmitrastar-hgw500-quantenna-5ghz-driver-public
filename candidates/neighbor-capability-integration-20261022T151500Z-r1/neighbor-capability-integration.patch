@@ -1,0 +1,165 @@
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -125,6 +125,7 @@
+ #define OM_OEM_PARAM_MAX_BANDWIDTH 460
+ #define OM_OEM_PARAM_BBDF_WAR 483
+ #define OM_OEM_PARAM_CHECK_CURRENT_CHANNEL 464
++#define OM_OEM_PARAM_NEIGHBOR_REPORT 492
+ #define OM_OEM_PARAM_BSS_TM 493
+ #define OM_OEM_PARAM_DEVICE_MODE 451
+ #define OM_OEM_PARAM_IGNORE_ICAC_SELECTION 465
+@@ -11373,6 +11374,12 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_NEIGHBOR_REPORT:
++		if(value == 1)ic->om_neighbor_report_flags |= 1U;
++		else ic->om_neighbor_report_flags &= ~1U;
++		ieee80211_beacon_update_all(ic);
++		break;
++
+ 	case OM_OEM_PARAM_BSS_TM:
+ 		if(value == 1)ic->om_bss_tm_flags |= 1U;
+ 		else ic->om_bss_tm_flags &= ~1U;
+@@ -13964,6 +13971,10 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_NEIGHBOR_REPORT:
++		param[0] = ic->om_neighbor_report_flags & 1U;
++		break;
++
+ 	case OM_OEM_PARAM_BSS_TM:
+ 		param[0] = ic->om_bss_tm_flags & 1U;
+ 		break;
+@@ -20933,6 +20944,10 @@
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "bss_tm" },
+ 	{ OM_OEM_PARAM_BSS_TM,
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_bss_tm" },
++	{ OM_OEM_PARAM_NEIGHBOR_REPORT,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "neigh_repo" },
++	{ OM_OEM_PARAM_NEIGHBOR_REPORT,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_neigh_repo" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {
+--- a/src/wlan/ieee80211_beacon.c
++++ b/src/wlan/ieee80211_beacon.c
+@@ -42,6 +42,7 @@
+ #include <linux/config.h>
+ #endif
+ #include <linux/version.h>
++#include "openmitrastar_bss_tm.h"
+ #include <linux/module.h>
+ #include <linux/skbuff.h>
+ #include <linux/netdevice.h>
+@@ -117,6 +118,8 @@
+ 		capinfo |= IEEE80211_CAPINFO_SHORT_SLOTTIME;
+ 	if (ic->ic_flags & IEEE80211_F_DOTH)
+ 		capinfo |= IEEE80211_CAPINFO_SPECTRUM_MGMT;
++	if(ic->om_neighbor_report_flags & 1U)
++		capinfo |= 0x1000U;
+ 	bo->bo_caps = (__le16 *)frm;
+ 	*(__le16 *)frm = htole16(capinfo);
+ 	frm += 2;
+@@ -187,6 +190,9 @@
+ 		frm = ieee80211_add_beacon_desc_ie(ni, IEEE80211_ELEMID_20_40_BSS_COEX, frm);
+ 		frm = ieee80211_add_beacon_desc_ie(ni, IEEE80211_ELEMID_OBSS_SCAN, frm);
+ 	}
++
++	bo->bo_om_rrm = frm;
++	frm = ieee80211_add_beacon_desc_ie(ni, 70, frm);
+ 
+ 	/* BSS load element */
+ 	bo->bo_bss_load = NULL;
+@@ -369,6 +375,7 @@
+ 				 (sizeof(struct ieee80211_ie_htcap) +
+ 					 sizeof(struct ieee80211_ie_htinfo)):0)
+ 		 + sizeof(struct ieee80211_ie_qtn)
++		 + 7 /* RecoveredRRMIE70 descriptor reserve */
+ 		 + ((IS_IEEE80211_11NG(ic)) ? sizeof(struct ieee80211_20_40_coex_param)
+ 				+ sizeof(struct ieee80211_obss_scan_ie) : 0)
+ #ifdef CONFIG_QVSP
+@@ -466,8 +473,12 @@
+ 		capinfo |= IEEE80211_CAPINFO_SHORT_SLOTTIME;
+ 	if (ic->ic_flags & IEEE80211_F_DOTH)
+ 		capinfo |= IEEE80211_CAPINFO_SPECTRUM_MGMT;
++	if(ic->om_neighbor_report_flags & 1U)
++		capinfo |= 0x1000U;
+ 
+ 	*bo->bo_caps = htole16(capinfo);
++	if(bo->bo_om_rrm)
++		(void)om_neighbor_rrm_ie(bo->bo_om_rrm,ic->om_neighbor_report_flags);
+ 
+ 	if (vap->iv_flags & IEEE80211_F_WME) {
+ 		struct ieee80211_wme_state *wme = ieee80211_vap_get_wmestate(vap);
+--- a/src/wlan/ieee80211_beacon_desc.c
++++ b/src/wlan/ieee80211_beacon_desc.c
+@@ -381,6 +381,9 @@
+ 		return 0;
+ 
+ 	switch (ext_ie_id) {
++	case 70:
++		frm = om_neighbor_rrm_ie(frm,ic->om_neighbor_report_flags);
++		break;
+ 	case IEEE80211_ELEMID_RATES:
+ 		/* supported rates */
+ 		frm = ieee80211_add_rates(frm, rs);
+--- a/src/wlan/ieee80211_output.c
++++ b/src/wlan/ieee80211_output.c
+@@ -4288,7 +4288,7 @@
+ 					(sizeof(struct ieee80211_ie_htcap) +
+ 					 sizeof(struct ieee80211_ie_htinfo)) : 0)
+ 			+ sizeof(struct ieee80211_ie_athAdvCap)
+-			+ vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].length
++			+ vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].length + 7 /* recoveredRRMIE reserve */
+ 			+ sizeof(struct ieee80211_ie_qtn)
+ 			+ sizeof(struct ieee80211_qtn_ext_role)
+ 			+ sizeof(struct ieee80211_qtn_ext_bssid)
+@@ -4325,6 +4325,8 @@
+ 			capinfo |= IEEE80211_CAPINFO_SHORT_SLOTTIME;
+ 		if (ic->ic_flags & IEEE80211_F_DOTH)
+ 			capinfo |= IEEE80211_CAPINFO_SPECTRUM_MGMT;
++		if(ic->om_neighbor_report_flags & 1U)
++			capinfo |= 0x1000U;
+ 		*(__le16 *)frm = htole16(capinfo);
+ 		frm += 2;
+ 
+@@ -4444,6 +4446,9 @@
+ 		if (vap->iv_bss && vap->iv_bss->ni_ath_flags)
+ 			frm = ieee80211_add_athAdvCap(frm, vap->iv_bss->ni_ath_flags,
+ 					vap->iv_bss->ni_ath_defkeyindex);
++
++		if(ic->om_neighbor_report_flags & 1U)
++			frm = om_neighbor_rrm_ie(frm,ic->om_neighbor_report_flags);
+ 
+ 		if (vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].ie) {
+ 			memcpy(frm, vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].ie,
+@@ -4803,7 +4808,7 @@
+ 					 sizeof(struct ieee80211_ie_htinfo)) : 0) +
+ 			sizeof(struct ieee80211_wme_param) +
+ 			(vap->iv_ath_cap ? sizeof(struct ieee80211_ie_athAdvCap) : 0) +
+-			vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].length +
++			vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].length + 7 /* recoveredRRMIE reserve */ +
+ 			sizeof(struct ieee80211_ie_qtn) +
+ 			(vap->qtn_pairing_ie.ie ? sizeof(struct ieee80211_ie_qtn_pairing) : 0)
+ #ifdef CONFIG_QVSP
+@@ -4830,6 +4835,8 @@
+ 			capinfo |= IEEE80211_CAPINFO_SHORT_SLOTTIME;
+ 		if (ic->ic_flags & IEEE80211_F_DOTH)
+ 			capinfo |= IEEE80211_CAPINFO_SPECTRUM_MGMT;
++		if(ic->om_neighbor_report_flags & 1U)
++			capinfo |= 0x1000U;
+ 		*(__le16 *)frm = htole16(capinfo);
+ 		frm += 2;
+ 
+@@ -4895,6 +4902,9 @@
+ 			frm = ieee80211_add_athAdvCap(frm,
+ 				vap->iv_ath_cap & ni->ni_ath_flags,
+ 				ni->ni_ath_defkeyindex);
++
++		if(ic->om_neighbor_report_flags & 1U)
++			frm = om_neighbor_rrm_ie(frm,ic->om_neighbor_report_flags);
+ 
+ 		if (vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].ie) {
+ 			memcpy(frm, vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].ie,

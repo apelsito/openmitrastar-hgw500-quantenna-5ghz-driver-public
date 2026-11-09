@@ -1,0 +1,56 @@
+{
+  "schema": "openmitrastar.fourteen-entry-all-unit-module-pair/v1",
+  "status": "PASS_ALL_UNITS_COMPLETE_FOURTEEN_PAIR_PENDING_DELTA_QUALIFICATION",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "modules": [
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fourteen-full-module-pair-r4/a/qdrv/qdrv.ko",
+      "bytes": 684756,
+      "sha256": "3e76821b3d6358682db6a109dc1f1dc33f6a440e36fcb13bf1711dc58c2ecf06"
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fourteen-full-module-pair-r4/a/wlan/wlan.ko",
+      "bytes": 629984,
+      "sha256": "46075f1fca1d4b07fac0841798a29bc5fab28c900b2bb9692e8f946d7098cb79"
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fourteen-full-module-pair-r4/b/qdrv/qdrv.ko",
+      "bytes": 684756,
+      "sha256": "3e76821b3d6358682db6a109dc1f1dc33f6a440e36fcb13bf1711dc58c2ecf06"
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fourteen-full-module-pair-r4/b/wlan/wlan.ko",
+      "bytes": 629984,
+      "sha256": "46075f1fca1d4b07fac0841798a29bc5fab28c900b2bb9692e8f946d7098cb79"
+    }
+  ],
+  "candidate": "/workspace/user-home/Desktop/MitraStar/outputs/rea/bbdf-recovery-candidate-20261022T144500Z-r1",
+  "qdrv_baseline_build": "/workspace/user-home/Desktop/MitraStar/outputs/rea/arc700-20261021-r2/f370-module-20261021T221200Z-r2",
+  "wlan_baseline_build": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-wlan-baseline-r2",
+  "qdrv_baseline_lineage": "F364_F365_BASELINE_WITHOUT_F370_OBSERVATION_COUNTERS",
+  "total_original_entries": 14,
+  "functional_ops_added": 12,
+  "faithful_unsupported": 2,
+  "remaining_oem_table_gaps": 30,
+  "nac_prototype_included": false,
+  "limits": "Complete source-built module pair linkage; whole-module delta qualification still required. No runtime, RF, traffic or release acceptance.",
+  "reproducible": true,
+  "protected_inputs_unchanged": true,
+  "all_source_units_compiled_per_lane": 53,
+  "qdrv_source_built_units_linked": 34,
+  "wlan_source_built_units_linked": 19,
+  "reused_qdrv_units_per_lane": 0,
+  "reused_wlan_units_per_lane": 0,
+  "private_qdrv_size_bytes": 30556,
+  "private_bool_offset": 30552
+}

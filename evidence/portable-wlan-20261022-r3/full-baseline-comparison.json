@@ -1,0 +1,286 @@
+{
+  "status": "PASS_FULL_BASELINE_RECONSTRUCTION",
+  "errors": [],
+  "sections": [
+    {
+      "name": "",
+      "parent_bytes": 0,
+      "baseline_bytes": 0,
+      "type": 0,
+      "flags": 0,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": ".ARC.attributes",
+      "parent_bytes": 53,
+      "baseline_bytes": 53,
+      "type": 1879048193,
+      "flags": 0,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "ff556c3f210f1b51a24d09f165425d9ea7df53aca464a007f82f7618c2499789",
+      "baseline_sha256": "ff556c3f210f1b51a24d09f165425d9ea7df53aca464a007f82f7618c2499789"
+    },
+    {
+      "name": ".bss",
+      "parent_bytes": 5208,
+      "baseline_bytes": 5208,
+      "type": 8,
+      "flags": 3,
+      "comparison": "NOBITS_SIZE_ALIGNMENT_FLAGS",
+      "pass": true
+    },
+    {
+      "name": ".comment",
+      "parent_bytes": 1380,
+      "baseline_bytes": 1380,
+      "type": 1,
+      "flags": 48,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "ca5beca2c0718afe55f3d1337713ccd1b6b506e0a4bbfda18f1d4580c8385260",
+      "baseline_sha256": "ca5beca2c0718afe55f3d1337713ccd1b6b506e0a4bbfda18f1d4580c8385260"
+    },
+    {
+      "name": ".data",
+      "parent_bytes": 1880,
+      "baseline_bytes": 1880,
+      "type": 1,
+      "flags": 3,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "8aab47542be8e4e6782c67b9f41ccb6860319622282c0bb94beccedc87f7f4a9",
+      "baseline_sha256": "8aab47542be8e4e6782c67b9f41ccb6860319622282c0bb94beccedc87f7f4a9"
+    },
+    {
+      "name": ".data.once",
+      "parent_bytes": 4,
+      "baseline_bytes": 4,
+      "type": 1,
+      "flags": 3,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+      "baseline_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "name": ".exit.text",
+      "parent_bytes": 4,
+      "baseline_bytes": 4,
+      "type": 1,
+      "flags": 6,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "edfeb981f4b027bc93163843f0d3cb3bd46cf8ea6ad690caf387525ed1c8379f",
+      "baseline_sha256": "edfeb981f4b027bc93163843f0d3cb3bd46cf8ea6ad690caf387525ed1c8379f"
+    },
+    {
+      "name": ".gnu.linkonce.this_module",
+      "parent_bytes": 384,
+      "baseline_bytes": 384,
+      "type": 1,
+      "flags": 3,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "4657e2a09966bc58326f6d7d90c45d0b8fcab66dbf851c0435d8596b155efd09",
+      "baseline_sha256": "4657e2a09966bc58326f6d7d90c45d0b8fcab66dbf851c0435d8596b155efd09"
+    },
+    {
+      "name": ".init.text",
+      "parent_bytes": 4,
+      "baseline_bytes": 4,
+      "type": 1,
+      "flags": 6,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "1d0c17738ead35489f8604d6b931aa60f56c443aedf0f0b909d21640c652a444",
+      "baseline_sha256": "1d0c17738ead35489f8604d6b931aa60f56c443aedf0f0b909d21640c652a444"
+    },
+    {
+      "name": ".modinfo",
+      "parent_bytes": 304,
+      "baseline_bytes": 304,
+      "type": 1,
+      "flags": 2,
+      "comparison": "BUILD_METADATA_SEPARATELY_VALIDATED"
+    },
+    {
+      "name": ".note.GNU-stack",
+      "parent_bytes": 0,
+      "baseline_bytes": 0,
+      "type": 1,
+      "flags": 0,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": ".note.Linux",
+      "parent_bytes": 24,
+      "baseline_bytes": 24,
+      "type": 7,
+      "flags": 2,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "46c938f9cda347c4bb680e1bd9fdaddc9b6e917739785b1baad69e851b2f9de3",
+      "baseline_sha256": "46c938f9cda347c4bb680e1bd9fdaddc9b6e917739785b1baad69e851b2f9de3"
+    },
+    {
+      "name": ".note.gnu.build-id",
+      "parent_bytes": 36,
+      "baseline_bytes": 36,
+      "type": 7,
+      "flags": 2,
+      "comparison": "BUILD_METADATA_SEPARATELY_VALIDATED"
+    },
+    {
+      "name": ".rela.data",
+      "parent_bytes": 1512,
+      "baseline_bytes": 1512,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rela.gnu.linkonce.this_module",
+      "parent_bytes": 24,
+      "baseline_bytes": 24,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rela.rodata",
+      "parent_bytes": 5748,
+      "baseline_bytes": 5748,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rela.text",
+      "parent_bytes": 97680,
+      "baseline_bytes": 97680,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rela.text.unlikely",
+      "parent_bytes": 480,
+      "baseline_bytes": 480,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rela__ksymtab",
+      "parent_bytes": 9072,
+      "baseline_bytes": 9072,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rodata",
+      "parent_bytes": 30048,
+      "baseline_bytes": 30048,
+      "type": 1,
+      "flags": 2,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "501b5067a90944d8cde1565997597de0b4e7a1072ffe6fdda20d7ffe5303459f",
+      "baseline_sha256": "501b5067a90944d8cde1565997597de0b4e7a1072ffe6fdda20d7ffe5303459f"
+    },
+    {
+      "name": ".rodata.str1.4",
+      "parent_bytes": 62304,
+      "baseline_bytes": 62304,
+      "type": 1,
+      "flags": 50,
+      "comparison": "EXACT_STRINGS_AFTER_DECLARED_FILE_PATH_MAP",
+      "pass": true,
+      "path_substitutions": 0
+    },
+    {
+      "name": ".shstrtab",
+      "parent_bytes": 280,
+      "baseline_bytes": 280,
+      "type": 3,
+      "flags": 0,
+      "comparison": "BUILD_METADATA_SEPARATELY_VALIDATED"
+    },
+    {
+      "name": ".strtab",
+      "parent_bytes": 51199,
+      "baseline_bytes": 51199,
+      "type": 3,
+      "flags": 0,
+      "comparison": "BUILD_METADATA_SEPARATELY_VALIDATED"
+    },
+    {
+      "name": ".symtab",
+      "parent_bytes": 36000,
+      "baseline_bytes": 36000,
+      "type": 2,
+      "flags": 0,
+      "comparison": "BUILD_METADATA_SEPARATELY_VALIDATED"
+    },
+    {
+      "name": ".text",
+      "parent_bytes": 318960,
+      "baseline_bytes": 318960,
+      "type": 1,
+      "flags": 6,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "f7708cae18f647a9fca5fa90ccbdded301f1b042c601fe9ff52326c999897b43",
+      "baseline_sha256": "f7708cae18f647a9fca5fa90ccbdded301f1b042c601fe9ff52326c999897b43"
+    },
+    {
+      "name": ".text.unlikely",
+      "parent_bytes": 972,
+      "baseline_bytes": 972,
+      "type": 1,
+      "flags": 6,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "7f2ad81c41ac0e6459f5a6f7dde7aa294b1e78a2da8818ebcd3424efac52da8c",
+      "baseline_sha256": "7f2ad81c41ac0e6459f5a6f7dde7aa294b1e78a2da8818ebcd3424efac52da8c"
+    },
+    {
+      "name": "__ksymtab",
+      "parent_bytes": 3024,
+      "baseline_bytes": 3024,
+      "type": 1,
+      "flags": 2,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "d44e6f5df89071a28ad85ee14d6623a9a81d6187fb543a98f2204b133c6cf32b",
+      "baseline_sha256": "d44e6f5df89071a28ad85ee14d6623a9a81d6187fb543a98f2204b133c6cf32b"
+    },
+    {
+      "name": "__ksymtab_strings",
+      "parent_bytes": 6628,
+      "baseline_bytes": 6628,
+      "type": 1,
+      "flags": 50,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "b578b182d9e0e1a32738a942c0d30069c38caac66b51efe66b370555e4ec31a5",
+      "baseline_sha256": "b578b182d9e0e1a32738a942c0d30069c38caac66b51efe66b370555e4ec31a5"
+    }
+  ],
+  "relocations_total": 9543,
+  "relocations_all_match": true,
+  "relocation_differences": [],
+  "symbols_total": 2250,
+  "symbol_differences": [],
+  "function_count": 959,
+  "code_allocated_bytes": 319940,
+  "limits": "ET_REL compile/link comparison before runtime relocations; no hardware/firmware acceptance."
+}

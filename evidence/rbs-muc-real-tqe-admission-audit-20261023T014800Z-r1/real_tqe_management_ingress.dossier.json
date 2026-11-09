@@ -1,0 +1,71 @@
+{
+  "source_directory": "outputs\\rea\\rbs-muc-real-tqe-mgmt-ingress-20261023T013300Z-r1",
+  "procedure": {
+    "address": "0x159eb8",
+    "name": "FUN_ram_00159eb8",
+    "classification": {
+      "external": false,
+      "thunk": false,
+      "thunk_target": null,
+      "provenance": "ghidra-function-manager"
+    },
+    "body": {
+      "available": true,
+      "provenance": "ghidra-function-body-address-set",
+      "ranges": [
+        {
+          "start": "0x159eb8",
+          "end": "0x159f5b"
+        }
+      ],
+      "total_bytes": 164,
+      "span_bytes": 164,
+      "non_contiguous": false,
+      "contains_entry": true
+    },
+    "signature": "undefined FUN_ram_00159eb8()",
+    "locals": [
+      {
+        "description": "undefined4 local_10 @ Stack[-0x10]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_14 @ Stack[-0x14]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_18 @ Stack[-0x18]:4",
+        "provenance": "ghidra-function-database"
+      },
+      {
+        "description": "undefined4 local_4 @ Stack[-0x4]:4",
+        "provenance": "ghidra-function-database"
+      }
+    ]
+  },
+  "callees": [
+    {
+      "address": "0xee260",
+      "name": "FUN_ram_000ee260"
+    },
+    {
+      "address": "0x155ec8",
+      "name": "FUN_ram_00155ec8"
+    },
+    {
+      "address": "0x80025588",
+      "name": "FUN_ram_80025588"
+    }
+  ],
+  "callers": [],
+  "limitations": [
+    "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+    "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+    "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+    "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+  ],
+  "pseudocode_sha256": "4ed84c49b21531388e3046339fd74cee525fc141bfaa68a5395d25b04bbfbd14",
+  "rea_sha256": "a58a2bb12483842abf339f86e2ad0095f468e4948d2b2edc8efc709d34433fbb",
+  "started_utc": "2026-10-22T22:36:27.914639+00:00",
+  "finished_utc": "2026-10-22T22:37:47.572981+00:00"
+}

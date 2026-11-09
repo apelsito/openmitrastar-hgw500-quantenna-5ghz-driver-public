@@ -1,0 +1,7 @@
+   397a6:	c204                	ld_s	r2,[sp,0x10]
+   397a8:	72c7 0000 5e1c      	add_s	r2,r2,0x5e1c
+   397ae:	8240                	ld_s	r2,[r2,0]
+   397b0:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   397b8:	2244 0042           	and	r2,r2,0x1
+   397bc:	1a00 3080           	st	r2,[gp]
+   397c0:	0051 0000           	b	80	;39810 <ieee80211_find_channel_by_ieee+0x2484>

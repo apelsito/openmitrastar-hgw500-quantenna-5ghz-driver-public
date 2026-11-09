@@ -1,0 +1,109 @@
+{
+  "parent": {
+    "version": [
+      "1.0"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "author": [
+      "Quantenna Communications Inc., Mats Aretun"
+    ],
+    "description": [
+      "802.11 Wireless Driver"
+    ],
+    "parm": [
+      "openmitrastar_beacon_preflight_enable:HGW-500BNA diagnostic gate validating beacon wire descriptors before MuC ioctl",
+      "openmitrastar_beacon_v89_wire_enable:HGW-500BNA RAM-rescue gate encoding beacon descriptors for MuC v37.4.0.89",
+      "openmitrastar_clearsram_only:Restrict the HGW-500BNA RAM-lab control plane to clearsram/stop",
+      "openmitrastar_core_start_only:Restrict the HGW-500BNA RAM-lab control plane to firmware set/start/stop",
+      "openmitrastar_rf_enable:Explicit HGW-500BNA RAM-lab gate allowing a qdrv VAP to be opened",
+      "openmitrastar_sequential_bringup:Permit exactly one HGW-500BNA set->clearsram->start sequence",
+      "openmitrastar_single_vap_create:Permit one post-core AP VAP creation while the RF-open gate stays closed",
+      "openmitrastar_tx_path_trace_enable:Bounded HGW-500BNA qdrv AP-to-client hostlink trace"
+    ],
+    "parmtype": [
+      "openmitrastar_auc_busy_total:uint",
+      "openmitrastar_auc_submit_total:uint",
+      "openmitrastar_beacon_preflight_enable:bool",
+      "openmitrastar_beacon_v89_wire_enable:bool",
+      "openmitrastar_clearsram_only:int",
+      "openmitrastar_core_start_only:int",
+      "openmitrastar_gso_drop_total:uint",
+      "openmitrastar_gso_input_total:uint",
+      "openmitrastar_gso_segment_total:uint",
+      "openmitrastar_rf_enable:int",
+      "openmitrastar_sequential_bringup:int",
+      "openmitrastar_single_vap_create:int",
+      "openmitrastar_tx_path_trace_enable:int",
+      "tqe_sem_en:int"
+    ],
+    "srcversion": [
+      "308D7A13CE637E6F8272ECC"
+    ],
+    "depends": [
+      "wlan,temp_sensor,qtn_platform_support,hbm,switch_vlan,switch_tqe,runtime_compat,qtn_pm_qos_compat,switch_emac,board_compat,gpio,topaz_congest_queue,emac_lib,iputil,temp_sens"
+    ],
+    "name": [
+      "qdrv"
+    ],
+    "vermagic": [
+      "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+    ]
+  },
+  "rebuilt": {
+    "version": [
+      "1.0"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "author": [
+      "Quantenna Communications Inc., Mats Aretun"
+    ],
+    "description": [
+      "802.11 Wireless Driver"
+    ],
+    "parm": [
+      "openmitrastar_beacon_preflight_enable:HGW-500BNA diagnostic gate validating beacon wire descriptors before MuC ioctl",
+      "openmitrastar_beacon_v89_wire_enable:HGW-500BNA RAM-rescue gate encoding beacon descriptors for MuC v37.4.0.89",
+      "openmitrastar_clearsram_only:Restrict the HGW-500BNA RAM-lab control plane to clearsram/stop",
+      "openmitrastar_core_start_only:Restrict the HGW-500BNA RAM-lab control plane to firmware set/start/stop",
+      "openmitrastar_rf_enable:Explicit HGW-500BNA RAM-lab gate allowing a qdrv VAP to be opened",
+      "openmitrastar_sequential_bringup:Permit exactly one HGW-500BNA set->clearsram->start sequence",
+      "openmitrastar_single_vap_create:Permit one post-core AP VAP creation while the RF-open gate stays closed",
+      "openmitrastar_tx_path_trace_enable:Bounded HGW-500BNA qdrv AP-to-client hostlink trace"
+    ],
+    "parmtype": [
+      "openmitrastar_auc_busy_total:uint",
+      "openmitrastar_auc_submit_total:uint",
+      "openmitrastar_beacon_preflight_enable:bool",
+      "openmitrastar_beacon_v89_wire_enable:bool",
+      "openmitrastar_clearsram_only:int",
+      "openmitrastar_core_start_only:int",
+      "openmitrastar_gso_drop_total:uint",
+      "openmitrastar_gso_input_total:uint",
+      "openmitrastar_gso_segment_total:uint",
+      "openmitrastar_rf_enable:int",
+      "openmitrastar_sequential_bringup:int",
+      "openmitrastar_single_vap_create:int",
+      "openmitrastar_tx_path_trace_enable:int",
+      "tqe_sem_en:int"
+    ],
+    "srcversion": [
+      "E1ABBA7590E2120BC0C6900"
+    ],
+    "depends": [
+      "wlan,temp_sensor,qtn_platform_support,hbm,switch_vlan,switch_tqe,runtime_compat,qtn_pm_qos_compat,switch_emac,board_compat,gpio,topaz_congest_queue,emac_lib,iputil,temp_sens"
+    ],
+    "name": [
+      "qdrv"
+    ],
+    "vermagic": [
+      "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+    ]
+  },
+  "delta": [
+    "srcversion"
+  ]
+}

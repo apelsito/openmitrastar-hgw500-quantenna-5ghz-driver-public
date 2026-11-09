@@ -1,0 +1,31 @@
+{
+  "schema": "openmitrastar.wlan-txmaxmpdu-alias-qualification/v1",
+  "status": "PASS_OFFLINE_COMPLETE_MODULE_TWO_ALIASES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "parent_module_sha256": "7b0e504e6aee9b763757ea59268b21ebf2f18cdaf6a3c30f52ca43970a6f8dc0",
+  "candidate_module_sha256": "0d86d01d2d89bedd54ce618b8a075cc922a6d55b547bc6ab30927bfc865e89b1",
+  "limits": "Two WEXT aliases only; forty-two missing OEM private entries remain unresolved. No runtime/client/traffic/persistence/release acceptance.",
+  "source_identity_contract": {
+    "original_f365_srcversion": "C90B1F07BF94C284D7647F7",
+    "reconstructed_baseline_srcversion": "9A233B0BD384175810C9191",
+    "candidate_srcversion": "9A233B0BD384175810C9191",
+    "original_to_rebuild_delta_declared_in_baseline": true,
+    "candidate_metadata_exact_to_rebuilt_baseline": true
+  },
+  "imports_unchanged": true,
+  "exports_unchanged": true,
+  "table_baseline_entries": 566,
+  "table_candidate_entries": 568,
+  "aliases_added": 2,
+  "unresolved_oem_private_entries": 42,
+  "complete_function_count": 959,
+  "relocations_all_qualified": 9543,
+  "symbols_all_qualified": 2250,
+  "baseline_code_bytes": 319940,
+  "only_declared_table_count_layout_diagnostic_delta": true,
+  "candidate_bytes": 629228,
+  "reproducible": true,
+  "protected_inputs_unchanged": true
+}

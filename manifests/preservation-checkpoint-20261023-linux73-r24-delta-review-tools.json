@@ -1,0 +1,21 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "tools/integration/linux73-r24/audit_linux73_r24_module_delta.py",
+      "source": "tools/audit_linux73_r24_module_delta.py",
+      "bytes": 2895,
+      "sha256": "74a5be6388fc03b8e2c21049e3219fee879732e23aab0e84be13fa467d3f0f47",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r24/seal_linux73_r24_pipeline_review.py",
+      "source": "tools/seal_linux73_r24_pipeline_review.py",
+      "bytes": 5852,
+      "sha256": "5d9685aa39894f3cc8cc99ac2f92a3cc15b457ec7409c3f6da4a9c095a93af97",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

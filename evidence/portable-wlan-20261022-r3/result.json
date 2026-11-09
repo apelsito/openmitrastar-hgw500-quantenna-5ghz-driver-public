@@ -1,0 +1,36 @@
+{
+  "schema": "openmitrastar.portable-driver-build/v1",
+  "module": "wlan",
+  "status": "PASS_OFFLINE_FULL_BASELINE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "modules": [
+    {
+      "lane": "a",
+      "bytes": 629180,
+      "sha256": "7b0e504e6aee9b763757ea59268b21ebf2f18cdaf6a3c30f52ca43970a6f8dc0",
+      "path": "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/build/portable-wlan-r3/a/wlan.ko"
+    },
+    {
+      "lane": "b",
+      "bytes": 629180,
+      "sha256": "7b0e504e6aee9b763757ea59268b21ebf2f18cdaf6a3c30f52ca43970a6f8dc0",
+      "path": "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/build/portable-wlan-r3/b/wlan.ko"
+    }
+  ],
+  "parent_sha256": "f4f6099b43dd675dd44e7021374f1ea2f4380a4d9d9fd81b1d35ea411984897f",
+  "external_dependencies_pinned": 6685,
+  "limits": "Complete offline baseline compilation only; no physical traffic, persistence, recovery or release acceptance.",
+  "reproducible": true,
+  "protected_inputs_unchanged": true,
+  "full_baseline_comparison_status": "PASS_FULL_BASELINE_RECONSTRUCTION",
+  "functions": 959,
+  "relocations": 9543,
+  "symbols": 2250,
+  "allocated_code_bytes": 319940,
+  "metadata_delta": [
+    "srcversion"
+  ],
+  "whole_file_exact": false
+}

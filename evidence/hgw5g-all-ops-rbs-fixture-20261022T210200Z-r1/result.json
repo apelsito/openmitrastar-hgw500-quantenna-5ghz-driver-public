@@ -1,0 +1,12 @@
+{
+  "status": "PASS_SOURCE_ONLY_RBSDFS_WHOLE_QDRV_SEND_FRAME_NODE_F355_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 6,
+  "actual_qdrv_send_body": true,
+  "success_node_free_once": true,
+  "provider_consumes_skb_only": true,
+  "unknown_frame_node_retained": true,
+  "claim_before_each_publication": true,
+  "limits": "WholeactualQDRVsendwithactualcore/kernelbridge andfakenetqueue/provider/refcounts; nocallbackasynchardware/lifetimequalification"
+}

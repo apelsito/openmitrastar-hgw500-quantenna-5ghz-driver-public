@@ -1,0 +1,19 @@
+{
+  "modules": {
+    "oem_qdrv": "local-only/modules/oem-qdrv.ko",
+    "oem_wlan": "local-only/modules/oem-wlan.ko",
+    "oem_switch_tqe": "local-only/modules/oem-switch-tqe.ko",
+    "f365_qdrv": "local-only/modules/f365-qdrv.ko",
+    "f365_wlan": "local-only/modules/f365-wlan.ko",
+    "active_lineage_switch_tqe": "local-only/modules/f365-switch-tqe.ko",
+    "f370_qdrv": "local-only/modules/f370-qdrv.ko"
+  },
+  "sources": {
+    "f364_qdrv": "src/qdrv",
+    "port_wlan": "src/wlan",
+    "oem_qdrv_gpl": "vendor/legacy-gpl/drivers/qdrv",
+    "oem_wlan_gpl": "vendor/legacy-gpl/drivers/wlan",
+    "net80211_abi": "vendor/legacy-gpl/drivers/include/kernel/net80211",
+    "port_tqe": "src/platform/topaz/switch_tqe.c"
+  }
+}

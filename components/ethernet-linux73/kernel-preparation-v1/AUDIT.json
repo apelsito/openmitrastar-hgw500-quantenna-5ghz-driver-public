@@ -1,0 +1,291 @@
+{
+  "schema": "openmitrastar.aelita-kernel73-preparation-audit/v1",
+  "status": "PREPARED_V6_PUBLIC_SOURCE_DELTAS_CAPTURED_NO_BUILD",
+  "hardware_accessed": false,
+  "prepared_kernel_source": "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source",
+  "context_config_sha256": "ef5278daa265bc5c9dd012480f598126c01cf3b7df16063887d24b646f6bf800",
+  "upstream_commit": "c03c1a14507dfaf8b856c2608f9ac216021fc222",
+  "upstream_archive_sha256": "87363c24f10e06321eb362765521094e94471f6bff8bce2d6b3e40f39f004953",
+  "upstream_regular_source_files_checked": 91941,
+  "upstream_regular_files_unchanged": 91912,
+  "changed": [
+    {
+      "path": "arch/arc/Kconfig",
+      "upstream_sha256": "99ec7d542e4faf6c38424bad253081e17ae96aeeb5686c4cf31b36c449dc56c2",
+      "prepared_sha256": "eed9ea77e11c190f5262b880b519e27d7e96db0f526f17bb19ece25ebf7b4451",
+      "expected_overlay_sha256": "eed9ea77e11c190f5262b880b519e27d7e96db0f526f17bb19ece25ebf7b4451",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "arch/arc/Makefile",
+      "upstream_sha256": "195ad5492454e1dc6e1653d014cd7923f544d243d83d2c4f11b62c027545ded4",
+      "prepared_sha256": "236305b1f37bfc8df4a8e11c7219f1878289f76aff9bf2cc6bcfea8a16670952",
+      "expected_overlay_sha256": "236305b1f37bfc8df4a8e11c7219f1878289f76aff9bf2cc6bcfea8a16670952",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "arch/arc/include/asm/mmu-arcv2.h",
+      "upstream_sha256": "2225abd16396758c183186c1f98d6a0a2d426f6a1626c6cdd11ccb122f5f13e7",
+      "prepared_sha256": "76c42a4d3c6cc4b19f5e5525259fd0a8c84bd4f1cf996d8cb1a7706309ef1476",
+      "expected_overlay_sha256": "76c42a4d3c6cc4b19f5e5525259fd0a8c84bd4f1cf996d8cb1a7706309ef1476",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "arch/arc/include/asm/pgtable-bits-arcv2.h",
+      "upstream_sha256": "756238efbd5d1981f9dbf525cc26fc490ffda1b8925736d562901c5ddd723bfc",
+      "prepared_sha256": "9a92c6df45df84ac671aae9f46be481b0d8217907ef4fcdd652a12c9dce3e8de",
+      "expected_overlay_sha256": "9a92c6df45df84ac671aae9f46be481b0d8217907ef4fcdd652a12c9dce3e8de",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "arch/arc/include/uapi/asm/swab.h",
+      "upstream_sha256": "7f5d7d845e4b7e4a52381a3adec0fe22be7562a4c59d5e4c2ad2cd8512674395",
+      "prepared_sha256": "8f26450812e83b9d5803df40901e67e45b3ac03a523d247d26fab71aa1c4e064",
+      "expected_overlay_sha256": "8f26450812e83b9d5803df40901e67e45b3ac03a523d247d26fab71aa1c4e064",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "arch/arc/kernel/intc-compact.c",
+      "upstream_sha256": "2ed424907ca14f2cb65c9fdb0666797dfb12052bb3c1f258d34e8f743cdca765",
+      "prepared_sha256": "ce37e4da988159ecaa0b4d306244cd5805d875812ca3b7d93e90a0ff8184f7e5",
+      "expected_overlay_sha256": "ce37e4da988159ecaa0b4d306244cd5805d875812ca3b7d93e90a0ff8184f7e5",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "arch/arc/mm/cache.c",
+      "upstream_sha256": "96a4e72e711efc050134ee1a549d181eb600ae55b9e2737291cb26a2944421d1",
+      "prepared_sha256": "446744ea5e32f8805188bf49ec1cbd338097e4e1e6ebeadb442c00854dc82ed6",
+      "expected_overlay_sha256": "446744ea5e32f8805188bf49ec1cbd338097e4e1e6ebeadb442c00854dc82ed6",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "arch/arc/mm/tlb.c",
+      "upstream_sha256": "513e8cbc838fbf485f99427b11ca71a1b9d2459c5fdc7c12bef4f2fcb9efe796",
+      "prepared_sha256": "a52d64cf133597afea335044454018723d3e042696dd10bf39a95bcf2f4d809b",
+      "expected_overlay_sha256": "a52d64cf133597afea335044454018723d3e042696dd10bf39a95bcf2f4d809b",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "arch/arc/mm/tlbex.S",
+      "upstream_sha256": "73abdafccbb1292becf9c2ef43f9f10226abbfc2666dce529e889a76276cba48",
+      "prepared_sha256": "5f625a0ffdbcfb181a57fa9bb3784f1d3e7aacee19fe697961709a2b31813b15",
+      "expected_overlay_sha256": "5f625a0ffdbcfb181a57fa9bb3784f1d3e7aacee19fe697961709a2b31813b15",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/irqchip/Kconfig",
+      "upstream_sha256": "b30db8d42247d9d425c6c97ab5438125a44f7e5dc97f6e89197f3194d6ffb33c",
+      "prepared_sha256": "ad2317196b341aa5a010b4a991e7045b2aeacb30d3798924e3a9af8b120e375b",
+      "expected_overlay_sha256": "ad2317196b341aa5a010b4a991e7045b2aeacb30d3798924e3a9af8b120e375b",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/irqchip/Makefile",
+      "upstream_sha256": "741ed9664b12f96660d22bbe2aeec4089cea2a71ece5d7113907099c40eda126",
+      "prepared_sha256": "c989a9223082c85a775b52d85a8b1666aa411de100581201daa03936b66d3c7c",
+      "expected_overlay_sha256": "c989a9223082c85a775b52d85a8b1666aa411de100581201daa03936b66d3c7c",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/base.c",
+      "upstream_sha256": "c2d69759a369228069d473d48e008d02e48741765b1e8c416091c59ef57c5c47",
+      "prepared_sha256": "4bf04b2a10c223eefd31f6d8e1752eb6ee7502d7fcc30fa8f13fdb6cb34a0391",
+      "expected_overlay_sha256": "4bf04b2a10c223eefd31f6d8e1752eb6ee7502d7fcc30fa8f13fdb6cb34a0391",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/core.c",
+      "upstream_sha256": "6d8b88812ac80491a04bb5cc11c62d3bea409ca4bdf3435c02e833fce7ec6320",
+      "prepared_sha256": "d44b01118813562d6b6bebe844a83df2b227eb976d26814df19df52b72df0531",
+      "expected_overlay_sha256": "d44b01118813562d6b6bebe844a83df2b227eb976d26814df19df52b72df0531",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/efuse.c",
+      "upstream_sha256": "2d04d7f1b9948cec50356956818cfbd2116dd41e4c8b2b291eb1bc38443ca690",
+      "prepared_sha256": "9c30298df6c969b8a08dec4ee6181d5a155f67ed94ba1aa706e3294dc33fd789",
+      "expected_overlay_sha256": "9c30298df6c969b8a08dec4ee6181d5a155f67ed94ba1aa706e3294dc33fd789",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/pci.c",
+      "upstream_sha256": "56c7e3d16085509965c833c9a0db9640ceb6573c709c4f01a5e68924977012f7",
+      "prepared_sha256": "7e7532396bd5ffb3c4166579449e4141d585b262304eabddd0c1eeea531593fb",
+      "expected_overlay_sha256": "7e7532396bd5ffb3c4166579449e4141d585b262304eabddd0c1eeea531593fb",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/pci.h",
+      "upstream_sha256": "e3815e4160932ab434dc87211cc1487ac9ad786234126a28df5ac49372b10b2f",
+      "prepared_sha256": "e3b4f26767f931cbed8a0d5a57b052406a299edb275ed22d715bc7afff8dbca4",
+      "expected_overlay_sha256": "e3b4f26767f931cbed8a0d5a57b052406a299edb275ed22d715bc7afff8dbca4",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/fw.c",
+      "upstream_sha256": "176f5441b12c5b59def7850b7507a4209dac071f36a768467cd6d5f03298da45",
+      "prepared_sha256": "1aa6b5b3a0a6a7a7f4d56f044e66b11109d47d02c670dbdd9aefce8a061eb803",
+      "expected_overlay_sha256": "1aa6b5b3a0a6a7a7f4d56f044e66b11109d47d02c670dbdd9aefce8a061eb803",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c",
+      "upstream_sha256": "a2289b53e2c148b08c619f7ac5dcde85620582a865f292f24906fc8a6e1bbc9f",
+      "prepared_sha256": "c3100ef01e35f440051c13330dea1758870d3d845f25a61f41104d8820005131",
+      "expected_overlay_sha256": "c3100ef01e35f440051c13330dea1758870d3d845f25a61f41104d8820005131",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/sw.c",
+      "upstream_sha256": "91f5b557c21c4f479a41116595ff4b22ebc692f949d136e445e90b9b13eb2a54",
+      "prepared_sha256": "63e30807c1d421a0d4b5b2d8c4c8e947b8bf6b8911aa2bb07557ba2892b09b29",
+      "expected_overlay_sha256": "63e30807c1d421a0d4b5b2d8c4c8e947b8bf6b8911aa2bb07557ba2892b09b29",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c",
+      "upstream_sha256": "b48e1d8b8c3d13af90762a900a02418f368cb4ca71adce4e92c66aab8c0e0925",
+      "prepared_sha256": "9a0a6e824eb6838ec3828114faa1895d57a4cc07e6b55fbf94a63ef463b02b24",
+      "expected_overlay_sha256": "9a0a6e824eb6838ec3828114faa1895d57a4cc07e6b55fbf94a63ef463b02b24",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.h",
+      "upstream_sha256": "fa0c1335958f0c345c32005935f7be6dd6c89cf2ee539887330a0b5ea1d769d7",
+      "prepared_sha256": "d503f281ff213fb189fa02312c204462c377214fe1e4d8abe422a06bafcaa82e",
+      "expected_overlay_sha256": "d503f281ff213fb189fa02312c204462c377214fe1e4d8abe422a06bafcaa82e",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/wifi.h",
+      "upstream_sha256": "e7aa5187eee1b1e6329e507014e5e4a730870d48218dac8f0b4b5ba031438513",
+      "prepared_sha256": "3f9bc9a00265cd133c06965ec677ed6fbceb5dccfcbc0537388c7412efb7f139",
+      "expected_overlay_sha256": "3f9bc9a00265cd133c06965ec677ed6fbceb5dccfcbc0537388c7412efb7f139",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/pci/controller/Makefile",
+      "upstream_sha256": "8ac06545ee8e713a735015234ff92da89b189222fb609b882d4a2f2e8cfd4a57",
+      "prepared_sha256": "ca85ea139897f432646526837f55d3cbcef1b547f0ce72218ebdfd91b02c569f",
+      "expected_overlay_sha256": "ca85ea139897f432646526837f55d3cbcef1b547f0ce72218ebdfd91b02c569f",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "include/linux/netdevice.h",
+      "upstream_sha256": "ad3de208c90c3ea51f7b4e234a63a6331732adcf64d8fd4d7b7681f89fe59117",
+      "prepared_sha256": "b149a958c75f17e685e18f9bbf6969959eb8d67b140aafad19012fe2fec71f7d",
+      "expected_overlay_sha256": "b149a958c75f17e685e18f9bbf6969959eb8d67b140aafad19012fe2fec71f7d",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "include/linux/skbuff.h",
+      "upstream_sha256": "bcc75ea787040e9073f5bd3ae70fc5da4c2f9ae40694d565369c8093b7166e5b",
+      "prepared_sha256": "5edbedd91f41c81e7aad995511001db1505b062d81aa0d230b8953ce6eed44a4",
+      "expected_overlay_sha256": "5edbedd91f41c81e7aad995511001db1505b062d81aa0d230b8953ce6eed44a4",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "net/bridge/br_fdb.c",
+      "upstream_sha256": "466ae2ddcf07af8f95c6566eea3d076d125a36414faa3e65f02b60b525ca90ac",
+      "prepared_sha256": "f5f19ce2887cfb03f68a4654030629444ca12dbcfed4550e38ad5e09b562c277",
+      "expected_overlay_sha256": "f5f19ce2887cfb03f68a4654030629444ca12dbcfed4550e38ad5e09b562c277",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "net/bridge/br_forward.c",
+      "upstream_sha256": "bd18fc23b6523719e71b07c196d969460e365c9350fc3645d0ffab4c548be217",
+      "prepared_sha256": "928d1e71783bb2d57e27f1d9d7c39ba75a296aff36d76ac9d0718a9b1e92c965",
+      "expected_overlay_sha256": "928d1e71783bb2d57e27f1d9d7c39ba75a296aff36d76ac9d0718a9b1e92c965",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "net/core/dev.c",
+      "upstream_sha256": "3f6a1bbafe602aaace29e19237e2fd93f8a61696042ef629630e21169a22f16c",
+      "prepared_sha256": "b6654f34f28a282067ca149b1347325fe4b5067483c40cd825747d1a5050e27e",
+      "expected_overlay_sha256": "b6654f34f28a282067ca149b1347325fe4b5067483c40cd825747d1a5050e27e",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "net/wireless/Kconfig",
+      "upstream_sha256": "e879156b461d1e4c4a93a43b7bc965dbc662853bda38020d351cbc90bc38b2fd",
+      "prepared_sha256": "4ec168a7f54f9f12b6b1b82bb30ae1ea0ae15676c07cb944f02a6294344bf9c0",
+      "expected_overlay_sha256": "4ec168a7f54f9f12b6b1b82bb30ae1ea0ae15676c07cb944f02a6294344bf9c0",
+      "matches_selected_overlay": true
+    }
+  ],
+  "additional_board_files": [
+    {
+      "path": "arch/arc/plat-topaz-basic/Makefile",
+      "prepared_sha256": "888fe3732d3ab1d604cc7253de830072456b874ce68832057979b875571a4c24",
+      "expected_overlay_sha256": "888fe3732d3ab1d604cc7253de830072456b874ce68832057979b875571a4c24",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "arch/arc/plat-topaz-basic/platform.c",
+      "prepared_sha256": "fa98974daf7be61ffa9666597021b0b8e8bb4145b8f7fd276710f35f6cf04bbd",
+      "expected_overlay_sha256": "fa98974daf7be61ffa9666597021b0b8e8bb4145b8f7fd276710f35f6cf04bbd",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "arch/arc/plat-topaz-basic/Kconfig",
+      "prepared_sha256": "2035c03fc886849868c38b6c8f50c4249b8fc766bd85da168368aedf5143b5d8",
+      "expected_overlay_sha256": "2035c03fc886849868c38b6c8f50c4249b8fc766bd85da168368aedf5143b5d8",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/irqchip/irq-qtn-topaz-uart-basic.c",
+      "prepared_sha256": "9095bbbb1eba53a92e9406c39ab5fba1d69ecc604130c46312abb2bf172f9260",
+      "expected_overlay_sha256": "9095bbbb1eba53a92e9406c39ab5fba1d69ecc604130c46312abb2bf172f9260",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "drivers/pci/controller/pcie-qtn-topaz.c",
+      "prepared_sha256": "ca46f394486eccf1b4fd24699ec8e2dc3e6960ccfe783b30d9ece02335a05204",
+      "expected_overlay_sha256": "ca46f394486eccf1b4fd24699ec8e2dc3e6960ccfe783b30d9ece02335a05204",
+      "matches_selected_overlay": true
+    },
+    {
+      "path": "include/linux/soc/qtn/topaz-ethernet.h",
+      "prepared_sha256": "59e06f782d8afa0eb0da5db7a9723d28c82678fe422dd51f34d7914b8a9f18c9",
+      "expected_overlay_sha256": "b76ed50ef43801e20d91b5889445f19c54eb0758a445356133116a0d22f835d4",
+      "matches_selected_overlay": false
+    }
+  ],
+  "copied_public_board_files": {
+    "arch/arc/Kconfig": "eed9ea77e11c190f5262b880b519e27d7e96db0f526f17bb19ece25ebf7b4451",
+    "arch/arc/Makefile": "236305b1f37bfc8df4a8e11c7219f1878289f76aff9bf2cc6bcfea8a16670952",
+    "arch/arc/include/asm/mmu-arcv2.h": "76c42a4d3c6cc4b19f5e5525259fd0a8c84bd4f1cf996d8cb1a7706309ef1476",
+    "arch/arc/include/asm/pgtable-bits-arcv2.h": "9a92c6df45df84ac671aae9f46be481b0d8217907ef4fcdd652a12c9dce3e8de",
+    "arch/arc/include/uapi/asm/swab.h": "8f26450812e83b9d5803df40901e67e45b3ac03a523d247d26fab71aa1c4e064",
+    "arch/arc/kernel/intc-compact.c": "ce37e4da988159ecaa0b4d306244cd5805d875812ca3b7d93e90a0ff8184f7e5",
+    "arch/arc/mm/cache.c": "446744ea5e32f8805188bf49ec1cbd338097e4e1e6ebeadb442c00854dc82ed6",
+    "arch/arc/mm/tlb.c": "a52d64cf133597afea335044454018723d3e042696dd10bf39a95bcf2f4d809b",
+    "arch/arc/mm/tlbex.S": "5f625a0ffdbcfb181a57fa9bb3784f1d3e7aacee19fe697961709a2b31813b15",
+    "drivers/irqchip/Kconfig": "ad2317196b341aa5a010b4a991e7045b2aeacb30d3798924e3a9af8b120e375b",
+    "drivers/irqchip/Makefile": "c989a9223082c85a775b52d85a8b1666aa411de100581201daa03936b66d3c7c",
+    "drivers/pci/controller/Makefile": "ca85ea139897f432646526837f55d3cbcef1b547f0ce72218ebdfd91b02c569f",
+    "arch/arc/plat-topaz-basic/Makefile": "888fe3732d3ab1d604cc7253de830072456b874ce68832057979b875571a4c24",
+    "arch/arc/plat-topaz-basic/platform.c": "fa98974daf7be61ffa9666597021b0b8e8bb4145b8f7fd276710f35f6cf04bbd",
+    "arch/arc/plat-topaz-basic/Kconfig": "2035c03fc886849868c38b6c8f50c4249b8fc766bd85da168368aedf5143b5d8",
+    "drivers/irqchip/irq-qtn-topaz-uart-basic.c": "9095bbbb1eba53a92e9406c39ab5fba1d69ecc604130c46312abb2bf172f9260",
+    "drivers/pci/controller/pcie-qtn-topaz.c": "ca46f394486eccf1b4fd24699ec8e2dc3e6960ccfe783b30d9ece02335a05204",
+    "include/linux/soc/qtn/topaz-ethernet.h": "59e06f782d8afa0eb0da5db7a9723d28c82678fe422dd51f34d7914b8a9f18c9"
+  },
+  "selected_overlays_missing_expected_match": [
+    {
+      "path": "include/linux/soc/qtn/topaz-ethernet.h",
+      "prepared_sha256": "59e06f782d8afa0eb0da5db7a9723d28c82678fe422dd51f34d7914b8a9f18c9",
+      "expected_overlay_sha256": "b76ed50ef43801e20d91b5889445f19c54eb0758a445356133116a0d22f835d4",
+      "matches_selected_overlay": false
+    }
+  ],
+  "config_sanitized_sha256": "9de91b2b0006598196b2f3dc1ef88ad1c52d922454d1763e2452a66d0dbe2cb0",
+  "config_private_path_options_cleared": [
+    "CONFIG_INITRAMFS_SOURCE",
+    "CONFIG_SYSTEM_TRUSTED_KEYS"
+  ],
+  "excluded_DT_private_or_binary_paths_count": 4037,
+  "full_regular_source_equivalence_except_declared": true,
+  "private_files_copied": false,
+  "kernel_compiled_modified": false
+}

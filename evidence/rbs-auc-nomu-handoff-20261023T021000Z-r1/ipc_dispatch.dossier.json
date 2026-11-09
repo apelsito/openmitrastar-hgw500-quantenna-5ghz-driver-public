@@ -1,0 +1,192 @@
+{
+  "directory": "outputs\\rea\\rbs-auc-nomu-ipc-dispatch-20261023T020400Z-r1",
+  "procedure": {
+    "address": "0xe500518c",
+    "name": "om_auc_ipc_config_dispatch",
+    "classification": {
+      "external": false,
+      "thunk": false,
+      "thunk_target": null,
+      "provenance": "ghidra-function-manager"
+    },
+    "body": {
+      "available": true,
+      "provenance": "ghidra-function-body-address-set",
+      "ranges": [
+        {
+          "start": "0xe500518c",
+          "end": "0xe50051af"
+        },
+        {
+          "start": "0xe50051dc",
+          "end": "0xe500533b"
+        },
+        {
+          "start": "0xe5005384",
+          "end": "0xe50056f3"
+        },
+        {
+          "start": "0xe5005744",
+          "end": "0xe50057bf"
+        },
+        {
+          "start": "0xe50057f6",
+          "end": "0xe50058bf"
+        }
+      ],
+      "total_bytes": 1594,
+      "span_bytes": 1844,
+      "non_contiguous": true,
+      "contains_entry": true
+    },
+    "signature": "undefined om_auc_ipc_config_dispatch()",
+    "locals": [
+      {
+        "description": "undefined2 local_10 @ Stack[-0x10]:2",
+        "provenance": "ghidra-function-database"
+      }
+    ]
+  },
+  "callees": [
+    {
+      "address": "0xe50001d4",
+      "name": "FUN_ram_e50001d4"
+    },
+    {
+      "address": "0xe5000288",
+      "name": "FUN_ram_e5000288"
+    },
+    {
+      "address": "0xe5000290",
+      "name": "FUN_ram_e5000290"
+    },
+    {
+      "address": "0xe50002e4",
+      "name": "FUN_ram_e50002e4"
+    },
+    {
+      "address": "0xe50002f8",
+      "name": "FUN_ram_e50002f8"
+    },
+    {
+      "address": "0xe50006d4",
+      "name": "FUN_ram_e50006d4"
+    },
+    {
+      "address": "0xe50007b8",
+      "name": "FUN_ram_e50007b8"
+    },
+    {
+      "address": "0xe5000cf4",
+      "name": "om_auc_management_fcs_enqueue"
+    },
+    {
+      "address": "0xe500148c",
+      "name": "FUN_ram_e500148c"
+    },
+    {
+      "address": "0xe5001668",
+      "name": "FUN_ram_e5001668"
+    },
+    {
+      "address": "0xe5001740",
+      "name": "FUN_ram_e5001740"
+    },
+    {
+      "address": "0xe5001828",
+      "name": "FUN_ram_e5001828"
+    },
+    {
+      "address": "0xe5004c68",
+      "name": "FUN_ram_e5004c68"
+    },
+    {
+      "address": "0xe5004d48",
+      "name": "FUN_ram_e5004d48"
+    },
+    {
+      "address": "0xe5004dcc",
+      "name": "FUN_ram_e5004dcc"
+    },
+    {
+      "address": "0xe5004df4",
+      "name": "FUN_ram_e5004df4"
+    },
+    {
+      "address": "0xe5004e1c",
+      "name": "FUN_ram_e5004e1c"
+    },
+    {
+      "address": "0xe5004e40",
+      "name": "FUN_ram_e5004e40"
+    },
+    {
+      "address": "0xe5004e68",
+      "name": "FUN_ram_e5004e68"
+    },
+    {
+      "address": "0xe5004e90",
+      "name": "FUN_ram_e5004e90"
+    },
+    {
+      "address": "0xe5004ecc",
+      "name": "FUN_ram_e5004ecc"
+    },
+    {
+      "address": "0xe5004f50",
+      "name": "FUN_ram_e5004f50"
+    },
+    {
+      "address": "0xe5004f84",
+      "name": "FUN_ram_e5004f84"
+    },
+    {
+      "address": "0xe5004fb8",
+      "name": "FUN_ram_e5004fb8"
+    },
+    {
+      "address": "0xe5005060",
+      "name": "FUN_ram_e5005060"
+    },
+    {
+      "address": "0xe5005c34",
+      "name": "FUN_ram_e5005c34"
+    },
+    {
+      "address": "0xe5005d64",
+      "name": "FUN_ram_e5005d64"
+    },
+    {
+      "address": "0xe5005db8",
+      "name": "FUN_ram_e5005db8"
+    },
+    {
+      "address": "0xe5005e50",
+      "name": "FUN_ram_e5005e50"
+    },
+    {
+      "address": "0xe5005f74",
+      "name": "FUN_ram_e5005f74"
+    },
+    {
+      "address": "0xe5007494",
+      "name": "FUN_ram_e5007494"
+    },
+    {
+      "address": "0xe5007540",
+      "name": "FUN_ram_e5007540"
+    }
+  ],
+  "limitations": [
+    "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+    "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+    "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+    "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+    "Ghidra Listing reports a terminal call at 0xe500527c to 0xe5007540 FUN_ram_e5007540 (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation.",
+    "Ghidra Listing reports a terminal call at 0xe5005660 to 0xe5005db8 FUN_ram_e5005db8 (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation.",
+    "Ghidra Listing reports a terminal call at 0xe50056ee to 0xe5007540 FUN_ram_e5007540 (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+  ],
+  "rea_sha256": "84ce395771cecd7bc67983e993ebd7f1a6f755b09c2e47b7c790ff5600bc3aea",
+  "started_utc": "2026-10-22T22:51:02.947051+00:00",
+  "finished_utc": "2026-10-22T22:51:37.014847+00:00"
+}

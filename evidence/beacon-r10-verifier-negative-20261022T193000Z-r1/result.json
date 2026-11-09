@@ -1,0 +1,43 @@
+{
+  "status": "PASS_R10_ACTUAL_MODULE_NEGATIVE_CHECKS",
+  "hardware_accessed": false,
+  "modules_modified": false,
+  "cases": 7,
+  "outcomes": [
+    {
+      "case": "correct",
+      "accepted": true,
+      "error": null
+    },
+    {
+      "case": "code",
+      "accepted": false,
+      "error": ""
+    },
+    {
+      "case": "rela",
+      "accepted": false,
+      "error": "residualrelocations"
+    },
+    {
+      "case": "data",
+      "accepted": false,
+      "error": "allocateddata"
+    },
+    {
+      "case": "symbol",
+      "accepted": false,
+      "error": "symbolidentity"
+    },
+    {
+      "case": "section",
+      "accepted": false,
+      "error": ""
+    },
+    {
+      "case": "flags",
+      "accepted": false,
+      "error": ""
+    }
+  ]
+}

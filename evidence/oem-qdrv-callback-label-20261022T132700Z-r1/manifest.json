@@ -1,0 +1,26 @@
+{
+  "status": "PASS_SYMBOL_ONLY_ANALYSIS_DERIVATIVE",
+  "classification": "ANALYSIS_ONLY_NEVER_LOAD_OR_FLASH",
+  "source_sha256": "60a15998175652d70fa4e1e75a6e1ee997a2e5144f9fe446af06f66641717f77",
+  "derived_sha256": "7a653701ca1807fcc6dc73de1321a35b0beaea2715f439aa24f7adeec0c84518",
+  "derived": "/workspace/user-home/Desktop/MitraStar/outputs/rea/oem-qdrv-callback-label-20261022T132700Z-r1/qdrv-OEM-CALLBACK-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+  "hardware_accessed": false,
+  "original_unchanged": true,
+  "allocated_sections_byte_identical": true,
+  "label": {
+    "name": "om_oem_qdrv_getparam",
+    "offset": ".text+0x30730",
+    "linked_address": "0x40730",
+    "provenance": "Exact init REA store at ic+0x5424 plus OEM ET_REL relocation"
+  },
+  "init_evidence_sha256": "e996d8d167ec0977711794e13dbb74d4d6be14656d8a699a3af950acd2a6f689",
+  "objcopy_sha256": "0ea69a4d7a42587a29ba04c82b2924c10026cfe9a1395276d546580584c20506",
+  "command": [
+    "/workspace/user-home/Desktop/MitraStar/work/toolchains/arc-uclibc/arc-arc700-linux-uclibc/bin/arc-snps-linux-uclibc-objcopy",
+    "--add-symbol",
+    "om_oem_qdrv_getparam=.text:0x30730,global,function",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/oem-qdrv-missingops-20261022T132800Z-linked/qdrv-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/oem-qdrv-callback-label-20261022T132700Z-r1/qdrv-OEM-CALLBACK-ANALYSIS_ONLY-NOT_FIRMWARE.elf"
+  ],
+  "limit": "Symbol name is analyst metadata; entry bytes and callback ownership are proven, full semantic equivalence is not"
+}

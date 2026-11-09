@@ -1,0 +1,182 @@
+2026-10-22 16:53:20 INFO  (LoggingInitialization) Using log config file: jar:file://workspace/user-home/Desktop/MitraStar/outputs/rea/windows-arc700-static-lab-20261022T154500Z-r3/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-22 16:53:20 INFO  (LoggingInitialization) Using log file: /workspace/user-home\Desktop\MitraStar\outputs\rea\driver5g-ops-20261022-fifteen-case464-direct-ghidra-r1\ghidra.log  
+2026-10-22 16:53:20 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-22 16:53:20 INFO  (Preferences) Loading user preferences: /workspace/user-home\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences  
+2026-10-22 16:53:20 INFO  (Preferences) Loading previous preferences: /workspace/user-home\AppData\Roaming\ghidra\ghidra_12.0.4_PUBLIC\preferences  
+2026-10-22 16:53:20 INFO  (ClassSearcher) Searching for classes...  
+2026-10-22 16:53:21 INFO  (ClassSearcher) Class search complete (1286 ms)  
+2026-10-22 16:53:21 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-22 16:53:21 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-22 16:53:21 INFO  (SecureRandomFactory) Random Number Generator initialization complete: SHA1PRNG  
+2026-10-22 16:53:21 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-10-22 16:53:22 INFO  (FileCacheMaintenanceDaemon) Starting cache cleanup: /workspace/user-home\AppData\Local\ghidra\fscache2  
+2026-10-22 16:53:22 INFO  (FileCacheMaintenanceDaemon) Finished cache cleanup, estimated storage used: 0  
+2026-10-22 16:53:24 INFO  (AnalyzeHeadless) Headless startup complete (6706 ms)  
+2026-10-22 16:53:24 INFO  (ClassSearcher) Class searcher loaded 177 extension points (88 false positives)  
+2026-10-22 16:53:25 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\driver5g-ops-20261022-fifteen-case464-direct-ghidra-r1
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts  
+2026-10-22 16:53:25 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-10-22 16:53:25 INFO  (HeadlessAnalyzer) Creating temporary project: /workspace/user-home\Desktop\MitraStar\outputs\rea\driver5g-ops-20261022-fifteen-case464-direct-ghidra-r1\case464  
+2026-10-22 16:53:25 INFO  (DefaultProject) Creating project: /workspace/user-home\Desktop\MitraStar\outputs\rea\driver5g-ops-20261022-fifteen-case464-direct-ghidra-r1\case464  
+2026-10-22 16:53:25 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2026-10-22 16:53:25 INFO  (HeadlessAnalyzer)      project: /workspace/user-home\Desktop\MitraStar\outputs\rea\driver5g-ops-20261022-fifteen-case464-direct-ghidra-r1\case464  
+2026-10-22 16:53:25 INFO  (HeadlessAnalyzer) IMPORTING: file:////workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fifteen-wlan-build-r1/a/wlan/wlan.ko  
+2026-10-22 16:53:25 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-22 16:53:25 INFO  (ProgramLoader) Using Language/Compiler: ARCompact:LE:32:default:default  
+2026-10-22 16:53:25 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, D:\Tools\REA\jdk-21.0.12.1+1\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, /workspace/user-home\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, /workspace/user-home\.codex\tmp\arg0-windows\codex-arg0Ypd8Xz, /workspace/user-home\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, /workspace/user-home\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, /workspace/user-home\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, /workspace/user-home\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin, C:\Program Files\Common Files\Oracle\Java\javapath, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\Git\cmd, C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\CMake\bin, C:\Program Files\Amazon\AWSCLIV2\, C:\Program Files\nodejs\, C:\Program Files\GitHub CLI\, C:\Program Files\Amazon\SessionManagerPlugin\bin\, C:\Program Files\usbipd-win\, C:\Program Files\Tailscale\, D:\Tools\REA, /workspace/user-home\AppData\Local\Programs\Python\Launcher\, /workspace/user-home\AppData\Local\Programs\Python\Python312\Scripts\, /workspace/user-home\AppData\Local\Programs\Python\Python312\, /workspace/user-home\AppData\Local\Microsoft\WindowsApps, /workspace/user-home\AppData\Local\Programs\Microsoft VS Code\bin, /workspace/user-home\AppData\Local\Programs\Podman\, C:\ffmpeg\bin, /workspace/user-home\AppData\Local\Programs\Ollama, /workspace/user-home\AppData\Local\Microsoft\WinGet\Links, C:\Program Files\Java\jdk-21.0.11\bin, /workspace/user-home\Tools\ghidra_12.0.4_PUBLIC, /workspace/user-home\Tools\pcsx-redux, /workspace/user-home\AppData\Roaming\npm, C:\Program Files\IBM\Cloud\bin, /workspace/user-home\.dotnet\tools, /workspace/user-home\bin\terraform, C:\Program Files\qpdf 12.3.2\bin, /workspace/user-home\AppData\Local\Programs\Azure Dev CLI\, /workspace/user-home/AppData/Local/Programs/codebase-memory-mcp, /workspace/user-home\AppData\Local\iBridge, D:\Tools\REA\dotnet-home\.dotnet\tools, /workspace/user-home\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, /workspace/user-home\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, /workspace/user-home\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, /workspace/user-home\AppData\Local\OpenAI\Codex\bin\90ee5f622914d088, /workspace/user-home\.codex\provider-router]  
+2026-10-22 16:53:25 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-22 16:53:25 DEBUG (ElfHeader) Elf relocation table section .rela.text linked to symbol table section .symtab affecting .text  
+2026-10-22 16:53:25 DEBUG (ElfHeader) Elf relocation table section .rela.text.unlikely linked to symbol table section .symtab affecting .text.unlikely  
+2026-10-22 16:53:25 DEBUG (ElfHeader) Elf relocation table section .rela__ksymtab linked to symbol table section .symtab affecting __ksymtab  
+2026-10-22 16:53:25 DEBUG (ElfHeader) Elf relocation table section .rela.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-22 16:53:25 DEBUG (ElfHeader) Elf relocation table section .rela.data linked to symbol table section .symtab affecting .data  
+2026-10-22 16:53:25 DEBUG (ElfHeader) Elf relocation table section .rela.gnu.linkonce.this_module linked to symbol table section .symtab affecting .gnu.linkonce.this_module  
+2026-10-22 16:53:26 INFO  (ProgramLoader) Additional info:
+Loading file:////workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fifteen-wlan-build-r1/a/wlan/wlan.ko?MD5=f723e08a3db2e06328c1e256ab0b46e5...
+Skipping section [.note.GNU-stack] with invalid size 0x0
+Unable to place symbol due to non-loaded section: .note.GNU-stack - value=0x0, section=.note.GNU-stack
+ELF relocation handler extension not found!  Unable to process relocations.
+Unable to process ELF relocations: relocation handler not found
+------------------------------------------------
+
+  
+2026-10-22 16:53:26 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-22 16:53:27 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:////workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fifteen-wlan-build-r1/a/wlan/wlan.ko  
+2026-10-22 16:53:27 INFO  (ExternalDebugFileSectionProvider) DWARF external debug information found: ExternalDebugInfo [filename=null, crc=0, hash=b42b14302392fedad176201f717452740948885d, objectType=DEBUGINFO, extra=null]  
+2026-10-22 16:53:27 DEBUG (LocalDirDebugInfoDProvider) Finished cache cleanup of debug files in /workspace/user-home\AppData\Local\ghidra\debuginfo-cache, deleted 0 files, 0 total bytes  
+2026-10-22 16:53:27 INFO  (DWARFAnalyzer) Unable to find DWARF information, skipping DWARF analysis  
+2026-10-22 16:53:29 DEBUG (CreateThunkFunctionCmd) Created new external location for address ram:00000000: <EXTERNAL>::EXT_FUN_ram_00000000  
+2026-10-22 16:53:30 WARN  (DecompileCallback) Decompiling ram:000192a0: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:31 WARN  (DecompileCallback) Decompiling ram:0005a3e0: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:31 WARN  (DecompileCallback) Decompiling ram:0004154c: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:31 WARN  (DecompileCallback) Decompiling ram:0004154c: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:31 WARN  (DecompileCallback) Decompiling ram:0004154c: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:31 WARN  (DecompileCallback) Decompiling ram:0004154c: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00024d3c: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0003ab34: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00028e24: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00019470: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00047538: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00041fd4, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0003fd90, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0003a754: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0002a320: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0003eabc: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00047f48, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00024dcc: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00051064, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0005b670: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00051064: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0001e564, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00040904, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0005b620: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0001dea0, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00047f48: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00012e18, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00040904: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0005d924: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00012e18: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00012e18: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0002782c: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:000435d0, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00055800: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0001dff0, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00033474, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00026008: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00026008: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00044ea0: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00044ea0: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00019810: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00015668: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:000114e4: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:000114e4: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:000114e4: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:000114e4: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0002b9fc: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00024fdc: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00042330, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00035a40: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00029e4c: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:0004a0d4: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00058ad4: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00041a1c: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00036750: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00036750: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00036750: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:32 WARN  (DecompileCallback) Decompiling ram:00036750: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:33 WARN  (DecompileCallback) Decompiling ram:00040ec8, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:33 WARN  (DecompileCallback) Decompiling ram:000150d0, pcode error at ram:00000000: Could not follow disassembly flow into non-existing memory at ram:00000000  
+2026-10-22 16:53:33 WARN  (DecompileCallback) Decompiling ram:0001932c: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:33 WARN  (DecompileCallback) Decompiling ram:0001b964: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:33 WARN  (DecompileCallback) Decompiling ram:0004a148: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:33 WARN  (DecompileCallback) Decompiling ram:0004a148: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:33 WARN  (DecompileCallback) Decompiling ram:0004a148: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:33 WARN  (DecompileCallback) Decompiling ram:0004a148: Unable to read bytes at ram:00000000  
+2026-10-22 16:53:38 DEBUG (FidAnalyzer) No FID Libraries apply for language ARCompact:LE:32:default  
+2026-10-22 16:53:38 INFO  (PackedDatabaseCache) Packed database cache: /workspace/user-home\AppData\Local\ghidra\packed-db-cache  
+2026-10-22 16:53:38 DEBUG (PackedDatabaseCache) Caching packed database: /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-22 16:53:38 DEBUG (PackedDatabase) Unpacking database /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt -> /workspace/user-home\AppData\Local\ghidra\packed-db-cache\pdbDDBAF369\db.1.gbf  
+2026-10-22 16:53:38 DEBUG (PackedDatabaseCache) Cache update completed: /workspace/user-home\Desktop\MitraStar\outputs\rea\windows-arc700-static-lab-20261022T154500Z-r3\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-22 16:53:39 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-22 16:53:43 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              0.756 secs
+    Apply Data Archives                        0.922 secs
+    Basic Constant Reference Analyzer          2.430 secs
+    Call Convention ID                         0.060 secs
+    Call-Fixup Installer                       0.010 secs
+    Create Address Tables                      0.085 secs
+    Create Function                            0.000 secs
+    DWARF                                      0.013 secs
+    Data Reference                             0.030 secs
+    Decompiler Switch Analysis                 5.471 secs
+    Demangler GNU                              0.394 secs
+    Disassemble Entry Points                   2.744 secs
+    Embedded Media                             0.023 secs
+    External Entry References                  0.007 secs
+    Function ID                                0.150 secs
+    Non-Returning Functions - Discovered       0.019 secs
+    Non-Returning Functions - Known            0.028 secs
+    Reference                                  0.032 secs
+    Shared Return Calls                        0.148 secs
+    Stack                                      2.528 secs
+    Subroutine References                      0.031 secs
+-----------------------------------------------------
+     Total Time   15 secs
+-----------------------------------------------------
+  
+2026-10-22 16:53:43 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:////workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fifteen-wlan-build-r1/a/wlan/wlan.ko  
+2026-10-22 16:53:43 INFO  (HeadlessAnalyzer) REPORT: Execute script: Dump464.java '0x3704c'   
+2026-10-22 16:53:47 INFO  (HeadlessAnalyzer) SCRIPT: /workspace/user-home\Desktop\MitraStar\outputs\rea\driver5g-ops-20261022-fifteen-case464-direct-ghidra-r1\Dump464.java  
+2026-10-22 16:53:47 INFO  (GhidraScript) Dump464.java> FOCUSED_ADDRESS 0x3704c  
+2026-10-22 16:53:47 INFO  (GhidraScript) Dump464.java> ram:0003704c: add_s r14,r14,0x5000  
+2026-10-22 16:53:47 INFO  (GhidraScript) Dump464.java> ram:00037052: st.as r13,[r14,-0x3e0]  
+2026-10-22 16:53:47 INFO  (GhidraScript) Dump464.java> ram:00037056: mov_s r13,0x0  
+2026-10-22 16:53:47 INFO  (GhidraScript) Dump464.java> ram:00037058: b 0x00037556  
+2026-10-22 16:53:47 INFO  (GhidraScript) Dump464.java> NO_DECODE ram:0003705c  
+2026-10-22 16:53:47 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:////workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fifteen-wlan-build-r1/a/wlan/wlan.ko  
+2026-10-22 16:53:47 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:////workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-fifteen-wlan-build-r1/a/wlan/wlan.ko  
+2026-10-22 16:53:47 INFO  (LocalFileSystem) /wlan.ko: file created (ruipe)  
+2026-10-22 16:53:47 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /wlan.ko (case464:/wlan.ko)  
+2026-10-22 16:53:47 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  

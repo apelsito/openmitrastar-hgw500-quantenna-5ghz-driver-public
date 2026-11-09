@@ -1,0 +1,70 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARCompact
+  Version:                           0x1
+  Entry point address:               0x448f4
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          659308 (bytes into file)
+  Flags:                             0x303, ARC700, v3 no-legacy-syscalls ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         1
+  Size of section headers:           40 (bytes)
+  Number of section headers:         40
+  Section header string table index: 39
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        00010000 002000 06fe64 00  AX  0   0  4
+  [ 2] .rodata           PROGBITS        0007fe70 071e70 009364 00   A  0   0  4
+  [ 3] .data             PROGBITS        000891e0 07b1e0 000c18 00  WA  0   0  4
+  [ 4] .bss              NOBITS          00089e00 07bdf8 00b1a8 00  WA  0   0  4
+  [ 5] .rodata.str1.4    PROGBITS        00094fb0 086fb0 011acc 01 AMS  0   0  4
+  [ 6] .exit.text        PROGBITS        000a6a80 098a80 000184 00  AX  0   0  4
+  [ 7] .init.text        PROGBITS        000a6c10 098c10 0003c0 00  AX  0   0  4
+  [ 8] .modinfo          PROGBITS        000a6fd0 098fd0 000144 00   A  0   0  4
+  [ 9] __ksymtab         PROGBITS        000a7120 099120 000070 00   A  0   0  4
+  [10] __ksymtab_strings PROGBITS        000a7190 099190 00011f 00   A  0   0  1
+  [11] __param           PROGBITS        000a72b0 0992b0 000014 00   A  0   0  4
+  [12] .gnu.linkonc[...] PROGBITS        000a72d0 0992d0 000138 00  WA  0   0  4
+  [13] .comment          PROGBITS        00000000 099408 000364 00      0   0  1
+  [14] .gnu.linkonc[...] PROGBITS        00000000 09976c 000016 00      0   0  1
+  [15] .gnu.linkonc[...] PROGBITS        00000000 099782 000016 00      0   0  1
+  [16] .gnu.linkonc[...] PROGBITS        00000000 099798 000016 00      0   0  1
+  [17] .gnu.linkonc[...] PROGBITS        00000000 0997ae 000014 00      0   0  1
+  [18] .gnu.linkonc[...] PROGBITS        00000000 0997c2 000016 00      0   0  1
+  [19] .gnu.linkonc[...] PROGBITS        00000000 0997d8 000014 00      0   0  1
+  [20] .gnu.linkonc[...] PROGBITS        00000000 0997ec 000014 00      0   0  1
+  [21] .gnu.linkonc[...] PROGBITS        00000000 099800 000014 00      0   0  1
+  [22] .gnu.linkonc[...] PROGBITS        00000000 099814 000016 00      0   0  1
+  [23] .gnu.linkonc[...] PROGBITS        00000000 09982a 00000a 00      0   0  1
+  [24] .gnu.linkonc[...] PROGBITS        00000000 099834 00000a 00      0   0  1
+  [25] .gnu.linkonc[...] PROGBITS        00000000 09983e 000018 00      0   0  1
+  [26] .gnu.linkonc[...] PROGBITS        00000000 099856 000018 00      0   0  1
+  [27] .gnu.linkonc[...] PROGBITS        00000000 09986e 00000c 00      0   0  1
+  [28] .gnu.linkonc[...] PROGBITS        00000000 09987a 00000c 00      0   0  1
+  [29] .gnu.linkonc[...] PROGBITS        00000000 099886 000012 00      0   0  1
+  [30] .gnu.linkonc[...] PROGBITS        00000000 099898 000009 00      0   0  1
+  [31] .gnu.linkonc[...] PROGBITS        00000000 0998a1 00000a 00      0   0  1
+  [32] .gnu.linkonc[...] PROGBITS        00000000 0998ab 00000b 00      0   0  1
+  [33] .gnu.linkonc[...] PROGBITS        00000000 0998b6 00000a 00      0   0  1
+  [34] .gnu.linkonc[...] PROGBITS        00000000 0998c0 000006 00      0   0  1
+  [35] .gnu.linkonc[...] PROGBITS        00000000 0998c6 000007 00      0   0  1
+  [36] .gnu.linkonc[...] PROGBITS        00000000 0998cd 00000a 00      0   0  1
+  [37] .symtab           SYMTAB          00000000 0998d8 003410 10     38  37  4
+  [38] .strtab           STRTAB          00000000 09cce8 003ec0 00      0   0  1
+  [39] .shstrtab         STRTAB          00000000 0a0ba8 0003c1 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), p (processor specific)
+
+There are no relocations in this file.

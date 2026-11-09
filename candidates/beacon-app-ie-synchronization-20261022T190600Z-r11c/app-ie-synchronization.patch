@@ -1,0 +1,236 @@
+--- a/source/wlan/ieee80211_wireless.c
++++ b/source/wlan/ieee80211_wireless.c
+@@ -15089,10 +15089,17 @@
+ 		return -ENOMEM;
+ 
+ 	memcpy(ie, iebuf->app_buf, iebuf->app_buflen);
+-	if (vap->app_ie[frame_type_index].ie != NULL)
+-		FREE(vap->app_ie[frame_type_index].ie, M_DEVBUF);
+-	vap->app_ie[frame_type_index].ie = ie;
+-	vap->app_ie[frame_type_index].length = iebuf->app_buflen;
++	{
++		struct ieee80211_ie *old_ie;
++		struct ieee80211com *ic = vap->iv_ic;
++		IEEE80211_LOCK_BH(ic);
++		old_ie = vap->app_ie[frame_type_index].ie;
++		vap->app_ie[frame_type_index].ie = ie;
++		vap->app_ie[frame_type_index].length = iebuf->app_buflen;
++		IEEE80211_UNLOCK_BH(ic);
++		if (old_ie)
++			FREE(old_ie, M_DEVBUF);
++	}
+ 
+ 	return 0;
+ }
+@@ -15101,11 +15108,15 @@
+ remove_app_ie(unsigned int frame_type_index, struct ieee80211vap *vap)
+ {
+ 	struct ieee80211_app_ie_t *app_ie = &vap->app_ie[frame_type_index];
+-	if (app_ie->ie != NULL) {
+-		FREE(app_ie->ie, M_DEVBUF);
+-		app_ie->ie = NULL;
+-		app_ie->length = 0;
+-	}
++	struct ieee80211_ie *old_ie;
++	struct ieee80211com *ic = vap->iv_ic;
++	IEEE80211_LOCK_BH(ic);
++	old_ie = app_ie->ie;
++	app_ie->ie = NULL;
++	app_ie->length = 0;
++	IEEE80211_UNLOCK_BH(ic);
++	if (old_ie)
++		FREE(old_ie, M_DEVBUF);
+ 	return 0;
+ }
+ 
+@@ -15114,11 +15125,17 @@
+ 	struct ieee80211req_getset_appiebuf *iebuf)
+ {
+ 	struct ieee80211_app_ie_t *app_ie = &vap->app_ie[frame_type_index];
+-	if (iebuf->app_buflen < app_ie->length)
++	struct ieee80211com *ic = vap->iv_ic;
++	IEEE80211_LOCK_BH(ic);
++	if (iebuf->app_buflen < app_ie->length) {
++		IEEE80211_UNLOCK_BH(ic);
+ 		return -EINVAL;
++	}
+ 
+ 	iebuf->app_buflen = app_ie->length;
+-	memcpy(iebuf->app_buf, app_ie->ie, app_ie->length);
++	if (app_ie->length)
++		memcpy(iebuf->app_buf, app_ie->ie, app_ie->length);
++	IEEE80211_UNLOCK_BH(ic);
+ 	return 0;
+ }
+ 
+--- a/source/wlan/ieee80211_output.c
++++ b/source/wlan/ieee80211_output.c
+@@ -2050,6 +2050,24 @@
+  * Create a probe request frame with the specified ssid
+  * and any optional information element data.
+  */
++
++/* Copy APP bytes while holding the same lock as pointer/length replacement.
++ * The caller owns the destination and reserves IEEE80211_APPIE_MAX bytes. */
++static unsigned int om_app_ie_copy(struct ieee80211vap *vap,
++        unsigned int frame_type, uint8_t *destination)
++{
++    struct ieee80211com *ic = vap->iv_ic;
++    unsigned int length = 0;
++    IEEE80211_LOCK_BH(ic);
++    if (vap->app_ie[frame_type].ie &&
++        vap->app_ie[frame_type].length <= IEEE80211_APPIE_MAX) {
++        length = vap->app_ie[frame_type].length;
++        memcpy(destination, vap->app_ie[frame_type].ie, length);
++    }
++    IEEE80211_UNLOCK_BH(ic);
++    return length;
++}
++
+ struct sk_buff *
+ ieee80211_get_probereq(struct ieee80211_node *ni,
+ 	const u_int8_t sa[IEEE80211_ADDR_LEN],
+@@ -2081,7 +2099,7 @@
+ 			(sizeof(struct ieee80211_ie_htcap) +
+ 			 sizeof(struct ieee80211_extcap_param)) : 0) +
+ 	       (optie != NULL ? optielen : 0) +
+-	       vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_REQ].length +
++	       IEEE80211_APPIE_MAX +
+ 	       (IS_IEEE80211_DUALBAND_VHT_ENABLED(ic) ? sizeof(struct ieee80211_ie_vhtcap): 0)
+ 	       );
+ 
+@@ -2135,10 +2153,9 @@
+ 		} while (p_next_ie != NULL);
+ 	}
+ 
+-	if (vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_REQ].ie) {
+-		memcpy(frm, vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_REQ].ie,
+-			vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_REQ].length);
+-		frm += vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_REQ].length;
++	{
++		unsigned int app_len = om_app_ie_copy(vap, IEEE80211_APPIE_FRAME_PROBE_REQ, frm);
++		frm += app_len;
+ 	}
+ 
+ 	skb_trim(skb, frm - skb->data);
+@@ -4288,7 +4305,7 @@
+ 					(sizeof(struct ieee80211_ie_htcap) +
+ 					 sizeof(struct ieee80211_ie_htinfo)) : 0)
+ 			+ sizeof(struct ieee80211_ie_athAdvCap)
+-			+ vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].length + 7 /* recoveredRRMIE reserve */
++			+ IEEE80211_APPIE_MAX + 7 /* recoveredRRMIE reserve */
+ 			+ sizeof(struct ieee80211_ie_qtn)
+ 			+ sizeof(struct ieee80211_qtn_ext_role)
+ 			+ sizeof(struct ieee80211_qtn_ext_bssid)
+@@ -4450,13 +4467,10 @@
+ 		if(ic->om_neighbor_report_flags & 1U)
+ 			frm = om_neighbor_rrm_ie(frm,ic->om_neighbor_report_flags);
+ 
+-		if (vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].ie) {
+-			memcpy(frm, vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].ie,
+-					vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].length);
+-			(void)om_bss_tm_update_ie(frm,
+-			    vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].length,
+-			    ic->om_bss_tm_flags);
+-			frm += vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].length;
++		{
++			unsigned int app_len = om_app_ie_copy(vap, IEEE80211_APPIE_FRAME_PROBE_RESP, frm);
++			(void)om_bss_tm_update_ie(frm, app_len, ic->om_bss_tm_flags);
++			frm += app_len;
+ 		}
+ 
+ 		if (IS_IEEE80211_VHT_ENABLED(ic) && !ap_pure_tkip) {
+@@ -4641,7 +4655,7 @@
+ 			sizeof(struct ieee80211_ie_wme) +
+ 			sizeof(struct ieee80211_ie_athAdvCap) +
+ 			(vap->iv_opt_ie != NULL ? vap->iv_opt_ie_len : 0) +
+-			vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_REQ].length +
++			IEEE80211_APPIE_MAX +
+ 			sizeof(struct ieee80211_ie_qtn) +
+ 			(vap->qtn_pairing_ie.ie ? sizeof(struct ieee80211_ie_qtn_pairing) : 0) +
+ 			(IS_IEEE80211_DUALBAND_VHT_ENABLED(ic) ?
+@@ -4758,11 +4772,10 @@
+ 			frm += vap->iv_opt_ie_len;
+ 		}
+ 
+-		if (vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_REQ].ie) {
+-			memcpy(frm, vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_REQ].ie,
+-				vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_REQ].length);
+-			frm += vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_REQ].length;
+-		}
++		{
++		unsigned int app_len = om_app_ie_copy(vap, IEEE80211_APPIE_FRAME_ASSOC_REQ, frm);
++		frm += app_len;
++	}
+ 
+ 		frm = ieee80211_add_qtn_ie(frm, ic,
+ 			(vap->iv_flags_ext & IEEE80211_FEXT_WDS ? (IEEE80211_QTN_BRIDGEMODE) : 0),
+@@ -4808,7 +4821,7 @@
+ 					 sizeof(struct ieee80211_ie_htinfo)) : 0) +
+ 			sizeof(struct ieee80211_wme_param) +
+ 			(vap->iv_ath_cap ? sizeof(struct ieee80211_ie_athAdvCap) : 0) +
+-			vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].length + 7 /* recoveredRRMIE reserve */ +
++			IEEE80211_APPIE_MAX + 7 /* recoveredRRMIE reserve */ +
+ 			sizeof(struct ieee80211_ie_qtn) +
+ 			(vap->qtn_pairing_ie.ie ? sizeof(struct ieee80211_ie_qtn_pairing) : 0)
+ #ifdef CONFIG_QVSP
+@@ -4906,13 +4919,10 @@
+ 		if(ic->om_neighbor_report_flags & 1U)
+ 			frm = om_neighbor_rrm_ie(frm,ic->om_neighbor_report_flags);
+ 
+-		if (vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].ie) {
+-			memcpy(frm, vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].ie,
+-				vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].length);
+-			(void)om_bss_tm_update_ie(frm,
+-			    vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].length,
+-			    ic->om_bss_tm_flags);
+-			frm += vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].length;
++		{
++			unsigned int app_len = om_app_ie_copy(vap, IEEE80211_APPIE_FRAME_ASSOC_RESP, frm);
++			(void)om_bss_tm_update_ie(frm, app_len, ic->om_bss_tm_flags);
++			frm += app_len;
+ 		}
+ 
+ 		if (ni->ni_qtn_assoc_ie) {
+--- a/source/wlan/ieee80211.c
++++ b/source/wlan/ieee80211.c
+@@ -820,11 +820,14 @@
+ 	int i;
+ 
+ 	for (i = 0; i < IEEE80211_APPIE_NUM_OF_FRAME; i++) {
+-		if (vap->app_ie[i].ie != NULL) {
+-			FREE(vap->app_ie[i].ie, M_DEVBUF);
+-			vap->app_ie[i].ie = NULL;
+-			vap->app_ie[i].length = 0;
+-		}
++		struct ieee80211_ie *old_ie;
++		IEEE80211_LOCK_BH(vap->iv_ic);
++		old_ie = vap->app_ie[i].ie;
++		vap->app_ie[i].ie = NULL;
++		vap->app_ie[i].length = 0;
++		IEEE80211_UNLOCK_BH(vap->iv_ic);
++		if (old_ie)
++			FREE(old_ie, M_DEVBUF);
+ 	}
+ 
+ 	if (vap->iv_opt_ie != NULL) {
+--- a/source/wlan/ieee80211_beacon.c
++++ b/source/wlan/ieee80211_beacon.c
+@@ -467,7 +467,7 @@
+ 	struct ieee80211com *ic = ni->ni_ic;
+ 	u_int16_t capinfo;
+ 
+-	IEEE80211_LOCK(ic);
++	IEEE80211_LOCK_BH(ic);
+ 	if (om_ieee80211_beacon_frame_status(vap->param, skb))
+ 		goto om_beacon_update_end;
+ 	/* Dynamic extents must match the current unpublished frame before writes. */
+@@ -714,7 +714,7 @@
+ 
+ 
+ om_beacon_update_end:
+-	IEEE80211_UNLOCK(ic);
++	IEEE80211_UNLOCK_BH(ic);
+ 
+ 	return;
+ }

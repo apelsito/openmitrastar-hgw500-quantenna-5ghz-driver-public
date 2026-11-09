@@ -1,0 +1,28 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "manifests/aelita-toolchain-15.2.0-10504.json",
+      "source": "outputs/rea/aelita-toolchain-private-20261022T230500Z-r1/TOOLCHAIN_MANIFEST.json",
+      "bytes": 651112,
+      "sha256": "2f9fd1c815727259a42cd15b422656f379ffc70b2529bd48a4faac1e8b531a69",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-toolchain-private-20261022T230500Z-r1/result.json",
+      "source": "outputs/rea/aelita-toolchain-private-20261022T230500Z-r1/result.json",
+      "bytes": 989,
+      "sha256": "dccf24a48c9b83261c020a83c680b59ed3ef76063054ac9f41d78c5bd4c1642c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-pair-source-pin-audit-20261023T021000Z-r1/result.json",
+      "source": "outputs/rea/linux73-r20-pair-source-pin-audit-20261023T021000Z-r1/result.json",
+      "bytes": 55010,
+      "sha256": "ef32d8c3397a4578f26e68c8d87a7f528f4cdd7649628927d518796b170ed260",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

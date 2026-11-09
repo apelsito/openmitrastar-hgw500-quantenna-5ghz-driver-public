@@ -1,0 +1,70 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/consolidated35-global-checkpoint-20261022T002000Z-r3/complete-module-audit.json",
+      "source": "outputs/rea/consolidated35-global-checkpoint-20261022T002000Z-r3/complete-module-audit.json",
+      "bytes": 5805,
+      "sha256": "589367193a17f86ab81598b05acc55c708413473218524ff256a6ab4e356fc0b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/consolidated35-global-checkpoint-20261022T002000Z-r3/qualification-input-pins.json",
+      "source": "outputs/rea/consolidated35-global-checkpoint-20261022T002000Z-r3/qualification-input-pins.json",
+      "bytes": 1216895,
+      "sha256": "b67178e23bd3b83211679a1ed9312fb15aa3407c221be446c1b35794c690947b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/consolidated35-global-checkpoint-20261022T002000Z-r3/result.json",
+      "source": "outputs/rea/consolidated35-global-checkpoint-20261022T002000Z-r3/result.json",
+      "bytes": 9700,
+      "sha256": "ad2dfd669f6df37eee18bb79ddca92b867878dab0abf91b8d3664286c56ad112",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r20/add_hgw5g_linux73_platform_sources.py",
+      "source": "tools/add_hgw5g_linux73_platform_sources.py",
+      "bytes": 2973,
+      "sha256": "843a0b5258907798c52179ea578233c3c979ced38113fff6c199af95edc7a5f8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r20/fix_hgw5g_linux73_ipv6_provider_scope.py",
+      "source": "tools/fix_hgw5g_linux73_ipv6_provider_scope.py",
+      "bytes": 1712,
+      "sha256": "918d2e7d5abbcaa55f33897d02a6ae68af648ff833d929d37531c2c7f47edad7",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r20/fix_hgw5g_linux73_napi_api.py",
+      "source": "tools/fix_hgw5g_linux73_napi_api.py",
+      "bytes": 1122,
+      "sha256": "807b401d2afd07c6be9db8de22336ab5573c59a9077855e15e01c19b4b412e24",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r20/seal_hgw5g_linux73_kernel_stack_receipt.py",
+      "source": "tools/seal_hgw5g_linux73_kernel_stack_receipt.py",
+      "bytes": 3631,
+      "sha256": "4fb346b9b01357367cab90c10380afc1f44d9c917ede59a8e2bc82b9c3c06910",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r20/seal_hgw5g_linux73_native_compile_receipt.py",
+      "source": "tools/seal_hgw5g_linux73_native_compile_receipt.py",
+      "bytes": 2542,
+      "sha256": "55618b9d54bd781ac740fcea84f2e0a7ec37a6f625b1a900dcab4ca88d38cd8a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r20/build_hgw5g_linux73_native_stack.py",
+      "source": "tools/build_hgw5g_linux73_native_stack.py",
+      "bytes": 4292,
+      "sha256": "8267dcbed37157fb3ac7e0cef51a6c469f537150cc6c9102a54a9ef69d55f40b",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

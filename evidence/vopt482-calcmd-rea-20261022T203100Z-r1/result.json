@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-10-22T20:02:58.622019+00:00",
+  "finished_utc": "2026-10-22T20:03:46.459282+00:00",
+  "command": [
+    "D:\\Tools\\REA\\node-v24.16.0-win-x64\\node.exe",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\rea-agents\\scripts\\rea.mjs",
+    "function",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-qdrv-missingops-20261022T132800Z-linked\\qdrv-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+    "--procedure",
+    "qdrv_calcmd_set_tx_power",
+    "--provider",
+    "ghidra",
+    "--format",
+    "json",
+    "--full-output"
+  ],
+  "exit_code": 0,
+  "target_sha256": "60a15998175652d70fa4e1e75a6e1ee997a2e5144f9fe446af06f66641717f77",
+  "target_unchanged": true,
+  "hardware_accessed": false,
+  "installed_runtime_modified": false,
+  "lab_manifest_sha256": "4eaee5f0e843a04da5021aeec00918660b3a133059a574afcd77e44d96e0110e",
+  "rea_output_sha256": "f84013f35995516a6e9013082f647404f07b57b2336f078c0f9966f68c41dd73"
+}

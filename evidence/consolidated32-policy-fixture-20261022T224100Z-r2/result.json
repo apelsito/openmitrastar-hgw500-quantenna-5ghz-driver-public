@@ -1,0 +1,18 @@
+{
+  "status": "PASS_CONSOLIDATED32_ACTUAL_461_WEXT_SCANNER_POLICY_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 262144,
+  "scanner_policy_lowbyte": true,
+  "missing_or_stopping_refuses": true,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_consolidated32_policy.py": "9658e1d256386bb55adcd0786dd35b6312d48261a2bb2262570e6802827b757b",
+    "outputs\\rea\\consolidated32-source-20261022T222600Z-r2\\source\\wlan\\ieee80211_wireless.c": "d8206afe2f33f34302d896e56cf1eeeaaa8fe3af584cdf01222f997779144fbc",
+    "outputs\\rea\\consolidated32-source-20261022T222600Z-r2\\source\\wlan\\openmitrastar_chanset_kernel.inc": "42cad6124219aeb9278f81eadc52cb0438d2cbe2bdc8cac572e5a3b9db37af93",
+    "outputs\\rea\\consolidated32-source-20261022T222600Z-r2\\source\\wlan\\openmitrastar_chanset_recovered.c": "72458854f8208e6fb4ae2e4265df9ad6da8ac89085947433623bb15c8ce68408",
+    "tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+    "outputs\\rea\\consolidated32-policy-fixture-20261022T224100Z-r2\\actual-policy.c": "960ddc8889e48675d0896a8670e68935d831a22d7efc1a1f4760bb5870ede17f",
+    "outputs\\rea\\consolidated32-policy-fixture-20261022T224100Z-r2\\fixture.exe": "893bac7fad24320f11274e917526c9d8d37d8b72a3814c0e268b451f03d91341"
+  },
+  "limits": "Typedkernel/scannerlocks fake; actualpolicy/WEXTbody bounded controlflow only; noAPscan/radio/runtime."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS_EXACT_UNOWNED_ARC_COST_LOOP_DECODE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "target_sha256": "79fbcbd4634a9fc32fdf8ac0c997f3bd0329131162a1ea4948794e4986c7e40a",
+  "original_text_bytes_exact": true,
+  "address": "0x1488e",
+  "end_exclusive": "0x148e6",
+  "bytes": 88,
+  "code_sha256": "b84c8a0834dafe9d8102a7b9e014f329d10c1ab3a6ed04d5fb86271427f63290",
+  "instruction_count": 25,
+  "formula": "wrap32(aci_instant*factor1 + cci_instant*factor0 + aci_longterm*factor3 + cci_longterm*factor2 + dfs*factor5 + range*factor4 - factor5)",
+  "limits": "REA omittedthiscomputedloopasnotprocedure; source/objdump exactbytes fillgap; no runtime",
+  "register_setup_bound": true,
+  "context_start": "0x1483e",
+  "parent_receipt_sha256": "41ae9a368b245dd441ffe584211736871ee3e3c5b1102eac785e1b2ecb35b239"
+}

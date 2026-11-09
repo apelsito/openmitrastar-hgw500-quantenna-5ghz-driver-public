@@ -1,0 +1,19 @@
+{
+  "status": "SOURCE_ONLY_STATEFUL490_23_RECORDS_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "total_original_entries_added": 23,
+  "remaining_original_table_gaps": 21,
+  "wireless_sha256": "a57758a77afccf8966ebe67b8c2da5f73cae864d8265d1bec8495034826f474f",
+  "header_sha256": "86063572b720cb985ed0a4a020bf3bf386f7b233c3e573aa9bc3feb9e1b0262e",
+  "parent_manifest_sha256": "4f46d2ed89ef6ee320ffd311b200f991cb3d49374d14da4c35b8e5dc5dc93806",
+  "new_state": "2ints per-radio IEEE80211com tail, existingQDRVmemset sizeof initializes0",
+  "wire": "FIXED_TX_RATE62 encoded0x7f repeated0..12 or255restore",
+  "errorpaths": "Inactiveanynegative/positive>12 EINVAL nochanges; voidcallbacks cannotconfirmhardwarecompletion",
+  "gates": [
+    "AllQDRV/WLAN/ancillaryheader-usersrecompile",
+    "ARC209VAPprefix andICprefix/newQDRVembeddingoffsetaudit",
+    "Actualstatefulfunctionfixtures withwire/callbackorder",
+    "NoPHY/rate/trafficphysicalacceptance"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openmitrastar.tqe-r3-typed-batch/v1",
+  "status": "SOURCE_ONLY_TYPED_BATCH_FINITE_OWNERSHIP_PENDING_FIXTURES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "ledger_capacity_unchanged": 256,
+  "one_catalog_record_per_multicast_payload": true,
+  "fanout_limit": 135,
+  "batch_owner_pinned_before_ec": true,
+  "typed_context_before_reference_mutation": true,
+  "parent_sha256": "5c1570b6b5a70bb0d510c0d3e46cfcc798af4b57d9cd64a30f995e915dabb60f",
+  "files": {
+    "switch_tqe.c": "c318a0c0f6aa914e8ace5dadc8456da6ea19c28806027e367a460035641cdf1e",
+    "topaz_congest_queue.c": "3838b149e83fd58d5e1040be62f6598d1c061d415c88186c4298d9f6723d20b5",
+    "openmitrastar_tqe_bounded_ownership.h": "191e4ee87436da07f403778b734d79b1771ebd8292073e9beb071de3e00a173f"
+  },
+  "explicit_behavior_changes": [
+    "Typedmulticastfirstvariantbypassesoriginalcongestionrequeue; anyunsuccessfuloutputquarantinesbatch andretainsoneowner.",
+    "VLANdeniedoutputneverforwarded; retainsonepre-recordedowner insteadunboundedHBMdropcleanup."
+  ],
+  "limits": [
+    "NormalCPUlocalwritersblockduringbatch viaowner-token;foreignfirmware bankwritersstillunknown.",
+    "Noautomaticrelease/reset/recovery; firstpinsreboot-only.",
+    "Typedbatchfixture/completepair/delta andVLANpolicyclosure pending."
+  ]
+}

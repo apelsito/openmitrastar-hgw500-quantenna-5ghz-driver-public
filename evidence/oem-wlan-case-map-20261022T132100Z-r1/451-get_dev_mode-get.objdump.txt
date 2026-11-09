@@ -1,0 +1,18 @@
+   394a0:	c204                	ld_s	r2,[sp,0x10]
+   394a2:	72c7 0000 5c28      	add_s	r2,r2,0x5c28
+   394a8:	8a40                	ldb_s	r2,[r2,0]
+   394aa:	0a17 0051           	brne	r2,0x1,22	;394be <ieee80211_find_channel_by_ieee+0x2132>
+   394ae:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   394b6:	1a00 3080           	st	r2,[gp]
+   394ba:	0359 0000           	b	856	;39810 <ieee80211_find_channel_by_ieee+0x2484>
+   394be:	0a1b 00b1           	brne.d	r2,0x2,26	;394d6 <ieee80211_find_channel_by_ieee+0x214a>
+   394c2:	1410 3006           	ld	r6,[sp,16]
+   394c6:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   394ce:	1a00 3080           	st	r2,[gp]
+   394d2:	0341 0000           	b	832	;39810 <ieee80211_find_channel_by_ieee+0x2484>
+   394d6:	169c 0002           	ld	r2,[r6,156]
+   394da:	2204 8f82 0004 0000 	and.f	r2,r2,0x40000
+   394e2:	0322 0002           	bne	802	;39802 <ieee80211_find_channel_by_ieee+0x2476>
+   394e6:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   394ee:	1a00 3080           	st	r2,[gp]
+   394f2:	0321 0000           	b	800	;39810 <ieee80211_find_channel_by_ieee+0x2484>

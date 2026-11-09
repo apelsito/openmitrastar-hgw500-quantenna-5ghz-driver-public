@@ -1,0 +1,576 @@
+{
+  "schema": "openmitrastar.repository-preservation-checkpoint/v1",
+  "hardware_accessed": false,
+  "files": [
+    {
+      "path": "candidates/chanset461-helpers-source-20261022T171200Z-r4/openmitrastar_chanset_recovered.c",
+      "bytes": 6350,
+      "sha256": "430cb61e89bf906aa553d9674c68dd27dc4e2fc53b0327ba059a6e170120f204",
+      "source": "outputs/rea/chanset461-helpers-source-20261022T171200Z-r4/openmitrastar_chanset_recovered.c"
+    },
+    {
+      "path": "candidates/chanset461-helpers-source-20261022T171200Z-r4/openmitrastar_chanset_recovered.h",
+      "bytes": 2225,
+      "sha256": "31e27fd7dca6c64596a6eb59156eca4cc249064907fae413133c4239bceb7cd5",
+      "source": "outputs/rea/chanset461-helpers-source-20261022T171200Z-r4/openmitrastar_chanset_recovered.h"
+    },
+    {
+      "path": "candidates/chanset461-helpers-source-20261022T171200Z-r4/openmitrastar_chanset_tables.h",
+      "bytes": 10259,
+      "sha256": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492",
+      "source": "outputs/rea/chanset461-helpers-source-20261022T171200Z-r4/openmitrastar_chanset_tables.h"
+    },
+    {
+      "path": "candidates/chanset461-helpers-source-20261022T171200Z-r4/result.json",
+      "bytes": 3395,
+      "sha256": "f21cac6be3c1299d4f04027122785b788fff94d9f68521fccb5e87c30f4d0d6e",
+      "source": "outputs/rea/chanset461-helpers-source-20261022T171200Z-r4/result.json"
+    },
+    {
+      "path": "candidates/chanset461-helpers-source-20261022T171200Z-r4/tables.json",
+      "bytes": 35561,
+      "sha256": "8d37396ee20d6902ea9c2948579c57b4e69c307d332904717aa4889ba6a98538",
+      "source": "outputs/rea/chanset461-helpers-source-20261022T171200Z-r4/tables.json"
+    },
+    {
+      "path": "evidence/chanset461-helper-delivery-20261022T174100Z-r1/HANDOFF.md",
+      "bytes": 1415,
+      "sha256": "5c5a97bb2e004dfe659d2fd965eccd91d5a4b89e8b9bd8c7713c0f353ca2987a",
+      "source": "outputs/rea/chanset461-helper-delivery-20261022T174100Z-r1/HANDOFF.md"
+    },
+    {
+      "path": "evidence/chanset461-helper-delivery-20261022T174100Z-r1/result.json",
+      "bytes": 1948,
+      "sha256": "d0dda663397f5a1d5c20d2643a72e283c7a630cde2307e8ec3dcb5b7aa560a6e",
+      "source": "outputs/rea/chanset461-helper-delivery-20261022T174100Z-r1/result.json"
+    },
+    {
+      "path": "evidence/chanset461-helpers-host-fixture-20261022T171300Z-r2/compile.command.json",
+      "bytes": 529,
+      "sha256": "c89e9afa8a7d39ec43c73b455786067d2c5c299fc052147d598badda8c689742",
+      "source": "outputs/rea/chanset461-helpers-host-fixture-20261022T171300Z-r2/compile.command.json"
+    },
+    {
+      "path": "evidence/chanset461-helpers-host-fixture-20261022T171300Z-r2/fixture.c",
+      "bytes": 4876,
+      "sha256": "3ef7213b9515ae5811943d84169e26c3ff0fedc8d95e6caee2db89ab009f3a68",
+      "source": "outputs/rea/chanset461-helpers-host-fixture-20261022T171300Z-r2/fixture.c"
+    },
+    {
+      "path": "evidence/chanset461-helpers-host-fixture-20261022T171300Z-r2/input-pins.json",
+      "bytes": 1108,
+      "sha256": "f1454c910f86e2bdf96cdcffd42f393e79b2fc247b9a2fd53a0317cb08d9e635",
+      "source": "outputs/rea/chanset461-helpers-host-fixture-20261022T171300Z-r2/input-pins.json"
+    },
+    {
+      "path": "evidence/chanset461-helpers-host-fixture-20261022T171300Z-r2/result.json",
+      "bytes": 399,
+      "sha256": "0c5e4fb6337b24302194f1ddb4fdb1c15cc9db9e4caf42162d2a8b8a243b2aa3",
+      "source": "outputs/rea/chanset461-helpers-host-fixture-20261022T171300Z-r2/result.json"
+    },
+    {
+      "path": "evidence/chanset461-full-helper-tables-fixture-20261022T172000Z-r2/compile.command.json",
+      "bytes": 541,
+      "sha256": "831d3c2b953f79301ef9438903a919dbfa86f020d4a7edc416667e458d7ab6e4",
+      "source": "outputs/rea/chanset461-full-helper-tables-fixture-20261022T172000Z-r2/compile.command.json"
+    },
+    {
+      "path": "evidence/chanset461-full-helper-tables-fixture-20261022T172000Z-r2/fixture.c",
+      "bytes": 12104,
+      "sha256": "ba6c92a86b0bd49576b772b3f1f1f0d6968d991725a07471ca1b052efdd2861d",
+      "source": "outputs/rea/chanset461-full-helper-tables-fixture-20261022T172000Z-r2/fixture.c"
+    },
+    {
+      "path": "evidence/chanset461-full-helper-tables-fixture-20261022T172000Z-r2/input-pins.json",
+      "bytes": 1107,
+      "sha256": "2ff28e136b936d5aa785b65e9142c306b6b4c947bf8717d9b80e3bd66fcd8067",
+      "source": "outputs/rea/chanset461-full-helper-tables-fixture-20261022T172000Z-r2/input-pins.json"
+    },
+    {
+      "path": "evidence/chanset461-full-helper-tables-fixture-20261022T172000Z-r2/result.json",
+      "bytes": 407,
+      "sha256": "8f9cccfcab7b7992ec6e3bf78126c9049cee222d9bbe6c450b91a1156148de74",
+      "source": "outputs/rea/chanset461-full-helper-tables-fixture-20261022T172000Z-r2/result.json"
+    },
+    {
+      "path": "evidence/chanset461-helpers-arc-compile-20261022T171600Z-r2/compile.command.json",
+      "bytes": 5147,
+      "sha256": "d189aa5c0c5d3c057b3c197ae9b179b9697c39d9cb775fb3c7c9ee0c5fb3fe4a",
+      "source": "outputs/rea/chanset461-helpers-arc-compile-20261022T171600Z-r2/compile.command.json"
+    },
+    {
+      "path": "evidence/chanset461-helpers-arc-compile-20261022T171600Z-r2/input-pins.json",
+      "bytes": 177984,
+      "sha256": "d1a94294195d70df80ede6fd51b34aa4b1e29eabbb54af7c038a4de086d88941",
+      "source": "outputs/rea/chanset461-helpers-arc-compile-20261022T171600Z-r2/input-pins.json"
+    },
+    {
+      "path": "evidence/chanset461-helpers-arc-compile-20261022T171600Z-r2/result.json",
+      "bytes": 958,
+      "sha256": "68dacf8aea63f82d25b465ae27868cc1537ee96a236d3b7e243b2c493be15295",
+      "source": "outputs/rea/chanset461-helpers-arc-compile-20261022T171600Z-r2/result.json"
+    },
+    {
+      "path": "evidence/chanset461-cost-loop-with-register-context-20261022T170700Z-r2/assembly.txt",
+      "bytes": 2167,
+      "sha256": "90dd425e67084b7f0f531654a8d1f4c1534034806799bd816d1b9554605364df",
+      "source": "outputs/rea/chanset461-cost-loop-with-register-context-20261022T170700Z-r2/assembly.txt"
+    },
+    {
+      "path": "evidence/chanset461-cost-loop-with-register-context-20261022T170700Z-r2/command.json",
+      "bytes": 399,
+      "sha256": "13938b823bcff06174df71ba2b8b181b1b5ad1ac87e8b5d46a93af7a541577ec",
+      "source": "outputs/rea/chanset461-cost-loop-with-register-context-20261022T170700Z-r2/command.json"
+    },
+    {
+      "path": "evidence/chanset461-cost-loop-with-register-context-20261022T170700Z-r2/result.json",
+      "bytes": 853,
+      "sha256": "c9d232b006c51ad82bfcd27dd1025d1dcfc74c3cabef474aff15f9f4fd923878",
+      "source": "outputs/rea/chanset461-cost-loop-with-register-context-20261022T170700Z-r2/result.json"
+    },
+    {
+      "path": "evidence/chanset461-helper-comments-20261022T174000Z-r1/artifact-hashes.json",
+      "bytes": 436,
+      "sha256": "baea520c4bc83b2f96014f04a9ab95bba5aa07016eba3ff72bb9dc2acfb85a07",
+      "source": "outputs/rea/chanset461-helper-comments-20261022T174000Z-r1/artifact-hashes.json"
+    },
+    {
+      "path": "evidence/chanset461-helper-comments-20261022T174000Z-r1/comments.json",
+      "bytes": 5156,
+      "sha256": "3d7ae3c024e4cb06afdc412c8553aba7f3b5cd1d9df28c4e3616a61f677b5a6f",
+      "source": "outputs/rea/chanset461-helper-comments-20261022T174000Z-r1/comments.json"
+    },
+    {
+      "path": "evidence/chanset461-helper-comments-20261022T174000Z-r1/COMMENTS.md",
+      "bytes": 3502,
+      "sha256": "d339a1817ecccca1d68c5c1c43ece60088b559cb8e09bbe5de8f305f4a2b8992",
+      "source": "outputs/rea/chanset461-helper-comments-20261022T174000Z-r1/COMMENTS.md"
+    },
+    {
+      "path": "evidence/chanset461-helper-comments-20261022T174000Z-r1/comments.raw.bin",
+      "bytes": 1492,
+      "sha256": "8074b20092c03c50bd2a83949173f6bbb1fbbf4b998afa5e1dc9249de86276e4",
+      "source": "outputs/rea/chanset461-helper-comments-20261022T174000Z-r1/comments.raw.bin"
+    },
+    {
+      "path": "evidence/chanset461-helper-comments-20261022T174000Z-r1/manifest.json",
+      "bytes": 2329,
+      "sha256": "81c1d487c02589d6fad341a111aa2492c6a2e18a431ed4269fd0e16162fc3d68",
+      "source": "outputs/rea/chanset461-helper-comments-20261022T174000Z-r1/manifest.json"
+    },
+    {
+      "path": "evidence/beacon-r9-controlled-global-qualification-20261022T191600Z-r10/complete-controlled-audit.json",
+      "bytes": 8891,
+      "sha256": "c3a83d593296d17ead0e07e3f0d6ac527d9ce1f60a78a215341bd5c02ebadeb2",
+      "source": "outputs/rea/beacon-r9-controlled-global-qualification-20261022T191600Z-r10/complete-controlled-audit.json"
+    },
+    {
+      "path": "evidence/beacon-r9-controlled-global-qualification-20261022T191600Z-r10/qualification-input-pins.json",
+      "bytes": 438689,
+      "sha256": "6d254e1809246ebc431a35f30854c714c5b7795f7155913f6bb877110ce9e69e",
+      "source": "outputs/rea/beacon-r9-controlled-global-qualification-20261022T191600Z-r10/qualification-input-pins.json"
+    },
+    {
+      "path": "evidence/beacon-r9-controlled-global-qualification-20261022T191600Z-r10/qualify_beacon_r9_controlled_closure.py",
+      "bytes": 17111,
+      "sha256": "9792c05091ffe18e23f6b9fe5039ef733218cedb32724d7da78fb4ef4aa3a4fd",
+      "source": "outputs/rea/beacon-r9-controlled-global-qualification-20261022T191600Z-r10/qualify_beacon_r9_controlled_closure.py"
+    },
+    {
+      "path": "evidence/beacon-r9-controlled-global-qualification-20261022T191600Z-r10/result.json",
+      "bytes": 2496,
+      "sha256": "61d8a5c028d7cc7a603349e1d045dc5e2699054666aaa9edca9b06be7940cfee",
+      "source": "outputs/rea/beacon-r9-controlled-global-qualification-20261022T191600Z-r10/result.json"
+    },
+    {
+      "path": "evidence/beacon-r9-verifier-negative-20261022T191800Z-r1/result.json",
+      "bytes": 2087,
+      "sha256": "b02d65c9132990f1799b65a343ce5f7248f377311029c8c8da9d27642aae8bbe",
+      "source": "outputs/rea/beacon-r9-verifier-negative-20261022T191800Z-r1/result.json"
+    },
+    {
+      "path": "evidence/beacon-r9-full-abi-witness-20261022T183400Z-r2/result.json",
+      "bytes": 80288,
+      "sha256": "380793d8ed7c67d5084a5a8fa9a590c55383820ef84b2d847adb9e37d7eeb85a",
+      "source": "outputs/rea/beacon-r9-full-abi-witness-20261022T183400Z-r2/result.json"
+    },
+    {
+      "path": "evidence/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/input-pins.json",
+      "bytes": 311317,
+      "sha256": "ba1c009a85b3426cecc71169cadf3f93a33e9c0373d5e51e1e702711351bf36f",
+      "source": "outputs/rea/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/input-pins.json"
+    },
+    {
+      "path": "evidence/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/joint-modpost.command.json",
+      "bytes": 1299,
+      "sha256": "1e5c31b95d0c681853566efdb99f7fa430b8e4af3fcbcb6cec2584d8102d0b93",
+      "source": "outputs/rea/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/joint-modpost.command.json"
+    },
+    {
+      "path": "evidence/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/result.json",
+      "bytes": 10473,
+      "sha256": "98f88523f5877b5dff9230669496e7588cce20bd6bd1f440a63f2e44308ca16b",
+      "source": "outputs/rea/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/result.json"
+    },
+    {
+      "path": "evidence/beacon-r9-dedup-second-composition-20261022T164500Z-r1/input-pins.json",
+      "bytes": 313423,
+      "sha256": "706f94de5fae43ebd91e774da44c132ed66ee8c41976e762c1753a7441365658",
+      "source": "outputs/rea/beacon-r9-dedup-second-composition-20261022T164500Z-r1/input-pins.json"
+    },
+    {
+      "path": "evidence/beacon-r9-dedup-second-composition-20261022T164500Z-r1/joint-modpost.command.json",
+      "bytes": 1308,
+      "sha256": "2ea88521afcd886727dfcb8bcb64c03ff6a18e9257de9109eaad9b0e556b177a",
+      "source": "outputs/rea/beacon-r9-dedup-second-composition-20261022T164500Z-r1/joint-modpost.command.json"
+    },
+    {
+      "path": "evidence/beacon-r9-dedup-second-composition-20261022T164500Z-r1/result.json",
+      "bytes": 10480,
+      "sha256": "69c6cac442f5099b081e1203706461bb8b476a7437c34f21b7c389e4f74204c9",
+      "source": "outputs/rea/beacon-r9-dedup-second-composition-20261022T164500Z-r1/result.json"
+    },
+    {
+      "path": "evidence/beacon-r9-parent19-control-source-20261022T183100Z-r1/result.json",
+      "bytes": 996,
+      "sha256": "447eced1b68cc9a5060936d6bcf88633eeb22b56bf5e1ace2144847c545ad735",
+      "source": "outputs/rea/beacon-r9-parent19-control-source-20261022T183100Z-r1/result.json"
+    },
+    {
+      "path": "evidence/beacon-r9-parent19-control-build-20261022T183200Z-r1/input-pins.json",
+      "bytes": 265710,
+      "sha256": "f03fa29502525ffad217712d603cb81250202b69054c77696a81e057689b0979",
+      "source": "outputs/rea/beacon-r9-parent19-control-build-20261022T183200Z-r1/input-pins.json"
+    },
+    {
+      "path": "evidence/beacon-r9-parent19-control-build-20261022T183200Z-r1/result.json",
+      "bytes": 18580,
+      "sha256": "06dd3906d62c5e5d38ea5f96e07fabbfdaec1ac285ff3ab81083cfe4e4f2899e",
+      "source": "outputs/rea/beacon-r9-parent19-control-build-20261022T183200Z-r1/result.json"
+    },
+    {
+      "path": "evidence/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/input-pins.json",
+      "bytes": 313657,
+      "sha256": "cd49220658dbfbabc6a7d5b91402dc3e05d168c6a41171c889a89f88e18519c0",
+      "source": "outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/input-pins.json"
+    },
+    {
+      "path": "evidence/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/joint-modpost.command.json",
+      "bytes": 1398,
+      "sha256": "97e98890efc50ce6d17c085870f35d082028902cb0815687a41b2b053abf77b7",
+      "source": "outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/joint-modpost.command.json"
+    },
+    {
+      "path": "evidence/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/result.json",
+      "bytes": 10498,
+      "sha256": "c2f3d4295d1184b0b1ac0bdc41d17f51f8dfff20c0eb68accb90f01da4370be8",
+      "source": "outputs/rea/beacon-r9-parent19-control-dedup-composition-20261022T184600Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-add-scan-type-20261022T165000Z-r1/function.assembly.txt",
+      "bytes": 2243,
+      "sha256": "f2d271470ac832e5112232539e66b38dbc4f6fa89e5feb6e916538886dfb4342",
+      "source": "outputs/rea/windows-oem-chanset-add-scan-type-20261022T165000Z-r1/function.assembly.txt"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-add-scan-type-20261022T165000Z-r1/function.pseudocode.c",
+      "bytes": 2188,
+      "sha256": "ce59ce6086afdc4baf4c5bb2b8c370b800bea8b1b11ed82a12c2746cbc3ab96e",
+      "source": "outputs/rea/windows-oem-chanset-add-scan-type-20261022T165000Z-r1/function.pseudocode.c"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-add-scan-type-20261022T165000Z-r1/rea.json",
+      "bytes": 222512,
+      "sha256": "c28a5eade1c0b472af124469481e38fc5007ab91e5b717f871a118f6a5922e23",
+      "source": "outputs/rea/windows-oem-chanset-add-scan-type-20261022T165000Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-add-scan-type-20261022T165000Z-r1/result.json",
+      "bytes": 1000,
+      "sha256": "6a2939fde82f1cfe29bca6b63d64a15ef0af3c6095b73d458458bfe8c4a3cff1",
+      "source": "outputs/rea/windows-oem-chanset-add-scan-type-20261022T165000Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-edge-high-20261022T170000Z-r1/function.assembly.txt",
+      "bytes": 996,
+      "sha256": "11f8dae488167b61daa3a82a181de07767d09bae4590de270352bd12c180a6b9",
+      "source": "outputs/rea/windows-oem-chanset-edge-high-20261022T170000Z-r1/function.assembly.txt"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-edge-high-20261022T170000Z-r1/function.pseudocode.c",
+      "bytes": 527,
+      "sha256": "5fc181ce46f45a4a61aa3c831c2cd8dcc824639185969b4e0a02be8e4d8fa099",
+      "source": "outputs/rea/windows-oem-chanset-edge-high-20261022T170000Z-r1/function.pseudocode.c"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-edge-high-20261022T170000Z-r1/rea.json",
+      "bytes": 91720,
+      "sha256": "0ca889fc64d85ab530490604fdfff1697847c2ee1dc0192cb10e4e29e92eb3f6",
+      "source": "outputs/rea/windows-oem-chanset-edge-high-20261022T170000Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-edge-high-20261022T170000Z-r1/result.json",
+      "bytes": 1000,
+      "sha256": "289e08eb195f5c6fed3696ec6d474b5121b0269cc348fbae68768be38459a325",
+      "source": "outputs/rea/windows-oem-chanset-edge-high-20261022T170000Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-edge-low-20261022T170000Z-r1/function.assembly.txt",
+      "bytes": 996,
+      "sha256": "4d928231e13d20b78b10a1935f249452e487ab7127d37b6b21f4f14a1c90f0cf",
+      "source": "outputs/rea/windows-oem-chanset-edge-low-20261022T170000Z-r1/function.assembly.txt"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-edge-low-20261022T170000Z-r1/function.pseudocode.c",
+      "bytes": 529,
+      "sha256": "805becdd0c9ca0f870dcadb8e79b1e684a12a16f5f38e3979709cda166b70bbc",
+      "source": "outputs/rea/windows-oem-chanset-edge-low-20261022T170000Z-r1/function.pseudocode.c"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-edge-low-20261022T170000Z-r1/rea.json",
+      "bytes": 82020,
+      "sha256": "0b4b19befca19a358c8b6bd09c5eb0c9de9a37582023cd5ef8905854624669d5",
+      "source": "outputs/rea/windows-oem-chanset-edge-low-20261022T170000Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-edge-low-20261022T170000Z-r1/result.json",
+      "bytes": 1000,
+      "sha256": "36cf9bebedbbe08b8d39e05e1115ff558283836a539fc163c7330e6ec12eccd4",
+      "source": "outputs/rea/windows-oem-chanset-edge-low-20261022T170000Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-find-entry-20261022T164300Z-r1/function.assembly.txt",
+      "bytes": 744,
+      "sha256": "5acc5e4eadd40a19bc42429bd73d1d88e06a02e1951f308fd7f0edbf5fd3ef29",
+      "source": "outputs/rea/windows-oem-chanset-find-entry-20261022T164300Z-r1/function.assembly.txt"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-find-entry-20261022T164300Z-r1/function.pseudocode.c",
+      "bytes": 842,
+      "sha256": "65712a35e9a4c2a3059c95ae6ddfbb96dd300a2299d488b5de6b5d639671176e",
+      "source": "outputs/rea/windows-oem-chanset-find-entry-20261022T164300Z-r1/function.pseudocode.c"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-find-entry-20261022T164300Z-r1/rea.json",
+      "bytes": 92428,
+      "sha256": "210c50048f1faa72e09d527834ac4c595971959dada1676453dfb3064dbc90e2",
+      "source": "outputs/rea/windows-oem-chanset-find-entry-20261022T164300Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-find-entry-20261022T164300Z-r1/result.json",
+      "bytes": 1000,
+      "sha256": "ce57ad10bfa0b187b80fa9baddce82072c396e96d7c5a1457cef6c449ac1236f",
+      "source": "outputs/rea/windows-oem-chanset-find-entry-20261022T164300Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-pick-20261022T165100Z-r1/function.assembly.txt",
+      "bytes": 31251,
+      "sha256": "d659c20f7588eef1907c5ae90400f3c07ad5844e5f523cb8a1c9458355b7c486",
+      "source": "outputs/rea/windows-oem-chanset-pick-20261022T165100Z-r1/function.assembly.txt"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-pick-20261022T165100Z-r1/function.pseudocode.c",
+      "bytes": 27386,
+      "sha256": "6bdb674fbaa1416d315c012f7929cd266ad98e003347b489a6f572215015e1ef",
+      "source": "outputs/rea/windows-oem-chanset-pick-20261022T165100Z-r1/function.pseudocode.c"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-pick-20261022T165100Z-r1/rea.json",
+      "bytes": 3228453,
+      "sha256": "34f6f50480a42577972d6ee082727b90856ffba8f4dfddaed41142fe9a377ea1",
+      "source": "outputs/rea/windows-oem-chanset-pick-20261022T165100Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-pick-20261022T165100Z-r1/result.json",
+      "bytes": 1023,
+      "sha256": "0fe21b2b37548ce13bf77ae27969cd3eb6815dc8a071b9f1f23e0da1a55064ae",
+      "source": "outputs/rea/windows-oem-chanset-pick-20261022T165100Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-ranking-init-20261022T171500Z-r1/function.assembly.txt",
+      "bytes": 1412,
+      "sha256": "d5dec54aa6881b99ff229f743d3ab1c37117677e0d6fdda908f62acae0a77c6f",
+      "source": "outputs/rea/windows-oem-chanset-ranking-init-20261022T171500Z-r1/function.assembly.txt"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-ranking-init-20261022T171500Z-r1/function.pseudocode.c",
+      "bytes": 1179,
+      "sha256": "70f06aaeb9cda5f9c4319502155373d68abf78d8b34f147c8e37eb01756462e4",
+      "source": "outputs/rea/windows-oem-chanset-ranking-init-20261022T171500Z-r1/function.pseudocode.c"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-ranking-init-20261022T171500Z-r1/rea.json",
+      "bytes": 100906,
+      "sha256": "0afb0553639e98cf7d634d06498ed79ce28ffd1d44bdb75b7edfe7d679e2502f",
+      "source": "outputs/rea/windows-oem-chanset-ranking-init-20261022T171500Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-ranking-init-20261022T171500Z-r1/result.json",
+      "bytes": 1030,
+      "sha256": "37079ee4be56a2c40dddbc50b83654f4e04f9fb20efe92404d3fe63bbd843cd6",
+      "source": "outputs/rea/windows-oem-chanset-ranking-init-20261022T171500Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-scan-20261022T184300Z-r1/function.assembly.txt",
+      "bytes": 1418,
+      "sha256": "476a9eeb09a4470ad55df2cdb732da98e65eac05dd62960c6414f6fd85c5298e",
+      "source": "outputs/rea/windows-oem-chanset-scan-20261022T184300Z-r1/function.assembly.txt"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-scan-20261022T184300Z-r1/function.pseudocode.c",
+      "bytes": 985,
+      "sha256": "1b5ea7b36f1babc2b8236dad1839bbb3d1aad3142ecb6d95ce62c3496a4eb448",
+      "source": "outputs/rea/windows-oem-chanset-scan-20261022T184300Z-r1/function.pseudocode.c"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-scan-20261022T184300Z-r1/rea.json",
+      "bytes": 109049,
+      "sha256": "e16d0d0fe8523f9e51eb5600124f7583bc04dbd8e0374574ba4a4c7a7c9d9cfa",
+      "source": "outputs/rea/windows-oem-chanset-scan-20261022T184300Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-scan-20261022T184300Z-r1/result.json",
+      "bytes": 1021,
+      "sha256": "a02cee0e6f2ffc6340037a47bb504c316fbccfa41c0522aa15b6615331cb81b4",
+      "source": "outputs/rea/windows-oem-chanset-scan-20261022T184300Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-scan-bw-switch-20261022T165800Z-r1/function.assembly.txt",
+      "bytes": 1746,
+      "sha256": "9b6fe17cb92a96ee4430f9e0ac399eea7685fc0bd9991697aff91ab7e8ec6bc3",
+      "source": "outputs/rea/windows-oem-chanset-scan-bw-switch-20261022T165800Z-r1/function.assembly.txt"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-scan-bw-switch-20261022T165800Z-r1/function.pseudocode.c",
+      "bytes": 917,
+      "sha256": "f88c38d27c7a80e0e702ae3ca68f16e9f80fa2e594009ff2d78aa6f0c676bd61",
+      "source": "outputs/rea/windows-oem-chanset-scan-bw-switch-20261022T165800Z-r1/function.pseudocode.c"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-scan-bw-switch-20261022T165800Z-r1/rea.json",
+      "bytes": 124672,
+      "sha256": "fb8647ac17773f81234a62d3564278254493d0148d9021b91afd80170d974c18",
+      "source": "outputs/rea/windows-oem-chanset-scan-bw-switch-20261022T165800Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-scan-bw-switch-20261022T165800Z-r1/result.json",
+      "bytes": 1000,
+      "sha256": "7506ebcc22286a8953c90d732efd239f93b598209767c95c8a4b2130f6a6d01e",
+      "source": "outputs/rea/windows-oem-chanset-scan-bw-switch-20261022T165800Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-scan-metrics-20261022T173500Z-r1/rea.json",
+      "bytes": 493504,
+      "sha256": "134208eb856af4a1603c8976fff25230acc5884e2a966de683202889ca311bc4",
+      "source": "outputs/rea/windows-oem-chanset-scan-metrics-20261022T173500Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-scan-metrics-20261022T173500Z-r1/result.json",
+      "bytes": 1027,
+      "sha256": "147587004867ac4ee0d19bebebe5c9ddde681958a5e5a57c0796749afc2baae1",
+      "source": "outputs/rea/windows-oem-chanset-scan-metrics-20261022T173500Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-start-20261022T165100Z-r1/function.pseudocode.c",
+      "bytes": 8676,
+      "sha256": "a0b2f6baa8b144a10b0dfabf0caf5246863401ab108c2ca0dae19e3aeedac53d",
+      "source": "outputs/rea/windows-oem-chanset-start-20261022T165100Z-r1/function.pseudocode.c"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-start-20261022T165100Z-r1/rea.json",
+      "bytes": 1142480,
+      "sha256": "c141fce8037c95382540fa2c275a4a1828601a4c0f67928f7e4fe4063f9fde38",
+      "source": "outputs/rea/windows-oem-chanset-start-20261022T165100Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-start-20261022T165100Z-r1/result.json",
+      "bytes": 1026,
+      "sha256": "5650b089644b5ba7fba6b8dccaa20ce056854ef98ac0b34cfd29da486cd81836",
+      "source": "outputs/rea/windows-oem-chanset-start-20261022T165100Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-table-20261022T163400Z-r1/function.assembly.txt",
+      "bytes": 926,
+      "sha256": "ed25ac5bce80be73a2dcb0a5433fdd3de99e26ddae3fb73adab7e9e88a7194b7",
+      "source": "outputs/rea/windows-oem-chanset-table-20261022T163400Z-r1/function.assembly.txt"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-table-20261022T163400Z-r1/function.pseudocode.c",
+      "bytes": 1050,
+      "sha256": "b59ebd3908c2e5472d112c96bf12c0325e3df74fdd948c2f83dd6df47bee078f",
+      "source": "outputs/rea/windows-oem-chanset-table-20261022T163400Z-r1/function.pseudocode.c"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-table-20261022T163400Z-r1/rea.json",
+      "bytes": 104916,
+      "sha256": "1ff087b0ed176e2d0390a9ffd763ed2e7c82c89bb95dee49fba5be866b133f23",
+      "source": "outputs/rea/windows-oem-chanset-table-20261022T163400Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-table-20261022T163400Z-r1/result.json",
+      "bytes": 1000,
+      "sha256": "9558a3253beb3addd9cfb116b31ac2bc959222d632b062d0f5578e5e8b50bcc1",
+      "source": "outputs/rea/windows-oem-chanset-table-20261022T163400Z-r1/result.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-unowned-cost-loop-20261022T172000Z-r1/rea.json",
+      "bytes": 19419,
+      "sha256": "d825a05eae29f7b3f16976b6ca70f6b25c9d6c4295e821ad73d370642f96ad38",
+      "source": "outputs/rea/windows-oem-chanset-unowned-cost-loop-20261022T172000Z-r1/rea.json"
+    },
+    {
+      "path": "evidence/windows-oem-chanset-unowned-cost-loop-20261022T172000Z-r1/result.json",
+      "bytes": 1000,
+      "sha256": "164c3fc21ee06a704fe789a21c10605756622297cd7476f3b7488cf99a5f8b53",
+      "source": "outputs/rea/windows-oem-chanset-unowned-cost-loop-20261022T172000Z-r1/result.json"
+    },
+    {
+      "path": "tools/integration/recover_hgw5g_chanset_tables.py",
+      "bytes": 9119,
+      "sha256": "187ac3b1b788d471cfadcfd5c1c0613cc454a909213cd62fcf403d6d60979786",
+      "source": "tools/recover_hgw5g_chanset_tables.py"
+    },
+    {
+      "path": "tools/integration/prepare_hgw5g_chanset_helpers.py",
+      "bytes": 8452,
+      "sha256": "025c1d83219bdef30f39b080b6187fbdd2d39a379a83a3830da46ec3b500c678",
+      "source": "tools/prepare_hgw5g_chanset_helpers.py"
+    },
+    {
+      "path": "tools/integration/test_hgw5g_chanset_tables.py",
+      "bytes": 6200,
+      "sha256": "189b37ec48884c22b3693f6fcb9784c920c30bf77f73f4f3f1512757836920ee",
+      "source": "tools/test_hgw5g_chanset_tables.py"
+    },
+    {
+      "path": "tools/integration/test_hgw5g_chanset_helpers.py",
+      "bytes": 7390,
+      "sha256": "f37a3a0fd8e96558158ef84af57abcc16e6e1f36f40170ce8d6a4a42130d1117",
+      "source": "tools/test_hgw5g_chanset_helpers.py"
+    },
+    {
+      "path": "tools/integration/compile_hgw5g_chanset_helpers.py",
+      "bytes": 4384,
+      "sha256": "557210865fb6bb45be1de1917858a9391e36d16ea09ed088e09b4befb74671b9",
+      "source": "tools/compile_hgw5g_chanset_helpers.py"
+    },
+    {
+      "path": "tools/integration/compose_hgw5g_joint_modules_dedup.py",
+      "bytes": 10115,
+      "sha256": "dec43357113b6470bea20dc5811ac69790dea50a8e8f47b44565f2cf838b2f2e",
+      "source": "tools/compose_hgw5g_joint_modules_dedup.py"
+    },
+    {
+      "path": "tools/integration/witness_beacon_r9_full_abi.py",
+      "bytes": 5771,
+      "sha256": "ade527a965850f6618eee0cddf544bffea5f5f462a8d171cb34f151fc9a2bf20",
+      "source": "tools/witness_beacon_r9_full_abi.py"
+    },
+    {
+      "path": "tools/integration/qualify_beacon_r9_controlled_closure_qualified_r10.py",
+      "bytes": 17111,
+      "sha256": "9792c05091ffe18e23f6b9fe5039ef733218cedb32724d7da78fb4ef4aa3a4fd",
+      "source": "outputs/rea/beacon-r9-controlled-global-qualification-20261022T191600Z-r10/qualify_beacon_r9_controlled_closure.py"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "firmware_eligible": false,
+  "hardware_accessed": false,
+  "compiler": "llvm-mingw clang",
+  "checks": 131074,
+  "host_exit": 0,
+  "status": "PASS_HOST_FAKE_CASES_ARC_COMPILE_UNRUN_WSL_ERROR"
+}

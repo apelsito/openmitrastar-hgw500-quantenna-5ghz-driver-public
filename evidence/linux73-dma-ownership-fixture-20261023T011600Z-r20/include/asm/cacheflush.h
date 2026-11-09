@@ -1,0 +1,1 @@
+/* fake ownership/MMIO provider */

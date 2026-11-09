@@ -1,0 +1,519 @@
+{
+  "group": "include",
+  "source_files": 63,
+  "comments": 1309,
+  "raw_bytes": 152067,
+  "raw_sha256": "4551c321f1a427512db461ef947fb77e69415686a849bed4338faa18c85e4d15",
+  "unterminated_comments": 0,
+  "files": [
+    {
+      "path": "include/qtn/auc_debug_stats.h",
+      "git_object": "fd26ce5b0796a004c68cd0bad8ccd1a64276dc99",
+      "mode": "100755",
+      "bytes": 5743,
+      "sha256": "7eb29bc5ec9de1b4a2a9aaf340ea778c38fea2f973180bb46fc57de983992da9",
+      "comments": 11
+    },
+    {
+      "path": "include/qtn/auc_share_def.h",
+      "git_object": "3fc17e335c73752642e241d1c0488947fffa95d9",
+      "mode": "100755",
+      "bytes": 1479,
+      "sha256": "07498095f5c53d768928b0b8bb12971df4c45171254994263cb7b25a5a9ead25",
+      "comments": 12
+    },
+    {
+      "path": "include/qtn/bootcfg.h",
+      "git_object": "966720af6cf7cf613ee2e4fa001c240e784f51e6",
+      "mode": "100644",
+      "bytes": 1747,
+      "sha256": "2e8e24b9d781aa7189235be1b98002dc2609ddabc63a7af1e9ae3e19b56a505f",
+      "comments": 5
+    },
+    {
+      "path": "include/qtn/dmautil.h",
+      "git_object": "26ccebac5a733c296f1a2a1b2157766826c4df58",
+      "mode": "100644",
+      "bytes": 3551,
+      "sha256": "d047c73736e32a5cd14058b18a585d0dfff9038ea73270fca9e6bdadaa430732",
+      "comments": 4
+    },
+    {
+      "path": "include/qtn/emac_debug.h",
+      "git_object": "6de7aee70a51a72e1ba9a5064902ca6858051509",
+      "mode": "100644",
+      "bytes": 1021,
+      "sha256": "462e2689bfaa8affd6a4c9743621e418f69385e8d3d94936435c8faa4a924ed2",
+      "comments": 2
+    },
+    {
+      "path": "include/qtn/hardware_revision.h",
+      "git_object": "d754fbdc522083f323aac4cb048105a6ef03ee58",
+      "mode": "100644",
+      "bytes": 2123,
+      "sha256": "956ad2f839dedd2b35ed67ff89351114b7e98606c4b5406f2f188fe994ee7d2c",
+      "comments": 4
+    },
+    {
+      "path": "include/qtn/iputil.h",
+      "git_object": "39ff354d8898b57301d488b8d9e90e29e316cf9c",
+      "mode": "100644",
+      "bytes": 11751,
+      "sha256": "dcfddd07c404f28ef12c3ce40bb6616a18257356886ee965481a14867381efc3",
+      "comments": 11
+    },
+    {
+      "path": "include/qtn/lhost_muc_comm.h",
+      "git_object": "160b0544e35bf57bd51fb7b4ec6c8219c3188405",
+      "mode": "100644",
+      "bytes": 36863,
+      "sha256": "2505b0dbdcedda85b7168032b14fa61f230993f2d97ad34ad799de59505edac8",
+      "comments": 271
+    },
+    {
+      "path": "include/qtn/mproc_sync.h",
+      "git_object": "8c5e3f56d66427dc491993bb5a1c55d686ffcd5d",
+      "mode": "100644",
+      "bytes": 20265,
+      "sha256": "97f1abe1007428c7fec238b6f36d69cca2ebe2855867a338bb79437bf4076b82",
+      "comments": 28
+    },
+    {
+      "path": "include/qtn/mproc_sync_base.h",
+      "git_object": "3c5a5c9ed65c615f99b9359b98e427e18c0d6ae3",
+      "mode": "100644",
+      "bytes": 4544,
+      "sha256": "c79dfa9577a0559cdd8352d91dcb099436211a0cf7f506fced0ef20083d81767",
+      "comments": 15
+    },
+    {
+      "path": "include/qtn/mproc_sync_mutex.h",
+      "git_object": "83c247360fe68246ed7376a7f66e0863004c0b25",
+      "mode": "100644",
+      "bytes": 3244,
+      "sha256": "ea6c6181d905910e6319b13b634c35a9cc075d062cab8b71702756b285b5cc06",
+      "comments": 5
+    },
+    {
+      "path": "include/qtn/muc_phy_stats.h",
+      "git_object": "c0734b62c3c7556b3a442a72a4b74fdb93580a31",
+      "mode": "100644",
+      "bytes": 8654,
+      "sha256": "c4cfd3844cbcec7f81b3408c8ae0be00dfe07dd470806b8cc63ba935f71aa1f3",
+      "comments": 40
+    },
+    {
+      "path": "include/qtn/muc_share_def.h",
+      "git_object": "2b4c64d3d704d0e41715343f445f89ccfb55994f",
+      "mode": "100755",
+      "bytes": 545,
+      "sha256": "8599c0982095a394d7382b7400c44a8dbe50407c07d4c0738243feedd64c63eb",
+      "comments": 2
+    },
+    {
+      "path": "include/qtn/muc_txrx_stats.h",
+      "git_object": "652f67b4506d12a2c098d56b25320dc7af4c0c04",
+      "mode": "100644",
+      "bytes": 26040,
+      "sha256": "0b0a12df296c1675230f3df92ceb0fa3704bc6ef7412831d121804f81439071c",
+      "comments": 103
+    },
+    {
+      "path": "include/qtn/qdrv_sch.h",
+      "git_object": "e761234b44c8a0c4ef353025eb0dd3a1027306e9",
+      "mode": "100644",
+      "bytes": 16209,
+      "sha256": "ab2fe95dd023aa6dff0ab1180a24c7091cd346af7c19faeed8f9dc83aba0d2db",
+      "comments": 14
+    },
+    {
+      "path": "include/qtn/qtn_arc_processor.h",
+      "git_object": "8091de59550e4291117f96adfe4c6b037f1148d5",
+      "mode": "100644",
+      "bytes": 1704,
+      "sha256": "6aa8db757aa3ee148070a9c7ee325650bd9216e683711123a9c431645aea7a5e",
+      "comments": 4
+    },
+    {
+      "path": "include/qtn/qtn_auc_stats_fields.h",
+      "git_object": "070c7ad4152d2e63e7f8f9f59f6ea1e4eef4241a",
+      "mode": "100644",
+      "bytes": 8934,
+      "sha256": "46dd314ffd6f6311f9da2c7acb488db8d231b2154bb9bb7440e48fc72b0808a3",
+      "comments": 0
+    },
+    {
+      "path": "include/qtn/qtn_bb_mutex.h",
+      "git_object": "6606a858ff09fea5ecd34698012d5fd56b3fb210",
+      "mode": "100644",
+      "bytes": 7114,
+      "sha256": "2f2b60989448e96d8c5857b7aca176d88f4d0f1f3148adbe93a6e5e9ea1a823a",
+      "comments": 12
+    },
+    {
+      "path": "include/qtn/qtn_buffers.h",
+      "git_object": "41cad0c62da6f185f70786bc72dfa7a9c90c81a6",
+      "mode": "100644",
+      "bytes": 4011,
+      "sha256": "cd84e76747f0c3d3c729eff3fa4733d5ec30d8baf581d2cbcfd635fe2c68a20b",
+      "comments": 6
+    },
+    {
+      "path": "include/qtn/qtn_cca.h",
+      "git_object": "15209312b5abc49bb6d55c98085ba2d1bd18f874",
+      "mode": "100644",
+      "bytes": 346,
+      "sha256": "0f86e70b28898beeeacadd1a2dc6eb38c4ba23e6b24b8958c93a4fe66d929c60",
+      "comments": 2
+    },
+    {
+      "path": "include/qtn/qtn_debug.h",
+      "git_object": "3f1b55ea902fa440a6cf524566170af264219c9d",
+      "mode": "100644",
+      "bytes": 8862,
+      "sha256": "d7ac83f8682655e264eacbe0f60a5778f1a91037970a27956cda086ab32b4305",
+      "comments": 3
+    },
+    {
+      "path": "include/qtn/qtn_decap.h",
+      "git_object": "90d9bc172f3553a77b99584f604f2f061cc7556a",
+      "mode": "100644",
+      "bytes": 10951,
+      "sha256": "9fe811409eb711f693cdaca7fcf5cbc78d3a8d8bfaf24918000773ce607dd926",
+      "comments": 20
+    },
+    {
+      "path": "include/qtn/qtn_global.h",
+      "git_object": "06357cf1e4e47f853ced469c6d8eab133f10caa1",
+      "mode": "100644",
+      "bytes": 14623,
+      "sha256": "d7529c6a37b61fa3c14a5244a20403dbca7c01ec5d1f85d4fb6b5db6fc7d906b",
+      "comments": 46
+    },
+    {
+      "path": "include/qtn/qtn_math.h",
+      "git_object": "14630d1ef1c4558c49b556e19302a3f6f854258e",
+      "mode": "100644",
+      "bytes": 3813,
+      "sha256": "b8d1cf9e559d7fbe65a8fc69c9910bfe59733e1bb568c12edb1b031e93b88eb3",
+      "comments": 1
+    },
+    {
+      "path": "include/qtn/qtn_math.inl",
+      "git_object": "2fd8ea50decabac143512fa6b154861a814fc9e1",
+      "mode": "100644",
+      "bytes": 16356,
+      "sha256": "f7f55df5b26f28d8bd10532634cac41c5b9b86cad94218c8ea4b6a13e1adeb85",
+      "comments": 45
+    },
+    {
+      "path": "include/qtn/qtn_muc_stats_print.h",
+      "git_object": "3c8de2f6086ef669ef02b7474dd5033ab86bbd3b",
+      "mode": "100644",
+      "bytes": 9392,
+      "sha256": "78ac9a56ec82da454720cda72bb09b33c1d33c0ba98ef40005644f6963cebe7d",
+      "comments": 1
+    },
+    {
+      "path": "include/qtn/qtn_net_packet.h",
+      "git_object": "3ebc87290284b053c011d6ff2636ed9b709c5e2e",
+      "mode": "100644",
+      "bytes": 3616,
+      "sha256": "54f5ee5db67a2677ffce4395cd2968885288015c94e371aa9c6d95c677252e59",
+      "comments": 11
+    },
+    {
+      "path": "include/qtn/qtn_pcap.h",
+      "git_object": "300905ad7d6359711dc076b6c9756768f0f31437",
+      "mode": "100644",
+      "bytes": 1598,
+      "sha256": "c5ad0aa9be931c9c463779d83c1e90f8dc4d8d7ef1fd09734441962bc06cda89",
+      "comments": 3
+    },
+    {
+      "path": "include/qtn/qtn_pcap_public.h",
+      "git_object": "d43b1b107581e47de472554d6a84bef1004ebeda",
+      "mode": "100644",
+      "bytes": 4026,
+      "sha256": "8d6cac81bec5ba2b4820d6c139b1f61e8856ee3cb34db1373ac5cfe71af233be",
+      "comments": 8
+    },
+    {
+      "path": "include/qtn/qtn_skb_cb.h",
+      "git_object": "eed19e2c938a5a36aaf054cc66dee76dcd911941",
+      "mode": "100644",
+      "bytes": 3120,
+      "sha256": "4c0182d22a490c3344c1f11f58fafc12e58295e496e1d98389308935aac1df1a",
+      "comments": 23
+    },
+    {
+      "path": "include/qtn/qtn_skb_size.h",
+      "git_object": "7733127b94a1b77fb9af187e96a863b9058d2ef6",
+      "mode": "100644",
+      "bytes": 1582,
+      "sha256": "3810caccce44acd9fc0ed4f6ddfd9cbec7c445a9bb6f7882d7c152146801f5c9",
+      "comments": 5
+    },
+    {
+      "path": "include/qtn/qtn_trace.h",
+      "git_object": "2c9855eb07febeccf75d7a245b40fbfdb276f72f",
+      "mode": "100644",
+      "bytes": 3986,
+      "sha256": "1b83e9fe0778d67f4e5db383bf1efc5f973654c86d3462f46cc241208fc137c2",
+      "comments": 7
+    },
+    {
+      "path": "include/qtn/qtn_uc_comm.h",
+      "git_object": "3c35434e432b09b144c2276d58771d5dc995bad9",
+      "mode": "100644",
+      "bytes": 759,
+      "sha256": "70d6fb88a5c4edbc79175942612971e534378307c6503dea6ef9022bffbac887",
+      "comments": 3
+    },
+    {
+      "path": "include/qtn/qtn_vlan.h",
+      "git_object": "ca1c2203abdb56c0c43e84c581bb129d74c74a5a",
+      "mode": "100644",
+      "bytes": 11298,
+      "sha256": "8cc3b44056a399ab15179f21aa0e773318d1a6c62bac1d828796146c2887d699",
+      "comments": 6
+    },
+    {
+      "path": "include/qtn/qtn_wmm_ac.h",
+      "git_object": "bab24ee05b5f4f2cfd7a392d083cd827db346674",
+      "mode": "100644",
+      "bytes": 1700,
+      "sha256": "712fd373d3170d5faec62935c850238dd00d0dd6e1b1ee6ff595cc3b36e17eee",
+      "comments": 3
+    },
+    {
+      "path": "include/qtn/qtn_wowlan.h",
+      "git_object": "cf154861e796b77e72f2c880c8407378496b6957",
+      "mode": "100644",
+      "bytes": 1802,
+      "sha256": "81063f4450eab001ff041facf59d79645e676649fc4705c3dd3e32f4d7e49633",
+      "comments": 3
+    },
+    {
+      "path": "include/qtn/qvsp.h",
+      "git_object": "9c52eb3eb1f2ba438b89ff48ff1cddddc5e5fcf0",
+      "mode": "100644",
+      "bytes": 5360,
+      "sha256": "f019e2d73b33f7e3acc516a7fbe460da6a7cb7bfb0b5b48ecbdc46f96bbc6785",
+      "comments": 4
+    },
+    {
+      "path": "include/qtn/qvsp_common.h",
+      "git_object": "2dc41dd049a7f623512fb774a8b1e66ceb1999c1",
+      "mode": "100644",
+      "bytes": 1594,
+      "sha256": "829b88d3af98e89fad8565410f212b329d9ff943f0cdc4abfbc4b1a10cc7ccf2",
+      "comments": 5
+    },
+    {
+      "path": "include/qtn/registers.h",
+      "git_object": "8cac133d909d54061eb6299bce09f834afba619c",
+      "mode": "100644",
+      "bytes": 13344,
+      "sha256": "6ac70df1286b695c6f5230df21a276117daf127d78434b8c5864bf260dd36d82",
+      "comments": 32
+    },
+    {
+      "path": "include/qtn/ruby_cpumon.h",
+      "git_object": "07f6fdbb0790c49a7637140f4bba1a9b3ef1f0d6",
+      "mode": "100644",
+      "bytes": 3273,
+      "sha256": "abd5fdcb283b61f45a7ada9d075a7817c671fe2fd53a93fca9d91b853bc02b79",
+      "comments": 2
+    },
+    {
+      "path": "include/qtn/semaphores.h",
+      "git_object": "0f69b29ae3f30083565631e7b2b11ffabb8d67aa",
+      "mode": "100644",
+      "bytes": 3652,
+      "sha256": "329dad515ad71571e4114ee7b8460405e362b37d1031befbea08c73ab99616d1",
+      "comments": 2
+    },
+    {
+      "path": "include/qtn/shared_defs.h",
+      "git_object": "8f9a9e641551dc691b4dcb8a268656e3a3043716",
+      "mode": "100644",
+      "bytes": 28735,
+      "sha256": "7b3712bd6a3a753a2cd5de4cf3fb35345aa34acfd5cdf8712a3f2dcfdb0277ec",
+      "comments": 157
+    },
+    {
+      "path": "include/qtn/shared_defs_common.h",
+      "git_object": "ef55d8c3be78eca9242cd8ea6e368b04b72bb6ee",
+      "mode": "100644",
+      "bytes": 7694,
+      "sha256": "ca294af2127c03832f0448a9a1eba0d6056701be5414972e6230b9e3db2d59d8",
+      "comments": 13
+    },
+    {
+      "path": "include/qtn/shared_params.h",
+      "git_object": "2b039c59f482e23989022870fdc8e1259bf63f4c",
+      "mode": "100644",
+      "bytes": 11554,
+      "sha256": "4ab5630fb671ed50c0dfef6cd9865b2a2c9e8564cc23f485a8b1b82176152c0d",
+      "comments": 24
+    },
+    {
+      "path": "include/qtn/shared_print_buf.h",
+      "git_object": "aef5085e1379285ae409c0c2caa4804bb13c2178",
+      "mode": "100644",
+      "bytes": 347,
+      "sha256": "ca4cb98dea25176c8ee6685a82a5706bb39e4058fc5a0c7424792d22f24b5d82",
+      "comments": 3
+    },
+    {
+      "path": "include/qtn/skb_recycle.h",
+      "git_object": "b3f7494fcec8bdec6ddd46f12f70e869867780b6",
+      "mode": "100644",
+      "bytes": 7202,
+      "sha256": "7032df613421228b87fc1fe5045d43e97cae6d0ecf837be86259dc4b05f37189",
+      "comments": 22
+    },
+    {
+      "path": "include/qtn/topaz_congest_queue.h",
+      "git_object": "f97c6cdc5ac4dd67ffa1d88357e36564ddce5464",
+      "mode": "100644",
+      "bytes": 5158,
+      "sha256": "14df20a9dc03eab62fbce42054b46ca7a28b8375758cccab8a13fbdeeb71da48",
+      "comments": 25
+    },
+    {
+      "path": "include/qtn/topaz_dpi.h",
+      "git_object": "b96228c15be10417f0e4a401bd527de9b323505e",
+      "mode": "100644",
+      "bytes": 2921,
+      "sha256": "7302302717b44045da7380cb570a3ee65d14e786b8211ecc1ebdb94c788337dd",
+      "comments": 2
+    },
+    {
+      "path": "include/qtn/topaz_fwt.h",
+      "git_object": "338815d89b5b813ca11b7eec3067e177ee742894",
+      "mode": "100644",
+      "bytes": 1764,
+      "sha256": "33f1f82c6c6b6d5a290d7a307a136977158f31b78d33adea0513fc6de38b4fad",
+      "comments": 3
+    },
+    {
+      "path": "include/qtn/topaz_fwt_cpuif.h",
+      "git_object": "39ec4be4dc62becbf1ef6fddae2db6cf9a4c124e",
+      "mode": "100644",
+      "bytes": 22551,
+      "sha256": "2f0204cca62c30f572274dd2aa9b42918c4132f312c4291ba09e6a5c8c2caf67",
+      "comments": 23
+    },
+    {
+      "path": "include/qtn/topaz_fwt_db.h",
+      "git_object": "2c9c54beb1c0334debf851d48f2bafd6198af2aa",
+      "mode": "100644",
+      "bytes": 7833,
+      "sha256": "b3e54f5912355b50f19c4eb55b87d5f143a0a95ee4a9902d6f299646d139287b",
+      "comments": 29
+    },
+    {
+      "path": "include/qtn/topaz_fwt_if.h",
+      "git_object": "746e27571a54eca3cf736db9c2ad3211cb7bd302",
+      "mode": "100644",
+      "bytes": 4053,
+      "sha256": "cc9bb9a3971dd1132eddeba6456ee718cc84c8c588baab11079361cad4097fef",
+      "comments": 3
+    },
+    {
+      "path": "include/qtn/topaz_fwt_sw.h",
+      "git_object": "0267b16cb4306142baaa066ac5d65dc49a81c034",
+      "mode": "100644",
+      "bytes": 4385,
+      "sha256": "ca0b48684f2452e1a6bffc9471d4419d7aff85f7d7b7da96bb6011c9e561c08e",
+      "comments": 19
+    },
+    {
+      "path": "include/qtn/topaz_hbm.h",
+      "git_object": "e9548cd5f1f08ae74ebb8195c2f1f6db6ec75c45",
+      "mode": "100644",
+      "bytes": 2738,
+      "sha256": "c534472b13b722fe9491a53968c8aaa407441988177fbd1db7dc9ccaf4edbddf",
+      "comments": 2
+    },
+    {
+      "path": "include/qtn/topaz_hbm_cpuif.h",
+      "git_object": "daf260961b3400f5f54e2d60ec0cee1aa0f883ca",
+      "mode": "100644",
+      "bytes": 24682,
+      "sha256": "8e99a3d830c4697bea0fa8cab9e3827089e9d1bfd7cf1a4b86538d0d1077ee67",
+      "comments": 39
+    },
+    {
+      "path": "include/qtn/topaz_ipprt.h",
+      "git_object": "206f344dc96b877551c9c5678098d13a982922f9",
+      "mode": "100644",
+      "bytes": 2908,
+      "sha256": "ddfe5cb31edf9b668b71d1a0ea26677f841f8057fd8b57fc4056ec61333e333b",
+      "comments": 2
+    },
+    {
+      "path": "include/qtn/topaz_qfp.h",
+      "git_object": "f15a2e996c9fcce63f6428c418f0d1dae61e9b0b",
+      "mode": "100644",
+      "bytes": 4283,
+      "sha256": "99904f06f2865a4b74483919d10bf2a59ebfc0d1611d640d6beafa7df04dcf4c",
+      "comments": 9
+    },
+    {
+      "path": "include/qtn/topaz_shared_params.h",
+      "git_object": "f2dc0cbde27cfc726f64c60f58b415446ba827ea",
+      "mode": "100644",
+      "bytes": 14531,
+      "sha256": "5cb72b501f3af7bc574d939d9c9403ebda9e6311c345840e1861a257fdd78c4f",
+      "comments": 25
+    },
+    {
+      "path": "include/qtn/topaz_tqe.h",
+      "git_object": "54b3b845c2e599ef07f468ad063882127f135de4",
+      "mode": "100644",
+      "bytes": 3020,
+      "sha256": "a9de7a13205205012b7abb4dc2a3b38f95d8310af378b9d2948f28cb6450ef62",
+      "comments": 2
+    },
+    {
+      "path": "include/qtn/topaz_tqe_cpuif.h",
+      "git_object": "80b8f5856af3605500fd376c781eb013af55dc44",
+      "mode": "100644",
+      "bytes": 17076,
+      "sha256": "dc4e97d0bb987f750ace2ede894a6b05e02f6d6b3d7b070e1f796b87746acc15",
+      "comments": 9
+    },
+    {
+      "path": "include/qtn/topaz_vlan_cpuif.h",
+      "git_object": "e0c8bf4128c9543ee831e9d8b7ba66105dc8eb2b",
+      "mode": "100644",
+      "bytes": 2537,
+      "sha256": "eea4fdf103ac2f563c5a35af08b877d90e32f269a4d3977f62c1ce0cf5281ef1",
+      "comments": 2
+    },
+    {
+      "path": "include/qtn/txbf_common.h",
+      "git_object": "89677e0f4779935a371257fc57808c3450d8c23e",
+      "mode": "100644",
+      "bytes": 25912,
+      "sha256": "09e70092ac652d41faba0205b4407c2d4e68071da2b16eabd1eb135fa3f195d1",
+      "comments": 63
+    },
+    {
+      "path": "include/qtn/txbf_mbox.h",
+      "git_object": "5dad35ea2d0e10223b5c9b4529b12004a453cc14",
+      "mode": "100644",
+      "bytes": 15407,
+      "sha256": "a20439b2fcd9a81492423761d1ae31647c3d22f5493f78cd790fb476b5d3756d",
+      "comments": 49
+    }
+  ],
+  "artifacts": {
+    "comments.raw.gz": "35bd5f9f461f4347a5010c419ff59aa330c484dbd3db2b68353415a6c031fa70",
+    "comments.jsonl.gz": "701275c36c66e740f68e3b6d70fd17ce97baee6b16e20a0141a36ec2f51e9d3d",
+    "COMMENTS.md.gz": "fdea6469c11dbd11028187db30d304b9a12eb979d74ba02c386f6a9dc362c1b2"
+  }
+}

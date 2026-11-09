@@ -1,0 +1,67 @@
+{
+  "status": "PASS_OFFLINE_TQE_LOCAL_CONTROLLER_LEDGER_AND_R26_ACTUAL_AUC_PREPARED_PIPELINE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "driver_sources_modified": false,
+  "TQE_controller": {
+    "source": "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-tqe-reset-adapter-20261023T061700Z-r2",
+    "ARC_object_bytes": 2292,
+    "ARC_object_sha256": "77d1183e0fcb42e59c64a0afe6c32974507325769994568de754e8210793682d",
+    "ARC_imports": [
+      "memcpy",
+      "memset"
+    ],
+    "fixture_cases": 24,
+    "fixture_checks": 83,
+    "real_MMIO_provider_connected": false,
+    "real_global_producer_fence_connected": false
+  },
+  "R26_AUC": {
+    "cases": 46,
+    "loader_destinations_checked_before_prepare": 8,
+    "all_clear_spans_checked_before_first_map": 4,
+    "positive_callback_normalized_to_EPROTO": true,
+    "actual_init_enable_called_on_rejection": false,
+    "hash_backend": "OpenSSL3.0.13realhostSHA256",
+    "sanitizers": [
+      "address",
+      "undefined"
+    ],
+    "source_fw_sha256": "6c261926750aefcc77ac49b710cc36fb9007ad0aae1aa60374290a0f131c7402",
+    "source_auc_sha256": "491202dac16b2b85277735eb9a01c26f6ccfc04a4c0e7eea4a32d84da6b383ad"
+  },
+  "exact_known_contract": [
+    "CompiledARC hal_reset mask0x4180NETSS/MAC/BB doesnotincludeSRAMbit3; NETSSimpactonTQEregisters remainsunknown.",
+    "TQEringmoduledependencyallocates/publishesbeforeqdrv_soc_init/hal_reset; keepownedringheapgeneration, do notheapinitafterreset.",
+    "CPUIFreadbacks:CSRIRQbit0/resetbit31,STATUSemptybit30,QPTRhalvesincludingwrapbit,TXSTARTnreadybit0,RX_RINGbaseandcount.",
+    "ExistingR24NAPIcompletionreenablesIRQ; localpause mustremaskafterdrain. Existingteardown ring0/count0→CPUIFreset→freeownership isnotnewremoteproducerstopproof.",
+    "Sourcecontrollerrequiresmissingexclusiveproducerfencebeforeanymutations; bounded24cases verifydefaultrefusal/readbacktimeouts andpreservedsameringreprogram."
+  ],
+  "remaining_real_gates": [
+    "GlobalproducerfenceforEMAC/WMAC/MCu/AuC/DSP andLHOSTbank/batch/taskletwithpendingretainedreferenceproof notpresent.",
+    "IRQmask/synchronizeIRQ/NAPI/taskletdrainalone do notstop remoteingress or proveNETSSresetmayproceed.",
+    "Coreprovideremptyarena-onlyresetlease willrejectownedring; preservinglivepoolringneedsaseparateactualresourceownercontract withglobalfence, notflagoverride.",
+    "TQEcontrollerlocal_stop/local_resume callbacks abstractactualLinuxsequence; nofullkernelhelperhookimplementation orhardwarequiescence acceptance.",
+    "Failureonresume mayleavepartiallyrestoredCSR/ring whileproducerfencestillheld; no rollback/recoveryoperator admitted, prototypequarantine only.",
+    "R26AuCclear+loadlease nowcoversclearspans, buthardwaremapfailuremayleavepreviousclears; entryunchanged/noAuCenable iscontrolproofonly.",
+    "R26resetsoftwareadmissionisnotNETSS/TQE/firmwarequiescence; noSRAMregistration/loadnormal/RF/client/releaseclaim."
+  ],
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/seal_linux73_tqe_r26_review.py": "ae204fe2eb74620c60179a41f78e932c3b73de80f7db9a007ee7305ad18d157a",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-tqe-reset-adapter-20261023T061700Z-r2/result.json": "aec353d0e479baba22fded74689dcedd852823bbd340ff01bff134c6a2c413ff",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-tqe-reset-adapter-20261023T061700Z-r2/om73_tqe_reset_adapter.c": "749261e401e00e6eb9be281b0ea83e4939070421de0d5cdd038ba6e2c7507936",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-tqe-reset-adapter-20261023T061700Z-r2/om73_tqe_reset_adapter.h": "6af0f573195485c32847f7a6cdc418f5941af1448aeb0bbb41cc727fd91ce4c5",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-tqe-reset-fixture-20261023T062300Z-r2/result.json": "c798a7f1624a22348a3e4171700cd87e33d6858c5918f014cd2efac59dd1cb93",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-tqe-reset-arc-20261023T062600Z-r1/om73_tqe_reset_adapter.o": "77d1183e0fcb42e59c64a0afe6c32974507325769994568de754e8210793682d",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-tqe-reset-arc-20261023T062600Z-r1/Kbuild": "e005b8756917683dbd1e79eb67e5132aa20cd2e01db3a2019537aea4b7e28dbc",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r26-auc-prepared-fixture-20261023T065000Z-r1/result.json": "394344a13819aea91a0416a48596936353e584ffe7eed7e7c6eef52fbc62f5bc",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-carrier-writer-candidate-20261023T053000Z-r24/source/platform/topaz/switch_tqe.c": "487e9eff80d719a8e34ea9a5d7e4bea44f75a120e1d79bcb524b241eb9421858",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-carrier-writer-candidate-20261023T053000Z-r24/source/platform/topaz/topaz_congest_queue.c": "659c422a7f0c97ddc4c7b08c31df8047ef8e040c97e6c863c719f260a9bb9e6b",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-carrier-writer-candidate-20261023T053000Z-r24/source/qdrv/qdrv_hal.c": "9073f72099b28a93e8794282ae5b87d7d32fca0ee5ebaf9b90cc6716f64a6691",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-clear-reset-candidate-20261023T064300Z-r26/source/qdrv/qdrv_fw.c": "6c261926750aefcc77ac49b710cc36fb9007ad0aae1aa60374290a0f131c7402",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-clear-reset-candidate-20261023T064300Z-r26/source/qdrv/qdrv_auc.c": "491202dac16b2b85277735eb9a01c26f6ccfc04a4c0e7eea4a32d84da6b383ad",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-clear-reset-candidate-20261023T064300Z-r26/source/qdrv/qdrv_soc.c": "651a7e60cbf8276b85e081965391bf53ab37997248d48be4096e5980b775c0ff",
+    "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/include/qtn/topaz_tqe_cpuif.h": "dc4e97d0bb987f750ace2ede894a6b05e02f6d6b3d7b070e1f796b87746acc15",
+    "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/topaz_platform.h": "71e18f2d6a7149a638ccc0eea372944898a46506f616d28febeb671a920f881a"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "STANDALONE_SOURCE_HELPERS_NOT_DRIVER_FEATURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "helpers_sha256": "7ec67ae2d723c7d4b948ecbdcf604fd70de83534febfac4fb628540eda3cc713",
+  "operations_related": [
+    492,
+    493
+  ],
+  "scope": "Consumerbytehelpers only; nooperationsacceptedintablecount",
+  "limits": [
+    "NoIEcallerwiring/statefield/moduleintegration.",
+    "Doesnotenable802.11k/v capabilities or actualradio.",
+    "MalformedshortTLVs refusalisexplicitsafetydeltafromOEM."
+  ]
+}

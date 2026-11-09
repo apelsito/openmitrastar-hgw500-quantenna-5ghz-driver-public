@@ -1,0 +1,95 @@
+{
+  "status": "PASS_OFFLINE_WEATHER478_SOURCE34_BOOLEAN_AP_SELECTION_SEVEN_MODULE_CLOSURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "complete_original_records": 34,
+  "remaining_original_records": 10,
+  "private_table_records": 600,
+  "old_private_records_exact": 598,
+  "reproducible": true,
+  "all_461_hooks_preserved": true,
+  "cac_radar_600s_source_paths_unchanged": true,
+  "weather_flag_offset": 22605,
+  "weather_flag_size": 1,
+  "weather_default": 0,
+  "fresh_source_compiles": 6,
+  "parent32_whole_objects_reused": 110,
+  "ap_policy_cases": 57344,
+  "wext_cases": 655360,
+  "default_fragment_cases": 256,
+  "policy461_cases": 262144,
+  "all_old_members_checked": {
+    "ieee80211com": 387,
+    "ieee80211vap": 210,
+    "qdrv_wlan": 72
+  },
+  "negative_cases": 16,
+  "current_pins_verified": 5544,
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/qdrv/qdrv.ko",
+      "bytes": 684948,
+      "sha256": "9fe3fc4001cc43e0dbd3b4beb449e7f3db928f0e71453760e47f201c28aa1e09"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan/wlan.ko",
+      "bytes": 660792,
+      "sha256": "89305c00819f74e0607679834b8e2c9c1b93d9c8c880c5e676b55fbe05af1404"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15868,
+      "sha256": "ff9d0c3a123a00b6b7dc1a68b4dd61bcb0175d16f0999e8732113d9ecf144148"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9760,
+      "sha256": "1eb355a9b96b2ee2a75382565f6a628d62c583aa21600f9b922d038f657d96d5"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13440,
+      "sha256": "02f83895c1e3343ee3cc0b2162e37e9428c66de36fa0e2b8a5ddd834d20dbf5f"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/weather478-pair-20261022T234500Z-r1/a-joint/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "inherited_limits": [
+    "32privateRECORDS reconstructedwithsetters/gettersseparate, not32physical/fullfeatures.",
+    "461HT24APbranchonly;5GHzscannerexistingalgorithmretained, notallrank/scanset/OEMmetricsemanticsuniversalproof.",
+    "UP/PREEMPT_NONEvalidcallerRTNL/VAPserialization scope; externalarbitrarycallers/SMP/hardIRQ/realasyncMuClifetimeunqualified.",
+    "Sampled13wordsharedscanmetricsmaymixgenerations; nocoherenttupleproof.",
+    "Typed40states manuallyinstalledin7foregroundfixturecases; noautomatic40MHzscancoverageclaim.",
+    "Inherited449bounds/CoCvalidinit/NACsnapshot/492493advertisementdeviations/twoEOPNOTSUPPscope retained.",
+    "NoRFrealclientassociation/bidirectionaltrafficcoldbootpersistence/rollback/recovery/releaseacceptance."
+  ],
+  "limits": [
+    "OEM boolean lowbyte and AP weather exclusion consumer recovered; table presence is not physical CAC acceptance.",
+    "Actual IC padding must be verified by ARC all-member witness before reuse.",
+    "Weather flag permits selection only; existing600-second weatherCAC, radar/CAC gating and channel/regulatory constraints remain unchanged.",
+    "Existing5GHz AP metric/alternate/fallback behavior retained; not complete OEM AP ranking equivalence.",
+    "No RF/client/traffic/persistence/release or hardware action.",
+    "OEMcompleteallocationzero proven and noexplicitbf4 write in qdrvinit; externalcallees/async consumers not universally replayed",
+    "Hostfixture executesactualzero/defaultfragments using ARCwitnessedsizes, notwholeqdrvinitwithrealhardwarecallbacks",
+    "Initializedconstructiondefault0 only; noOEMcalibration/regulatory/CAC/RFacceptance",
+    "WholeAPsource20MHzfakecheck/alternatecallbacks;notallOEMmetric/width/rankequivalence",
+    "Setterboolall32bitvalue→u8read/write exactly; noRF/CACtimer/radar/regulatoryacceptance",
+    "No467includedinSOURCE34; jointboundedcombine separate",
+    "NoHW/client/traffic/coldboot/persistence/rollback/releaseacceptance"
+  ]
+}

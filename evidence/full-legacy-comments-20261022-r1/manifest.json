@@ -1,0 +1,111 @@
+{
+  "schema": "openmitrastar.full-legacy-git-comments/v1",
+  "status": "PASS_EXACT_GIT_BLOB_COMMENT_CATALOG",
+  "created_utc": "2026-10-22T13:57:04.108229+00:00",
+  "commit": "116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9",
+  "all_git_files": 46770,
+  "selected_source_files": 35018,
+  "comments": 1331535,
+  "raw_bytes": 104725712,
+  "hardware_accessed": false,
+  "source_files_modified": false,
+  "groups": [
+    {
+      "group": "buildroot",
+      "source_files": 3205,
+      "comments": 77663,
+      "raw_bytes": 8240680,
+      "raw_sha256": "eb86ff7ca9b73c7cc09dd6670d06f47d32cee4d8f97e7567586ae60d67d9ab34",
+      "unterminated_comments": 0,
+      "artifacts": {
+        "comments.raw.gz": "af734e89b601db385e3eca488c009cbe1970e89d622f0e4193d98c6df46eecc6",
+        "comments.jsonl.gz": "37be3564f8b5fdb37260080779d1fbe5e513f8527ad79b27bb648709c7070632",
+        "COMMENTS.md.gz": "9b23899d7fac2329afe90e26fe60db903086fd2e41184befc2c003cf79f5fb73"
+      }
+    },
+    {
+      "group": "common",
+      "source_files": 22,
+      "comments": 653,
+      "raw_bytes": 54896,
+      "raw_sha256": "48ced0f4681d3529671e2c0adea9bbbb3fd6298ac1e127bc201e3f93b809acf8",
+      "unterminated_comments": 0,
+      "artifacts": {
+        "comments.raw.gz": "1b0d2117fdd6705de241d52f2ab7ab857b85e6b081e2a1fe9a6bbca02da13d50",
+        "comments.jsonl.gz": "790ebb19e94b8e31d6ca7ffeb44ede3b6cb2552105ad85d744e800c3edaff031",
+        "COMMENTS.md.gz": "7d91e67d5cf8003aa515f58ccd59c070faa7c87bf866971b43c1de894bfdd321"
+      }
+    },
+    {
+      "group": "drivers",
+      "source_files": 223,
+      "comments": 9759,
+      "raw_bytes": 779569,
+      "raw_sha256": "cb15feb2c3df47ef3ce24c62d84d4fab15604d13d701faa8f7cb61c9da36ac36",
+      "unterminated_comments": 0,
+      "artifacts": {
+        "comments.raw.gz": "66fac3cbf33665db2f336a503faff44465dc71101cca42a7051ea1fff075522e",
+        "comments.jsonl.gz": "ed462cc5b401b1ce00c2c0c3ed5ac0377129f750d80ed59617bceb0ca348a9e7",
+        "COMMENTS.md.gz": "829713e153ddb0ccb84a9d6ce2fe3cc549af198187129990a85ab34db3c2f8d9"
+      }
+    },
+    {
+      "group": "host",
+      "source_files": 11,
+      "comments": 69,
+      "raw_bytes": 10710,
+      "raw_sha256": "6c88fe1166a9f47c303708c7dfaa0d38bed1c83978b5bafc11b83ed48067e4fc",
+      "unterminated_comments": 0,
+      "artifacts": {
+        "comments.raw.gz": "653973f3e0321b2c90e3354f400c202a35f73731d5103186997b3c720f368ec9",
+        "comments.jsonl.gz": "100ffbf9113da6696ab7dc388b406783d36ea2d55c68d9b94d0d73d41b7cc948",
+        "COMMENTS.md.gz": "5a13b4799ec8ff8c14ea9eb741f3154e72e86b1d685f7cea2893c7d0edf25696"
+      }
+    },
+    {
+      "group": "include",
+      "source_files": 63,
+      "comments": 1309,
+      "raw_bytes": 152067,
+      "raw_sha256": "4551c321f1a427512db461ef947fb77e69415686a849bed4338faa18c85e4d15",
+      "unterminated_comments": 0,
+      "artifacts": {
+        "comments.raw.gz": "35bd5f9f461f4347a5010c419ff59aa330c484dbd3db2b68353415a6c031fa70",
+        "comments.jsonl.gz": "701275c36c66e740f68e3b6d70fd17ce97baee6b16e20a0141a36ec2f51e9d3d",
+        "COMMENTS.md.gz": "fdea6469c11dbd11028187db30d304b9a12eb979d74ba02c386f6a9dc362c1b2"
+      }
+    },
+    {
+      "group": "linux_2.6.35.12",
+      "source_files": 27349,
+      "comments": 1021518,
+      "raw_bytes": 79913937,
+      "raw_sha256": "a5fe3cb2fefced3d8760cde7f2710697abbdfe5c444864b14cb8d521acc14a69",
+      "unterminated_comments": 0,
+      "artifacts": {
+        "comments.raw.gz": "e37b071d1144ab1b77355c7696c9b437f20955dd15e287bb5c28bea12cb4e297",
+        "comments.jsonl.gz": "437988a1973b06198db0fe7b3c464bb6addbd1cf9c3cdafbd64f19390479e782",
+        "COMMENTS.md.gz": "22d96d5fc5f2ddab67ccd4155f2202258b4e4149570cc7c6ecddf14a2c9635ed"
+      }
+    },
+    {
+      "group": "u-boot-2009.06",
+      "source_files": 4145,
+      "comments": 220564,
+      "raw_bytes": 15573853,
+      "raw_sha256": "5685771a3a18f5930787425378e5ad8053ae5c4172fa237c8a5fd5c2c9d2a9d0",
+      "unterminated_comments": 0,
+      "artifacts": {
+        "comments.raw.gz": "6d6f83e015f1cdf16c3bb911eda61fe352460db85f7db4b8f7098a36de90faec",
+        "comments.jsonl.gz": "f43adb31a014ce9c5ccd89af5c85c11aa3a6b38ba47ec35ae1e8ad3b7e9207d1",
+        "COMMENTS.md.gz": "fce34795fbe6ade15fa42ddb0a89843f2d67b30761c92108438bd642b46732c0"
+      }
+    }
+  ],
+  "limits": [
+    "C/C++ lexical comments; other file languages are preserved in Git but are not parsed as C.",
+    "No trigraph conversion or preprocessing.",
+    "Documents/JSON are decoded views; compressed raw stream and original Git blobs preserve exact bytes.",
+    "Original vendor firmware source is not the complete OEM v89 high-level source."
+  ]
+}

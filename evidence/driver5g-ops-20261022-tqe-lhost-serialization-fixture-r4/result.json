@@ -1,0 +1,24 @@
+{
+  "schema": "openmitrastar.tqe-four-writer-irq-fixture/v1",
+  "status": "PASS_SOURCE_ONLY_ACTUAL_FOUR_WRITERS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "candidate_sha256": "1b6286841ec9caa27db13d52458b4d8efb22b24cd18365a54a6fc827d55d5888",
+  "fixture_sha256": "4fcadae3d87a003bd43962303c2580eaf42e016a5de6f39b7f2b879ebda9fb0f",
+  "source_writer_count": 4,
+  "interrupt_arrival_slots_per_pair": 11,
+  "writer_pairs": 16,
+  "actual_bank_and_publication_header_functions_extracted": 4,
+  "cpuif_header_sha256": "dc4e97d0bb987f750ace2ede894a6b05e02f6d6b3d7b070e1f796b87746acc15",
+  "executed_cases": 164,
+  "foreign_lhost_bank_collision_reproduced": true,
+  "normal_muc_bank_independence_exercised": true,
+  "prior_irq_state_restored": true,
+  "queue_paths_preserved": true,
+  "limits": [
+    "Deterministic fake IRQ/MMIO/HBM fixture; no physical timing, RF or firmware acceptance.",
+    "Unbounded waits preserved, not exercised as hang; IRQ starvation remains NO_GO.",
+    "Cross-bank firmware writes do not honor local IRQ exclusion and still collide.",
+    "No complete module build or universal concurrency proof."
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/actual-r24-load.c",
+      "source": "outputs/rea/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/actual-r24-load.c",
+      "bytes": 18141,
+      "sha256": "dc278c5076465aeef7e12b3ad41b1f643bf80e4cc45e7e6ad14595b987a4301d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/compile.log",
+      "source": "outputs/rea/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/result.json",
+      "source": "outputs/rea/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/result.json",
+      "bytes": 2584,
+      "sha256": "84bb1e6f6b78f0631c76aae595e65fb58af0dec856978978f5ed48d77a166db5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/run.log",
+      "source": "outputs/rea/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/run.log",
+      "bytes": 134,
+      "sha256": "12bb8cf80358112449d7c66e21c2bf1ede1d1558a5960389ce28b2261f723c4c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/compile.log",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/fixture.c",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/fixture.c",
+      "bytes": 8201,
+      "sha256": "527888e7215834a4cc57c20320649d6f54ba0ab0900ebd8ca0a8d09dca556f02",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/result.json",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/result.json",
+      "bytes": 1396,
+      "sha256": "38b4fb56c86e92ba200e11434b1035043023cb1241578f0d72370e9182867743",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/run.log",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/run.log",
+      "bytes": 193,
+      "sha256": "b64fa1f53dc89a58244984ed18bbf66b24635feedfabc72615a6e69ad533c959",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/shim.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/shim.h",
+      "bytes": 3590,
+      "sha256": "19b082aca76918d4882a3b98d5e22488753c68f4bad51193d9f98b024bac0086",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/asm/page.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/asm/page.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/errno.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/errno.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/io.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/io.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/ioport.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/ioport.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/log2.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/log2.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/module.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/module.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/mutex.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/mutex.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/overflow.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/overflow.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/sched.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/sched.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/spinlock.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/spinlock.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/string.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/string.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/types.h",
+      "source": "outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include/linux/types.h",
+      "bytes": 66,
+      "sha256": "a3ae66179af28a029a63626211937e6053973a048bf60aeeffdbee686c8b5239",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "hardware_accessed": false
+}

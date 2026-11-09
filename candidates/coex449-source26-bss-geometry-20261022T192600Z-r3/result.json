@@ -1,0 +1,34 @@
+{
+  "status": "SOURCE_ONLY_COEX26_OEM_BSS_GEOMETRY_PENDING_ACTUAL_FIXTURE_AND_MODULES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "total_original_entries_added": 26,
+  "remaining_original_table_gaps": 18,
+  "parent_manifest_sha256": "413b62f0b383a31043d6e32f7030a977050e69d1a3186d09c339147541b0f25c",
+  "changed_sources": {
+    "headers/net80211/ieee80211_var.h": "fb8a937e2ec3aea643473e4e7795e4e01f8eaa5ab59814225a7dc58912aff757",
+    "source/qdrv/qdrv_wlan.c": "160babfba42598fed9fcab7630581a9e282cc1d9f2cb5ea49bf9fbf0fe045f20",
+    "source/wlan/ieee80211_node.c": "817fde17b08518cd1a98f4ea192f1fd9853f604e6856e967d281dbed5447a2c9",
+    "source/wlan/ieee80211_wireless.c": "82dd0c8a6f574bb70ce0144d4369eafd0261bd853f5cd868a9950f2c8a244c25",
+    "source/wlan/ieee80211_input.c": "65a1fcf4b47eb54611123fed1577c1f6f8784ae9df43bc41b16b21a06c2f86f4"
+  },
+  "helper_sha256": "f28fb457437b00acb7b8008ad26507b0e170b68fd68a89978e52a95368e81e18",
+  "policy": "u8booldefault1; candidatepaddingoffset22667mustARCwitness",
+  "consumers": [
+    "start_obss_scan_timer",
+    "check_mode scanresult",
+    "publicaction coex",
+    "APassociationintolerance",
+    "STABSSHTinfobeacon",
+    "APnonHTOBSSbeacon"
+  ],
+  "beacon_policy": "ExistingIEproducerunchanged; exactOEMflagnotusedtoremovebeaconIEs",
+  "safety_adaptation": "publiccoexIElen1/reportparamlen boundedbeforemutation; originalparserOOBnotreproduced",
+  "limits": "Prior26r2modulesnotselected; actualgeometrymath/publicconsumerfixtures/newpairedinputunit/globaldelta/reviewrequired; noRF/PHY/regulatoryacceptance",
+  "parent_source": "outputs\\rea\\coex449-source26-stable-lines-20261022T192000Z-r2",
+  "old_header_lines_preserved": true,
+  "old_header_line_count": 2327,
+  "header_delta": "Onlyu8policy/prototype on existinglines; everyotherbyteofheader unchanged",
+  "geometry": "OEMBSSchan+0x4e08 snapshot, low16frequency bounds, signed8scanchannelconversion; publicreportchannelunsignedbyte",
+  "geometry_safety": "NULL/ANYCBSS returnsnotpermitted withoutcallbacks insteadOEMuncheckedpointer"
+}

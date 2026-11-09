@@ -1,0 +1,16 @@
+{
+  "status": "PASS_WEATHER478_ACTUAL_AP_POLICY_AND_WEXT_SOURCE_CONSUMERS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "ap_policy_cases": 57344,
+  "wext_cases": 655360,
+  "source_fixture_sha256": "be1f1d5428566959342e81937af048a3623c8aae32702b7e5cc125b3b73ee925",
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_hgw5g_weather478_consumers.py": "315eb1b278c7255fe1d996034e13397fa85a51ca28c7be111bbdd804cab9e0d3",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_hgw5g_dfs467_refreshed_pick.py": "19156570828563d2ea3bc9ec3495593982bef022bff13bd055a020daee79591c",
+    "outputs\\rea\\weather478-actual-consumers-20261022T210300Z-r2\\adapted-weather-fixture-generator.py": "fb6ed904f043cacfe71ba101421a8ece11de3aa411d9c9e7a9ab79a65863be05",
+    "outputs\\rea\\weather478-source34-20261022T210000Z-r1\\source\\wlan\\ieee80211_wireless.c": "ef6cda919ae2d866661dc7d54d8ee8eedf5bdf7575fcc5cf76f7a87f9fa91e84",
+    "outputs\\rea\\weather478-source34-20261022T210000Z-r1\\source\\wlan\\ieee80211_scan_ap.c": "9b19ecc5532b6fb896c48237ac1ba3346380c76af0d1c11ecff0dd051c8cf7d6"
+  },
+  "limits": "Whole actual AP policy bodies at20MHz with fake channel/radio helpers; WEXT actual cases; no regulatory/CAC/RF/hardware/physical qualification."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_HOST_ACTUAL_BSS_TM_CASES_CALLER_SOURCE_AND_PREFIX_TEXT",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "bit_cases": 65536,
+  "tlv_cases": 512,
+  "actual_callers": [
+    "ieee80211_beacon_desc.c:BEACON",
+    "ieee80211_output.c:PROBE_RESP",
+    "ieee80211_output.c:ASSOC_RESP"
+  ],
+  "header_prefix_text_preserved": true,
+  "arc_compile": "UNRUN_WSL_CONNECTION_ERROR",
+  "limits": "NoARCmodule, noICsizecompatibilityqualification or80211vclientproof"
+}

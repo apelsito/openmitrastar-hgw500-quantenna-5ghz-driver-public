@@ -1,0 +1,32 @@
+{
+  "status": "SOURCE_ONLY_LINUX73_REAL_BRIDGE_FDB_ISOLATION_PROVIDERS_PENDING_COMPILE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "files": {
+    "net/bridge/br_fdb.c": "f5f19ce2887cfb03f68a4654030629444ca12dbcfed4550e38ad5e09b562c277",
+    "net/bridge/br_forward.c": "928d1e71783bb2d57e27f1d9d7c39ba75a296aff36d76ac9d0718a9b1e92c965"
+  },
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/prepare_linux73_bridge_overlay.py": "d93daa37606cf9add402094e45485bdbda2db1f24633970157bd61bd517d7828",
+    "/workspace/user-home/Desktop/MitraStar/work/kernel-port/linux-5.10/qdrv-core-compat.patch": "1094261fffdca707ac421b2da1bf510b78b3f7b6d1df2f24bdaa469900ecd3f0",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-probe-v3/kernel-source/net/bridge/br_fdb.c": "466ae2ddcf07af8f95c6566eea3d076d125a36414faa3e65f02b60b525ca90ac",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-probe-v3/kernel-source/net/bridge/br_forward.c": "bd18fc23b6523719e71b07c196d969460e365c9350fc3645d0ffab4c548be217",
+    "/workspace/user-home/Desktop/MitraStar/work/kernel-port/linux-5.10/include/linux/openmitrastar_bridge.h": "fafac0b567cad17824713499988aecf256c16f89da591e372251e4477fce11fb"
+  },
+  "config_required": [
+    "CONFIG_NET_SCHED=y",
+    "CONFIG_BRIDGE=m"
+  ],
+  "functions": [
+    "openmitrastar_br_fdb_fillbuf",
+    "openmitrastar_br_fdb_update_const",
+    "br_set_ap_isolate",
+    "br_get_ap_isolate"
+  ],
+  "limits": [
+    "ExistingownedLinux510FDB/isolationcontractportedtoactual73bridgebodies; no successful kernelcompileyet.",
+    "MainlineFDBdoesnotencodeQuantenna hardware sub_port; originaladapter limitation retained.",
+    "Privateisolationpredicateincludedinshould_deliver; neitheremptyvoidprovider nor unconditionalsuccess.",
+    "Nohardware/runtimebridge/client/trafficacceptance."
+  ]
+}

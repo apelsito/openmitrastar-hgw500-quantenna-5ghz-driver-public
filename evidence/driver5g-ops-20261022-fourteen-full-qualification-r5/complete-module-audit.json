@@ -1,0 +1,328 @@
+{
+  "qdrv": {
+    "status": "PASS_COMPLETE_MODULE_BOUNDED_FOURTEEN_DELTA",
+    "changed_get_set": [
+      {
+        "symbol_index": 487,
+        "name": "qdrv_wlan_80211_getparam",
+        "section": ".text",
+        "old_value": 130772,
+        "new_value": 130772,
+        "old_bytes": 2968,
+        "new_bytes": 3022,
+        "old_sha256": "dbd4447ca530222f70fead0217edcbab13e18f617453b5990708badb3481449d",
+        "new_sha256": "2714634ed77ff11c25958b224e8de38d90ae324caedbc455c072e1a0a2b29b1c",
+        "scope": "INTENTIONALLY_CHANGED_GET_SET_BODY; separate actual-source/ABI fixtures required",
+        "alignment_nop_bytes": 2,
+        "layout_growth": 56
+      },
+      {
+        "symbol_index": 499,
+        "name": "qdrv_wlan_80211_setparam",
+        "section": ".text",
+        "old_value": 150980,
+        "new_value": 151036,
+        "old_bytes": 4312,
+        "new_bytes": 4340,
+        "old_sha256": "4bdbf055b50300cf5de7db31a5e65a882b4ddb844f1491c96cb0e9802ec0145c",
+        "new_sha256": "e66cf0e5103c0fcfcf9c1f5fb52405a8114e6e08aaad39b6a7ce90add23be277",
+        "scope": "INTENTIONALLY_CHANGED_GET_SET_BODY; separate actual-source/ABI fixtures required",
+        "layout_growth": 28
+      }
+    ],
+    "other_exact_changes": [
+      {
+        "symbol_index": 475,
+        "name": "qdrv_wlan_auth_state_change",
+        "changes": [
+          {
+            "offset": 622,
+            "kind": "diagnostic_line",
+            "old": 5908,
+            "new": 5926
+          },
+          {
+            "offset": 788,
+            "kind": "diagnostic_line",
+            "old": 5921,
+            "new": 5939
+          },
+          {
+            "offset": 936,
+            "kind": "diagnostic_line",
+            "old": 5932,
+            "new": 5950
+          }
+        ]
+      },
+      {
+        "symbol_index": 491,
+        "name": "qdrv_wlan_get_ocs_frame",
+        "changes": [
+          {
+            "offset": 98,
+            "kind": "compact_diagnostic_line",
+            "delta": 36
+          }
+        ]
+      },
+      {
+        "symbol_index": 1258,
+        "name": "qdrv_wlan_exit",
+        "changes": [
+          {
+            "offset": 946,
+            "kind": "diagnostic_line",
+            "old": 9179,
+            "new": 9197
+          }
+        ]
+      },
+      {
+        "symbol_index": 1475,
+        "name": "qdrv_wlan_init",
+        "changes": [
+          {
+            "offset": 230,
+            "kind": "private_structure_allocation_or_zero_size",
+            "old": 30552,
+            "new": 30556
+          },
+          {
+            "offset": 252,
+            "kind": "private_structure_allocation_or_zero_size",
+            "old": 30552,
+            "new": 30556
+          },
+          {
+            "offset": 436,
+            "kind": "private_structure_allocation_or_zero_size",
+            "old": 30552,
+            "new": 30556
+          }
+        ]
+      }
+    ],
+    "all_executable_sections": [
+      {
+        "section": ".text",
+        "old_bytes": 305132,
+        "new_bytes": 305216,
+        "all_residual_bytes_exact": true
+      },
+      {
+        "section": ".text.unlikely",
+        "old_bytes": 6248,
+        "new_bytes": 6248,
+        "all_residual_bytes_exact": true
+      },
+      {
+        "section": ".init.text",
+        "old_bytes": 1032,
+        "new_bytes": 1032,
+        "all_residual_bytes_exact": true
+      },
+      {
+        "section": ".exit.text",
+        "old_bytes": 440,
+        "new_bytes": 440,
+        "all_residual_bytes_exact": true
+      }
+    ],
+    "section_contract": {
+      "membership_exact": true,
+      "attributes_checked": [
+        "type",
+        "flags",
+        "align",
+        "entsize"
+      ],
+      "sections": 32
+    },
+    "generated_symbol_renames": [],
+    "symbols_checked": 1932,
+    "baseline_relocations": 14034,
+    "candidate_relocations": 14035,
+    "relocations_outside_changed_bodies_checked": 13694,
+    "allocated_data_sections_checked": [
+      "",
+      "__ksymtab",
+      ".rodata",
+      ".rodata.str1.4",
+      ".modinfo",
+      "__ksymtab_strings",
+      "__param",
+      ".note.Linux",
+      ".data",
+      ".data.once",
+      ".gnu.linkonce.this_module",
+      ".bss",
+      ".comment",
+      ".note.GNU-stack",
+      ".ARC.attributes"
+    ]
+  },
+  "wlan": {
+    "status": "PASS_COMPLETE_MODULE_BOUNDED_FOURTEEN_DELTA",
+    "changed_get_set": [
+      {
+        "symbol_index": 735,
+        "name": "ieee80211_ioctl_getparam",
+        "section": ".text",
+        "old_value": 107296,
+        "new_value": 107296,
+        "old_bytes": 5576,
+        "new_bytes": 5806,
+        "old_sha256": "cb3b0e1a0d03b6c646a83000942a05d461b141de40be4982c34e6b78c4f353e0",
+        "new_sha256": "d7200d63c301642ed903e65ba227f461728f6ebb33381f50a97fae7d8509773f",
+        "scope": "INTENTIONALLY_CHANGED_GET_SET_BODY; separate actual-source/ABI fixtures required",
+        "alignment_nop_bytes": 2,
+        "layout_growth": 232
+      },
+      {
+        "symbol_index": 759,
+        "name": "ieee80211_ioctl_setparam",
+        "section": ".text",
+        "old_value": 157288,
+        "new_value": 157520,
+        "old_bytes": 16106,
+        "new_bytes": 16294,
+        "old_sha256": "9cc1f49af164cb55d664c4841a3e9b5b83d7ac950ccbc141ff14c40b6319fdaa",
+        "new_sha256": "9d581c90057b01704e4971d462466259b16341ff242ae7f8311715e919080a36",
+        "scope": "INTENTIONALLY_CHANGED_GET_SET_BODY; separate actual-source/ABI fixtures required",
+        "layout_growth": 188
+      }
+    ],
+    "other_exact_changes": [
+      {
+        "symbol_index": 633,
+        "name": "ieee80211_delete_wlanunit",
+        "changes": [
+          {
+            "offset": 38,
+            "kind": "diagnostic_line",
+            "old": 21089,
+            "new": 21180
+          },
+          {
+            "offset": 110,
+            "kind": "diagnostic_line",
+            "old": 21090,
+            "new": 21181
+          }
+        ]
+      },
+      {
+        "symbol_index": 634,
+        "name": "ieee80211_ioctl_giwfreq",
+        "changes": [
+          {
+            "offset": 74,
+            "kind": "compact_diagnostic_line",
+            "delta": 14
+          }
+        ]
+      },
+      {
+        "symbol_index": 716,
+        "name": "ieee80211_param_from_qdrv",
+        "changes": [
+          {
+            "offset": 86,
+            "kind": "diagnostic_line",
+            "old": 3453,
+            "new": 3467
+          }
+        ]
+      }
+    ],
+    "all_executable_sections": [
+      {
+        "section": ".text",
+        "old_bytes": 318960,
+        "new_bytes": 319380,
+        "all_residual_bytes_exact": true
+      },
+      {
+        "section": ".text.unlikely",
+        "old_bytes": 972,
+        "new_bytes": 972,
+        "all_residual_bytes_exact": true
+      },
+      {
+        "section": ".init.text",
+        "old_bytes": 4,
+        "new_bytes": 4,
+        "all_residual_bytes_exact": true
+      },
+      {
+        "section": ".exit.text",
+        "old_bytes": 4,
+        "new_bytes": 4,
+        "all_residual_bytes_exact": true
+      }
+    ],
+    "section_contract": {
+      "membership_exact": true,
+      "attributes_checked": [
+        "type",
+        "flags",
+        "align",
+        "entsize"
+      ],
+      "sections": 28
+    },
+    "generated_symbol_renames": [
+      {
+        "symbol_index": 763,
+        "old": "CSWTCH.662",
+        "new": "CSWTCH.663"
+      },
+      {
+        "symbol_index": 764,
+        "old": "CSWTCH.651",
+        "new": "CSWTCH.652"
+      },
+      {
+        "symbol_index": 788,
+        "old": "CSWTCH.717",
+        "new": "CSWTCH.718"
+      },
+      {
+        "symbol_index": 792,
+        "old": "CSWTCH.700",
+        "new": "CSWTCH.701"
+      },
+      {
+        "symbol_index": 794,
+        "old": "CSWTCH.664",
+        "new": "CSWTCH.665"
+      },
+      {
+        "symbol_index": 807,
+        "old": "CSWTCH.715",
+        "new": "CSWTCH.716"
+      }
+    ],
+    "symbols_checked": 2250,
+    "baseline_relocations": 9543,
+    "candidate_relocations": 9547,
+    "relocations_outside_changed_bodies_checked": 9151,
+    "allocated_data_sections_checked": [
+      "",
+      "__ksymtab",
+      ".rodata",
+      ".rodata.str1.4",
+      "__ksymtab_strings",
+      ".modinfo",
+      ".note.Linux",
+      ".data",
+      ".data.once",
+      ".gnu.linkonce.this_module",
+      ".bss",
+      ".comment",
+      ".note.GNU-stack",
+      ".ARC.attributes"
+    ]
+  }
+}

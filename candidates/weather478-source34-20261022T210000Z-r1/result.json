@@ -1,0 +1,22 @@
+{
+  "status": "SOURCE_ONLY_WEATHER478_BOOLEAN_AP_SELECTION_PENDING_MODULE_GATES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent": "outputs\\rea\\consolidated32-source-20261022T222600Z-r2",
+  "parent_sha256": "7f7a137f803bf8e2980e7f5212f97ee191b0f4e987f9bd79c4e3bbd03d1788bb",
+  "source_original_records": 34,
+  "qualified_combined_records": null,
+  "changed_sources": {
+    "headers/net80211/ieee80211_var.h": "02b7154658b9ff9bcef30d6c3bb9430cfe08d22f642f4e06be04b97a308ac494",
+    "source/qdrv/qdrv_wlan.c": "427ae0b1d968b33d3fee218b2819f8a682f4f73f3582eff717f2863376ef86d5",
+    "source/wlan/ieee80211_scan_ap.c": "9b19ecc5532b6fb896c48237ac1ba3346380c76af0d1c11ecff0dd051c8cf7d6",
+    "source/wlan/ieee80211_wireless.c": "ef6cda919ae2d866661dc7d54d8ee8eedf5bdf7575fcc5cf76f7a87f9fa91e84"
+  },
+  "limits": [
+    "OEM boolean lowbyte and AP weather exclusion consumer recovered; table presence is not physical CAC acceptance.",
+    "Actual IC padding must be verified by ARC all-member witness before reuse.",
+    "Weather flag permits selection only; existing600-second weatherCAC, radar/CAC gating and channel/regulatory constraints remain unchanged.",
+    "Existing5GHz AP metric/alternate/fallback behavior retained; not complete OEM AP ranking equivalence.",
+    "No RF/client/traffic/persistence/release or hardware action."
+  ]
+}

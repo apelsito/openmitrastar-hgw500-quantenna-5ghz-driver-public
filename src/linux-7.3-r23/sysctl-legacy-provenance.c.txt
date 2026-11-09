@@ -1,0 +1,30 @@
+	/* setup the table */
+	memset(vap->iv_sysctls, 0, space);
+#if LINUX_VERSION_CODE < KERNEL_VERSION(2,6,35)
+	vap->iv_sysctls[0].ctl_name = CTL_NET;
+#endif
+	vap->iv_sysctls[0].procname = "net";
+	vap->iv_sysctls[0].mode = 0555;
+	vap->iv_sysctls[0].child = &vap->iv_sysctls[2];
+	/* [1] is NULL terminator */
+#if LINUX_VERSION_CODE < KERNEL_VERSION(2,6,35)
+	vap->iv_sysctls[2].ctl_name = CTL_AUTO;
+#endif
+	vap->iv_sysctls[2].procname = devname; /* XXX bad idea? */
+	vap->iv_sysctls[2].mode = 0555;
+	vap->iv_sysctls[2].child = &vap->iv_sysctls[4];
+	/* [3] is NULL terminator */
+	/* copy in pre-defined data */
+	memcpy(&vap->iv_sysctls[4], ieee80211_sysctl_template,
+		sizeof(ieee80211_sysctl_template));
+
+	/* add in dynamic data references */
+	for (i = 4; vap->iv_sysctls[i].procname; i++)
+
+		if (vap->iv_sysctls[i].extra1 == NULL)
+			vap->iv_sysctls[i].extra1 = vap;
+
+	vap->iv_sysctls[i-1].data = "";	/* XXX? */
+
+	/* and register everything */
+	vap->iv_sysctl_header = ATH_REGISTER_SYSCTL_TABLE(vap->iv_sysctls);

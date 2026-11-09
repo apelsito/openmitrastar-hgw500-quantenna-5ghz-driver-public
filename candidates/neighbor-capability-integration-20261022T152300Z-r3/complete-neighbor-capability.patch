@@ -1,0 +1,395 @@
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -44,6 +44,7 @@
+ #endif
+ 
+ #include <linux/version.h>
++#include "openmitrastar_bss_tm.h"
+ #include <linux/module.h>
+ #include <linux/netdevice.h>
+ #include <linux/utsname.h>
+@@ -117,6 +118,23 @@
+ #define SCS_MAX_RAW_CHAN_METRIC			0x7FFFFFFF
+ #define SCS_MAX_RATE_RATIO_CAP			0x7FFFFFFF
+ #define SCS_PICK_CHAN_MIN_SCALED_TRAFFIC	100 /* ms */
++/* Recovered OEM read-only compatibility parameter numbers. These do not
++ * enable DFS, change radio state, or assert measured retry behavior. */
++/* OEM451 reports role1/2 first, else repeater3 or normal0. Two advertised
++ * OEM entries below remain unsupported; adding their records enables no feature. */
++#define OM_OEM_PARAM_MAX_BANDWIDTH 460
++#define OM_OEM_PARAM_BBDF_WAR 483
++#define OM_OEM_PARAM_CHECK_CURRENT_CHANNEL 464
++#define OM_OEM_PARAM_NEIGHBOR_REPORT 492
++#define OM_OEM_PARAM_BSS_TM 493
++#define OM_OEM_PARAM_DEVICE_MODE 451
++#define OM_OEM_PARAM_IGNORE_ICAC_SELECTION 465
++#define OM_OEM_PARAM_FT_OVER_DS 495
++
++#define OM_OEM_PARAM_MIN_CAC 450
++#define OM_OEM_PARAM_SHORT_RETRY_LIMIT 496
++#define OM_OEM_PARAM_LONG_RETRY_LIMIT 497
++
+ #define MIN_CAC_PERIOD				70 /* seconds */
+ 
+ #ifndef SYSTEM_BUILD
+@@ -11356,6 +11374,34 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_NEIGHBOR_REPORT:
++		if(value == 1)ic->om_neighbor_report_flags |= 1U;
++		else ic->om_neighbor_report_flags &= ~1U;
++		ieee80211_beacon_update_all(ic);
++		break;
++
++	case OM_OEM_PARAM_BSS_TM:
++		if(value == 1)ic->om_bss_tm_flags |= 1U;
++		else ic->om_bss_tm_flags &= ~1U;
++		ieee80211_beacon_update_all(ic);
++		break;
++
++	case OM_OEM_PARAM_CHECK_CURRENT_CHANNEL:
++		ic->ic_chan_is_set = value;
++		break;
++
++	case OM_OEM_PARAM_BBDF_WAR:
++		ieee80211_param_to_qdrv(vap, param, value, NULL, 0);
++		break;
++
++	/* OEM460 stores the lowbyte only; no channel/RF command is sent. */
++	case OM_OEM_PARAM_MAX_BANDWIDTH:
++		ic->ic_max_system_bw = (u_int8_t)value;
++		break;
++
++	case OM_OEM_PARAM_IGNORE_ICAC_SELECTION:
++		return -EOPNOTSUPP;
++
+ 	case IEEE80211_PARAM_AP_ISOLATE:
+ 		if (vap->iv_opmode == IEEE80211_M_HOSTAP)
+ 			br_set_ap_isolate(value);
+@@ -13925,6 +13971,50 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_NEIGHBOR_REPORT:
++		param[0] = ic->om_neighbor_report_flags & 1U;
++		break;
++
++	case OM_OEM_PARAM_BSS_TM:
++		param[0] = ic->om_bss_tm_flags & 1U;
++		break;
++
++	case OM_OEM_PARAM_BBDF_WAR:
++		ieee80211_param_from_qdrv(vap, param[0] & 0xffff, &param[0], NULL, 0);
++		break;
++
++	case OM_OEM_PARAM_MAX_BANDWIDTH:
++		param[0] = ic->ic_max_system_bw;
++		break;
++
++	case OM_OEM_PARAM_DEVICE_MODE:
++		if (ic->ic_extender_role == IEEE80211_EXTENDER_ROLE_MBS)
++			param[0] = 1;
++		else if (ic->ic_extender_role == IEEE80211_EXTENDER_ROLE_RBS)
++			param[0] = 2;
++		else
++			param[0] = ieee80211_is_repeater(ic) ? 3 : 0;
++		break;
++	case OM_OEM_PARAM_FT_OVER_DS:
++		return -EOPNOTSUPP;
++
++	/* Output handling lives in qualified QDRV and returns existing fields. */
++	case IEEE80211_PARAM_CCA_FIXED:
++	case IEEE80211_PARAM_AUTO_CCA_ENABLE:
++		ieee80211_param_from_qdrv(vap, param[0] & 0xffff, &param[0], NULL, 0);
++		break;
++
++	/* OEM getparam450 returns the existing70-second minimum. */
++	case OM_OEM_PARAM_MIN_CAC:
++		param[0] = MIN_CAC_PERIOD;
++		break;
++	/* Exact OEM QDRV returns8 for both496 and497. These are compatibility
++	 * constants; no MuC/firmware command or runtime retry change occurs. */
++	case OM_OEM_PARAM_SHORT_RETRY_LIMIT:
++	case OM_OEM_PARAM_LONG_RETRY_LIMIT:
++		param[0] = 8;
++		break;
++
+ 	case IEEE80211_PARAM_AP_ISOLATE:
+ 		param[0] = br_get_ap_isolate();
+ 		break;
+@@ -20819,6 +20909,45 @@
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "gt_stdfs_msrcac" },
+ 	{ IEEE80211_PARAM_STA_DFS_STRICT_TX_CHAN_CLOSE_TIME,
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "gt_stdfs_end_tx" },
++	/* Recovered OEM aliases: dispatch already exists for parameter 246. */
++	{ IEEE80211_PARAM_TX_MAXMPDU,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "tx_maxmpdu" },
++	{ IEEE80211_PARAM_TX_MAXMPDU,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_tx_maxmpdu" },
++	{ OM_OEM_PARAM_MIN_CAC,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_min_cac" },
++	{ OM_OEM_PARAM_SHORT_RETRY_LIMIT,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_sretry_lmt" },
++	{ OM_OEM_PARAM_LONG_RETRY_LIMIT,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_lretry_lmt" },
++	{ IEEE80211_PARAM_CCA_FIXED,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_cca_fixed" },
++	{ IEEE80211_PARAM_AUTO_CCA_ENABLE,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_auto_cca_en" },
++	{ OM_OEM_PARAM_DEVICE_MODE,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_dev_mode" },
++	{ OM_OEM_PARAM_IGNORE_ICAC_SELECTION,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "ignr_icac_sel" },
++	{ OM_OEM_PARAM_FT_OVER_DS,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_ft_over_ds" },
++	{ OM_OEM_PARAM_MAX_BANDWIDTH,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "set_max_bw" },
++	{ OM_OEM_PARAM_MAX_BANDWIDTH,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_max_bw" },
++	{ OM_OEM_PARAM_BBDF_WAR,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "bbdf_war_en" },
++	{ OM_OEM_PARAM_BBDF_WAR,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_bbdfwar_en" },
++	{ OM_OEM_PARAM_CHECK_CURRENT_CHANNEL,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "check_cur_chan" },
++	{ OM_OEM_PARAM_BSS_TM,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "bss_tm" },
++	{ OM_OEM_PARAM_BSS_TM,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_bss_tm" },
++	{ OM_OEM_PARAM_NEIGHBOR_REPORT,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "neigh_repo" },
++	{ OM_OEM_PARAM_NEIGHBOR_REPORT,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_neigh_repo" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {
+--- a/src/wlan/ieee80211_beacon.c
++++ b/src/wlan/ieee80211_beacon.c
+@@ -42,6 +42,7 @@
+ #include <linux/config.h>
+ #endif
+ #include <linux/version.h>
++#include "openmitrastar_bss_tm.h"
+ #include <linux/module.h>
+ #include <linux/skbuff.h>
+ #include <linux/netdevice.h>
+@@ -117,6 +118,8 @@
+ 		capinfo |= IEEE80211_CAPINFO_SHORT_SLOTTIME;
+ 	if (ic->ic_flags & IEEE80211_F_DOTH)
+ 		capinfo |= IEEE80211_CAPINFO_SPECTRUM_MGMT;
++	if(ic->om_neighbor_report_flags & 1U)
++		capinfo |= 0x1000U;
+ 	bo->bo_caps = (__le16 *)frm;
+ 	*(__le16 *)frm = htole16(capinfo);
+ 	frm += 2;
+@@ -187,6 +190,11 @@
+ 		frm = ieee80211_add_beacon_desc_ie(ni, IEEE80211_ELEMID_20_40_BSS_COEX, frm);
+ 		frm = ieee80211_add_beacon_desc_ie(ni, IEEE80211_ELEMID_OBSS_SCAN, frm);
+ 	}
++
++	bo->bo_om_rrm = frm;
++	frm = ieee80211_add_beacon_desc_ie(ni, 70, frm);
++	if (frm == bo->bo_om_rrm)
++		bo->bo_om_rrm = NULL; /* admissionrefused:noadvertisementpointer */
+ 
+ 	/* BSS load element */
+ 	bo->bo_bss_load = NULL;
+@@ -369,6 +377,7 @@
+ 				 (sizeof(struct ieee80211_ie_htcap) +
+ 					 sizeof(struct ieee80211_ie_htinfo)):0)
+ 		 + sizeof(struct ieee80211_ie_qtn)
++		 + 7 /* RecoveredRRMIE70 descriptor reserve */
+ 		 + ((IS_IEEE80211_11NG(ic)) ? sizeof(struct ieee80211_20_40_coex_param)
+ 				+ sizeof(struct ieee80211_obss_scan_ie) : 0)
+ #ifdef CONFIG_QVSP
+@@ -466,8 +475,12 @@
+ 		capinfo |= IEEE80211_CAPINFO_SHORT_SLOTTIME;
+ 	if (ic->ic_flags & IEEE80211_F_DOTH)
+ 		capinfo |= IEEE80211_CAPINFO_SPECTRUM_MGMT;
++	if(ic->om_neighbor_report_flags & 1U)
++		capinfo |= 0x1000U;
+ 
+ 	*bo->bo_caps = htole16(capinfo);
++	if(bo->bo_om_rrm)
++		(void)om_neighbor_rrm_ie(bo->bo_om_rrm,ic->om_neighbor_report_flags);
+ 
+ 	if (vap->iv_flags & IEEE80211_F_WME) {
+ 		struct ieee80211_wme_state *wme = ieee80211_vap_get_wmestate(vap);
+--- a/src/wlan/ieee80211_beacon_desc.c
++++ b/src/wlan/ieee80211_beacon_desc.c
+@@ -21,6 +21,7 @@
+ #include <linux/config.h>
+ #endif
+ #include <linux/version.h>
++#include "openmitrastar_bss_tm.h"
+ #include <linux/kernel.h>
+ #include <linux/module.h>
+ #include <linux/skbuff.h>
+@@ -380,6 +381,16 @@
+ 		return 0;
+ 
+ 	switch (ext_ie_id) {
++	case 70:
++		/* Exactone20Bdescriptor admission before writingRRM7B payload.
++		 * NevergrowtheMuCfixedarena orpublishuntrackedpayload bytes. */
++		if (param->curr < (u32)(unsigned long)param->buf ||
++		    param->curr - (u32)(unsigned long)param->buf > param->size ||
++		    param->size - (param->curr - (u32)(unsigned long)param->buf) <
++		        sizeof(struct beacon_shared_ie_t))
++			return pre_frm;
++		frm = om_neighbor_rrm_ie(frm,ic->om_neighbor_report_flags);
++		break;
+ 	case IEEE80211_ELEMID_RATES:
+ 		/* supported rates */
+ 		frm = ieee80211_add_rates(frm, rs);
+@@ -542,6 +553,9 @@
+ 	case IEEE80211_ELEMID_VENDOR_APP:
+ 		memcpy(frm, vap->app_ie[IEEE80211_APPIE_FRAME_BEACON].ie,
+ 			vap->app_ie[IEEE80211_APPIE_FRAME_BEACON].length);
++		(void)om_bss_tm_update_ie(frm,
++		    vap->app_ie[IEEE80211_APPIE_FRAME_BEACON].length,
++		    ic->om_bss_tm_flags);
+ 		frm += vap->app_ie[IEEE80211_APPIE_FRAME_BEACON].length;
+ 		break;
+ 	case IEEE80211_ELEMID_MEASREQ:
+--- a/src/wlan/ieee80211_output.c
++++ b/src/wlan/ieee80211_output.c
+@@ -42,6 +42,7 @@
+ #include <linux/config.h>
+ #endif
+ #include <linux/version.h>
++#include "openmitrastar_bss_tm.h"
+ #include <linux/module.h>
+ #include <linux/random.h>
+ #include <linux/skbuff.h>
+@@ -4287,7 +4288,7 @@
+ 					(sizeof(struct ieee80211_ie_htcap) +
+ 					 sizeof(struct ieee80211_ie_htinfo)) : 0)
+ 			+ sizeof(struct ieee80211_ie_athAdvCap)
+-			+ vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].length
++			+ vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].length + 7 /* recoveredRRMIE reserve */
+ 			+ sizeof(struct ieee80211_ie_qtn)
+ 			+ sizeof(struct ieee80211_qtn_ext_role)
+ 			+ sizeof(struct ieee80211_qtn_ext_bssid)
+@@ -4324,6 +4325,8 @@
+ 			capinfo |= IEEE80211_CAPINFO_SHORT_SLOTTIME;
+ 		if (ic->ic_flags & IEEE80211_F_DOTH)
+ 			capinfo |= IEEE80211_CAPINFO_SPECTRUM_MGMT;
++		if(ic->om_neighbor_report_flags & 1U)
++			capinfo |= 0x1000U;
+ 		*(__le16 *)frm = htole16(capinfo);
+ 		frm += 2;
+ 
+@@ -4444,9 +4447,15 @@
+ 			frm = ieee80211_add_athAdvCap(frm, vap->iv_bss->ni_ath_flags,
+ 					vap->iv_bss->ni_ath_defkeyindex);
+ 
++		if(ic->om_neighbor_report_flags & 1U)
++			frm = om_neighbor_rrm_ie(frm,ic->om_neighbor_report_flags);
++
+ 		if (vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].ie) {
+ 			memcpy(frm, vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].ie,
+ 					vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].length);
++			(void)om_bss_tm_update_ie(frm,
++			    vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].length,
++			    ic->om_bss_tm_flags);
+ 			frm += vap->app_ie[IEEE80211_APPIE_FRAME_PROBE_RESP].length;
+ 		}
+ 
+@@ -4799,7 +4808,7 @@
+ 					 sizeof(struct ieee80211_ie_htinfo)) : 0) +
+ 			sizeof(struct ieee80211_wme_param) +
+ 			(vap->iv_ath_cap ? sizeof(struct ieee80211_ie_athAdvCap) : 0) +
+-			vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].length +
++			vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].length + 7 /* recoveredRRMIE reserve */ +
+ 			sizeof(struct ieee80211_ie_qtn) +
+ 			(vap->qtn_pairing_ie.ie ? sizeof(struct ieee80211_ie_qtn_pairing) : 0)
+ #ifdef CONFIG_QVSP
+@@ -4826,6 +4835,8 @@
+ 			capinfo |= IEEE80211_CAPINFO_SHORT_SLOTTIME;
+ 		if (ic->ic_flags & IEEE80211_F_DOTH)
+ 			capinfo |= IEEE80211_CAPINFO_SPECTRUM_MGMT;
++		if(ic->om_neighbor_report_flags & 1U)
++			capinfo |= 0x1000U;
+ 		*(__le16 *)frm = htole16(capinfo);
+ 		frm += 2;
+ 
+@@ -4892,9 +4903,15 @@
+ 				vap->iv_ath_cap & ni->ni_ath_flags,
+ 				ni->ni_ath_defkeyindex);
+ 
++		if(ic->om_neighbor_report_flags & 1U)
++			frm = om_neighbor_rrm_ie(frm,ic->om_neighbor_report_flags);
++
+ 		if (vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].ie) {
+ 			memcpy(frm, vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].ie,
+ 				vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].length);
++			(void)om_bss_tm_update_ie(frm,
++			    vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].length,
++			    ic->om_bss_tm_flags);
+ 			frm += vap->app_ie[IEEE80211_APPIE_FRAME_ASSOC_RESP].length;
+ 		}
+ 
+--- a/vendor/port-context/drivers/include/kernel/net80211/ieee80211_proto.h
++++ b/vendor/port-context/drivers/include/kernel/net80211/ieee80211_proto.h
+@@ -493,6 +493,7 @@
+ 	u_int8_t *bo_erp;		/* start of ERP element */
+ 	u_int8_t *bo_appie_buf;		/* start of APP IE buf */
+ 	u_int16_t bo_appie_buf_len;	/* APP IE buf length in bytes */
++	u8 *bo_om_rrm; /* host-onlyrecoveredRRMIE pointer */
+ };
+ struct sk_buff *ieee80211_beacon_alloc(struct ieee80211_node *,
+ 	struct ieee80211_beacon_offsets *);
+--- a/vendor/port-context/drivers/include/kernel/net80211/ieee80211_var.h
++++ b/vendor/port-context/drivers/include/kernel/net80211/ieee80211_var.h
+@@ -1248,6 +1248,10 @@
+ 	 */
+ 	uint8_t ic_rx_bar_sync;
+ 	struct sta_dfs_info sta_dfs_info;
++	/* Recovered OEM493 host-only state; all existing fields remain before it. */
++	u32 om_bss_tm_flags;
++	/* Recovered OEM492 host-only NeighborReport capability state. */
++	u32 om_neighbor_report_flags;
+ };
+ 
+ static __inline__ uint32_t ieee80211_pm_period_tu(const struct ieee80211com *ic)
+--- /dev/null
++++ b/src/wlan/openmitrastar_bss_tm.h
+@@ -0,0 +1,36 @@
++#ifndef OPENMITRASTAR_BSS_TM_H
++#define OPENMITRASTAR_BSS_TM_H
++#include <linux/types.h>
++#include <linux/stddef.h>
++#include <linux/errno.h>
++/* Derived OEM493 ExtCapIE127 payloadbyte2 bit3 update. Guard shortTLVs
++ * and use the length actually copied; no management action handler is added. */
++static inline int om_bss_tm_update_ie(u8 *ies,size_t length,u32 enabled)
++{
++    size_t pos=0;
++    while(pos<length){
++        size_t n;
++        if(length-pos<2)return -EINVAL;
++        n=ies[pos+1];
++        if(n>length-pos-2)return -EINVAL;
++        if(ies[pos]==127){
++            if(n<3)return -EINVAL;
++            if(enabled & 1U)ies[pos+4]|=8U;
++            else ies[pos+4]&=(u8)~8U;
++            return 1;
++        }
++        pos+=n+2;
++    }
++    return 0;
++}
++
++/* Exact OEM RRMcapabilityIE: id70,len5, bit1 whenNeighborReport selected. */
++static inline u8 *om_neighbor_rrm_ie(u8 *frm,u32 selected)
++{
++    size_t n;
++    for(n=0;n<7;n++)frm[n]=0;
++    frm[0]=70;frm[1]=5;frm[2]=(selected&1U)?2U:0U;
++    return frm+7;
++}
++
++#endif

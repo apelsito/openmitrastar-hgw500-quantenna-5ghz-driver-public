@@ -1,0 +1,77 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "candidates/linux73-sram-core-r1/oem-core-adaptation.patch",
+      "source": "outputs/rea/linux73-oem-sram-core-20261022T221000Z-r1/oem-core-adaptation.patch",
+      "bytes": 2008,
+      "sha256": "cf2f7bcfaeb99acb16f4283f4b2282154cd89a067263162c5674dcb43358ca58",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/linux73-sram-core-r1/oem-qtn_memfree.c",
+      "source": "outputs/rea/linux73-oem-sram-core-20261022T221000Z-r1/oem-qtn_memfree.c",
+      "bytes": 1386,
+      "sha256": "5603fa969a0b20749c278ff16bf2be4bd18e4325e70e9d096b28635cad7839cd",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/linux73-sram-core-r1/oem-qtn_memget.c",
+      "source": "outputs/rea/linux73-oem-sram-core-20261022T221000Z-r1/oem-qtn_memget.c",
+      "bytes": 1041,
+      "sha256": "27db4fa3b9d8dd80bf898a8028e170480df33b05b85ed80943d622a85e379213",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/linux73-sram-core-r1/om_sram_core.c",
+      "source": "outputs/rea/linux73-oem-sram-core-20261022T221000Z-r1/om_sram_core.c",
+      "bytes": 5638,
+      "sha256": "43093bb58b10f0d5a2a39e0dc85577f42f2094ce83b80c1e24f03c502f62b819",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/linux73-sram-core-r1/om_sram_core.h",
+      "source": "outputs/rea/linux73-oem-sram-core-20261022T221000Z-r1/om_sram_core.h",
+      "bytes": 1234,
+      "sha256": "77ae0bbe90ad01d986cba84cb314bcfb21231d397c90c289e3013a98be6f14cf",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "candidates/linux73-sram-core-r1/result.json",
+      "source": "outputs/rea/linux73-oem-sram-core-20261022T221000Z-r1/result.json",
+      "bytes": 2612,
+      "sha256": "b85349676450705f00c1d24a988f4e81b4ffd5e6e4ccdc9f162bedc91526f67e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-sram-core-checkpoint-20261022T221800Z-r1/input-pins.json",
+      "source": "outputs/rea/linux73-sram-core-checkpoint-20261022T221800Z-r1/input-pins.json",
+      "bytes": 6634,
+      "sha256": "f25f5c1b4bfe8fb0aafc4ee9afb7b82509c92b26eb4e47d002a58c19476492e1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-sram-core-checkpoint-20261022T221800Z-r1/result.json",
+      "source": "outputs/rea/linux73-sram-core-checkpoint-20261022T221800Z-r1/result.json",
+      "bytes": 3071,
+      "sha256": "20f6e4754eebfa4864824391a9a01b4d936a72a371af1a35b96aef017012abd5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-sram-core-checkpoint-20261022T221800Z-r1/SRAM_CORE_PROTOTYPE.md",
+      "source": "outputs/rea/linux73-sram-core-checkpoint-20261022T221800Z-r1/SRAM_CORE_PROTOTYPE.md",
+      "bytes": 1451,
+      "sha256": "f6681009b0e6f6115481cc25887f011642895d3e85a7f02c2da6d2c72a590d1b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-sram-r1/test_linux73_oem_sram_core.py",
+      "source": "tools/test_linux73_oem_sram_core.py",
+      "bytes": 6445,
+      "sha256": "9f3c334b968c7ed80d8ec96e252a309b8c5017a5f1006f1320b5bd15ae7f04b8",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

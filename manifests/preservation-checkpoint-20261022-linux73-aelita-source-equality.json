@@ -1,0 +1,14 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/aelita-active-r3-input-verification-20261022T234500Z-r1/result.json",
+      "source": "outputs/rea/aelita-active-r3-input-verification-20261022T234500Z-r1/result.json",
+      "bytes": 364,
+      "sha256": "59d807134e2ef42ba6fcba1ffa0ec29231294cce31024325e545daf5e43007b2",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

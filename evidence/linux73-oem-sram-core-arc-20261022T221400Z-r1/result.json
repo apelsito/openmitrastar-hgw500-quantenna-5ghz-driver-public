@@ -1,0 +1,17 @@
+{
+  "status": "PASS_LINUX73_ARC_OEM_DERIVED_SRAM_CORE_OBJECT_ONLY_NO_HARDWARE_PROVIDER",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "bytes": 1872,
+  "object_sha256": "34cab3c92da1dc3779ec160fc8b083db5ddd9366e3fdd3ffe468fb5b5a7d4fa4",
+  "strong_imports": [
+    "memset"
+  ],
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-oem-sram-core-arc-20261022T221400Z-r1/om_sram_core.c": "43093bb58b10f0d5a2a39e0dc85577f42f2094ce83b80c1e24f03c502f62b819",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-oem-sram-core-arc-20261022T221400Z-r1/om_sram_core.h": "77ae0bbe90ad01d986cba84cb314bcfb21231d397c90c289e3013a98be6f14cf",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-oem-sram-core-arc-20261022T221400Z-r1/Kbuild": "94d636382b452f34c6e44005603343efb15171256f5e2b4b968586793059fb19",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-oem-sram-core-arc-20261022T221400Z-r1/om_sram_core.o": "34cab3c92da1dc3779ec160fc8b083db5ddd9366e3fdd3ffe468fb5b5a7d4fa4"
+  },
+  "limits": "ARCunitcompiledactual7.3kernelcontext. Noheap_sram/moduleinit orreservedmapping provider, nohardwareexecution."
+}

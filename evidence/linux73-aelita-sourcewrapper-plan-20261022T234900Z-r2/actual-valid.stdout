@@ -1,0 +1,215 @@
+{
+  "schema": "openmitrastar.linux73-portable-build-current/v2",
+  "status": "PASS_PLAN_ONLY_AELITA_SANITIZED_BOOT_AND_ALL_MODULE_MEMBERS_VALIDATED",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "driver_manifest_files_checked": 174,
+  "kbuild_source_units": 72,
+  "kbuild_modules": {
+    "board_compat": [
+      "providers/board_compat.o"
+    ],
+    "dmautil": [
+      "source/platform/ruby/dmautil.o"
+    ],
+    "fwt_if": [
+      "source/platform/topaz/fwt_if.o"
+    ],
+    "gpio": [
+      "source/platform/ruby/gpio.o"
+    ],
+    "hbm": [
+      "source/platform/topaz/hbm.o"
+    ],
+    "iputil": [
+      "source/platform/ruby/iputil.o"
+    ],
+    "qdrv": [
+      "source/qdrv/qdrv_auc.o",
+      "source/qdrv/qdrv_bridge.o",
+      "source/qdrv/qdrv_comm.o",
+      "source/qdrv/qdrv_control.o",
+      "source/qdrv/qdrv_dsp.o",
+      "source/qdrv/qdrv_f355_lifetime.o",
+      "source/qdrv/qdrv_fw.o",
+      "source/qdrv/qdrv_fwt_compat.o",
+      "source/qdrv/qdrv_hal.o",
+      "source/qdrv/qdrv_hostlink.o",
+      "source/qdrv/qdrv_kernel_compat.o",
+      "source/qdrv/qdrv_mac.o",
+      "source/qdrv/qdrv_mac_reserve.o",
+      "source/qdrv/qdrv_math.o",
+      "source/qdrv/qdrv_module.o",
+      "source/qdrv/qdrv_mu.o",
+      "source/qdrv/qdrv_muc.o",
+      "source/qdrv/qdrv_muc_stats.o",
+      "source/qdrv/qdrv_pcap.o",
+      "source/qdrv/qdrv_pktlogger.o",
+      "source/qdrv/qdrv_radar.o",
+      "source/qdrv/qdrv_radar_compat.o",
+      "source/qdrv/qdrv_rx.o",
+      "source/qdrv/qdrv_scan.o",
+      "source/qdrv/qdrv_sch.o",
+      "source/qdrv/qdrv_sch_pm.o",
+      "source/qdrv/qdrv_show.o",
+      "source/qdrv/qdrv_soc.o",
+      "source/qdrv/qdrv_tx.o",
+      "source/qdrv/qdrv_txbf.o",
+      "source/qdrv/qdrv_uc_print.o",
+      "source/qdrv/qdrv_vap.o",
+      "source/qdrv/qdrv_vlan.o",
+      "source/qdrv/qdrv_wlan.o"
+    ],
+    "qtn_platform_support": [
+      "providers/qtn_platform_support.o"
+    ],
+    "qtn_pm_qos_compat": [
+      "providers/qtn_pm_qos_compat.o"
+    ],
+    "qtn_tsens": [
+      "source/platform/qtsens/temp_sensor.o"
+    ],
+    "runtime_compat": [
+      "providers/runtime_compat.o"
+    ],
+    "switch_tqe": [
+      "source/platform/topaz/switch_tqe.o"
+    ],
+    "switch_vlan": [
+      "source/platform/topaz/switch_vlan.o"
+    ],
+    "temp_sens": [
+      "source/platform/topaz/temp_sens.o"
+    ],
+    "topaz_congest_queue": [
+      "source/platform/topaz/topaz_congest_queue.o"
+    ],
+    "wlan": [
+      "source/wlan/ieee80211.o",
+      "source/wlan/ieee80211_beacon.o",
+      "source/wlan/ieee80211_beacon_desc.o",
+      "source/wlan/ieee80211_crypto.o",
+      "source/wlan/ieee80211_crypto_none.o",
+      "source/wlan/ieee80211_input.o",
+      "source/wlan/ieee80211_linux.o",
+      "source/wlan/ieee80211_mlme_statistics.o",
+      "source/wlan/ieee80211_node.o",
+      "source/wlan/ieee80211_output.o",
+      "source/wlan/ieee80211_power.o",
+      "source/wlan/ieee80211_proto.o",
+      "source/wlan/ieee80211_rate.o",
+      "source/wlan/ieee80211_scan.o",
+      "source/wlan/ieee80211_tdls.o",
+      "source/wlan/ieee80211_tpc.o",
+      "source/wlan/ieee80211_wireless.o",
+      "source/wlan/if_media.o",
+      "source/wlan/wlan_fwt_compat.o"
+    ],
+    "wlan_ccmp": [
+      "source/wlan/ieee80211_crypto_ccmp.o"
+    ],
+    "wlan_scan_ap": [
+      "source/wlan/ieee80211_scan_ap.o"
+    ],
+    "wlan_scan_sta": [
+      "source/wlan/ieee80211_scan_sta.o"
+    ],
+    "wlan_tkip": [
+      "source/wlan/ieee80211_crypto_tkip.o"
+    ],
+    "wlan_xauth": [
+      "source/wlan/ieee80211_xauth.o"
+    ]
+  },
+  "required_kernel_config": {
+    "OPENMITRASTAR_QDRV_COMPAT": "y",
+    "WIRELESS_EXT": "y",
+    "WEXT_CORE": "y",
+    "WEXT_PRIV": "y",
+    "NET_SCHED": "y",
+    "BRIDGE": "m",
+    "GPIOLIB": "y",
+    "I2C": "y",
+    "IPV6": "y",
+    "CRYPTO_LIB_AES": "m",
+    "CFG80211_REQUIRE_SIGNED_REGDB": "y",
+    "CFG80211_USE_KERNEL_REGDB_KEYS": "y",
+    "CFG80211": "m",
+    "MAC80211": "m",
+    "RTL8192EE": "m",
+    "QTN_TOPAZ_ETH73": "y"
+  },
+  "upstream_kernel_commit": "c03c1a14507dfaf8b856c2608f9ac216021fc222",
+  "kernel_commit_check": "DECLARED_BASE_COMMIT_NO_GIT_METADATA",
+  "inputs": {
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/src/linux-7.3-r20/result.json": "d57b548a0a3cb6ba5ff17198ac825ccd3fe2fc649e648e878dc2fff5c967d718",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/src/linux-7.3-r20/Kbuild": "fc141e99cba3d72214700e1192211cd8c0026150770e8b03549c11f7ac06794d",
+    "/home/rea/openmitrastar-aelita-source-validation-20261022T230400Z-r4/kernel-source/Makefile": "2eb7b5d5c2ac15a28136607e086f82ebd13f0d3753acc89e463fed49109bc794",
+    "/home/rea/openmitrastar-aelita-source-validation-20261022T230400Z-r4/kernel-context/.config": "e709aba8ed2b55f3e6debe1480bbea2f1320c4bcd9dc3e9832c185b8e72e8efe",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-kernel-v6/Module.symvers": "b3bdc2fecfad7321cd5d03454ea47d2341ef43ffc5e3f091de4c78c0d2726950",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-gcc": "3918a0da3c9f2cfde359f6fed1d0df19e737438dfd2cc60edae63f2dcbf14263",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/tools/linux73_build_aelita.py": "6eb8199d80b6ccb1aa4486194d302b5646b2ddf5c43bfdc658c55c3a5a2d56a4"
+  },
+  "overlay": {
+    "include/linux/netdevice.h": "b149a958c75f17e685e18f9bbf6969959eb8d67b140aafad19012fe2fec71f7d",
+    "include/linux/openmitrastar_bridge.h": "fafac0b567cad17824713499988aecf256c16f89da591e372251e4477fce11fb",
+    "include/linux/openmitrastar_qtn_skb.h": "2a61b183457bbe9bc05d13a99e88202e9d94c307948c0b2b5c970389c012b5cc",
+    "include/linux/skbuff.h": "5edbedd91f41c81e7aad995511001db1505b062d81aa0d230b8953ce6eed44a4",
+    "net/bridge/br_fdb.c": "f5f19ce2887cfb03f68a4654030629444ca12dbcfed4550e38ad5e09b562c277",
+    "net/bridge/br_forward.c": "928d1e71783bb2d57e27f1d9d7c39ba75a296aff36d76ac9d0718a9b1e92c965",
+    "net/core/dev.c": "b6654f34f28a282067ca149b1347325fe4b5067483c40cd825747d1a5050e27e",
+    "net/wireless/Kconfig": "4ec168a7f54f9f12b6b1b82bb30ae1ea0ae15676c07cb944f02a6294344bf9c0"
+  },
+  "base_config_reference_only": true,
+  "old_objects_reused": false,
+  "driver_private_key_assets_found": false,
+  "private_runtime_assets_requested": false,
+  "kernel_DT_privacy_not_audited": true,
+  "reference_symvers": "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-kernel-v6/Module.symvers",
+  "reference_symvers_is_new_context": false,
+  "dtbs_target_requested": false,
+  "input_boot_selection_sanitized": true,
+  "commands": [
+    [
+      "make",
+      "-C",
+      "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/must-not-exist/kernel-source",
+      "O=/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/must-not-exist/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "olddefconfig"
+    ],
+    [
+      "make",
+      "-C",
+      "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/must-not-exist/kernel-source",
+      "O=/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/must-not-exist/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "modules_prepare"
+    ],
+    [
+      "make",
+      "-C",
+      "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/must-not-exist/kernel-source",
+      "O=/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/must-not-exist/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "-j2",
+      "vmlinux",
+      "modules"
+    ],
+    [
+      "make",
+      "-C",
+      "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/must-not-exist/kernel-source",
+      "O=/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/must-not-exist/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "M=/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/must-not-exist/driver",
+      "QTN_GPL=/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL",
+      "-j2",
+      "modules"
+    ]
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS_OFFLINE_BBDF_PREFIX_ABI_ARC_UNITS_AND_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "layouts": [
+    {
+      "size": 30552,
+      "ic": 0,
+      "flags_ext": 23144,
+      "mac": 23152,
+      "tx_if": 23320,
+      "rx_if": 23404,
+      "sp": 30548,
+      "extension": 30552
+    },
+    {
+      "size": 30556,
+      "ic": 0,
+      "flags_ext": 23144,
+      "mac": 23152,
+      "tx_if": 23320,
+      "rx_if": 23404,
+      "sp": 30548,
+      "extension": 30552
+    }
+  ],
+  "existing_private_prefix_unchanged": true,
+  "lowbool_cases": 131072,
+  "fullqdrv_andwlan_changed_units_compiled": true,
+  "limit": "Fullmodule rebuild/deltaqualification stillNO_GO; no firmware/runtime proof"
+}

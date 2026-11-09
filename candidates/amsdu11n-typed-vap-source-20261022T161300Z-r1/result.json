@@ -1,0 +1,32 @@
+{
+  "status": "SOURCE_ONLY_TYPED_VAP_AMSDU11N_20_ENTRIES_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent_manifest_sha256": "1a1df0f9c743ffedc6cf1803fb4e4be0a4d45a502353f92a54a8bcc6d7b301bf",
+  "total_original_entries_added": 20,
+  "functional_ops_source": 18,
+  "faithful_unsupported": 2,
+  "remaining_original_table_gaps": 24,
+  "changed_wlan_sources": {
+    "ieee80211_wireless.c": "45c578641ea27a7e1760faa15413acad3b81b5d18235f8d58185f770a81f0819",
+    "ieee80211.c": "6076fe2e1fb483078acf2ba259e153b0fff1b599e03511339b73f325dc8e1967",
+    "ieee80211_output.c": "d26f520bff2d54d058b330944b4ed30ab921a854288dcbd7b257a599d214cd3f"
+  },
+  "header_sha256": "9f5c546e11d01a21cc4d2d0b26e4dda6db79fa78808b7d4b68f6cddbd6f41f22",
+  "existing_qdrv_sha256": "1f528c7fd2fef8d78d292282ef8296f6071d411898a9e0261d9b0a8e60a5994e",
+  "wire_contract": "ExistingSETPARAM11/76Bpayload id484, originalintvalue forwarded; MuCnode+0x80",
+  "typed_field": "struct ieee80211vap.iv_tx_amsdu_11n:u8 appended",
+  "default": 1,
+  "owned_by": "VAPallocation/setup/teardown,noextraresource",
+  "provenance": {
+    "outputs\\rea\\windows-oem-vap-setup-amsdu-20261022T161000Z-r1\\rea.json": "4ca0ce011ad7cad74936e9f3c648cb78cc3da3572414bea4c22c90f64cc68329",
+    "outputs\\rea\\windows-oem-send-mgmt-amsdu-20261022T160000Z-r1\\rea.json": "b66fd0c9ce29eadfbb57afc106ea684cc10c81e5f48a88a865dd317c30be2896",
+    "outputs\\rea\\windows-muc-11n-amsdu-consumer-20261022T160000Z-r1\\rea.json": "fa85779cf85210038c4d6f389c806014f5f4659492da7d12038c983ea0a77c53"
+  },
+  "constraints": [
+    "EveryQDRV/WLAN/scan/crypto/otherVAPheaderuserneedsfullrebuild",
+    "ARCprefixoffsets unchanged butstructqdrv_vapafterembedding shifts; fullmoduleclosuremandatory",
+    "ADDBApeercontext usesactualni_flags, nosurrogateBSSgetter",
+    "Noaggregateperformance/client/RFacceptanceclaim"
+  ]
+}

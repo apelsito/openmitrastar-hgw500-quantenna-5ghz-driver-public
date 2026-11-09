@@ -1,0 +1,148 @@
+{
+  "schema": "openmitrastar.tqe-cgq-bounded-provider-pair-build/v1",
+  "status": "PASS_OFFLINE_COMPLETE_BOUNDED_PROVIDER_PAIR_PENDING_FIXTURE_AND_DELTA",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "modules": [
+    {
+      "lane": "a",
+      "name": "topaz_congest_queue",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-provider-build-r2/a/topaz_congest_queue/topaz_congest_queue.ko",
+      "bytes": 17000,
+      "sha256": "a0face8555ed07df340c0808a60e7caccf02b775903ac1aa63cce77eac375568",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "author": [
+          "Quantenna"
+        ],
+        "description": [
+          "CONGEST QUEUE"
+        ],
+        "depends": [
+          "qtn_platform_support,hbm"
+        ],
+        "name": [
+          "topaz_congest_queue"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    },
+    {
+      "lane": "a",
+      "name": "switch_tqe",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-provider-build-r2/a/switch_tqe/switch_tqe.ko",
+      "bytes": 36236,
+      "sha256": "7cb21e6a87284b3b29bfa285d6e51ffa7fac7f1bd4419574c48965e6af84b58f",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "parm": [
+          "w3_fwt_reset_probe_enable:Explicit MitraStar-only FWT arbitration probe around TQE CPU reset",
+          "w3_rx_ring_entries:MitraStar-only compact TQE RX ring; default 512, validated compact value 256",
+          "w3_switch_tqe_only_enable:Explicit MitraStar W3 switch-TQE-only hardware gate"
+        ],
+        "parmtype": [
+          "tqe_sem_en:int",
+          "w3_fwt_reset_probe_enable:int",
+          "w3_rx_ring_entries:uint",
+          "w3_switch_tqe_only_enable:int"
+        ],
+        "depends": [
+          "topaz_congest_queue,dmautil,hbm,iputil,switch_vlan,qtn_platform_support"
+        ],
+        "name": [
+          "switch_tqe"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    },
+    {
+      "lane": "b",
+      "name": "topaz_congest_queue",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-provider-build-r2/b/topaz_congest_queue/topaz_congest_queue.ko",
+      "bytes": 17000,
+      "sha256": "a0face8555ed07df340c0808a60e7caccf02b775903ac1aa63cce77eac375568",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "author": [
+          "Quantenna"
+        ],
+        "description": [
+          "CONGEST QUEUE"
+        ],
+        "depends": [
+          "qtn_platform_support,hbm"
+        ],
+        "name": [
+          "topaz_congest_queue"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    },
+    {
+      "lane": "b",
+      "name": "switch_tqe",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-provider-build-r2/b/switch_tqe/switch_tqe.ko",
+      "bytes": 36236,
+      "sha256": "7cb21e6a87284b3b29bfa285d6e51ffa7fac7f1bd4419574c48965e6af84b58f",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "parm": [
+          "w3_fwt_reset_probe_enable:Explicit MitraStar-only FWT arbitration probe around TQE CPU reset",
+          "w3_rx_ring_entries:MitraStar-only compact TQE RX ring; default 512, validated compact value 256",
+          "w3_switch_tqe_only_enable:Explicit MitraStar W3 switch-TQE-only hardware gate"
+        ],
+        "parmtype": [
+          "tqe_sem_en:int",
+          "w3_fwt_reset_probe_enable:int",
+          "w3_rx_ring_entries:uint",
+          "w3_switch_tqe_only_enable:int"
+        ],
+        "depends": [
+          "topaz_congest_queue,dmautil,hbm,iputil,switch_vlan,qtn_platform_support"
+        ],
+        "name": [
+          "switch_tqe"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    }
+  ],
+  "limits": "Complete offline pair linkage only; retained recovery, ledger saturation, HBM waits and foreign hardware writers remain unqualified.",
+  "baseline": {
+    "switch_tqe": {
+      "sha256": "bd5ab1018d293dc6bed655ec2bbc6da64a3969f28a3de578c04fa9c3f4af635f",
+      "bytes": 35552,
+      "functions": 52,
+      "relocations": 464,
+      "symbols": 275
+    },
+    "topaz_congest_queue": {
+      "sha256": "7b9954072e197b04936ed60a51ecbe813f24978d688c52ccc0d2c047f7f49611",
+      "bytes": 13884,
+      "functions": 29,
+      "relocations": 147,
+      "symbols": 112
+    }
+  },
+  "reproducible": true,
+  "pins_verified": 1140,
+  "provider_imports_consumer": false,
+  "private_provider_exports": 7
+}

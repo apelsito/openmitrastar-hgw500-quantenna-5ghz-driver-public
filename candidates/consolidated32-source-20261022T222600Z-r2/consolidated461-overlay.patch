@@ -1,0 +1,356 @@
+--- a/source\wlan\ieee80211_proto.c
++++ b/source\wlan\ieee80211_proto.c
+@@ -1863,6 +1863,10 @@
+ 					ieee80211_icac_select(ic, &scan_flags);
+ 				}
+ 			}
++			if(om_chanset_kernel_allowed(vap))
++			    (void)om_chanset_kernel_start(vap,scan_flags,IEEE80211_SCAN_FOREVER,
++			        vap->iv_des_nssid,vap->iv_des_ssid);
++			else
+ 			(void) ieee80211_check_scan(vap, scan_flags,
+ 					IEEE80211_SCAN_FOREVER,
+ 					vap->iv_des_nssid, vap->iv_des_ssid,
+--- a/source\wlan\ieee80211_scan.c
++++ b/source\wlan\ieee80211_scan.c
+@@ -56,6 +56,7 @@
+ 
+ #include "net80211/ieee80211_var.h"
+ #include "net80211/ieee80211_scan.h"
++#include "openmitrastar_chanset_recovered.h"
+ 
+ struct scan_state {
+ 	struct ieee80211_scan_state base;	/* public state */
+@@ -71,6 +72,15 @@
+ 	struct tasklet_struct ss_pwrsav;	/* sta ps ena tasklet */
+ 	struct timer_list ss_scan_timer;	/* scan timer */
+ 	struct timer_list ss_probe_timer;	/* start sending probe requests timer */
++	spinlock_t om_chanset_lock;
++	bool om_chanset_stopping;
++	u8 om_chanset_policy;
++	struct ieee80211vap *om_chanset_owner;
++	struct om_chanset_transaction om_chanset;
++	struct om_chanset_observation om_observations[255];
++	struct om_chanset_channel_state om_channels[98];
++	u8 om_scan_detaching;
++	int om_chanset_last_error;
+ };
+ #define	SCAN_PRIVATE(ss)	((struct scan_state *) ss)
+ 
+@@ -159,6 +169,7 @@
+ 			(unsigned long) ss);
+ 		ss->base.ss_pick_flags = IEEE80211_PICK_DEFAULT;
+ 		ss->base.is_scan_valid = 0;
++		spin_lock_init(&ss->om_chanset_lock);
+ 		ic->ic_scan = &ss->base;
+ 	} else
+ 		ic->ic_scan = NULL;
+@@ -174,12 +185,14 @@
+ 	struct ieee80211_scan_state *ss = ic->ic_scan;
+ 
+ 	if (ss != NULL) {
++		WRITE_ONCE(SCAN_PRIVATE(ss)->om_chanset_stopping,true);
++		tasklet_kill(&SCAN_PRIVATE(ss)->ss_pwrsav);
++		del_timer_sync(&SCAN_PRIVATE(ss)->ss_scan_timer);
++		del_timer_sync(&SCAN_PRIVATE(ss)->ss_probe_timer);
+ #ifdef QSCS_ENABLED
+ 		ieee80211_scs_deinit_ranking_stats(ic);
+ #endif
+-		del_timer(&SCAN_PRIVATE(ss)->ss_scan_timer);
+-		del_timer(&SCAN_PRIVATE(ss)->ss_probe_timer);
+-		tasklet_kill(&SCAN_PRIVATE(ss)->ss_pwrsav);
++		om_chanset_kernel_cancel(ic);
+ 		if (ss->ss_ops != NULL) {
+ 			ss->ss_ops->scan_detach(ss);
+ 			ss->ss_ops = NULL;
+@@ -213,6 +226,44 @@
+ void
+ ieee80211_scan_vdetach(struct ieee80211vap *vap)
+ {
++    struct ieee80211com *ic=vap->iv_ic;
++    struct ieee80211_scan_state *ss=ic->ic_scan;
++    struct scan_state *scan;
++    const struct ieee80211_scanner *policy;
++    unsigned long flags,ic_irq_flags;
++    if(!ss)return;
++    scan=SCAN_PRIVATE(ss);
++    spin_lock_irqsave(&ic->ic_comlock,ic_irq_flags);
++    if(ss->ss_vap!=vap){spin_unlock_irqrestore(&ic->ic_comlock,ic_irq_flags);return;}
++    WRITE_ONCE(scan->om_scan_detaching,1);
++    WRITE_ONCE(scan->om_chanset_stopping,true);
++    scan->ss_iflags|=ISCAN_CANCEL;
++    ic->ic_flags&=~IEEE80211_F_SCAN;
++#ifdef QTN_BG_SCAN
++    ic->ic_flags_qtn&=~IEEE80211_QTN_BGSCAN;
++#endif
++    spin_unlock_irqrestore(&ic->ic_comlock,ic_irq_flags);
++    /* Synchronous joins run outside the IC spinlock: callbacks need that lock.
++     * Existing VAP teardown is serialized by its owning process/lifetime gate. */
++    tasklet_kill(&scan->ss_pwrsav);
++    del_timer_sync(&scan->ss_scan_timer);
++    del_timer_sync(&scan->ss_probe_timer);
++    om_chanset_kernel_cancel(ic);
++    policy=ss->ss_ops;
++    if(policy)policy->scan_detach(ss);
++    spin_lock_irqsave(&ic->ic_comlock,ic_irq_flags);
++    ss->ss_ops=NULL;ss->ss_priv=NULL;ss->ss_vap=NULL;
++    spin_lock_irqsave(&scan->om_chanset_lock,flags);
++    scan->om_chanset_owner=NULL;
++    WRITE_ONCE(scan->om_scan_detaching,0);
++    WRITE_ONCE(scan->om_chanset_stopping,false);
++    spin_unlock_irqrestore(&scan->om_chanset_lock,flags);
++    spin_unlock_irqrestore(&ic->ic_comlock,ic_irq_flags);
++}
++#if 0 /* Original nonjoining teardown retained byte-for-byte as provenance. */
++void
++ieee80211_scan_vdetach(struct ieee80211vap *vap)
++{
+ 	struct ieee80211com *ic = vap->iv_ic;
+ 	struct ieee80211_scan_state *ss = ic->ic_scan;
+ 
+@@ -237,6 +288,8 @@
+ 	}
+ 	IEEE80211_UNLOCK_IRQ(ic);
+ }
++
++#endif
+ 
+ /*
+  * Simple-minded scanner module support.
+@@ -309,6 +362,9 @@
+ 	/* If channel is fixed using iwconfig then don't do anything */
+ 	if(!g_channel_fixed) 
+ 	{
++		if(om_chanset_kernel_active(ic)&&(!chan||chan==IEEE80211_CHAN_ANYC||
++		    !(chan->ic_flags&IEEE80211_CHAN_2GHZ)||
++		    !ic->ic_check_channel(ic,chan,0,0)))return;
+ 		ic->ic_prevchan = ic->ic_curchan;
+ 		ic->ic_curchan = chan;
+ 		//printk("Curr chan : %d\n", ic->ic_curchan->ic_ieee);
+@@ -363,9 +419,11 @@
+ scan_restart_pwrsav(unsigned long arg)
+ {
+ 	struct scan_state *ss = (struct scan_state *) arg;
+-	struct ieee80211vap *vap = ss->base.ss_vap;
+-	struct ieee80211com *ic = vap->iv_ic;
++	struct ieee80211vap *vap = READ_ONCE(ss->base.ss_vap);
++	struct ieee80211com *ic;
+ 	int delay;
++	if(READ_ONCE(ss->om_chanset_stopping)||!vap)return;
++	ic=vap->iv_ic;
+ 
+ 	ieee80211_sta_pwrsave(vap, 1);
+ 	/*
+@@ -478,6 +536,7 @@
+ 	struct ieee80211com *ic = vap->iv_ic;
+ 	const struct ieee80211_scanner *scan;
+ 	struct ieee80211_scan_state *ss = ic->ic_scan;
++	int om_start_owned=0;
+ 
+ 	if (ic->sta_dfs_info.sta_dfs_strict_mode) {
+ 		if ((ic->ic_bsschan != IEEE80211_CHAN_ANYC) &&
+@@ -503,7 +562,11 @@
+ 	}
+ 
+ 	IEEE80211_LOCK_IRQ(ic);
+-	if ((ic->ic_flags & IEEE80211_F_SCAN) == 0
++	if (!READ_ONCE(SCAN_PRIVATE(ss)->om_scan_detaching)&&
++	    !READ_ONCE(SCAN_PRIVATE(ss)->om_chanset_stopping)&&
++	    (!READ_ONCE(SCAN_PRIVATE(ss)->om_chanset.busy)||
++	     READ_ONCE(SCAN_PRIVATE(ss)->om_chanset_owner)==vap)&&
++	    (ic->ic_flags & IEEE80211_F_SCAN) == 0
+ #ifdef QTN_BG_SCAN
+ 		&& (ic->ic_flags_qtn & IEEE80211_QTN_BGSCAN) == 0
+ #endif /* QTN_BG_SCAN */
+@@ -556,6 +619,7 @@
+ 				else
+ #endif /*QTN_BG_SCAN */
+ 					ic->ic_flags |= IEEE80211_F_SCAN;
++				om_start_owned=1;
+ #if defined(QBMPS_ENABLE)
+ 				if ((ic->ic_flags_qtn & IEEE80211_QTN_BMPS) &&
+ 				    (vap->iv_opmode == IEEE80211_M_STA)) {
+@@ -581,7 +645,7 @@
+ 	IEEE80211_UNLOCK_IRQ(ic);
+ 
+ 	/* Don't transmit beacons while scanning */
+-	if (vap->iv_opmode == IEEE80211_M_HOSTAP
++	if (om_start_owned && vap->iv_opmode == IEEE80211_M_HOSTAP
+ #ifdef QTN_BG_SCAN
+ 			&& !(flags & IEEE80211_SCAN_QTN_BGSCAN)
+ #endif /*QTN_BG_SCAN */
+@@ -590,7 +654,7 @@
+ 	}
+ 
+ 	/* NB: racey, does it matter? */
+-	return (ic->ic_flags & IEEE80211_F_SCAN);
++	return READ_ONCE(SCAN_PRIVATE(ss)->om_chanset.busy)?om_start_owned:(ic->ic_flags & IEEE80211_F_SCAN);
+ }
+ EXPORT_SYMBOL(ieee80211_start_scan);
+ 
+@@ -826,6 +890,7 @@
+ 		/* clear bg scan NOPICK and mark cancel request */
+ 		ss->ss_flags &= ~IEEE80211_SCAN_NOPICK;
+ 		SCAN_PRIVATE(ss)->ss_iflags |= ISCAN_CANCEL;
++		om_chanset_kernel_cancel(ic);
+ 		ss->ss_ops->scan_cancel(ss, vap);
+ 
+ 		if (no_wait) {
+@@ -1016,13 +1081,15 @@
+ #define	ISCAN_REP	(ISCAN_MINDWELL | ISCAN_START | ISCAN_DISCARD)
+ 	struct scan_state *scan = from_timer(scan, timer, ss_scan_timer);
+ 	struct ieee80211_scan_state *ss = &scan->base;
+-	struct ieee80211vap *vap = ss->ss_vap;
+-	struct ieee80211com *ic = vap->iv_ic;
+-	struct ieee80211_node *ni = vap->iv_bss;
++	struct ieee80211vap *vap = READ_ONCE(ss->ss_vap);
++	struct ieee80211com *ic;
++	struct ieee80211_node *ni;
+ 	struct ieee80211_channel *chan;
+ 	unsigned long maxdwell, scanend;
+ 	int scanning, scandone;
+ 
++	if (READ_ONCE(scan->om_chanset_stopping)||!vap)return;
++	ic=vap->iv_ic;ni=vap->iv_bss;
+ 	/* Make passive channels special */
+ 	int is_passive;
+ 	int is_obss = 0;
+@@ -1197,10 +1264,24 @@
+ 			/* Channel change done with 20MHz wide channels unless in 40MHz only mode */
+ 			if (!((ss->ss_flags & IEEE80211_SCAN_BGSCAN) &&
+ 					chan->ic_ieee == ic->ic_curchan->ic_ieee)) {
+-				if (!ic->ic_11n_40_only_mode)
++				unsigned om_type=om_chanset_kernel_scan_type(ic);
++				if(om_type){
++				    unsigned secondary=om_type==3?chan->ic_ieee+4:om_type==4?chan->ic_ieee-4:0;
++				    if((om_type>=2&&om_type<=4)&&(!isset(ic->ic_chan_active_40,chan->ic_ieee)||
++				        !secondary||secondary>=IEEE80211_CHAN_MAX||
++				        !isset(ic->ic_chan_active_40,secondary))){
++				        goto again; /* The channel fetch already advanced ss_next once. */
++				    }
++				}
++				if(om_type>=2&&om_type<=4){
++				    ic->ic_flags_ext &= ~IEEE80211_FEXT_SCAN_20;
++				    ic->ic_flags_ext |= IEEE80211_FEXT_SCAN_40;
++				    if(om_type==3||om_type==4)ieee80211_update_sec_chan_offset(chan,om_type==3?1:3);
++				}else if (!ic->ic_11n_40_only_mode)
+ 				      ic->ic_flags_ext |= IEEE80211_FEXT_SCAN_20;
+ 
+ 				change_channel(ic, chan);
++				if(om_type)ic->ic_flags_ext &= ~IEEE80211_FEXT_SCAN_40;
+ 
+ 				/* Clear the flag */
+ 				if (!ic->ic_11n_40_only_mode)
+@@ -1390,10 +1471,12 @@
+ {
+ 	struct scan_state *scan = from_timer(scan, timer, ss_probe_timer);
+ 	struct ieee80211_scan_state *ss = &scan->base;
+-	struct ieee80211vap *vap = ss->ss_vap;
+-	struct net_device *dev = vap->iv_dev;
++	struct ieee80211vap *vap = READ_ONCE(ss->ss_vap);
++	struct net_device *dev;
+ 	int i;
+ 
++	if(READ_ONCE(scan->om_chanset_stopping)||!vap)return;
++	dev=vap->iv_dev;
+ 	/*
+ 	 * Send a broadcast probe request followed by
+ 	 * any specified directed probe requests.
+@@ -2062,3 +2145,6 @@
+ 		}
+ 	}
+ }
++
++#include "openmitrastar_chanset_recovered.c"
++#include "openmitrastar_chanset_kernel.inc"
+--- a/source\wlan\ieee80211_scan_ap.c
++++ b/source\wlan\ieee80211_scan_ap.c
+@@ -63,20 +63,20 @@
+ 
+ 	WARN_ON_ONCE(in_irq());
+ 
+-	spin_lock(&as->asl_lock);
+ 	if (bh_disabled) {
+ 		local_bh_disable();
+ 	}
++	spin_lock(&as->asl_lock);
+ 	return bh_disabled;
+ }
+ 
+ static void
+ unlock_ap_list(struct ap_state *as, int bh_disabled)
+ {
++	spin_unlock(&as->asl_lock);
+ 	if (bh_disabled) {
+ 		local_bh_enable();
+ 	}
+-	spin_unlock(&as->asl_lock);
+ }
+ 
+ static void
+@@ -223,6 +223,7 @@
+ 	struct ap_state *as = ss->ss_priv;
+ 
+ 	if (as != NULL) {
++		IEEE80211_CANCEL_TQUEUE(&as->as_actiontq);
+ 		ap_flush_asl_table(ss);
+ 		FREE(as, M_SCANCACHE);
+ 	}
+@@ -569,6 +570,9 @@
+ 	int pri_inactive;
+ 	struct ieee80211_channel *ic_best_chan = NULL;
+ 
++	if(om_chanset_kernel_allowed(ss->ss_vap)&&om_chanset_kernel_active(ic))
++        return om_chanset_kernel_pick(ic);
++
+ 	/*
+ 	 * Convert CCA interference to CCI factor
+ 	 */
+@@ -975,7 +979,7 @@
+ 			se.se_chan = ic->ic_bsschan;
+ 			ret = 0;
+ 		} else {
+-			return 0;			/* restart scan */
++			return om_chanset_kernel_allowed(vap)?om_chanset_kernel_finished(ic):0; /* recovered scan queue */ /* restart scan */
+ 		}
+ 	} else {
+ 		struct ieee80211_channel *c;
+--- a/source\wlan\ieee80211_wireless.c
++++ b/source\wlan\ieee80211_wireless.c
+@@ -130,6 +130,7 @@
+ #define OM_OEM_PARAM_TX_AMSDU_11N 484
+ #define OM_OEM_PARAM_NAC_MODE 457
+ #define OM_OEM_PARAM_20_40_BSS_COEX 449
++#define OM_OEM_PARAM_BW_AUTOSEL 461
+ #define OM_OEM_PARAM_COC_MOVE_NDFS 491
+ #define OM_OEM_PARAM_FIX_LEGACY_RATE 490
+ #define OM_OEM_PARAM_NEIGHBOR_REPORT 492
+@@ -11428,6 +11429,9 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_BW_AUTOSEL:
++		return om_chanset_kernel_policy(ic,&value,1);
++
+ 	case OM_OEM_PARAM_20_40_BSS_COEX:
+ 		WRITE_ONCE(ic->om_20_40_bss_coex,(u8)!!value);
+ 		return 0;
+@@ -14081,6 +14085,9 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_BW_AUTOSEL:
++		return om_chanset_kernel_policy(ic,&param[0],0);
++
+ 	case OM_OEM_PARAM_NEIGHBOR_REPORT:
+ 		param[0] = ic->om_neighbor_report_flags & 1U;
+ 		break;
+@@ -21119,6 +21126,8 @@
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_neigh_repo" },
+ 	{ OM_OEM_PARAM_20_40_BSS_COEX,
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1,0,"20_40_bss_coex" },
++	{OM_OEM_PARAM_BW_AUTOSEL,IW_PRIV_TYPE_INT|IW_PRIV_SIZE_FIXED|1,0,"set_bw_autosel"},
++	{OM_OEM_PARAM_BW_AUTOSEL,0,IW_PRIV_TYPE_INT|IW_PRIV_SIZE_FIXED|1,"get_bw_autosel"},
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

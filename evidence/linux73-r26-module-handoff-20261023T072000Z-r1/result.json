@@ -1,0 +1,15 @@
+{
+  "status": "PASS_R26_22MODULE_NOLOAD_HANDOFF_ARCHIVE_VERIFIED",
+  "archive": {
+    "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r26-module-handoff-20261023T072000Z-r1/R26-Linux73-22modules-DEVELOPMENT-NOLOAD.tar.xz",
+    "bytes": 463728,
+    "sha256": "3161111682e875288da9dcdb8670f335534eb91059ad61ad0661ddfe3417e228"
+  },
+  "manifest_sha256": "cd148d6b14d1f7a2b6a44dd00f577fa7a97b65d4a0f864b01afb93fbf616fc75",
+  "module_count": 22,
+  "archive_members": 25,
+  "source_pair_result_sha256": "eb6d927c378c6a7bc52c1a2ce24b9359f7c4bb9166d496e9a0f72a1698007e75",
+  "all_archived_module_hashes_verified": true,
+  "hardware_accessed": false,
+  "load_authorized": false
+}

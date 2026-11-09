@@ -1,0 +1,9 @@
+{
+  "status": "PASS_ACTIVE_R3_SOURCE_EQUALS_VERIFIED_R4_95986_PINS",
+  "hardware_accessed": false,
+  "read_only": true,
+  "files_checked": 95986,
+  "differences": [],
+  "source_pins_sha256": "0d58bf0ab674fd2beb5a47f91e254800e17c5e05ced2ee42ae9b6e549d8ec671",
+  "active_input": "/home/rea/openmitrastar-aelita-source-validation-20261022T230200Z-r3/kernel-source"
+}

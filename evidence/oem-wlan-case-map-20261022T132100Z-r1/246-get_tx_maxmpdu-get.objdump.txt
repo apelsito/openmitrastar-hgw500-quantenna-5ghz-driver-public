@@ -1,0 +1,6 @@
+   38df0:	c203                	ld_s	r2,[sp,0xc]
+   38df2:	2294 0ad8           	add1	r2,r2,1579
+   38df6:	8a40                	ldb_s	r2,[r2,0]
+   38df8:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   38e00:	1a00 3080           	st	r2,[gp]
+   38e04:	020d 0040           	b	2572	;39810 <ieee80211_find_channel_by_ieee+0x2484>

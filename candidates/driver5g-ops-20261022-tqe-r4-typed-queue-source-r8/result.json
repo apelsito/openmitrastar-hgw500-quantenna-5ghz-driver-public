@@ -1,0 +1,22 @@
+{
+  "schema": "openmitrastar.tqe-r4-typedqueue-source/v1",
+  "status": "SOURCE_ONLY_TYPED_QUEUE_RETRY_PENDING_CAPACITY_AND_LIFECYCLE_FIXTURES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "marker_bound": 135,
+  "ledger_capacity_unchanged": 256,
+  "typed_tokens_persist_provider_owned": true,
+  "confirmed_CN_retries_via_original_queue": true,
+  "published_unknown_never_retried": true,
+  "global_credits_reserved_before_ec": true,
+  "files": {
+    "switch_tqe.c": "138254175e53b1fa380cec890bb310717f1590b57caaf1e7e55cfb2b86a71639",
+    "topaz_congest_queue.c": "659c422a7f0c97ddc4c7b08c31df8047ef8e040c97e6c863c719f260a9bb9e6b",
+    "openmitrastar_tqe_bounded_ownership.h": "24643904295eb281579f27a440763f6468963c052df3ef895a74430e669e4863"
+  },
+  "remaining_gates": [
+    "Perqueue/poolcapacitypolicyrefusal retainsowner; exactqueuecallbackfixture needed.",
+    "Actualqueuexmit/clear callbackinterleaving andmarker consumption fixtures.",
+    "Matchingheaders/prototypes allsourceusers compile closure andABI."
+  ]
+}

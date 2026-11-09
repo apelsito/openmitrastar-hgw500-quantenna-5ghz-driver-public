@@ -1,0 +1,38 @@
+{
+  "schema": "openmitrastar.neighbor-descriptor-r2-review/v1",
+  "status": "SOURCE_GUARD_CORRECT_WITH_NO_GO_GLOBAL_ARENA_BUDGET",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "candidate": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T152000Z-r2",
+  "improvements": [
+    "Case70checks20Bdescriptorroombeforepayloadwrite; guardsunsignedunderflow/outofarena currentoffset.",
+    "NoRRMpayloadwriteorcursormoveonlocalrefusal; beaconhostpointercleared onnoadvance.",
+    "Fixeddescriptorarenaandwirestructunchanged."
+  ],
+  "remaining_findings": [
+    {
+      "priority": 1,
+      "title": "LocalIE70admissiondoesnotreservewholebeaconbudget",
+      "detail": "IE70insertedbeforeotherbaselineIEs. Ifremainingarena20BadmittedbutlaterbaselineIEsrequire20B, originalallocatorpanics. Wholepath budget/worstcaseframe count plusdynamicCCA headinsertions stillneeded."
+    },
+    {
+      "priority": 2,
+      "title": "CapabilitybitmayoutliveRRMIErefusal",
+      "detail": "Capabilityword0x1000set beforeIE70admission; rejectiononlyclearsbo_om_rrm. MustrejectcapabilityacceptanceonnoRRMdescriptor,orpropagateexplicitfailurebeforeruntimepromotion."
+    },
+    {
+      "priority": 2,
+      "title": "Alignmentandrareparamnullremainexistingpreflightconstraints",
+      "detail": "Newguardboundedcurrentoffset butdoesnotprovealigneddescriptororcanonicalparam. Actualpreviousgatepreflightmustremainandcheckallocclosure."
+    }
+  ],
+  "limits": [
+    "NoARCmodulebuild,sharedheaderclosure,physical/clientorfull80211kactionclaim.",
+    "BSS/neighbor19sourcecountsarenotfinishedopsacceptance."
+  ],
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T152000Z-r2\\result.json": "c3f1d6752f77b20783fc76d23e75dcc676d6585a5699a9b1a3296f1deeff0aae",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T152000Z-r2\\source\\wlan\\ieee80211_beacon.c": "547716424ee81d87da52a925f5aa4c58aa80f40fca98db5418d627b03f2d4d4e",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T152000Z-r2\\source\\wlan\\ieee80211_beacon_desc.c": "b1033a98d8eb2dd32e6890a5b117834862084ced7915a66c25204cb512874062"
+  }
+}

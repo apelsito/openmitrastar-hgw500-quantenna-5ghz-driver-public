@@ -1,0 +1,14 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/copied-source-pins.json",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/copied-source-pins.json",
+      "bytes": 661,
+      "sha256": "89d1bc014fcf6c25f2cdbb8d43cb0b928087a302535b13f9083e9f1cc3b0c59a",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

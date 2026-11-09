@@ -1,0 +1,441 @@
+{
+  "schema": "openmitrastar.hgw5g-oem-ioctl-alias/v1",
+  "status": "SOURCE_ONLY_ALIAS_CANDIDATE_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "baseline_unchanged": true,
+  "baseline_source_sha256": "4f1dc82484e7e4828ef0d68dc5b4566dd2711832a4d06191127298ccc02bc805",
+  "candidate_source_sha256": "3bed348b48ae1da8a671a5ff1bb4f919fd773bf06c3d53fd130b5a4247433d96",
+  "header_sha256": "0b4bd14bbbde5c2f32add1f4b39a8a20a7a943eea9c7aea705bbdcdfb2048c33",
+  "inventory_sha256": "96d97a2d89c03b29fcff1eeb37f022dd8cd745b4ab66b7a5abbdf343c6d31f35",
+  "patch_sha256": "9986c9bc7cb122765b8b6c6d9b1f7e72f68bb45f4a9d6d75d0fc68d772585422",
+  "source_change": "Two table-only aliases; all executable source outside table is identical",
+  "missing_total": 44,
+  "aliases_prepared": 2,
+  "unresolved": 42,
+  "missing_mapping": [
+    {
+      "cmd": 331,
+      "name": "get_cca_fixed",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": "IEEE80211_PARAM_CCA_FIXED",
+      "decision": "NO_GO_GETTER_SEMANTICS_NOT_RECONSTRUCTED",
+      "reason": "Existing numeric enum and setter only; requested getter lacks dispatch case. Requires OEM instruction/ABI evidence."
+    },
+    {
+      "cmd": 246,
+      "name": "tx_maxmpdu",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": "IEEE80211_PARAM_TX_MAXMPDU",
+      "decision": "SOURCE_ONLY_ALIAS_TO_EXISTING_SET_GET_DISPATCH",
+      "reason": "TX_MAXMPDU has existing enum and set/get bodies; isolated table-only patch supplied. Full module qualification required."
+    },
+    {
+      "cmd": 246,
+      "name": "get_tx_maxmpdu",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": "IEEE80211_PARAM_TX_MAXMPDU",
+      "decision": "SOURCE_ONLY_ALIAS_TO_EXISTING_SET_GET_DISPATCH",
+      "reason": "TX_MAXMPDU has existing enum and set/get bodies; isolated table-only patch supplied. Full module qualification required."
+    },
+    {
+      "cmd": 275,
+      "name": "get_auto_cca_en",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": "IEEE80211_PARAM_AUTO_CCA_ENABLE",
+      "decision": "NO_GO_GETTER_SEMANTICS_NOT_RECONSTRUCTED",
+      "reason": "Existing numeric enum and setter only; requested getter lacks dispatch case. Requires OEM instruction/ABI evidence."
+    },
+    {
+      "cmd": 484,
+      "name": "txamsdu_11n",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 484,
+      "name": "get_txamsdu_11n",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 498,
+      "name": "set_dup_rts",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 498,
+      "name": "get_dup_rts",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 449,
+      "name": "20_40_bss_coex",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 450,
+      "name": "get_min_cac",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 457,
+      "name": "nac_mode",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 457,
+      "name": "get_nac_mode",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 451,
+      "name": "get_dev_mode",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 460,
+      "name": "set_max_bw",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 460,
+      "name": "get_max_bw",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 461,
+      "name": "set_bw_autosel",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 461,
+      "name": "get_bw_autosel",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 465,
+      "name": "ignr_icac_sel",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 467,
+      "name": "dfs_chan_avail",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 464,
+      "name": "check_cur_chan",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 466,
+      "name": "rbs_dfs_msr_cac",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 466,
+      "name": "g_rbsdfs_msrcac",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 468,
+      "name": "rbs_dfs_end_tx",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 468,
+      "name": "g_rbsdfs_end_tx",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 492,
+      "name": "neigh_repo",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 492,
+      "name": "get_neigh_repo",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 463,
+      "name": "set_dyn_sifs",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 478,
+      "name": "wea_cac_en",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 478,
+      "name": "get_wea_cac_en",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 481,
+      "name": "set_vopt",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 481,
+      "name": "get_vopt",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 483,
+      "name": "bbdf_war_en",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 483,
+      "name": "get_bbdfwar_en",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 491,
+      "name": "coc_mv_to_ndfs",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 491,
+      "name": "g_coc_mv_to_ndfs",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 493,
+      "name": "bss_tm",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 493,
+      "name": "get_bss_tm",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 494,
+      "name": "mdid",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 494,
+      "name": "get_mdid",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 495,
+      "name": "ft_over_ds",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 495,
+      "name": "get_ft_over_ds",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 496,
+      "name": "get_sretry_lmt",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 497,
+      "name": "get_lretry_lmt",
+      "set_args": 0,
+      "get_args": 18433,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    },
+    {
+      "cmd": 490,
+      "name": "fix_legacy_rate",
+      "set_args": 18433,
+      "get_args": 0,
+      "retained_enum": null,
+      "decision": "NO_GO_OEM_EXTENSION_ABI_NOT_IN_GPL_ENUM",
+      "reason": "Exact OEM table proves id/name/encoding. Corresponding 449+ enum and implementation are absent from retained GPL/port source."
+    }
+  ],
+  "additional_port_entries": [
+    [
+      17,
+      18433,
+      0,
+      "maccmd"
+    ],
+    [
+      170,
+      18433,
+      0,
+      "probe_rt"
+    ],
+    [
+      234,
+      18433,
+      0,
+      "auc_tx"
+    ]
+  ],
+  "controls_activation": "No source dispatch, mode, radar, RF, regulatory or runtime state changed",
+  "remaining_gates": [
+    "exact F365 WLAN baseline full-module equivalence",
+    "candidate compile and table recovery 568 entries",
+    "complete module/source delta qualification",
+    "physical owner gates are separate and UNRUN"
+  ]
+}

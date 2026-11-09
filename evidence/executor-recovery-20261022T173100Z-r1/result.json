@@ -1,0 +1,17 @@
+{
+  "status": "PASS_EXECUTOR_RECOVERED_AND_REAL_ARC_COMPILE_STARTED",
+  "action": "wsl --terminate REA-Linux followed by controlled wsl --shutdown and distribution restart",
+  "recovery_observations": {
+    "root_mount": "/dev/sdd ext4",
+    "root_used": "41GiB",
+    "root_available": "916GiB",
+    "passwd_readable": true,
+    "uid_rea": 1000,
+    "compiler": "ARC700 GCC15.2.0 build10504"
+  },
+  "hardware_accessed": false,
+  "config_modified": false,
+  "router_rebooted": false,
+  "verification": "Actual qdrv_wlan/ieee80211_beacon/ieee80211_beacon_desc compiled with selected overlays;18fullpair inprogress",
+  "earlier_failures_retained": true
+}

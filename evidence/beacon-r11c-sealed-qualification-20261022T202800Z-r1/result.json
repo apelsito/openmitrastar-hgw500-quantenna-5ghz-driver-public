@@ -1,0 +1,200 @@
+{
+  "status": "PASS_OFFLINE_R11C_COMPLETE_SEVEN_MODULE_APP_SYNC_SCOPE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "modules": [
+    {
+      "component": "qdrv",
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/a/qdrv/qdrv.ko",
+      "bytes": 684896,
+      "sha256": "637ce4985a391d43ad350dae130554135276f49ae0361887148d7a10c9985002"
+    },
+    {
+      "component": "wlan",
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/a/wlan/wlan.ko",
+      "bytes": 635072,
+      "sha256": "d2d9c9f79358be80a56e1a13f8f2da304a02f4be41d2d3344a2f5204f7f1b116"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/a/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15508,
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/a/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/a/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9772,
+      "sha256": "68286793f255848f2658afe7400cfb47a0177c6b508a212e5d26dede7c5fdb26"
+    },
+    {
+      "component": "wlan_tkip",
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/a/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13452,
+      "sha256": "ddbbee8fe20614dad0da988c3bd8342bac67b96f24ef53d7fcaccf08d3f90564"
+    },
+    {
+      "component": "wlan_xauth",
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/a/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    },
+    {
+      "component": "qdrv",
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/b/qdrv/qdrv.ko",
+      "bytes": 684896,
+      "sha256": "637ce4985a391d43ad350dae130554135276f49ae0361887148d7a10c9985002"
+    },
+    {
+      "component": "wlan",
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/b/wlan/wlan.ko",
+      "bytes": 635072,
+      "sha256": "d2d9c9f79358be80a56e1a13f8f2da304a02f4be41d2d3344a2f5204f7f1b116"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/b/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15508,
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/b/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/b/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9772,
+      "sha256": "68286793f255848f2658afe7400cfb47a0177c6b508a212e5d26dede7c5fdb26"
+    },
+    {
+      "component": "wlan_tkip",
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/b/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13452,
+      "sha256": "ddbbee8fe20614dad0da988c3bd8342bac67b96f24ef53d7fcaccf08d3f90564"
+    },
+    {
+      "component": "wlan_xauth",
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r11c-minimal-wlan-pair-20261022T202000Z-r1/b/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "buildpins_current_verified": 3036,
+  "review_pins": 3063,
+  "new_source_unit_compiles": 8,
+  "unchanged_WLAN_objects_reused_per_lane": 15,
+  "other_modules_exact_R10": 6,
+  "complete_WLAN_audit": {
+    "status": "PASS_R11C_COMPLETE_WLAN_RESIDUAL",
+    "changed_source_functions": [
+      "ieee80211_beacon_update",
+      "ieee80211_get_probereq",
+      "ieee80211_ioctl_getappiebuf",
+      "ieee80211_ioctl_setappiebuf",
+      "ieee80211_send_mgmt",
+      "ieee80211_vap_detach"
+    ],
+    "new_source_helper": "om_app_ie_copy",
+    "unchanged_functions": 954,
+    "exact_diagnostic_functions": [
+      "ieee80211_chan2mode",
+      "ieee80211_compile_action_measurement_11h",
+      "ieee80211_compile_action_measurement_11k",
+      "ieee80211_delete_wlanunit",
+      "ieee80211_get_chanflags",
+      "ieee80211_get_prichan_list_by_operating_class",
+      "ieee80211_ifattach",
+      "ieee80211com_media_change"
+    ],
+    "all_residual_RELA": 9366,
+    "old_symbols": 2271,
+    "new_symbols": 2272,
+    "anonymous_executable_bytes_checked": true,
+    "data_sections_exact": true
+  },
+  "actual_source_fixture_replays": [
+    {
+      "cases": 1034,
+      "lengths": 1025,
+      "BH_injection_phases": 6,
+      "reentrant_lock_windows": 0
+    },
+    {
+      "length_cases": 1025,
+      "writer_allocation_outside_lock": true,
+      "old_free_outside_lock": true,
+      "copy_length_data_coherent": true,
+      "allocation_failure_preserves_old": true
+    },
+    {
+      "reader_vs_replace_cases": 1,
+      "reader_vs_remove_cases": 1,
+      "old_buffer_not_freed_while_copying": true,
+      "whole_old_copy_observed": true
+    }
+  ],
+  "negative_cases": [
+    {
+      "case": "unrelated_function_byte",
+      "rejected": true,
+      "reason": "unrelated changed function ieee80211_chan2ieee"
+    },
+    {
+      "case": "old_symbol_attribute",
+      "rejected": true,
+      "reason": ""
+    },
+    {
+      "case": "allocated_data_byte",
+      "rejected": true,
+      "reason": "all allocated data .rodata"
+    },
+    {
+      "case": "anonymous_alignment_byte",
+      "rejected": true,
+      "reason": "('exact new padding', 'ieee80211_ioctl_getappiebuf')"
+    },
+    {
+      "case": "unrelated_RELA_addend",
+      "rejected": true,
+      "reason": "residual RELA [(('object', ('ieee80211_chan2ieee', '.text', 2, 0), 12), 27, ('string', 'invalid channel (NULL)\\n'))][(('object', ('ieee80211_chan2ieee', '.text', 2, 0), 12), 27, ('string', 'nvalid channel (NULL)\\n'))]"
+    }
+  ],
+  "old_comments_preserved": {
+    "source/wlan/ieee80211_wireless.c": 784,
+    "source/wlan/ieee80211_output.c": 334,
+    "source/wlan/ieee80211.c": 281,
+    "source/wlan/ieee80211_beacon.c": 70
+  },
+  "capability_count": 19,
+  "limits": [
+    "APP helpers/copy execute withhostfakevalidator/allocation/lock. AllIEencoders/framepathsnotexecuted.",
+    "TwoWindows thread interleavings testoldbufferretentionduringcopy; noactualkernelSMP/hardIRQ/callgraphreentrancy proof.",
+    "Sixchangedemittedsourcefunctionbodies are source/fixturebound, notOEMinstructionequivalence.",
+    "No genericVAPobjectlifetimeclaim; header/wire unchangedonly relative toqualifiedR10.",
+    "NoRFclienttrafficbootpersistence/recovery/release acceptance."
+  ]
+}

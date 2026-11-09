@@ -1,0 +1,24 @@
+{
+  "status": "SOURCE_ONLY461_SCALED_SCAN_FINAL_CHOICE_ADAPTERS_NO_REGISTRATION",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "recovered_table_rows": 130,
+  "inputs": {
+    "outputs\\rea\\chanset461-helpers-source-20261022T171200Z-r4\\result.json": "f21cac6be3c1299d4f04027122785b788fff94d9f68521fccb5e87c30f4d0d6e",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\prepare_hgw5g_chanset_scan_adapter.py": "e331921b33f73b51989010540a14b4dc112dac74a08dfaa396bfc5448295622e",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-oem-chanset-scan-metrics-20261022T173500Z-r1\\rea.json": "134208eb856af4a1603c8976fff25230acc5884e2a966de683202889ca311bc4",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-oem-chanset-pick-20261022T165100Z-r1\\rea.json": "34f6f50480a42577972d6ee082727b90856ffba8f4dfddaed41142fe9a377ea1"
+  },
+  "source_hashes": {
+    "openmitrastar_chanset_recovered.c": "ee37353da2033bfff87ffb5b58108317177c678558f590508b3e44850cf6bd81",
+    "openmitrastar_chanset_recovered.h": "9be240bb9724f6578a5fcad37c12bf2c6b0367063ba433eb52375a0862742631",
+    "openmitrastar_chanset_tables.h": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492",
+    "tables.json": "8d37396ee20d6902ea9c2948579c57b4e69c307d332904717aa4889ba6a98538"
+  },
+  "limits": [
+    "Shared-scan read, concurrency, F355 lifetime and real callbacks unconnected.",
+    "Pure selection consumes caller-owned candidates after metric/regulatory preparation.",
+    "No461 entry added, no runtime or RF/DFS acceptance.",
+    "No randomness callback here; normalization is pure math on a bounded local copy."
+  ]
+}

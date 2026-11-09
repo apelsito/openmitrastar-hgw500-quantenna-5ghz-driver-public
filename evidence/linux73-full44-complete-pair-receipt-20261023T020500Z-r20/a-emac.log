@@ -1,0 +1,49 @@
+{
+  "schema": "openmitrastar.emac73-new-abi-build/v1",
+  "status": "PASS_SINGLE_EXTERNAL_EMAC73_MODULE_BUILD_PENDING_PAIR_ABI_PHYSICAL",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "old_objects_reused": false,
+  "DT_included": false,
+  "commands": [
+    [
+      "make",
+      "-C",
+      "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source",
+      "O=/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-complete-pair-r20/a/kernel",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "M=/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-complete-pair-r20/a/emac/driver",
+      "-j4",
+      "modules"
+    ]
+  ],
+  "input_pins": {
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/components/ethernet-linux73/driver/f352_contract.h": "86ce6864caa11d06c127c36fdb8e9e5999c23cf61a7a07ede705b0f51d47b2a2",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/components/ethernet-linux73/driver/f352_pair.inc": "027ebd5da0cdc98499e58fbb79e8d883089ca49ae36ebe298140e1df69bbcbf3",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/components/ethernet-linux73/driver/Makefile": "5d9861a9b0791efba1d918a9b54e4038ffb1d405f3b992d928c6f775a96df9ca",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/components/ethernet-linux73/driver/qtn-topaz-emac-eth73.c": "9c72b137d60806fd1345e1410416a86688cdca813435b383f02f1999c425a8d1",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/components/ethernet-linux73/driver/topaz-ethernet.h": "b76ed50ef43801e20d91b5889445f19c54eb0758a445356133116a0d22f835d4",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/components/ethernet-linux73/board-overlay/arch/arc/kernel/intc-compact.c": "ce37e4da988159ecaa0b4d306244cd5805d875812ca3b7d93e90a0ff8184f7e5",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/components/ethernet-linux73/board-overlay/include/linux/soc/qtn/topaz-ethernet.h": "b76ed50ef43801e20d91b5889445f19c54eb0758a445356133116a0d22f835d4",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/components/ethernet-linux73/reference/ethernet-only-intc-compact.c": "2571db3b9d4d0d8b76727cdc1cb7ff5aa1ec9b48f9733b6e40481e61bd5e303e",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/components/ethernet-linux73/SOURCE_MANIFEST.json": "482c98300b0165000142ff505f6dbb0bc42f40c9f93a5550fcf115028ee18019",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/components/ethernet-linux73/build.py": "57eda81e6761f86b03dc78cdf4496a3c77338ecbe5a51e7d58c11deeca6de6c0",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source/Makefile": "2eb7b5d5c2ac15a28136607e086f82ebd13f0d3753acc89e463fed49109bc794",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-complete-pair-r20/a/kernel/.config": "d9b447192a10b8ac7f758f8b659610d23eceaa250a09010a3f6770d1ca9ba56a",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-complete-pair-r20/a/kernel/Module.symvers": "b3bdc2fecfad7321cd5d03454ea47d2341ef43ffc5e3f091de4c78c0d2726950",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-gcc": "3918a0da3c9f2cfde359f6fed1d0df19e737438dfd2cc60edae63f2dcbf14263",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source/include/linux/skbuff.h": "5edbedd91f41c81e7aad995511001db1505b062d81aa0d230b8953ce6eed44a4",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source/include/linux/netdevice.h": "b149a958c75f17e685e18f9bbf6969959eb8d67b140aafad19012fe2fec71f7d"
+  },
+  "limits": [
+    "All kernel/base/QDRV modules must already be freshly rebuilt against this exact config/symvers.",
+    "This only compiles external EMAC; it does not prepare board source or install hardware."
+  ],
+  "module": {
+    "path": "driver/qtn-topaz-emac-eth73.ko",
+    "bytes": 27828,
+    "sha256": "a4c7b27582ec25cfa2a12238bfdcd27189e5e0d95569b3bfe762df0ccea04868"
+  },
+  "imports_resolved": 80
+}

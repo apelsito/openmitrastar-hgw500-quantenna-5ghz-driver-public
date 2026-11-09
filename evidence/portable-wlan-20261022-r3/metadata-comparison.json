@@ -1,0 +1,57 @@
+{
+  "parent": {
+    "license": [
+      "Dual BSD/GPL"
+    ],
+    "version": [
+      "0.9.3.3"
+    ],
+    "description": [
+      "802.11 wireless LAN protocol support"
+    ],
+    "author": [
+      "Errno Consulting, Sam Leffler"
+    ],
+    "srcversion": [
+      "C90B1F07BF94C284D7647F7"
+    ],
+    "depends": [
+      "qtn_platform_support,switch_tqe,qtn_pm_qos_compat,topaz_congest_queue"
+    ],
+    "name": [
+      "wlan"
+    ],
+    "vermagic": [
+      "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+    ]
+  },
+  "rebuilt": {
+    "license": [
+      "Dual BSD/GPL"
+    ],
+    "version": [
+      "0.9.3.3"
+    ],
+    "description": [
+      "802.11 wireless LAN protocol support"
+    ],
+    "author": [
+      "Errno Consulting, Sam Leffler"
+    ],
+    "srcversion": [
+      "9A233B0BD384175810C9191"
+    ],
+    "depends": [
+      "qtn_platform_support,switch_tqe,qtn_pm_qos_compat,topaz_congest_queue"
+    ],
+    "name": [
+      "wlan"
+    ],
+    "vermagic": [
+      "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+    ]
+  },
+  "delta": [
+    "srcversion"
+  ]
+}

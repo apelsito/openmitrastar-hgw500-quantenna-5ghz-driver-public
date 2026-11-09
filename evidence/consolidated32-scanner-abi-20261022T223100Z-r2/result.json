@@ -1,0 +1,343 @@
+{
+  "status": "PASS_ARC_CONSOLIDATED32_PUBLIC_HOST_PREFIX_AND_PRIVATE_SCANNER_APPEND",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "rows": [
+    {
+      "lane": "old",
+      "fields": {
+        "ieee80211_scan_state": {
+          "ss_vap": {
+            "offset": 0,
+            "size": 4
+          },
+          "ss_ops": {
+            "offset": 4,
+            "size": 4
+          },
+          "ss_priv": {
+            "offset": 8,
+            "size": 4
+          },
+          "ss_scs_priv": {
+            "offset": 12,
+            "size": 4
+          },
+          "ss_flags": {
+            "offset": 16,
+            "size": 2
+          },
+          "ss_pick_flags": {
+            "offset": 18,
+            "size": 2
+          },
+          "ss_nssid": {
+            "offset": 20,
+            "size": 1
+          },
+          "ss_ssid": {
+            "offset": 24,
+            "size": 36
+          },
+          "ss_chans": {
+            "offset": 60,
+            "size": 1020
+          },
+          "ss_next": {
+            "offset": 1080,
+            "size": 2
+          },
+          "ss_last": {
+            "offset": 1082,
+            "size": 2
+          },
+          "ss_mindwell": {
+            "offset": 1084,
+            "size": 4
+          },
+          "ss_mindwell_passive": {
+            "offset": 1088,
+            "size": 4
+          },
+          "ss_maxdwell": {
+            "offset": 1092,
+            "size": 4
+          },
+          "ss_maxdwell_passive": {
+            "offset": 1096,
+            "size": 4
+          },
+          "ss_duration": {
+            "offset": 1100,
+            "size": 4
+          },
+          "is_scan_valid": {
+            "offset": 1104,
+            "size": 1
+          }
+        },
+        "scan_state": {
+          "base": {
+            "offset": 0,
+            "size": 1108
+          },
+          "ss_iflags": {
+            "offset": 1108,
+            "size": 4
+          },
+          "ss_chanmindwell": {
+            "offset": 1112,
+            "size": 4
+          },
+          "ss_scanend": {
+            "offset": 1116,
+            "size": 4
+          },
+          "ss_duration": {
+            "offset": 1120,
+            "size": 4
+          },
+          "ss_pwrsav": {
+            "offset": 1124,
+            "size": 24
+          },
+          "ss_scan_timer": {
+            "offset": 1148,
+            "size": 20
+          },
+          "ss_probe_timer": {
+            "offset": 1168,
+            "size": 20
+          }
+        }
+      },
+      "sizes": {
+        "ieee80211_scan_state": 1108,
+        "scan_state": 1188,
+        "ieee80211com": 22680,
+        "ieee80211vap": 3084,
+        "qdrv_wlan": 31624,
+        "qdrv_vap": 3544,
+        "ieee80211_beacon_offsets": 68,
+        "ieee80211_beacon_param_t": 1028,
+        "host_ioctl": 32,
+        "qtn_setparams_args": 76,
+        "qtn_beacon_args": 64,
+        "beacon_shared_ie_t": 20
+      },
+      "extensions": {},
+      "object_sha256": "1d2653a2c0d3179fd45ab1c1278b4b46dda1222a1a1746910941c8bf20af3e67"
+    },
+    {
+      "lane": "new",
+      "fields": {
+        "ieee80211_scan_state": {
+          "ss_vap": {
+            "offset": 0,
+            "size": 4
+          },
+          "ss_ops": {
+            "offset": 4,
+            "size": 4
+          },
+          "ss_priv": {
+            "offset": 8,
+            "size": 4
+          },
+          "ss_scs_priv": {
+            "offset": 12,
+            "size": 4
+          },
+          "ss_flags": {
+            "offset": 16,
+            "size": 2
+          },
+          "ss_pick_flags": {
+            "offset": 18,
+            "size": 2
+          },
+          "ss_nssid": {
+            "offset": 20,
+            "size": 1
+          },
+          "ss_ssid": {
+            "offset": 24,
+            "size": 36
+          },
+          "ss_chans": {
+            "offset": 60,
+            "size": 1020
+          },
+          "ss_next": {
+            "offset": 1080,
+            "size": 2
+          },
+          "ss_last": {
+            "offset": 1082,
+            "size": 2
+          },
+          "ss_mindwell": {
+            "offset": 1084,
+            "size": 4
+          },
+          "ss_mindwell_passive": {
+            "offset": 1088,
+            "size": 4
+          },
+          "ss_maxdwell": {
+            "offset": 1092,
+            "size": 4
+          },
+          "ss_maxdwell_passive": {
+            "offset": 1096,
+            "size": 4
+          },
+          "ss_duration": {
+            "offset": 1100,
+            "size": 4
+          },
+          "is_scan_valid": {
+            "offset": 1104,
+            "size": 1
+          }
+        },
+        "scan_state": {
+          "base": {
+            "offset": 0,
+            "size": 1108
+          },
+          "ss_iflags": {
+            "offset": 1108,
+            "size": 4
+          },
+          "ss_chanmindwell": {
+            "offset": 1112,
+            "size": 4
+          },
+          "ss_scanend": {
+            "offset": 1116,
+            "size": 4
+          },
+          "ss_duration": {
+            "offset": 1120,
+            "size": 4
+          },
+          "ss_pwrsav": {
+            "offset": 1124,
+            "size": 24
+          },
+          "ss_scan_timer": {
+            "offset": 1148,
+            "size": 20
+          },
+          "ss_probe_timer": {
+            "offset": 1168,
+            "size": 20
+          }
+        }
+      },
+      "sizes": {
+        "ieee80211_scan_state": 1108,
+        "scan_state": 14784,
+        "ieee80211com": 22680,
+        "ieee80211vap": 3084,
+        "qdrv_wlan": 31624,
+        "qdrv_vap": 3544,
+        "ieee80211_beacon_offsets": 68,
+        "ieee80211_beacon_param_t": 1028,
+        "host_ioctl": 32,
+        "qtn_setparams_args": 76,
+        "qtn_beacon_args": 64,
+        "beacon_shared_ie_t": 20
+      },
+      "extensions": {
+        "om_chanset_lock": {
+          "offset": 1188,
+          "size": 0
+        },
+        "om_chanset_stopping": {
+          "offset": 1188,
+          "size": 1
+        },
+        "om_chanset_policy": {
+          "offset": 1189,
+          "size": 1
+        },
+        "om_chanset_owner": {
+          "offset": 1192,
+          "size": 4
+        },
+        "om_chanset": {
+          "offset": 1196,
+          "size": 7932
+        },
+        "om_observations": {
+          "offset": 9128,
+          "size": 4080
+        },
+        "om_channels": {
+          "offset": 13208,
+          "size": 1568
+        },
+        "om_scan_detaching": {
+          "offset": 14776,
+          "size": 1
+        },
+        "om_chanset_last_error": {
+          "offset": 14780,
+          "size": 4
+        }
+      },
+      "object_sha256": "8ce2a29704801cc51b79618eb13bb2ec0c380dc0f248710f72cb6058f5c187f3"
+    }
+  ],
+  "old_scanner_members": {
+    "ieee80211_scan_state": 17,
+    "scan_state": 8
+  },
+  "new_private_extensions": {
+    "om_chanset_lock": {
+      "offset": 1188,
+      "size": 0
+    },
+    "om_chanset_stopping": {
+      "offset": 1188,
+      "size": 1
+    },
+    "om_chanset_policy": {
+      "offset": 1189,
+      "size": 1
+    },
+    "om_chanset_owner": {
+      "offset": 1192,
+      "size": 4
+    },
+    "om_chanset": {
+      "offset": 1196,
+      "size": 7932
+    },
+    "om_observations": {
+      "offset": 9128,
+      "size": 4080
+    },
+    "om_channels": {
+      "offset": 13208,
+      "size": 1568
+    },
+    "om_scan_detaching": {
+      "offset": 14776,
+      "size": 1
+    },
+    "om_chanset_last_error": {
+      "offset": 14780,
+      "size": 4
+    }
+  },
+  "dependency_pins": 902,
+  "conditional_omissions": {},
+  "limits": [
+    "Actualprivateallocator sizeof(scan_state) mustusecoherentnewscanunit; otheroriginalprivatefields preserved.",
+    "Usedcompilerdepshashedpostcompile thenrechecked; actualsource/headerinitialpins verified.",
+    "No module/RTNL/BHlifetime/hardwareacceptance."
+  ]
+}

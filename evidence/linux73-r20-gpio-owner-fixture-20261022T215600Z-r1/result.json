@@ -1,0 +1,14 @@
+{
+  "status": "PASS_R20_ACTUAL_GPIO_MODULE_OWNER_REGISTRATION_REFUSAL_AND_EXIT_CONTROLLER",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "actual_GPIO_init_exit_cases": 4,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_linux73_r20_gpio_owner.py": "b26e5760421d489220d81c29b61f0fed72b2d56165cb92c39ead3299daac3630",
+    "outputs\\rea\\linux73-full44-candidate-20261023T010500Z-r20\\source\\platform\\ruby\\gpio.c": "9e84ae67d476e5c9050ab008f5f463a2ddbff647b80992efcf983d78ec4f8c04",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+    "outputs\\rea\\linux73-r20-gpio-owner-fixture-20261022T215600Z-r1\\actual-gpio-init-exit.c": "7d9e701914ffec4f7b794e9306db598a490d12e2bcd9317d76db190ba32b4109",
+    "outputs\\rea\\linux73-r20-gpio-owner-fixture-20261022T215600Z-r1\\fixture.exe": "eb95f84f0cd654befa14dcfd2ae89c4b5e04113fd8a5cb223af286bd05a24d12"
+  },
+  "limits": "Actualinit/exit bodies; fakegpiolibregistry noMMIO. Ownerselection/errorpropagation/exit checked; kernelGPIOrequest/liveunloadnotexecuted."
+}

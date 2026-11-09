@@ -1,0 +1,31 @@
+{
+  "status": "PASS_R24_ACTUAL_REQUEST_SHA256_WRITER_PREFLIGHT_INSTALL_END_RELEASE_PIPELINE_HOST_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "full_load_pipeline_cases": 273,
+  "exact_carriers": 3,
+  "hash_backend": "OpenSSL SHA256 host",
+  "last_segment_overlap_before_first_map": true,
+  "OpenSSL_version": "3.0.13",
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/test_linux73_r24_load_pipeline.py": "032c080f80a10a4ec45667a235300c8215febcf7e75fe133d6d61181984113ac",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-carrier-writer-candidate-20261023T053000Z-r24/source/qdrv/qdrv_fw.c": "baa34c67323422362c15461194ef1a8aa348d4c1cabf471185b6e90143c2bb1b",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-carrier-writer-candidate-20261023T053000Z-r24/source/qdrv/om73_fw_profiles.h": "301a427f90314c089dd2cf811745567cf7be28189e2d66c86c0bd934e235e30f",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/actual-r24-load.c": "dc278c5076465aeef7e12b3ad41b1f643bf80e4cc45e7e6ad14595b987a4301d",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-full-loader-pipeline-fixture-20261023T054000Z-r1/fixture": "8210abc9309eddf5b858f000b96f619121a0886693d4fd7e88ca4c0b0b548865",
+    "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/qtn_driver.qtn_ruby.0.bin": "71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4",
+    "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/auc_driver.nomu.0.bin": "c10018f4fe384d753a800bbbcd5ef3c85c568d0852c221009063282d30fd85f6",
+    "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/rdsp_driver.0.bin": "87c882910d87cd29ba2004c4154e9240291aaad6aedb0ff4d90c7a5570be79fd"
+  },
+  "limits": [
+    "ActualR24qdrv_fw_load+preflight/install/profilefunctions; hostOpenSSLrealSHA256. Request/release/poollease/address/maps/CCM arefakes.",
+    "LastcheckedsegmentorBSSoverlaprefusesbeforefirstmap; modifiedwholebytes/header/metadata/CPU/size/DSPtailrejectathash.",
+    "Begin/endfailureentryunchanged; endfailurefake retainslease asactualinvalidtokenwould. Mapfailureafterearlierwritesdoesnotrollbackphysicalfirmware.",
+    "Actualpoolconcurrency/currenttasktokenbehavior notprovedbyfakes; providerfixture/source reviewseparate.",
+    "Noactualfirmwareload/MMIO/corestart/RF/SRAMregistration orclearsram/hal_resetwritercoverageclaim."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "status": "SOURCE_REVIEW_PASS_FULL_MODULE_BUILD_BLOCKED_EXECUTOR_IO",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "source_entries": 18,
+  "functional_source_ops": 16,
+  "faithful_unsupported": 2,
+  "remaining_table_gaps": 26,
+  "host_fixture_cases": 1048576,
+  "source_checks": {
+    "private_tail_append_u8_after_existing_bool": true,
+    "u32_wire_transport_not_truncated_by_new_local_state": true,
+    "reported_state_is_low8": true,
+    "all_qdrv_header_users_require_rebuild": true
+  },
+  "blocker": {
+    "single_read_only_check": "wsl.exe -d REA-Linux -e /bin/true",
+    "exit_code": 1,
+    "errors": [
+      "getpwnam(rea) failed5",
+      "getpwuid(1000) failed5",
+      "fopen(/etc/default/locale) failed5",
+      "getpwuid(0) failed5",
+      "I/O error UtilInitGroups",
+      "Create process failed"
+    ],
+    "compilation_not_started": true,
+    "no_reset_or_retry": true
+  },
+  "limits": [
+    "Private newoffset30553 andunchangedstructsize30556 are layout expectation only until actualARCwitness",
+    "Hostfixture uses actualextractedcases plus substitutedtransport; doesnotproveMuCtiming/acceptance",
+    "Complete34QDRV+19WLAN recompilationtwice andwhole-deltaqualification required before promotion"
+  ]
+}

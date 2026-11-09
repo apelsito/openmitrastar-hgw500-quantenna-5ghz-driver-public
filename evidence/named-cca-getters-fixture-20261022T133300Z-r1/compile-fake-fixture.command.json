@@ -1,0 +1,10 @@
+[
+  "gcc",
+  "-std=c11",
+  "-O1",
+  "-g",
+  "-fsanitize=address,undefined",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/named-cca-getters-candidate-20261022T133200Z-r1/actual-cca-getters-fixture.c",
+  "-o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/named-cca-getters-fixture-20261022T133300Z-r1/fixture"
+]

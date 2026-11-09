@@ -1,0 +1,109 @@
+{
+  "schema": "openmitrastar.sram-source-bound-reservation-proposal/v1",
+  "enabled": 0,
+  "reserved_exclusive": 0,
+  "complete_occupancy_map": 0,
+  "cpu_base": "0x88000000",
+  "bus_base": "0x80000000",
+  "uncached_base": "0x60000000",
+  "total_bytes": "0x80000",
+  "proposed_start": "0x12000",
+  "proposed_end": "0x20000",
+  "kernel_PT_LOAD_SRAM_overlap_bytes": 0,
+  "selected_firmware_PT_LOAD_overlap_bytes": 0,
+  "selected_host_fixedranges_overlap_bytes": 0,
+  "candidate_sources_sha256": "d57b548a0a3cb6ba5ff17198ac825ccd3fe2fc649e648e878dc2fff5c967d718",
+  "carrier_hashes": {
+    "MuC": "71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4",
+    "AuC_nomU": "c10018f4fe384d753a800bbbcd5ef3c85c568d0852c221009063282d30fd85f6",
+    "DSP": "87c882910d87cd29ba2004c4154e9240291aaad6aedb0ff4d90c7a5570be79fd"
+  },
+  "kernel_sha256": "335f792bc0e82d112db27c3b39c757ea1190df276154d44e23dc218a74b2e16f",
+  "known_occupied": [
+    {
+      "mapping": "BUS_OR_MUC",
+      "start": 131072,
+      "end": 196208,
+      "owner": "MuC_PT_LOAD_2",
+      "evidence": "EXACT_SELECTED_CARRIER_LOAD_MEMSZ"
+    },
+    {
+      "mapping": "BUS_OR_MUC",
+      "start": 196608,
+      "end": 235104,
+      "owner": "MuC_PT_LOAD_4",
+      "evidence": "EXACT_SELECTED_CARRIER_LOAD_MEMSZ"
+    },
+    {
+      "mapping": "BUS_OR_MUC",
+      "start": 238528,
+      "end": 257504,
+      "owner": "MuC_PT_LOAD_5",
+      "evidence": "EXACT_SELECTED_CARRIER_LOAD_MEMSZ"
+    },
+    {
+      "mapping": "BUS_OR_MUC",
+      "start": 61440,
+      "end": 68032,
+      "owner": "MuC_PT_LOAD_6",
+      "evidence": "EXACT_SELECTED_CARRIER_LOAD_MEMSZ"
+    },
+    {
+      "mapping": "BUS_OR_MUC",
+      "start": 257984,
+      "end": 262080,
+      "owner": "MuC_PT_LOAD_7",
+      "evidence": "EXACT_SELECTED_CARRIER_LOAD_MEMSZ"
+    },
+    {
+      "mapping": "BUS_OR_MUC",
+      "start": 262144,
+      "end": 498688,
+      "owner": "AuC_nomU_PT_LOAD_2",
+      "evidence": "EXACT_SELECTED_CARRIER_LOAD_MEMSZ"
+    },
+    {
+      "owner": "HBM_EMAC_pointer_pool",
+      "start": 0,
+      "end": 32768,
+      "evidence": "HBMfixedpointerwrites+ARCmacroprofile"
+    },
+    {
+      "owner": "HBM_WMAC_pointer_pool",
+      "start": 32768,
+      "end": 40960,
+      "evidence": "HBMfixedpointerwrites+ARCmacroprofile"
+    },
+    {
+      "owner": "HBM_TXDONE_pointer_pool",
+      "start": 40960,
+      "end": 57344,
+      "evidence": "HBMfixedpointerwrites+ARCmacroprofile"
+    },
+    {
+      "owner": "FWT_profile_reserved",
+      "start": 57344,
+      "end": 61440,
+      "evidence": "Headerreservationnotclaimedallruntimewrites"
+    },
+    {
+      "owner": "MuC_extra_profile_reserved",
+      "start": 61440,
+      "end": 69632,
+      "evidence": "HeaderreservationincludesMuCloadf000-109c0"
+    },
+    {
+      "owner": "AuCclear_mem",
+      "start": 262144,
+      "end": 458752,
+      "evidence": "qdrv_auc.c exactclearcall"
+    }
+  ],
+  "pending": [
+    "Reservationmustbindallocatorlifetimebeforehal_reset/SRAM_RESETorclearsramandallindirectfirmware/runtimewrites",
+    "AuCnomuoccupies70000-79c00 despiteGPLMUqmatrix70000-80000; fw_no_mu1selectedreference onlydoesnotproveMCuDSPneverwriteqmatrix",
+    "Ensureimmutable7.3carrierselectionusesexactretainedhashes/flags andnotjustoldF365selection",
+    "Actualexclusivekernelphysicalresource mapping/cachecoherence contract andvalidSPRAMaddress profile"
+  ],
+  "promotion": "NO_GO_PROPOSAL_DEFAULT_DISABLED_NOT_HEAP_PROVIDER"
+}

@@ -1,0 +1,135 @@
+{
+  "files": [
+    {
+      "path": "candidates/driver5g-ops-20261022-tqe-r4-typed-queue-source-r8/openmitrastar_tqe_bounded_ownership.h",
+      "bytes": 2002,
+      "sha256": "24643904295eb281579f27a440763f6468963c052df3ef895a74430e669e4863"
+    },
+    {
+      "path": "candidates/driver5g-ops-20261022-tqe-r4-typed-queue-source-r8/result.json",
+      "bytes": 1059,
+      "sha256": "475e40c720a65e55ec99200e7656b743dab4a87d460958eff3099399ff728cd8"
+    },
+    {
+      "path": "candidates/driver5g-ops-20261022-tqe-r4-typed-queue-source-r8/switch_tqe.c",
+      "bytes": 54731,
+      "sha256": "138254175e53b1fa380cec890bb310717f1590b57caaf1e7e55cfb2b86a71639"
+    },
+    {
+      "path": "candidates/driver5g-ops-20261022-tqe-r4-typed-queue-source-r8/topaz_congest_queue.c",
+      "bytes": 27476,
+      "sha256": "659c422a7f0c97ddc4c7b08c31df8047ef8e040c97e6c863c719f260a9bb9e6b"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-typed-queue-build-r5/baseline-switch_tqe.json",
+      "bytes": 9204,
+      "sha256": "627623f88104d728e20d88ea84e466aeaac17ebf8a81c376c179ea4aebf9c4fb"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-typed-queue-build-r5/baseline-topaz_congest_queue.json",
+      "bytes": 8219,
+      "sha256": "28977f938198933090e802bfdf1ff1534a351054cf23c465633b288ef33515bb"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-typed-queue-build-r5/input-pins.json",
+      "bytes": 190310,
+      "sha256": "05e4ace84ee4a4458bfac7b6a96ba86f9b74c4ac80c6daed06d4c409636d48e7"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-typed-queue-build-r5/result.json",
+      "bytes": 4794,
+      "sha256": "7b76a8f484851066687283fe5387f9e772cf4f6f6c34fbcecffee65fe57f3a4e"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-typed-queue-fixture-r10/actual-typed-queue.c",
+      "bytes": 23210,
+      "sha256": "82192b8f073aaeaf931af60ee76e746d19a772d8632f34a63dbb78c311b4d96a"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-typed-queue-fixture-r10/result.json",
+      "bytes": 582,
+      "sha256": "a2be1689f8fa4c9637a9377a123c727407e7f6919db16894cb98690c946e8e0a"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-initial-retry-fixture-r5/actual-enqueue-retry.c",
+      "bytes": 32299,
+      "sha256": "45f246eedb2aa4efed34d23ecbe96647a740bb58069bec7bc5c43cc2581f8503"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-initial-retry-fixture-r5/result.json",
+      "bytes": 523,
+      "sha256": "de9bfecb3cc980d0e9811723165024c705369b8080ba1f3270d12bad6a2b3fac"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-typed-queue-global-r5/complete-audit.json",
+      "bytes": 1384,
+      "sha256": "d08aa417d4181695d5d01b0c0187b3fe7e626c611789d1ee785d783eab0ff9b2"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-typed-queue-global-r5/input-pins.json",
+      "bytes": 193743,
+      "sha256": "3c0271e19a2b358fb915cc082d863f7b6e897b7148e5e8425c7601c4c4544628"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-typed-queue-global-r5/result.json",
+      "bytes": 4089,
+      "sha256": "07108bf1d48e6064eb6be638c84780b920a72bed54a73dd652eb31399661d8bc"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-global-negative-r1/result.json",
+      "bytes": 1658,
+      "sha256": "fdca0ba6ded9a2d6380bdb8f0f7ceb83d8fca09bb01dbe6037e391614a7c1b18"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r4-final-reviewed-delivery-r1/result.json",
+      "bytes": 3104,
+      "sha256": "46d431958199716a541e8436c7f3600b087b4804254d7157cafdb28c1d208fc2"
+    },
+    {
+      "path": "evidence/tqe-r4-source-r8-independent-final-review-20261022T210600Z-r1/actual-linux-pin-review.json",
+      "bytes": 682,
+      "sha256": "4a00a0a2ce8a0bfcbbb0be8fafdbdec85fb172b8a6a80f892646eb49df9c6e2c"
+    },
+    {
+      "path": "evidence/tqe-r4-source-r8-independent-final-review-20261022T210600Z-r1/checkpins.py",
+      "bytes": 777,
+      "sha256": "eaa5b42e4395b508d6e6ac097f640efb25b20400491b1f7dfe075cd7b2a3ef90"
+    },
+    {
+      "path": "evidence/tqe-r4-source-r8-independent-final-review-20261022T210600Z-r1/inspect.py",
+      "bytes": 1485,
+      "sha256": "3c20c6f5cb3c24068cdfd27fba88b87a3ca34b5b2aa1f23c4a628b691a319f11"
+    },
+    {
+      "path": "evidence/tqe-r4-source-r8-independent-final-review-20261022T210600Z-r1/result.json",
+      "bytes": 11228,
+      "sha256": "9e19ed54b11ebbe8bba300bf454d1dada0a48b366ab3a4f044f91e22796cad8b"
+    },
+    {
+      "path": "evidence/tqe-r4-source-r8-independent-final-review-20261022T210600Z-r1/seal.py",
+      "bytes": 5248,
+      "sha256": "348a4110ee42fbe44e1ff8f3611dc3177186b1c22c0f778def325aa5d8fd9038"
+    },
+    {
+      "path": "evidence/tqe-r4-source-r8-independent-final-review-20261022T210600Z-r1/symbol-layout-review.json",
+      "bytes": 31555,
+      "sha256": "557c897f63e005643680455b8abe0e75bdaa88c7f74dddb94d138a0033151e65"
+    },
+    {
+      "path": "evidence/tqe-r4-source-r8-independent-atomic-commit-20261022T205700Z-r1/actual-atomic-success-dequeue.c",
+      "bytes": 2325,
+      "sha256": "3699f7fe6a629022f5a4fcb92d4144f2e51afe3691166c69b14bd036e30ad07a"
+    },
+    {
+      "path": "evidence/tqe-r4-source-r8-independent-atomic-commit-20261022T205700Z-r1/result.json",
+      "bytes": 549,
+      "sha256": "1c1dd308858ea179942df52cdf12d6426f049222cff3669af0af352b0e41f7b7"
+    },
+    {
+      "path": "evidence/tqe-r4-source-r8-independent-atomic-commit-20261022T205700Z-r1/verify.py",
+      "bytes": 3146,
+      "sha256": "b4704f430db4a5e9d422cdeafe37f2e80b6943ed4ead4e4c0f12a07130f73ca7"
+    }
+  ],
+  "hardware_accessed": false
+}

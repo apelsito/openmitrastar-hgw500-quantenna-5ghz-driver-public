@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ACTUAL_TYPED_BATCH_CATALOG_CAPACITY_SOURCE_ONLY",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 35212,
+  "ledger_not_enlarged": 256,
+  "max_outputs_per_payload": 135,
+  "pins_before_batch_ownership": true,
+  "normal_nestedbankwriters_refused": true,
+  "slot_reserved_before_ec_mutation": true,
+  "partial_batch_quarantine_single_owner_all_refs": true,
+  "fixture_sha256": "348f17361ce0be2e0dbaf69a5773e7c3fbdad4b5c631e3b2b70e0313a89e3d2c",
+  "limits": "ProvidercapacityAPIonly; multicastVLANpolicy/congestion/4writer/MMIOfixture+complete modulebuild pending."
+}

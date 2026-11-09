@@ -1,0 +1,43 @@
+{
+  "hardware_accessed": false,
+  "router_installed": false,
+  "http_listener_created": false,
+  "browser_errors": [],
+  "plaintext_http_rejected": true,
+  "status": "PASS_LOOPBACK_HTTPS_AND_BROWSER",
+  "assets": {
+    "index.html": {
+      "bytes": 1345,
+      "sha256": "f23be0fdffe786aed5ddc1f4acfce08122f9651fe7dcb9176336894ea43d53dd",
+      "tls_verified": true
+    },
+    "app.js": {
+      "bytes": 6488,
+      "sha256": "89f3980cd06f9a9e6e192969e6ac6850f4228954aa8f23d3c5669d38bebca3c7",
+      "tls_verified": true
+    },
+    "style.css": {
+      "bytes": 2335,
+      "sha256": "e9e9a0b4011132ab79349e730562bcbb5482fb8651d23fec8e94dd830b0a0092",
+      "tls_verified": true
+    }
+  },
+  "browser": [
+    {
+      "notes_persisted": true,
+      "snake_canvas": true,
+      "windows_opened": 3,
+      "errors": [],
+      "requests": [
+        "https://127.0.0.1:51681/index.html",
+        "https://127.0.0.1:51681/style.css",
+        "https://127.0.0.1:51681/app.js"
+      ]
+    },
+    {
+      "http_client_guard": true
+    }
+  ],
+  "shell_bytes": 10168,
+  "temporary_test_key_removed": true
+}

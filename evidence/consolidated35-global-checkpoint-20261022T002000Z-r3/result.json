@@ -1,0 +1,258 @@
+{
+  "status": "PASS_OFFLINE_CONSOLIDATED35_R3_MDID_FT_RECORDS_PAIRED_MODULE_GLOBAL_CHECKPOINT",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "offline_original_records_reconstructed": 35,
+  "remaining_original_records": 9,
+  "private_table_records": 601,
+  "faithful_unsupported_inherited": 2,
+  "fullfunctional_driver_operations": null,
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/mdid35-r3-pair-20261022T001200Z-r3/a-joint/qdrv/qdrv.ko",
+      "bytes": 684944,
+      "sha256": "9947a23fb9c3a9f66c6747346af52bc0b16b2527c4b1f3fea4b4cff1be7764f5"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/mdid35-r3-pair-20261022T001200Z-r3/a-joint/wlan/wlan.ko",
+      "bytes": 660864,
+      "sha256": "13596fc258f66033290ba542105585574495e5a35aae71e03e9b7fe20205b0d9"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/mdid35-r3-pair-20261022T001200Z-r3/a-joint/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15840,
+      "sha256": "7a804198c3eb8e454e3d3b2c090660e6b4ac47c6e67104c0f82381857f46f2f0"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/mdid35-r3-pair-20261022T001200Z-r3/a-joint/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/mdid35-r3-pair-20261022T001200Z-r3/a-joint/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9760,
+      "sha256": "b733ad8a12c5fe93cf618d8e51cea5a9c22d066286e809f1b134505eaacd25ff"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/mdid35-r3-pair-20261022T001200Z-r3/a-joint/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13440,
+      "sha256": "a66de5638b5e2fbd3a6e303b50dd022593bfa0f40d26faa0a65926f4c7cd6b77"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/mdid35-r3-pair-20261022T001200Z-r3/a-joint/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "full_newVAP_header_source_compiles": 116,
+  "r3_changed_source_compiles": 2,
+  "matched_header_control_compiles": 8,
+  "exact_r3_seed_objects_reused": 114,
+  "all_current_review_pins": 6397,
+  "negative_cases": 12,
+  "MDIE_byte_cases": 16777216,
+  "control_caller_cases": 65664,
+  "probe_order_cases": 786432,
+  "IE54_admission_cases": 65593,
+  "old598_private_records_exact": true,
+  "old449_461_491_492_493_C_paths_preserved": true,
+  "complete_module_audits": {
+    "qdrv": {
+      "status": "PASS_COMPLETE_MDID35_R3_MATCHED_HEADER_RESIDUAL_SCOPE",
+      "component": "qdrv",
+      "fixture_bound_functions": [],
+      "new_functions": [],
+      "diagnostics": [],
+      "unchanged_functions": 831,
+      "residual_relocations": 14040,
+      "old_symbols": 1934,
+      "new_symbols": 1934,
+      "executable_residue": [
+        {
+          "section": ".text",
+          "anonymous_body_bytes": 77810,
+          "anonymous_body_count": 41,
+          "old_nop_bytes": 802,
+          "new_nop_bytes": 802,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".text.unlikely",
+          "anonymous_body_bytes": 2,
+          "anonymous_body_count": 1,
+          "old_nop_bytes": 30,
+          "new_nop_bytes": 30,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".init.text",
+          "anonymous_body_bytes": 2,
+          "anonymous_body_count": 1,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".exit.text",
+          "anonymous_body_bytes": 0,
+          "anonymous_body_count": 0,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        }
+      ],
+      "limits": "Semanticrangesfixturebound; noinstructionequivalence/PM/CSA/RF/physicalacceptance"
+    },
+    "wlan": {
+      "status": "PASS_COMPLETE_MDID35_R3_MATCHED_HEADER_RESIDUAL_SCOPE",
+      "component": "wlan",
+      "fixture_bound_functions": [
+        {
+          "key": [
+            "ieee80211_ioctl_getparam",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 6020,
+          "new_bytes": 6040,
+          "old_sha256": "4dcb1ddf2146267fae1278cd54b9c8a94e3b140986ad8889bf48a4ecf6b661ce",
+          "new_sha256": "8eba77648c28e4544a5cead110e574cdcb357a6b2da158f376146c9efc9ca694"
+        },
+        {
+          "key": [
+            "ieee80211_ioctl_setparam",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 16718,
+          "new_bytes": 16692,
+          "old_sha256": "7dfc1ae7a9c67bbdb8c86c882583bab3208d3bd9e4b4a5ea1c5188ed2050e6ed",
+          "new_sha256": "ba424280f6521318923cc3fcd2e61f79bc996201b69bc8693d24d96eabc8d1fd"
+        },
+        {
+          "key": [
+            "ieee80211_send_mgmt",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 7802,
+          "new_bytes": 7866,
+          "old_sha256": "6b4ddd6b1eb735b6b63eb3a89000d2866543810b2d6a7a866291665fce1c7df2",
+          "new_sha256": "5d40619ca1f100638483193ea1073a3fafd257afd57c0082d844a809e036c1b0"
+        },
+        {
+          "key": [
+            "ieee80211_beacon_alloc",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 1412,
+          "new_bytes": 1434,
+          "old_sha256": "9d86e3c06c514604b9d32bb8ab247efb07e98fd0f5263af0f0e02bd31d779b10",
+          "new_sha256": "4b92559f494e3448ed76eb899698352b61cb1239d685c13330dfdb049a5f749d"
+        },
+        {
+          "key": [
+            "ieee80211_add_beacon_desc_ie",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 2030,
+          "new_bytes": 2082,
+          "old_sha256": "58ff73b13d52a67fdd40c7a88d5c00bcd6587c29cc80f3b4abb269c4397b68f2",
+          "new_sha256": "ba4e2ef454eba74c3830d245b97a1045be9e361d009de3396f0349a5b76c744f"
+        }
+      ],
+      "new_functions": [],
+      "diagnostics": [
+        "ieee80211_delete_wlanunit",
+        "ieee80211_ioctl_giwfreq",
+        "ieee80211_param_from_qdrv",
+        "ieee80211_beacon_update",
+        "ieee80211_compile_action_measurement_11k",
+        "ieee80211_add_wpa",
+        "ieee80211_tdls_mgmt_output",
+        "ieee80211_mgmt_output",
+        "ieee80211_compile_action_measurement_11h"
+      ],
+      "unchanged_functions": 988,
+      "residual_relocations": 9132,
+      "old_symbols": 2346,
+      "new_symbols": 2346,
+      "executable_residue": [
+        {
+          "section": ".text",
+          "anonymous_body_bytes": 2810,
+          "anonymous_body_count": 19,
+          "old_nop_bytes": 982,
+          "new_nop_bytes": 982,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".text.unlikely",
+          "anonymous_body_bytes": 0,
+          "anonymous_body_count": 0,
+          "old_nop_bytes": 6,
+          "new_nop_bytes": 6,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".init.text",
+          "anonymous_body_bytes": 0,
+          "anonymous_body_count": 0,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".exit.text",
+          "anonymous_body_bytes": 2,
+          "anonymous_body_count": 1,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        }
+      ],
+      "limits": "Semanticrangesfixturebound; noinstructionequivalence/PM/CSA/RF/physicalacceptance"
+    },
+    "wlan_scan_ap": {
+      "status": "BYTE_IDENTICAL_WHOLE_MATCHED_HEADER_CONTROL_MODULE",
+      "sha256": "7a804198c3eb8e454e3d3b2c090660e6b4ac47c6e67104c0f82381857f46f2f0"
+    },
+    "wlan_scan_sta": {
+      "status": "BYTE_IDENTICAL_WHOLE_MATCHED_HEADER_CONTROL_MODULE",
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    "wlan_ccmp": {
+      "status": "BYTE_IDENTICAL_WHOLE_MATCHED_HEADER_CONTROL_MODULE",
+      "sha256": "b733ad8a12c5fe93cf618d8e51cea5a9c22d066286e809f1b134505eaacd25ff"
+    },
+    "wlan_tkip": {
+      "status": "BYTE_IDENTICAL_WHOLE_MATCHED_HEADER_CONTROL_MODULE",
+      "sha256": "a66de5638b5e2fbd3a6e303b50dd022593bfa0f40d26faa0a65926f4c7cd6b77"
+    },
+    "wlan_xauth": {
+      "status": "BYTE_IDENTICAL_WHOLE_MATCHED_HEADER_CONTROL_MODULE",
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  },
+  "limits": [
+    "ExactOEM494setHOSTAPlow16existingbeaconupdate/getu16;495setHOSTAPlow8noimmediatecallback;existingget495faithfulEOPNOTSUPP.",
+    "IE54MDIEbeacon/probeconsumerbyteproducer/admissionandOEMprobeRRM-MDIE-Athorder qualifiedoffline. NoFTauth/roaming/key/frameexchangehandler recovered.",
+    "VAPsizeof+4/embeddedQDRVsize+4 all58usersfresh×2; control32Cwithsame35headers distinguisheslayoutfromfunctionaldeltas.",
+    "Changednamedfunctions are actualsourcefixturebound; fullresidualnamed/anonymouscode/data/symbol/RELA+negativechecks. NoOEMuniversal/lifetime/MuCtiming equivalence.",
+    "NoRF/clientAUTH/ASSOC/AUTHORIZED/traffic/soak/coldboot/persistence/rollback/recovery/releaseacceptance."
+  ]
+}

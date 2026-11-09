@@ -1,0 +1,202 @@
+{
+  "status": "PASS_CONSOLIDATED30_COMPLETE_MODULE_RESIDUALS_PENDING_GLOBAL_PIN_GATE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "audits": {
+    "qdrv": {
+      "status": "PASS_COMPLETE_COEX26_R3_BSS_GEOMETRY_RESIDUAL_SCOPE",
+      "component": "qdrv",
+      "fixture_bound_functions": [
+        {
+          "key": [
+            "qdrv_wlan_init",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 5728,
+          "new_bytes": 5744,
+          "old_sha256": "9350e11124baf99c545d1565c497e58d4ae85fc55e3b8fa78c5a1a484302c4bb",
+          "new_sha256": "cdf2d8c2c255926ce7987de8d31adc4f963330c3a91be840ef7c0d482634ce5a"
+        }
+      ],
+      "new_functions": [],
+      "diagnostics": [
+        "qdrv_wlan_exit"
+      ],
+      "unchanged_functions": 829,
+      "residual_relocations": 13683,
+      "old_symbols": 1934,
+      "new_symbols": 1934,
+      "executable_residue": [
+        {
+          "section": ".text",
+          "anonymous_body_bytes": 77810,
+          "anonymous_body_count": 41,
+          "old_nop_bytes": 802,
+          "new_nop_bytes": 802,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".text.unlikely",
+          "anonymous_body_bytes": 2,
+          "anonymous_body_count": 1,
+          "old_nop_bytes": 30,
+          "new_nop_bytes": 30,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".init.text",
+          "anonymous_body_bytes": 2,
+          "anonymous_body_count": 1,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".exit.text",
+          "anonymous_body_bytes": 0,
+          "anonymous_body_count": 0,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        }
+      ],
+      "limits": "Semanticrangesfixturebound; noinstructionequivalence/PM/CSA/RF/physicalacceptance"
+    },
+    "wlan": {
+      "status": "PASS_COMPLETE_COEX26_R3_BSS_GEOMETRY_RESIDUAL_SCOPE",
+      "component": "wlan",
+      "fixture_bound_functions": [
+        {
+          "key": [
+            "ieee80211_ioctl_setparam",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 16658,
+          "new_bytes": 16600,
+          "old_sha256": "c353924f7cbdb9fba497a99327139be2bdd051600506489411a7d7af2fbdd4cb",
+          "new_sha256": "d6ce1b93e3f19847c369447ce93135b684300cda1d8aeccb1666e7330fd07f29"
+        },
+        {
+          "key": [
+            "ieee80211_recv_action_public_coex.isra.0",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 610,
+          "new_bytes": 670,
+          "old_sha256": "c79566716bc0fe877b53d5e54bf42615dae2aa462b444f7d03b6a89276493ee2",
+          "new_sha256": "e32fb1e87bc797d60844fc902b1897beb2fc5b98905679c4236784650e237969"
+        },
+        {
+          "key": [
+            "ieee80211_20_40_operation_permitted",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 216,
+          "new_bytes": 240,
+          "old_sha256": "bb1aa66c74293094710e1607d6d73af73568cd04c807c938dc08252f79bba639",
+          "new_sha256": "b133b93c23ee3735bead094253f7ed805a2cf2d81f65e260c1ef11ad4f8aee65"
+        },
+        {
+          "key": [
+            "ieee80211_check_mode",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 238,
+          "new_bytes": 242,
+          "old_sha256": "6a02a747142a8b3ce837771ca8acf3084bb149b07fa49bf7a2e1dbaf775a420a",
+          "new_sha256": "3381cbc37442b57637754d73f14903a787172f6c35df1ff0916a35aeb08d062f"
+        },
+        {
+          "key": [
+            "ieee80211_start_obss_scan_timer",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 68,
+          "new_bytes": 78,
+          "old_sha256": "56942df8655ea4a482eb9511b6c4c28538258260b516be4ec28798d19f8ccee3",
+          "new_sha256": "10661e38d917092f3380cb65b920c49479c96bf45ada0fdddcad872da25e6b92"
+        },
+        {
+          "key": [
+            "ieee80211_recv_mgmt",
+            ".text",
+            2,
+            0
+          ],
+          "old_bytes": 17552,
+          "new_bytes": 17578,
+          "old_sha256": "a72b69bef4870c87502f6cff00bf1bd6ec41e3a44898dc4541972897eae75fd5",
+          "new_sha256": "5d4a8c2c1224726b749f6f3c4e822cd71ae162cc50ccc49f536004ca75a3d46a"
+        }
+      ],
+      "new_functions": [
+        "om_ieee80211_change_bw"
+      ],
+      "diagnostics": [
+        "ieee80211_delete_wlanunit",
+        "ieee80211_ioctl_giwfreq",
+        "ieee80211_param_from_qdrv",
+        "ieee80211_repeater_csa_finish",
+        "ieee80211_node_leave",
+        "ieee80211_node_join",
+        "ieee80211_sta_assocs_dec"
+      ],
+      "unchanged_functions": 962,
+      "residual_relocations": 8672,
+      "old_symbols": 2284,
+      "new_symbols": 2288,
+      "executable_residue": [
+        {
+          "section": ".text",
+          "anonymous_body_bytes": 2810,
+          "anonymous_body_count": 19,
+          "old_nop_bytes": 950,
+          "new_nop_bytes": 954,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".text.unlikely",
+          "anonymous_body_bytes": 0,
+          "anonymous_body_count": 0,
+          "old_nop_bytes": 6,
+          "new_nop_bytes": 6,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".init.text",
+          "anonymous_body_bytes": 0,
+          "anonymous_body_count": 0,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        },
+        {
+          "section": ".exit.text",
+          "anonymous_body_bytes": 2,
+          "anonymous_body_count": 1,
+          "old_nop_bytes": 0,
+          "new_nop_bytes": 0,
+          "every_non_nop_body_and_following_owner_exact": true
+        }
+      ],
+      "limits": "Semanticrangesfixturebound; noinstructionequivalence/PM/CSA/RF/physicalacceptance"
+    }
+  },
+  "tool_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\audit_consolidated30_modules.py": "8b0df39279c37735e7375b5524244808df857159020ac284999c5f87c166c268",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\audit_hgw5g_coex26_r3_modules.py": "7fea511ff6a71de15d464535406b90e924a26941b245a00d9cf86cd5c1773594",
+    "outputs\\rea\\consolidated30-residual-20261022T221800Z-r4\\adapted-strict-auditor.py": "6f2d0ec13ccdc9f6f3a8190b471268ac1e2f37fd7de534ec449d6eebd80b6224"
+  }
+}

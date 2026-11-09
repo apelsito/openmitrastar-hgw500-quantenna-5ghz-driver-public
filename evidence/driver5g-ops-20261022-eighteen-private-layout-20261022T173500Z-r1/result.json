@@ -1,0 +1,17 @@
+{
+  "status": "PASS_ACTUAL_ARC_PRIVATE_APPEND_PREFIX_LAYOUT",
+  "hardware_accessed": false,
+  "values": {
+    "size": 30556,
+    "ic": 0,
+    "flags_ext": 23144,
+    "mac": 23152,
+    "tx_if": 23320,
+    "rx_if": 23404,
+    "sp": 30548,
+    "bbdf_bool": 30552,
+    "duplicate_rts_u8": 30553
+  },
+  "prefix_unchanged": true,
+  "witness_sha256": "17c337e89999326d3cf7961b7b2b885c5a3c51392bc0661a177d356751bea74a"
+}

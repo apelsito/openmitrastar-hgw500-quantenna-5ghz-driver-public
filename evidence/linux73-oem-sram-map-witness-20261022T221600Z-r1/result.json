@@ -1,0 +1,52 @@
+{
+  "status": "PASS_ACTUAL_ARC_OEM_SRAM_MACRO_PROFILE_WITNESS_NOT_RESERVATION_PROOF",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "ranges": {
+    "RUBY_SRAM_BEGIN": "0x88000000",
+    "RUBY_SRAM_BUS_BEGIN": "0x80000000",
+    "RUBY_SRAM_NOCACHE_BEGIN": "0x60000000",
+    "RUBY_SRAM_SIZE": "0x80000",
+    "RUBY_SRAM_BANK_SIZE": "0x10000",
+    "TOPAZ_HBM_POOL_EMAC_RX_START": "0x0",
+    "TOPAZ_HBM_POOL_EMAC_RX_END": "0x8000",
+    "TOPAZ_HBM_POOL_WMAC_RX_START": "0x8000",
+    "TOPAZ_HBM_POOL_WMAC_RX_END": "0xa000",
+    "TOPAZ_HBM_POOL_EMAC_TX_DONE_START": "0xa000",
+    "TOPAZ_HBM_POOL_EMAC_TX_DONE_END": "0xe000",
+    "TOPAZ_FWT_SW_START": "0xe000",
+    "TOPAZ_FWT_SW_END": "0xf000",
+    "CONFIG_MUC_EXTRA_RES_BASE": "0xf000",
+    "CONFIG_MUC_EXTRA_RES_END": "0x11000",
+    "CONFIG_ARC_KERNEL_SRAM_B1_BASE": "0x12000",
+    "CONFIG_ARC_KERNEL_SRAM_B1_END": "0x17800",
+    "CONFIG_ARC_KERNEL_SRAM_B2_BASE": "0x17800",
+    "CONFIG_ARC_KERNEL_SRAM_B2_END": "0x20000",
+    "CONFIG_ARC_MUC_SRAM_B1_BASE": "0x20000",
+    "CONFIG_ARC_MUC_SRAM_B1_END": "0x30000",
+    "CONFIG_ARC_MUC_SRAM_B2_BASE": "0x30000",
+    "CONFIG_ARC_MUC_SRAM_B2_END": "0x3ffc0",
+    "CONFIG_ARC_AUC_SRAM_BASE": "0x40000",
+    "CONFIG_ARC_AUC_SRAM_END": "0x70000",
+    "CONFIG_ARC_MU_QMAT_BASE": "0x80070000",
+    "CONFIG_ARC_MU_QMAT_END": "0x80080000"
+  },
+  "Linux73_linker_sram_symbols": [],
+  "heap_start_parameter": "alignedcurrentLinux73__sram_endEquivalentMissing",
+  "heap_end_profile": "0x20000",
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/witness_linux73_sram_map.py": "fe5db81b45b3665765a2885704b59ca31151c259552139fb01dca500eea146c4",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-provider-compile-bundle-20261022T211000Z-r2/providers/.qtn_platform_support.o.cmd": "4dc2f6e17ad72511f2e882b83474ebc15cc304dc1d7392acb7d4d89e08fb26f5",
+    "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h": "ddb69e6842ed04c5c254065357a798ef6273393b99e1174feaac663432707808",
+    "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/common_mem.h": "93729b5eb5a409814ba7a28080085ee5caed60e5cc71a4859c5633e9b51f2868",
+    "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/topaz_config.h": "3cbd988a2bf1324b8c8b6c2bc313c917f1ba3fd56673cc87e73cf00863e93e73",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-kernel-v6/.config": "ef5278daa265bc5c9dd012480f598126c01cf3b7df16063887d24b646f6bf800",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-kernel-v6/Module.symvers": "b3bdc2fecfad7321cd5d03454ea47d2341ef43ffc5e3f091de4c78c0d2726950",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-oem-sram-map-witness-20261022T221600Z-r1/map-witness.c": "2faf93197c0fc5b240d66a1f358ce52c6fc174da922fe020cd050c48edbf60ef",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-oem-sram-map-witness-20261022T221600Z-r1/map-witness.o": "ad174e16558693ea08c34b247b66480a5a2d8c5e9f7154ebec52f6489a88094b"
+  },
+  "limits": [
+    "CompiletimeOEMGPLprofileonly; do notreservefreegapwithoutcurrentkernel/MCu/AuC/DSP/HBMimageoverlap manifest.",
+    "NoRAMreading/DTprivate/MMIO/TX/hardware."
+  ]
+}

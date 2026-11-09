@@ -1,0 +1,418 @@
+{
+  "status": "PASS_R20_REAL_ELF610_TABLE_ALL44_EXACT_RECORDS_AND_OWNERSHIP_SOURCE_REVIEW",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "functional_ops_qualified_by_this_review": 0,
+  "module_sha256": "19ead5f9c60e668c9507e233f66000584f9dde1da24d14eaa2322a6608cad02f",
+  "private_table": {
+    "symbol": "ieee80211_priv_args",
+    "bytes": 14640,
+    "records": 610,
+    "sha256": "185a4f922fc1bf5efa5ae51d2c71fc9a3589a4f828e6d6bff33a1a9047475c38",
+    "handler_def_private_count": 610,
+    "handler_args_RELA_exact": true
+  },
+  "original_missing_records_exact": 44,
+  "records": [
+    {
+      "index": 573,
+      "cmd": 331,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_cca_fixed",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 568,
+      "cmd": 246,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "tx_maxmpdu",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 569,
+      "cmd": 246,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_tx_maxmpdu",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 574,
+      "cmd": 275,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_auto_cca_en",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 586,
+      "cmd": 484,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "txamsdu_11n",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 587,
+      "cmd": 484,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_txamsdu_11n",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 584,
+      "cmd": 498,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_dup_rts",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 585,
+      "cmd": 498,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dup_rts",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 597,
+      "cmd": 449,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "20_40_bss_coex",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 570,
+      "cmd": 450,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_min_cac",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 588,
+      "cmd": 457,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "nac_mode",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 589,
+      "cmd": 457,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_nac_mode",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 575,
+      "cmd": 451,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_dev_mode",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 578,
+      "cmd": 460,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_max_bw",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 579,
+      "cmd": 460,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_max_bw",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 598,
+      "cmd": 461,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_bw_autosel",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 599,
+      "cmd": 461,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bw_autosel",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 576,
+      "cmd": 465,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ignr_icac_sel",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 605,
+      "cmd": 467,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "dfs_chan_avail",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 582,
+      "cmd": 464,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "check_cur_chan",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 606,
+      "cmd": 466,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rbs_dfs_msr_cac",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 607,
+      "cmd": 466,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "g_rbsdfs_msrcac",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 608,
+      "cmd": 468,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "rbs_dfs_end_tx",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 609,
+      "cmd": 468,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "g_rbsdfs_end_tx",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 595,
+      "cmd": 492,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "neigh_repo",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 596,
+      "cmd": 492,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_neigh_repo",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 583,
+      "cmd": 463,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_dyn_sifs",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 603,
+      "cmd": 478,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "wea_cac_en",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 604,
+      "cmd": 478,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_wea_cac_en",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 0,
+      "cmd": 481,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_vopt",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 1,
+      "cmd": 481,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_vopt",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 580,
+      "cmd": 483,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bbdf_war_en",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 581,
+      "cmd": 483,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bbdfwar_en",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 591,
+      "cmd": 491,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "coc_mv_to_ndfs",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 592,
+      "cmd": 491,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "g_coc_mv_to_ndfs",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 593,
+      "cmd": 493,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bss_tm",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 594,
+      "cmd": 493,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bss_tm",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 600,
+      "cmd": 494,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "mdid",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 601,
+      "cmd": 494,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_mdid",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 602,
+      "cmd": 495,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "ft_over_ds",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 577,
+      "cmd": 495,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_ft_over_ds",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 571,
+      "cmd": 496,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_sretry_lmt",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 572,
+      "cmd": 497,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_lretry_lmt",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    },
+    {
+      "index": 590,
+      "cmd": 490,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "fix_legacy_rate",
+      "scope": "EXACT_ELF_PRIVATE_RECORD_NOT_FUNCTIONAL_QUALIFICATION"
+    }
+  ],
+  "faithful_OEM_unsupported_source": [
+    {
+      "label": "OM_OEM_PARAM_IGNORE_ICAC_SELECTION",
+      "body_sha256": "fb69fa62eaded462163cd0a8657e360e7f72f8eea7c63a7fc3a7937991ce0679"
+    },
+    {
+      "label": "OM_OEM_PARAM_FT_OVER_DS",
+      "body_sha256": "97e72c6da1af38f6caa240c81dfcdfdcc421d04391db0063a2b2154d3ec901ae"
+    }
+  ],
+  "ownership_fixtures": [
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r20-dma-independent-fixture-20261022T215400Z-r1/result.json",
+      "sha256": "47916d87edc3b344145fba407b6bcad94c4732ee472f5b39c30cf8bc868a5a0f",
+      "status": "PASS_R20_ACTUAL_DMA_ALLOCATION_FREE_BOUNDS_BACKEND_AND_DUPLICATE_OWNER_32BIT_FIXTURE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r20-gpio-owner-fixture-20261022T215600Z-r1/result.json",
+      "sha256": "37761f34b84f3004f5acdecd5569d5d4eb2860a711b4726ac7cbe6cc2df5b45b",
+      "status": "PASS_R20_ACTUAL_GPIO_MODULE_OWNER_REGISTRATION_REFUSAL_AND_EXIT_CONTROLLER"
+    }
+  ],
+  "comments": {
+    "file_count": 174,
+    "comment_count": 7140,
+    "raw_comment_bytes": 721223,
+    "raw_comment_sha256": "223cb5463b0553b84430ac6a8436e1df26e5c940bc3bf3501a0c01e546d0f45e",
+    "unterminated_comments": 0
+  },
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/review_linux73_r20_elf_records.py": "e568cc1e4c8f62f5bea5e3254d4b9925fe4f4f43ba101354ea3f82147f80a3bd",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-module-v8-r20/wlan.ko": "19ead5f9c60e668c9507e233f66000584f9dde1da24d14eaa2322a6608cad02f",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/result.json": "d57b548a0a3cb6ba5ff17198ac825ccd3fe2fc649e648e878dc2fff5c967d718",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/wlan/ieee80211_wireless.c": "430982c785cd524f06b7aeb20cd3a9cce827d4fc55ee6c7148997c6706220b30",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/wlan/openmitrastar_rbsdfs_kernel.inc": "5e265eb681b246c36bac31ff2c98be6828e6339c159cc97dc35393358ca538d5",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/platform/ruby/gpio.c": "9e84ae67d476e5c9050ab008f5f463a2ddbff647b80992efcf983d78ec4f8c04",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/platform/ruby/dmautil.c": "8a3042f9ce649a67739c4623725c2727f144ae17ca8af1281debebc81fd3a018",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/ops-inventory-20261022T134000Z-r6/comparisons.json": "3fe72e89e5ab01ff7a6b541a55d83b011b3e30ec16a2fe6a92ea31d8d7715aff",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r20-comments-20261022T215800Z-r1/manifest.json": "8715931d0c29dba5b5539af4939ef33b2df526a5a9a5162642bf120554c00cd1",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r20-comments-20261022T215800Z-r1/artifact-hashes.json": "8e20271af516bb34a7076ea8c82aa25a2c0344197d1477810bd8e20aa0fa537a"
+  },
+  "limits": [
+    "Exactly610compiledtableincludesactiveifdefonly; all44originalcmd/set/get/name tuples uniqueandexact. Sourcelexical615isnotthiscount.",
+    "RBS466/468statepoliciespresent butexactframeprovider remainsNULL; nofulloperation/runtimeacceptance.",
+    "Bounded467APqueryandVOPT/MDIEretainsemanticandphysicalscope limits. OEMunsupported465/set495get areexplicitunsupported notfunctionalops.",
+    "GPIOownership/free fixesverifiedactualsourcefixtures; noLinuxGPIOrequests/liveunload executed. DMA42ARC32controlcases plusseparate102hostASANcases; realbus/cache/MMIO/lifecycle remainsphysicalgate.",
+    "No secondmodulepair/hashreproducibility/globaldiff/fullRFtraffic/coldboot/recovery/releaseclaim bythisreview."
+  ]
+}

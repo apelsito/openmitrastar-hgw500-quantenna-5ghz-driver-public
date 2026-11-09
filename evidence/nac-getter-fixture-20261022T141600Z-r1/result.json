@@ -1,0 +1,12 @@
+{
+  "status": "PASS_OFFLINE_NAC_PREFIX_FIXTURE_AND_ARC_UNIT",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "candidate_sha256": "54e4aad1a188ff314302822ccd425407399ac1b3eef70b685807ba9eaeb2c4ac",
+  "fake_value0_cases": 65536,
+  "fake_value1_samples": 255,
+  "fixture_cases": 16711682,
+  "pointer_and_dividebyzero_refusal": true,
+  "source_unchanged": true,
+  "limits": "No coherence/pointerlifetime/fullmodule/runtime/clientgate qualified"
+}

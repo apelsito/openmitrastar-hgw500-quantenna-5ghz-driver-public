@@ -1,0 +1,39 @@
+{
+  "status": "PASS_EXACT_MUC_CODE_WINDOW_DERIVATIVE",
+  "classification": "ANALYSIS_ONLY_NEVER_LOAD_BOOT_PACKAGE_OR_FLASH",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "source_sha256": "71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4",
+  "source_unchanged": true,
+  "derived_sha256": "2a9e1e7920d529fe376748be4b06260589d1bfef28ade0850883ae9c423ba27a",
+  "derived_bytes": 967628,
+  "elf_flags_preserved": 0,
+  "machine_preserved": 93,
+  "code_address": "0xe0000",
+  "code_bytes": 963131,
+  "code_sha256": "b110a73bb463df7eafa60a950bd9a19b5e759e278c9f69cae22ffe32bf458185",
+  "functions": {
+    "om_muc_setparams_dispatch": [
+      1175884,
+      7148
+    ],
+    "om_muc_nac_mode": [
+      1463436,
+      452
+    ],
+    "om_muc_dynamic_sifs": [
+      1175580,
+      0
+    ],
+    "om_muc_duplicate_rts": [
+      1175112,
+      0
+    ]
+  },
+  "limits": [
+    "Onlyselectedcodewindow imported; hardwareMMIO/SRAM/globalaliases/notincluded.",
+    "Functionlabels are forensic hints from exactsource-decompilation/cases, notoriginalsymbols.",
+    "ELFflags0preserved; REAadmissionlane requires explicitfirmwaredecoder qualification.",
+    "Crosswindowcalls unresolved, no loader/hardwaretiming/emulation claim."
+  ]
+}

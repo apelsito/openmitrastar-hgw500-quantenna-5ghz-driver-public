@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ACTUAL_HOST_TYPED_AMSDU11N_CASES_AND_ADDBA_PREDICATE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "peer_flag_cases": 262144,
+  "setter_cases": 28,
+  "explicit_counterexamples": 3,
+  "base_amsdu_preserved": true,
+  "header_prefix_text_preserved": true,
+  "default_11n_flag": 1,
+  "limits": [
+    "HostCfixtureonly; ARCfield/typealignment/enclosingstructoffset andancillaryusers notcompiled",
+    "Noaggregation/traffic/RF/physicalproof",
+    "Fullpairedsourcebuild/dependencyclosure mandatory"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_HOST_ACTUAL_DESCRIPTOR_ADMISSION_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "arena_sizes": 1001,
+  "used_values": 1021,
+  "cases": 1022023,
+  "descriptor_bytes": 20,
+  "capacity_bytes_max": 1000,
+  "limits": "Sourceadmissiononly; actualARCpointerlayout/worstbeaconpaths/runtimeacceptance gatespending"
+}

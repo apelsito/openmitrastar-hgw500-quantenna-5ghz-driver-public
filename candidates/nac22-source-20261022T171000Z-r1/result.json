@@ -1,0 +1,30 @@
+{
+  "status": "SOURCE_ONLY_NAC22_RECONSTRUCTED_RECORDS_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent": "outputs\\rea\\amsdu11n-typed-vap-source-20261022T161300Z-r1",
+  "parent_manifest_sha256": "a2dafaf10baa70ed8ff981233f121f46b2f47b79b2da84aba163e56acd5edab2",
+  "parent_wireless_sha256": "45c578641ea27a7e1760faa15413acad3b81b5d18235f8d58185f770a81f0819",
+  "wireless_sha256": "ebd0ae6264ceeafe8bc3a44a806cf9eb85371f1578f1f57cd08499c44c5acccb",
+  "total_original_entries_added": 22,
+  "remaining_original_table_gaps": 22,
+  "records_added": [
+    {
+      "id": 457,
+      "name": "nac_mode",
+      "semantics": "ExactHOSTAPforward/nonAPno-op"
+    },
+    {
+      "id": 457,
+      "name": "get_nac_mode",
+      "semantics": "OEMpacking sampledtuple; EAGAINmissing/denominator0safetydelta"
+    }
+  ],
+  "header_unchanged": true,
+  "limits": [
+    "Not22fullyacceptedfeatures: twolegacyunsupported andNACgetter incoherenttuple",
+    "Sharedallocationlifecycle F355/VAPbounds mustremainqualified",
+    "NoMuCtimer/monitor/client/trafficphysicalacceptance",
+    "NoadditionalprivateAPIorwireABIchange"
+  ]
+}

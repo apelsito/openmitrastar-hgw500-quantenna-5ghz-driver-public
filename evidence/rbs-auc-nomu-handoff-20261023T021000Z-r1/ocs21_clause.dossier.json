@@ -1,0 +1,44 @@
+{
+  "directory": "outputs\\rea\\rbs-auc-nomu-ocs21-clause-20261023T020400Z-r1",
+  "procedure": {
+    "address": "0xe50056f4",
+    "name": "om_auc_ocs_suspend_command21_clause",
+    "classification": {
+      "external": false,
+      "thunk": false,
+      "thunk_target": null,
+      "provenance": "ghidra-function-manager"
+    },
+    "body": {
+      "available": true,
+      "provenance": "ghidra-function-body-address-set",
+      "ranges": [
+        {
+          "start": "0xe50056f4",
+          "end": "0xe5005743"
+        }
+      ],
+      "total_bytes": 80,
+      "span_bytes": 80,
+      "non_contiguous": false,
+      "contains_entry": true
+    },
+    "signature": "undefined om_auc_ocs_suspend_command21_clause()",
+    "locals": []
+  },
+  "callees": [
+    {
+      "address": "0xe5001770",
+      "name": "FUN_ram_e5001770"
+    }
+  ],
+  "limitations": [
+    "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+    "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+    "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+    "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+  ],
+  "rea_sha256": "00d90cdc3e73afdc91042dc09042b6be2796b4769af56b919b8c233680d41757",
+  "started_utc": "2026-10-22T22:51:03.065026+00:00",
+  "finished_utc": "2026-10-22T22:51:36.029948+00:00"
+}

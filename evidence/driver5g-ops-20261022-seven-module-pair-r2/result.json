@@ -1,0 +1,51 @@
+{
+  "schema": "openmitrastar.seven-getter-module-pair/v1",
+  "status": "PASS_TWO_COMPLETE_MODULES_PENDING_DELTA_QUALIFICATION",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "modules": [
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/a/qdrv/qdrv.ko",
+      "bytes": 684108,
+      "sha256": "dd8f29a1dccb9a01236eb4577f8909088eb544eac872593d4696bf1585cfad06"
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/a/wlan/wlan.ko",
+      "bytes": 629496,
+      "sha256": "461c23d2d29833216bb3e7b10afba51531b33cae73e7d0ed6c929482e1faec92"
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/b/qdrv/qdrv.ko",
+      "bytes": 684108,
+      "sha256": "dd8f29a1dccb9a01236eb4577f8909088eb544eac872593d4696bf1585cfad06"
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/b/wlan/wlan.ko",
+      "bytes": 629496,
+      "sha256": "461c23d2d29833216bb3e7b10afba51531b33cae73e7d0ed6c929482e1faec92"
+    }
+  ],
+  "candidate": "/workspace/user-home/Desktop/MitraStar/outputs/rea/named-cca-getters-candidate-20261022T133300Z-r2",
+  "qdrv_baseline_build": "/workspace/user-home/Desktop/MitraStar/outputs/rea/arc700-20261021-r2/f370-module-20261021T221200Z-r2",
+  "wlan_baseline_build": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-wlan-baseline-r2",
+  "qdrv_baseline_lineage": "F364_F365_BASELINE_WITHOUT_F370_OBSERVATION_COUNTERS",
+  "total_recovered_entries": 7,
+  "remaining_oem_table_gaps": 37,
+  "limits": "Complete source-built module pair linkage; whole-module delta qualification still required. No runtime, RF, traffic or release acceptance.",
+  "reproducible": true,
+  "protected_inputs_unchanged": true,
+  "changed_units_compiled_per_lane": 2,
+  "qdrv_source_built_units_linked": 34,
+  "wlan_source_built_units_linked": 19,
+  "reused_qdrv_units_per_lane": 33,
+  "reused_wlan_units_per_lane": 18
+}

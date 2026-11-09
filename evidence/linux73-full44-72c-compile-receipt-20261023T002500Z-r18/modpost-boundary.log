@@ -1,0 +1,84 @@
+make: Entering directory '/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source'
+make[1]: Entering directory '/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-module-v4'
+  LD [M]  switch_tqe.o
+  CC [M]  source/platform/ruby/gpio.o
+  CC [M]  source/platform/ruby/iputil.o
+In file included from /workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:31,
+                 from ./././source/qdrv/compat/include/openmitrastar_qdrv_compat.h:7,
+                 from <command-line>:
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/common_mem.h:239:46: warning: no previous prototype for 'bus_to_virt' [-Wmissing-prototypes]
+  239 |                 RUBY_WEAK(bus_to_virt) void* bus_to_virt(unsigned long addr)
+      |                                              ^~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:305:57: warning: no previous prototype for 'muc_to_nocache' [-Wmissing-prototypes]
+  305 |                         RUBY_WEAK(muc_to_nocache) void* muc_to_nocache(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:317:57: warning: no previous prototype for 'nocache_to_muc' [-Wmissing-prototypes]
+  317 |                         RUBY_WEAK(nocache_to_muc) void* nocache_to_muc(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~
+In file included from /workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:31,
+                 from ./././source/qdrv/compat/include/openmitrastar_qdrv_compat.h:7,
+                 from <command-line>:
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/common_mem.h:239:46: warning: no previous prototype for 'bus_to_virt' [-Wmissing-prototypes]
+  239 |                 RUBY_WEAK(bus_to_virt) void* bus_to_virt(unsigned long addr)
+      |                                              ^~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:305:57: warning: no previous prototype for 'muc_to_nocache' [-Wmissing-prototypes]
+  305 |                         RUBY_WEAK(muc_to_nocache) void* muc_to_nocache(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:317:57: warning: no previous prototype for 'nocache_to_muc' [-Wmissing-prototypes]
+  317 |                         RUBY_WEAK(nocache_to_muc) void* nocache_to_muc(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~
+source/platform/ruby/gpio.c:219:6: warning: no previous prototype for 'gpio_lna_toggle_config' [-Wmissing-prototypes]
+  219 | void gpio_lna_toggle_config(void)
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+  CC [M]  source/platform/ruby/dmautil.o
+  CC [M]  source/platform/qtsens/temp_sensor.o
+In file included from /workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:31,
+                 from ./././source/qdrv/compat/include/openmitrastar_qdrv_compat.h:7,
+                 from <command-line>:
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/common_mem.h:239:46: warning: no previous prototype for 'bus_to_virt' [-Wmissing-prototypes]
+  239 |                 RUBY_WEAK(bus_to_virt) void* bus_to_virt(unsigned long addr)
+      |                                              ^~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:305:57: warning: no previous prototype for 'muc_to_nocache' [-Wmissing-prototypes]
+  305 |                         RUBY_WEAK(muc_to_nocache) void* muc_to_nocache(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:317:57: warning: no previous prototype for 'nocache_to_muc' [-Wmissing-prototypes]
+  317 |                         RUBY_WEAK(nocache_to_muc) void* nocache_to_muc(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~
+In file included from /workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:31,
+                 from ./././source/qdrv/compat/include/openmitrastar_qdrv_compat.h:7,
+                 from <command-line>:
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/common_mem.h:239:46: warning: no previous prototype for 'bus_to_virt' [-Wmissing-prototypes]
+  239 |                 RUBY_WEAK(bus_to_virt) void* bus_to_virt(unsigned long addr)
+      |                                              ^~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:305:57: warning: no previous prototype for 'muc_to_nocache' [-Wmissing-prototypes]
+  305 |                         RUBY_WEAK(muc_to_nocache) void* muc_to_nocache(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:317:57: warning: no previous prototype for 'nocache_to_muc' [-Wmissing-prototypes]
+  317 |                         RUBY_WEAK(nocache_to_muc) void* nocache_to_muc(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~
+  LD [M]  gpio.o
+  LD [M]  iputil.o
+  LD [M]  dmautil.o
+source/platform/qtsens/temp_sensor.c:217:5: warning: no previous prototype for 'qtn_tsensor_get_temperature' [-Wmissing-prototypes]
+  217 | int qtn_tsensor_get_temperature(struct i2c_client *client, int *val)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  LD [M]  qtn_tsens.o
+  MODPOST Module.symvers
+WARNING: modpost: switch_tqe.ko: missing MODULE_DESCRIPTION()
+ERROR: modpost: qdrv.ko: symbol 'i2c_get_adapter' undefined!
+ERROR: modpost: qdrv.ko: symbol 'gpiod_get_raw_value' undefined!
+ERROR: modpost: qdrv.ko: symbol 'gpiod_set_raw_value' undefined!
+ERROR: modpost: qdrv.ko: symbol 'gpio_free' undefined!
+ERROR: modpost: qdrv.ko: symbol 'unregister_qdisc' undefined!
+ERROR: modpost: qdrv.ko: symbol 'i2c_unregister_device' undefined!
+ERROR: modpost: qdrv.ko: symbol 'gpiod_direction_output_raw' undefined!
+ERROR: modpost: qdrv.ko: symbol 'wireless_send_event' undefined!
+ERROR: modpost: qdrv.ko: symbol 'i2c_new_client_device' undefined!
+ERROR: modpost: qdrv.ko: symbol 'i2c_put_adapter' undefined!
+WARNING: modpost: suppressed 15 unresolved symbol warnings because there were too many)
+make[3]: *** [/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source/scripts/Makefile.modpost:147: Module.symvers] Error 1
+make[2]: *** [/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source/Makefile:2179: modpost] Error 2
+make[1]: *** [/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source/Makefile:248: __sub-make] Error 2
+make[1]: Leaving directory '/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-module-v4'
+make: *** [Makefile:248: __sub-make] Error 2
+make: Leaving directory '/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-context-v5/kernel-source'

@@ -1,0 +1,50 @@
+{
+  "status": "PASS_ACTUAL_R23_R24_ONLY_LOADER_AND_WRITER_PROVIDER_CHANGED",
+  "lanes": [
+    {
+      "lane": "a",
+      "changed_C_objects": [
+        "providers/sram73/om73_sram_backend.o",
+        "source/qdrv/qdrv_fw.o"
+      ],
+      "changed_modules": [
+        "om73_sram.ko",
+        "qdrv.ko"
+      ],
+      "other_20_modules_identical": true,
+      "qdrv_public_definitions_unchanged": true,
+      "qdrv_added_imports": [
+        "om73_sram_writer_begin",
+        "om73_sram_writer_check",
+        "om73_sram_writer_end",
+        "sha256"
+      ],
+      "old_pool_symbols_and_types_preserved": true
+    },
+    {
+      "lane": "b",
+      "changed_C_objects": [
+        "providers/sram73/om73_sram_backend.o",
+        "source/qdrv/qdrv_fw.o"
+      ],
+      "changed_modules": [
+        "om73_sram.ko",
+        "qdrv.ko"
+      ],
+      "other_20_modules_identical": true,
+      "qdrv_public_definitions_unchanged": true,
+      "qdrv_added_imports": [
+        "om73_sram_writer_begin",
+        "om73_sram_writer_check",
+        "om73_sram_writer_end",
+        "sha256"
+      ],
+      "old_pool_symbols_and_types_preserved": true
+    }
+  ],
+  "old_pair_sha256": "c5c40c2fb72ea70627ea4070d53ea1db33cceab12cb1ba97fb062e48144f3864",
+  "new_pair_sha256": "c3172e07dc81692d99d241f42ab0a5c3e5519146547e74ca55860e49c7a738c9",
+  "kernel_config_symvers_unchanged": true,
+  "hardware_accessed": false,
+  "firmware_eligible": false
+}

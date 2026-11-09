@@ -1,0 +1,73 @@
+{
+  "status": "PASS_OFFLINE_COEX26_R3_OEM_BSS_GEOMETRY_TIMER_RX_BW_MODULE_CLOSURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "reproducible": true,
+  "private_records": 592,
+  "original_records_recovered": 26,
+  "remaining_original_records": 18,
+  "new_input_compiles": 2,
+  "retained_source26_changed_compiles": 6,
+  "qualified_parent_whole_units_reused": 108,
+  "old_field_abi": {
+    "ieee80211com": 384,
+    "ieee80211vap": 210,
+    "qdrv_wlan": 72
+  },
+  "old_sizes_offsets_unchanged": true,
+  "new_policy_offset": 22667,
+  "public_action_cases": 3538944,
+  "other_consumer_cases": 248254,
+  "setter_cases": 196608,
+  "bw_helper_cases": 9216,
+  "geometry_pair_cases": 33030144,
+  "geometry_report_cases": 1956864,
+  "actual_parser_geometry_cases": 1441792,
+  "negative_cases": 11,
+  "pins_verified": 3471,
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coex26-joint-a-r3/qdrv/qdrv.ko",
+      "bytes": 684792,
+      "sha256": "5a5212e13b6d173b5774a261b142d6ca0e8b6efbfc6f6dfdc430351da27c561e"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coex26-joint-a-r3/wlan/wlan.ko",
+      "bytes": 633956,
+      "sha256": "f10246f46abf150e01648bacab88a5d62642d800c0c3a3f8e5d8c3bcee1ff587"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coex26-joint-a-r3/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15508,
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coex26-joint-a-r3/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coex26-joint-a-r3/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9792,
+      "sha256": "7c54b944fd3f2d214dd8a4d0c98615a48b6fed1acb0b29d86176dff05c9d700f"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coex26-joint-a-r3/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13472,
+      "sha256": "5a625b63d6a86b8f43bc28a2cae90f5a8270cdc6298711029a9aac59f58a4f22"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-coex26-joint-a-r3/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "limits": "Typedwholeparentclosureadmitted by384oldIC/210VAP/72QDRVoffsetwidthsizeandunchangedheaderline witness. Actualrecv_mgmt gatefragments tested; otherfullframeparsers notfullyreplayed. Publiccoexparserbounds safetydeviation declared. VoidBWcallbacks do not proveMuC/PHY/RF/regulatory/traffic/persistence/release; inheritedCoC25initializedretainedscope andNAC/twoEOPNOTSUPPlimits remain."
+}

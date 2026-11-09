@@ -1,0 +1,54 @@
+{
+  "schema": "openmitrastar.linux73-dependencies/v1",
+  "repository_visibility": "private",
+  "kernel": {
+    "path": "vendor/linux-7.3-upstream",
+    "repository": "torvalds/linux",
+    "tag": "v7.3",
+    "commit": "c03c1a14507dfaf8b856c2608f9ac216021fc222",
+    "tag_object": "091b06388b117fefdcb63336ac09956a4914b961"
+  },
+  "radio2g_and_board_port": {
+    "path": "components/realtek-hgw500",
+    "repository": "apelsito/Realtek-2.4GHz-HGW500",
+    "branch": "port/linux-7.3",
+    "commit": "a924ed874ba925c1b9fb2e42cbb2ef2e59d74e5d"
+  },
+  "quantenna_original": {
+    "path": "vendor/legacy-firmware-source",
+    "commit": "116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9"
+  },
+  "compiler": {
+    "prefix": "arc-snps-linux-uclibc-",
+    "gcc_sha256": "3918a0da3c9f2cfde359f6fed1d0df19e737438dfd2cc60edae63f2dcbf14263",
+    "provisioning": "Private GitHub prerelease asset; executable binaries are not stored in Git",
+    "release_tag": "aelita-arc-toolchain-15.2.0-10504-20261022",
+    "asset": "arc-snps-linux-uclibc-gcc15.2.0-10504-aelita.tar.xz",
+    "asset_bytes": 59864216,
+    "asset_sha256": "cb37498e50328183732b84d93cba670076888f66868c3c7385119f1e8e45825a",
+    "content_manifest": "manifests/aelita-toolchain-15.2.0-10504.json"
+  },
+  "source_package": "src/linux-7.3-r26",
+  "first_preserved_source_package": "src/linux-7.3",
+  "portable_build_tool": "tools/linux73_build_aelita_verified.py",
+  "build_engine": "tools/linux73_build_aelita.py",
+  "sanitized_build_guide": "docs/AELITA_SANITIZED_KERNEL_BUILD_20261022.md",
+  "kernel_preparation_tool": "components/ethernet-linux73/prepare_kernel.py",
+  "current_build_guide": "docs/HANDOFF_LINUX73_R26.md",
+  "compiled_source_units": 74,
+  "native_module_count": 22,
+  "current_native_pair_receipt": "evidence/linux73-clear-reset-r26-pair-receipt-20261023T066500Z-r1/result.json",
+  "current_native_module_delta": "evidence/linux73-r24-r26-module-delta-20261023T066000Z-r1/result.json",
+  "current_offline_qualification": "evidence/linux73-r26-actual-abi-witness-20261023T067000Z-r1/result.json",
+  "handoff_chat": "01a163c8-c200-7d40-93ff-e4148d2b86b3",
+  "handoff_scope": "Compiled port accepted by owner; physical functionality and complete <7MB firmware integration transferred",
+  "current_required_config_additions": ["CRYPTO_LIB_SHA256=y", "IPV6=y"],
+  "full_driver_build": "PASS_PAIRED_KERNEL26_BASE21_NATIVE_EMAC_AND_ARC_ABI_IMPORTS_ISA_PENDING_LOAD_PHYSICAL",
+  "pair_receipt": "evidence/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/result.json",
+  "pair_abi_receipt": "evidence/linux73-r20-pair-abi-audit-20261023T020000Z-r1/result.json",
+  "load_limits": "evidence/linux73-r20-sram-load-limit-20261022T220300Z-r1/AELITA_LOAD_LIMITS.md",
+  "aelita_sanitized_build": "PASS_SINGLE_COMPOSED_SOURCE_KERNEL26_BASE21_NATIVE_EMAC_48MODULE_ABI_ISA_IMPORTS",
+  "aelita_build_acceptance": "docs/AELITA_BUILD_ACCEPTANCE_20261022.md",
+  "device_identity_firmware_credentials": "Provision separately outside Git; preserve original unit calibration",
+  "hardware_accessed": false
+}

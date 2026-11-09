@@ -1,0 +1,67 @@
+   e7b84:	1cf0 b348           	st.aw	r13,[sp,-16]
+   e7b88:	1c04 37c0           	st	blink,[sp,4]
+   e7b8c:	c642                	st_s	r14,[sp,0x8]
+   e7b8e:	c743                	st_s	r15,[sp,0xc]
+   e7b90:	250a 1000           	mov	r13,r0
+   e7b94:	270a 9040           	mov.f	r15,r1
+   e7b98:	0064 0021           	beq.d	100	;0xe7bfc
+   e7b9c:	2040 0b0e           	add	r14,r0,0x2c
+   e7ba0:	1730 100b           	ld	r11,[r15,48]
+   e7ba4:	0b69 1011           	brne	r11,0,104	;0xe7c0c
+   e7ba8:	1770 1602           	ld.as	r2,[r15,112]
+   e7bac:	0a75 015f           	bbit1	r2,0x5,116	;0xe7c20
+   e7bb0:	214a 1000           	mov	r9,0
+   e7bb4:	1f1c 1240           	st	r9,[r15,28]
+   e7bb8:	1f20 1240           	st	r9,[r15,32]
+   e7bbc:	204a 1040           	mov	r8,0x1
+   e7bc0:	1f2c 1200           	st	r8,[r15,44]
+   e7bc4:	860a                	ld_s	r0,[r14,0x28]
+   e7bc6:	1620 1007           	ld	r7,[r14,32]
+   e7bca:	e001                	add_s	r0,r0,0x1
+   e7bcc:	0f95 0030           	breq.d	r7,0,148	;0xe7c60
+   e7bd0:	1e28 1000           	st	r0,[r14,40]
+   e7bd4:	8669                	ld_s	r3,[r14,0x24]
+   e7bd6:	1724 1006           	ld	r6,[r15,36]
+   e7bda:	872a                	ld_s	r1,[r15,0x28]
+   e7bdc:	1b1c 0180           	st	r6,[r3,28]
+   e7be0:	1628 1004           	ld	r4,[r14,40]
+   e7be4:	1b20 0040           	st	r1,[r3,32]
+   e7be8:	248c 8901           	cmp	r4,100
+   e7bec:	005c 002d           	bhi.d	92	;0xe7c48
+   e7bf0:	1e24 13c0           	st	r15,[r14,36]
+   e7bf4:	1770 1605           	ld.as	r5,[r15,112]
+   e7bf8:	0d51 019f           	bbit1	r5,0x6,80	;0xe7c48
+   e7bfc:	1404 301f           	ld	blink,[sp,4]
+   e7c00:	c602                	ld_s	r14,[sp,0x8]
+   e7c02:	c703                	ld_s	r15,[sp,0xc]
+   e7c04:	2021 07c0           	j.d	[blink]
+   e7c08:	1410 340d           	ld.ab	r13,[sp,16]
+   e7c0c:	872d                	ld_s	r1,[r15,0x34]
+   e7c0e:	874e                	ld_s	r2,[r15,0x38]
+   e7c10:	2023 02c0           	jl.d	[r11]
+   e7c14:	200a 03c0           	mov	r0,r15
+   e7c18:	1770 160a           	ld.as	r10,[r15,112]
+   e7c1c:	0a95 915e           	bbit0	r10,0x5,-108	;0xe7bb0
+   e7c20:	70cf 001b c78c      	mov_s	r0,0x1bc78c
+   e7c26:	2022 0f80 000e e260 	jl	0xee260
+   e7c2e:	70e9                	mov_s	r0,r15
+   e7c30:	2022 0f80 000e e834 	jl	0xee834
+   e7c38:	1404 301f           	ld	blink,[sp,4]
+   e7c3c:	c602                	ld_s	r14,[sp,0x8]
+   e7c3e:	c703                	ld_s	r15,[sp,0xc]
+   e7c40:	2021 07c0           	j.d	[blink]
+   e7c44:	1410 340d           	ld.ab	r13,[sp,16]
+   e7c48:	0e92 ffef           	bl.d	-368	;0xe7ad8
+   e7c4c:	200a 0340           	mov	r0,r13
+   e7c50:	1404 301f           	ld	blink,[sp,4]
+   e7c54:	1408 300e           	ld	r14,[sp,8]
+   e7c58:	c703                	ld_s	r15,[sp,0xc]
+   e7c5a:	7fe0                	j_s.d	[blink]
+   e7c5c:	1410 340d           	ld.ab	r13,[sp,16]
+   e7c60:	1404 301f           	ld	blink,[sp,4]
+   e7c64:	a6e8                	st_s	r15,[r14,0x20]
+   e7c66:	a6e9                	st_s	r15,[r14,0x24]
+   e7c68:	c602                	ld_s	r14,[sp,0x8]
+   e7c6a:	c703                	ld_s	r15,[sp,0xc]
+   e7c6c:	2021 07c0           	j.d	[blink]
+   e7c70:	1410 340d           	ld.ab	r13,[sp,16]

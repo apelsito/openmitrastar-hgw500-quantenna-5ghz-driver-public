@@ -1,0 +1,50 @@
+{
+  "status": "PASS_OFFLINE_COMPLETE_FIFTEEN_ENTRY_PAIR",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "modules": [
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "path": "outputs\\rea\\driver5g-ops-20261022-fifteen-pair-sealed-r1\\a\\qdrv.ko",
+      "bytes": 684756,
+      "sha256": "3e76821b3d6358682db6a109dc1f1dc33f6a440e36fcb13bf1711dc58c2ecf06"
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "path": "outputs\\rea\\driver5g-ops-20261022-fifteen-pair-sealed-r1\\a\\wlan.ko",
+      "bytes": 629896,
+      "sha256": "eac8c0633dc719d96850cb4cb95ff9cec42e2d3e217bda632089c7b2e922f946"
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "path": "outputs\\rea\\driver5g-ops-20261022-fifteen-pair-sealed-r1\\b\\qdrv.ko",
+      "bytes": 684756,
+      "sha256": "3e76821b3d6358682db6a109dc1f1dc33f6a440e36fcb13bf1711dc58c2ecf06"
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "path": "outputs\\rea\\driver5g-ops-20261022-fifteen-pair-sealed-r1\\b\\wlan.ko",
+      "bytes": 629896,
+      "sha256": "eac8c0633dc719d96850cb4cb95ff9cec42e2d3e217bda632089c7b2e922f946"
+    }
+  ],
+  "all_wlan_c_units_compiled_twice": 19,
+  "qdrv_unchanged_from_qualified_fourteen_pair": true,
+  "wext_table_entries": 581,
+  "functional_entries": 13,
+  "faithful_unsupported": 2,
+  "remaining_oem_table_gaps": 29,
+  "source_case_fixture_checks": 131074,
+  "field_offset_decoded_from_actual_arc_block": 19488,
+  "field_width_bytes": 4,
+  "negative_fault_cases": 7,
+  "rea_ephemeral_exact_etrel_analysis_partial_cfg": true,
+  "direct_ghidra_case_block_decoding_pass": true,
+  "separate_offset_compilation_witness_unrun_wsl_error": true,
+  "limits": "Actual wholeCunit/module compiled; focused ARC decode and source fixture prove host assignment only. WSL separatewitnesslaunch failed; no runtime RF/client/traffic or allops closure."
+}

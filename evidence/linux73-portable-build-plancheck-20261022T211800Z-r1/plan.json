@@ -1,0 +1,74 @@
+{
+  "schema": "openmitrastar.linux73-portable-build/v1",
+  "status": "PASS_PLAN_ONLY_INPUTS_VALIDATED",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "driver_manifest_files_checked": 153,
+  "kbuild_source_units": 62,
+  "upstream_kernel_commit": "c03c1a14507dfaf8b856c2608f9ac216021fc222",
+  "kernel_commit_check": "DECLARED_BASE_COMMIT_NO_GIT_METADATA",
+  "inputs": {
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261022T233300Z-r11/result.json": "ae42749c8e684271fc4f49ea77978a2b602b02598673fde1e8e717c2e16f1d6c",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261022T233300Z-r11/Kbuild": "086052a28352d6a0b2aceedc68591881893ebe7db6925dd4790ed5d120c5546f",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-probe-v3/kernel-source/Makefile": "2eb7b5d5c2ac15a28136607e086f82ebd13f0d3753acc89e463fed49109bc794",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-probe-v3/kernel-context/.config": "91b73a1aac1d062773b4675738f73a6962103e108ebf7ebfba018ce95d862ca9",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-probe-v3/kernel-context/Module.symvers": "a9f74b04bf95ffb60954c61f12983d056dade9f8bb6b67d7e45cba5ddcee03a3",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-gcc": "3918a0da3c9f2cfde359f6fed1d0df19e737438dfd2cc60edae63f2dcbf14263",
+    "/workspace/user-home/Desktop/MitraStar/tools/linux73_build.py": "b0404c37c63e23720952edc34086bd7853cd2f93a5e9c4324e82a077a4c343a6"
+  },
+  "overlay": {
+    "include/linux/netdevice.h": "b149a958c75f17e685e18f9bbf6969959eb8d67b140aafad19012fe2fec71f7d",
+    "include/linux/openmitrastar_bridge.h": "fafac0b567cad17824713499988aecf256c16f89da591e372251e4477fce11fb",
+    "include/linux/openmitrastar_qtn_skb.h": "2a61b183457bbe9bc05d13a99e88202e9d94c307948c0b2b5c970389c012b5cc",
+    "include/linux/skbuff.h": "5edbedd91f41c81e7aad995511001db1505b062d81aa0d230b8953ce6eed44a4",
+    "net/core/dev.c": "b6654f34f28a282067ca149b1347325fe4b5067483c40cd825747d1a5050e27e",
+    "net/wireless/Kconfig": "4ec168a7f54f9f12b6b1b82bb30ae1ea0ae15676c07cb944f02a6294344bf9c0"
+  },
+  "base_config_reference_only": true,
+  "old_objects_reused": false,
+  "secret_assets_included": false,
+  "commands": [
+    [
+      "make",
+      "-C",
+      "/tmp/openmitrastar-linux73-aelita-planonly-check/kernel-source",
+      "O=/tmp/openmitrastar-linux73-aelita-planonly-check/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "olddefconfig"
+    ],
+    [
+      "make",
+      "-C",
+      "/tmp/openmitrastar-linux73-aelita-planonly-check/kernel-source",
+      "O=/tmp/openmitrastar-linux73-aelita-planonly-check/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "modules_prepare"
+    ],
+    [
+      "make",
+      "-C",
+      "/tmp/openmitrastar-linux73-aelita-planonly-check/kernel-source",
+      "O=/tmp/openmitrastar-linux73-aelita-planonly-check/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "-j2",
+      "vmlinux",
+      "dtbs",
+      "modules"
+    ],
+    [
+      "make",
+      "-C",
+      "/tmp/openmitrastar-linux73-aelita-planonly-check/kernel-source",
+      "O=/tmp/openmitrastar-linux73-aelita-planonly-check/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "M=/tmp/openmitrastar-linux73-aelita-planonly-check/driver",
+      "QTN_GPL=/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL",
+      "-j2",
+      "modules"
+    ]
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "status": "PASS_ACTUAL_R22_R23_ONLY_QDRV_FW_OBJECT_AND_QDRV_MODULE_CHANGED",
+  "lanes": [
+    {
+      "lane": "a",
+      "changed_C_objects": [
+        "source/qdrv/qdrv_fw.o"
+      ],
+      "changed_modules": [
+        "qdrv.ko"
+      ],
+      "global_qdrv_symbols_and_types_unchanged": true,
+      "section_deltas": {
+        "hbm.ko": [],
+        "wlan_scan_ap.ko": [],
+        "om73_sram.ko": [],
+        "switch_vlan.ko": [],
+        "qdrv.ko": [
+          ".text",
+          ".rodata",
+          ".modinfo"
+        ],
+        "wlan_xauth.ko": [],
+        "dmautil.ko": [],
+        "wlan_scan_sta.ko": [],
+        "temp_sens.ko": [],
+        "wlan_ccmp.ko": [],
+        "gpio.ko": [],
+        "iputil.ko": [],
+        "topaz_congest_queue.ko": [],
+        "wlan.ko": [],
+        "fwt_if.ko": [],
+        "qtn_pm_qos_compat.ko": [],
+        "qtn_platform_support.ko": [],
+        "runtime_compat.ko": [],
+        "switch_tqe.ko": [],
+        "board_compat.ko": [],
+        "wlan_tkip.ko": [],
+        "qtn_tsens.ko": []
+      }
+    },
+    {
+      "lane": "b",
+      "changed_C_objects": [
+        "source/qdrv/qdrv_fw.o"
+      ],
+      "changed_modules": [
+        "qdrv.ko"
+      ],
+      "global_qdrv_symbols_and_types_unchanged": true,
+      "section_deltas": {
+        "hbm.ko": [],
+        "wlan_scan_ap.ko": [],
+        "om73_sram.ko": [],
+        "switch_vlan.ko": [],
+        "qdrv.ko": [
+          ".text",
+          ".rodata",
+          ".modinfo"
+        ],
+        "wlan_xauth.ko": [],
+        "dmautil.ko": [],
+        "wlan_scan_sta.ko": [],
+        "temp_sens.ko": [],
+        "wlan_ccmp.ko": [],
+        "gpio.ko": [],
+        "iputil.ko": [],
+        "topaz_congest_queue.ko": [],
+        "wlan.ko": [],
+        "fwt_if.ko": [],
+        "qtn_pm_qos_compat.ko": [],
+        "qtn_platform_support.ko": [],
+        "runtime_compat.ko": [],
+        "switch_tqe.ko": [],
+        "board_compat.ko": [],
+        "wlan_tkip.ko": [],
+        "qtn_tsens.ko": []
+      }
+    }
+  ],
+  "old_pair_sha256": "84c418c0e537b1a38e57afb5665f4baeff18cc1192f54cd0280947406b87347f",
+  "new_pair_sha256": "c5c40c2fb72ea70627ea4070d53ea1db33cceab12cb1ba97fb062e48144f3864",
+  "kernel_config_and_symvers_unchanged": true,
+  "hardware_accessed": false,
+  "firmware_eligible": false
+}

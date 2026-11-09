@@ -1,0 +1,14 @@
+{
+  "status": "SOURCE_ONLY_EIGHT_RECOVERED_OPERATIONS_TWO_FAITHFUL_UNSUPPORTED_ENTRIES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "parent_sha256": "20eb551bac555ecc1df370c3c33dc0509eee82fd45bb2ad43d447c3ce429f955",
+  "candidate_sha256": "7a128781902eb6cc58f71e2b4a30ae005de7ebf168a10a9ae4139557b93a9be8",
+  "entries_total_added_to_original": 10,
+  "functional_operations_added": 8,
+  "faithful_unsupported_entries": 2,
+  "original_table_gaps_remaining": 34,
+  "oem_getparam_sha256": "294fee39538182aed0e2a16151340134f066a6e44af9f98b88dec73d7e771bb2",
+  "case_map_sha256": "e3716033ed6e39c1e71fc9ca8e9ede85a0aa98efa69fd4e1b1a09ac8462d11bd",
+  "constraints": "No scans, channel, DFS, radio state or firmware commands introduced; fullmodule gate pending"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS_PORTABLE_LINUX73_PLAN_REAL153FILES_62UNITS_AND_THREE_HASH_NEGATIVES",
+  "hardware_accessed": false,
+  "build_started": false,
+  "plan_output_directory_absent": true,
+  "plan": {
+    "status": "PASS_PLAN_ONLY_INPUTS_VALIDATED",
+    "files_checked": 153,
+    "units": 62,
+    "kernel_commit_check": "DECLARED_BASE_COMMIT_NO_GIT_METADATA"
+  },
+  "negative_cases": [
+    {
+      "case": "--expected-config-sha256",
+      "rejected": true,
+      "reason": "Base config SHA256 mismatch"
+    },
+    {
+      "case": "--compiler-sha256",
+      "rejected": true,
+      "reason": "Compiler SHA256 mismatch"
+    },
+    {
+      "case": "--expected-kernel-makefile-sha256",
+      "rejected": true,
+      "reason": "Kernel Makefile SHA256 mismatch"
+    }
+  ],
+  "tool_sha256": "b0404c37c63e23720952edc34086bd7853cd2f93a5e9c4324e82a077a4c343a6"
+}

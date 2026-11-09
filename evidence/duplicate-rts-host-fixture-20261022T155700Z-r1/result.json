@@ -1,0 +1,7 @@
+{
+  "firmware_eligible": false,
+  "status": "PASS_ACTUAL_HOST_DUPLICATE_RTS_STATE_FIXTURE",
+  "host_exit": 0,
+  "hardware_accessed": false,
+  "cases": 1048576
+}

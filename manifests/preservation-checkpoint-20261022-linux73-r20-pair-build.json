@@ -1,0 +1,84 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/a-configure.log",
+      "source": "outputs/rea/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/a-configure.log",
+      "bytes": 1108,
+      "sha256": "41bb22e966a43a5a480aa2acbb867af26e82327da758653376a90071f850a516",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/a-emac.log",
+      "source": "outputs/rea/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/a-emac.log",
+      "bytes": 4499,
+      "sha256": "99b9fa6cbfc17cb1e9d2fd29d927a1c05962325b8e4babdf18d63417bb3c2329",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/a-kernel.log",
+      "source": "outputs/rea/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/a-kernel.log",
+      "bytes": 63281,
+      "sha256": "314298c036d6bd35adb701c18064dfc6e9628bd37ff6c1a11a90d0e88d0088a8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/a-native.log",
+      "source": "outputs/rea/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/a-native.log",
+      "bytes": 492410,
+      "sha256": "60c0fdc20519c254e0c07281794d9053ef63840de717a3672c517bb629f1a4ff",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/b-configure.log",
+      "source": "outputs/rea/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/b-configure.log",
+      "bytes": 1108,
+      "sha256": "84007db153634795fb87e4697ac278d10f8c6eb438fdbdab8fa14c1bc3b2c6dd",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/b-emac.log",
+      "source": "outputs/rea/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/b-emac.log",
+      "bytes": 4499,
+      "sha256": "b54ddfe71dbfe2d9b4723fabbc37cfbf13320dddf315f48edbf679702b597063",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/b-kernel.log",
+      "source": "outputs/rea/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/b-kernel.log",
+      "bytes": 63281,
+      "sha256": "60399b4c6ff03028c3f2a340547e74741b9616f73ed8b0760366e8f3742befe7",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/b-native.log",
+      "source": "outputs/rea/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/b-native.log",
+      "bytes": 492410,
+      "sha256": "88c4c03cff778a82ed35a44d3f6abc9da75dba94affd1629022c6fc34eea9afd",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/result.json",
+      "source": "outputs/rea/linux73-full44-complete-pair-receipt-20261023T020500Z-r20/result.json",
+      "bytes": 33924,
+      "sha256": "4446af05189fe87fdb60e6bdb09e4bfec99ec6d053578716c37addd004754479",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/build_hgw5g_linux73_native_pair.py",
+      "source": "tools/build_hgw5g_linux73_native_pair.py",
+      "bytes": 6542,
+      "sha256": "53b3f6150c5b3883f9ae082a7a6609632ecffa4992e75561da90ae91546a59fb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/audit_hgw5g_linux73_pair_abi.py",
+      "source": "tools/audit_hgw5g_linux73_pair_abi.py",
+      "bytes": 5659,
+      "sha256": "e26cf3f63e7c572b3fdf1933260fc33b5f615832bbde0b977a9a16d1c767050c",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

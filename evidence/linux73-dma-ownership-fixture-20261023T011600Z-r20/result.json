@@ -1,0 +1,25 @@
+{
+  "status": "PASS_ACTUAL_DMA_SOURCE_HOST_OWNERSHIP_FIXTURE",
+  "source_sha256": "8a3042f9ce649a67739c4623725c2727f144ae17ca8af1281debebc81fd3a018",
+  "compile_argv": [
+    "gcc",
+    "-std=gnu11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-misleading-indentation",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-I/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/include",
+    "-include",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/shim.h",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/fixture.c",
+    "-o",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-dma-ownership-fixture-20261023T011600Z-r20/fixture"
+  ],
+  "output": "PASS actual source ownership cases=102 dram_free=10 sram_free=10 unmaps=18",
+  "target_arithmetic_scope": "Host size_t; independent ARC32 bounds fixture required",
+  "hardware_accessed": false,
+  "MMIO_emulated": true,
+  "firmware_eligible": false
+}

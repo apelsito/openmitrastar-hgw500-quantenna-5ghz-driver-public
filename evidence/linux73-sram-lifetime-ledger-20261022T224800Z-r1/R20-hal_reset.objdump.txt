@@ -1,0 +1,94 @@
+
+/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-module-v8-r20/qdrv.ko:     file format elf32-littlearc
+
+
+Disassembly of section .text:
+
+0004be08 <hal_reset>:
+   4be08:	c0f1                	push_s	blink
+   4be0a:	1cfc b488           	st.aw	r18,[sp,-4]
+   4be0e:	1cfc b448           	st.aw	r17,[sp,-4]
+   4be12:	1cfc b408           	st.aw	r16,[sp,-4]
+   4be16:	c7e1                	push_s	r15
+   4be18:	c6e1                	push_s	r14
+   4be1a:	c5e1                	push_s	r13
+   4be1c:	df07                	mov_s	r15,0x7
+   4be1e:	bf1d                	asl_s	r15,r15,0x1d
+   4be20:	200a 2f80 e000 0004 	mov	r16,0xe0000004
+   4be28:	1000 2002           	ld	r2,[r16]
+   4be2c:	8760                	ld_s	r3,[r15,0]
+   4be2e:	1600 7004 e100 a000 	ld	r4,[0xe100a000]
+   4be36:	d983                	mov_s	r1,0x83
+   4be38:	6937                	asl_s	r1,r1,0x7
+   4be3a:	2444 03c5           	and	r5,r4,0xf
+   4be3e:	250a 1f80 0000 0000 	mov	r13,0
+			4be42: R_ARC_32_ME	_printk
+   4be46:	200a 0f80 0000 0000 	mov	r0,0
+			4be4a: R_ARC_32_ME	.rodata+0xf96c
+   4be4e:	7d40                	jl_s	[r13]
+   4be50:	d883                	mov_s	r0,0x83
+   4be52:	6817                	asl_s	r0,r0,0x7
+   4be54:	1e00 7000 e000 0000 	st	r0,[0xe0000000]
+   4be5c:	1e00 7000 e000 0004 	st	r0,[0xe0000004]
+   4be64:	1000 2001           	ld	r1,[r16]
+   4be68:	8740                	ld_s	r2,[r15,0]
+   4be6a:	200a 0f80 0000 0000 	mov	r0,0
+			4be6e: R_ARC_32_ME	.rodata+0xf9b4
+   4be72:	de00                	mov_s	r14,0
+   4be74:	7d40                	jl_s	[r13]
+   4be76:	d832                	mov_s	r0,0x32
+   4be78:	2022 0f80 0000 0000 	jl	0
+			4be7c: R_ARC_32_ME	.text+0x4bdcc
+   4be80:	1e00 7380 e000 0000 	st	r14,[0xe0000000]
+   4be88:	1000 2001           	ld	r1,[r16]
+   4be8c:	8740                	ld_s	r2,[r15,0]
+   4be8e:	1600 7003 e100 a000 	ld	r3,[0xe100a000]
+   4be96:	200a 0f80 0000 0000 	mov	r0,0
+			4be9a: R_ARC_32_ME	.rodata+0xf9e4
+   4be9e:	2344 03c4           	and	r4,r3,0xf
+   4bea2:	7d40                	jl_s	[r13]
+   4bea4:	1e00 7380 e505 2000 	st	r14,[0xe5052000]
+   4beac:	d804                	mov_s	r0,0x4
+   4beae:	1e00 7000 e600 0008 	st	r0,[0xe6000008]
+   4beb6:	200a 0f80 0000 0bb5 	mov	r0,0xbb5
+   4bebe:	1e00 7000 e609 048c 	st	r0,[0xe609048c]
+   4bec6:	1e00 7380 e600 0008 	st	r14,[0xe6000008]
+   4bece:	210a 0f80 0000 0000 	mov	r1,0
+			4bed2: R_ARC_32_ME	.rodata+0xfa3c
+   4bed6:	d80f                	mov_s	r0,0xf
+   4bed8:	2022 0f80 0000 0000 	jl	0
+			4bedc: R_ARC_32_ME	gpio_request
+   4bee0:	780b                	tst_s	r0,r0
+   4bee2:	21ca 03e4           	mov.n	r1,0xf
+   4bee6:	20ca 0f84 0000 0000 	mov.n	r0,0
+			4beea: R_ARC_32_ME	.rodata+0xfa48
+   4beee:	20e2 0344           	jln	[r13]
+   4bef2:	d80f                	mov_s	r0,0xf
+   4bef4:	250a 1f80 0000 0000 	mov	r13,0
+			4bef8: R_ARC_32_ME	gpio_to_desc
+   4befc:	7d40                	jl_s	[r13]
+   4befe:	d900                	mov_s	r1,0
+   4bf00:	2022 0f80 0000 0000 	jl	0
+			4bf04: R_ARC_32_ME	gpiod_direction_output_raw
+   4bf08:	d80a                	mov_s	r0,0xa
+   4bf0a:	2022 0f80 0000 0000 	jl	0
+			4bf0e: R_ARC_32_ME	.text+0x4bdcc
+   4bf12:	d80f                	mov_s	r0,0xf
+   4bf14:	7d40                	jl_s	[r13]
+   4bf16:	d901                	mov_s	r1,0x1
+   4bf18:	2022 0f80 0000 0000 	jl	0
+			4bf1c: R_ARC_32_ME	gpiod_set_raw_value
+   4bf20:	d80f                	mov_s	r0,0xf
+   4bf22:	c5c1                	pop_s	r13
+   4bf24:	c6c1                	pop_s	r14
+   4bf26:	c7c1                	pop_s	r15
+   4bf28:	1404 3410           	ld.ab	r16,[sp,4]
+   4bf2c:	1404 3411           	ld.ab	r17,[sp,4]
+   4bf30:	1404 3412           	ld.ab	r18,[sp,4]
+   4bf34:	c0d1                	pop_s	blink
+   4bf36:	2020 0f80 0000 0000 	j	0
+			4bf3a: R_ARC_32_ME	gpio_free
+
+Disassembly of section .exit.text:
+
+Disassembly of section .init.text:

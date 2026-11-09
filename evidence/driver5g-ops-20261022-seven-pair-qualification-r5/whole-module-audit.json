@@ -1,0 +1,306 @@
+{
+  "qdrv": {
+    "status": "PASS_WHOLE_MODULE_DECLARED_GETTER_DELTA",
+    "functions_total": 795,
+    "unchanged_function_bodies": 792,
+    "changed_getter": [
+      {
+        "name": "qdrv_wlan_80211_getparam",
+        "baseline_bytes": 2968,
+        "candidate_bytes": 3016,
+        "baseline_sha256": "dbd4447ca530222f70fead0217edcbab13e18f617453b5990708badb3481449d",
+        "candidate_sha256": "090a60d841c65bcd5b62eea730ff7989f1ed60512ebe6b2b0b3aa64666df3895",
+        "baseline_relocations": 160,
+        "candidate_relocations": 160,
+        "scope": "INTENTIONALLY_CHANGED_GETTER_BODY_NOT_EQUIVALENT; actual-source fixture and ARC field witness are separate evidence"
+      }
+    ],
+    "diagnostic_only_functions": [
+      {
+        "function": "qdrv_wlan_auth_state_change",
+        "changes": [
+          {
+            "offset": 622,
+            "instruction": "mov r2/r1, diagnostic source line",
+            "old_line": 5908,
+            "new_line": 5917
+          },
+          {
+            "offset": 788,
+            "instruction": "mov r2/r1, diagnostic source line",
+            "old_line": 5921,
+            "new_line": 5930
+          },
+          {
+            "offset": 936,
+            "instruction": "mov r2/r1, diagnostic source line",
+            "old_line": 5932,
+            "new_line": 5941
+          }
+        ]
+      },
+      {
+        "function": "qdrv_wlan_exit",
+        "changes": [
+          {
+            "offset": 946,
+            "instruction": "mov r2/r1, diagnostic source line",
+            "old_line": 9179,
+            "new_line": 9188
+          }
+        ]
+      }
+    ],
+    "baseline_relocations_total": 14034,
+    "candidate_relocations_total": 14034,
+    "relocations_outside_changed_getter_qualified": 13874,
+    "symbols_total": 1932,
+    "data_sections": [
+      {
+        "section": "",
+        "compared": true
+      },
+      {
+        "section": "__ksymtab_strings",
+        "compared": true
+      },
+      {
+        "section": ".data.once",
+        "compared": true
+      },
+      {
+        "section": "__ksymtab",
+        "compared": true
+      },
+      {
+        "section": ".data",
+        "compared": true
+      },
+      {
+        "section": ".ARC.attributes",
+        "compared": true
+      },
+      {
+        "section": ".note.GNU-stack",
+        "compared": true
+      },
+      {
+        "section": ".gnu.linkonce.this_module",
+        "compared": true
+      },
+      {
+        "section": ".bss",
+        "compared": true
+      },
+      {
+        "section": ".rodata.str1.4",
+        "compared": true
+      },
+      {
+        "section": ".modinfo",
+        "compared": true
+      },
+      {
+        "section": ".note.Linux",
+        "compared": true
+      },
+      {
+        "section": ".rodata",
+        "compared": true
+      },
+      {
+        "section": ".comment",
+        "compared": true
+      },
+      {
+        "section": "__param",
+        "compared": true
+      }
+    ],
+    "all_executable_bytes": [
+      {
+        "section": ".text",
+        "baseline_bytes": 305132,
+        "candidate_bytes": 305180,
+        "all_bytes_outside_declared_delta_match": true
+      },
+      {
+        "section": ".text.unlikely",
+        "baseline_bytes": 6248,
+        "candidate_bytes": 6248,
+        "all_bytes_outside_declared_delta_match": true
+      },
+      {
+        "section": ".init.text",
+        "baseline_bytes": 1032,
+        "candidate_bytes": 1032,
+        "all_bytes_outside_declared_delta_match": true
+      },
+      {
+        "section": ".exit.text",
+        "baseline_bytes": 440,
+        "candidate_bytes": 440,
+        "all_bytes_outside_declared_delta_match": true
+      }
+    ],
+    "limits": "Changed getter CFG/semantic correctness is supported separately by actual source fixture; no firmware timing or hardware claim."
+  },
+  "wlan": {
+    "status": "PASS_WHOLE_MODULE_DECLARED_GETTER_DELTA",
+    "functions_total": 935,
+    "unchanged_function_bodies": 930,
+    "changed_getter": [
+      {
+        "name": "ieee80211_ioctl_getparam",
+        "baseline_bytes": 5576,
+        "candidate_bytes": 5712,
+        "baseline_sha256": "cb3b0e1a0d03b6c646a83000942a05d461b141de40be4982c34e6b78c4f353e0",
+        "candidate_sha256": "feb98642a45232c9ca90a462933efba9cd9a6c34d01ef092c67b031b836f0b3f",
+        "baseline_relocations": 43,
+        "candidate_relocations": 44,
+        "scope": "INTENTIONALLY_CHANGED_GETTER_BODY_NOT_EQUIVALENT; actual-source fixture and ARC field witness are separate evidence"
+      }
+    ],
+    "diagnostic_only_functions": [
+      {
+        "function": "ieee80211_delete_wlanunit",
+        "changes": [
+          {
+            "offset": 38,
+            "instruction": "mov r2/r1, diagnostic source line",
+            "old_line": 21089,
+            "new_line": 21127
+          },
+          {
+            "offset": 110,
+            "instruction": "mov r2/r1, diagnostic source line",
+            "old_line": 21090,
+            "new_line": 21128
+          }
+        ]
+      },
+      {
+        "function": "ieee80211_ioctl_giwfreq",
+        "changes": [
+          {
+            "offset": 74,
+            "instruction": "mov r2, compact diagnostic source line",
+            "old_line": 1566,
+            "new_line": 1572
+          }
+        ]
+      },
+      {
+        "function": "ieee80211_param_from_qdrv",
+        "changes": [
+          {
+            "offset": 86,
+            "instruction": "mov r2/r1, diagnostic source line",
+            "old_line": 3453,
+            "new_line": 3459
+          }
+        ]
+      },
+      {
+        "function": "ieee80211_ioctl_setparam",
+        "changes": [
+          {
+            "offset": 10880,
+            "instruction": "mov r2/r1, diagnostic source line",
+            "old_line": 13164,
+            "new_line": 13170
+          }
+        ]
+      }
+    ],
+    "baseline_relocations_total": 9543,
+    "candidate_relocations_total": 9544,
+    "relocations_outside_changed_getter_qualified": 9500,
+    "symbols_total": 2250,
+    "data_sections": [
+      {
+        "section": "",
+        "compared": true
+      },
+      {
+        "section": "__ksymtab_strings",
+        "compared": true
+      },
+      {
+        "section": ".data.once",
+        "compared": true
+      },
+      {
+        "section": "__ksymtab",
+        "compared": true
+      },
+      {
+        "section": ".data",
+        "compared": true
+      },
+      {
+        "section": ".ARC.attributes",
+        "compared": true
+      },
+      {
+        "section": ".note.GNU-stack",
+        "compared": true
+      },
+      {
+        "section": ".gnu.linkonce.this_module",
+        "compared": true
+      },
+      {
+        "section": ".bss",
+        "compared": true
+      },
+      {
+        "section": ".rodata.str1.4",
+        "compared": true
+      },
+      {
+        "section": ".modinfo",
+        "compared": true
+      },
+      {
+        "section": ".note.Linux",
+        "compared": true
+      },
+      {
+        "section": ".rodata",
+        "compared": true
+      },
+      {
+        "section": ".comment",
+        "compared": true
+      }
+    ],
+    "all_executable_bytes": [
+      {
+        "section": ".text",
+        "baseline_bytes": 318960,
+        "candidate_bytes": 319096,
+        "all_bytes_outside_declared_delta_match": true
+      },
+      {
+        "section": ".text.unlikely",
+        "baseline_bytes": 972,
+        "candidate_bytes": 972,
+        "all_bytes_outside_declared_delta_match": true
+      },
+      {
+        "section": ".init.text",
+        "baseline_bytes": 4,
+        "candidate_bytes": 4,
+        "all_bytes_outside_declared_delta_match": true
+      },
+      {
+        "section": ".exit.text",
+        "baseline_bytes": 4,
+        "candidate_bytes": 4,
+        "all_bytes_outside_declared_delta_match": true
+      }
+    ],
+    "limits": "Changed getter CFG/semantic correctness is supported separately by actual source fixture; no firmware timing or hardware claim."
+  }
+}

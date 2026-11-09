@@ -1,0 +1,74 @@
+{
+  "status": "PASS_ELEVEN_SOURCE25_PARSED_NEGATIVE_DELTA_CASES",
+  "hardware_accessed": false,
+  "files_modified": false,
+  "cases": 11,
+  "rows": [
+    {
+      "component": "qdrv",
+      "case": "function",
+      "rejected": true,
+      "reason": "('unrelated QDRV function', ('qdrv_hostlink_msg_cmd', '.text', 2, 0))"
+    },
+    {
+      "component": "qdrv",
+      "case": "anonymous",
+      "rejected": true,
+      "reason": "every anonymous executable body .text"
+    },
+    {
+      "component": "qdrv",
+      "case": "data",
+      "rejected": true,
+      "reason": "allocated data .data.once"
+    },
+    {
+      "component": "qdrv",
+      "case": "relocation",
+      "rejected": true,
+      "reason": "all residual RELA [(('object', ('qdrv_f355_claim', '.text', 2, 0), 92), 27, ('printk', '', 0, 1, 0)), (('object', ('qdrv_f355_claim', '.text', 2, 0), 92), 27, ('printk', '', 0, 1, 4))]"
+    },
+    {
+      "component": "qdrv",
+      "case": "symbol",
+      "rejected": true,
+      "reason": "('old symbol attrs', ('qdrv_hostlink_msg_cmd', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan",
+      "case": "function",
+      "rejected": true,
+      "reason": "unrelated function ieee80211_setmode"
+    },
+    {
+      "component": "wlan",
+      "case": "anonymous",
+      "rejected": true,
+      "reason": "every anonymous executable body .text"
+    },
+    {
+      "component": "wlan",
+      "case": "data",
+      "rejected": true,
+      "reason": "allocated data .data.once"
+    },
+    {
+      "component": "wlan",
+      "case": "relocation",
+      "rejected": true,
+      "reason": "all residual RELA [(('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 56), 27, ('printk', '', 0, 1, 0)), (('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 56), 27, ('printk', '', 0, 1, 4))]"
+    },
+    {
+      "component": "wlan",
+      "case": "symbol",
+      "rejected": true,
+      "reason": "('old symbol attrs', ('ieee80211_setmode', '.text', 2, 0))"
+    },
+    {
+      "component": "wlan",
+      "case": "diagnostic",
+      "rejected": true,
+      "reason": "non diagnostic bytes ieee80211_param_from_qdrv"
+    }
+  ]
+}

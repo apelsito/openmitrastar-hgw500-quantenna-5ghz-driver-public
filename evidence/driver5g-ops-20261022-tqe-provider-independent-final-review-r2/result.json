@@ -1,0 +1,50 @@
+{
+  "status": "PASS_INDEPENDENT_R2_PROVIDER_OFFLINE_SCOPE_NOT_RELEASE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "selected_source": "driver5g-ops-20261022-tqe-provider-source-r2",
+  "modules": [
+    {
+      "lane": "a",
+      "module": "switch_tqe",
+      "sha256": "7cb21e6a87284b3b29bfa285d6e51ffa7fac7f1bd4419574c48965e6af84b58f",
+      "bytes": 36236
+    },
+    {
+      "lane": "a",
+      "module": "topaz_congest_queue",
+      "sha256": "a0face8555ed07df340c0808a60e7caccf02b775903ac1aa63cce77eac375568",
+      "bytes": 17000
+    },
+    {
+      "lane": "b",
+      "module": "switch_tqe",
+      "sha256": "7cb21e6a87284b3b29bfa285d6e51ffa7fac7f1bd4419574c48965e6af84b58f",
+      "bytes": 36236
+    },
+    {
+      "lane": "b",
+      "module": "topaz_congest_queue",
+      "sha256": "a0face8555ed07df340c0808a60e7caccf02b775903ac1aa63cce77eac375568",
+      "bytes": 17000
+    }
+  ],
+  "global_audit_fresh_pass": true,
+  "qualification_host_pins_verified": 24,
+  "actual_four_writer_cases_replayed": 146,
+  "bound_total_fixture_cases": 171,
+  "quarantine_guard_precedes_vlan_hbm": true,
+  "VLAN_denied_direct_and_queued_multicast_retain_without_egress_drop": true,
+  "prior_uncertain_record_preserved": true,
+  "R1_late_guard_not_accepted": true,
+  "negative_verifier_cases": 12,
+  "scope": "UP/PREEMPT_NONE/nonPCIe;no forcedunload",
+  "unresolved": [
+    "ledger256saturation unrecordedrefs NO_GOcatalog",
+    "foreignbankarbitrationunknown",
+    "HBMwholepathwaits/MMIOstalls notbounded",
+    "permanentpins/containers rebootonly;no release/recovery",
+    "staletoken invalidoutsidequarantineisnotgeneralpublicAPIcontract",
+    "RF/client/traffic/persistence/recovery/releaseUNRUN"
+  ]
+}

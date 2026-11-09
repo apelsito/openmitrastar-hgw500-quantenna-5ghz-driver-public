@@ -1,0 +1,266 @@
+[
+  {
+    "ioctl": 4,
+    "target": "0x111b1c"
+  },
+  {
+    "ioctl": 5,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 6,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 7,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 8,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 9,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 10,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 11,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 12,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 13,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 14,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 15,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 16,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 17,
+    "target": "0x111b78"
+  },
+  {
+    "ioctl": 18,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 19,
+    "target": "0x111ee8"
+  },
+  {
+    "ioctl": 20,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 21,
+    "target": "0x111e34"
+  },
+  {
+    "ioctl": 22,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 23,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 24,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 25,
+    "target": "0x111f90"
+  },
+  {
+    "ioctl": 26,
+    "target": "0x111ff8"
+  },
+  {
+    "ioctl": 27,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 28,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 29,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 30,
+    "target": "0x11204c"
+  },
+  {
+    "ioctl": 31,
+    "target": "0x111e08"
+  },
+  {
+    "ioctl": 32,
+    "target": "0x1120dc"
+  },
+  {
+    "ioctl": 33,
+    "target": "0x1120e8"
+  },
+  {
+    "ioctl": 34,
+    "target": "0x111ca4"
+  },
+  {
+    "ioctl": 35,
+    "target": "0x111c30"
+  },
+  {
+    "ioctl": 36,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 37,
+    "target": "0x111b4c"
+  },
+  {
+    "ioctl": 38,
+    "target": "0x112148"
+  },
+  {
+    "ioctl": 39,
+    "target": "0x112170"
+  },
+  {
+    "ioctl": 40,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 41,
+    "target": "0x112198"
+  },
+  {
+    "ioctl": 42,
+    "target": "0x1121dc"
+  },
+  {
+    "ioctl": 43,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 44,
+    "target": "0x111d00"
+  },
+  {
+    "ioctl": 45,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 46,
+    "target": "0x111da4"
+  },
+  {
+    "ioctl": 47,
+    "target": "0x111dd8"
+  },
+  {
+    "ioctl": 48,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 49,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 50,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 51,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 52,
+    "target": "0x111d34"
+  },
+  {
+    "ioctl": 53,
+    "target": "0x112204"
+  },
+  {
+    "ioctl": 54,
+    "target": "0x111fd8"
+  },
+  {
+    "ioctl": 55,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 56,
+    "target": "0x112254"
+  },
+  {
+    "ioctl": 57,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 58,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 59,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 60,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 61,
+    "target": "0x112268"
+  },
+  {
+    "ioctl": 62,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 63,
+    "target": "0x112280"
+  },
+  {
+    "ioctl": 64,
+    "target": "0x111d64"
+  },
+  {
+    "ioctl": 65,
+    "target": "0x1122a4"
+  },
+  {
+    "ioctl": 66,
+    "target": "0x1122b0"
+  },
+  {
+    "ioctl": 67,
+    "target": "0x111a00"
+  },
+  {
+    "ioctl": 68,
+    "target": "0x111cd0"
+  },
+  {
+    "ioctl": 69,
+    "target": "0x1122e0"
+  }
+]

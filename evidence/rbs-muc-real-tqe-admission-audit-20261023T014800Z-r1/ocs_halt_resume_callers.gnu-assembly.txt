@@ -1,0 +1,44 @@
+  10cca4:	210a 0000           	mov	r1,r0
+  10cca8:	1000 0000           	ld	r0,[r0]
+  10ccac:	1cf8 b348           	st.aw	r13,[sp,-8]
+  10ccb0:	80a7                	ld_s	r13,[r0,0x1c]
+  10ccb2:	2530 1f85 0000 40b4 	ld	r5,[r13,0x40b4]
+  10ccba:	75c7 0000 3fe0      	add_s	r13,r13,0x3fe0
+  10ccc0:	0d1d 0031           	brne.d	r5,0,28	;0x10ccdc
+  10ccc4:	1c04 37c0           	st	blink,[sp,4]
+  10ccc8:	240a 0f80 8003 77f4 	mov	r4,0x800377f4
+  10ccd0:	14ac 0002           	ld	r2,[r4,172]
+  10ccd4:	e201                	add_s	r2,r2,0x1
+  10ccd6:	1cac 0080           	st	r2,[r4,172]
+  10ccda:	8100                	ld_s	r0,[r1,0]
+  10ccdc:	d980                	mov_s	r1,0x80
+  10ccde:	2022 0f80 000e 82a4 	jl	0xe82a4
+  10cce6:	db01                	mov_s	r3,0x1
+  10cce8:	1dd4 10c0           	st	r3,[r13,212]
+  10ccec:	7068                	mov_s	r0,r3
+  10ccee:	2022 0f80 0015 6550 	jl	0x156550
+  10ccf6:	1404 301f           	ld	blink,[sp,4]
+  10ccfa:	7fe0                	j_s.d	[blink]
+  10ccfc:	1408 340d           	ld.ab	r13,[sp,8]
+  10cd00:	210a 0000           	mov	r1,r0
+  10cd04:	1000 0000           	ld	r0,[r0]
+  10cd08:	1cf8 b348           	st.aw	r13,[sp,-8]
+  10cd0c:	80a7                	ld_s	r13,[r0,0x1c]
+  10cd0e:	2530 1f85 0000 40b4 	ld	r5,[r13,0x40b4]
+  10cd16:	75c7 0000 3fe0      	add_s	r13,r13,0x3fe0
+  10cd1c:	0d1d 0030           	breq.d	r5,0,28	;0x10cd38
+  10cd20:	1c04 37c0           	st	blink,[sp,4]
+  10cd24:	240a 0f80 8003 77f4 	mov	r4,0x800377f4
+  10cd2c:	14b0 0002           	ld	r2,[r4,176]
+  10cd30:	e201                	add_s	r2,r2,0x1
+  10cd32:	1cb0 0080           	st	r2,[r4,176]
+  10cd36:	8100                	ld_s	r0,[r1,0]
+  10cd38:	d980                	mov_s	r1,0x80
+  10cd3a:	2022 0f80 000e 82dc 	jl	0xe82dc
+  10cd42:	db00                	mov_s	r3,0
+  10cd44:	1dd4 10c0           	st	r3,[r13,212]
+  10cd48:	7068                	mov_s	r0,r3
+  10cd4a:	2022 0f80 0015 6550 	jl	0x156550
+  10cd52:	1404 301f           	ld	blink,[sp,4]
+  10cd56:	7fe0                	j_s.d	[blink]
+  10cd58:	1408 340d           	ld.ab	r13,[sp,8]

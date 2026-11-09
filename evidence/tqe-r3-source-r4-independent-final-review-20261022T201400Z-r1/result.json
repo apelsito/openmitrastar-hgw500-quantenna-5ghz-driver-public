@@ -1,0 +1,327 @@
+{
+  "status": "PASS_INDEPENDENT_SOURCE_R4_TYPED_BATCH_BOUNDED_PAIR_WITH_EXPLICIT_CALLER_FIXTURE_GAP",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "modules": [
+    {
+      "lane": "a",
+      "name": "switch_tqe",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/a/switch_tqe/switch_tqe.ko",
+      "bytes": 36704,
+      "sha256": "e842f63c6b62333026f152b4f5d1354803dcefd0235342df77edffc7886afef9",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "parm": [
+          "w3_fwt_reset_probe_enable:Explicit MitraStar-only FWT arbitration probe around TQE CPU reset",
+          "w3_rx_ring_entries:MitraStar-only compact TQE RX ring; default 512, validated compact value 256",
+          "w3_switch_tqe_only_enable:Explicit MitraStar W3 switch-TQE-only hardware gate"
+        ],
+        "parmtype": [
+          "tqe_sem_en:int",
+          "w3_fwt_reset_probe_enable:int",
+          "w3_rx_ring_entries:uint",
+          "w3_switch_tqe_only_enable:int"
+        ],
+        "depends": [
+          "topaz_congest_queue,dmautil,hbm,iputil,qtn_platform_support,switch_vlan"
+        ],
+        "name": [
+          "switch_tqe"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    },
+    {
+      "lane": "b",
+      "name": "switch_tqe",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/b/switch_tqe/switch_tqe.ko",
+      "bytes": 36704,
+      "sha256": "e842f63c6b62333026f152b4f5d1354803dcefd0235342df77edffc7886afef9",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "parm": [
+          "w3_fwt_reset_probe_enable:Explicit MitraStar-only FWT arbitration probe around TQE CPU reset",
+          "w3_rx_ring_entries:MitraStar-only compact TQE RX ring; default 512, validated compact value 256",
+          "w3_switch_tqe_only_enable:Explicit MitraStar W3 switch-TQE-only hardware gate"
+        ],
+        "parmtype": [
+          "tqe_sem_en:int",
+          "w3_fwt_reset_probe_enable:int",
+          "w3_rx_ring_entries:uint",
+          "w3_switch_tqe_only_enable:int"
+        ],
+        "depends": [
+          "topaz_congest_queue,dmautil,hbm,iputil,qtn_platform_support,switch_vlan"
+        ],
+        "name": [
+          "switch_tqe"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    },
+    {
+      "lane": "a",
+      "name": "topaz_congest_queue",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/a/topaz_congest_queue/topaz_congest_queue.ko",
+      "bytes": 19316,
+      "sha256": "aefc674cabb331fef82e4cca9789ed98525b7bc3b7af19ea25621c685a459f5f",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "author": [
+          "Quantenna"
+        ],
+        "description": [
+          "CONGEST QUEUE"
+        ],
+        "depends": [
+          "qtn_platform_support,hbm"
+        ],
+        "name": [
+          "topaz_congest_queue"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    },
+    {
+      "lane": "b",
+      "name": "topaz_congest_queue",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/b/topaz_congest_queue/topaz_congest_queue.ko",
+      "bytes": 19316,
+      "sha256": "aefc674cabb331fef82e4cca9789ed98525b7bc3b7af19ea25621c685a459f5f",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "author": [
+          "Quantenna"
+        ],
+        "description": [
+          "CONGEST QUEUE"
+        ],
+        "depends": [
+          "qtn_platform_support,hbm"
+        ],
+        "name": [
+          "topaz_congest_queue"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    }
+  ],
+  "fresh_actual_module_audits": {
+    "switch_tqe": {
+      "status": "PASS_R3_TYPED_BATCH_RESIDUAL_SCOPE",
+      "changed_source_bodies": [
+        "tqe_rx_multicast"
+      ],
+      "removed_source_functions": [
+        "tqe_push_mcast"
+      ],
+      "new_source_functions": [
+        "omtqe_push_mcast_batch"
+      ],
+      "exact_anchor_diagnostic_functions": [
+        "tqe_rx_napi_handler",
+        "tqe_tx"
+      ],
+      "residual_relocations_checked": 450,
+      "limits": "Actualchanged/newbodies fixturebound; notuniversalfirmware/release acceptance.",
+      "old_named_symbols_checked": 266,
+      "all_old_values_reviewed": true,
+      "complete_new_membership": [
+        "omcgq_batch_acquire",
+        "omcgq_batch_admit",
+        "omcgq_batch_complete",
+        "omcgq_batch_finish",
+        "omcgq_batch_valid",
+        "omtqe_push_mcast_batch"
+      ],
+      "nonoverlapping_function_ranges": true
+    },
+    "topaz_congest_queue": {
+      "status": "PASS_R3_TYPED_BATCH_RESIDUAL_SCOPE",
+      "changed_source_bodies": [
+        "omcgq_bank_acquire",
+        "omcgq_bank_quarantine"
+      ],
+      "removed_source_functions": [],
+      "new_source_functions": [
+        "omcgq_batch_acquire",
+        "omcgq_batch_admit",
+        "omcgq_batch_complete",
+        "omcgq_batch_finish",
+        "omcgq_batch_matches",
+        "omcgq_batch_valid"
+      ],
+      "exact_anchor_diagnostic_functions": [
+        "omcgq_record_held",
+        "topaz_congest_dequeue",
+        "topaz_congest_queue_exit",
+        "topaz_congest_enqueue",
+        "topaz_congest_release_queue",
+        "reg_congest_queue_stats"
+      ],
+      "residual_relocations_checked": 187,
+      "limits": "Actualchanged/newbodies fixturebound; notuniversalfirmware/release acceptance.",
+      "old_named_symbols_checked": 136,
+      "all_old_values_reviewed": true,
+      "complete_new_membership": [
+        "__kstrtab_omcgq_batch_acquire",
+        "__kstrtab_omcgq_batch_admit",
+        "__kstrtab_omcgq_batch_complete",
+        "__kstrtab_omcgq_batch_finish",
+        "__kstrtab_omcgq_batch_valid",
+        "__kstrtabns_omcgq_batch_acquire",
+        "__kstrtabns_omcgq_batch_admit",
+        "__kstrtabns_omcgq_batch_complete",
+        "__kstrtabns_omcgq_batch_finish",
+        "__kstrtabns_omcgq_batch_valid",
+        "__ksymtab_omcgq_batch_acquire",
+        "__ksymtab_omcgq_batch_admit",
+        "__ksymtab_omcgq_batch_complete",
+        "__ksymtab_omcgq_batch_finish",
+        "__ksymtab_omcgq_batch_valid",
+        "memset",
+        "omcgq_batch",
+        "omcgq_batch_acquire",
+        "omcgq_batch_admit",
+        "omcgq_batch_complete",
+        "omcgq_batch_finish",
+        "omcgq_batch_generation",
+        "omcgq_batch_matches",
+        "omcgq_batch_valid"
+      ],
+      "nonoverlapping_function_ranges": true
+    }
+  },
+  "source_fixture_replays": [
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\tqe-r3-source-r4-independent-typed-publication-20261022T201200Z-r1",
+      "cases": 142,
+      "source_sha256": "fe38ab11c93aef58a2fb9436d55ff5c158e0f25ddd39bd9d3e2fd8a0945c44f0",
+      "executable_sha256": "a7ee29d5ea864fb5e840eeef93ff65f016155ab4454d21ed703efe834abd39dd"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\tqe-r3-source-r4-independent-capacity-20261022T201300Z-r1",
+      "cases": 35212,
+      "source_sha256": "348f17361ce0be2e0dbaf69a5773e7c3fbdad4b5c631e3b2b70e0313a89e3d2c",
+      "executable_sha256": "52496f5f9140bd32bf2da1e781fb32a0ecde9e6b14f8f8ba862579f1daa82df7"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\tqe-r3-source-r4-independent-normal-writers-20261022T201500Z-r1",
+      "cases": 146,
+      "source_sha256": "913b5c9e171045603baf20c010f27746bc41ca6921b0f45deaa517bfb91fae39",
+      "executable_sha256": "738a48eaa61ec17428b4a133fbe39e1dc443e932a1ff49c49d6c473d53b4b100"
+    }
+  ],
+  "negative_value_membership_cases": [
+    "switch_tqe:old-function-value mutation rejected",
+    "switch_tqe:new-symbol-membership mutation rejected",
+    "topaz_congest_queue:old-function-value mutation rejected",
+    "topaz_congest_queue:new-symbol-membership mutation rejected"
+  ],
+  "actual_linux_current_pin_checks": [
+    1140,
+    527
+  ],
+  "caller_static_order_checked": "admit owner BEFORE refcounts BEFORE callbacks BEFORE finish",
+  "limits": [
+    "142 fixture executes actual typed callback/provider with fake MMIO/VLAN; expected/fanout inputs supplied by fixture.",
+    "Full tqe_push_mc_ports with actual multicast enumeration helpers is not executed by these fixtures and remains pending.",
+    "146 fixture contains legacy tqe_push_mcast no longer emitted; it does not prove all active R3 writer paths.",
+    "UP/PREEMPT_NONE/nonPCIe only; force unload/foreign firmware writers/HBM waits/recovery remain unqualified.",
+    "Refusals retain/quarantine a permanent owner; normal congestion retry is deliberately bypassed. No release/reset/recovery acceptance.",
+    "No RF/client/traffic/runtime/boot/persistence/release acceptance."
+  ],
+  "evidence_pins": [
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1\\symbol-layout-review.json",
+      "bytes": 18177,
+      "sha256": "7b41e3f89518d8437aacea4cc6af14301fd415a59e03ea479a5bcc70f2311541"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1\\actual-linux-pin-review.json",
+      "bytes": 689,
+      "sha256": "c1c28771c465f62adc7ecdf63c1251202c12ff466d65e7bd1576d665574f2902"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-global-r10\\result.json",
+      "bytes": 4137,
+      "sha256": "433991db28e639881ecf73627f2236e0114da8bc06ce7947cb26d06f4e29b2b6"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-global-r10\\complete-audit.json",
+      "bytes": 1303,
+      "sha256": "500dfc39f7113b0847ba4f068e977db5537cc11b1331a3f50d90a35c78d541ab"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-global-r10\\input-pins.json",
+      "bytes": 93569,
+      "sha256": "72e14bc51c959aa8c67935651ee82a1def53942e05bb83f8e9cae786387893b4"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-build-r2\\result.json",
+      "bytes": 4794,
+      "sha256": "bec577e25805d94e7405cccda1d382e9efbdba68bc3e81613cfc254f279e5ad4"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-build-r2\\input-pins.json",
+      "bytes": 190310,
+      "sha256": "2b10a4e3cfc745e927707508a673625de199bf1bb4433cf6bda659bfbe0d74de"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-source-r4\\result.json",
+      "bytes": 1336,
+      "sha256": "37ca77e8d673e20702b97f245d3f64457ada1fb04295faee3567a236e936a7e6"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-source-r4\\switch_tqe.c",
+      "bytes": 53511,
+      "sha256": "c318a0c0f6aa914e8ace5dadc8456da6ea19c28806027e367a460035641cdf1e"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-source-r4\\topaz_congest_queue.c",
+      "bytes": 20405,
+      "sha256": "3838b149e83fd58d5e1040be62f6598d1c061d415c88186c4298d9f6723d20b5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-source-r4\\openmitrastar_tqe_bounded_ownership.h",
+      "bytes": 1362,
+      "sha256": "191e4ee87436da07f403778b734d79b1771ebd8292073e9beb071de3e00a173f"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\tools\\qualify_tqe_r3_typed_batch.py",
+      "bytes": 13208,
+      "sha256": "9a335acdf630699ef5e365e2562cea8e58bfab2ea170795ef115c1a5eb0c10b2"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_tqe_r3_actual_typed_publication.py",
+      "bytes": 7893,
+      "sha256": "2e18ab743086567345fc7b60178f2103d463614fd927b7ab81507394782da86e"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_tqe_r3_typed_batch_capacity.py",
+      "bytes": 4121,
+      "sha256": "60e613481733d64f1932e7f9d66f68fb8d339b32fb721e8b2cce14409754cefa"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_tqe_bounded_provider_pair.py",
+      "bytes": 6533,
+      "sha256": "5ddfdcb7ae5030e32e0dbb85977f3b289166673c1ae8118d57e8b8e22ab3d2f7"
+    }
+  ]
+}

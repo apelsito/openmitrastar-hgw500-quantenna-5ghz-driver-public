@@ -1,0 +1,209 @@
+{
+  "status": "PASS_OFFLINE_CONSOLIDATED23_BEACON_R12_SOURCE_MODULE_CHECKPOINT_PENDING_CAPABILITY_AUDIT",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/qdrv/qdrv.ko",
+      "bytes": 684896,
+      "sha256": "7131ebbb5cfb46653784799c693be1f9b37815c375fd669bdcfbdf560002a887"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan/wlan.ko",
+      "bytes": 636140,
+      "sha256": "b7c82d8c31a2154794fba8b0e24e33ff94293e3b497be72c324ad63001bd7612"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15508,
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9772,
+      "sha256": "646a9a3f50aef605c531142dcc488fd16fa0cf57bb22facd6a9226e37ab0ae8f"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13452,
+      "sha256": "7c19bf71e449c9de0d82e69fcec855d92a76572d38f4b249b81319106c63b5d6"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "source_compile_units": 116,
+  "closures": [
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint",
+      "pins": 1717,
+      "source_units": 58
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/second-joint",
+      "pins": 1894,
+      "source_units": 58
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-control-joint-20261022T210400Z-r1",
+      "pins": 1717,
+      "source_units": 58
+    }
+  ],
+  "all_current_review_pins": 2464,
+  "QDRV_WLAN_residual": {
+    "qdrv": {
+      "status": "PASS_CONSOLIDATED23_BEACON_R12_MATCHED_HEADER_RESIDUAL",
+      "component": "qdrv",
+      "unchanged_functions": 828,
+      "changed_source_functions": [
+        "qdrv_wlan_beacon_work"
+      ],
+      "new_source_functions": [],
+      "exact_diagnostic_functions": [
+        "qdrv_wlan_auth_state_change",
+        "qdrv_wlan_exit"
+      ],
+      "residual_RELA": 13960,
+      "all_anonymous_executable_bytes_checked": true,
+      "private_records": null,
+      "limits": "Changed/newsourcebodies fixturebound; full27sourceentryclaimnotphysicalops."
+    },
+    "wlan": {
+      "status": "PASS_CONSOLIDATED23_BEACON_R12_MATCHED_HEADER_RESIDUAL",
+      "component": "wlan",
+      "unchanged_functions": 931,
+      "changed_source_functions": [
+        "ieee80211_add_beacon_desc_header",
+        "ieee80211_add_beacon_desc_ie",
+        "ieee80211_add_beacon_desc_mandatory_fields",
+        "ieee80211_add_beacon_ie_desc",
+        "ieee80211_add_mandatory_field",
+        "ieee80211_beacon_alloc",
+        "ieee80211_beacon_alloc_ie",
+        "ieee80211_beacon_create_param",
+        "ieee80211_beacon_update",
+        "ieee80211_get_probereq",
+        "ieee80211_ioctl_getappiebuf",
+        "ieee80211_ioctl_getparam",
+        "ieee80211_ioctl_setappiebuf",
+        "ieee80211_ioctl_setparam",
+        "ieee80211_send_mgmt",
+        "ieee80211_vap_detach"
+      ],
+      "new_source_functions": [
+        "om_app_ie_copy",
+        "om_beacon_allocation_ready",
+        "om_beacon_chain_valid",
+        "om_beacon_descriptor_valid",
+        "om_beacon_reserved_remove",
+        "om_beacon_reserved_update",
+        "om_beacon_slot_error.isra.0",
+        "om_bss_tm_update_ie.isra.0",
+        "om_ieee80211_beacon_build_status",
+        "om_ieee80211_beacon_frame_status"
+      ],
+      "exact_diagnostic_functions": [
+        "ieee80211_add_wpa",
+        "ieee80211_chan2mode",
+        "ieee80211_compile_action_measurement_11h",
+        "ieee80211_compile_action_measurement_11k",
+        "ieee80211_delete_wlanunit",
+        "ieee80211_get_chanflags",
+        "ieee80211_get_prichan_list_by_operating_class",
+        "ieee80211_ifattach",
+        "ieee80211_ioctl_giwfreq",
+        "ieee80211_mgmt_output",
+        "ieee80211_param_from_qdrv",
+        "ieee80211_tdls_mgmt_output",
+        "ieee80211com_media_change"
+      ],
+      "residual_RELA": 8852,
+      "all_anonymous_executable_bytes_checked": true,
+      "private_records": 593,
+      "limits": "Changed/newsourcebodies fixturebound; full27sourceentryclaimnotphysicalops."
+    }
+  },
+  "complete_old_symbol_metadata_file": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-sealed-checkpoint-20261022T211300Z-r1/complete-symbol-metadata.json",
+  "new_exports_0_4_8_checked": 4,
+  "ancillary_all_code_data_symbols_RELA": {
+    "wlan_scan_ap": {
+      "status": "PASS_ALL_CODE_DATA_SYMBOL_RELA_DECLARED_SOURCE_PATH_MAP",
+      "symbols": 107,
+      "relocations": 199
+    },
+    "wlan_scan_sta": {
+      "status": "PASS_ALL_CODE_DATA_SYMBOL_RELA_DECLARED_SOURCE_PATH_MAP",
+      "symbols": 128,
+      "relocations": 304
+    },
+    "wlan_ccmp": {
+      "status": "PASS_ALL_CODE_DATA_SYMBOL_RELA_DECLARED_SOURCE_PATH_MAP",
+      "symbols": 76,
+      "relocations": 99
+    },
+    "wlan_tkip": {
+      "status": "PASS_ALL_CODE_DATA_SYMBOL_RELA_DECLARED_SOURCE_PATH_MAP",
+      "symbols": 86,
+      "relocations": 113
+    },
+    "wlan_xauth": {
+      "status": "PASS_ALL_CODE_DATA_SYMBOL_RELA_DECLARED_SOURCE_PATH_MAP",
+      "symbols": 36,
+      "relocations": 7
+    }
+  },
+  "ABI_old_members_checked": {
+    "ieee80211com": 376,
+    "ieee80211vap": 210,
+    "qdrv_wlan": 72,
+    "qdrv_vap": 23,
+    "ieee80211_beacon_offsets": 17,
+    "ieee80211_beacon_param_t": 5
+  },
+  "fixture_receipts": [
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-app-fixture-20261022T203600Z-r1/result.json",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-cleanup-fixture-20261022T203700Z-r1/result.json",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-legacy23-fixture-20261022T203800Z-r1/result.json",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-descriptor-fixture-20261022T203900Z-r3/result.json",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-neighbor-fixture-20261022T204000Z-r1/result.json"
+  ],
+  "negative_cases": [
+    {
+      "case": "unrelated_code",
+      "rejected": true,
+      "reason": "unrelatedfunction ('ieee80211_chan2ieee', '.text', 2, 0)"
+    },
+    {
+      "case": "allocated_data",
+      "rejected": true,
+      "reason": "residualRELA [(('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 22), 27, ('function_literal', b'fwt_db_get_macs_behind_node\\x00', 0))][(('object', ('fwt_db_get_macs_behind_node', '.text', 2, 0), 22), 27, ('function_literal', b'gwt_db_get_macs_behind_node\\x00', 0))]"
+    }
+  ],
+  "inherited_SOURCE23_records": 23,
+  "added_partial_BSS_neighbor_source_records": 4,
+  "combined_source_table_records": 27,
+  "private_table_records": 593,
+  "qualified_combined_functional_operation_count": null,
+  "limits": [
+    "R12source27records isnot27physicalfunctionalops; semanticcapabilityauditstillpending.",
+    "SOURCE19beaconfixes+SOURCE23ops combined: changedfunctions source/fixturebound,notuniversalOEMsemantic equivalence.",
+    "FourBSS/neighborrecords partialadvertisement/controlimplementation; no80211kmanagementhandlerproof.",
+    "ABI906dep witnesspostcompilehashscopeexplicit. Validprefix/declaredembeddingonly, nooldmodulesmix.",
+    "NoSMPgeneralVAP/objectlifetime/RFclienttrafficbootpersistentrollback/recovery/releaseacceptance."
+  ]
+}

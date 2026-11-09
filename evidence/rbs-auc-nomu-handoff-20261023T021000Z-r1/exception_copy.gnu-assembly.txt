@@ -1,0 +1,7 @@
+e50001ac:	70cf ffff ffff      	mov_s	r0,0xffffffff
+e50001b2:	206b 00c0           	sr	r0,[lp_end]
+e50001b6:	70cf e500 0000      	mov_s	r0,0xe5000000
+e50001bc:	71cf 0063 bee4      	mov_s	r1,0x63bee4
+e50001c2:	72cf 0000 01e0      	mov_s	r2,0x1e0
+e50001c8:	270a 3f80 e500 0000 	mov	blink,0xe5000000
+e50001d0:	0281 02c0           	b	23168	;0xe5005c50

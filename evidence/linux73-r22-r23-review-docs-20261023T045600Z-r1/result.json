@@ -1,0 +1,16 @@
+{
+  "status": "PASS_PRIVATE_R22_R23_COPY_READY_DOC_BOUND_TO_CURRENT_CODE_AND_RECEIPTS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\seal_linux73_r22_r23_review_docs.py": "4dd202c1c0aeea5770cf7a7470a443a5a6a77f56cb9ec9a713264fb2542dd955",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\linux73-r22-independent-dma-table-review-20261023T044700Z-r3\\result.json": "c08e720d508db3b0b71b7a3e0908b599ec335c2f55e3dd83ab064b726210ead7",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\linux73-r23-independent-loader-contract-20261023T045000Z-r1\\result.json": "cf40d7f8c9997bff35a354086eefe91369e88cc0a0d2be2fed73d6a9a737fc39",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\linux73-r23-loader-unaligned-fixture-20261023T045300Z-r1\\result.json": "9aa668ef61df9faa44b4d766d67d7b3daa62886dd94395b9ebfbfa9b167afece"
+  },
+  "document_sha256": "e8d620be76f421e921a6208bf682090934abaa45a1b10a3ebb0d2ce5a7330096",
+  "R22_WLAN_pair_sha256": "4588ed600b937086eacc33bd5d5f9ee7b74013a58cbcd71d26088c1060ef519b",
+  "R23_source_sha256": "f3ea6b0363432d7ec7319c2caf47ddcb93c22158b12f38494b4a9531d2f89b12",
+  "preflight_cases": 1321,
+  "shifted_buffers": 24
+}

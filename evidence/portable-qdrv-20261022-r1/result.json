@@ -1,0 +1,36 @@
+{
+  "schema": "openmitrastar.portable-driver-build/v1",
+  "module": "qdrv",
+  "status": "PASS_OFFLINE_FULL_BASELINE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "modules": [
+    {
+      "lane": "a",
+      "bytes": 684660,
+      "sha256": "c8b924ccbf8b85616136fef11fb091e8975c67fb7dc499bddcaef38804c29688",
+      "path": "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/build/portable-qdrv-r1/a/qdrv.ko"
+    },
+    {
+      "lane": "b",
+      "bytes": 684660,
+      "sha256": "c8b924ccbf8b85616136fef11fb091e8975c67fb7dc499bddcaef38804c29688",
+      "path": "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/build/portable-qdrv-r1/b/qdrv.ko"
+    }
+  ],
+  "parent_sha256": "cfb1b5c49eba15a0b114bb695d68dce07629d9600387a26d3c65d7ae573a4b01",
+  "external_dependencies_pinned": 6685,
+  "limits": "Complete offline baseline compilation only; no physical traffic, persistence, recovery or release acceptance.",
+  "reproducible": true,
+  "protected_inputs_unchanged": true,
+  "full_baseline_comparison_status": "PASS_FULL_BASELINE_RECONSTRUCTION",
+  "functions": 831,
+  "relocations": 14034,
+  "symbols": 1932,
+  "allocated_code_bytes": 312852,
+  "metadata_delta": [
+    "srcversion"
+  ],
+  "whole_file_exact": false
+}

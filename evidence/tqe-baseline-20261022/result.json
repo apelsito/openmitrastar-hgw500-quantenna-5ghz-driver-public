@@ -1,0 +1,35 @@
+{
+  "schema": "openmitrastar.switch-tqe-baseline-rebuild/v1",
+  "status": "PASS_OFFLINE_FULL_BASELINE_EQUIVALENT",
+  "hardware_accessed": false,
+  "firmware_image": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "source_sha256": "929d89801045c2b5f421d4d40ca312c32feaf93612de6a575b9b362ab97d9aef",
+  "parent_module_sha256": "bd5ab1018d293dc6bed655ec2bbc6da64a3969f28a3de578c04fa9c3f4af635f",
+  "modules": [
+    {
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-baseline-r5/a/switch_tqe.ko",
+      "bytes": 35552,
+      "sha256": "bd5ab1018d293dc6bed655ec2bbc6da64a3969f28a3de578c04fa9c3f4af635f"
+    },
+    {
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-baseline-r5/b/switch_tqe.ko",
+      "bytes": 35552,
+      "sha256": "bd5ab1018d293dc6bed655ec2bbc6da64a3969f28a3de578c04fa9c3f4af635f"
+    }
+  ],
+  "limits": "Baseline reconstruction only. No arbitration fix, replacement policy, runtime, traffic, persistence or release acceptance.",
+  "reproducible": true,
+  "full_baseline_comparison_status": "PASS_FULL_BASELINE_RECONSTRUCTION",
+  "baseline_functions": 52,
+  "baseline_relocations": 464,
+  "baseline_symbols": 275,
+  "baseline_code_bytes": 11788,
+  "metadata_errors": [],
+  "comparison_errors": [],
+  "whole_file_exact": true,
+  "protected_inputs_unchanged": true
+}

@@ -1,0 +1,310 @@
+{
+  "qdrv": {
+    "status": "PASS_R9_LIFETIME_SCOPE_AGAINST_FULL_PARENT19_CONTROL",
+    "changed_source_bodies": [
+      {
+        "key": [
+          "qdrv_wlan_beacon_work",
+          ".text",
+          2,
+          0
+        ],
+        "old_value": 140144,
+        "new_value": 140144,
+        "old_size": 2024,
+        "new_size": 2066,
+        "old_sha256": "548bbd681a3de04f789e5b8c1e55247cfdd0806abf826fe4bdd8e38c0d12dcb8",
+        "new_sha256": "3ac74ad45a2123f2595bdb17a7ed0f70ef65a55f059725488cd02e390505eae7"
+      }
+    ],
+    "diagnostics": [
+      {
+        "key": [
+          "qdrv_wlan_auth_state_change",
+          ".text",
+          2,
+          0
+        ],
+        "byte_positions": [
+          628,
+          794,
+          942
+        ],
+        "line_delta": 10
+      },
+      {
+        "key": [
+          "qdrv_wlan_exit",
+          ".text",
+          2,
+          0
+        ],
+        "byte_positions": [
+          950
+        ],
+        "line_delta": 10
+      }
+    ],
+    "unchanged_functions_checked": 828,
+    "new_functions": [],
+    "all_residual_relocations": 13960,
+    "all_existing_symbol_attributes_checked": 1912,
+    "all_data_sections": [
+      "",
+      "__ksymtab",
+      ".rodata",
+      ".rodata.str1.4",
+      ".modinfo",
+      "__ksymtab_strings",
+      "__param",
+      ".note.Linux",
+      ".data",
+      ".data.once",
+      ".gnu.linkonce.this_module",
+      ".bss",
+      ".comment",
+      ".note.GNU-stack",
+      ".ARC.attributes"
+    ],
+    "unowned_padding": [
+      {
+        "section": ".text",
+        "bytes": 303156,
+        "sha256": "ef00af95c6fde61e2059db954e8522f828311c97dfb48aa46be2e47d2361b55a",
+        "includes_unowned_executable_bytes": true
+      },
+      {
+        "section": ".text.unlikely",
+        "bytes": 6252,
+        "sha256": "38405f9bf1716fc052a0746bb5f0f872769b05359764c3da05432194b65e6d10",
+        "includes_unowned_executable_bytes": true
+      },
+      {
+        "section": ".init.text",
+        "bytes": 1032,
+        "sha256": "27be22e2796396822579c99a296ef3fcd59a5467d5c1626f4729b39e639b067b",
+        "includes_unowned_executable_bytes": true
+      },
+      {
+        "section": ".exit.text",
+        "bytes": 440,
+        "sha256": "14c6af58864071c246b79c3551707f2b6df16b0c2ca359226485881966cfa645",
+        "includes_unowned_executable_bytes": true
+      }
+    ],
+    "limits": "Changed/new source bodies fixture-bound; inherited19operation behavior notacceptedbythiscontrolcomparison."
+  },
+  "wlan": {
+    "status": "PASS_R9_LIFETIME_SCOPE_AGAINST_FULL_PARENT19_CONTROL",
+    "changed_source_bodies": [
+      {
+        "key": [
+          "ieee80211_beacon_alloc_ie",
+          ".text",
+          2,
+          0
+        ],
+        "old_value": 4872,
+        "new_value": 5476,
+        "old_size": 70,
+        "new_size": 152,
+        "old_sha256": "148e0ca514f63a359ff61d3394647704d4ed1b71117967a0d215febcd57ebbc4",
+        "new_sha256": "0a99b567e30773398a99c623e2608c2f11d328bde613e8a54dd48f743078d6ec"
+      },
+      {
+        "key": [
+          "ieee80211_add_beacon_ie_desc",
+          ".text",
+          2,
+          0
+        ],
+        "old_value": 5284,
+        "new_value": 7132,
+        "old_size": 86,
+        "new_size": 108,
+        "old_sha256": "03441f2011f3f9fbebed12a946e11e7adf6884aecccaeb6125103e6b19c544ec",
+        "new_sha256": "88e6c75307841c88cb8c2fa9c5392b206d0afdd8b768ee22315c819e6ed34a46"
+      },
+      {
+        "key": [
+          "ieee80211_beacon_update",
+          ".text",
+          2,
+          0
+        ],
+        "old_value": 2604,
+        "new_value": 2656,
+        "old_size": 838,
+        "new_size": 1264,
+        "old_sha256": "7ee652f295c9417494ec78f09a7f7a779f5ecd3a28198d591c68b84242df54f6",
+        "new_sha256": "9195ef48c45b4696847fdd8f09ca2c968cc93131a5473f76e2884ee59c9d8f9c"
+      },
+      {
+        "key": [
+          "ieee80211_add_beacon_desc_header",
+          ".text",
+          2,
+          0
+        ],
+        "old_value": 5036,
+        "new_value": 9360,
+        "old_size": 112,
+        "new_size": 160,
+        "old_sha256": "1848569d5e580031d385f5a852ed5ee0ddea36d22ddb84db14bc60ac94d4d336",
+        "new_sha256": "6934bb6d37dce0737360744c43e7696f25374ed537cb3348016bed74bb346322"
+      },
+      {
+        "key": [
+          "ieee80211_beacon_flush_param",
+          ".text",
+          2,
+          0
+        ],
+        "old_value": 5268,
+        "new_value": 5956,
+        "old_size": 16,
+        "new_size": 16,
+        "old_sha256": "e653bb1ae81e7aa59788b50252ec123fe203e1144242fc7ebb9dbc6fd8aa802c",
+        "new_sha256": "31ca4be03ff9db6d0610f219748f090bf3af6344fd6dd78fea5a41c6d7156dad"
+      },
+      {
+        "key": [
+          "ieee80211_beacon_alloc",
+          ".text",
+          2,
+          0
+        ],
+        "old_value": 1244,
+        "new_value": 1244,
+        "old_size": 1358,
+        "new_size": 1412,
+        "old_sha256": "43c088f22bb35381775ba99eceb00e5e52b1901b4a09eac2c5a7fdd2be56b1eb",
+        "new_sha256": "9d86e3c06c514604b9d32bb8ab247efb07e98fd0f5263af0f0e02bd31d779b10"
+      },
+      {
+        "key": [
+          "ieee80211_add_beacon_desc_ie",
+          ".text",
+          2,
+          0
+        ],
+        "old_value": 5436,
+        "new_value": 7332,
+        "old_size": 1832,
+        "new_size": 2026,
+        "old_sha256": "ca3a28f64ab9ccbedd29ce6622f83c1e9738f0108423630e752191c63a8f23d4",
+        "new_sha256": "8b7c25a3f0da2318446cb98a5312c0f142635a55c72c00653f4e376eb05f8a4a"
+      },
+      {
+        "key": [
+          "ieee80211_beacon_create_param",
+          ".text",
+          2,
+          0
+        ],
+        "old_value": 5148,
+        "new_value": 5668,
+        "old_size": 120,
+        "new_size": 196,
+        "old_sha256": "173ef7164c9863e80e740dabad16425d6eaf91ef8ef95850bbd08aba91cc6ced",
+        "new_sha256": "6aff2d67e972132c390587d69d2eceb023b20017c213bcb87d1e542b5c140abe"
+      },
+      {
+        "key": [
+          "ieee80211_add_beacon_desc_mandatory_fields",
+          ".text",
+          2,
+          0
+        ],
+        "old_value": 5372,
+        "new_value": 7240,
+        "old_size": 62,
+        "new_size": 90,
+        "old_sha256": "072eb3827a70bcb913a98fabaf67e32f0b2a75538e77db2054901e09ca835194",
+        "new_sha256": "6a9e1fbf78a029a68f088599c3ae017fad3126d15eb5214a5d7486bab4d8e7c1"
+      }
+    ],
+    "diagnostics": [],
+    "unchanged_functions_checked": 951,
+    "new_functions": [
+      "om_beacon_allocation_ready",
+      "om_beacon_chain_valid",
+      "om_beacon_descriptor_valid",
+      "om_beacon_reserved_remove",
+      "om_beacon_reserved_update",
+      "om_beacon_slot_error.isra.0",
+      "om_ieee80211_beacon_build_status",
+      "om_ieee80211_beacon_frame_status"
+    ],
+    "all_residual_relocations": 9455,
+    "all_existing_symbol_attributes_checked": 2232,
+    "all_data_sections": [
+      "",
+      "__ksymtab",
+      ".rodata",
+      ".rodata.str1.4",
+      "__ksymtab_strings",
+      ".modinfo",
+      ".note.Linux",
+      ".data",
+      ".data.once",
+      ".gnu.linkonce.this_module",
+      ".bss",
+      ".comment",
+      ".note.GNU-stack",
+      ".ARC.attributes"
+    ],
+    "unowned_padding": [
+      {
+        "section": ".text",
+        "bytes": 315586,
+        "sha256": "01f6d35542991759882f20ba171f11c067cbb4fb5f30a838488b069860b2ef76",
+        "includes_unowned_executable_bytes": true
+      },
+      {
+        "section": ".text.unlikely",
+        "bytes": 972,
+        "sha256": "7f2ad81c41ac0e6459f5a6f7dde7aa294b1e78a2da8818ebcd3424efac52da8c",
+        "includes_unowned_executable_bytes": true
+      },
+      {
+        "section": ".init.text",
+        "bytes": 4,
+        "sha256": "1d0c17738ead35489f8604d6b931aa60f56c443aedf0f0b909d21640c652a444",
+        "includes_unowned_executable_bytes": true
+      },
+      {
+        "section": ".exit.text",
+        "bytes": 4,
+        "sha256": "edfeb981f4b027bc93163843f0d3cb3bd46cf8ea6ad690caf387525ed1c8379f",
+        "includes_unowned_executable_bytes": true
+      }
+    ],
+    "limits": "Changed/new source bodies fixture-bound; inherited19operation behavior notacceptedbythiscontrolcomparison."
+  },
+  "wlan_scan_ap": {
+    "status": "PASS_EXACT_ANCILLARY_CODE_DATA_ALL_SYMBOLS_RELA_AFTER_DECLARED_PATH_MAP",
+    "symbols": 107,
+    "relocations": 199
+  },
+  "wlan_scan_sta": {
+    "status": "PASS_EXACT_ANCILLARY_CODE_DATA_ALL_SYMBOLS_RELA_AFTER_DECLARED_PATH_MAP",
+    "symbols": 128,
+    "relocations": 304
+  },
+  "wlan_ccmp": {
+    "status": "PASS_EXACT_ANCILLARY_CODE_DATA_ALL_SYMBOLS_RELA_AFTER_DECLARED_PATH_MAP",
+    "symbols": 76,
+    "relocations": 99
+  },
+  "wlan_tkip": {
+    "status": "PASS_EXACT_ANCILLARY_CODE_DATA_ALL_SYMBOLS_RELA_AFTER_DECLARED_PATH_MAP",
+    "symbols": 86,
+    "relocations": 113
+  },
+  "wlan_xauth": {
+    "status": "PASS_EXACT_ANCILLARY_CODE_DATA_ALL_SYMBOLS_RELA_AFTER_DECLARED_PATH_MAP",
+    "symbols": 36,
+    "relocations": 7
+  }
+}

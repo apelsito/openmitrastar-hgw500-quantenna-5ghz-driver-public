@@ -1,0 +1,23 @@
+{
+  "command": [
+    "node",
+    "/home/rea/openmitrastar-arc700-lab-20261021-r2/rea-agents/scripts/rea.mjs",
+    "function",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/arc700-20261021-r2/tqe-linked/switch_tqe-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+    "--procedure",
+    "topaz_tqe_xmit",
+    "--provider",
+    "ghidra",
+    "--format",
+    "json",
+    "--full-output"
+  ],
+  "started_utc": "2026-10-22T13:07:47.925375+00:00",
+  "finished_utc": "2026-10-22T13:08:03.847225+00:00",
+  "exit_code": 0,
+  "target_sha256": "0aede6d339602939519570f1fc1a796d00af23b52ed334ccff0b16be7b757861",
+  "target_unchanged": true,
+  "hardware_accessed": false,
+  "rea_output_sha256": "fd7da53fd2b533f2573a0cad444f8838d427c29f411fe56928d4cc317e190f3b",
+  "lab_manifest_sha256": "3d0e77d17af8bd3399772642436478d664ae0073892f71985c6a9b5de940d361"
+}

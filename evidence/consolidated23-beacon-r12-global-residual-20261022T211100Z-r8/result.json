@@ -1,0 +1,78 @@
+{
+  "status": "PASS_CONSOLIDATED23_BEACON_R12_QDRV_WLAN_MATCHED_HEADER_RESIDUAL",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "audits": {
+    "qdrv": {
+      "status": "PASS_CONSOLIDATED23_BEACON_R12_MATCHED_HEADER_RESIDUAL",
+      "component": "qdrv",
+      "unchanged_functions": 828,
+      "changed_source_functions": [
+        "qdrv_wlan_beacon_work"
+      ],
+      "new_source_functions": [],
+      "exact_diagnostic_functions": [
+        "qdrv_wlan_auth_state_change",
+        "qdrv_wlan_exit"
+      ],
+      "residual_RELA": 13960,
+      "all_anonymous_executable_bytes_checked": true,
+      "private_records": null,
+      "limits": "Changed/newsourcebodies fixturebound; full27sourceentryclaimnotphysicalops."
+    },
+    "wlan": {
+      "status": "PASS_CONSOLIDATED23_BEACON_R12_MATCHED_HEADER_RESIDUAL",
+      "component": "wlan",
+      "unchanged_functions": 931,
+      "changed_source_functions": [
+        "ieee80211_add_beacon_desc_header",
+        "ieee80211_add_beacon_desc_ie",
+        "ieee80211_add_beacon_desc_mandatory_fields",
+        "ieee80211_add_beacon_ie_desc",
+        "ieee80211_add_mandatory_field",
+        "ieee80211_beacon_alloc",
+        "ieee80211_beacon_alloc_ie",
+        "ieee80211_beacon_create_param",
+        "ieee80211_beacon_update",
+        "ieee80211_get_probereq",
+        "ieee80211_ioctl_getappiebuf",
+        "ieee80211_ioctl_getparam",
+        "ieee80211_ioctl_setappiebuf",
+        "ieee80211_ioctl_setparam",
+        "ieee80211_send_mgmt",
+        "ieee80211_vap_detach"
+      ],
+      "new_source_functions": [
+        "om_app_ie_copy",
+        "om_beacon_allocation_ready",
+        "om_beacon_chain_valid",
+        "om_beacon_descriptor_valid",
+        "om_beacon_reserved_remove",
+        "om_beacon_reserved_update",
+        "om_beacon_slot_error.isra.0",
+        "om_bss_tm_update_ie.isra.0",
+        "om_ieee80211_beacon_build_status",
+        "om_ieee80211_beacon_frame_status"
+      ],
+      "exact_diagnostic_functions": [
+        "ieee80211_add_wpa",
+        "ieee80211_chan2mode",
+        "ieee80211_compile_action_measurement_11h",
+        "ieee80211_compile_action_measurement_11k",
+        "ieee80211_delete_wlanunit",
+        "ieee80211_get_chanflags",
+        "ieee80211_get_prichan_list_by_operating_class",
+        "ieee80211_ifattach",
+        "ieee80211_ioctl_giwfreq",
+        "ieee80211_mgmt_output",
+        "ieee80211_param_from_qdrv",
+        "ieee80211_tdls_mgmt_output",
+        "ieee80211com_media_change"
+      ],
+      "residual_RELA": 8852,
+      "all_anonymous_executable_bytes_checked": true,
+      "private_records": 593,
+      "limits": "Changed/newsourcebodies fixturebound; full27sourceentryclaimnotphysicalops."
+    }
+  }
+}

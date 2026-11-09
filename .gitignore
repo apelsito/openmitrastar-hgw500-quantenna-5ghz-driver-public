@@ -1,0 +1,15 @@
+local-only/
+build/
+.cache/
+__pycache__/
+*.pyc
+*.o
+*.ko
+*.elf
+*.exe
+*.key
+*.pem
+*.p12
+.env
+node_modules/
+!evidence/**/comments.raw.bin

@@ -1,0 +1,31 @@
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -124,6 +124,7 @@
+ #define OM_OEM_PARAM_MAX_BANDWIDTH 460
+ #define OM_OEM_PARAM_BBDF_WAR 483
+ #define OM_OEM_PARAM_CHECK_CURRENT_CHANNEL 464
++#define OM_OEM_PARAM_DYNAMIC_SIFS 463
+ #define OM_OEM_PARAM_DEVICE_MODE 451
+ #define OM_OEM_PARAM_IGNORE_ICAC_SELECTION 465
+ #define OM_OEM_PARAM_FT_OVER_DS 495
+@@ -11371,6 +11372,11 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	/* ExactOEM463 genericwire forwarding; MuC validatesselectortriplet. */
++	case OM_OEM_PARAM_DYNAMIC_SIFS:
++		ieee80211_param_to_qdrv(vap, param, value, NULL, 0);
++		break;
++
+ 	case OM_OEM_PARAM_CHECK_CURRENT_CHANNEL:
+ 		ic->ic_chan_is_set = value;
+ 		break;
+@@ -20917,6 +20923,8 @@
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_bbdfwar_en" },
+ 	{ OM_OEM_PARAM_CHECK_CURRENT_CHANNEL,
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "check_cur_chan" },
++	{ OM_OEM_PARAM_DYNAMIC_SIFS,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "set_dyn_sifs" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

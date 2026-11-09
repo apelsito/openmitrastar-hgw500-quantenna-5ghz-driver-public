@@ -1,0 +1,9 @@
+{
+  "status": "PASS_ACTUAL_COEX26_PUBLIC_PARSER_WITH_BSS_GEOMETRY",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 1441792,
+  "current_channel_deliberately_different": true,
+  "source_sha256": "65a1fcf4b47eb54611123fed1577c1f6f8784ae9df43bc41b16b21a06c2f86f4",
+  "limits": "Actualrawpublicparser+actualgeometry withfakeBW/stats/send; physicalRX/MuC/PHY/RF/trafficunrun"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS_EXACT_SOURCE23_OP490_RESIDUAL_AGAINST_HEADER_CONTROL",
+  "fixture_bound_bodies": [
+    {
+      "key": [
+        "ieee80211_ioctl_setparam",
+        ".text",
+        2,
+        0
+      ],
+      "old_sha256": "9f3f948a00732628b3072d8581fa0335c02743400dc774543f8cdbfc49e04108",
+      "new_sha256": "e3207f8006886d7913d1b9dce91fbb5755e8a87218a35ee0a4915ecfe0bfd28c",
+      "old_bytes": 16512,
+      "new_bytes": 16562
+    }
+  ],
+  "new_helper": "om_fix_legacy_rate",
+  "diagnostics": [
+    "ieee80211_delete_wlanunit",
+    "ieee80211_ioctl_giwfreq",
+    "ieee80211_param_from_qdrv"
+  ],
+  "unchanged_functions": 955,
+  "residual_relocations": 9200,
+  "symbols_old": 2250,
+  "symbols_new": 2251,
+  "sections": 28
+}

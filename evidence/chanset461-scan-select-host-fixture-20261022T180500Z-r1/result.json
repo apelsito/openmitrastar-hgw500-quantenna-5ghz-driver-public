@@ -1,0 +1,11 @@
+{
+  "status": "PASS_HOST_ACTUAL461_NORMALIZATION_AND_FINAL_CHOICE_ADAPTERS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "inputs_unchanged": true,
+  "normalized_samples": 100064,
+  "normalized_fields": 11,
+  "selection_cases": 100000,
+  "signed_wrap_and_tie_counterexamples": true,
+  "limits": "Pure caller-owned samples/candidates; no sharedread/realcallbacks/registration/RF"
+}

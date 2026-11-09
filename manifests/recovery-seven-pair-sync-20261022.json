@@ -1,0 +1,240 @@
+{
+  "files": [
+    {
+      "path": "tools/integration/build_hgw5g_seven_getter_module_pair.py",
+      "sha256": "c85be86e3932a2f68c9c646a160287c4e9aad6e3cf684d21c984ace36040388d",
+      "bytes": 9667,
+      "source": "tools/build_hgw5g_seven_getter_module_pair.py"
+    },
+    {
+      "path": "tools/integration/qualify_hgw5g_seven_getter_module_pair.py",
+      "sha256": "001322424535fecf342d5ce96c2161aeeb99095694564c53cc4a6ccac41d86b2",
+      "bytes": 14175,
+      "source": "tools/qualify_hgw5g_seven_getter_module_pair.py"
+    },
+    {
+      "path": "tools/integration/test_qualify_hgw5g_seven_getter_module_pair.py",
+      "sha256": "3eb57be6b55fbf4dde87fa88b82e329af56f670305f670b949c3ec88432ce9e0",
+      "bytes": 2632,
+      "source": "tools/test_qualify_hgw5g_seven_getter_module_pair.py"
+    },
+    {
+      "path": "tools/integration/prepare_hgw5g_devmode_and_unsupported.py",
+      "sha256": "280c655ab766aafd7ff2a303fc129ed3aa7449768d716f882d0b782d82692b0a",
+      "bytes": 4284,
+      "source": "tools/prepare_hgw5g_devmode_and_unsupported.py"
+    },
+    {
+      "path": "tools/integration/test_hgw5g_devmode_candidate.py",
+      "sha256": "5e119baa4946842d3d3c83a8eada01b6cf9b60227037ddfbd9ef8ef8f8a52c2e",
+      "bytes": 3218,
+      "source": "tools/test_hgw5g_devmode_candidate.py"
+    },
+    {
+      "path": "tools/integration/prepare_hgw5g_nac_getter_prototype.py",
+      "sha256": "c7ffd46acf64470d648dd41cb64bb9d693ea36e777cb77b0819f2a68dd8a25ec",
+      "bytes": 5709,
+      "source": "tools/prepare_hgw5g_nac_getter_prototype.py"
+    },
+    {
+      "path": "tools/integration/test_hgw5g_nac_getter_prototype.py",
+      "sha256": "f72e8051cad27192dc7e36160a5ce320df762d0ac187c453e99ebe79e45b86a7",
+      "bytes": 1712,
+      "source": "tools/test_hgw5g_nac_getter_prototype.py"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-seven-module-pair-r2/input-pins.json",
+      "sha256": "b0754dfca5c4c0f46391b19d0a0b2ab970651cf4243911f15e63076cef265650",
+      "bytes": 395900,
+      "source": "outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/input-pins.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-seven-module-pair-r2/result.json",
+      "sha256": "e256d943d3073d1ca9e3437404c3189b8ac794cc8de5936bfd0b5aee2fe38c9e",
+      "bytes": 2309,
+      "source": "outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/result.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-seven-pair-qualification-r5/result.json",
+      "sha256": "7df579347a0cea3cc3a91bdfe8e56a9a33359e0ff8d965f61d54bdd08f8ed01c",
+      "bytes": 2025,
+      "source": "outputs/rea/driver5g-ops-20261022-seven-pair-qualification-r5/result.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-seven-pair-qualification-r5/whole-module-audit.json",
+      "sha256": "9373a4e4ed582347450a8f10ef12cb6336d24f487b6cce859502d8a312049f02",
+      "bytes": 7917,
+      "source": "outputs/rea/driver5g-ops-20261022-seven-pair-qualification-r5/whole-module-audit.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-seven-pair-fault-tests-r1/result.json",
+      "sha256": "7b1ca81cbda957cc399ff9d913bd3390cc170936ea141d96bc67a43b1d1fa9d7",
+      "bytes": 1239,
+      "source": "outputs/rea/driver5g-ops-20261022-seven-pair-fault-tests-r1/result.json"
+    },
+    {
+      "path": "evidence/devmode-unsupported-fixture-20261022T141100Z-r1/compile-arc-unit.command.json",
+      "sha256": "ae841a448096e0163cc6d9c2868d890847bffee0c91522fa1a9fdb094f273d62",
+      "bytes": 5034,
+      "source": "outputs/rea/devmode-unsupported-fixture-20261022T141100Z-r1/compile-arc-unit.command.json"
+    },
+    {
+      "path": "evidence/devmode-unsupported-fixture-20261022T141100Z-r1/compile-fixture.command.json",
+      "sha256": "dd724a39733dd975909c5f7c2b64641285db7b94e19dda934835e7876e351c6b",
+      "bytes": 307,
+      "source": "outputs/rea/devmode-unsupported-fixture-20261022T141100Z-r1/compile-fixture.command.json"
+    },
+    {
+      "path": "evidence/devmode-unsupported-fixture-20261022T141100Z-r1/fixture.c",
+      "sha256": "d0ab5d4f61d4fe5d4a2c70d1d8d72441a1c83f7802c549f26830b77aaed8528f",
+      "bytes": 1497,
+      "source": "outputs/rea/devmode-unsupported-fixture-20261022T141100Z-r1/fixture.c"
+    },
+    {
+      "path": "evidence/devmode-unsupported-fixture-20261022T141100Z-r1/result.json",
+      "sha256": "87e20faf093c93c074d99dd35f743e4d9ea2d3b727de29f0882d335d5220f191",
+      "bytes": 476,
+      "source": "outputs/rea/devmode-unsupported-fixture-20261022T141100Z-r1/result.json"
+    },
+    {
+      "path": "evidence/devmode-unsupported-fixture-20261022T141100Z-r1/run-fixture.command.json",
+      "sha256": "28cc2fe082961c6bb29daa0318e8483c656c99c5c3061bed1ab39a4c93285203",
+      "bytes": 113,
+      "source": "outputs/rea/devmode-unsupported-fixture-20261022T141100Z-r1/run-fixture.command.json"
+    },
+    {
+      "path": "evidence/nac-getter-fixture-20261022T141600Z-r1/compile-arc-source.command.json",
+      "sha256": "3f874744d6d65f557eb35bd5d51129a1522e9759b807880f932381dba98346d3",
+      "bytes": 5095,
+      "source": "outputs/rea/nac-getter-fixture-20261022T141600Z-r1/compile-arc-source.command.json"
+    },
+    {
+      "path": "evidence/nac-getter-fixture-20261022T141600Z-r1/compile-fixture.command.json",
+      "sha256": "dd07aae7cc3f3681b007f1c84466547263ebf78096779c59f69ec9eb0b1fca63",
+      "bytes": 309,
+      "source": "outputs/rea/nac-getter-fixture-20261022T141600Z-r1/compile-fixture.command.json"
+    },
+    {
+      "path": "evidence/nac-getter-fixture-20261022T141600Z-r1/result.json",
+      "sha256": "8df49064787868bd4a22128fadb0af1d0691c759b389a0f4b90a0d1dc66451bc",
+      "bytes": 458,
+      "source": "outputs/rea/nac-getter-fixture-20261022T141600Z-r1/result.json"
+    },
+    {
+      "path": "evidence/nac-getter-fixture-20261022T141600Z-r1/run-fixture.command.json",
+      "sha256": "ca7e1b0976df7d8837a5470536030d68de4c921a927fcd59720486e22593b1f5",
+      "bytes": 104,
+      "source": "outputs/rea/nac-getter-fixture-20261022T141600Z-r1/run-fixture.command.json"
+    },
+    {
+      "path": "evidence/maxbw-aliases-fixture-20261022T143600Z-r1/compile-arc-source.command.json",
+      "sha256": "628a4de9662ed394a4c094e5118f5ea788134899bf449551a14233e11bb92c45",
+      "bytes": 5010,
+      "source": "outputs/rea/maxbw-aliases-fixture-20261022T143600Z-r1/compile-arc-source.command.json"
+    },
+    {
+      "path": "evidence/maxbw-aliases-fixture-20261022T143600Z-r1/compile-fixture.command.json",
+      "sha256": "f200af2704aa4406393c3b56d9bf2a1949a2679102336ba923c6c31b99dea4ff",
+      "bytes": 295,
+      "source": "outputs/rea/maxbw-aliases-fixture-20261022T143600Z-r1/compile-fixture.command.json"
+    },
+    {
+      "path": "evidence/maxbw-aliases-fixture-20261022T143600Z-r1/fixture.c",
+      "sha256": "b298fbb5e4ef4661c8a671f61a3ed2ddd793e5e7d6e15f9a0e531411145e6825",
+      "bytes": 821,
+      "source": "outputs/rea/maxbw-aliases-fixture-20261022T143600Z-r1/fixture.c"
+    },
+    {
+      "path": "evidence/maxbw-aliases-fixture-20261022T143600Z-r1/result.json",
+      "sha256": "ecb76b64d4c6adc91146da2705e7398eb0cce5a49cc62f8f96bcb5ec048d41ab",
+      "bytes": 278,
+      "source": "outputs/rea/maxbw-aliases-fixture-20261022T143600Z-r1/result.json"
+    },
+    {
+      "path": "evidence/maxbw-aliases-fixture-20261022T143600Z-r1/run-fixture.command.json",
+      "sha256": "7cbdee22572ce3b7dbf5dc99e67a5387236fc5e5eadc457747bb9562d075ed34",
+      "bytes": 107,
+      "source": "outputs/rea/maxbw-aliases-fixture-20261022T143600Z-r1/run-fixture.command.json"
+    },
+    {
+      "path": "candidates/devmode-unsupported-candidate-20261022T141000Z-r1/devmode-unsupported.patch",
+      "sha256": "89ef21318f197f44b1de55e3773e7a8f2cb9e790c11ed0b82e17b56e843bb2d7",
+      "bytes": 2058,
+      "source": "outputs/rea/devmode-unsupported-candidate-20261022T141000Z-r1/devmode-unsupported.patch"
+    },
+    {
+      "path": "candidates/devmode-unsupported-candidate-20261022T141000Z-r1/ieee80211_wireless.c",
+      "sha256": "7a128781902eb6cc58f71e2b4a30ae005de7ebf168a10a9ae4139557b93a9be8",
+      "bytes": 668127,
+      "source": "outputs/rea/devmode-unsupported-candidate-20261022T141000Z-r1/ieee80211_wireless.c"
+    },
+    {
+      "path": "candidates/devmode-unsupported-candidate-20261022T141000Z-r1/result.json",
+      "sha256": "685573d779a351e41e3884667c9a6393a6ecf1954bc718235a67c2568043902d",
+      "bytes": 789,
+      "source": "outputs/rea/devmode-unsupported-candidate-20261022T141000Z-r1/result.json"
+    },
+    {
+      "path": "candidates/nac-getter-prototype-20261022T141500Z-r1/actual-nac-getter-fixture.c",
+      "sha256": "086499dd28d7d8d77397b58407ac69fc7c2695e9cf691f41050d09a0017b3748",
+      "bytes": 1643,
+      "source": "outputs/rea/nac-getter-prototype-20261022T141500Z-r1/actual-nac-getter-fixture.c"
+    },
+    {
+      "path": "candidates/nac-getter-prototype-20261022T141500Z-r1/ieee80211_wireless.c",
+      "sha256": "54e4aad1a188ff314302822ccd425407399ac1b3eef70b685807ba9eaeb2c4ac",
+      "bytes": 669217,
+      "source": "outputs/rea/nac-getter-prototype-20261022T141500Z-r1/ieee80211_wireless.c"
+    },
+    {
+      "path": "candidates/nac-getter-prototype-20261022T141500Z-r1/nac-prefix-getter.patch",
+      "sha256": "6b37af31aa2d01f70d97bd8c4d26741f6a84737a9d715d62bac0a75fdceedc52",
+      "bytes": 2392,
+      "source": "outputs/rea/nac-getter-prototype-20261022T141500Z-r1/nac-prefix-getter.patch"
+    },
+    {
+      "path": "candidates/nac-getter-prototype-20261022T141500Z-r1/openmitrastar_nac_getter.h",
+      "sha256": "a0f5a0633bbb610de432f21c9733ae0d6401b298f845080b37d4b258de62f5f3",
+      "bytes": 372,
+      "source": "outputs/rea/nac-getter-prototype-20261022T141500Z-r1/openmitrastar_nac_getter.h"
+    },
+    {
+      "path": "candidates/nac-getter-prototype-20261022T141500Z-r1/result.json",
+      "sha256": "aa469788e57e3a26f8edd10bc2475cff77558c2b7aee0f226ff4e33b8eb7dcc6",
+      "bytes": 1013,
+      "source": "outputs/rea/nac-getter-prototype-20261022T141500Z-r1/result.json"
+    },
+    {
+      "path": "candidates/maxbw-aliases-candidate-20261022T143500Z-r1/ieee80211_wireless.c",
+      "sha256": "9e31def106b6d73ce0d350ce292521b814bb62dd6fc86ab7e5ca24ceac91d71a",
+      "bytes": 668593,
+      "source": "outputs/rea/maxbw-aliases-candidate-20261022T143500Z-r1/ieee80211_wireless.c"
+    },
+    {
+      "path": "candidates/maxbw-aliases-candidate-20261022T143500Z-r1/maxbw-aliases.patch",
+      "sha256": "0f2145e932c464fe0343e37e6afbec43e987336fd529e5e94d206c646fd5abcc",
+      "bytes": 1502,
+      "source": "outputs/rea/maxbw-aliases-candidate-20261022T143500Z-r1/maxbw-aliases.patch"
+    },
+    {
+      "path": "candidates/maxbw-aliases-candidate-20261022T143500Z-r1/result.json",
+      "sha256": "662f2af48716f32d59442fbe86e31599239246917ec4bbb689637a71b61108c6",
+      "bytes": 773,
+      "source": "outputs/rea/maxbw-aliases-candidate-20261022T143500Z-r1/result.json"
+    },
+    {
+      "path": "local-only/modules/seven-qdrv.ko",
+      "sha256": "dd8f29a1dccb9a01236eb4577f8909088eb544eac872593d4696bf1585cfad06",
+      "bytes": 684108,
+      "source": "outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/a/qdrv/qdrv.ko"
+    },
+    {
+      "path": "local-only/modules/seven-wlan.ko",
+      "sha256": "461c23d2d29833216bb3e7b10afba51531b33cae73e7d0ed6c929482e1faec92",
+      "bytes": 629496,
+      "source": "outputs/rea/driver5g-ops-20261022-seven-module-pair-r2/a/wlan/wlan.ko"
+    }
+  ],
+  "all_copies_exact": true,
+  "hardware_accessed": false
+}

@@ -1,0 +1,556 @@
+--- a/headers\net80211\ieee80211_beacon_desc.h
++++ b/headers\net80211\ieee80211_beacon_desc.h
+@@ -28,6 +28,10 @@
+ 	uint8_t buf[BEACON_PARAM_SIZE];		/* liner buffer for the ie list */
+ 	uint32_t curr;			/* current offset of using buffer */
+ 	uint16_t size;				/* allocated buffer size */
++	/* Host-only ownership metadata after the fixed MuC-compatible prefix. */
++	struct beacon_shared_ie_t *om_cca_ie;
++	struct beacon_shared_ie_t *om_app_ie;
++	int om_build_error;
+ };
+ 
+ #define IEEE80211_ELEMID_VENDOR_WME		(IEEE80211_ELEMID_VENDOR << 8 | 0x0)
+@@ -48,6 +52,11 @@
+ uint8_t *ieee80211_add_beacon_desc_mandatory_fields(struct ieee80211_node *ni, uint8_t *frm,
+ 		struct ieee80211_beacon_offsets *bo);
+ uint8_t *ieee80211_add_beacon_desc_ie(struct ieee80211_node *ni, uint16_t ext_ie_id, uint8_t *frm);
++int om_beacon_reserved_update(struct ieee80211_beacon_param_t *param, struct beacon_shared_ie_t *ie, uint8_t *frm, uint16_t size);
++int om_beacon_reserved_remove(struct ieee80211_beacon_param_t *param, struct beacon_shared_ie_t *ie);
++struct sk_buff;
++int om_ieee80211_beacon_frame_status(struct ieee80211_beacon_param_t *param, struct sk_buff *skb);
++int om_ieee80211_beacon_build_status(struct ieee80211_beacon_param_t *param);
+ void ieee80211_dump_beacon_desc_ie(struct ieee80211_beacon_param_t *param);
+ 
+ #endif
+--- a/source\wlan\ieee80211_beacon_desc.c
++++ b/source\wlan\ieee80211_beacon_desc.c
+@@ -205,7 +205,7 @@
+ #endif
+ 
+ /* This fucntion allocates a beacon ie and associate the beacon ie buffer. */
+-static void ieee80211_beacon_associate_ie(struct beacon_shared_ie_t *ie, uint8_t *frm, uint8_t size)
++static void ieee80211_beacon_associate_ie(struct beacon_shared_ie_t *ie, uint8_t *frm, uint16_t size)
+ {
+ #ifdef OPENMITRASTAR_QDRV_V89_PAIR
+ 	BUILD_BUG_ON(sizeof(struct beacon_shared_ie_t) != 20);
+@@ -229,6 +229,29 @@
+ 
+ static struct beacon_shared_ie_t *ieee80211_beacon_alloc_ie(struct ieee80211_beacon_param_t *param)
+ {
++    uintptr_t start, curr;
++    struct beacon_shared_ie_t *ie;
++
++    if (!param || param->om_build_error)
++        return NULL;
++    start = (uintptr_t)param->buf;
++    curr = (uintptr_t)param->curr;
++    if (param->size != BEACON_PARAM_SIZE || curr < start ||
++        curr - start > param->size || (curr & 3) ||
++        (curr - start) % sizeof(*ie) ||
++        param->size - (curr - start) < sizeof(*ie)) {
++        param->om_build_error = -ENOSPC;
++        return NULL;
++    }
++    ie = (struct beacon_shared_ie_t *)curr;
++    memset(ie, 0, sizeof(*ie));
++    param->curr += sizeof(*ie);
++    return ie;
++}
++
++#if 0 /* Preserved original algorithm for source provenance. */
++static struct beacon_shared_ie_t *ieee80211_beacon_alloc_ie(struct ieee80211_beacon_param_t *param)
++{
+ 	struct beacon_shared_ie_t *ie;
+ 
+ 	if (param == NULL)
+@@ -243,6 +266,10 @@
+ 	param->curr += sizeof(*ie);
+ 	return ie;
+ }
++#endif
++
++
++static int om_beacon_chain_valid(struct ieee80211_beacon_param_t *param);
+ 
+ /*
+  * This function allocates an ie descriptor, construct it with ie payload buffer and
+@@ -254,6 +281,8 @@
+ 	struct beacon_shared_ie_t *new_ie;
+ 
+ 	if (param == NULL || frm == NULL || size == 0)
++		return;
++	if (om_beacon_chain_valid(param))
+ 		return;
+ 	new_ie = ieee80211_beacon_alloc_ie(param);
+ 	if (new_ie == NULL)
+@@ -278,6 +307,8 @@
+ 
+ 	if (param == NULL || frm == NULL || size == 0)
+ 		return;
++	if (om_beacon_chain_valid(param))
++		return;
+ 	new_ie = ieee80211_beacon_alloc_ie(param);
+ 	if (new_ie == NULL)
+ 		return;
+@@ -292,6 +323,205 @@
+ 		param->tail = new_ie;
+ }
+ 
++
++/* Reserved dynamic slots are allocated once per unpublished beacon build.
++ * Repeated CCA/APP updates never advance curr or enlarge the MuC wire arena. */
++static int om_beacon_descriptor_valid(struct ieee80211_beacon_param_t *param,
++        struct beacon_shared_ie_t *ie)
++{
++    uintptr_t start, curr, address;
++    if (!param || !ie || param->size != BEACON_PARAM_SIZE)
++        return 0;
++    start = (uintptr_t)param->buf;
++    curr = (uintptr_t)param->curr;
++    address = (uintptr_t)ie;
++    return curr >= start && curr - start <= param->size &&
++        !(start & 3) && (curr - start) % sizeof(*ie) == 0 &&
++        address >= start && address - start <= curr - start &&
++        curr - address >= sizeof(*ie) && !(address & 3) &&
++        (address - start) % sizeof(*ie) == 0;
++}
++
++static int om_beacon_slot_error(struct ieee80211_beacon_param_t *param)
++{
++    if (param && !param->om_build_error)
++        param->om_build_error = -EINVAL;
++    return -EINVAL;
++}
++
++/* Inspect the entire unpublished chain before rewiring any prefix. */
++static int om_beacon_chain_valid(struct ieee80211_beacon_param_t *param)
++{
++    struct beacon_shared_ie_t *ie, *last = NULL;
++    struct beacon_shared_ie_t *seen[BEACON_PARAM_SIZE / sizeof(*ie)];
++    unsigned int count = 0, cca_seen = 0, app_seen = 0, i;
++    uintptr_t previous = 0;
++
++    if (!param || param->om_build_error)
++        return -EINVAL;
++    if (!om_beacon_descriptor_valid(param, param->om_cca_ie) ||
++        !om_beacon_descriptor_valid(param, param->om_app_ie) ||
++        param->om_cca_ie == param->om_app_ie)
++        return om_beacon_slot_error(param);
++    for (ie = param->head; ie; ie = ie->next) {
++        if (count >= BEACON_PARAM_SIZE / sizeof(*ie) ||
++            !om_beacon_descriptor_valid(param, ie))
++            return om_beacon_slot_error(param);
++        for (i = 0; i < count; i++)
++            if (seen[i] == ie)
++                return om_beacon_slot_error(param);
++        if (!ie->size || !ie->lhost_buf ||
++            (count && (uintptr_t)ie->lhost_buf < previous) ||
++            (uintptr_t)ie->lhost_buf + ie->size < (uintptr_t)ie->lhost_buf ||
++            (u32)ie->buf != (u32)plat_kernel_addr_to_dma(NULL, ie->lhost_buf) ||
++            ie->next_muc_addr != (ie->next ?
++                (u32)plat_kernel_addr_to_dma(NULL, ie->next) : 0))
++            return om_beacon_slot_error(param);
++        seen[count++] = ie;
++        previous = (uintptr_t)ie->lhost_buf + ie->size;
++        cca_seen += ie == param->om_cca_ie;
++        app_seen += ie == param->om_app_ie;
++        last = ie;
++    }
++    if (last != param->tail ||
++        cca_seen != !!param->om_cca_ie->size ||
++        app_seen != !!param->om_app_ie->size)
++        return om_beacon_slot_error(param);
++    return 0;
++}
++
++static int om_beacon_allocation_ready(struct ieee80211_beacon_param_t *param)
++{
++    uintptr_t start, curr;
++    if (!param || param->om_build_error)
++        return 0;
++    if (om_beacon_chain_valid(param))
++        return 0;
++    start = (uintptr_t)param->buf;
++    curr = (uintptr_t)param->curr;
++    if (param->size != BEACON_PARAM_SIZE || curr < start ||
++        curr - start > param->size || (start & 3) || (curr & 3) ||
++        (curr - start) % sizeof(struct beacon_shared_ie_t) ||
++        param->size - (curr - start) < sizeof(struct beacon_shared_ie_t)) {
++        param->om_build_error = -ENOSPC;
++        return 0;
++    }
++    return 1;
++}
++
++int om_beacon_reserved_update(struct ieee80211_beacon_param_t *param,
++        struct beacon_shared_ie_t *ie, uint8_t *frm, uint16_t size)
++{
++    struct beacon_shared_ie_t *cursor, *previous = NULL;
++    unsigned int count = 0;
++
++    if (!param || param->om_build_error)
++        return -EINVAL;
++    if (!om_beacon_descriptor_valid(param, ie) || !frm || !size ||
++        (ie != param->om_cca_ie && ie != param->om_app_ie))
++        return om_beacon_slot_error(param);
++    if (om_beacon_chain_valid(param))
++        return -EINVAL;
++    if (ie->size && om_beacon_reserved_remove(param, ie))
++        return -EINVAL;
++    /* Wire traversal must match frame order, including APP-first/CCA-later. */
++    for (cursor = param->head; cursor; previous = cursor, cursor = cursor->next) {
++        if (count++ >= BEACON_PARAM_SIZE / sizeof(*cursor) ||
++            !om_beacon_descriptor_valid(param, cursor) || !cursor->size)
++            return om_beacon_slot_error(param);
++        if ((uintptr_t)cursor->lhost_buf > (uintptr_t)frm)
++            break;
++    }
++    ieee80211_beacon_associate_ie(ie, frm, size);
++    ie->next = cursor;
++    ie->next_muc_addr = cursor ? plat_kernel_addr_to_dma(NULL, cursor) : 0;
++    if (previous) {
++        previous->next = ie;
++        previous->next_muc_addr = plat_kernel_addr_to_dma(NULL, ie);
++    } else {
++        param->head = ie;
++    }
++    if (!cursor)
++        param->tail = ie;
++    return 0;
++}
++EXPORT_SYMBOL(om_beacon_reserved_update);
++
++int om_beacon_reserved_remove(struct ieee80211_beacon_param_t *param,
++        struct beacon_shared_ie_t *slot)
++{
++    struct beacon_shared_ie_t *ie, *previous = NULL;
++    unsigned int count = 0;
++
++    if (!param || param->om_build_error)
++        return -EINVAL;
++    if (!om_beacon_descriptor_valid(param, slot) ||
++        (slot != param->om_cca_ie && slot != param->om_app_ie))
++        return om_beacon_slot_error(param);
++    if (om_beacon_chain_valid(param))
++        return -EINVAL;
++    if (!slot->size)
++        return 0;
++    for (ie = param->head; ie;
++         previous = ie, ie = ie->next) {
++        if (count++ >= BEACON_PARAM_SIZE / sizeof(*ie) ||
++            !om_beacon_descriptor_valid(param, ie) || !ie->size)
++            return om_beacon_slot_error(param);
++        if (ie != slot)
++            continue;
++        if (previous) {
++            previous->next = ie->next;
++            previous->next_muc_addr = ie->next_muc_addr;
++        } else {
++            param->head = ie->next;
++        }
++        if (param->tail == ie)
++            param->tail = previous;
++        memset(slot, 0, sizeof(*slot));
++        return 0;
++    }
++    return om_beacon_slot_error(param);
++}
++EXPORT_SYMBOL(om_beacon_reserved_remove);
++
++/* This query is used by QDRV before its hostlink publication. */
++int om_ieee80211_beacon_build_status(struct ieee80211_beacon_param_t *param)
++{
++    if (!param)
++        return -EINVAL;
++    if (param->om_build_error)
++        return param->om_build_error;
++    return om_beacon_chain_valid(param);
++}
++EXPORT_SYMBOL(om_ieee80211_beacon_build_status);
++
++/* Frame extents are checked at complete-state boundaries, before payload writes
++ * and again before QDRV publication. Temporary relocation gaps are unpublished. */
++int om_ieee80211_beacon_frame_status(struct ieee80211_beacon_param_t *param,
++        struct sk_buff *skb)
++{
++    struct beacon_shared_ie_t *ie;
++    uintptr_t cursor, end;
++    int status = om_ieee80211_beacon_build_status(param);
++    if (status)
++        return status;
++    if (!skb || !skb->data)
++        return om_beacon_slot_error(param);
++    cursor = (uintptr_t)skb->data;
++    end = cursor + skb->len;
++    if (end < cursor || !param->head)
++        return om_beacon_slot_error(param);
++    for (ie = param->head; ie; ie = ie->next) {
++        if ((uintptr_t)ie->lhost_buf != cursor || ie->size > end - cursor)
++            return om_beacon_slot_error(param);
++        cursor += ie->size;
++    }
++    if (cursor != end)
++        return om_beacon_slot_error(param);
++    return 0;
++}
++EXPORT_SYMBOL(om_ieee80211_beacon_frame_status);
++
+ int ieee80211_beacon_create_param(struct ieee80211vap *vap)
+ {
+ 	if (vap == NULL)
+@@ -307,6 +537,14 @@
+ 	vap->param->curr = (uint32_t)&vap->param->buf[0];
+ 	vap->param->head = NULL;
+ 	vap->param->tail = NULL;
++	vap->param->om_build_error = 0;
++	vap->param->om_cca_ie = ieee80211_beacon_alloc_ie(vap->param);
++	vap->param->om_app_ie = ieee80211_beacon_alloc_ie(vap->param);
++	if (!vap->param->om_cca_ie || !vap->param->om_app_ie) {
++		kfree(vap->param);
++		vap->param = NULL;
++		return -ENOSPC;
++	}
+ 	return 0;
+ }
+ EXPORT_SYMBOL(ieee80211_beacon_create_param);
+@@ -335,6 +573,10 @@
+ 	struct ieee80211vap *vap = ni->ni_vap;
+ 	struct ieee80211_beacon_param_t *param = vap->param;
+ 	uint8_t *post_frm;
++
++	/* Check the exact next slot before touching payload bytes. */
++	if (!om_beacon_allocation_ready(param))
++		return frm;
+ 
+ 	post_frm = ieee80211_add_beacon_header(ni, frm);
+ 	/*
+@@ -353,6 +595,10 @@
+ 	struct ieee80211_beacon_param_t *param = vap->param;
+ 	uint8_t *post_frm;
+ 
++	/* Check the exact next slot before touching payload bytes. */
++	if (!om_beacon_allocation_ready(param))
++		return frm;
++
+ 	post_frm = ieee80211_add_mandatory_field(ni, frm, bo);
+ 	ieee80211_add_beacon_ie_desc(param, frm, post_frm - frm);
+ 	return post_frm;
+@@ -379,6 +625,15 @@
+ 
+ 	if (param == NULL)
+ 		return 0;
++	if (param->om_build_error)
++		return pre_frm;
++	if (om_ieee80211_beacon_build_status(param))
++		return pre_frm;
++	if (ext_ie_id != IEEE80211_ELEMID_MEASREQ &&
++	    ext_ie_id != IEEE80211_ELEMID_VENDOR_APP &&
++	    !om_beacon_allocation_ready(param)) {
++		return pre_frm;
++	}
+ 
+ 	switch (ext_ie_id) {
+ 	case 70:
+@@ -591,8 +846,14 @@
+ 		break;
+ 	}
+ 	post_frm = frm;
+-	if (post_frm != pre_frm)
+-		ieee80211_add_beacon_ie_desc(param, pre_frm, post_frm - pre_frm);
++	if (post_frm != pre_frm) {
++		if (ext_ie_id == IEEE80211_ELEMID_MEASREQ)
++			(void)om_beacon_reserved_update(param, param->om_cca_ie, pre_frm, post_frm - pre_frm);
++		else if (ext_ie_id == IEEE80211_ELEMID_VENDOR_APP)
++			(void)om_beacon_reserved_update(param, param->om_app_ie, pre_frm, post_frm - pre_frm);
++		else
++			ieee80211_add_beacon_ie_desc(param, pre_frm, post_frm - pre_frm);
++	}
+ 
+ 	return post_frm;
+ }
+--- a/source\wlan\ieee80211_beacon.c
++++ b/source\wlan\ieee80211_beacon.c
+@@ -412,6 +412,10 @@
+ 	}
+ 
+ 	frm = ieee80211_beacon_init(ni, bo, frm);
++	if (om_ieee80211_beacon_build_status(vap->param)) {
++		dev_kfree_skb_any(skb);
++		return NULL;
++	}
+ 
+ 	skb_trim(skb, frm - skb->data);
+ 
+@@ -419,6 +423,10 @@
+ 		skb_push(skb, sizeof(struct ieee80211_frame));
+ 
+ 	ieee80211_add_beacon_desc_header(ni, (uint8_t *) wh);
++	if (om_ieee80211_beacon_build_status(vap->param)) {
++		dev_kfree_skb_any(skb);
++		return NULL;
++	}
+ 
+ 	return skb;
+ }
+@@ -460,6 +468,25 @@
+ 	u_int16_t capinfo;
+ 
+ 	IEEE80211_LOCK(ic);
++	if (om_ieee80211_beacon_frame_status(vap->param, skb))
++		goto om_beacon_update_end;
++	/* Dynamic extents must match the current unpublished frame before writes. */
++	{
++		uintptr_t begin = (uintptr_t)skb->data;
++		uintptr_t end = begin + skb->len;
++		uintptr_t cca = (uintptr_t)bo->bo_cca;
++		uintptr_t app = (uintptr_t)bo->bo_appie_buf;
++		unsigned int cca_size = vap->param->om_cca_ie->size;
++		unsigned int app_size = vap->param->om_app_ie->size;
++		if (end < begin || cca < begin || cca > end || app < cca || app > end ||
++		    cca_size > end - cca || app != cca + cca_size ||
++		    bo->bo_appie_buf_len > end - app ||
++		    (app_size && app_size != bo->bo_appie_buf_len)) {
++			vap->param->om_build_error = -EINVAL;
++			goto om_beacon_update_end;
++		}
++	}
++
+ 
+ 	/* XXX faster to recalculate entirely or just changes? */
+ 	if (vap->iv_opmode == IEEE80211_M_IBSS)
+@@ -552,6 +579,58 @@
+ 		if (vap->interworking)
+ 			ieee80211_add_bss_load(bo->bo_bss_load, vap);
+ 
++
++        /* Change the CCA payload once, then reuse its reserved descriptor.
++         * Move a following APP payload before inserting/removing CCA bytes. */
++        {
++            unsigned int old_len = vap->param->om_cca_ie->size;
++            unsigned int old_app_len = vap->param->om_app_ie->size;
++            unsigned int new_len = 0;
++            int delta;
++#if defined(CONFIG_QTN_80211K_SUPPORT)
++            if (ic->ic_flags & IEEE80211_F_CCA)
++                new_len = sizeof(struct ieee80211_ie_measreq) +
++                    sizeof(struct ieee80211_ie_measure_comm);
++#else
++            if (ic->ic_flags & IEEE80211_F_CCA)
++                new_len = sizeof(struct ieee80211_ie_measreq);
++#endif
++            delta = (int)new_len - (int)old_len;
++            if (delta > 0 && skb_tailroom(skb) < delta) {
++                vap->param->om_build_error = -ENOSPC;
++                goto om_beacon_update_end;
++            }
++            if (delta) {
++                /* Detach both old extents before their payload positions move. */
++                if (om_beacon_reserved_remove(vap->param, vap->param->om_cca_ie) ||
++                    om_beacon_reserved_remove(vap->param, vap->param->om_app_ie))
++                    goto om_beacon_update_end;
++                memmove(bo->bo_appie_buf + delta, bo->bo_appie_buf,
++                    bo->bo_appie_buf_len);
++                bo->bo_xr += delta;
++                bo->bo_appie_buf += delta;
++                bo->bo_tim_trailerlen += delta;
++                if (delta > 0)
++                    skb_put(skb, delta);
++                else
++                    skb_trim(skb, skb->len + delta);
++                if (old_app_len &&
++                    om_beacon_reserved_update(vap->param,
++                        vap->param->om_app_ie, bo->bo_appie_buf,
++                        bo->bo_appie_buf_len))
++                    goto om_beacon_update_end;
++            }
++            if (new_len)
++                (void)ieee80211_add_beacon_desc_ie(ni,
++                    IEEE80211_ELEMID_MEASREQ, bo->bo_cca);
++            else if (om_beacon_reserved_remove(vap->param,
++                    vap->param->om_cca_ie))
++                goto om_beacon_update_end;
++            if (vap->param->om_build_error)
++                goto om_beacon_update_end;
++        }
++
++#if 0 /* Preserve original repeated-allocation algorithm. */
+ 		if (ic->ic_flags & IEEE80211_F_CCA) {
+ #if defined(CONFIG_QTN_80211K_SUPPORT)
+ 			size_t chan_cca_ie_bytes = sizeof(struct ieee80211_ie_measreq) + sizeof(struct ieee80211_ie_measure_comm);
+@@ -565,6 +644,8 @@
+ 			bo->bo_tim_trailerlen += chan_cca_ie_bytes;
+ 			skb_put(skb, chan_cca_ie_bytes);
+ 		}
++#endif
++
+ 
+ 		if ((ic->ic_flags_ext & IEEE80211_FEXT_ERPUPDATE) &&
+ 		    bo->bo_erp) {
+@@ -579,6 +660,35 @@
+ 		ieee80211_add_athAdvCap(bo->bo_ath_caps, vap->iv_bss->ni_ath_flags,
+ 			vap->iv_bss->ni_ath_defkeyindex);
+ 
++
++    /* APP payload replacement uses one reserved slot, including removal. */
++    {
++        unsigned int new_len = vap->app_ie[IEEE80211_APPIE_FRAME_BEACON].ie ?
++            vap->app_ie[IEEE80211_APPIE_FRAME_BEACON].length : 0;
++        int delta = (int)new_len - (int)bo->bo_appie_buf_len;
++
++        if (delta > 0 && skb_tailroom(skb) < delta) {
++            vap->param->om_build_error = -ENOSPC;
++            goto om_beacon_update_end;
++        }
++        if (delta > 0)
++            skb_put(skb, delta);
++        else if (delta < 0)
++            skb_trim(skb, skb->len + delta);
++        bo->bo_appie_buf_len = new_len;
++        bo->bo_tim_trailerlen += delta;
++        if (new_len)
++            (void)ieee80211_add_beacon_desc_ie(ni,
++                IEEE80211_ELEMID_VENDOR_APP, bo->bo_appie_buf);
++        else if (om_beacon_reserved_remove(vap->param,
++                vap->param->om_app_ie))
++            goto om_beacon_update_end;
++        if (vap->param->om_build_error)
++            goto om_beacon_update_end;
++        vap->iv_flags_ext &= ~IEEE80211_FEXT_APPIE_UPDATE;
++    }
++
++#if 0 /* Preserve original APP allocation algorithm. */
+ 	if ((vap->app_ie[IEEE80211_APPIE_FRAME_BEACON].length != 0) &&
+ 	    (vap->app_ie[IEEE80211_APPIE_FRAME_BEACON].ie != NULL)) {
+ 		/* adjust the buffer size if the size is changed */
+@@ -600,7 +710,10 @@
+ 
+ 		vap->iv_flags_ext &= ~IEEE80211_FEXT_APPIE_UPDATE;
+ 	}
+-
++#endif
++
++
++om_beacon_update_end:
+ 	IEEE80211_UNLOCK(ic);
+ 
+ 	return;
+--- a/source\qdrv\qdrv_wlan.c
++++ b/source\qdrv\qdrv_wlan.c
+@@ -3684,6 +3684,16 @@
+ 	DBGPRINTF(DBG_LL_INFO, QDRV_LF_WLAN, "(7)ioctl %p dma ptr %p\n", ioctl, (void *)bc_args);
+ 
+ 	ieee80211_beacon_update(ni, &qv->qv_boff, beacon_skb, 0);
++	{
++		int build_error = om_ieee80211_beacon_frame_status(vap->param, beacon_skb);
++		if (build_error) {
++			qdrv_hostlink_free_coherent(NULL, sizeof(*bc_args), bc_args, args_dma);
++			vnet_free_ioctl(ioctl);
++			ieee80211_beacon_destroy_param(vap);
++			dev_kfree_skb_any(beacon_skb);
++			return build_error;
++		}
++	}
+ 
+ 	for (i = 0; i < WME_NUM_AC; i++) {
+ 		bc_args->wmm_params[i] = wme->wme_chanParams.cap_wmeParams[i];

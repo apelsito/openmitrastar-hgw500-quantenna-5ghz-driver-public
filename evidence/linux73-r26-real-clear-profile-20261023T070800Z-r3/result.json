@@ -1,0 +1,72 @@
+{
+  "status": "PASS_R26_SOURCE_ACTUAL_R24_KBUILD_MACRO_PROFILE_WITNESS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "constants": {
+    "HEADER_CORE_DUMP": 57005,
+    "CONFIG_ARC_MUC_STACK_INIT": 2281961408,
+    "CONFIG_ARC_MUC_STACK_SIZE": 4096,
+    "RUBY_SRAM_BEGIN": 2281701376,
+    "RUBY_SRAM_SIZE": 524288,
+    "CONFIG_ARC_MUC_SRAM_B1_BASE": 131072,
+    "CONFIG_ARC_MUC_SRAM_B1_SIZE": 65536,
+    "CONFIG_ARC_MUC_SRAM_B2_BASE": 196608,
+    "CONFIG_ARC_MUC_SRAM_B2_SIZE": 65472,
+    "RUBY_CRUMBS_ADDR": 2281963456,
+    "RUBY_CRUMBS_SIZE": 64,
+    "RUBY_DRAM_BEGIN": 2147483648,
+    "RUBY_MAX_DRAM_SIZE": 134217728,
+    "CONFIG_ARC_MUC_BASE": 917504,
+    "CONFIG_ARC_MUC_SIZE": 3743744,
+    "CONFIG_ARC_DSP_BASE": 131072,
+    "CONFIG_ARC_DSP_SIZE": 786432,
+    "TOPAZ_RX_ACCELERATE": 1,
+    "TOPAZ_MMAP_UNIFIED": 0,
+    "RUBY_MMAP_FLIP": 1
+  },
+  "arc_compiler_constant_values_verified": true,
+  "regions": {
+    "muc-stack": {
+      "start": 2281957312,
+      "size": 4096
+    },
+    "muc-sram-b1": {
+      "start": 2281832448,
+      "size": 65536
+    },
+    "muc-sram-b2": {
+      "start": 2281897984,
+      "size": 65472
+    },
+    "crumbs": {
+      "start": 2281963456,
+      "size": 64
+    },
+    "muc-dram": {
+      "start": 2148401152,
+      "size": 3743744
+    },
+    "dsp-dram": {
+      "start": 2147614720,
+      "size": 786432
+    }
+  },
+  "maximum_crash_log_bytes": 4092,
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/witness_linux73_clear_reset_profile.py": "13e9a07143d89ace4c4650ad3f6728c90c7068cef929e4893e0ea201c64abe19",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-clear-reset-candidate-20261023T064300Z-r26/source/qdrv/qdrv_control.c": "169d0d4dfe0c4e0d412146405636d1a03fe30ac91e1283b286e3b44b6a913dbe",
+    "/home/rea/linux73-carrier-writer-r24-native-pair-r1/a/source/qdrv/.qdrv_control.o.cmd": "9788e43c88b23ec816f21780fdac64ba3406ec0bdedcf50ef562c77798477bd3",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r26-real-clear-profile-20261023T070800Z-r3/actual-profile.c": "d1e34d2290ae8edd43dab7a03630f3616820940edd3819c93fbdd3013deb6b73",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r26-real-clear-profile-20261023T070800Z-r3/actual-kbuild-macros.txt": "5fb29252009a27cdc3760b9b40ff20a5656b4c4b3008b13a7852e1c7d818c453",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r26-real-clear-profile-20261023T070800Z-r3/actual-profile-expanded.txt": "596bab853d89daffd930630c96be7e0d4ed9b7ab7a35fe6a3c6f01a31a5c2b20",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r26-real-clear-profile-20261023T070800Z-r3/actual-profile-values.c": "1e504786aacd8f6886d8eb8e97299e8acd1c464d341babb9e1b4e42b2a396053",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r26-real-clear-profile-20261023T070800Z-r3/actual-profile-values.o": "ebbddcdc69be7997253bbb28717977f539b52cb5be96dbb10e0a15feb2f1ffee",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r26-real-clear-profile-20261023T070800Z-r3/actual-profile-values.bin": "ee21b3c6df74038e8b7f1328f808f3293362021d71f47c95d87bfcd6bbdb9c51",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-gcc": "3918a0da3c9f2cfde359f6fed1d0df19e737438dfd2cc60edae63f2dcbf14263",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-objcopy": "0ea69a4d7a42587a29ba04c82b2924c10026cfe9a1395276d546580584c20506"
+  },
+  "limits": [
+    "Actual R26 qdrv_control source preprocessed using R24 successful native Kbuild command.",
+    "MMIO access, producer quiescence, hardware and firmware execution are untested."
+  ]
+}

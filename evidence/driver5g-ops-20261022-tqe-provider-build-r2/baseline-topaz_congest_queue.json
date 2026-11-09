@@ -1,0 +1,275 @@
+{
+  "status": "PASS_FULL_BASELINE_RECONSTRUCTION",
+  "errors": [],
+  "sections": [
+    {
+      "name": "",
+      "parent_bytes": 0,
+      "baseline_bytes": 0,
+      "type": 0,
+      "flags": 0,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": ".ARC.attributes",
+      "parent_bytes": 40,
+      "baseline_bytes": 40,
+      "type": 1879048193,
+      "flags": 0,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "5063b5723425792c0365b30387ed706224bfb5df866d7c09d658ac8ca18660d2",
+      "baseline_sha256": "5063b5723425792c0365b30387ed706224bfb5df866d7c09d658ac8ca18660d2"
+    },
+    {
+      "name": ".bss",
+      "parent_bytes": 12,
+      "baseline_bytes": 12,
+      "type": 8,
+      "flags": 3,
+      "comparison": "NOBITS_SIZE_ALIGNMENT_FLAGS",
+      "pass": true
+    },
+    {
+      "name": ".comment",
+      "parent_bytes": 138,
+      "baseline_bytes": 138,
+      "type": 1,
+      "flags": 48,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "be0e08b0b5957c9982fb6208cd7acf1c5502cc78d513a9b1b1237961906233a1",
+      "baseline_sha256": "be0e08b0b5957c9982fb6208cd7acf1c5502cc78d513a9b1b1237961906233a1"
+    },
+    {
+      "name": ".data",
+      "parent_bytes": 0,
+      "baseline_bytes": 0,
+      "type": 1,
+      "flags": 3,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": ".exit.text",
+      "parent_bytes": 52,
+      "baseline_bytes": 52,
+      "type": 1,
+      "flags": 6,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "32f31ad7b71f96d6a02642db30419f320465358ae4e9fc42fcc7ddc92f72fed9",
+      "baseline_sha256": "32f31ad7b71f96d6a02642db30419f320465358ae4e9fc42fcc7ddc92f72fed9"
+    },
+    {
+      "name": ".gnu.linkonce.this_module",
+      "parent_bytes": 384,
+      "baseline_bytes": 384,
+      "type": 1,
+      "flags": 3,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "2304ea83d16ac0109d13df90af524545ab4878122fca78867ce03adef8501bb4",
+      "baseline_sha256": "2304ea83d16ac0109d13df90af524545ab4878122fca78867ce03adef8501bb4"
+    },
+    {
+      "name": ".init.text",
+      "parent_bytes": 24,
+      "baseline_bytes": 24,
+      "type": 1,
+      "flags": 6,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "012884389711b328f843893614e5d3fbf898a08ca72877ce4d3f474741a28697",
+      "baseline_sha256": "012884389711b328f843893614e5d3fbf898a08ca72877ce4d3f474741a28697"
+    },
+    {
+      "name": ".modinfo",
+      "parent_bytes": 171,
+      "baseline_bytes": 171,
+      "type": 1,
+      "flags": 2,
+      "comparison": "BUILD_METADATA_SEPARATELY_VALIDATED"
+    },
+    {
+      "name": ".note.GNU-stack",
+      "parent_bytes": 0,
+      "baseline_bytes": 0,
+      "type": 1,
+      "flags": 0,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": ".note.Linux",
+      "parent_bytes": 24,
+      "baseline_bytes": 24,
+      "type": 7,
+      "flags": 2,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "46c938f9cda347c4bb680e1bd9fdaddc9b6e917739785b1baad69e851b2f9de3",
+      "baseline_sha256": "46c938f9cda347c4bb680e1bd9fdaddc9b6e917739785b1baad69e851b2f9de3"
+    },
+    {
+      "name": ".note.gnu.build-id",
+      "parent_bytes": 36,
+      "baseline_bytes": 36,
+      "type": 7,
+      "flags": 2,
+      "comparison": "BUILD_METADATA_SEPARATELY_VALIDATED"
+    },
+    {
+      "name": ".rela.exit.text",
+      "parent_bytes": 60,
+      "baseline_bytes": 60,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rela.gnu.linkonce.this_module",
+      "parent_bytes": 24,
+      "baseline_bytes": 24,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rela.init.text",
+      "parent_bytes": 24,
+      "baseline_bytes": 24,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rela.sram.text",
+      "parent_bytes": 108,
+      "baseline_bytes": 108,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rela.text",
+      "parent_bytes": 1080,
+      "baseline_bytes": 1080,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rela__ksymtab",
+      "parent_bytes": 468,
+      "baseline_bytes": 468,
+      "type": 4,
+      "flags": 64,
+      "comparison": "ALL_RELA_RECORDS_CANONICALIZED_SEPARATELY"
+    },
+    {
+      "name": ".rodata",
+      "parent_bytes": 28,
+      "baseline_bytes": 28,
+      "type": 1,
+      "flags": 2,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "e7f44ee004b645d37509f23a52056713cab6ce23f1186771442810fcad90ec0c",
+      "baseline_sha256": "e7f44ee004b645d37509f23a52056713cab6ce23f1186771442810fcad90ec0c"
+    },
+    {
+      "name": ".rodata.str1.4",
+      "parent_bytes": 1028,
+      "baseline_bytes": 1028,
+      "type": 1,
+      "flags": 50,
+      "comparison": "EXACT_STRINGS_AFTER_DECLARED_FILE_PATH_MAP",
+      "pass": true,
+      "path_substitutions": 0
+    },
+    {
+      "name": ".shstrtab",
+      "parent_bytes": 265,
+      "baseline_bytes": 265,
+      "type": 3,
+      "flags": 0,
+      "comparison": "BUILD_METADATA_SEPARATELY_VALIDATED"
+    },
+    {
+      "name": ".sram.text",
+      "parent_bytes": 684,
+      "baseline_bytes": 684,
+      "type": 1,
+      "flags": 6,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "38b2aa556ccb53fd8acf3d7e9363b8e3960df3aec86cd90777daea8f171e2849",
+      "baseline_sha256": "38b2aa556ccb53fd8acf3d7e9363b8e3960df3aec86cd90777daea8f171e2849"
+    },
+    {
+      "name": ".strtab",
+      "parent_bytes": 2209,
+      "baseline_bytes": 2209,
+      "type": 3,
+      "flags": 0,
+      "comparison": "BUILD_METADATA_SEPARATELY_VALIDATED"
+    },
+    {
+      "name": ".symtab",
+      "parent_bytes": 1792,
+      "baseline_bytes": 1792,
+      "type": 2,
+      "flags": 0,
+      "comparison": "BUILD_METADATA_SEPARATELY_VALIDATED"
+    },
+    {
+      "name": ".text",
+      "parent_bytes": 3592,
+      "baseline_bytes": 3592,
+      "type": 1,
+      "flags": 6,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "1f2e6975826d4244b2190ef1155254d5c12e36102d1fc5e9aa17e2f028d8291f",
+      "baseline_sha256": "1f2e6975826d4244b2190ef1155254d5c12e36102d1fc5e9aa17e2f028d8291f"
+    },
+    {
+      "name": "__ksymtab",
+      "parent_bytes": 156,
+      "baseline_bytes": 156,
+      "type": 1,
+      "flags": 2,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "59bf9091f4cbbd2a8796bfe086a501c57226c42739dcf8ad323e7493ad51e38f",
+      "baseline_sha256": "59bf9091f4cbbd2a8796bfe086a501c57226c42739dcf8ad323e7493ad51e38f"
+    },
+    {
+      "name": "__ksymtab_strings",
+      "parent_bytes": 354,
+      "baseline_bytes": 354,
+      "type": 1,
+      "flags": 50,
+      "comparison": "BYTE_FOR_BYTE",
+      "pass": true,
+      "parent_sha256": "6061453b1d309cb29a700b132e0e14a7a56ca5a725c7fbc14e67ad31f4e3d246",
+      "baseline_sha256": "6061453b1d309cb29a700b132e0e14a7a56ca5a725c7fbc14e67ad31f4e3d246"
+    }
+  ],
+  "relocations_total": 147,
+  "relocations_all_match": true,
+  "relocation_differences": [],
+  "symbols_total": 112,
+  "symbol_differences": [],
+  "function_count": 29,
+  "code_allocated_bytes": 4352,
+  "limits": "ET_REL compile/link comparison before runtime relocations; no hardware/firmware acceptance."
+}

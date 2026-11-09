@@ -1,0 +1,364 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-r26-comments-handoff-20261023T071000Z-r1/artifact-hashes.json",
+      "source": "outputs/rea/linux73-r26-comments-handoff-20261023T071000Z-r1/artifact-hashes.json",
+      "bytes": 436,
+      "sha256": "c8a412bd9b8d2a464fe2eab5804a73760e40a3892eb897dd5d2be0c192cee5a2",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-comments-handoff-20261023T071000Z-r1/comments.json",
+      "source": "outputs/rea/linux73-r26-comments-handoff-20261023T071000Z-r1/comments.json",
+      "bytes": 3696823,
+      "sha256": "3a40f6d771922f1183b6a210da45759688eb2e72912b8e5d1448250cda7e54f8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-comments-handoff-20261023T071000Z-r1/COMMENTS.md",
+      "source": "outputs/rea/linux73-r26-comments-handoff-20261023T071000Z-r1/COMMENTS.md",
+      "bytes": 1999601,
+      "sha256": "b6d8806b6f2862549ee2314ae1cf280811358555cfe102d40695f795e3a9021b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-comments-handoff-20261023T071000Z-r1/comments.raw.bin",
+      "source": "outputs/rea/linux73-r26-comments-handoff-20261023T071000Z-r1/comments.raw.bin",
+      "bytes": 726274,
+      "sha256": "9768911f5e3cfc25098a2ff1917f9e6ae053797ba92682cda640ebf8552b617f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-comments-handoff-20261023T071000Z-r1/index.html",
+      "source": "outputs/rea/linux73-r26-comments-handoff-20261023T071000Z-r1/index.html",
+      "bytes": 2236121,
+      "sha256": "09f395d1eb609160f0f325dd93eda04806143aa6e7b800e7fa8b97003272f538",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-comments-handoff-20261023T071000Z-r1/manifest.json",
+      "source": "outputs/rea/linux73-r26-comments-handoff-20261023T071000Z-r1/manifest.json",
+      "bytes": 42318,
+      "sha256": "c36feabbc864b38da24c5dffba1f868c5bf10b50568f7396cd16610c93e77bba",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/actual_tasklet_registration.dossier.json",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/actual_tasklet_registration.dossier.json",
+      "bytes": 2569,
+      "sha256": "832fe9ecbbac72c699a68aae1e17d2856cc77b97cbdf6ddd1aedc54703b9fee0",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/actual_tasklet_registration.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/actual_tasklet_registration.pseudocode.c",
+      "bytes": 939,
+      "sha256": "ea583d16fe0b196601dad9db9c28996075ac92b63156747f8144fb6d519b7f58",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/auc-ipc-enum-source.json",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/auc-ipc-enum-source.json",
+      "bytes": 5081,
+      "sha256": "05151bba151b80ccbfb4c7edba3f757fa21a5ab23feb98d1d3030d35493a4667",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/fcs_builder.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/fcs_builder.gnu-assembly.txt",
+      "bytes": 18979,
+      "sha256": "3fe507368cbf777e8fb916bcb7df33e798d97d1ad2544ba67abe4b9880a12534",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/HANDOFF.md",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/HANDOFF.md",
+      "bytes": 4673,
+      "sha256": "fb8911d082991342ce5d9f16c7fd5139c326c1b7d93e66cfa3fa449b9969cc22",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/input-pins.json",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/input-pins.json",
+      "bytes": 5430,
+      "sha256": "78ac6f0264ad76769512ddc6fd561cdac955f7fafe87e29503cab39016c946b0",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/m2a-management-flags-source.json",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/m2a-management-flags-source.json",
+      "bytes": 554,
+      "sha256": "7c8da333110c897983ca01bfb82f85e0d9e2070622abbf167736888c083f9ab5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/management_fcs_constructor.dossier.json",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/management_fcs_constructor.dossier.json",
+      "bytes": 5017,
+      "sha256": "74c1ad3382cb60f7ffcdc711f99194dde1712c6254dd273cebd42f7a94eb0e0b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/management_fcs_constructor.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/management_fcs_constructor.pseudocode.c",
+      "bytes": 7527,
+      "sha256": "8390aef64e73273a8bfa8af25d2ad08923527161f7610cf93d1f578177e1d6a7",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/ocs_halt_resume_callers.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/ocs_halt_resume_callers.gnu-assembly.txt",
+      "bytes": 2092,
+      "sha256": "3fb0b202a8b3249cb7aa0e8252affd9ad92539b9c2bf277b73ef6565972049b1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/ocs_suspend_command.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/ocs_suspend_command.gnu-assembly.txt",
+      "bytes": 271,
+      "sha256": "3a8628fff6d54735ea74e44aa378aac19294499e54c41190ab8161eb79aaa3c6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/ocs_suspend_command21.dossier.json",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/ocs_suspend_command21.dossier.json",
+      "bytes": 2030,
+      "sha256": "b7103027ea4d510dc2804e99d3f28e279da8da6312f647be8628564027178784",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/ocs_suspend_command21.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/ocs_suspend_command21.pseudocode.c",
+      "bytes": 115,
+      "sha256": "00f331488ea0922409bf96d81e1cfb04735aeeffd1825183840f731023f1d207",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_management_ingress.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_management_ingress.gnu-assembly.txt",
+      "bytes": 2096,
+      "sha256": "c1c8e8f94795d5988376a5c0f14c342c0b4c37ce89cdaf54565c70f2982b55a3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_management_producer.dossier.json",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_management_producer.dossier.json",
+      "bytes": 4850,
+      "sha256": "6829b0b88c11d0cf1f66b7608f69bab9c70a1b979193d9458529e55fc269bbcb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_management_producer.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_management_producer.gnu-assembly.txt",
+      "bytes": 14524,
+      "sha256": "eef28ecd7dfb155ab09484eeb59b6d511ef9212fc04a29818966ee814d488c96",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_management_producer.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_management_producer.pseudocode.c",
+      "bytes": 5302,
+      "sha256": "cc84bf0c7eaa52e386eaa66c6ba3a6fc4eee99c89d3bd1e04b0e12fdc4a7b88a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_tqe_management_ingress.dossier.json",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_tqe_management_ingress.dossier.json",
+      "bytes": 2306,
+      "sha256": "c063fd3cb5a4ed393ed101db139829c7a3d6ba5728457e10068ba431387fcdd6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_tqe_management_ingress.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/real_tqe_management_ingress.pseudocode.c",
+      "bytes": 528,
+      "sha256": "4ed84c49b21531388e3046339fd74cee525fc141bfaa68a5395d25b04bbfbd14",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/result.json",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/result.json",
+      "bytes": 25627,
+      "sha256": "a7f84cecf7a600e687a7cd3e26cc85d6eefaa9aa10c34cf7e82dd4916e6fc75d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/tasklet_registration.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/tasklet_registration.gnu-assembly.txt",
+      "bytes": 2103,
+      "sha256": "2900d71d06787ff4db2a2a437d6e767c4909ad939d62bfc776065d810c417395",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/tqe_descriptor_dispatch.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/tqe_descriptor_dispatch.gnu-assembly.txt",
+      "bytes": 5854,
+      "sha256": "697440150f4a6b9bc4c7a59b460895a3ebd6a9bd4fa2a18d5598e0d54faa391e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/tqe_registration.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/tqe_registration.gnu-assembly.txt",
+      "bytes": 1929,
+      "sha256": "9dc5de82437de0d62aefa9ff1c35170db467502f32e2e225ec8845926e99854a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/tqe_tasklet5_registration.dossier.json",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/tqe_tasklet5_registration.dossier.json",
+      "bytes": 1990,
+      "sha256": "ab88a5b51065ee6f7ce229cf655fbf66ed1c52ceaf7a58534327f58dd49510d3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/tqe_tasklet5_registration.pseudocode.c",
+      "source": "outputs/rea/rbs-muc-real-tqe-admission-audit-20261023T014800Z-r1/tqe_tasklet5_registration.pseudocode.c",
+      "bytes": 800,
+      "sha256": "1b9cc32474813515dc703a3dd7bbd29b0d87b42d9419917a836c6bd45e648130",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/command_switch.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/command_switch.gnu-assembly.txt",
+      "bytes": 1269,
+      "sha256": "7be8b199f42729551624209fd7e9d990e9c9b1a20bc705e54272d77c6a6f3474",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/copy_helper.dossier.json",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/copy_helper.dossier.json",
+      "bytes": 1418,
+      "sha256": "0754851c209ddf47eb0e696b02707aa42b58380ab7d1d29c65b3193ccfc6ee99",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/copy_helper.pseudocode.c",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/copy_helper.pseudocode.c",
+      "bytes": 2556,
+      "sha256": "0f42cbd2c0d363f06c094c377b051607d2a01ebed5fa6e81bd259269954b854c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/entry.dossier.json",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/entry.dossier.json",
+      "bytes": 1389,
+      "sha256": "a134e140814b6ea13f0cfaced645680b0b15c0cb50379c26d7e50b6371d9839a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/entry.pseudocode.c",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/entry.pseudocode.c",
+      "bytes": 399,
+      "sha256": "f3a62659b411ff2cebc7e7a771c1e4d72723eee5c639fb6c1315135f36e55657",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/exception_copy.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/exception_copy.gnu-assembly.txt",
+      "bytes": 353,
+      "sha256": "2cc5c9ea2ce6a9a55e36d231338c2c4f4224bfebf1b933b3efc647b13fd24cec",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/HANDOFF.md",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/HANDOFF.md",
+      "bytes": 4314,
+      "sha256": "0bae2f76baaae4d7cef28a52d4d186fcf2466b48806c70a1cece14e9ce9028e6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/input-pins.json",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/input-pins.json",
+      "bytes": 4813,
+      "sha256": "e7d16857525dc03966a144bd68b9d29bde8111d328d328244ae8c110467eb3b1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/ipc-relative-command-table.json",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/ipc-relative-command-table.json",
+      "bytes": 1997,
+      "sha256": "85126894547d514a23a051764b5ce6b11edc048b285053a90fcbbc0655966f3b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/ipc_dispatch.dossier.json",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/ipc_dispatch.dossier.json",
+      "bytes": 5323,
+      "sha256": "e20626d132ec40f2d6716a7f0fc039c1a3151995f695ca9f16eea40afad54554",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/ipc_dispatch.pseudocode.c",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/ipc_dispatch.pseudocode.c",
+      "bytes": 13448,
+      "sha256": "9bd2edcaf0022a11f8eb5c77cbc7606d02197b65b7f461a303537c0a0723db91",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/m2a_flags_ingress.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/m2a_flags_ingress.gnu-assembly.txt",
+      "bytes": 2149,
+      "sha256": "83d807c0b0e094bd2f6ac6142b900a0caa786918e9a0870d332a1dca82a74533",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/native_boot.dossier.json",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/native_boot.dossier.json",
+      "bytes": 1759,
+      "sha256": "389fc78d73a6ea6c4dfb6e3c6c1f4e50f99fc7b10d6b3c724d5518cc7d2af777",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/native_boot.pseudocode.c",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/native_boot.pseudocode.c",
+      "bytes": 410,
+      "sha256": "d2f0e7a36cb8c5a5b748508313c97bed1ea33374431e580f69945ccd380294fb",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/native_copy.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/native_copy.gnu-assembly.txt",
+      "bytes": 475,
+      "sha256": "0fc087f24fb2d4e8e6267526b20cc578417579898674da3460bc83c173887d7c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/ocs21_and_fcs19_clauses.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/ocs21_and_fcs19_clauses.gnu-assembly.txt",
+      "bytes": 2400,
+      "sha256": "263c8a7109e224ec70d7d2b5e951de3aa223f705c208defe7fc8aad07f83395a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/ocs21_clause.dossier.json",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/ocs21_clause.dossier.json",
+      "bytes": 1535,
+      "sha256": "076fdcc9857feac87b888b43479aeb23b53c3fac6ddcea92a4820482c158cfda",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/ocs21_clause.pseudocode.c",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/ocs21_clause.pseudocode.c",
+      "bytes": 946,
+      "sha256": "6bcca1dc9203c75579cf304f6d455b098f50f3e868dd67cb7672abab282f6155",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/ocs_policy_branch.gnu-assembly.txt",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/ocs_policy_branch.gnu-assembly.txt",
+      "bytes": 5886,
+      "sha256": "a9d47262f05268c6cf8c71babfcb1e56f70e1180a8c41281b991f3125e0e6cde",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/rbs-auc-nomu-handoff-20261023T021000Z-r1/result.json",
+      "source": "outputs/rea/rbs-auc-nomu-handoff-20261023T021000Z-r1/result.json",
+      "bytes": 16584,
+      "sha256": "898c1634ff5d93d429633600d67184c3b4c8c0a4d5fb4d271c1944f9faa2a7db",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

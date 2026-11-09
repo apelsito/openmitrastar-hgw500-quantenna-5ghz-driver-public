@@ -1,0 +1,56 @@
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -119,6 +119,12 @@
+ #define SCS_PICK_CHAN_MIN_SCALED_TRAFFIC	100 /* ms */
+ /* Recovered OEM read-only compatibility parameter numbers. These do not
+  * enable DFS, change radio state, or assert measured retry behavior. */
++/* OEM451 reports role1/2 first, else repeater3 or normal0. Two advertised
++ * OEM entries below remain unsupported; adding their records enables no feature. */
++#define OM_OEM_PARAM_DEVICE_MODE 451
++#define OM_OEM_PARAM_IGNORE_ICAC_SELECTION 465
++#define OM_OEM_PARAM_FT_OVER_DS 495
++
+ #define OM_OEM_PARAM_MIN_CAC 450
+ #define OM_OEM_PARAM_SHORT_RETRY_LIMIT 496
+ #define OM_OEM_PARAM_LONG_RETRY_LIMIT 497
+@@ -11362,6 +11368,9 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_IGNORE_ICAC_SELECTION:
++		return -EOPNOTSUPP;
++
+ 	case IEEE80211_PARAM_AP_ISOLATE:
+ 		if (vap->iv_opmode == IEEE80211_M_HOSTAP)
+ 			br_set_ap_isolate(value);
+@@ -13931,6 +13940,17 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_DEVICE_MODE:
++		if (ic->ic_extender_role == IEEE80211_EXTENDER_ROLE_MBS)
++			param[0] = 1;
++		else if (ic->ic_extender_role == IEEE80211_EXTENDER_ROLE_RBS)
++			param[0] = 2;
++		else
++			param[0] = ieee80211_is_repeater(ic) ? 3 : 0;
++		break;
++	case OM_OEM_PARAM_FT_OVER_DS:
++		return -EOPNOTSUPP;
++
+ 	/* Output handling lives in qualified QDRV and returns existing fields. */
+ 	case IEEE80211_PARAM_CCA_FIXED:
+ 	case IEEE80211_PARAM_AUTO_CCA_ENABLE:
+@@ -20857,6 +20877,12 @@
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_cca_fixed" },
+ 	{ IEEE80211_PARAM_AUTO_CCA_ENABLE,
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_auto_cca_en" },
++	{ OM_OEM_PARAM_DEVICE_MODE,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_dev_mode" },
++	{ OM_OEM_PARAM_IGNORE_ICAC_SELECTION,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "ignr_icac_sel" },
++	{ OM_OEM_PARAM_FT_OVER_DS,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_ft_over_ds" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

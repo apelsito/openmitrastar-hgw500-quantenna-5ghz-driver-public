@@ -1,0 +1,56 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/00-build.log",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/00-build.log",
+      "bytes": 1045,
+      "sha256": "fc709f08af82862f24d00810f342a2b3bb1a3b39888facc17341ab6b0e3e7752",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/01-build.log",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/01-build.log",
+      "bytes": 6429,
+      "sha256": "e8c7159b4c3c61f0fd503d7c66fd31b7de1e91461655181d9abc1aafdefc2e2b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/02-build.log",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/02-build.log",
+      "bytes": 56876,
+      "sha256": "bf16ba0ae7c16952c957028887c0e9494ba2bd1f30ef01cc374c14dc2ad1fc9f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/03-build.log",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/03-build.log",
+      "bytes": 481544,
+      "sha256": "e4a064ce81fc790f0c5e2844fdeb889d5afb4ae8f8ffe9e8b07f6412b4a5c403",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/abi-build.log",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/abi-build.log",
+      "bytes": 1754,
+      "sha256": "630bf731c00f52b87a3dced78819e34e6ef6dd870580681dcd1d0a1fbb042259",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/build-inputs.json",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/build-inputs.json",
+      "bytes": 8485,
+      "sha256": "9f872a8ae239eb0059f90ec5bc0696f2a38daa497ef063b7916100f8e9018ed6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/result.json",
+      "source": "outputs/rea/aelita-sanitized-actualbuild-receipt-20261022T235000Z-r1/result.json",
+      "bytes": 16656,
+      "sha256": "024b051e3aab30bee561dba471f2d338b2c88bf49d8f62f71248f511b679827e",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

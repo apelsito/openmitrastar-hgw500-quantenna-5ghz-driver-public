@@ -1,0 +1,15 @@
+{
+  "status": "PASS_COMPLETE_R10_TWO_UNPUBLISHED_CLEANUP_CALL_DELTA",
+  "changed": {
+    "index": 496,
+    "name": "qdrv_wlan_beacon_work",
+    "start": 140144,
+    "oldsize": 2066,
+    "newsize": 2074,
+    "source_fixture_scope": "Two extra prepublication vnet_free_ioctl calls only"
+  },
+  "diagnosticfunctions": 2,
+  "symbols": 1933,
+  "relocations_outside_changed_work": 13960,
+  "all_other_executable_data_metadata_exact": true
+}

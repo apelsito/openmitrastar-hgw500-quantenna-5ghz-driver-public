@@ -1,0 +1,34 @@
+{
+  "status": "PASS_ACTUAL_32BIT_DESCRIPTOR_AND_DYNAMIC_PATH_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "lanes": {
+    "plain": {
+      "cases": 10021,
+      "checks": 211134,
+      "wire_bytes": 20,
+      "dynamic_updates": 10000
+    },
+    "80211k": {
+      "cases": 10021,
+      "checks": 211134,
+      "wire_bytes": 20,
+      "dynamic_updates": 10000
+    }
+  },
+  "descriptor_source_sha256": "198a92120083cc3c5645c71dcebc9cc285bf8fbe0474cb347f669897bad744c1",
+  "beacon_source_sha256": "712d34d4ef45d23d9e146d15702baf6df1c1265b5be52dbcbb376eb4dbc1e64d",
+  "fixture_sha256": "b56f52c642fffdec14d31e3acf98367ab5763f0ea9a1f65e36994ecbf6348900",
+  "limits": [
+    "Fake skb/DMA and IE encoders; real descriptor/list/dynamic update C blocks.",
+    "No ARC/module/full IE encoder or physical MuC proof. Full header dependency rebuild remains required."
+  ],
+  "actual_update_validation_prefix_included": true,
+  "complete_chain_negative_cases_included": true,
+  "selector_adaptation": "OnlyLOCK_BHselector+twofakeBHmacros; descriptor/APP/dynamiccodeunmodified",
+  "tool_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_beacon_r12_descriptor_app_bh.py": "bf8ea50eb3bd836d0837e5208f1fe6e5b7555687054cb6ac21362e9a18a5d67a",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_hgw5g_beacon_descriptor_lifetime.py": "5d04cce768a068c0cd7101c52af574ad884ea225ca36e91e7f4b438993e438ad",
+    "outputs\\rea\\consolidated23-beacon-r12-descriptor-fixture-20261022T203900Z-r3\\adapted-descriptor-fixture.py": "64138647ca9ecc6483d34255659869fe81d8b57121a68f584cc3178715d2d76e"
+  }
+}

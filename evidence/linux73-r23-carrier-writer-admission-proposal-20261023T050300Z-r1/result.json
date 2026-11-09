@@ -1,0 +1,30 @@
+{
+  "status": "PASS_CURRENT_KERNEL_SHA256_PROFILE_WRITER_ADMISSION_PROPOSAL_NOT_IMPLEMENTED",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "contract_sha256": "54d19c06149176249603764dc7870f25d1f6bbd91fc57dc33d398c3b2f26bd15",
+  "doc_sha256": "f0b9d3f3fdc6faa5082005834bac3990457d3ceee1823326e1314d7a33c33f2d",
+  "kernel_sha256": "111a31ea63c530b95aac9ce7df2a1e35e15761047278583938e50de97e192709",
+  "profiles": 3,
+  "comments": {
+    "file_count": 178,
+    "comment_count": 7167,
+    "raw_comment_bytes": 724512,
+    "raw_comment_sha256": "94d142b96e4e6c9146ebaf558eb604088e06f527cb79637ac758b07f94fdd050"
+  },
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/propose_linux73_carrier_writer_admission.py": "fe4a52640030aa7a2041a5af9ab59ede429937655d6d1921e7af7be74dbe7ebc",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-bounded-loader-candidate-20261023T043000Z-r23/result.json": "9746cf9b18ae8390a14c72dcf46445f6ce3389dff96e411fa7786cc11e5f74dc",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-bounded-loader-candidate-20261023T043000Z-r23/source/qdrv/qdrv_fw.c": "f3ea6b0363432d7ec7319c2caf47ddcb93c22158b12f38494b4a9531d2f89b12",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-bounded-loader-candidate-20261023T043000Z-r23/providers/sram73/om73_sram_backend.c": "ebbc75e2f22cfc8b3260947bf63daff451fee207a2a51ee9d300fe7a8c24357b",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r23-independent-loader-contract-20261023T045000Z-r1/selected-carrier-loader-contract.json": "a067760614e381e0db7c12dacf7385bb1644cb1f0de894446ef5245ca64bfd8b",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/reservation-proposal.json": "43b8265a4b3be3274e86a412825fc743145c31f97af909139eeadbabac0f6710",
+    "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-source/include/crypto/sha2.h": "f8e11eb12d6120d3f930dedcbbd9bb8fddb0c0673b8b65c1a0ba9c8a3a13c26b",
+    "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-source/lib/crypto/sha256.c": "5a43cf1bd65930eb5775ae5e120ea7da04b9ec6873995b244b83a3d63437310a",
+    "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-context/.config": "e709aba8ed2b55f3e6debe1480bbea2f1320c4bcd9dc3e9832c185b8e72e8efe",
+    "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-context/Module.symvers": "b3bdc2fecfad7321cd5d03454ea47d2341ef43ffc5e3f091de4c78c0d2726950",
+    "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-context/vmlinux": "111a31ea63c530b95aac9ce7df2a1e35e15761047278583938e50de97e192709",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r23-comments-20261023T050000Z-r1/manifest.json": "d78a753da968b2103f84feadf779feaab8f88e9a2d71fce5d9d2e25bb9754173",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r23-comments-20261023T050000Z-r1/artifact-hashes.json": "e478de28dc2f95ca30d00824260faf294aff398d258f2c4162e0650f6966f5d4"
+  }
+}

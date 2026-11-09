@@ -1,0 +1,30 @@
+{
+  "schema": "openmitrastar.aelita-ethernet73-package/v1",
+  "status": "PASS_SOURCE_PACKAGE_HASH_COMMENT_PRESERVATION_MOCK_PLAN_CONTROLS_NEW_ABI_BUILD_UNRUN",
+  "private": true,
+  "hardware_accessed": false,
+  "Git_mutations": false,
+  "files": {
+    "build.py": "57eda81e6761f86b03dc78cdf4496a3c77338ecbe5a51e7d58c11deeca6de6c0",
+    "README.md": "76e29637f6ff9aaa6f9af65517ca432a1491e164e0ac4e3c364289a45eaa42de",
+    "SOURCE_MANIFEST.json": "482c98300b0165000142ff505f6dbb0bc42f40c9f93a5550fcf115028ee18019",
+    "test_plan.py": "6bcf6bcc07216208a59729ce41420161a8314dbb8822351041b3c1d94cfd4248",
+    "TOOLCHAIN_EXTERNAL.json": "1f08ded2f66b69700f53bd0200220c84fb857713957df9c0a956800c909fb6a4",
+    "driver/f352_contract.h": "86ce6864caa11d06c127c36fdb8e9e5999c23cf61a7a07ede705b0f51d47b2a2",
+    "driver/f352_pair.inc": "027ebd5da0cdc98499e58fbb79e8d883089ca49ae36ebe298140e1df69bbcbf3",
+    "driver/Makefile": "5d9861a9b0791efba1d918a9b54e4038ffb1d405f3b992d928c6f775a96df9ca",
+    "driver/qtn-topaz-emac-eth73.c": "9c72b137d60806fd1345e1410416a86688cdca813435b383f02f1999c425a8d1",
+    "driver/topaz-ethernet.h": "b76ed50ef43801e20d91b5889445f19c54eb0758a445356133116a0d22f835d4",
+    "reference/ethernet-only-intc-compact.c": "2571db3b9d4d0d8b76727cdc1cb7ff5aa1ec9b48f9733b6e40481e61bd5e303e",
+    "board-overlay/arch/arc/kernel/intc-compact.c": "ce37e4da988159ecaa0b4d306244cd5805d875812ca3b7d93e90a0ff8184f7e5",
+    "board-overlay/include/linux/soc/qtn/topaz-ethernet.h": "b76ed50ef43801e20d91b5889445f19c54eb0758a445356133116a0d22f835d4"
+  },
+  "source_files": 8,
+  "mock_plan_cases": 4,
+  "mock_plan_receipt_sha256": "5b328d424e801cd38f2a887c86e7cc51f551314d234d21e0dffe6463cc1d6b45",
+  "build_on_new_Quantenna_ABI": "UNRUN",
+  "reset_overlay": "notincluded;owner-sourceacquisitionpending",
+  "DT_and_unit_identity": "excluded",
+  "toolchain_binaries": "excluded;TOOLCHAIN_EXTERNAL.json metadataonly",
+  "next_action": "Reviewandinclude newpackageinthe privatebranch, prepareexactboard+QuantennaABI kernel thenbuildEMACexternalx2"
+}

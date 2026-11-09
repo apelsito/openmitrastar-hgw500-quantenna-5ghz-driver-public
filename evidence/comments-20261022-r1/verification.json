@@ -1,0 +1,40 @@
+{
+  "schema": "openmitrastar.comments-independent-verification/v1",
+  "status": "PASS_EXACT_BYTES_AND_LOCAL_HTML_STRUCTURE",
+  "verified_utc_date": "2026-10-22",
+  "catalog_tool_copy_sha256": "54fb4533d3de4384677a249d6396479cae94548b02abac89e09f5822120273b3",
+  "test_tool_copy_sha256": "65d287195cee911535cbc313c779903d6b3662950d59f3fd1babaa34bffe1ae9",
+  "unchanged_tool_tests_previously_passed": 8,
+  "seed_provenance_files_verified": 900,
+  "seed_hash_and_size_errors": [],
+  "catalog_file_count": 828,
+  "catalog_membership_errors": [],
+  "comment_spans_verified_against_source_and_raw_stream": 24362,
+  "raw_comment_bytes": 2044572,
+  "comment_span_errors": [],
+  "catalog_artifact_hash_errors": [],
+  "html_articles": 24362,
+  "html_unique_article_ids": 24362,
+  "html_comment_decoded_text_errors": [],
+  "html_script_count": 1,
+  "html_external_script_sources": [],
+  "html_bytes": 7554352,
+  "markdown_bytes": 6744883,
+  "verification_method": "Source/hash/size checks and standard-library HTMLParser with explicit UTF-8 and physical newline preservation; no live browser rendering claimed.",
+  "files_by_root": {
+    "vendor/legacy-gpl": 422,
+    "src": 217,
+    "candidates": 92,
+    "vendor/port-context": 97
+  },
+  "comments_by_root": {
+    "vendor/legacy-gpl": 11721,
+    "src": 5536,
+    "candidates": 2305,
+    "vendor/port-context": 4800
+  },
+  "hardware_accessed": false,
+  "source_files_modified": false,
+  "local_only_and_binary_contents_published": false,
+  "limits": "C/C++ comment extraction over the four explicitly selected source roots. Other selected file types have hashes only; no claim of semantic driver completion, physical acceptance or all firmware content recovery."
+}

@@ -1,0 +1,121 @@
+{
+  "status": "PASS_OFFLINE_SOURCE23_OP490_SAME_HEADER_SEVEN_MODULE_CLOSURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "reproducible": true,
+  "source_units_per_lane": 58,
+  "same_header_unchanged_whole_units": 57,
+  "private_records": 589,
+  "original_records_recovered": 23,
+  "remaining_original_records": 21,
+  "fixture_transactions": 3548272,
+  "negative_cases": 7,
+  "pins_verified": 1864,
+  "modules": [
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/a/qdrv/qdrv.ko",
+      "sha256": "ca6fcb24a2c6e9c051d27a7220a70e034fd3479378f7c7d68c951982b6e802f6",
+      "bytes": 684740
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/a/wlan/wlan.ko",
+      "sha256": "486818be02666694706d1660f49ad3b41a05b197d4c4b5bc42dd6476cd3b2d11",
+      "bytes": 631120
+    },
+    {
+      "lane": "a",
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/a/wlan_scan_ap/wlan_scan_ap.ko",
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093",
+      "bytes": 15508
+    },
+    {
+      "lane": "a",
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/a/wlan_scan_sta/wlan_scan_sta.ko",
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5",
+      "bytes": 18740
+    },
+    {
+      "lane": "a",
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/a/wlan_ccmp/wlan_ccmp.ko",
+      "sha256": "7c54b944fd3f2d214dd8a4d0c98615a48b6fed1acb0b29d86176dff05c9d700f",
+      "bytes": 9792
+    },
+    {
+      "lane": "a",
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/a/wlan_tkip/wlan_tkip.ko",
+      "sha256": "5a625b63d6a86b8f43bc28a2cae90f5a8270cdc6298711029a9aac59f58a4f22",
+      "bytes": 13472
+    },
+    {
+      "lane": "a",
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/a/wlan_xauth/wlan_xauth.ko",
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989",
+      "bytes": 3340
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/b/qdrv/qdrv.ko",
+      "sha256": "ca6fcb24a2c6e9c051d27a7220a70e034fd3479378f7c7d68c951982b6e802f6",
+      "bytes": 684740
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/b/wlan/wlan.ko",
+      "sha256": "486818be02666694706d1660f49ad3b41a05b197d4c4b5bc42dd6476cd3b2d11",
+      "bytes": 631120
+    },
+    {
+      "lane": "b",
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/b/wlan_scan_ap/wlan_scan_ap.ko",
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093",
+      "bytes": 15508
+    },
+    {
+      "lane": "b",
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/b/wlan_scan_sta/wlan_scan_sta.ko",
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5",
+      "bytes": 18740
+    },
+    {
+      "lane": "b",
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/b/wlan_ccmp/wlan_ccmp.ko",
+      "sha256": "7c54b944fd3f2d214dd8a4d0c98615a48b6fed1acb0b29d86176dff05c9d700f",
+      "bytes": 9792
+    },
+    {
+      "lane": "b",
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/b/wlan_tkip/wlan_tkip.ko",
+      "sha256": "5a625b63d6a86b8f43bc28a2cae90f5a8270cdc6298711029a9aac59f58a4f22",
+      "bytes": 13472
+    },
+    {
+      "lane": "b",
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-legacy23-full-closure-r1/b/wlan_xauth/wlan_xauth.ko",
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989",
+      "bytes": 3340
+    }
+  ],
+  "old_members_checked": {
+    "ieee80211com": 374,
+    "ieee80211vap": 210,
+    "qdrv_wlan": 72
+  },
+  "abi_dependency_supplement_status": "PASS_CURRENT_ACTUAL_ARC_WITNESS_DEPENDENCY_HASH_CLOSURE",
+  "limits": "Host controlflow recovery only; two inherited unsupported ops and NAC scalar snapshot limitations preserved. ABI supplement hashes postcompile; source/header originals checked during witness. No fixed-rate PHY, RF, traffic, boot, persistence or release acceptance. Header-only parent control is not firmware."
+}

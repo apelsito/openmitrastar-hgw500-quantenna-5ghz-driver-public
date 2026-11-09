@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ARC_TYPED_HEADER_SOURCE_UNITS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "module_built": false,
+  "units": [
+    {
+      "component": "wlan",
+      "name": "ieee80211_scan",
+      "source_sha256": "5d2dcc8878be78849b964665bfb51ef75827be67eeea798c71ca5bc7a1f6d42f",
+      "object_sha256": "2405f6ef37081c6530cfc411b5deca91d8e87208683ca636619668a34dfde7d1",
+      "object_bytes": 51232,
+      "machine": 93,
+      "functions": 78
+    }
+  ],
+  "input_pins": 1138,
+  "inputs_unchanged": true
+}

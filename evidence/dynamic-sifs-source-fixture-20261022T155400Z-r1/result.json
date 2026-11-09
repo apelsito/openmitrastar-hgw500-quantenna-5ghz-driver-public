@@ -1,0 +1,7 @@
+{
+  "status": "PASS_ACTUAL_HOST_DYNAMIC_SIFS_FORWARD_FIXTURE",
+  "firmware_eligible": false,
+  "host_exit": 0,
+  "hardware_accessed": false,
+  "cases": 196608
+}

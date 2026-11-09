@@ -1,0 +1,16 @@
+outputs\rea\linux73-r26-clear-reset-fixture-20261023T065500Z-r1\actual-clear-reset.c:139:6: warning: unused variable 'stack_start' [-Wunused-variable]
+  139 |         u32 stack_start = CONFIG_ARC_MUC_STACK_INIT - CONFIG_ARC_MUC_STACK_SIZE;
+      |             ^~~~~~~~~~~
+outputs\rea\linux73-r26-clear-reset-fixture-20261023T065500Z-r1\actual-clear-reset.c:135:77: warning: unused parameter 'argv' [-Wunused-parameter]
+  135 | static int qdrv_command_clearsram_owned(struct device *dev, int argc, char *argv[],
+      |                                                                             ^
+outputs\rea\linux73-r26-clear-reset-fixture-20261023T065500Z-r1\actual-clear-reset.c:183:16: warning: comparison of integers of different signs: 'int' and '__size_t' (aka 'unsigned int') [-Wsign-compare]
+  183 |         for (i = 0; i < ARRAY_SIZE(regions); i++) {
+      |                     ~ ^ ~~~~~~~~~~~~~~~~~~~
+outputs\rea\linux73-r26-clear-reset-fixture-20261023T065500Z-r1\actual-clear-reset.c:196:16: warning: comparison of integers of different signs: 'int' and '__size_t' (aka 'unsigned int') [-Wsign-compare]
+  196 |         for (i = 0; i < ARRAY_SIZE(regions); i++) {
+      |                     ~ ^ ~~~~~~~~~~~~~~~~~~~
+outputs\rea\linux73-r26-clear-reset-fixture-20261023T065500Z-r1\actual-clear-reset.c:207:16: warning: comparison of integers of different signs: 'int' and '__size_t' (aka 'unsigned int') [-Wsign-compare]
+  207 |         for (i = 0; i < ARRAY_SIZE(regions); i++) {
+      |                     ~ ^ ~~~~~~~~~~~~~~~~~~~
+5 warnings generated.

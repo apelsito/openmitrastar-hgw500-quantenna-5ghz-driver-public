@@ -1,0 +1,14 @@
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -20819,6 +20819,11 @@
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "gt_stdfs_msrcac" },
+ 	{ IEEE80211_PARAM_STA_DFS_STRICT_TX_CHAN_CLOSE_TIME,
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "gt_stdfs_end_tx" },
++	/* Recovered OEM aliases: dispatch already exists for parameter 246. */
++	{ IEEE80211_PARAM_TX_MAXMPDU,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "tx_maxmpdu" },
++	{ IEEE80211_PARAM_TX_MAXMPDU,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_tx_maxmpdu" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

@@ -1,0 +1,141 @@
+{
+  "status": "PASS_ALL_WLAN_RESIDUAL_BYTES_SYMBOLS_RELOCS_DATA",
+  "actual_changed": [
+    {
+      "index": 735,
+      "name": "ieee80211_ioctl_getparam",
+      "section": ".text",
+      "old_value": 107296,
+      "new_value": 107316,
+      "old_size": 5832,
+      "new_size": 5848,
+      "old_sha256": "f0bad84d84411449ee6555544e1917a5a2e61762a262a5f9f08f4ff16c8dcb19",
+      "new_sha256": "90bee627d469bca45400b87f585d06ef1d88f1ca792f06259fc82e62720f3e02",
+      "scope": "BOUND_SOURCE_DELTA_VERIFIED_BY_ACTUAL_FIXTURE"
+    },
+    {
+      "index": 759,
+      "name": "ieee80211_ioctl_setparam",
+      "section": ".text",
+      "old_value": 157544,
+      "new_value": 157580,
+      "old_size": 16340,
+      "new_size": 16404,
+      "old_sha256": "7541fadb3ce61016a3b113d033a036375f2040e18368f433bea01bd4d29158e3",
+      "new_sha256": "b15d065e28b7bd15f3e4746551b78cdca5fa6dccf528917d4a38a8e4e925880c",
+      "scope": "BOUND_SOURCE_DELTA_VERIFIED_BY_ACTUAL_FIXTURE"
+    },
+    {
+      "index": 1577,
+      "name": "ieee80211_vap_setup",
+      "section": ".text",
+      "old_value": 317864,
+      "new_value": 317964,
+      "old_size": 1124,
+      "new_size": 1128,
+      "old_sha256": "4004ceda6fd707f5726adab78ad85bfd5a66c9c77e4f3b8c0e364ca011a252cc",
+      "new_sha256": "8533823b6c98d4f910c595e46a48bb033cba6f9d3e7771d5940e413d05c0c4de",
+      "scope": "BOUND_SOURCE_DELTA_VERIFIED_BY_ACTUAL_FIXTURE"
+    },
+    {
+      "index": 1694,
+      "name": "ieee80211_send_mgmt",
+      "section": ".text",
+      "old_value": 47460,
+      "new_value": 47460,
+      "old_size": 7728,
+      "new_size": 7748,
+      "old_sha256": "0ac591a09d16c618b31b2c202b4e3a436bfc2a1f9ec695ce812d0ab80a5cbcbb",
+      "new_sha256": "df2d66bda482f6d90ab24deadda4dec699806186c7928c40a3ed5d8a9a8ca85c",
+      "scope": "BOUND_SOURCE_DELTA_VERIFIED_BY_ACTUAL_FIXTURE"
+    }
+  ],
+  "exact_diagnostic_changes": [
+    {
+      "index": 633,
+      "name": "ieee80211_delete_wlanunit",
+      "changes": [
+        {
+          "offset": 44,
+          "old": "d852",
+          "new": "ea52"
+        },
+        {
+          "offset": 116,
+          "old": "d952",
+          "new": "eb52"
+        }
+      ]
+    },
+    {
+      "index": 634,
+      "name": "ieee80211_ioctl_giwfreq",
+      "changes": [
+        {
+          "offset": 76,
+          "old": "d80b",
+          "new": "180c"
+        }
+      ]
+    },
+    {
+      "index": 716,
+      "name": "ieee80211_param_from_qdrv",
+      "changes": [
+        {
+          "offset": 92,
+          "old": "8e0d",
+          "new": "8f0d"
+        }
+      ]
+    },
+    {
+      "index": 1439,
+      "name": "ieee80211com_media_change",
+      "changes": [
+        {
+          "offset": 204,
+          "old": "1d08",
+          "new": "5d08"
+        }
+      ]
+    },
+    {
+      "index": 1582,
+      "name": "ieee80211_get_chanflags",
+      "changes": [
+        {
+          "kind": "diagnostic3120to3121 expandedmovandbranchtarget",
+          "old": "61<<5",
+          "new": "3121"
+        }
+      ]
+    },
+    {
+      "index": 1606,
+      "name": "ieee80211_get_prichan_list_by_operating_class",
+      "changes": [
+        {
+          "kind": "diagnostic2895to2896 compactmovandbranchtarget",
+          "old": "2895",
+          "new": "181<<4"
+        }
+      ]
+    },
+    {
+      "index": 2191,
+      "name": "ieee80211_chan2mode",
+      "changes": [
+        {
+          "offset": 44,
+          "old": "3d08",
+          "new": "3e08"
+        }
+      ]
+    }
+  ],
+  "function_count": 959,
+  "relocations_outside_actual_bodies": 8969,
+  "all_symbols": 2250,
+  "all_sections": 28
+}

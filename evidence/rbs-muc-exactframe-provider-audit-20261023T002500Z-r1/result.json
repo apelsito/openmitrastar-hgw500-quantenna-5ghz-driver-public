@@ -1,0 +1,163 @@
+{
+  "status": "PASS_BOUNDED_OEM_MUC_TX_CONTROL_NEGATIVE_NOT_EXACT_FRAME_PROVIDER",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "qualified_ops_added": 0,
+  "prototype_adapter_added": false,
+  "original_muc_sha256": "71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4",
+  "analysis_elf_sha256": "2a9e1e7920d529fe376748be4b06260589d1bfef28ade0850883ae9c423ba27a",
+  "selected_AuC_sha256": "e1fd397ef56b061af7c91cbd422973dcfcf1382933afa226f8f428dd315f65af",
+  "connected_REA_attempt": "open_binary rejected ARC unsupportedELFarchitecture; isolatedqualifiedexistinglab used, no readiness/setup",
+  "fresh_function_evidence": {
+    "cac": {
+      "address": "0x111330",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x111330",
+            "end": "0x11152b"
+          }
+        ],
+        "total_bytes": 508,
+        "span_bytes": 508,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "pseudocode_sha256": "6ad7cca92d0b0b2d3e51629e4e8e534f78f88740f6d97716d1ee4b8e6556e381",
+      "callees": [
+        {
+          "address": "0xe6c98",
+          "name": "FUN_ram_000e6c98"
+        },
+        {
+          "address": "0xee260",
+          "name": "FUN_ram_000ee260"
+        },
+        {
+          "address": "0x1101c8",
+          "name": "FUN_ram_001101c8"
+        }
+      ]
+    },
+    "tx_control": {
+      "address": "0x16fe74",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x16fe74",
+            "end": "0x16ffd7"
+          }
+        ],
+        "total_bytes": 356,
+        "span_bytes": 356,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "pseudocode_sha256": "3da12e23044eac58faffc91fd7ab9d7b1aaf8c01f3d42b31c841dab2d85c84ab",
+      "callees": [
+        {
+          "address": "0x1710d0",
+          "name": "FUN_ram_001710d0"
+        }
+      ]
+    },
+    "locked_field_write": {
+      "address": "0x1710d0",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1710d0",
+            "end": "0x171127"
+          }
+        ],
+        "total_bytes": 88,
+        "span_bytes": 88,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "pseudocode_sha256": "bd11265f68b1f61110a37d389034d3258dade30a6a0e1615d64dbe3f886a08f9",
+      "callees": [
+        {
+          "address": "0x171000",
+          "name": "FUN_ram_00171000"
+        },
+        {
+          "address": "0x183c8c",
+          "name": "FUN_ram_00183c8c"
+        },
+        {
+          "address": "0x183cd0",
+          "name": "FUN_ram_00183cd0"
+        }
+      ]
+    },
+    "field_write": {
+      "address": "0x171000",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x171000",
+            "end": "0x1710cf"
+          }
+        ],
+        "total_bytes": 208,
+        "span_bytes": 208,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "pseudocode_sha256": "a3006d5f01549eabbe7c94bac1c7fb23b45f2282699ca54142bc58cda885a7e9",
+      "callees": []
+    }
+  },
+  "main_ioctl_table": {
+    "address": "0x111a14",
+    "commands": 66,
+    "ioctl26_target": "0x111ff8",
+    "handler_effect": "ioctlarg1 bool\u2192global0x18c090\u21920x16fe74, globalTXmasks noframeargument"
+  },
+  "transmit_mask_registers": [
+    "0x250",
+    "0x254",
+    "0x258",
+    "0x25c"
+  ],
+  "register_backend": "0x1710d0 lockwrapper\u21920x171000 maskedregisterwrite e6040000+mappedoffset",
+  "CAC_config": "0x111330508bytes setsOCACchannel/dwell/thresholds/state40bc..4168; channelpolicy notRBSsingleframeauthorization",
+  "shared_host_descriptor_flags": [
+    "#define\tHTXD_FLAG_AMSDU_DEST_CAPABLE\t0x00000002\t/* Can be used for AMSDU destination (append to) */",
+    "#define\tHTXD_FLAG_AMSDU_SRC_CAPABLE\t0x00000004\t/* Can be used for AMSDU (copy from) */",
+    "#define HTXD_FLAG_NO_UPDATE_NAV\t\t0x00000008\t/* Don't update NAV for this frame */",
+    "#define HTXD_FLAG_NO_RETRY\t\t0x00000010\t/* Don't retry this frame if tx failed */",
+    "#define HTXD_FLAG_NO_RETURN\t\t0x00000020\t/* Don't return txdesc from MuC to lhost */",
+    "#define HTXD_FLAG_IMM_RETURN\t\t0x00000040\t/* Immediately return txdesc from Muc to lhost */"
+  ],
+  "management_mailbox": "HOST_IOCTL_INDEX_BASE0, HOST_MGMT_INDEX_BASE1, pernodeDATA2+node; ordinarydescriptor publication notgrant/revoke",
+  "AuC_scope": {
+    "packed_segments": 9,
+    "matching_keyword_strings": 0,
+    "instruction_analysis": "UNRUN; absenceofkeywordstringsdoesnotproveabsenceofmechanism"
+  },
+  "provider_found": false,
+  "bounded_negative": "KnownIOCTL26/observedglobalmaskconsumer/OCACconfig cannotserveexact-frameCACgrant; no universalfirmwareabsenceclaim",
+  "remaining_required_contract": [
+    "Frame-boundpermission withidentity/role/channel/deadline andqueue/descriptor proof",
+    "Confirmedfirmwareacceptance/revoke/completion withowner/frame/node lifetime",
+    "Managementmailbox1 consumer identifiedand itsdescriptorflags mapped",
+    "Alternativecoprocessorfirmwareinstructionpaths/AuC TIDstate acceptance notanalyzed"
+  ],
+  "next_source": "TraceMuCmanagementmailbox1 descriptordecode\u2192TXscheduler/statuscheck beforehardwarepublication; includeexactpackeddata/SRAMsegments onlywithaliasresolution, preserveoriginal andkeepRBSproviderNULLuntilcomplete",
+  "limits": [
+    "Exactcodewindow issegment8only; overlappingSRAM/code/dataaliases andcrosswindowcallee notfullyloaded",
+    "Two fresh function-lookups failedbecauseGhidranotcreateprocedure atdispatchentry; exactGNUassembly/tablebytes independentlyretained",
+    "No firmwarepatch, binarymutation, physical radio, calibration orprotectedpartitionaccess",
+    "No singleframeadapterprototype becausecontract isnotclear"
+  ]
+}

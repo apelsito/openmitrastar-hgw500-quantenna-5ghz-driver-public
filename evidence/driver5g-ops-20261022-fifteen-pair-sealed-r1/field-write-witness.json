@@ -1,0 +1,15 @@
+{
+  "table_base_text_offset": 158814,
+  "table_case_index": 370,
+  "table_s16_entry": 1006,
+  "case_block_text_offset": 159820,
+  "case_body_sha256": "bb397db2e7107da88ea95ffeabd2a1053fab5c7c10715d2d6d6e32aae2ec7f4b",
+  "field_offset": 19488,
+  "field_width": 4,
+  "assembly": [
+    "add_s r14,r14,0x5000",
+    "st.as r13,[r14,-0x3e0]"
+  ],
+  "base_evidence": "REA entry loads r14=ic fromdev+0x580; r13=value param[1]",
+  "limits": "Exact decoded write proves compiled host field assignment, not hardware state or runtime acceptance."
+}

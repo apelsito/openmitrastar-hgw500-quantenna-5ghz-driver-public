@@ -1,0 +1,192 @@
+{
+  "status": "PASS_OFFLINE_R12_492_493_RECORD_RECOVERY_WITH_EXPLICIT_ADVERTISEMENT_DEVIATIONS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "offline_original_records_reconstructed": 27,
+  "remaining_original_records": 17,
+  "private_table_records": 593,
+  "faithful_unsupported_inherited_records": 2,
+  "fully_functional_driver_operations": null,
+  "new_records": [
+    {
+      "index": 587,
+      "cmd": 492,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "neigh_repo"
+    },
+    {
+      "index": 588,
+      "cmd": 492,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_neigh_repo"
+    },
+    {
+      "index": 598,
+      "cmd": 493,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bss_tm"
+    },
+    {
+      "index": 599,
+      "cmd": 493,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bss_tm"
+    }
+  ],
+  "setter_getter_transactions": 1148576,
+  "actual_driver_frame_block_cases": 309,
+  "TLV_cases": 131329,
+  "actual_driver_path": "WEXTset/get -> actualHOSTAP/RUNupdate_all -> capability/RRM/beaconAPP; actualAPprobe/assoc copiedAPPblocks; actualdescriptor70localadmission.",
+  "original_binary_helpers": [
+    {
+      "name": "ieee80211_add_rrm_enabled",
+      "original_size": 90,
+      "original_section_offset": 42616,
+      "original_body_sha256": "2f9018ebd76ea9ec0e993206060a859f15b380331a55e3815da7aefe41122cf8",
+      "assembly_file": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-capability-audit-20261022T212200Z-r1\\ieee80211_add_rrm_enabled.objdump.txt",
+      "assembly_sha256": "03181b56e019ac59827ebf956f993609ca404bdcc60b56f129042eaafbb7d620"
+    },
+    {
+      "name": "ieee80211_update_bss_tm",
+      "original_size": 138,
+      "original_section_offset": 38468,
+      "original_body_sha256": "84344916dd59992af33f2aa254054b944cfcacdd88d00f86d2ddd5713171259d",
+      "assembly_file": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-capability-audit-20261022T212200Z-r1\\ieee80211_update_bss_tm.objdump.txt",
+      "assembly_sha256": "4c65e7bbc940513d7f08e216598ea13ca5e917f9f08cdcd0f1e66122505dd71b"
+    }
+  ],
+  "defaults": "Originalqdrvinitmemset0x8004 covers OEMflags; R12kmallocsizeof+memsetsizeof givesbothnewflags0 withqualifiedABI.",
+  "confirmed_semantics": [
+    "Onlyvalue==1setsbit0; otherinputclearsbit0, preservedupperbits andgetbit0.",
+    "RRMIE70len5payloadbit1 selected,other5payloadbitszero; capabilityword0x1000 selected preservingbaselineESS/IBSS/privacy/preamble/slot/spectrum bits.",
+    "ExtCapIE127existingfirstelementpayloadbyte2bit3 changesonlycopiedframe; originalAPPbytesremainuntouched.",
+    "AllotherVAPmodes/nonRUNexcludedbyactualupdate_all; APresponseRRMconditional, beaconRRMdescriptorretainedforreversibletoggle.",
+    "Sevenpayloadbytesbudgetand20bytedescriptorlocaladmissionchecked; completeR9/R12descriptorarena/refusalgatesboundbypriorcheckpoint."
+  ],
+  "explicit_deviations": [
+    {
+      "kind": "advertisement_policy",
+      "detail": "BeaconalwayscontainsIE70len5withzeroNeighborbitwhendisabled; OEMbeaconconstructionconditionalpresence. APprobe/assocresponsesremainconditional."
+    },
+    {
+      "kind": "safety_bounds",
+      "detail": "Short/malformedTLV127isrefusedwithoutstore; OEMlackspayload>=3guard."
+    },
+    {
+      "kind": "safety_length",
+      "detail": "AssociationresponsepassesitsactualAPPcopiedlength; OEMpassesproberesponselength."
+    }
+  ],
+  "limits": [
+    "27countsreconstructedprivateRECORDS: setters/gettersseparate; not27physicalfullfeatures. Fournewrecords boundedadvertisement/controlsemantics withdeviationsabove.",
+    "Othermanagementactionhandlers/tokens/BSStransitionorNeighborReportresponsesnotimplementedbythesechangesandnotrequiredforrecordcount.",
+    "Selectedactualdriverblocks executehostfakecallbacks/lock/allocator; fullfunctions/allIEencoders/all32bitcombinationsnotexhausted.",
+    "NoSMPcoherentpublicationorwholeVAPobjectlifetimeproof; NoRFclienttrafficbootpersistence/rollback/recovery/releaseacceptance."
+  ],
+  "evidence_pins": [
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-sealed-checkpoint-20261022T211300Z-r1\\result.json",
+      "bytes": 8805,
+      "sha256": "a459b846df447730a17331343f050a220688e08a05d2696a80c22bea5c76e6d0"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-capability-paths-20261022T212000Z-r2\\result.json",
+      "bytes": 3963,
+      "sha256": "72c6f47efc1f71a7f13476caac19e8923cf6c3bcc19052b2b2d62f7e65a0eca3"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-capability-paths-20261022T212000Z-r2\\actual-capability-paths.c",
+      "bytes": 12924,
+      "sha256": "51abe70917ec2fbd9d0906a10e3a53a51ca795c2721f9d7bfbe081b6f9799f32"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-capability-paths-20261022T212000Z-r2\\fixture.exe",
+      "bytes": 94720,
+      "sha256": "6b8208dba9f8c0a3bd51204b50f561950afa27f3701863bd7ce58ce7eb97b4ae"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-wlan-missingops-20261022T131900Z-setparam-r2\\setparam.pseudocode.c",
+      "bytes": 104735,
+      "sha256": "917b232d41e33a7a18345c53840c60556302ac50525824d8b98d0d722c0da523"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-wlan-missingops-20261022T131900Z-getparam-r2\\getparam.pseudocode.c",
+      "bytes": 35272,
+      "sha256": "c81259bc1e46ff04a9393bc83b783ac1173bf9690cf9ba13fa0bd748da09c9ab"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\oem-qdrv-missingops-20261022T132800Z-init\\init.pseudocode.c",
+      "bytes": 42373,
+      "sha256": "dd5d78dcbdb8824a34cd200074c1fde513befa2dee07373add0632e0e323753e"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\hgw500-rootfs-live\\squashfs-root\\lib\\modules\\2.6.35.12\\extra\\wlan\\wlan.ko",
+      "bytes": 829864,
+      "sha256": "5238b02b1c3c9e900ed3e8f141f4fcc9252442c88b02554af87197880c2e061c"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1\\first-joint\\wlan\\wlan.ko",
+      "bytes": 636140,
+      "sha256": "b7c82d8c31a2154794fba8b0e24e33ff94293e3b497be72c324ad63001bd7612"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-source-20261022T203200Z-r2\\source\\qdrv\\qdrv_wlan.c",
+      "bytes": 309415,
+      "sha256": "d122d31f2350a3b5902a52698d0c1db9899b60748f3b91f152a922ebbd502b57"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-source-20261022T203200Z-r2\\result.json",
+      "bytes": 15538,
+      "sha256": "8bfb461070a83e15f2c39926639240c8bac499f9791abac2d75bcca673f6f33b"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\tools\\audit_r12_capability_paths.py",
+      "bytes": 13078,
+      "sha256": "ad46fa790acd64f0f45185bc0cd85748acca664a746608ff52d12dbed6f8553e"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\bss-capability-helper-callsite-evidence-20261022T150500Z-r1\\ieee80211_add_mandatory_field.derived.c",
+      "bytes": 1433,
+      "sha256": "cdd2e6e6703e27a50c0a9b72a4b3f7117d698aecc890068e86f344fcf463db4c"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\bss-capability-helper-callsite-evidence-20261022T150500Z-r1\\ieee80211_beacon_update.derived.c",
+      "bytes": 4173,
+      "sha256": "510b229653823439a5e2daa2b1f8c5df31cec990ea2ee9a6fbfdd3483a6a24f9"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\bss-capability-helper-callsite-evidence-20261022T150500Z-r1\\ieee80211_send_mgmt.derived.c",
+      "bytes": 58324,
+      "sha256": "034c8930480f7d06c6a475711b9a669ab769c90e01cdba8d0daa00a76359a295"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-source-20261022T203200Z-r2\\source\\wlan\\ieee80211_wireless.c",
+      "bytes": 675463,
+      "sha256": "2accb30429544d7b07b1588efa12bfb30840d742e281ed0f205edcb2aaaa9ab5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-source-20261022T203200Z-r2\\source\\wlan\\ieee80211_beacon.c",
+      "bytes": 25206,
+      "sha256": "712d34d4ef45d23d9e146d15702baf6df1c1265b5be52dbcbb376eb4dbc1e64d"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-source-20261022T203200Z-r2\\source\\wlan\\ieee80211_beacon_desc.c",
+      "bytes": 29067,
+      "sha256": "198a92120083cc3c5645c71dcebc9cc285bf8fbe0474cb347f669897bad744c1"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-source-20261022T203200Z-r2\\source\\wlan\\ieee80211_output.c",
+      "bytes": 192253,
+      "sha256": "6a353651d6d8f3a84a454f9ec51effceabd6af6b0378a35f13b681fa8abdba6d"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\consolidated23-beacon-r12-source-20261022T203200Z-r2\\source\\wlan\\openmitrastar_bss_tm.h",
+      "bytes": 1008,
+      "sha256": "b8aa2c5f0d4b5a02965521ccefc04b24ca50ead66c1afcf6ab2d64389de879f7"
+    }
+  ]
+}

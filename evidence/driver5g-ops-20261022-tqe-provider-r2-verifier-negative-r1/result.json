@@ -1,0 +1,79 @@
+{
+  "status": "PASS_NEGATIVE_FIXTURES",
+  "hardware_accessed": false,
+  "artifact_bytes_modified": false,
+  "cases": [
+    {
+      "module": "switch_tqe",
+      "mode": "other",
+      "result": "REJECT",
+      "error": "symbolattributes tqe_ndo_open"
+    },
+    {
+      "module": "switch_tqe",
+      "mode": "bind",
+      "result": "REJECT",
+      "error": "symbolattributes tqe_ndo_open"
+    },
+    {
+      "module": "switch_tqe",
+      "mode": "type",
+      "result": "REJECT",
+      "error": "symbolattributes tqe_ndo_open"
+    },
+    {
+      "module": "switch_tqe",
+      "mode": "padding",
+      "result": "REJECT",
+      "error": "exact ARC NOP padding .text"
+    },
+    {
+      "module": "switch_tqe",
+      "mode": "new_export_name",
+      "result": "REJECT",
+      "error": "symbolattributes __ksymtab_g_dscp_flag"
+    },
+    {
+      "module": "switch_tqe",
+      "mode": "old_rela",
+      "result": "REJECT",
+      "error": "residualrelocs [(('object', '.init.text', 'init_module', 38), 27, ('cstring', 'm"
+    },
+    {
+      "module": "topaz_congest_queue",
+      "mode": "other",
+      "result": "REJECT",
+      "error": "symbolattributes topaz_congest_dump"
+    },
+    {
+      "module": "topaz_congest_queue",
+      "mode": "bind",
+      "result": "REJECT",
+      "error": "symbolattributes topaz_congest_dump"
+    },
+    {
+      "module": "topaz_congest_queue",
+      "mode": "type",
+      "result": "REJECT",
+      "error": "symbolattributes topaz_congest_dump"
+    },
+    {
+      "module": "topaz_congest_queue",
+      "mode": "padding",
+      "result": "REJECT",
+      "error": "exact ARC NOP padding .text"
+    },
+    {
+      "module": "topaz_congest_queue",
+      "mode": "new_export_name",
+      "result": "REJECT",
+      "error": "symbolattributes __ksymtab_congest_tx_tasklet"
+    },
+    {
+      "module": "topaz_congest_queue",
+      "mode": "old_rela",
+      "result": "REJECT",
+      "error": "residualrelocs [(('object', '.init.text', 'init_module', 6), 27, ('cstring', '\\x"
+    }
+  ]
+}

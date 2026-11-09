@@ -1,0 +1,33 @@
+{
+  "status": "SOURCE_ONLY_OEM_DERIVED_SRAM_CORE_EXPLICIT_RESERVATION_REQUIRED_NOT_DRIVER_PROVIDER",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "heap_sram_export_added": false,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\prepare_linux73_sram_allocator.py": "24f768be18a53989c0563b15686c20eacb9485b2daa367690cfa965cc2711d8c",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\linux_2.6.35.12\\arch\\arc\\kernel\\module.c": "7557e1c85b49f1a7a7f04c454753a3253b101b6d994f14124d412c60e37c0896",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\linux_2.6.35.12\\arch\\arc\\kernel\\vmlinux.lds.S": "d7ad9d626e3786200aba4d4b22a3901d11c9463026a151f70d3bf449b483046a",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\common\\ruby_mem.h": "ddb69e6842ed04c5c254065357a798ef6273393b99e1174feaac663432707808",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\common\\common_mem.h": "93729b5eb5a409814ba7a28080085ee5caed60e5cc71a4859c5633e9b51f2868",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\common\\topaz_config.h": "3cbd988a2bf1324b8c8b6c2bc313c917f1ba3fd56673cc87e73cf00863e93e73"
+  },
+  "source_files": {
+    "oem-core-adaptation.patch": "cf2f7bcfaeb99acb16f4283f4b2282154cd89a067263162c5674dcb43358ca58",
+    "oem-qtn_memfree.c": "5603fa969a0b20749c278ff16bf2be4bd18e4325e70e9d096b28635cad7839cd",
+    "oem-qtn_memget.c": "27db4fa3b9d8dd80bf898a8028e170480df33b05b85ed80943d622a85e379213",
+    "om_sram_core.c": "43093bb58b10f0d5a2a39e0dc85577f42f2094ce83b80c1e24f03c502f62b819",
+    "om_sram_core.h": "77ae0bbe90ad01d986cba84cb314bcfb21231d397c90c289e3013a98be6f14cf"
+  },
+  "missing_promotion_inputs": [
+    "Linux73kerneloccupiedSRAMend equivalentto__sram_end with linker/runtime provenance",
+    "completeHBM/FWT/MuC/AuC/DSP/crumbs/Qmatrix SRAMoccupiedmap for exactfirmware/mapprofile",
+    "exclusivekernelreservation+safeCPU/bus/uncachedmapping witness for proposedgap",
+    "pairedfullkernel/providerbuild andphysicalbus/cache/ownership acceptance"
+  ],
+  "limits": [
+    "Coreonly, noMMIO/moduleinit/heap_sramexports/currentdriverchanges. Defaultcontractdisabledrefuseswithouttouchingmappedarena.",
+    "Firstfit/split/coalescebodyderivedfromOEM; bounded128liveallocledger andcallerperspanserializationnew constraints.",
+    "Noarbitraryusersuppliedmoduleparams mayauthorizephysicalSRAM; reservation/mapkernelprovider ismissing.",
+    "NoDRAMsubstitution/vehicle/routeraccess/TX/flash/DTprivate orsecretdata."
+  ]
+}

@@ -1,0 +1,26 @@
+   46986:	1418 3004           	ld	r4,[sp,24]
+   4698a:	7ecb                	tst_s	r14,r14
+   4698c:	da01                	mov_s	r2,0x1
+   4698e:	2400 0f84 0000 0c55 	add	r4,r4,0xc55
+   46996:	1400 0083           	ldb	r3,[r4]
+   4699a:	22ca 0021           	mov.eq	r2,0
+   4699e:	7350                	cmp_s	r3,r2
+   469a0:	036c 0001           	beq	876	;46d0c <findchannel_any+0x5704>
+   469a4:	7ecb                	tst_s	r14,r14
+   469a6:	db01                	mov_s	r3,0x1
+   469a8:	72c9                	mov_s	r2,r14
+   469aa:	23ca 0021           	mov.eq	r3,0
+   469ae:	1c00 00c2           	stb	r3,[r4]
+   469b2:	c006                	ld_s	r0,[sp,0x18]
+   469b4:	218a 0907           	mov	r1,484
+   469b8:	db00                	mov_s	r3,0
+   469ba:	220a 3f80 0003 3ddc 	mov	gp,0x33ddc
+   469c2:	2023 0680           	jl.d	[gp]
+   469c6:	244a 0000           	mov	r4,0
+   469ca:	c006                	ld_s	r0,[sp,0x18]
+   469cc:	d900                	mov_s	r1,0
+   469ce:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   469d6:	220a 3f80 0002 b9fc 	mov	gp,0x2b9fc
+   469de:	2023 0680           	jl.d	[gp]
+   469e2:	da01                	mov_s	r2,0x1
+   469e4:	02a3 0000           	b	674	;46c86 <findchannel_any+0x567e>

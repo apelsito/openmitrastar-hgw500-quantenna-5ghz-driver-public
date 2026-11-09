@@ -1,0 +1,5599 @@
+{
+  "status": "PASS_ARC_WEATHER478_ALL_OLD_FIELDS_WIRE_SIZES_FORMER_PADDING22605",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "rows": [
+    {
+      "lane": "old",
+      "fields": {
+        "ieee80211com": {
+          "ic_dev": {
+            "offset": 0,
+            "size": 4
+          },
+          "ic_findchannel": {
+            "offset": 4,
+            "size": 4
+          },
+          "ic_comlock": {
+            "offset": 8,
+            "size": 0
+          },
+          "ic_vapslock": {
+            "offset": 8,
+            "size": 0
+          },
+          "ic_vaps": {
+            "offset": 8,
+            "size": 8
+          },
+          "ic_phytype": {
+            "offset": 16,
+            "size": 4
+          },
+          "ic_phymode": {
+            "offset": 20,
+            "size": 4
+          },
+          "ic_radar_bw": {
+            "offset": 24,
+            "size": 4
+          },
+          "ic_opmode": {
+            "offset": 28,
+            "size": 4
+          },
+          "ic_media": {
+            "offset": 32,
+            "size": 24
+          },
+          "ic_myaddr": {
+            "offset": 56,
+            "size": 6
+          },
+          "ic_inact": {
+            "offset": 64,
+            "size": 20
+          },
+          "ic_offchan_protect": {
+            "offset": 84,
+            "size": 32
+          },
+          "ic_ver_sw": {
+            "offset": 116,
+            "size": 4
+          },
+          "ic_ver_hw": {
+            "offset": 120,
+            "size": 2
+          },
+          "ic_ver_platform_id": {
+            "offset": 122,
+            "size": 2
+          },
+          "ic_ver_timestamp": {
+            "offset": 124,
+            "size": 4
+          },
+          "ic_ver_flags": {
+            "offset": 128,
+            "size": 4
+          },
+          "ic_flags": {
+            "offset": 132,
+            "size": 4
+          },
+          "ic_flags_ext": {
+            "offset": 136,
+            "size": 4
+          },
+          "ic_flags_qtn": {
+            "offset": 140,
+            "size": 4
+          },
+          "ic_caps": {
+            "offset": 144,
+            "size": 4
+          },
+          "ic_vht_mcs_cap": {
+            "offset": 148,
+            "size": 4
+          },
+          "ic_ht_nss_cap": {
+            "offset": 152,
+            "size": 4
+          },
+          "ic_vht_nss_cap": {
+            "offset": 156,
+            "size": 4
+          },
+          "ic_vht_nss_cap_24g": {
+            "offset": 160,
+            "size": 4
+          },
+          "ic_ath_cap": {
+            "offset": 164,
+            "size": 1
+          },
+          "ic_promisc": {
+            "offset": 165,
+            "size": 1
+          },
+          "ic_allmulti": {
+            "offset": 166,
+            "size": 1
+          },
+          "ic_nopened": {
+            "offset": 167,
+            "size": 1
+          },
+          "ic_sup_rates": {
+            "offset": 168,
+            "size": 480
+          },
+          "ic_sup_xr_rates": {
+            "offset": 648,
+            "size": 32
+          },
+          "ic_sup_half_rates": {
+            "offset": 680,
+            "size": 32
+          },
+          "ic_sup_quarter_rates": {
+            "offset": 712,
+            "size": 32
+          },
+          "ic_sup_ht_rates": {
+            "offset": 744,
+            "size": 480
+          },
+          "ic_modecaps": {
+            "offset": 1224,
+            "size": 2
+          },
+          "ic_curmode": {
+            "offset": 1226,
+            "size": 2
+          },
+          "ic_lintval": {
+            "offset": 1228,
+            "size": 2
+          },
+          "ic_lintval_backup": {
+            "offset": 1230,
+            "size": 2
+          },
+          "ic_holdover": {
+            "offset": 1232,
+            "size": 2
+          },
+          "ic_bmisstimeout": {
+            "offset": 1234,
+            "size": 2
+          },
+          "ic_txpowlimit": {
+            "offset": 1236,
+            "size": 2
+          },
+          "ic_sample_rate": {
+            "offset": 1240,
+            "size": 4
+          },
+          "ic_newtxpowlimit": {
+            "offset": 1244,
+            "size": 2
+          },
+          "ic_uapsdmaxtriggers": {
+            "offset": 1246,
+            "size": 2
+          },
+          "ic_coverageclass": {
+            "offset": 1248,
+            "size": 1
+          },
+          "ic_pwr_adjust_scancnt": {
+            "offset": 1249,
+            "size": 1
+          },
+          "rts_cts_prot": {
+            "offset": 1252,
+            "size": 4
+          },
+          "ic_htcap": {
+            "offset": 1256,
+            "size": 29
+          },
+          "ldpc_enabled": {
+            "offset": 1288,
+            "size": 4
+          },
+          "stbc_enabled": {
+            "offset": 1292,
+            "size": 4
+          },
+          "ic_htinfo": {
+            "offset": 1296,
+            "size": 11
+          },
+          "ic_bfgrouping": {
+            "offset": 1308,
+            "size": 2
+          },
+          "ic_bfcoeffsize": {
+            "offset": 1310,
+            "size": 2
+          },
+          "ic_txbf_period": {
+            "offset": 1312,
+            "size": 4
+          },
+          "ic_vhtcap_24g": {
+            "offset": 1316,
+            "size": 35
+          },
+          "ic_vhtop_24g": {
+            "offset": 1351,
+            "size": 8
+          },
+          "ic_vhtcap": {
+            "offset": 1359,
+            "size": 35
+          },
+          "ic_vhtop": {
+            "offset": 1394,
+            "size": 8
+          },
+          "ic_scs": {
+            "offset": 1404,
+            "size": 336
+          },
+          "ic_scs_sample_work": {
+            "offset": 1740,
+            "size": 44
+          },
+          "ic_ocac": {
+            "offset": 1784,
+            "size": 748
+          },
+          "ic_11n_40_only_mode": {
+            "offset": 2532,
+            "size": 4
+          },
+          "ic_vht_opmode_notif": {
+            "offset": 2536,
+            "size": 2
+          },
+          "ic_non_ht_sta": {
+            "offset": 2538,
+            "size": 1
+          },
+          "ic_ht_20mhz_only_sta": {
+            "offset": 2539,
+            "size": 1
+          },
+          "ic_non_ht_non_member": {
+            "offset": 2540,
+            "size": 1
+          },
+          "ic_pppc_select_enable": {
+            "offset": 2541,
+            "size": 1
+          },
+          "ic_pppc_select_enable_backup": {
+            "offset": 2542,
+            "size": 1
+          },
+          "ic_pppc_step_db": {
+            "offset": 2543,
+            "size": 1
+          },
+          "ic_gi_fixed": {
+            "offset": 2544,
+            "size": 1
+          },
+          "ic_gi_select_enable": {
+            "offset": 2545,
+            "size": 1
+          },
+          "ic_bw_fixed": {
+            "offset": 2546,
+            "size": 1
+          },
+          "ic_def_matrix": {
+            "offset": 2547,
+            "size": 1
+          },
+          "ic_sta_cc": {
+            "offset": 2548,
+            "size": 1
+          },
+          "ic_sta_cc_brcm": {
+            "offset": 2549,
+            "size": 1
+          },
+          "ic_tx_qos_sched": {
+            "offset": 2550,
+            "size": 1
+          },
+          "ic_local_rts": {
+            "offset": 2551,
+            "size": 1
+          },
+          "ic_peer_rts_mode": {
+            "offset": 2552,
+            "size": 1
+          },
+          "ic_dyn_peer_rts": {
+            "offset": 2553,
+            "size": 1
+          },
+          "ic_peer_rts": {
+            "offset": 2554,
+            "size": 1
+          },
+          "ic_dyn_wmm": {
+            "offset": 2555,
+            "size": 1
+          },
+          "ic_emi_power_switch_enable": {
+            "offset": 2556,
+            "size": 1
+          },
+          "ic_dfs_channels_deactive": {
+            "offset": 2557,
+            "size": 1
+          },
+          "ic_beaconing_scheme": {
+            "offset": 2558,
+            "size": 1
+          },
+          "ic_dfs_csa_cnt": {
+            "offset": 2559,
+            "size": 1
+          },
+          "ic_rf_chipid": {
+            "offset": 2560,
+            "size": 1
+          },
+          "ic_nchans": {
+            "offset": 2564,
+            "size": 4
+          },
+          "ic_channels": {
+            "offset": 2568,
+            "size": 13312
+          },
+          "ic_csw_record": {
+            "offset": 15880,
+            "size": 584
+          },
+          "ic_chan_occupy_record": {
+            "offset": 16464,
+            "size": 2048
+          },
+          "ic_csw_reason": {
+            "offset": 18512,
+            "size": 4
+          },
+          "ic_csw_mac": {
+            "offset": 18516,
+            "size": 6
+          },
+          "ic_assoc_history": {
+            "offset": 18524,
+            "size": 320
+          },
+          "ic_chan_avail": {
+            "offset": 18844,
+            "size": 32
+          },
+          "ic_chan_active": {
+            "offset": 18876,
+            "size": 32
+          },
+          "ic_chan_availability_status": {
+            "offset": 18908,
+            "size": 256
+          },
+          "ic_chan_pri_inactive": {
+            "offset": 19164,
+            "size": 32
+          },
+          "ic_is_inactive_usercfg": {
+            "offset": 19196,
+            "size": 32
+          },
+          "ic_is_inactive_autochan_only": {
+            "offset": 19228,
+            "size": 32
+          },
+          "ic_chan_dfs_required": {
+            "offset": 19260,
+            "size": 32
+          },
+          "ic_chan_weather_radar": {
+            "offset": 19292,
+            "size": 32
+          },
+          "ic_chan_disabled": {
+            "offset": 19324,
+            "size": 32
+          },
+          "ic_chan_active_20": {
+            "offset": 19356,
+            "size": 32
+          },
+          "ic_chan_active_40": {
+            "offset": 19388,
+            "size": 32
+          },
+          "ic_chan_active_80": {
+            "offset": 19420,
+            "size": 32
+          },
+          "ic_max_system_bw": {
+            "offset": 19452,
+            "size": 1
+          },
+          "ic_bss_bw": {
+            "offset": 19453,
+            "size": 1
+          },
+          "ic_curchan": {
+            "offset": 19456,
+            "size": 4
+          },
+          "ic_bsschan": {
+            "offset": 19460,
+            "size": 4
+          },
+          "ic_prevchan": {
+            "offset": 19464,
+            "size": 4
+          },
+          "ic_scanchan": {
+            "offset": 19468,
+            "size": 4
+          },
+          "ic_channoise": {
+            "offset": 19472,
+            "size": 2
+          },
+          "ic_des_chan": {
+            "offset": 19476,
+            "size": 4
+          },
+          "ic_des_chan_after_init_cac": {
+            "offset": 19480,
+            "size": 4
+          },
+          "ic_des_chan_after_init_scan": {
+            "offset": 19484,
+            "size": 4
+          },
+          "ic_chan_is_set": {
+            "offset": 19488,
+            "size": 4
+          },
+          "ic_des_mode": {
+            "offset": 19492,
+            "size": 2
+          },
+          "ic_nregclass": {
+            "offset": 19496,
+            "size": 4
+          },
+          "ic_regclassids": {
+            "offset": 19500,
+            "size": 10
+          },
+          "ic_fast_reass_chan": {
+            "offset": 19512,
+            "size": 4
+          },
+          "ic_fast_reass_scan_cnt": {
+            "offset": 19516,
+            "size": 1
+          },
+          "ic_scan": {
+            "offset": 19520,
+            "size": 4
+          },
+          "ic_roaming": {
+            "offset": 19524,
+            "size": 4
+          },
+          "ic_lastdata": {
+            "offset": 19528,
+            "size": 4
+          },
+          "ic_lastscan": {
+            "offset": 19532,
+            "size": 4
+          },
+          "ic_sta": {
+            "offset": 19536,
+            "size": 300
+          },
+          "ic_wme": {
+            "offset": 19836,
+            "size": 160
+          },
+          "ic_vap_pri_wme": {
+            "offset": 19996,
+            "size": 1
+          },
+          "ic_airfair": {
+            "offset": 19997,
+            "size": 1
+          },
+          "ic_protmode": {
+            "offset": 20000,
+            "size": 4
+          },
+          "ic_nonerpsta": {
+            "offset": 20004,
+            "size": 2
+          },
+          "ic_longslotsta": {
+            "offset": 20006,
+            "size": 2
+          },
+          "ic_sta_assoc_limit": {
+            "offset": 20008,
+            "size": 2
+          },
+          "ic_sta_assoc": {
+            "offset": 20010,
+            "size": 2
+          },
+          "ic_wds_links": {
+            "offset": 20012,
+            "size": 2
+          },
+          "ic_dt_sta_assoc": {
+            "offset": 20014,
+            "size": 2
+          },
+          "ic_xr_sta_assoc": {
+            "offset": 20016,
+            "size": 2
+          },
+          "ic_nonqtn_sta": {
+            "offset": 20018,
+            "size": 2
+          },
+          "ic_ssid_grp": {
+            "offset": 20020,
+            "size": 192
+          },
+          "ic_mindwell_active": {
+            "offset": 20212,
+            "size": 2
+          },
+          "ic_mindwell_passive": {
+            "offset": 20214,
+            "size": 2
+          },
+          "ic_maxdwell_active": {
+            "offset": 20216,
+            "size": 2
+          },
+          "ic_maxdwell_passive": {
+            "offset": 20218,
+            "size": 2
+          },
+          "ic_qtn_bgscan": {
+            "offset": 20220,
+            "size": 18
+          },
+          "ic_iwstats": {
+            "offset": 20240,
+            "size": 32
+          },
+          "ic_country_code": {
+            "offset": 20272,
+            "size": 2
+          },
+          "ic_spec_country_code": {
+            "offset": 20274,
+            "size": 2
+          },
+          "ic_country_outdoor": {
+            "offset": 20276,
+            "size": 4
+          },
+          "ic_country_ie": {
+            "offset": 20280,
+            "size": 254
+          },
+          "ic_oper_class": {
+            "offset": 20534,
+            "size": 32
+          },
+          "ic_oper_class_table": {
+            "offset": 20568,
+            "size": 4
+          },
+          "ic_pwr_constraint": {
+            "offset": 20572,
+            "size": 1
+          },
+          "ic_pco": {
+            "offset": 20576,
+            "size": 36
+          },
+          "ic_chanchange_tbtt": {
+            "offset": 20612,
+            "size": 1
+          },
+          "ic_chanchange_chan": {
+            "offset": 20613,
+            "size": 1
+          },
+          "ic_csa_count": {
+            "offset": 20614,
+            "size": 1
+          },
+          "ic_csa_mode": {
+            "offset": 20615,
+            "size": 1
+          },
+          "ic_csa_reason": {
+            "offset": 20616,
+            "size": 4
+          },
+          "ic_csa_flag": {
+            "offset": 20620,
+            "size": 4
+          },
+          "ic_csa_frame": {
+            "offset": 20624,
+            "size": 8
+          },
+          "ic_csa_chan": {
+            "offset": 20632,
+            "size": 4
+          },
+          "ic_timer_csa": {
+            "offset": 20636,
+            "size": 20
+          },
+          "ic_finish_csa": {
+            "offset": 20656,
+            "size": 4
+          },
+          "ic_cca_token": {
+            "offset": 20660,
+            "size": 1
+          },
+          "ic_cca_start_tsf": {
+            "offset": 20664,
+            "size": 8
+          },
+          "ic_cca_duration_tu": {
+            "offset": 20672,
+            "size": 2
+          },
+          "ic_cca_chan": {
+            "offset": 20674,
+            "size": 1
+          },
+          "ic_ieee_alt_chan": {
+            "offset": 20675,
+            "size": 1
+          },
+          "ic_ieee_best_alt_chan": {
+            "offset": 20676,
+            "size": 1
+          },
+          "ic_non_occupancy_period": {
+            "offset": 20680,
+            "size": 4
+          },
+          "ic_max_boot_cac_duration": {
+            "offset": 20684,
+            "size": 4
+          },
+          "ic_boot_cac_end_jiffy": {
+            "offset": 20688,
+            "size": 4
+          },
+          "icac_timer": {
+            "offset": 20692,
+            "size": 20
+          },
+          "ic_mode_get_phy_stats": {
+            "offset": 20712,
+            "size": 1
+          },
+          "ic_legacy_retry_limit": {
+            "offset": 20713,
+            "size": 1
+          },
+          "ic_retry_count": {
+            "offset": 20714,
+            "size": 1
+          },
+          "ic_rx_agg_timeout": {
+            "offset": 20716,
+            "size": 4
+          },
+          "ic_ndpa_dur": {
+            "offset": 20720,
+            "size": 4
+          },
+          "ic_su_txbf_pkt_cnt": {
+            "offset": 20724,
+            "size": 4
+          },
+          "ic_mu_txbf_pkt_cnt": {
+            "offset": 20728,
+            "size": 4
+          },
+          "ic_tx_max_ampdu_size": {
+            "offset": 20732,
+            "size": 4
+          },
+          "ic_mu_debug_level": {
+            "offset": 20736,
+            "size": 2
+          },
+          "ic_mu_enable": {
+            "offset": 20738,
+            "size": 1
+          },
+          "ic_rts_bw_dyn": {
+            "offset": 20739,
+            "size": 1
+          },
+          "ic_cts_bw": {
+            "offset": 20740,
+            "size": 1
+          },
+          "use_non_ht_duplicate_for_mu": {
+            "offset": 20741,
+            "size": 1
+          },
+          "rx_bws_support_for_mu_ndpa": {
+            "offset": 20742,
+            "size": 1
+          },
+          "cca_fix_disable": {
+            "offset": 20743,
+            "size": 1
+          },
+          "auto_cca_enable": {
+            "offset": 20744,
+            "size": 1
+          },
+          "ic_vap_create": {
+            "offset": 20748,
+            "size": 4
+          },
+          "ic_vap_delete": {
+            "offset": 20752,
+            "size": 4
+          },
+          "ic_get_vap_idx": {
+            "offset": 20756,
+            "size": 4
+          },
+          "ic_send_mgmt": {
+            "offset": 20760,
+            "size": 4
+          },
+          "ic_recv_mgmt": {
+            "offset": 20764,
+            "size": 4
+          },
+          "ic_send_80211": {
+            "offset": 20768,
+            "size": 4
+          },
+          "ic_init": {
+            "offset": 20772,
+            "size": 4
+          },
+          "ic_reset": {
+            "offset": 20776,
+            "size": 4
+          },
+          "ic_queue_reset": {
+            "offset": 20780,
+            "size": 4
+          },
+          "ic_updateslot": {
+            "offset": 20784,
+            "size": 4
+          },
+          "ic_newassoc": {
+            "offset": 20788,
+            "size": 4
+          },
+          "ic_disassoc": {
+            "offset": 20792,
+            "size": 4
+          },
+          "ic_node_update": {
+            "offset": 20796,
+            "size": 4
+          },
+          "ic_node_alloc": {
+            "offset": 20800,
+            "size": 4
+          },
+          "ic_node_free": {
+            "offset": 20804,
+            "size": 4
+          },
+          "ic_qdrv_node_free": {
+            "offset": 20808,
+            "size": 4
+          },
+          "ic_node_cleanup": {
+            "offset": 20812,
+            "size": 4
+          },
+          "ic_node_getrssi": {
+            "offset": 20816,
+            "size": 4
+          },
+          "ic_node_move_data": {
+            "offset": 20820,
+            "size": 4
+          },
+          "ic_iterate_nodes": {
+            "offset": 20824,
+            "size": 4
+          },
+          "ic_iterate_dev_nodes": {
+            "offset": 20828,
+            "size": 4
+          },
+          "ic_initiate_scan": {
+            "offset": 20832,
+            "size": 4
+          },
+          "ic_scan_start": {
+            "offset": 20836,
+            "size": 4
+          },
+          "ic_scan_end": {
+            "offset": 20840,
+            "size": 4
+          },
+          "ic_check_channel": {
+            "offset": 20844,
+            "size": 4
+          },
+          "ic_set_channel": {
+            "offset": 20848,
+            "size": 4
+          },
+          "ic_bridge_set_dest_addr": {
+            "offset": 20852,
+            "size": 4
+          },
+          "ic_get_tsf": {
+            "offset": 20856,
+            "size": 4
+          },
+          "ic_bmps_set_frame": {
+            "offset": 20860,
+            "size": 4
+          },
+          "ic_bmps_release_frame": {
+            "offset": 20864,
+            "size": 4
+          },
+          "ic_scs_update_scan_stats": {
+            "offset": 20868,
+            "size": 4
+          },
+          "ic_sample_channel": {
+            "offset": 20872,
+            "size": 4
+          },
+          "ic_bgscan_start": {
+            "offset": 20876,
+            "size": 4
+          },
+          "ic_bgscan_channel": {
+            "offset": 20880,
+            "size": 4
+          },
+          "ic_set_channel_deferred": {
+            "offset": 20884,
+            "size": 4
+          },
+          "ic_set_start_cca_measurement": {
+            "offset": 20888,
+            "size": 4
+          },
+          "ic_do_measurement": {
+            "offset": 20892,
+            "size": 4
+          },
+          "ic_finish_measurement": {
+            "offset": 20896,
+            "size": 4
+          },
+          "ic_send_csa_frame": {
+            "offset": 20900,
+            "size": 4
+          },
+          "ic_set_ocac": {
+            "offset": 20904,
+            "size": 4
+          },
+          "ic_uapsd_flush": {
+            "offset": 20908,
+            "size": 4
+          },
+          "ic_set_coverageclass": {
+            "offset": 20912,
+            "size": 4
+          },
+          "ic_mhz2ieee": {
+            "offset": 20916,
+            "size": 4
+          },
+          "ic_setparam": {
+            "offset": 20920,
+            "size": 4
+          },
+          "ic_getparam": {
+            "offset": 20924,
+            "size": 4
+          },
+          "ic_register_node": {
+            "offset": 20928,
+            "size": 4
+          },
+          "ic_unregister_node": {
+            "offset": 20932,
+            "size": 4
+          },
+          "ic_get_phy_stats": {
+            "offset": 20936,
+            "size": 4
+          },
+          "ic_ncbeamforming": {
+            "offset": 20940,
+            "size": 4
+          },
+          "ic_htaddba": {
+            "offset": 20944,
+            "size": 4
+          },
+          "ic_htdelba": {
+            "offset": 20948,
+            "size": 4
+          },
+          "ic_join_bss": {
+            "offset": 20952,
+            "size": 4
+          },
+          "ic_beacon_update": {
+            "offset": 20956,
+            "size": 4
+          },
+          "ic_beacon_stop": {
+            "offset": 20960,
+            "size": 4
+          },
+          "ic_setkey": {
+            "offset": 20964,
+            "size": 4
+          },
+          "ic_delkey": {
+            "offset": 20968,
+            "size": 4
+          },
+          "ic_set_l2_ext_filter": {
+            "offset": 20972,
+            "size": 4
+          },
+          "ic_set_l2_ext_filter_port": {
+            "offset": 20976,
+            "size": 4
+          },
+          "ic_get_l2_ext_filter_port": {
+            "offset": 20980,
+            "size": 4
+          },
+          "ic_send_to_l2_ext_filter": {
+            "offset": 20984,
+            "size": 4
+          },
+          "ic_mac_reserved": {
+            "offset": 20988,
+            "size": 4
+          },
+          "ic_get_wlanstats": {
+            "offset": 20992,
+            "size": 4
+          },
+          "ic_smps": {
+            "offset": 20996,
+            "size": 4
+          },
+          "ic_tkip_mic_failure": {
+            "offset": 21000,
+            "size": 4
+          },
+          "ic_radar_detected": {
+            "offset": 21004,
+            "size": 4
+          },
+          "ic_select_channel": {
+            "offset": 21008,
+            "size": 4
+          },
+          "ic_dfs_action_scan_done": {
+            "offset": 21012,
+            "size": 4
+          },
+          "ic_dfs_is_eu_region": {
+            "offset": 21016,
+            "size": 4
+          },
+          "ic_mark_channel_availability_status": {
+            "offset": 21020,
+            "size": 4
+          },
+          "ic_set_chan_availability_status_by_chan_num": {
+            "offset": 21024,
+            "size": 4
+          },
+          "ic_get_chan_availability_status_by_chan_num": {
+            "offset": 21028,
+            "size": 4
+          },
+          "ic_mark_channel_dfs_cac_status": {
+            "offset": 21032,
+            "size": 4
+          },
+          "ic_dump_available_channels": {
+            "offset": 21036,
+            "size": 4
+          },
+          "ic_ap_next_cac": {
+            "offset": 21040,
+            "size": 4
+          },
+          "ic_dfs_chans_available_for_cac": {
+            "offset": 21044,
+            "size": 4
+          },
+          "ic_get_init_cac_duration": {
+            "offset": 21048,
+            "size": 4
+          },
+          "ic_set_init_cac_duration": {
+            "offset": 21052,
+            "size": 4
+          },
+          "ic_start_icac_procedure": {
+            "offset": 21056,
+            "size": 4
+          },
+          "ic_stop_icac_procedure": {
+            "offset": 21060,
+            "size": 4
+          },
+          "ic_chan_compare_equality": {
+            "offset": 21064,
+            "size": 4
+          },
+          "ic_dfs_select_channel": {
+            "offset": 21068,
+            "size": 4
+          },
+          "ic_wmm_params_update": {
+            "offset": 21072,
+            "size": 4
+          },
+          "ic_power_table_update": {
+            "offset": 21076,
+            "size": 4
+          },
+          "ic_set_tdls_param": {
+            "offset": 21080,
+            "size": 4
+          },
+          "ic_get_tdls_param": {
+            "offset": 21084,
+            "size": 4
+          },
+          "ic_rxtx_phy_rate": {
+            "offset": 21088,
+            "size": 4
+          },
+          "ic_rssi": {
+            "offset": 21092,
+            "size": 4
+          },
+          "ic_smoothed_rssi": {
+            "offset": 21096,
+            "size": 4
+          },
+          "ic_snr": {
+            "offset": 21100,
+            "size": 4
+          },
+          "ic_hw_noise": {
+            "offset": 21104,
+            "size": 4
+          },
+          "ic_max_queue": {
+            "offset": 21108,
+            "size": 4
+          },
+          "ic_tx_failed": {
+            "offset": 21112,
+            "size": 4
+          },
+          "ic_mcs_to_phyrate": {
+            "offset": 21116,
+            "size": 4
+          },
+          "ic_chan_switch_record": {
+            "offset": 21120,
+            "size": 4
+          },
+          "ic_chan_switch_reason_record": {
+            "offset": 21124,
+            "size": 4
+          },
+          "ic_dfs_chan_switch_notify": {
+            "offset": 21128,
+            "size": 4
+          },
+          "ic_radar_test_mode_enabled": {
+            "offset": 21132,
+            "size": 4
+          },
+          "ic_node_count": {
+            "offset": 21136,
+            "size": 4
+          },
+          "ic_node_auth_state_change": {
+            "offset": 21140,
+            "size": 4
+          },
+          "ic_new_assoc": {
+            "offset": 21144,
+            "size": 4
+          },
+          "ic_power_save": {
+            "offset": 21148,
+            "size": 4
+          },
+          "ic_remain_on_channel": {
+            "offset": 21152,
+            "size": 4
+          },
+          "ic_mark_dfs_channels": {
+            "offset": 21156,
+            "size": 4
+          },
+          "ic_mark_weather_radar_chans": {
+            "offset": 21160,
+            "size": 4
+          },
+          "ic_use_rtscts": {
+            "offset": 21164,
+            "size": 4
+          },
+          "ic_send_notify_chan_width_action": {
+            "offset": 21168,
+            "size": 4
+          },
+          "ic_sta_set_xmit": {
+            "offset": 21172,
+            "size": 4
+          },
+          "ic_set_radar": {
+            "offset": 21176,
+            "size": 4
+          },
+          "ic_enable_sta_dfs": {
+            "offset": 21180,
+            "size": 4
+          },
+          "ic_radar_detections_num": {
+            "offset": 21184,
+            "size": 4
+          },
+          "ic_complete_cac": {
+            "offset": 21188,
+            "size": 4
+          },
+          "ic_config_channel_list": {
+            "offset": 21192,
+            "size": 4
+          },
+          "ic_set_11g_erp": {
+            "offset": 21196,
+            "size": 4
+          },
+          "ic_dfs_cce": {
+            "offset": 21200,
+            "size": 2
+          },
+          "ic_aci_cci_cce": {
+            "offset": 21202,
+            "size": 2
+          },
+          "ic_aid_bitmap": {
+            "offset": 21204,
+            "size": 16
+          },
+          "ic_vendor_fix": {
+            "offset": 21220,
+            "size": 4
+          },
+          "ic_ip_mac_mapping": {
+            "offset": 21224,
+            "size": 4
+          },
+          "ic_pm_enabled": {
+            "offset": 21228,
+            "size": 1
+          },
+          "pm_work": {
+            "offset": 21232,
+            "size": 44
+          },
+          "ic_pm_state": {
+            "offset": 21276,
+            "size": 88
+          },
+          "ic_pm_period_change": {
+            "offset": 21364,
+            "size": 20
+          },
+          "ic_bmps_tput_check": {
+            "offset": 21384,
+            "size": 32
+          },
+          "ic_scan_comp": {
+            "offset": 21416,
+            "size": 8
+          },
+          "ic_node_idx_ni": {
+            "offset": 21424,
+            "size": 512
+          },
+          "soc_addr": {
+            "offset": 21936,
+            "size": 6
+          },
+          "ic_soc_ipaddr": {
+            "offset": 21944,
+            "size": 4
+          },
+          "ic_tpc_query_info": {
+            "offset": 21948,
+            "size": 32
+          },
+          "ic_get_local_txpow": {
+            "offset": 21980,
+            "size": 4
+          },
+          "ic_get_local_link_margin": {
+            "offset": 21984,
+            "size": 4
+          },
+          "ic_measure_info": {
+            "offset": 21988,
+            "size": 40
+          },
+          "ic_get_shared_vap_stats": {
+            "offset": 22028,
+            "size": 4
+          },
+          "ic_reset_shared_vap_stats": {
+            "offset": 22032,
+            "size": 4
+          },
+          "ic_get_shared_node_stats": {
+            "offset": 22036,
+            "size": 4
+          },
+          "ic_reset_shared_node_stats": {
+            "offset": 22040,
+            "size": 4
+          },
+          "ic_get_dscp2ac_map": {
+            "offset": 22044,
+            "size": 4
+          },
+          "ic_set_dscp2ac_map": {
+            "offset": 22048,
+            "size": 4
+          },
+          "ic_set_dscp2tid_map": {
+            "offset": 22052,
+            "size": 4
+          },
+          "ic_get_dscp2tid_map": {
+            "offset": 22056,
+            "size": 4
+          },
+          "ic_ba_setup_detect": {
+            "offset": 22060,
+            "size": 20
+          },
+          "ic_get_cca_adjusting_status": {
+            "offset": 22080,
+            "size": 4
+          },
+          "ic_wowlan": {
+            "offset": 22084,
+            "size": 268
+          },
+          "ic_extender_role": {
+            "offset": 22352,
+            "size": 1
+          },
+          "ic_extender_mbs_wgt": {
+            "offset": 22353,
+            "size": 1
+          },
+          "ic_extender_rbs_wgt": {
+            "offset": 22354,
+            "size": 1
+          },
+          "ic_extender_mbs_best_rssi": {
+            "offset": 22355,
+            "size": 1
+          },
+          "ic_extender_rbs_best_rssi": {
+            "offset": 22356,
+            "size": 1
+          },
+          "ic_extender_verbose": {
+            "offset": 22357,
+            "size": 1
+          },
+          "ic_extender_mbs_rssi_margin": {
+            "offset": 22358,
+            "size": 1
+          },
+          "ic_extender_mbs_bssid": {
+            "offset": 22359,
+            "size": 6
+          },
+          "ic_extender_mbs_ocac": {
+            "offset": 22365,
+            "size": 1
+          },
+          "ic_extender_rbs_num": {
+            "offset": 22366,
+            "size": 1
+          },
+          "ic_extender_rbs_bssid": {
+            "offset": 22367,
+            "size": 48
+          },
+          "ic_extender_mbs_detected_jiffies": {
+            "offset": 22416,
+            "size": 4
+          },
+          "ic_extender_rssi_continue": {
+            "offset": 22420,
+            "size": 1
+          },
+          "ic_extender_scan_timer": {
+            "offset": 22424,
+            "size": 20
+          },
+          "ic_scan_opchan_enable": {
+            "offset": 22444,
+            "size": 4
+          },
+          "ic_extender_bgscanintvl": {
+            "offset": 22448,
+            "size": 4
+          },
+          "ic_extender_rbs_bw": {
+            "offset": 22452,
+            "size": 1
+          },
+          "ic_tqew_descr_limit": {
+            "offset": 22456,
+            "size": 4
+          },
+          "ic_scan_tbl_len_max": {
+            "offset": 22460,
+            "size": 4
+          },
+          "ic_scan_results_check": {
+            "offset": 22464,
+            "size": 4
+          },
+          "ic_scan_results_expire": {
+            "offset": 22468,
+            "size": 20
+          },
+          "hostap_wpa_state": {
+            "offset": 22488,
+            "size": 4
+          },
+          "ic_send_vht_grp_id_act": {
+            "offset": 22492,
+            "size": 4
+          },
+          "ic_obss_timer": {
+            "offset": 22496,
+            "size": 20
+          },
+          "ic_obss_vap": {
+            "offset": 22516,
+            "size": 4
+          },
+          "ic_obss_scan_enable": {
+            "offset": 22520,
+            "size": 1
+          },
+          "ic_obss_scan_count": {
+            "offset": 22521,
+            "size": 1
+          },
+          "ic_obss_ie": {
+            "offset": 22522,
+            "size": 16
+          },
+          "ic_coex_stats_update": {
+            "offset": 22540,
+            "size": 4
+          },
+          "ic_dm_factor": {
+            "offset": 22544,
+            "size": 24
+          },
+          "ic_vap_default_state": {
+            "offset": 22568,
+            "size": 4
+          },
+          "ic_neighbor_count": {
+            "offset": 22572,
+            "size": 4
+          },
+          "ic_neighbor_cnt_sparse": {
+            "offset": 22576,
+            "size": 1
+          },
+          "ic_neighbor_cnt_dense": {
+            "offset": 22577,
+            "size": 1
+          },
+          "ic_tx_airtime": {
+            "offset": 22580,
+            "size": 4
+          },
+          "ic_tx_accum_airtime": {
+            "offset": 22584,
+            "size": 4
+          },
+          "ic_tx_airtime_control": {
+            "offset": 22588,
+            "size": 4
+          },
+          "ic_rx_airtime": {
+            "offset": 22592,
+            "size": 4
+          },
+          "ic_rx_accum_airtime": {
+            "offset": 22596,
+            "size": 4
+          },
+          "ic_mu_group_update": {
+            "offset": 22600,
+            "size": 4
+          },
+          "ic_rx_bar_sync": {
+            "offset": 22604,
+            "size": 1
+          },
+          "sta_dfs_info": {
+            "offset": 22608,
+            "size": 36
+          },
+          "om_legacy_rate_saved_mode": {
+            "offset": 22644,
+            "size": 4
+          },
+          "om_legacy_rate_fixed": {
+            "offset": 22648,
+            "size": 4
+          },
+          "om_coc_move_ndfs": {
+            "offset": 22652,
+            "size": 4
+          },
+          "om_coc_last_switch": {
+            "offset": 22656,
+            "size": 4
+          },
+          "om_coc_pm_trigger": {
+            "offset": 22660,
+            "size": 4
+          },
+          "om_coc_queue_lock": {
+            "offset": 22664,
+            "size": 0
+          },
+          "om_coc_stopping": {
+            "offset": 22664,
+            "size": 1
+          },
+          "om_coc_completion_pending": {
+            "offset": 22665,
+            "size": 1
+          },
+          "om_coc_pm_pending": {
+            "offset": 22666,
+            "size": 1
+          },
+          "om_20_40_bss_coex": {
+            "offset": 22667,
+            "size": 1
+          },
+          "om_coc_completed_level": {
+            "offset": 22668,
+            "size": 4
+          },
+          "om_bss_tm_flags": {
+            "offset": 22672,
+            "size": 4
+          },
+          "om_neighbor_report_flags": {
+            "offset": 22676,
+            "size": 4
+          }
+        },
+        "ieee80211vap": {
+          "iv_dev": {
+            "offset": 0,
+            "size": 4
+          },
+          "iv_devstats": {
+            "offset": 4,
+            "size": 112
+          },
+          "iv_media": {
+            "offset": 116,
+            "size": 24
+          },
+          "iv_iwstats": {
+            "offset": 140,
+            "size": 32
+          },
+          "iv_sysctl_header": {
+            "offset": 172,
+            "size": 4
+          },
+          "iv_sysctls": {
+            "offset": 176,
+            "size": 4
+          },
+          "iv_proc": {
+            "offset": 180,
+            "size": 4
+          },
+          "iv_proc_entries": {
+            "offset": 184,
+            "size": 4
+          },
+          "iv_vlgrp": {
+            "offset": 188,
+            "size": 4
+          },
+          "iv_2_4ghz_prof": {
+            "offset": 192,
+            "size": 24
+          },
+          "iv_5ghz_prof": {
+            "offset": 216,
+            "size": 24
+          },
+          "iv_pref_band": {
+            "offset": 240,
+            "size": 4
+          },
+          "iv_next": {
+            "offset": 244,
+            "size": 8
+          },
+          "iv_unit": {
+            "offset": 252,
+            "size": 4
+          },
+          "iv_ic": {
+            "offset": 256,
+            "size": 4
+          },
+          "iv_debug": {
+            "offset": 260,
+            "size": 4
+          },
+          "iv_rx_amsdu_enable": {
+            "offset": 264,
+            "size": 4
+          },
+          "iv_rx_amsdu_threshold_cca": {
+            "offset": 268,
+            "size": 4
+          },
+          "iv_rx_amsdu_threshold_pmbl": {
+            "offset": 272,
+            "size": 4
+          },
+          "iv_rx_amsdu_pmbl_wf_lp": {
+            "offset": 276,
+            "size": 4
+          },
+          "iv_rx_amsdu_pmbl_wf_sp": {
+            "offset": 280,
+            "size": 4
+          },
+          "iv_stats": {
+            "offset": 284,
+            "size": 372
+          },
+          "tdls_discovery_interval": {
+            "offset": 656,
+            "size": 4
+          },
+          "tdls_node_life_cycle": {
+            "offset": 660,
+            "size": 4
+          },
+          "tdls_uapsd_indicat_wnd": {
+            "offset": 664,
+            "size": 1
+          },
+          "tdls_path_sel_weight": {
+            "offset": 665,
+            "size": 1
+          },
+          "tdls_rate_detect_timer": {
+            "offset": 668,
+            "size": 20
+          },
+          "tdls_rate_detect_work": {
+            "offset": 688,
+            "size": 44
+          },
+          "tdls_link_switch_work": {
+            "offset": 732,
+            "size": 44
+          },
+          "tdls_node_expire_timer": {
+            "offset": 776,
+            "size": 20
+          },
+          "tdls_ps_hash": {
+            "offset": 796,
+            "size": 128
+          },
+          "tdls_ps_lock": {
+            "offset": 924,
+            "size": 0
+          },
+          "tdls_path_sel_prohibited": {
+            "offset": 924,
+            "size": 1
+          },
+          "tdls_over_qhop_en": {
+            "offset": 928,
+            "size": 4
+          },
+          "tdls_timeout_time": {
+            "offset": 932,
+            "size": 4
+          },
+          "tdls_training_pkt_cnt": {
+            "offset": 936,
+            "size": 4
+          },
+          "tdls_path_sel_pps_thrshld": {
+            "offset": 940,
+            "size": 4
+          },
+          "tdls_path_sel_rate_thrshld": {
+            "offset": 944,
+            "size": 4
+          },
+          "tdls_verbose": {
+            "offset": 948,
+            "size": 4
+          },
+          "tdls_min_valid_rssi": {
+            "offset": 952,
+            "size": 4
+          },
+          "tdls_switch_ints": {
+            "offset": 956,
+            "size": 4
+          },
+          "tdls_phy_rate_wgt": {
+            "offset": 960,
+            "size": 4
+          },
+          "tdls_disassoc_timer": {
+            "offset": 964,
+            "size": 20
+          },
+          "tdls_pending_state": {
+            "offset": 984,
+            "size": 4
+          },
+          "tdls_fixed_off_chan": {
+            "offset": 988,
+            "size": 1
+          },
+          "tdls_fixed_off_chan_bw": {
+            "offset": 989,
+            "size": 1
+          },
+          "tdls_pending_arg": {
+            "offset": 992,
+            "size": 4
+          },
+          "tdls_target_chan": {
+            "offset": 996,
+            "size": 1
+          },
+          "tdls_off_chan_bw": {
+            "offset": 997,
+            "size": 1
+          },
+          "tdls_cs_time": {
+            "offset": 1000,
+            "size": 4
+          },
+          "tdls_cs_timeout": {
+            "offset": 1004,
+            "size": 4
+          },
+          "tdls_cs_duration": {
+            "offset": 1008,
+            "size": 4
+          },
+          "tdls_chan_switching": {
+            "offset": 1012,
+            "size": 1
+          },
+          "tdls_cs_disassoc_pending": {
+            "offset": 1013,
+            "size": 1
+          },
+          "tdls_cs_node": {
+            "offset": 1016,
+            "size": 4
+          },
+          "iv_monitor_nods_only": {
+            "offset": 1020,
+            "size": 4
+          },
+          "iv_monitor_txf_len": {
+            "offset": 1024,
+            "size": 4
+          },
+          "iv_monitor_phy_errors": {
+            "offset": 1028,
+            "size": 4
+          },
+          "iv_monitor_crc_errors": {
+            "offset": 1032,
+            "size": 4
+          },
+          "iv_newstate": {
+            "offset": 1036,
+            "size": 4
+          },
+          "iv_myaddr": {
+            "offset": 1040,
+            "size": 6
+          },
+          "iv_ds_pc_addr": {
+            "offset": 1046,
+            "size": 6
+          },
+          "iv_flags": {
+            "offset": 1052,
+            "size": 4
+          },
+          "iv_flags_ext": {
+            "offset": 1056,
+            "size": 4
+          },
+          "iv_caps": {
+            "offset": 1060,
+            "size": 4
+          },
+          "iv_ath_cap": {
+            "offset": 1064,
+            "size": 1
+          },
+          "iv_opmode": {
+            "offset": 1068,
+            "size": 4
+          },
+          "iv_state": {
+            "offset": 1072,
+            "size": 4
+          },
+          "iv_mgtsend": {
+            "offset": 1076,
+            "size": 20
+          },
+          "iv_mgmt_retry_ni": {
+            "offset": 1096,
+            "size": 4
+          },
+          "iv_mgmt_retry_type": {
+            "offset": 1100,
+            "size": 4
+          },
+          "iv_mgmt_retry_arg": {
+            "offset": 1104,
+            "size": 4
+          },
+          "iv_mgmt_retry_cnt": {
+            "offset": 1108,
+            "size": 4
+          },
+          "iv_inact_init": {
+            "offset": 1112,
+            "size": 4
+          },
+          "iv_inact_auth": {
+            "offset": 1116,
+            "size": 4
+          },
+          "iv_inact_run": {
+            "offset": 1120,
+            "size": 4
+          },
+          "iv_inact_probe": {
+            "offset": 1124,
+            "size": 4
+          },
+          "iv_des_nssid": {
+            "offset": 1128,
+            "size": 4
+          },
+          "iv_des_ssid": {
+            "offset": 1132,
+            "size": 36
+          },
+          "iv_des_bssid": {
+            "offset": 1168,
+            "size": 6
+          },
+          "iv_nicknamelen": {
+            "offset": 1176,
+            "size": 4
+          },
+          "iv_nickname": {
+            "offset": 1180,
+            "size": 32
+          },
+          "iv_bgscanidle": {
+            "offset": 1212,
+            "size": 4
+          },
+          "iv_bgscanintvl": {
+            "offset": 1216,
+            "size": 4
+          },
+          "iv_scanvalid": {
+            "offset": 1220,
+            "size": 4
+          },
+          "iv_roam": {
+            "offset": 1224,
+            "size": 8
+          },
+          "iv_max_aid": {
+            "offset": 1232,
+            "size": 2
+          },
+          "iv_sta_assoc": {
+            "offset": 1234,
+            "size": 2
+          },
+          "iv_non_qtn_sta_assoc": {
+            "offset": 1236,
+            "size": 2
+          },
+          "iv_sta_assoc_limit": {
+            "offset": 1238,
+            "size": 2
+          },
+          "iv_ps_sta": {
+            "offset": 1240,
+            "size": 2
+          },
+          "iv_ps_pending": {
+            "offset": 1242,
+            "size": 2
+          },
+          "iv_ap_buffered": {
+            "offset": 1244,
+            "size": 2
+          },
+          "iv_tim_bitmap": {
+            "offset": 1248,
+            "size": 4
+          },
+          "iv_tim_len": {
+            "offset": 1252,
+            "size": 2
+          },
+          "iv_dtim_period": {
+            "offset": 1254,
+            "size": 1
+          },
+          "iv_dtim_count": {
+            "offset": 1255,
+            "size": 1
+          },
+          "iv_set_tim": {
+            "offset": 1256,
+            "size": 4
+          },
+          "iv_uapsdinfo": {
+            "offset": 1260,
+            "size": 1
+          },
+          "iv_bss": {
+            "offset": 1264,
+            "size": 4
+          },
+          "iv_fixed_rate": {
+            "offset": 1268,
+            "size": 4
+          },
+          "iv_rtsthreshold": {
+            "offset": 1272,
+            "size": 4
+          },
+          "iv_fragthreshold": {
+            "offset": 1276,
+            "size": 2
+          },
+          "iv_txmin": {
+            "offset": 1278,
+            "size": 2
+          },
+          "iv_txmax": {
+            "offset": 1280,
+            "size": 2
+          },
+          "iv_txlifetime": {
+            "offset": 1282,
+            "size": 2
+          },
+          "iv_inact_timer": {
+            "offset": 1284,
+            "size": 4
+          },
+          "iv_opt_ie": {
+            "offset": 1288,
+            "size": 4
+          },
+          "iv_opt_ie_len": {
+            "offset": 1292,
+            "size": 2
+          },
+          "iv_def_txkey": {
+            "offset": 1294,
+            "size": 1
+          },
+          "iv_nw_keys": {
+            "offset": 1296,
+            "size": 768
+          },
+          "iv_key_alloc": {
+            "offset": 2064,
+            "size": 4
+          },
+          "iv_key_delete": {
+            "offset": 2068,
+            "size": 4
+          },
+          "iv_key_set": {
+            "offset": 2072,
+            "size": 4
+          },
+          "iv_key_update_begin": {
+            "offset": 2076,
+            "size": 4
+          },
+          "iv_key_update_end": {
+            "offset": 2080,
+            "size": 4
+          },
+          "iv_auth": {
+            "offset": 2084,
+            "size": 4
+          },
+          "iv_ec": {
+            "offset": 2088,
+            "size": 4
+          },
+          "iv_xrvap": {
+            "offset": 2092,
+            "size": 4
+          },
+          "iv_xrbcnwait": {
+            "offset": 2096,
+            "size": 2
+          },
+          "iv_xrvapstart": {
+            "offset": 2100,
+            "size": 20
+          },
+          "iv_chanchange_count": {
+            "offset": 2120,
+            "size": 1
+          },
+          "iv_mcast_rate": {
+            "offset": 2124,
+            "size": 4
+          },
+          "iv_acl": {
+            "offset": 2128,
+            "size": 4
+          },
+          "iv_as": {
+            "offset": 2132,
+            "size": 4
+          },
+          "param": {
+            "offset": 2136,
+            "size": 4
+          },
+          "iv_swbmiss": {
+            "offset": 2140,
+            "size": 20
+          },
+          "iv_swbmiss_period": {
+            "offset": 2160,
+            "size": 2
+          },
+          "iv_swberp": {
+            "offset": 2164,
+            "size": 20
+          },
+          "iv_swberp_period": {
+            "offset": 2184,
+            "size": 2
+          },
+          "iv_swbmiss_warnings": {
+            "offset": 2186,
+            "size": 2
+          },
+          "iv_bcn_miss_thr": {
+            "offset": 2188,
+            "size": 4
+          },
+          "iv_link_loss_enabled": {
+            "offset": 2192,
+            "size": 1
+          },
+          "iv_swbmiss_bmps_warning": {
+            "offset": 2193,
+            "size": 1
+          },
+          "iv_bmps_tput_high": {
+            "offset": 2194,
+            "size": 1
+          },
+          "iv_qtn_ap_cap": {
+            "offset": 2195,
+            "size": 1
+          },
+          "iv_qtn_flags": {
+            "offset": 2196,
+            "size": 1
+          },
+          "iv_is_qtn_dev": {
+            "offset": 2197,
+            "size": 1
+          },
+          "iv_qtn_options": {
+            "offset": 2198,
+            "size": 1
+          },
+          "iv_nsparams": {
+            "offset": 2200,
+            "size": 12
+          },
+          "iv_stajoin1tq": {
+            "offset": 2212,
+            "size": 24
+          },
+          "iv_vapnode_idx": {
+            "offset": 2236,
+            "size": 2
+          },
+          "iv_ssid_group": {
+            "offset": 2238,
+            "size": 1
+          },
+          "iv_sta_fast_rejoin": {
+            "offset": 2240,
+            "size": 20
+          },
+          "iv_sta_fast_rejoin_bssid": {
+            "offset": 2260,
+            "size": 6
+          },
+          "wds_mac": {
+            "offset": 2266,
+            "size": 6
+          },
+          "iv_wds_peer_key": {
+            "offset": 2272,
+            "size": 192
+          },
+          "iv_extdr_flags": {
+            "offset": 2464,
+            "size": 2
+          },
+          "iv_spy": {
+            "offset": 2468,
+            "size": 84
+          },
+          "iv_nsdone": {
+            "offset": 2552,
+            "size": 4
+          },
+          "app_ie": {
+            "offset": 2556,
+            "size": 48
+          },
+          "app_filter": {
+            "offset": 2604,
+            "size": 4
+          },
+          "iv_htmode": {
+            "offset": 2608,
+            "size": 4
+          },
+          "iv_mcs_config": {
+            "offset": 2612,
+            "size": 4
+          },
+          "iv_ht_flags": {
+            "offset": 2616,
+            "size": 4
+          },
+          "iv_vht_flags": {
+            "offset": 2620,
+            "size": 4
+          },
+          "iv_dsss_40MHz_ok": {
+            "offset": 2624,
+            "size": 1
+          },
+          "iv_non_gf_sta_present": {
+            "offset": 2625,
+            "size": 1
+          },
+          "iv_ht_anomaly_40MHz_present": {
+            "offset": 2626,
+            "size": 1
+          },
+          "iv_ht_mixedmode_present": {
+            "offset": 2627,
+            "size": 1
+          },
+          "iv_dual_cts_required": {
+            "offset": 2628,
+            "size": 1
+          },
+          "iv_lsig_txop_ok": {
+            "offset": 2629,
+            "size": 1
+          },
+          "iv_stbc_beacon": {
+            "offset": 2630,
+            "size": 1
+          },
+          "iv_smps_force": {
+            "offset": 2632,
+            "size": 2
+          },
+          "iv_implicit_ba": {
+            "offset": 2634,
+            "size": 1
+          },
+          "iv_ba_control": {
+            "offset": 2636,
+            "size": 2
+          },
+          "iv_ba_old_control": {
+            "offset": 2638,
+            "size": 2
+          },
+          "iv_blacklist_timeout": {
+            "offset": 2640,
+            "size": 4
+          },
+          "iv_max_ba_win_size": {
+            "offset": 2644,
+            "size": 2
+          },
+          "iv_rate_training_count": {
+            "offset": 2648,
+            "size": 4
+          },
+          "iv_rate_training_burst_count": {
+            "offset": 2652,
+            "size": 4
+          },
+          "iv_mc_legacy_rate": {
+            "offset": 2656,
+            "size": 1
+          },
+          "iv_forward_unknown_mc": {
+            "offset": 2657,
+            "size": 1
+          },
+          "iv_mc_to_uc": {
+            "offset": 2658,
+            "size": 1
+          },
+          "iv_reliable_bcst": {
+            "offset": 2659,
+            "size": 1
+          },
+          "iv_ap_fwd_lncb": {
+            "offset": 2660,
+            "size": 1
+          },
+          "iv_ppqueue": {
+            "offset": 2664,
+            "size": 28
+          },
+          "qtn_pairing_ie": {
+            "offset": 2692,
+            "size": 8
+          },
+          "iv_disconn_cnt": {
+            "offset": 2700,
+            "size": 4
+          },
+          "iv_disconn_seq": {
+            "offset": 2704,
+            "size": 4
+          },
+          "iv_test_traffic": {
+            "offset": 2708,
+            "size": 20
+          },
+          "iv_test_traffic_period": {
+            "offset": 2728,
+            "size": 4
+          },
+          "iv_11ac_enabled": {
+            "offset": 2732,
+            "size": 4
+          },
+          "iv_pri": {
+            "offset": 2736,
+            "size": 1
+          },
+          "iv_pmf": {
+            "offset": 2737,
+            "size": 1
+          },
+          "iv_local_max_txpow": {
+            "offset": 2738,
+            "size": 1
+          },
+          "iv_disassoc_reason": {
+            "offset": 2740,
+            "size": 2
+          },
+          "iv_wme": {
+            "offset": 2744,
+            "size": 160
+          },
+          "iv_extender_wds_lock": {
+            "offset": 2904,
+            "size": 0
+          },
+          "iv_extender_wds_hash": {
+            "offset": 2904,
+            "size": 128
+          },
+          "iv_tx_amsdu": {
+            "offset": 3032,
+            "size": 1
+          },
+          "iv_tx_max_amsdu": {
+            "offset": 3033,
+            "size": 1
+          },
+          "interworking": {
+            "offset": 3034,
+            "size": 1
+          },
+          "interw_info": {
+            "offset": 3035,
+            "size": 7
+          },
+          "hs20_enable": {
+            "offset": 3042,
+            "size": 1
+          },
+          "disable_dgaf": {
+            "offset": 3043,
+            "size": 1
+          },
+          "proxy_arp": {
+            "offset": 3044,
+            "size": 1
+          },
+          "iv_coex": {
+            "offset": 3045,
+            "size": 1
+          },
+          "allow_tkip_for_vht": {
+            "offset": 3046,
+            "size": 1
+          },
+          "is_block_all_assoc": {
+            "offset": 3047,
+            "size": 1
+          },
+          "tx_ba_disable": {
+            "offset": 3048,
+            "size": 1
+          },
+          "rx_ba_decline": {
+            "offset": 3049,
+            "size": 1
+          },
+          "iv_vap_state": {
+            "offset": 3050,
+            "size": 1
+          },
+          "iv_osen": {
+            "offset": 3051,
+            "size": 1
+          },
+          "sample_sta_count": {
+            "offset": 3052,
+            "size": 1
+          },
+          "sample_sta_lock": {
+            "offset": 3053,
+            "size": 0
+          },
+          "sample_sta_list": {
+            "offset": 3056,
+            "size": 8
+          },
+          "bcast_pps": {
+            "offset": 3064,
+            "size": 16
+          },
+          "iv_11ac_and_11n_flag": {
+            "offset": 3080,
+            "size": 1
+          },
+          "iv_tx_amsdu_11n": {
+            "offset": 3081,
+            "size": 1
+          }
+        },
+        "qdrv_wlan": {
+          "ic": {
+            "offset": 0,
+            "size": 22680
+          },
+          "unit": {
+            "offset": 22680,
+            "size": 4
+          },
+          "scan_task": {
+            "offset": 22684,
+            "size": 16
+          },
+          "beacon_txn": {
+            "offset": 22700,
+            "size": 480
+          },
+          "flags_ext": {
+            "offset": 23180,
+            "size": 4
+          },
+          "flags": {
+            "offset": 23184,
+            "size": 2
+          },
+          "rf_chipid": {
+            "offset": 23186,
+            "size": 1
+          },
+          "rf_chip_verid": {
+            "offset": 23187,
+            "size": 1
+          },
+          "mac": {
+            "offset": 23188,
+            "size": 4
+          },
+          "lock": {
+            "offset": 23192,
+            "size": 0
+          },
+          "semmap": {
+            "offset": 23192,
+            "size": 130
+          },
+          "txdoneirq": {
+            "offset": 23322,
+            "size": 1
+          },
+          "rxirq": {
+            "offset": 23324,
+            "size": 4
+          },
+          "scanirq": {
+            "offset": 23328,
+            "size": 4
+          },
+          "scan_if": {
+            "offset": 23332,
+            "size": 20
+          },
+          "scan_fifo": {
+            "offset": 23352,
+            "size": 4
+          },
+          "tx_if": {
+            "offset": 23356,
+            "size": 84
+          },
+          "rx_if": {
+            "offset": 23440,
+            "size": 32
+          },
+          "host_sem": {
+            "offset": 23472,
+            "size": 4
+          },
+          "qw_rates": {
+            "offset": 23476,
+            "size": 90
+          },
+          "qw_currt": {
+            "offset": 23568,
+            "size": 4
+          },
+          "qw_curmode": {
+            "offset": 23572,
+            "size": 4
+          },
+          "tx_stats": {
+            "offset": 23576,
+            "size": 216
+          },
+          "rx_stats": {
+            "offset": 23792,
+            "size": 276
+          },
+          "csw_stats": {
+            "offset": 24068,
+            "size": 20
+          },
+          "pktlogger": {
+            "offset": 24088,
+            "size": 3000
+          },
+          "sm_stats": {
+            "offset": 27088,
+            "size": 48
+          },
+          "cgq_stats": {
+            "offset": 27136,
+            "size": 48
+          },
+          "txbf_state": {
+            "offset": 27184,
+            "size": 4
+          },
+          "flowlock": {
+            "offset": 27188,
+            "size": 0
+          },
+          "br_dev": {
+            "offset": 27188,
+            "size": 4
+          },
+          "unknown_dp_count": {
+            "offset": 27192,
+            "size": 4
+          },
+          "unknown_dp_jiffies": {
+            "offset": 27196,
+            "size": 4
+          },
+          "bridge_table": {
+            "offset": 27200,
+            "size": 3088
+          },
+          "mcs_cap": {
+            "offset": 30288,
+            "size": 4
+          },
+          "mcs_odd_even": {
+            "offset": 30292,
+            "size": 4
+          },
+          "tx_restrict": {
+            "offset": 30296,
+            "size": 4
+          },
+          "tx_restrict_rts": {
+            "offset": 30300,
+            "size": 4
+          },
+          "tx_restrict_limit": {
+            "offset": 30304,
+            "size": 4
+          },
+          "tx_restrict_rate": {
+            "offset": 30308,
+            "size": 4
+          },
+          "tx_swretry_agg_max": {
+            "offset": 30312,
+            "size": 1
+          },
+          "tx_swretry_noagg_max": {
+            "offset": 30313,
+            "size": 1
+          },
+          "tx_swretry_suspend_xmit": {
+            "offset": 30314,
+            "size": 1
+          },
+          "hr_timer": {
+            "offset": 30316,
+            "size": 20
+          },
+          "cca_timer": {
+            "offset": 30336,
+            "size": 20
+          },
+          "igmp_query_timer": {
+            "offset": 30356,
+            "size": 20
+          },
+          "cca_wq": {
+            "offset": 30376,
+            "size": 16
+          },
+          "meas_wq": {
+            "offset": 30392,
+            "size": 16
+          },
+          "cca_lock": {
+            "offset": 30408,
+            "size": 0
+          },
+          "scan_wq": {
+            "offset": 30408,
+            "size": 16
+          },
+          "scan_lock": {
+            "offset": 30424,
+            "size": 0
+          },
+          "csa_callback": {
+            "offset": 30424,
+            "size": 4
+          },
+          "csa_wq": {
+            "offset": 30428,
+            "size": 16
+          },
+          "csa_lock": {
+            "offset": 30444,
+            "size": 0
+          },
+          "channel_work_wq": {
+            "offset": 30444,
+            "size": 16
+          },
+          "radar_detect_callback": {
+            "offset": 30460,
+            "size": 4
+          },
+          "arp_last_sent": {
+            "offset": 30464,
+            "size": 4
+          },
+          "remain_chan_wq": {
+            "offset": 30468,
+            "size": 16
+          },
+          "shared_pernode_stats_pool": {
+            "offset": 30484,
+            "size": 4
+          },
+          "shared_pernode_stats_phys": {
+            "offset": 30488,
+            "size": 4
+          },
+          "shared_pernode_stats_head": {
+            "offset": 30492,
+            "size": 8
+          },
+          "pm_notifier": {
+            "offset": 30500,
+            "size": 12
+          },
+          "tx_sch_shared_data": {
+            "offset": 30512,
+            "size": 4
+          },
+          "queue_enabled": {
+            "offset": 30516,
+            "size": 1
+          },
+          "br_isolate": {
+            "offset": 30518,
+            "size": 2
+          },
+          "br_isolate_vid": {
+            "offset": 30520,
+            "size": 2
+          },
+          "restrict_wlan_ip": {
+            "offset": 30522,
+            "size": 1
+          },
+          "se95_temp_sensor": {
+            "offset": 30524,
+            "size": 4
+          },
+          "tx_power_cal_data": {
+            "offset": 30528,
+            "size": 56
+          },
+          "sp": {
+            "offset": 30584,
+            "size": 4
+          },
+          "om_bbdf_war_enabled": {
+            "offset": 30588,
+            "size": 1
+          },
+          "om_duplicate_rts_value": {
+            "offset": 30589,
+            "size": 1
+          }
+        }
+      },
+      "sizes": {
+        "ieee80211com": 22680,
+        "ieee80211vap": 3084,
+        "qdrv_wlan": 30592,
+        "qdrv_vap": 3544,
+        "host_ioctl": 32,
+        "qtn_setparams_args": 76,
+        "qtn_beacon_args": 64,
+        "beacon_shared_ie_t": 20
+      },
+      "extensions": {},
+      "object_sha256": "405a49ca679ed55e104c3a97fc18712b5dd9227d2c34a1fbaec90190a1ac1307"
+    },
+    {
+      "lane": "new",
+      "fields": {
+        "ieee80211com": {
+          "ic_dev": {
+            "offset": 0,
+            "size": 4
+          },
+          "ic_findchannel": {
+            "offset": 4,
+            "size": 4
+          },
+          "ic_comlock": {
+            "offset": 8,
+            "size": 0
+          },
+          "ic_vapslock": {
+            "offset": 8,
+            "size": 0
+          },
+          "ic_vaps": {
+            "offset": 8,
+            "size": 8
+          },
+          "ic_phytype": {
+            "offset": 16,
+            "size": 4
+          },
+          "ic_phymode": {
+            "offset": 20,
+            "size": 4
+          },
+          "ic_radar_bw": {
+            "offset": 24,
+            "size": 4
+          },
+          "ic_opmode": {
+            "offset": 28,
+            "size": 4
+          },
+          "ic_media": {
+            "offset": 32,
+            "size": 24
+          },
+          "ic_myaddr": {
+            "offset": 56,
+            "size": 6
+          },
+          "ic_inact": {
+            "offset": 64,
+            "size": 20
+          },
+          "ic_offchan_protect": {
+            "offset": 84,
+            "size": 32
+          },
+          "ic_ver_sw": {
+            "offset": 116,
+            "size": 4
+          },
+          "ic_ver_hw": {
+            "offset": 120,
+            "size": 2
+          },
+          "ic_ver_platform_id": {
+            "offset": 122,
+            "size": 2
+          },
+          "ic_ver_timestamp": {
+            "offset": 124,
+            "size": 4
+          },
+          "ic_ver_flags": {
+            "offset": 128,
+            "size": 4
+          },
+          "ic_flags": {
+            "offset": 132,
+            "size": 4
+          },
+          "ic_flags_ext": {
+            "offset": 136,
+            "size": 4
+          },
+          "ic_flags_qtn": {
+            "offset": 140,
+            "size": 4
+          },
+          "ic_caps": {
+            "offset": 144,
+            "size": 4
+          },
+          "ic_vht_mcs_cap": {
+            "offset": 148,
+            "size": 4
+          },
+          "ic_ht_nss_cap": {
+            "offset": 152,
+            "size": 4
+          },
+          "ic_vht_nss_cap": {
+            "offset": 156,
+            "size": 4
+          },
+          "ic_vht_nss_cap_24g": {
+            "offset": 160,
+            "size": 4
+          },
+          "ic_ath_cap": {
+            "offset": 164,
+            "size": 1
+          },
+          "ic_promisc": {
+            "offset": 165,
+            "size": 1
+          },
+          "ic_allmulti": {
+            "offset": 166,
+            "size": 1
+          },
+          "ic_nopened": {
+            "offset": 167,
+            "size": 1
+          },
+          "ic_sup_rates": {
+            "offset": 168,
+            "size": 480
+          },
+          "ic_sup_xr_rates": {
+            "offset": 648,
+            "size": 32
+          },
+          "ic_sup_half_rates": {
+            "offset": 680,
+            "size": 32
+          },
+          "ic_sup_quarter_rates": {
+            "offset": 712,
+            "size": 32
+          },
+          "ic_sup_ht_rates": {
+            "offset": 744,
+            "size": 480
+          },
+          "ic_modecaps": {
+            "offset": 1224,
+            "size": 2
+          },
+          "ic_curmode": {
+            "offset": 1226,
+            "size": 2
+          },
+          "ic_lintval": {
+            "offset": 1228,
+            "size": 2
+          },
+          "ic_lintval_backup": {
+            "offset": 1230,
+            "size": 2
+          },
+          "ic_holdover": {
+            "offset": 1232,
+            "size": 2
+          },
+          "ic_bmisstimeout": {
+            "offset": 1234,
+            "size": 2
+          },
+          "ic_txpowlimit": {
+            "offset": 1236,
+            "size": 2
+          },
+          "ic_sample_rate": {
+            "offset": 1240,
+            "size": 4
+          },
+          "ic_newtxpowlimit": {
+            "offset": 1244,
+            "size": 2
+          },
+          "ic_uapsdmaxtriggers": {
+            "offset": 1246,
+            "size": 2
+          },
+          "ic_coverageclass": {
+            "offset": 1248,
+            "size": 1
+          },
+          "ic_pwr_adjust_scancnt": {
+            "offset": 1249,
+            "size": 1
+          },
+          "rts_cts_prot": {
+            "offset": 1252,
+            "size": 4
+          },
+          "ic_htcap": {
+            "offset": 1256,
+            "size": 29
+          },
+          "ldpc_enabled": {
+            "offset": 1288,
+            "size": 4
+          },
+          "stbc_enabled": {
+            "offset": 1292,
+            "size": 4
+          },
+          "ic_htinfo": {
+            "offset": 1296,
+            "size": 11
+          },
+          "ic_bfgrouping": {
+            "offset": 1308,
+            "size": 2
+          },
+          "ic_bfcoeffsize": {
+            "offset": 1310,
+            "size": 2
+          },
+          "ic_txbf_period": {
+            "offset": 1312,
+            "size": 4
+          },
+          "ic_vhtcap_24g": {
+            "offset": 1316,
+            "size": 35
+          },
+          "ic_vhtop_24g": {
+            "offset": 1351,
+            "size": 8
+          },
+          "ic_vhtcap": {
+            "offset": 1359,
+            "size": 35
+          },
+          "ic_vhtop": {
+            "offset": 1394,
+            "size": 8
+          },
+          "ic_scs": {
+            "offset": 1404,
+            "size": 336
+          },
+          "ic_scs_sample_work": {
+            "offset": 1740,
+            "size": 44
+          },
+          "ic_ocac": {
+            "offset": 1784,
+            "size": 748
+          },
+          "ic_11n_40_only_mode": {
+            "offset": 2532,
+            "size": 4
+          },
+          "ic_vht_opmode_notif": {
+            "offset": 2536,
+            "size": 2
+          },
+          "ic_non_ht_sta": {
+            "offset": 2538,
+            "size": 1
+          },
+          "ic_ht_20mhz_only_sta": {
+            "offset": 2539,
+            "size": 1
+          },
+          "ic_non_ht_non_member": {
+            "offset": 2540,
+            "size": 1
+          },
+          "ic_pppc_select_enable": {
+            "offset": 2541,
+            "size": 1
+          },
+          "ic_pppc_select_enable_backup": {
+            "offset": 2542,
+            "size": 1
+          },
+          "ic_pppc_step_db": {
+            "offset": 2543,
+            "size": 1
+          },
+          "ic_gi_fixed": {
+            "offset": 2544,
+            "size": 1
+          },
+          "ic_gi_select_enable": {
+            "offset": 2545,
+            "size": 1
+          },
+          "ic_bw_fixed": {
+            "offset": 2546,
+            "size": 1
+          },
+          "ic_def_matrix": {
+            "offset": 2547,
+            "size": 1
+          },
+          "ic_sta_cc": {
+            "offset": 2548,
+            "size": 1
+          },
+          "ic_sta_cc_brcm": {
+            "offset": 2549,
+            "size": 1
+          },
+          "ic_tx_qos_sched": {
+            "offset": 2550,
+            "size": 1
+          },
+          "ic_local_rts": {
+            "offset": 2551,
+            "size": 1
+          },
+          "ic_peer_rts_mode": {
+            "offset": 2552,
+            "size": 1
+          },
+          "ic_dyn_peer_rts": {
+            "offset": 2553,
+            "size": 1
+          },
+          "ic_peer_rts": {
+            "offset": 2554,
+            "size": 1
+          },
+          "ic_dyn_wmm": {
+            "offset": 2555,
+            "size": 1
+          },
+          "ic_emi_power_switch_enable": {
+            "offset": 2556,
+            "size": 1
+          },
+          "ic_dfs_channels_deactive": {
+            "offset": 2557,
+            "size": 1
+          },
+          "ic_beaconing_scheme": {
+            "offset": 2558,
+            "size": 1
+          },
+          "ic_dfs_csa_cnt": {
+            "offset": 2559,
+            "size": 1
+          },
+          "ic_rf_chipid": {
+            "offset": 2560,
+            "size": 1
+          },
+          "ic_nchans": {
+            "offset": 2564,
+            "size": 4
+          },
+          "ic_channels": {
+            "offset": 2568,
+            "size": 13312
+          },
+          "ic_csw_record": {
+            "offset": 15880,
+            "size": 584
+          },
+          "ic_chan_occupy_record": {
+            "offset": 16464,
+            "size": 2048
+          },
+          "ic_csw_reason": {
+            "offset": 18512,
+            "size": 4
+          },
+          "ic_csw_mac": {
+            "offset": 18516,
+            "size": 6
+          },
+          "ic_assoc_history": {
+            "offset": 18524,
+            "size": 320
+          },
+          "ic_chan_avail": {
+            "offset": 18844,
+            "size": 32
+          },
+          "ic_chan_active": {
+            "offset": 18876,
+            "size": 32
+          },
+          "ic_chan_availability_status": {
+            "offset": 18908,
+            "size": 256
+          },
+          "ic_chan_pri_inactive": {
+            "offset": 19164,
+            "size": 32
+          },
+          "ic_is_inactive_usercfg": {
+            "offset": 19196,
+            "size": 32
+          },
+          "ic_is_inactive_autochan_only": {
+            "offset": 19228,
+            "size": 32
+          },
+          "ic_chan_dfs_required": {
+            "offset": 19260,
+            "size": 32
+          },
+          "ic_chan_weather_radar": {
+            "offset": 19292,
+            "size": 32
+          },
+          "ic_chan_disabled": {
+            "offset": 19324,
+            "size": 32
+          },
+          "ic_chan_active_20": {
+            "offset": 19356,
+            "size": 32
+          },
+          "ic_chan_active_40": {
+            "offset": 19388,
+            "size": 32
+          },
+          "ic_chan_active_80": {
+            "offset": 19420,
+            "size": 32
+          },
+          "ic_max_system_bw": {
+            "offset": 19452,
+            "size": 1
+          },
+          "ic_bss_bw": {
+            "offset": 19453,
+            "size": 1
+          },
+          "ic_curchan": {
+            "offset": 19456,
+            "size": 4
+          },
+          "ic_bsschan": {
+            "offset": 19460,
+            "size": 4
+          },
+          "ic_prevchan": {
+            "offset": 19464,
+            "size": 4
+          },
+          "ic_scanchan": {
+            "offset": 19468,
+            "size": 4
+          },
+          "ic_channoise": {
+            "offset": 19472,
+            "size": 2
+          },
+          "ic_des_chan": {
+            "offset": 19476,
+            "size": 4
+          },
+          "ic_des_chan_after_init_cac": {
+            "offset": 19480,
+            "size": 4
+          },
+          "ic_des_chan_after_init_scan": {
+            "offset": 19484,
+            "size": 4
+          },
+          "ic_chan_is_set": {
+            "offset": 19488,
+            "size": 4
+          },
+          "ic_des_mode": {
+            "offset": 19492,
+            "size": 2
+          },
+          "ic_nregclass": {
+            "offset": 19496,
+            "size": 4
+          },
+          "ic_regclassids": {
+            "offset": 19500,
+            "size": 10
+          },
+          "ic_fast_reass_chan": {
+            "offset": 19512,
+            "size": 4
+          },
+          "ic_fast_reass_scan_cnt": {
+            "offset": 19516,
+            "size": 1
+          },
+          "ic_scan": {
+            "offset": 19520,
+            "size": 4
+          },
+          "ic_roaming": {
+            "offset": 19524,
+            "size": 4
+          },
+          "ic_lastdata": {
+            "offset": 19528,
+            "size": 4
+          },
+          "ic_lastscan": {
+            "offset": 19532,
+            "size": 4
+          },
+          "ic_sta": {
+            "offset": 19536,
+            "size": 300
+          },
+          "ic_wme": {
+            "offset": 19836,
+            "size": 160
+          },
+          "ic_vap_pri_wme": {
+            "offset": 19996,
+            "size": 1
+          },
+          "ic_airfair": {
+            "offset": 19997,
+            "size": 1
+          },
+          "ic_protmode": {
+            "offset": 20000,
+            "size": 4
+          },
+          "ic_nonerpsta": {
+            "offset": 20004,
+            "size": 2
+          },
+          "ic_longslotsta": {
+            "offset": 20006,
+            "size": 2
+          },
+          "ic_sta_assoc_limit": {
+            "offset": 20008,
+            "size": 2
+          },
+          "ic_sta_assoc": {
+            "offset": 20010,
+            "size": 2
+          },
+          "ic_wds_links": {
+            "offset": 20012,
+            "size": 2
+          },
+          "ic_dt_sta_assoc": {
+            "offset": 20014,
+            "size": 2
+          },
+          "ic_xr_sta_assoc": {
+            "offset": 20016,
+            "size": 2
+          },
+          "ic_nonqtn_sta": {
+            "offset": 20018,
+            "size": 2
+          },
+          "ic_ssid_grp": {
+            "offset": 20020,
+            "size": 192
+          },
+          "ic_mindwell_active": {
+            "offset": 20212,
+            "size": 2
+          },
+          "ic_mindwell_passive": {
+            "offset": 20214,
+            "size": 2
+          },
+          "ic_maxdwell_active": {
+            "offset": 20216,
+            "size": 2
+          },
+          "ic_maxdwell_passive": {
+            "offset": 20218,
+            "size": 2
+          },
+          "ic_qtn_bgscan": {
+            "offset": 20220,
+            "size": 18
+          },
+          "ic_iwstats": {
+            "offset": 20240,
+            "size": 32
+          },
+          "ic_country_code": {
+            "offset": 20272,
+            "size": 2
+          },
+          "ic_spec_country_code": {
+            "offset": 20274,
+            "size": 2
+          },
+          "ic_country_outdoor": {
+            "offset": 20276,
+            "size": 4
+          },
+          "ic_country_ie": {
+            "offset": 20280,
+            "size": 254
+          },
+          "ic_oper_class": {
+            "offset": 20534,
+            "size": 32
+          },
+          "ic_oper_class_table": {
+            "offset": 20568,
+            "size": 4
+          },
+          "ic_pwr_constraint": {
+            "offset": 20572,
+            "size": 1
+          },
+          "ic_pco": {
+            "offset": 20576,
+            "size": 36
+          },
+          "ic_chanchange_tbtt": {
+            "offset": 20612,
+            "size": 1
+          },
+          "ic_chanchange_chan": {
+            "offset": 20613,
+            "size": 1
+          },
+          "ic_csa_count": {
+            "offset": 20614,
+            "size": 1
+          },
+          "ic_csa_mode": {
+            "offset": 20615,
+            "size": 1
+          },
+          "ic_csa_reason": {
+            "offset": 20616,
+            "size": 4
+          },
+          "ic_csa_flag": {
+            "offset": 20620,
+            "size": 4
+          },
+          "ic_csa_frame": {
+            "offset": 20624,
+            "size": 8
+          },
+          "ic_csa_chan": {
+            "offset": 20632,
+            "size": 4
+          },
+          "ic_timer_csa": {
+            "offset": 20636,
+            "size": 20
+          },
+          "ic_finish_csa": {
+            "offset": 20656,
+            "size": 4
+          },
+          "ic_cca_token": {
+            "offset": 20660,
+            "size": 1
+          },
+          "ic_cca_start_tsf": {
+            "offset": 20664,
+            "size": 8
+          },
+          "ic_cca_duration_tu": {
+            "offset": 20672,
+            "size": 2
+          },
+          "ic_cca_chan": {
+            "offset": 20674,
+            "size": 1
+          },
+          "ic_ieee_alt_chan": {
+            "offset": 20675,
+            "size": 1
+          },
+          "ic_ieee_best_alt_chan": {
+            "offset": 20676,
+            "size": 1
+          },
+          "ic_non_occupancy_period": {
+            "offset": 20680,
+            "size": 4
+          },
+          "ic_max_boot_cac_duration": {
+            "offset": 20684,
+            "size": 4
+          },
+          "ic_boot_cac_end_jiffy": {
+            "offset": 20688,
+            "size": 4
+          },
+          "icac_timer": {
+            "offset": 20692,
+            "size": 20
+          },
+          "ic_mode_get_phy_stats": {
+            "offset": 20712,
+            "size": 1
+          },
+          "ic_legacy_retry_limit": {
+            "offset": 20713,
+            "size": 1
+          },
+          "ic_retry_count": {
+            "offset": 20714,
+            "size": 1
+          },
+          "ic_rx_agg_timeout": {
+            "offset": 20716,
+            "size": 4
+          },
+          "ic_ndpa_dur": {
+            "offset": 20720,
+            "size": 4
+          },
+          "ic_su_txbf_pkt_cnt": {
+            "offset": 20724,
+            "size": 4
+          },
+          "ic_mu_txbf_pkt_cnt": {
+            "offset": 20728,
+            "size": 4
+          },
+          "ic_tx_max_ampdu_size": {
+            "offset": 20732,
+            "size": 4
+          },
+          "ic_mu_debug_level": {
+            "offset": 20736,
+            "size": 2
+          },
+          "ic_mu_enable": {
+            "offset": 20738,
+            "size": 1
+          },
+          "ic_rts_bw_dyn": {
+            "offset": 20739,
+            "size": 1
+          },
+          "ic_cts_bw": {
+            "offset": 20740,
+            "size": 1
+          },
+          "use_non_ht_duplicate_for_mu": {
+            "offset": 20741,
+            "size": 1
+          },
+          "rx_bws_support_for_mu_ndpa": {
+            "offset": 20742,
+            "size": 1
+          },
+          "cca_fix_disable": {
+            "offset": 20743,
+            "size": 1
+          },
+          "auto_cca_enable": {
+            "offset": 20744,
+            "size": 1
+          },
+          "ic_vap_create": {
+            "offset": 20748,
+            "size": 4
+          },
+          "ic_vap_delete": {
+            "offset": 20752,
+            "size": 4
+          },
+          "ic_get_vap_idx": {
+            "offset": 20756,
+            "size": 4
+          },
+          "ic_send_mgmt": {
+            "offset": 20760,
+            "size": 4
+          },
+          "ic_recv_mgmt": {
+            "offset": 20764,
+            "size": 4
+          },
+          "ic_send_80211": {
+            "offset": 20768,
+            "size": 4
+          },
+          "ic_init": {
+            "offset": 20772,
+            "size": 4
+          },
+          "ic_reset": {
+            "offset": 20776,
+            "size": 4
+          },
+          "ic_queue_reset": {
+            "offset": 20780,
+            "size": 4
+          },
+          "ic_updateslot": {
+            "offset": 20784,
+            "size": 4
+          },
+          "ic_newassoc": {
+            "offset": 20788,
+            "size": 4
+          },
+          "ic_disassoc": {
+            "offset": 20792,
+            "size": 4
+          },
+          "ic_node_update": {
+            "offset": 20796,
+            "size": 4
+          },
+          "ic_node_alloc": {
+            "offset": 20800,
+            "size": 4
+          },
+          "ic_node_free": {
+            "offset": 20804,
+            "size": 4
+          },
+          "ic_qdrv_node_free": {
+            "offset": 20808,
+            "size": 4
+          },
+          "ic_node_cleanup": {
+            "offset": 20812,
+            "size": 4
+          },
+          "ic_node_getrssi": {
+            "offset": 20816,
+            "size": 4
+          },
+          "ic_node_move_data": {
+            "offset": 20820,
+            "size": 4
+          },
+          "ic_iterate_nodes": {
+            "offset": 20824,
+            "size": 4
+          },
+          "ic_iterate_dev_nodes": {
+            "offset": 20828,
+            "size": 4
+          },
+          "ic_initiate_scan": {
+            "offset": 20832,
+            "size": 4
+          },
+          "ic_scan_start": {
+            "offset": 20836,
+            "size": 4
+          },
+          "ic_scan_end": {
+            "offset": 20840,
+            "size": 4
+          },
+          "ic_check_channel": {
+            "offset": 20844,
+            "size": 4
+          },
+          "ic_set_channel": {
+            "offset": 20848,
+            "size": 4
+          },
+          "ic_bridge_set_dest_addr": {
+            "offset": 20852,
+            "size": 4
+          },
+          "ic_get_tsf": {
+            "offset": 20856,
+            "size": 4
+          },
+          "ic_bmps_set_frame": {
+            "offset": 20860,
+            "size": 4
+          },
+          "ic_bmps_release_frame": {
+            "offset": 20864,
+            "size": 4
+          },
+          "ic_scs_update_scan_stats": {
+            "offset": 20868,
+            "size": 4
+          },
+          "ic_sample_channel": {
+            "offset": 20872,
+            "size": 4
+          },
+          "ic_bgscan_start": {
+            "offset": 20876,
+            "size": 4
+          },
+          "ic_bgscan_channel": {
+            "offset": 20880,
+            "size": 4
+          },
+          "ic_set_channel_deferred": {
+            "offset": 20884,
+            "size": 4
+          },
+          "ic_set_start_cca_measurement": {
+            "offset": 20888,
+            "size": 4
+          },
+          "ic_do_measurement": {
+            "offset": 20892,
+            "size": 4
+          },
+          "ic_finish_measurement": {
+            "offset": 20896,
+            "size": 4
+          },
+          "ic_send_csa_frame": {
+            "offset": 20900,
+            "size": 4
+          },
+          "ic_set_ocac": {
+            "offset": 20904,
+            "size": 4
+          },
+          "ic_uapsd_flush": {
+            "offset": 20908,
+            "size": 4
+          },
+          "ic_set_coverageclass": {
+            "offset": 20912,
+            "size": 4
+          },
+          "ic_mhz2ieee": {
+            "offset": 20916,
+            "size": 4
+          },
+          "ic_setparam": {
+            "offset": 20920,
+            "size": 4
+          },
+          "ic_getparam": {
+            "offset": 20924,
+            "size": 4
+          },
+          "ic_register_node": {
+            "offset": 20928,
+            "size": 4
+          },
+          "ic_unregister_node": {
+            "offset": 20932,
+            "size": 4
+          },
+          "ic_get_phy_stats": {
+            "offset": 20936,
+            "size": 4
+          },
+          "ic_ncbeamforming": {
+            "offset": 20940,
+            "size": 4
+          },
+          "ic_htaddba": {
+            "offset": 20944,
+            "size": 4
+          },
+          "ic_htdelba": {
+            "offset": 20948,
+            "size": 4
+          },
+          "ic_join_bss": {
+            "offset": 20952,
+            "size": 4
+          },
+          "ic_beacon_update": {
+            "offset": 20956,
+            "size": 4
+          },
+          "ic_beacon_stop": {
+            "offset": 20960,
+            "size": 4
+          },
+          "ic_setkey": {
+            "offset": 20964,
+            "size": 4
+          },
+          "ic_delkey": {
+            "offset": 20968,
+            "size": 4
+          },
+          "ic_set_l2_ext_filter": {
+            "offset": 20972,
+            "size": 4
+          },
+          "ic_set_l2_ext_filter_port": {
+            "offset": 20976,
+            "size": 4
+          },
+          "ic_get_l2_ext_filter_port": {
+            "offset": 20980,
+            "size": 4
+          },
+          "ic_send_to_l2_ext_filter": {
+            "offset": 20984,
+            "size": 4
+          },
+          "ic_mac_reserved": {
+            "offset": 20988,
+            "size": 4
+          },
+          "ic_get_wlanstats": {
+            "offset": 20992,
+            "size": 4
+          },
+          "ic_smps": {
+            "offset": 20996,
+            "size": 4
+          },
+          "ic_tkip_mic_failure": {
+            "offset": 21000,
+            "size": 4
+          },
+          "ic_radar_detected": {
+            "offset": 21004,
+            "size": 4
+          },
+          "ic_select_channel": {
+            "offset": 21008,
+            "size": 4
+          },
+          "ic_dfs_action_scan_done": {
+            "offset": 21012,
+            "size": 4
+          },
+          "ic_dfs_is_eu_region": {
+            "offset": 21016,
+            "size": 4
+          },
+          "ic_mark_channel_availability_status": {
+            "offset": 21020,
+            "size": 4
+          },
+          "ic_set_chan_availability_status_by_chan_num": {
+            "offset": 21024,
+            "size": 4
+          },
+          "ic_get_chan_availability_status_by_chan_num": {
+            "offset": 21028,
+            "size": 4
+          },
+          "ic_mark_channel_dfs_cac_status": {
+            "offset": 21032,
+            "size": 4
+          },
+          "ic_dump_available_channels": {
+            "offset": 21036,
+            "size": 4
+          },
+          "ic_ap_next_cac": {
+            "offset": 21040,
+            "size": 4
+          },
+          "ic_dfs_chans_available_for_cac": {
+            "offset": 21044,
+            "size": 4
+          },
+          "ic_get_init_cac_duration": {
+            "offset": 21048,
+            "size": 4
+          },
+          "ic_set_init_cac_duration": {
+            "offset": 21052,
+            "size": 4
+          },
+          "ic_start_icac_procedure": {
+            "offset": 21056,
+            "size": 4
+          },
+          "ic_stop_icac_procedure": {
+            "offset": 21060,
+            "size": 4
+          },
+          "ic_chan_compare_equality": {
+            "offset": 21064,
+            "size": 4
+          },
+          "ic_dfs_select_channel": {
+            "offset": 21068,
+            "size": 4
+          },
+          "ic_wmm_params_update": {
+            "offset": 21072,
+            "size": 4
+          },
+          "ic_power_table_update": {
+            "offset": 21076,
+            "size": 4
+          },
+          "ic_set_tdls_param": {
+            "offset": 21080,
+            "size": 4
+          },
+          "ic_get_tdls_param": {
+            "offset": 21084,
+            "size": 4
+          },
+          "ic_rxtx_phy_rate": {
+            "offset": 21088,
+            "size": 4
+          },
+          "ic_rssi": {
+            "offset": 21092,
+            "size": 4
+          },
+          "ic_smoothed_rssi": {
+            "offset": 21096,
+            "size": 4
+          },
+          "ic_snr": {
+            "offset": 21100,
+            "size": 4
+          },
+          "ic_hw_noise": {
+            "offset": 21104,
+            "size": 4
+          },
+          "ic_max_queue": {
+            "offset": 21108,
+            "size": 4
+          },
+          "ic_tx_failed": {
+            "offset": 21112,
+            "size": 4
+          },
+          "ic_mcs_to_phyrate": {
+            "offset": 21116,
+            "size": 4
+          },
+          "ic_chan_switch_record": {
+            "offset": 21120,
+            "size": 4
+          },
+          "ic_chan_switch_reason_record": {
+            "offset": 21124,
+            "size": 4
+          },
+          "ic_dfs_chan_switch_notify": {
+            "offset": 21128,
+            "size": 4
+          },
+          "ic_radar_test_mode_enabled": {
+            "offset": 21132,
+            "size": 4
+          },
+          "ic_node_count": {
+            "offset": 21136,
+            "size": 4
+          },
+          "ic_node_auth_state_change": {
+            "offset": 21140,
+            "size": 4
+          },
+          "ic_new_assoc": {
+            "offset": 21144,
+            "size": 4
+          },
+          "ic_power_save": {
+            "offset": 21148,
+            "size": 4
+          },
+          "ic_remain_on_channel": {
+            "offset": 21152,
+            "size": 4
+          },
+          "ic_mark_dfs_channels": {
+            "offset": 21156,
+            "size": 4
+          },
+          "ic_mark_weather_radar_chans": {
+            "offset": 21160,
+            "size": 4
+          },
+          "ic_use_rtscts": {
+            "offset": 21164,
+            "size": 4
+          },
+          "ic_send_notify_chan_width_action": {
+            "offset": 21168,
+            "size": 4
+          },
+          "ic_sta_set_xmit": {
+            "offset": 21172,
+            "size": 4
+          },
+          "ic_set_radar": {
+            "offset": 21176,
+            "size": 4
+          },
+          "ic_enable_sta_dfs": {
+            "offset": 21180,
+            "size": 4
+          },
+          "ic_radar_detections_num": {
+            "offset": 21184,
+            "size": 4
+          },
+          "ic_complete_cac": {
+            "offset": 21188,
+            "size": 4
+          },
+          "ic_config_channel_list": {
+            "offset": 21192,
+            "size": 4
+          },
+          "ic_set_11g_erp": {
+            "offset": 21196,
+            "size": 4
+          },
+          "ic_dfs_cce": {
+            "offset": 21200,
+            "size": 2
+          },
+          "ic_aci_cci_cce": {
+            "offset": 21202,
+            "size": 2
+          },
+          "ic_aid_bitmap": {
+            "offset": 21204,
+            "size": 16
+          },
+          "ic_vendor_fix": {
+            "offset": 21220,
+            "size": 4
+          },
+          "ic_ip_mac_mapping": {
+            "offset": 21224,
+            "size": 4
+          },
+          "ic_pm_enabled": {
+            "offset": 21228,
+            "size": 1
+          },
+          "pm_work": {
+            "offset": 21232,
+            "size": 44
+          },
+          "ic_pm_state": {
+            "offset": 21276,
+            "size": 88
+          },
+          "ic_pm_period_change": {
+            "offset": 21364,
+            "size": 20
+          },
+          "ic_bmps_tput_check": {
+            "offset": 21384,
+            "size": 32
+          },
+          "ic_scan_comp": {
+            "offset": 21416,
+            "size": 8
+          },
+          "ic_node_idx_ni": {
+            "offset": 21424,
+            "size": 512
+          },
+          "soc_addr": {
+            "offset": 21936,
+            "size": 6
+          },
+          "ic_soc_ipaddr": {
+            "offset": 21944,
+            "size": 4
+          },
+          "ic_tpc_query_info": {
+            "offset": 21948,
+            "size": 32
+          },
+          "ic_get_local_txpow": {
+            "offset": 21980,
+            "size": 4
+          },
+          "ic_get_local_link_margin": {
+            "offset": 21984,
+            "size": 4
+          },
+          "ic_measure_info": {
+            "offset": 21988,
+            "size": 40
+          },
+          "ic_get_shared_vap_stats": {
+            "offset": 22028,
+            "size": 4
+          },
+          "ic_reset_shared_vap_stats": {
+            "offset": 22032,
+            "size": 4
+          },
+          "ic_get_shared_node_stats": {
+            "offset": 22036,
+            "size": 4
+          },
+          "ic_reset_shared_node_stats": {
+            "offset": 22040,
+            "size": 4
+          },
+          "ic_get_dscp2ac_map": {
+            "offset": 22044,
+            "size": 4
+          },
+          "ic_set_dscp2ac_map": {
+            "offset": 22048,
+            "size": 4
+          },
+          "ic_set_dscp2tid_map": {
+            "offset": 22052,
+            "size": 4
+          },
+          "ic_get_dscp2tid_map": {
+            "offset": 22056,
+            "size": 4
+          },
+          "ic_ba_setup_detect": {
+            "offset": 22060,
+            "size": 20
+          },
+          "ic_get_cca_adjusting_status": {
+            "offset": 22080,
+            "size": 4
+          },
+          "ic_wowlan": {
+            "offset": 22084,
+            "size": 268
+          },
+          "ic_extender_role": {
+            "offset": 22352,
+            "size": 1
+          },
+          "ic_extender_mbs_wgt": {
+            "offset": 22353,
+            "size": 1
+          },
+          "ic_extender_rbs_wgt": {
+            "offset": 22354,
+            "size": 1
+          },
+          "ic_extender_mbs_best_rssi": {
+            "offset": 22355,
+            "size": 1
+          },
+          "ic_extender_rbs_best_rssi": {
+            "offset": 22356,
+            "size": 1
+          },
+          "ic_extender_verbose": {
+            "offset": 22357,
+            "size": 1
+          },
+          "ic_extender_mbs_rssi_margin": {
+            "offset": 22358,
+            "size": 1
+          },
+          "ic_extender_mbs_bssid": {
+            "offset": 22359,
+            "size": 6
+          },
+          "ic_extender_mbs_ocac": {
+            "offset": 22365,
+            "size": 1
+          },
+          "ic_extender_rbs_num": {
+            "offset": 22366,
+            "size": 1
+          },
+          "ic_extender_rbs_bssid": {
+            "offset": 22367,
+            "size": 48
+          },
+          "ic_extender_mbs_detected_jiffies": {
+            "offset": 22416,
+            "size": 4
+          },
+          "ic_extender_rssi_continue": {
+            "offset": 22420,
+            "size": 1
+          },
+          "ic_extender_scan_timer": {
+            "offset": 22424,
+            "size": 20
+          },
+          "ic_scan_opchan_enable": {
+            "offset": 22444,
+            "size": 4
+          },
+          "ic_extender_bgscanintvl": {
+            "offset": 22448,
+            "size": 4
+          },
+          "ic_extender_rbs_bw": {
+            "offset": 22452,
+            "size": 1
+          },
+          "ic_tqew_descr_limit": {
+            "offset": 22456,
+            "size": 4
+          },
+          "ic_scan_tbl_len_max": {
+            "offset": 22460,
+            "size": 4
+          },
+          "ic_scan_results_check": {
+            "offset": 22464,
+            "size": 4
+          },
+          "ic_scan_results_expire": {
+            "offset": 22468,
+            "size": 20
+          },
+          "hostap_wpa_state": {
+            "offset": 22488,
+            "size": 4
+          },
+          "ic_send_vht_grp_id_act": {
+            "offset": 22492,
+            "size": 4
+          },
+          "ic_obss_timer": {
+            "offset": 22496,
+            "size": 20
+          },
+          "ic_obss_vap": {
+            "offset": 22516,
+            "size": 4
+          },
+          "ic_obss_scan_enable": {
+            "offset": 22520,
+            "size": 1
+          },
+          "ic_obss_scan_count": {
+            "offset": 22521,
+            "size": 1
+          },
+          "ic_obss_ie": {
+            "offset": 22522,
+            "size": 16
+          },
+          "ic_coex_stats_update": {
+            "offset": 22540,
+            "size": 4
+          },
+          "ic_dm_factor": {
+            "offset": 22544,
+            "size": 24
+          },
+          "ic_vap_default_state": {
+            "offset": 22568,
+            "size": 4
+          },
+          "ic_neighbor_count": {
+            "offset": 22572,
+            "size": 4
+          },
+          "ic_neighbor_cnt_sparse": {
+            "offset": 22576,
+            "size": 1
+          },
+          "ic_neighbor_cnt_dense": {
+            "offset": 22577,
+            "size": 1
+          },
+          "ic_tx_airtime": {
+            "offset": 22580,
+            "size": 4
+          },
+          "ic_tx_accum_airtime": {
+            "offset": 22584,
+            "size": 4
+          },
+          "ic_tx_airtime_control": {
+            "offset": 22588,
+            "size": 4
+          },
+          "ic_rx_airtime": {
+            "offset": 22592,
+            "size": 4
+          },
+          "ic_rx_accum_airtime": {
+            "offset": 22596,
+            "size": 4
+          },
+          "ic_mu_group_update": {
+            "offset": 22600,
+            "size": 4
+          },
+          "ic_rx_bar_sync": {
+            "offset": 22604,
+            "size": 1
+          },
+          "sta_dfs_info": {
+            "offset": 22608,
+            "size": 36
+          },
+          "om_legacy_rate_saved_mode": {
+            "offset": 22644,
+            "size": 4
+          },
+          "om_legacy_rate_fixed": {
+            "offset": 22648,
+            "size": 4
+          },
+          "om_coc_move_ndfs": {
+            "offset": 22652,
+            "size": 4
+          },
+          "om_coc_last_switch": {
+            "offset": 22656,
+            "size": 4
+          },
+          "om_coc_pm_trigger": {
+            "offset": 22660,
+            "size": 4
+          },
+          "om_coc_queue_lock": {
+            "offset": 22664,
+            "size": 0
+          },
+          "om_coc_stopping": {
+            "offset": 22664,
+            "size": 1
+          },
+          "om_coc_completion_pending": {
+            "offset": 22665,
+            "size": 1
+          },
+          "om_coc_pm_pending": {
+            "offset": 22666,
+            "size": 1
+          },
+          "om_20_40_bss_coex": {
+            "offset": 22667,
+            "size": 1
+          },
+          "om_coc_completed_level": {
+            "offset": 22668,
+            "size": 4
+          },
+          "om_bss_tm_flags": {
+            "offset": 22672,
+            "size": 4
+          },
+          "om_neighbor_report_flags": {
+            "offset": 22676,
+            "size": 4
+          }
+        },
+        "ieee80211vap": {
+          "iv_dev": {
+            "offset": 0,
+            "size": 4
+          },
+          "iv_devstats": {
+            "offset": 4,
+            "size": 112
+          },
+          "iv_media": {
+            "offset": 116,
+            "size": 24
+          },
+          "iv_iwstats": {
+            "offset": 140,
+            "size": 32
+          },
+          "iv_sysctl_header": {
+            "offset": 172,
+            "size": 4
+          },
+          "iv_sysctls": {
+            "offset": 176,
+            "size": 4
+          },
+          "iv_proc": {
+            "offset": 180,
+            "size": 4
+          },
+          "iv_proc_entries": {
+            "offset": 184,
+            "size": 4
+          },
+          "iv_vlgrp": {
+            "offset": 188,
+            "size": 4
+          },
+          "iv_2_4ghz_prof": {
+            "offset": 192,
+            "size": 24
+          },
+          "iv_5ghz_prof": {
+            "offset": 216,
+            "size": 24
+          },
+          "iv_pref_band": {
+            "offset": 240,
+            "size": 4
+          },
+          "iv_next": {
+            "offset": 244,
+            "size": 8
+          },
+          "iv_unit": {
+            "offset": 252,
+            "size": 4
+          },
+          "iv_ic": {
+            "offset": 256,
+            "size": 4
+          },
+          "iv_debug": {
+            "offset": 260,
+            "size": 4
+          },
+          "iv_rx_amsdu_enable": {
+            "offset": 264,
+            "size": 4
+          },
+          "iv_rx_amsdu_threshold_cca": {
+            "offset": 268,
+            "size": 4
+          },
+          "iv_rx_amsdu_threshold_pmbl": {
+            "offset": 272,
+            "size": 4
+          },
+          "iv_rx_amsdu_pmbl_wf_lp": {
+            "offset": 276,
+            "size": 4
+          },
+          "iv_rx_amsdu_pmbl_wf_sp": {
+            "offset": 280,
+            "size": 4
+          },
+          "iv_stats": {
+            "offset": 284,
+            "size": 372
+          },
+          "tdls_discovery_interval": {
+            "offset": 656,
+            "size": 4
+          },
+          "tdls_node_life_cycle": {
+            "offset": 660,
+            "size": 4
+          },
+          "tdls_uapsd_indicat_wnd": {
+            "offset": 664,
+            "size": 1
+          },
+          "tdls_path_sel_weight": {
+            "offset": 665,
+            "size": 1
+          },
+          "tdls_rate_detect_timer": {
+            "offset": 668,
+            "size": 20
+          },
+          "tdls_rate_detect_work": {
+            "offset": 688,
+            "size": 44
+          },
+          "tdls_link_switch_work": {
+            "offset": 732,
+            "size": 44
+          },
+          "tdls_node_expire_timer": {
+            "offset": 776,
+            "size": 20
+          },
+          "tdls_ps_hash": {
+            "offset": 796,
+            "size": 128
+          },
+          "tdls_ps_lock": {
+            "offset": 924,
+            "size": 0
+          },
+          "tdls_path_sel_prohibited": {
+            "offset": 924,
+            "size": 1
+          },
+          "tdls_over_qhop_en": {
+            "offset": 928,
+            "size": 4
+          },
+          "tdls_timeout_time": {
+            "offset": 932,
+            "size": 4
+          },
+          "tdls_training_pkt_cnt": {
+            "offset": 936,
+            "size": 4
+          },
+          "tdls_path_sel_pps_thrshld": {
+            "offset": 940,
+            "size": 4
+          },
+          "tdls_path_sel_rate_thrshld": {
+            "offset": 944,
+            "size": 4
+          },
+          "tdls_verbose": {
+            "offset": 948,
+            "size": 4
+          },
+          "tdls_min_valid_rssi": {
+            "offset": 952,
+            "size": 4
+          },
+          "tdls_switch_ints": {
+            "offset": 956,
+            "size": 4
+          },
+          "tdls_phy_rate_wgt": {
+            "offset": 960,
+            "size": 4
+          },
+          "tdls_disassoc_timer": {
+            "offset": 964,
+            "size": 20
+          },
+          "tdls_pending_state": {
+            "offset": 984,
+            "size": 4
+          },
+          "tdls_fixed_off_chan": {
+            "offset": 988,
+            "size": 1
+          },
+          "tdls_fixed_off_chan_bw": {
+            "offset": 989,
+            "size": 1
+          },
+          "tdls_pending_arg": {
+            "offset": 992,
+            "size": 4
+          },
+          "tdls_target_chan": {
+            "offset": 996,
+            "size": 1
+          },
+          "tdls_off_chan_bw": {
+            "offset": 997,
+            "size": 1
+          },
+          "tdls_cs_time": {
+            "offset": 1000,
+            "size": 4
+          },
+          "tdls_cs_timeout": {
+            "offset": 1004,
+            "size": 4
+          },
+          "tdls_cs_duration": {
+            "offset": 1008,
+            "size": 4
+          },
+          "tdls_chan_switching": {
+            "offset": 1012,
+            "size": 1
+          },
+          "tdls_cs_disassoc_pending": {
+            "offset": 1013,
+            "size": 1
+          },
+          "tdls_cs_node": {
+            "offset": 1016,
+            "size": 4
+          },
+          "iv_monitor_nods_only": {
+            "offset": 1020,
+            "size": 4
+          },
+          "iv_monitor_txf_len": {
+            "offset": 1024,
+            "size": 4
+          },
+          "iv_monitor_phy_errors": {
+            "offset": 1028,
+            "size": 4
+          },
+          "iv_monitor_crc_errors": {
+            "offset": 1032,
+            "size": 4
+          },
+          "iv_newstate": {
+            "offset": 1036,
+            "size": 4
+          },
+          "iv_myaddr": {
+            "offset": 1040,
+            "size": 6
+          },
+          "iv_ds_pc_addr": {
+            "offset": 1046,
+            "size": 6
+          },
+          "iv_flags": {
+            "offset": 1052,
+            "size": 4
+          },
+          "iv_flags_ext": {
+            "offset": 1056,
+            "size": 4
+          },
+          "iv_caps": {
+            "offset": 1060,
+            "size": 4
+          },
+          "iv_ath_cap": {
+            "offset": 1064,
+            "size": 1
+          },
+          "iv_opmode": {
+            "offset": 1068,
+            "size": 4
+          },
+          "iv_state": {
+            "offset": 1072,
+            "size": 4
+          },
+          "iv_mgtsend": {
+            "offset": 1076,
+            "size": 20
+          },
+          "iv_mgmt_retry_ni": {
+            "offset": 1096,
+            "size": 4
+          },
+          "iv_mgmt_retry_type": {
+            "offset": 1100,
+            "size": 4
+          },
+          "iv_mgmt_retry_arg": {
+            "offset": 1104,
+            "size": 4
+          },
+          "iv_mgmt_retry_cnt": {
+            "offset": 1108,
+            "size": 4
+          },
+          "iv_inact_init": {
+            "offset": 1112,
+            "size": 4
+          },
+          "iv_inact_auth": {
+            "offset": 1116,
+            "size": 4
+          },
+          "iv_inact_run": {
+            "offset": 1120,
+            "size": 4
+          },
+          "iv_inact_probe": {
+            "offset": 1124,
+            "size": 4
+          },
+          "iv_des_nssid": {
+            "offset": 1128,
+            "size": 4
+          },
+          "iv_des_ssid": {
+            "offset": 1132,
+            "size": 36
+          },
+          "iv_des_bssid": {
+            "offset": 1168,
+            "size": 6
+          },
+          "iv_nicknamelen": {
+            "offset": 1176,
+            "size": 4
+          },
+          "iv_nickname": {
+            "offset": 1180,
+            "size": 32
+          },
+          "iv_bgscanidle": {
+            "offset": 1212,
+            "size": 4
+          },
+          "iv_bgscanintvl": {
+            "offset": 1216,
+            "size": 4
+          },
+          "iv_scanvalid": {
+            "offset": 1220,
+            "size": 4
+          },
+          "iv_roam": {
+            "offset": 1224,
+            "size": 8
+          },
+          "iv_max_aid": {
+            "offset": 1232,
+            "size": 2
+          },
+          "iv_sta_assoc": {
+            "offset": 1234,
+            "size": 2
+          },
+          "iv_non_qtn_sta_assoc": {
+            "offset": 1236,
+            "size": 2
+          },
+          "iv_sta_assoc_limit": {
+            "offset": 1238,
+            "size": 2
+          },
+          "iv_ps_sta": {
+            "offset": 1240,
+            "size": 2
+          },
+          "iv_ps_pending": {
+            "offset": 1242,
+            "size": 2
+          },
+          "iv_ap_buffered": {
+            "offset": 1244,
+            "size": 2
+          },
+          "iv_tim_bitmap": {
+            "offset": 1248,
+            "size": 4
+          },
+          "iv_tim_len": {
+            "offset": 1252,
+            "size": 2
+          },
+          "iv_dtim_period": {
+            "offset": 1254,
+            "size": 1
+          },
+          "iv_dtim_count": {
+            "offset": 1255,
+            "size": 1
+          },
+          "iv_set_tim": {
+            "offset": 1256,
+            "size": 4
+          },
+          "iv_uapsdinfo": {
+            "offset": 1260,
+            "size": 1
+          },
+          "iv_bss": {
+            "offset": 1264,
+            "size": 4
+          },
+          "iv_fixed_rate": {
+            "offset": 1268,
+            "size": 4
+          },
+          "iv_rtsthreshold": {
+            "offset": 1272,
+            "size": 4
+          },
+          "iv_fragthreshold": {
+            "offset": 1276,
+            "size": 2
+          },
+          "iv_txmin": {
+            "offset": 1278,
+            "size": 2
+          },
+          "iv_txmax": {
+            "offset": 1280,
+            "size": 2
+          },
+          "iv_txlifetime": {
+            "offset": 1282,
+            "size": 2
+          },
+          "iv_inact_timer": {
+            "offset": 1284,
+            "size": 4
+          },
+          "iv_opt_ie": {
+            "offset": 1288,
+            "size": 4
+          },
+          "iv_opt_ie_len": {
+            "offset": 1292,
+            "size": 2
+          },
+          "iv_def_txkey": {
+            "offset": 1294,
+            "size": 1
+          },
+          "iv_nw_keys": {
+            "offset": 1296,
+            "size": 768
+          },
+          "iv_key_alloc": {
+            "offset": 2064,
+            "size": 4
+          },
+          "iv_key_delete": {
+            "offset": 2068,
+            "size": 4
+          },
+          "iv_key_set": {
+            "offset": 2072,
+            "size": 4
+          },
+          "iv_key_update_begin": {
+            "offset": 2076,
+            "size": 4
+          },
+          "iv_key_update_end": {
+            "offset": 2080,
+            "size": 4
+          },
+          "iv_auth": {
+            "offset": 2084,
+            "size": 4
+          },
+          "iv_ec": {
+            "offset": 2088,
+            "size": 4
+          },
+          "iv_xrvap": {
+            "offset": 2092,
+            "size": 4
+          },
+          "iv_xrbcnwait": {
+            "offset": 2096,
+            "size": 2
+          },
+          "iv_xrvapstart": {
+            "offset": 2100,
+            "size": 20
+          },
+          "iv_chanchange_count": {
+            "offset": 2120,
+            "size": 1
+          },
+          "iv_mcast_rate": {
+            "offset": 2124,
+            "size": 4
+          },
+          "iv_acl": {
+            "offset": 2128,
+            "size": 4
+          },
+          "iv_as": {
+            "offset": 2132,
+            "size": 4
+          },
+          "param": {
+            "offset": 2136,
+            "size": 4
+          },
+          "iv_swbmiss": {
+            "offset": 2140,
+            "size": 20
+          },
+          "iv_swbmiss_period": {
+            "offset": 2160,
+            "size": 2
+          },
+          "iv_swberp": {
+            "offset": 2164,
+            "size": 20
+          },
+          "iv_swberp_period": {
+            "offset": 2184,
+            "size": 2
+          },
+          "iv_swbmiss_warnings": {
+            "offset": 2186,
+            "size": 2
+          },
+          "iv_bcn_miss_thr": {
+            "offset": 2188,
+            "size": 4
+          },
+          "iv_link_loss_enabled": {
+            "offset": 2192,
+            "size": 1
+          },
+          "iv_swbmiss_bmps_warning": {
+            "offset": 2193,
+            "size": 1
+          },
+          "iv_bmps_tput_high": {
+            "offset": 2194,
+            "size": 1
+          },
+          "iv_qtn_ap_cap": {
+            "offset": 2195,
+            "size": 1
+          },
+          "iv_qtn_flags": {
+            "offset": 2196,
+            "size": 1
+          },
+          "iv_is_qtn_dev": {
+            "offset": 2197,
+            "size": 1
+          },
+          "iv_qtn_options": {
+            "offset": 2198,
+            "size": 1
+          },
+          "iv_nsparams": {
+            "offset": 2200,
+            "size": 12
+          },
+          "iv_stajoin1tq": {
+            "offset": 2212,
+            "size": 24
+          },
+          "iv_vapnode_idx": {
+            "offset": 2236,
+            "size": 2
+          },
+          "iv_ssid_group": {
+            "offset": 2238,
+            "size": 1
+          },
+          "iv_sta_fast_rejoin": {
+            "offset": 2240,
+            "size": 20
+          },
+          "iv_sta_fast_rejoin_bssid": {
+            "offset": 2260,
+            "size": 6
+          },
+          "wds_mac": {
+            "offset": 2266,
+            "size": 6
+          },
+          "iv_wds_peer_key": {
+            "offset": 2272,
+            "size": 192
+          },
+          "iv_extdr_flags": {
+            "offset": 2464,
+            "size": 2
+          },
+          "iv_spy": {
+            "offset": 2468,
+            "size": 84
+          },
+          "iv_nsdone": {
+            "offset": 2552,
+            "size": 4
+          },
+          "app_ie": {
+            "offset": 2556,
+            "size": 48
+          },
+          "app_filter": {
+            "offset": 2604,
+            "size": 4
+          },
+          "iv_htmode": {
+            "offset": 2608,
+            "size": 4
+          },
+          "iv_mcs_config": {
+            "offset": 2612,
+            "size": 4
+          },
+          "iv_ht_flags": {
+            "offset": 2616,
+            "size": 4
+          },
+          "iv_vht_flags": {
+            "offset": 2620,
+            "size": 4
+          },
+          "iv_dsss_40MHz_ok": {
+            "offset": 2624,
+            "size": 1
+          },
+          "iv_non_gf_sta_present": {
+            "offset": 2625,
+            "size": 1
+          },
+          "iv_ht_anomaly_40MHz_present": {
+            "offset": 2626,
+            "size": 1
+          },
+          "iv_ht_mixedmode_present": {
+            "offset": 2627,
+            "size": 1
+          },
+          "iv_dual_cts_required": {
+            "offset": 2628,
+            "size": 1
+          },
+          "iv_lsig_txop_ok": {
+            "offset": 2629,
+            "size": 1
+          },
+          "iv_stbc_beacon": {
+            "offset": 2630,
+            "size": 1
+          },
+          "iv_smps_force": {
+            "offset": 2632,
+            "size": 2
+          },
+          "iv_implicit_ba": {
+            "offset": 2634,
+            "size": 1
+          },
+          "iv_ba_control": {
+            "offset": 2636,
+            "size": 2
+          },
+          "iv_ba_old_control": {
+            "offset": 2638,
+            "size": 2
+          },
+          "iv_blacklist_timeout": {
+            "offset": 2640,
+            "size": 4
+          },
+          "iv_max_ba_win_size": {
+            "offset": 2644,
+            "size": 2
+          },
+          "iv_rate_training_count": {
+            "offset": 2648,
+            "size": 4
+          },
+          "iv_rate_training_burst_count": {
+            "offset": 2652,
+            "size": 4
+          },
+          "iv_mc_legacy_rate": {
+            "offset": 2656,
+            "size": 1
+          },
+          "iv_forward_unknown_mc": {
+            "offset": 2657,
+            "size": 1
+          },
+          "iv_mc_to_uc": {
+            "offset": 2658,
+            "size": 1
+          },
+          "iv_reliable_bcst": {
+            "offset": 2659,
+            "size": 1
+          },
+          "iv_ap_fwd_lncb": {
+            "offset": 2660,
+            "size": 1
+          },
+          "iv_ppqueue": {
+            "offset": 2664,
+            "size": 28
+          },
+          "qtn_pairing_ie": {
+            "offset": 2692,
+            "size": 8
+          },
+          "iv_disconn_cnt": {
+            "offset": 2700,
+            "size": 4
+          },
+          "iv_disconn_seq": {
+            "offset": 2704,
+            "size": 4
+          },
+          "iv_test_traffic": {
+            "offset": 2708,
+            "size": 20
+          },
+          "iv_test_traffic_period": {
+            "offset": 2728,
+            "size": 4
+          },
+          "iv_11ac_enabled": {
+            "offset": 2732,
+            "size": 4
+          },
+          "iv_pri": {
+            "offset": 2736,
+            "size": 1
+          },
+          "iv_pmf": {
+            "offset": 2737,
+            "size": 1
+          },
+          "iv_local_max_txpow": {
+            "offset": 2738,
+            "size": 1
+          },
+          "iv_disassoc_reason": {
+            "offset": 2740,
+            "size": 2
+          },
+          "iv_wme": {
+            "offset": 2744,
+            "size": 160
+          },
+          "iv_extender_wds_lock": {
+            "offset": 2904,
+            "size": 0
+          },
+          "iv_extender_wds_hash": {
+            "offset": 2904,
+            "size": 128
+          },
+          "iv_tx_amsdu": {
+            "offset": 3032,
+            "size": 1
+          },
+          "iv_tx_max_amsdu": {
+            "offset": 3033,
+            "size": 1
+          },
+          "interworking": {
+            "offset": 3034,
+            "size": 1
+          },
+          "interw_info": {
+            "offset": 3035,
+            "size": 7
+          },
+          "hs20_enable": {
+            "offset": 3042,
+            "size": 1
+          },
+          "disable_dgaf": {
+            "offset": 3043,
+            "size": 1
+          },
+          "proxy_arp": {
+            "offset": 3044,
+            "size": 1
+          },
+          "iv_coex": {
+            "offset": 3045,
+            "size": 1
+          },
+          "allow_tkip_for_vht": {
+            "offset": 3046,
+            "size": 1
+          },
+          "is_block_all_assoc": {
+            "offset": 3047,
+            "size": 1
+          },
+          "tx_ba_disable": {
+            "offset": 3048,
+            "size": 1
+          },
+          "rx_ba_decline": {
+            "offset": 3049,
+            "size": 1
+          },
+          "iv_vap_state": {
+            "offset": 3050,
+            "size": 1
+          },
+          "iv_osen": {
+            "offset": 3051,
+            "size": 1
+          },
+          "sample_sta_count": {
+            "offset": 3052,
+            "size": 1
+          },
+          "sample_sta_lock": {
+            "offset": 3053,
+            "size": 0
+          },
+          "sample_sta_list": {
+            "offset": 3056,
+            "size": 8
+          },
+          "bcast_pps": {
+            "offset": 3064,
+            "size": 16
+          },
+          "iv_11ac_and_11n_flag": {
+            "offset": 3080,
+            "size": 1
+          },
+          "iv_tx_amsdu_11n": {
+            "offset": 3081,
+            "size": 1
+          }
+        },
+        "qdrv_wlan": {
+          "ic": {
+            "offset": 0,
+            "size": 22680
+          },
+          "unit": {
+            "offset": 22680,
+            "size": 4
+          },
+          "scan_task": {
+            "offset": 22684,
+            "size": 16
+          },
+          "beacon_txn": {
+            "offset": 22700,
+            "size": 480
+          },
+          "flags_ext": {
+            "offset": 23180,
+            "size": 4
+          },
+          "flags": {
+            "offset": 23184,
+            "size": 2
+          },
+          "rf_chipid": {
+            "offset": 23186,
+            "size": 1
+          },
+          "rf_chip_verid": {
+            "offset": 23187,
+            "size": 1
+          },
+          "mac": {
+            "offset": 23188,
+            "size": 4
+          },
+          "lock": {
+            "offset": 23192,
+            "size": 0
+          },
+          "semmap": {
+            "offset": 23192,
+            "size": 130
+          },
+          "txdoneirq": {
+            "offset": 23322,
+            "size": 1
+          },
+          "rxirq": {
+            "offset": 23324,
+            "size": 4
+          },
+          "scanirq": {
+            "offset": 23328,
+            "size": 4
+          },
+          "scan_if": {
+            "offset": 23332,
+            "size": 20
+          },
+          "scan_fifo": {
+            "offset": 23352,
+            "size": 4
+          },
+          "tx_if": {
+            "offset": 23356,
+            "size": 84
+          },
+          "rx_if": {
+            "offset": 23440,
+            "size": 32
+          },
+          "host_sem": {
+            "offset": 23472,
+            "size": 4
+          },
+          "qw_rates": {
+            "offset": 23476,
+            "size": 90
+          },
+          "qw_currt": {
+            "offset": 23568,
+            "size": 4
+          },
+          "qw_curmode": {
+            "offset": 23572,
+            "size": 4
+          },
+          "tx_stats": {
+            "offset": 23576,
+            "size": 216
+          },
+          "rx_stats": {
+            "offset": 23792,
+            "size": 276
+          },
+          "csw_stats": {
+            "offset": 24068,
+            "size": 20
+          },
+          "pktlogger": {
+            "offset": 24088,
+            "size": 3000
+          },
+          "sm_stats": {
+            "offset": 27088,
+            "size": 48
+          },
+          "cgq_stats": {
+            "offset": 27136,
+            "size": 48
+          },
+          "txbf_state": {
+            "offset": 27184,
+            "size": 4
+          },
+          "flowlock": {
+            "offset": 27188,
+            "size": 0
+          },
+          "br_dev": {
+            "offset": 27188,
+            "size": 4
+          },
+          "unknown_dp_count": {
+            "offset": 27192,
+            "size": 4
+          },
+          "unknown_dp_jiffies": {
+            "offset": 27196,
+            "size": 4
+          },
+          "bridge_table": {
+            "offset": 27200,
+            "size": 3088
+          },
+          "mcs_cap": {
+            "offset": 30288,
+            "size": 4
+          },
+          "mcs_odd_even": {
+            "offset": 30292,
+            "size": 4
+          },
+          "tx_restrict": {
+            "offset": 30296,
+            "size": 4
+          },
+          "tx_restrict_rts": {
+            "offset": 30300,
+            "size": 4
+          },
+          "tx_restrict_limit": {
+            "offset": 30304,
+            "size": 4
+          },
+          "tx_restrict_rate": {
+            "offset": 30308,
+            "size": 4
+          },
+          "tx_swretry_agg_max": {
+            "offset": 30312,
+            "size": 1
+          },
+          "tx_swretry_noagg_max": {
+            "offset": 30313,
+            "size": 1
+          },
+          "tx_swretry_suspend_xmit": {
+            "offset": 30314,
+            "size": 1
+          },
+          "hr_timer": {
+            "offset": 30316,
+            "size": 20
+          },
+          "cca_timer": {
+            "offset": 30336,
+            "size": 20
+          },
+          "igmp_query_timer": {
+            "offset": 30356,
+            "size": 20
+          },
+          "cca_wq": {
+            "offset": 30376,
+            "size": 16
+          },
+          "meas_wq": {
+            "offset": 30392,
+            "size": 16
+          },
+          "cca_lock": {
+            "offset": 30408,
+            "size": 0
+          },
+          "scan_wq": {
+            "offset": 30408,
+            "size": 16
+          },
+          "scan_lock": {
+            "offset": 30424,
+            "size": 0
+          },
+          "csa_callback": {
+            "offset": 30424,
+            "size": 4
+          },
+          "csa_wq": {
+            "offset": 30428,
+            "size": 16
+          },
+          "csa_lock": {
+            "offset": 30444,
+            "size": 0
+          },
+          "channel_work_wq": {
+            "offset": 30444,
+            "size": 16
+          },
+          "radar_detect_callback": {
+            "offset": 30460,
+            "size": 4
+          },
+          "arp_last_sent": {
+            "offset": 30464,
+            "size": 4
+          },
+          "remain_chan_wq": {
+            "offset": 30468,
+            "size": 16
+          },
+          "shared_pernode_stats_pool": {
+            "offset": 30484,
+            "size": 4
+          },
+          "shared_pernode_stats_phys": {
+            "offset": 30488,
+            "size": 4
+          },
+          "shared_pernode_stats_head": {
+            "offset": 30492,
+            "size": 8
+          },
+          "pm_notifier": {
+            "offset": 30500,
+            "size": 12
+          },
+          "tx_sch_shared_data": {
+            "offset": 30512,
+            "size": 4
+          },
+          "queue_enabled": {
+            "offset": 30516,
+            "size": 1
+          },
+          "br_isolate": {
+            "offset": 30518,
+            "size": 2
+          },
+          "br_isolate_vid": {
+            "offset": 30520,
+            "size": 2
+          },
+          "restrict_wlan_ip": {
+            "offset": 30522,
+            "size": 1
+          },
+          "se95_temp_sensor": {
+            "offset": 30524,
+            "size": 4
+          },
+          "tx_power_cal_data": {
+            "offset": 30528,
+            "size": 56
+          },
+          "sp": {
+            "offset": 30584,
+            "size": 4
+          },
+          "om_bbdf_war_enabled": {
+            "offset": 30588,
+            "size": 1
+          },
+          "om_duplicate_rts_value": {
+            "offset": 30589,
+            "size": 1
+          }
+        }
+      },
+      "sizes": {
+        "ieee80211com": 22680,
+        "ieee80211vap": 3084,
+        "qdrv_wlan": 30592,
+        "qdrv_vap": 3544,
+        "host_ioctl": 32,
+        "qtn_setparams_args": 76,
+        "qtn_beacon_args": 64,
+        "beacon_shared_ie_t": 20
+      },
+      "extensions": {
+        "weather478": {
+          "offset": 22605,
+          "size": 1
+        }
+      },
+      "object_sha256": "67d50e34791e430213bc61e9ae08b2e60f559404a063a4b910bef717cd8418c2"
+    }
+  ],
+  "host_delta": 0,
+  "old_members_checked": {
+    "ieee80211com": 387,
+    "ieee80211vap": 210,
+    "qdrv_wlan": 72
+  },
+  "conditional_omissions": {
+    "old": [
+      [
+        "ieee80211com",
+        "ic_vsp_strm_state_set"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_change_stamode"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_configure"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_cb_strm_ctrl"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_cb_cfg"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_cb_strm_ext_throttler"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_cb_logger"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_reset"
+      ],
+      [
+        "ieee80211com",
+        "set"
+      ],
+      [
+        "ieee80211com",
+        "value"
+      ],
+      [
+        "ieee80211com",
+        "vsp_cfg"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_ba_throt_num"
+      ],
+      [
+        "ieee80211com",
+        "ic_pm_intervals"
+      ],
+      [
+        "qdrv_wlan",
+        "qvsp"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_stats"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_tasklet"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_ba_throt"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_enabling"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_check_intvl"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_sync_sched_remain"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_sync_work"
+      ],
+      [
+        "qdrv_wlan",
+        "genpcap_args"
+      ]
+    ],
+    "new": [
+      [
+        "ieee80211com",
+        "ic_vsp_strm_state_set"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_change_stamode"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_configure"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_cb_strm_ctrl"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_cb_cfg"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_cb_strm_ext_throttler"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_cb_logger"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_reset"
+      ],
+      [
+        "ieee80211com",
+        "set"
+      ],
+      [
+        "ieee80211com",
+        "value"
+      ],
+      [
+        "ieee80211com",
+        "vsp_cfg"
+      ],
+      [
+        "ieee80211com",
+        "ic_vsp_ba_throt_num"
+      ],
+      [
+        "ieee80211com",
+        "ic_pm_intervals"
+      ],
+      [
+        "qdrv_wlan",
+        "qvsp"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_stats"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_tasklet"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_ba_throt"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_enabling"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_check_intvl"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_sync_sched_remain"
+      ],
+      [
+        "qdrv_wlan",
+        "vsp_sync_work"
+      ],
+      [
+        "qdrv_wlan",
+        "genpcap_args"
+      ]
+    ]
+  },
+  "limits": "Parsed nonbitfield host members witnessed; whole source/header control rebuild required. Old QDRV layouts must never mix; no RF or physical acceptance."
+}

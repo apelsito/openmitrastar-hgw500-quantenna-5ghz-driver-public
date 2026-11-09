@@ -1,0 +1,7 @@
+{
+  "status": "PASS_HTTPS_CLIENT_COMMENT_VIEWER",
+  "hardware_accessed": false,
+  "http_listener_created": false,
+  "browser": "{\"client_decompression\":true,\"paginated\":true,\"search_results_visible\":40,\"errors\":[]}\n",
+  "error": ""
+}

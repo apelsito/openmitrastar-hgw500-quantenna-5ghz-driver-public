@@ -1,0 +1,11 @@
+{
+  "status": "CONFIG_TEMPLATE_PRIVATE_PATH_INITRAMFS_DTB_KEY_OPTIONS_REMOVED",
+  "hardware_accessed": false,
+  "input_sha256": "9de91b2b0006598196b2f3dc1ef88ad1c52d922454d1763e2452a66d0dbe2cb0",
+  "output_sha256": "c679005d6445715b5fcfad2f1f9480b6e89f03ae8671354ee4e99bb3886ed285",
+  "changed": [
+    "CONFIG_BUILTIN_DTB_NAME empty",
+    "CONFIG_GENERIC_BUILTIN_DTB disabled"
+  ],
+  "build": "UNRUN"
+}

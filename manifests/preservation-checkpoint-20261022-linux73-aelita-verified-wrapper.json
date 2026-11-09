@@ -1,0 +1,63 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "tools/linux73_build_aelita_verified.py",
+      "source": "repos/openmitrastar-hgw500-quantenna-5ghz-driver/tools/linux73_build_aelita_verified.py",
+      "bytes": 2547,
+      "sha256": "4ea2938109d120158e7597487c95415ea8431a8ccc648a55c192adbe8b43b133",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/actual-valid.stderr",
+      "source": "outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/actual-valid.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/actual-valid.stdout",
+      "source": "outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/actual-valid.stdout",
+      "bytes": 8848,
+      "sha256": "a6f01bad558ea5b14993866ae8ed414ded4bb766ad616b4f33b1df782a90396c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/result.json",
+      "source": "outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/result.json",
+      "bytes": 1009,
+      "sha256": "d3fc3376b9062299817cb64f67686926a509740ec1bd241334fd135eb682677c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/wrong-reference-hash.stderr",
+      "source": "outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/wrong-reference-hash.stderr",
+      "bytes": 122,
+      "sha256": "ba7b3667d0301eaea8403223adad2bb0f0cf2d11a1f446de4410e358de1f1785",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/wrong-reference-hash.stdout",
+      "source": "outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/wrong-reference-hash.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/wrong-source-manifest-hash.stderr",
+      "source": "outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/wrong-source-manifest-hash.stderr",
+      "bytes": 129,
+      "sha256": "9c9a2d0ed871f0809f529b5be7b0a860543a3d4e69e237fb7b72b0db5c322a7d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/wrong-source-manifest-hash.stdout",
+      "source": "outputs/rea/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/wrong-source-manifest-hash.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

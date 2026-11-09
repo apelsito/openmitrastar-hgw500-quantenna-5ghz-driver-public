@@ -1,0 +1,28 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-r23-actual-abi-witness-20261023T054500Z-r1/result.json",
+      "source": "outputs/rea/linux73-r23-actual-abi-witness-20261023T054500Z-r1/result.json",
+      "bytes": 825,
+      "sha256": "53cc1875f6bf435418a4fe6431c20f5044a07a26ad0d8a24552a2c528e31957c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-actual-abi-witness-20261023T054500Z-r1/abi_probe.c",
+      "source": "outputs/rea/linux73-r23-actual-abi-witness-20261023T054500Z-r1/abi_probe.c",
+      "bytes": 1332,
+      "sha256": "abaa1c1507a4551cc1809997b0909d0657af187f474020ac8aa78e42076bed83",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r23-actual-abi-witness-20261023T054500Z-r1/build.log",
+      "source": "outputs/rea/linux73-r23-actual-abi-witness-20261023T054500Z-r1/build.log",
+      "bytes": 1773,
+      "sha256": "f9f7b49d8e707ae157f4ccae21b04b95c4d004101f371ec35b0d91827255523a",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

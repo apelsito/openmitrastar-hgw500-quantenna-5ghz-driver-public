@@ -1,0 +1,74 @@
+--- a/headers/net80211/ieee80211_var.h
++++ b/headers/net80211/ieee80211_var.h
+@@ -1246,7 +1246,7 @@
+ 	 * 1 - enabled for QTN devices only
+ 	 * 2 - enabled for all devices
+ 	 */
+-	uint8_t ic_rx_bar_sync;
++	uint8_t ic_rx_bar_sync; u8 om_weather_cac_enabled; /* OEM478: former padding. */
+ 	struct sta_dfs_info sta_dfs_info;
+ 	/* RecoveredOEM490per-radio state; existingmemberprefix remains intact. */
+ 	int om_legacy_rate_saved_mode;
+--- a/source/qdrv/qdrv_wlan.c
++++ b/source/qdrv/qdrv_wlan.c
+@@ -7993,6 +7993,7 @@
+ 	ic->ic_chan_switch_reason_record = qdrv_channel_switch_reason_record;
+ 	ic->ic_dfs_chan_switch_notify = dfs_reentry_chan_switch_notify;
+ 	ic->ic_set_11g_erp = qdrv_wlan_set_11g_erp;
++	ic->om_weather_cac_enabled = 0;
+ 	ic->om_20_40_bss_coex = 1;
+ 	ic->ic_obss_scan_enable = 1;
+ 	ic->ic_obss_scan_count = 0;
+--- a/source/wlan/ieee80211_scan_ap.c
++++ b/source/wlan/ieee80211_scan_ap.c
+@@ -813,7 +813,8 @@
+ 			continue;
+ 		}
+ 
+-		if (ieee80211_is_on_weather_channel(ic, ic_best_chan)) {
++		if (!READ_ONCE(ic->om_weather_cac_enabled) &&
++		    ieee80211_is_on_weather_channel(ic, ic_best_chan)) {
+ 			/*
+ 			 * Don't pick weather channel in auto channel mode since it need
+ 			 * too long CAC time, and it also fix the backward compatibility
+--- a/source/wlan/ieee80211_wireless.c
++++ b/source/wlan/ieee80211_wireless.c
+@@ -130,6 +130,7 @@
+ #define OM_OEM_PARAM_TX_AMSDU_11N 484
+ #define OM_OEM_PARAM_NAC_MODE 457
+ #define OM_OEM_PARAM_20_40_BSS_COEX 449
++#define OM_OEM_PARAM_WEATHER_CAC_ENABLE 478
+ #define OM_OEM_PARAM_BW_AUTOSEL 461
+ #define OM_OEM_PARAM_COC_MOVE_NDFS 491
+ #define OM_OEM_PARAM_FIX_LEGACY_RATE 490
+@@ -11429,6 +11430,10 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_WEATHER_CAC_ENABLE:
++		WRITE_ONCE(ic->om_weather_cac_enabled,!!value);
++		return 0;
++
+ 	case OM_OEM_PARAM_BW_AUTOSEL:
+ 		return om_chanset_kernel_policy(ic,&value,1);
+ 
+@@ -14085,6 +14090,10 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_WEATHER_CAC_ENABLE:
++		param[0]=READ_ONCE(ic->om_weather_cac_enabled);
++		return 0;
++
+ 	case OM_OEM_PARAM_BW_AUTOSEL:
+ 		return om_chanset_kernel_policy(ic,&param[0],0);
+ 
+@@ -21128,6 +21137,8 @@
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1,0,"20_40_bss_coex" },
+ 	{OM_OEM_PARAM_BW_AUTOSEL,IW_PRIV_TYPE_INT|IW_PRIV_SIZE_FIXED|1,0,"set_bw_autosel"},
+ 	{OM_OEM_PARAM_BW_AUTOSEL,0,IW_PRIV_TYPE_INT|IW_PRIV_SIZE_FIXED|1,"get_bw_autosel"},
++	{OM_OEM_PARAM_WEATHER_CAC_ENABLE,IW_PRIV_TYPE_INT|IW_PRIV_SIZE_FIXED|1,0,"wea_cac_en"},
++	{OM_OEM_PARAM_WEATHER_CAC_ENABLE,0,IW_PRIV_TYPE_INT|IW_PRIV_SIZE_FIXED|1,"get_wea_cac_en"},
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

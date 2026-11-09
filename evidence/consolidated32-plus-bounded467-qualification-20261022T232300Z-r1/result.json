@@ -1,0 +1,93 @@
+{
+  "status": "PASS_OFFLINE_CONSOLIDATED32_PLUS_ONE_BOUNDED467_SEVEN_MODULE_CHECKPOINT",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "allmode_oem467_recovery": false,
+  "complete_original_records": 32,
+  "remaining_complete_original_records": 12,
+  "bounded_extra_records": 1,
+  "private_table_records": 599,
+  "reproducible": true,
+  "all_461_source_hooks_preserved": true,
+  "old_private_records_exact": 598,
+  "fresh_source_compiles": 6,
+  "parent32_whole_objects_reused": 110,
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-plus-bounded467-pair-20261022T231200Z-r1/a-joint/qdrv/qdrv.ko",
+      "bytes": 684944,
+      "sha256": "58fbed55bf18243c58a91fac08b9c3ec36548e8dcf2144e7544a7c6563f0cc73"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-plus-bounded467-pair-20261022T231200Z-r1/a-joint/wlan/wlan.ko",
+      "bytes": 661208,
+      "sha256": "5f11992033571473e9239e21219d199e86f6bee2d98dce236047c153a36785af"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-plus-bounded467-pair-20261022T231200Z-r1/a-joint/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15856,
+      "sha256": "0ebffcdea496cc806a80036b33bedd5289ddcf3de761b798a9f87eb301756f8b"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-plus-bounded467-pair-20261022T231200Z-r1/a-joint/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-plus-bounded467-pair-20261022T231200Z-r1/a-joint/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9760,
+      "sha256": "1eb355a9b96b2ee2a75382565f6a628d62c583aa21600f9b922d038f657d96d5"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-plus-bounded467-pair-20261022T231200Z-r1/a-joint/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13440,
+      "sha256": "02f83895c1e3343ee3cc0b2162e37e9428c66de36fa0e2b8a5ddd834d20dbf5f"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-plus-bounded467-pair-20261022T231200Z-r1/a-joint/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "query_cases": 28672,
+  "missing_query_cases": 96,
+  "getter_cases": 131072,
+  "policy461_cases": 262144,
+  "all_old_members_checked": {
+    "ieee80211com": 387,
+    "ieee80211vap": 210,
+    "qdrv_wlan": 72
+  },
+  "negative_cases": 10,
+  "current_pins_verified": 6750,
+  "inherited_limits": [
+    "32privateRECORDS reconstructedwithsetters/gettersseparate, not32physical/fullfeatures.",
+    "461HT24APbranchonly;5GHzscannerexistingalgorithmretained, notallrank/scanset/OEMmetricsemanticsuniversalproof.",
+    "UP/PREEMPT_NONEvalidcallerRTNL/VAPserialization scope; externalarbitrarycallers/SMP/hardIRQ/realasyncMuClifetimeunqualified.",
+    "Sampled13wordsharedscanmetricsmaymixgenerations; nocoherenttupleproof.",
+    "Typed40states manuallyinstalledin7foregroundfixturecases; noautomatic40MHzscancoverageclaim.",
+    "Inherited449bounds/CoCvalidinit/NACsnapshot/492493advertisementdeviations/twoEOPNOTSUPPscope retained.",
+    "NoRFrealclientassociation/bidirectionaltrafficcoldbootpersistence/rollback/recovery/releaseacceptance."
+  ],
+  "bounded_limits": [
+    "Preservesretainedportmetric/alternate/width/fallbackmachinery; notfullOEMAPpickinstructionequivalence.",
+    "No24GHzchanset461implementationorallmode467acceptance.",
+    "NoPHY/RF/regulatory/calibration/clienttrafficpersistence/releaseacceptance.",
+    "Validinitializedscannerobjectlifetime assumed; nohotdetach/overlapscanproof",
+    "24GHz/OEM461modes2/3/8/9 andunsupportedmodes return-95",
+    "Missingstart/pick/private/scannervap refuses stalequery insteadOEMpartiallistfallback",
+    "APscannerinitializedonly; noSTA/mixedscannerclaim",
+    "Empty/out-of-range refreshedscanlist refuses beforepick toavoid retained/OEM ANYCfallbacksuccessfromstale ss_chans0",
+    "Stable20MHzactualAP/querywithfakechannelcheck/alternatecallbacks;no40/80/allmetric/rankingproof",
+    "ANYCnonemptylistfallbackcanstillreturnnonDFS;neveruniversalDFSavailabilityclaim",
+    "Nooverlapscan/hotdetachlivequeryserializationproof",
+    "NoRF/client/traffic/coldboot/persistence/rollback/releaseacceptance"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "status": "PASS_ACTUAL_AELITA_NO_DTBS_PLAN_AND_CONFIG_HASH_BOOT_REQUIREMENT_NEGATIVES",
+  "hardware_accessed": false,
+  "kernel_build_started": false,
+  "plan_output_absent": true,
+  "files_checked": 174,
+  "C_units": 72,
+  "module_count": 21,
+  "reference_symvers_actual_path": "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-kernel-v6/Module.symvers",
+  "reference_symvers_is_new_context": false,
+  "dtbs_requested": false,
+  "cases": [
+    {
+      "case": "actual-valid-plan",
+      "passed": true
+    },
+    {
+      "case": "--expected-config-sha256",
+      "rejected": true,
+      "reason": "Base config SHA256 mismatch"
+    },
+    {
+      "case": "--expected-kernel-makefile-sha256",
+      "rejected": true,
+      "reason": "Kernel Makefile SHA256 mismatch"
+    },
+    {
+      "case": "--compiler-sha256",
+      "rejected": true,
+      "reason": "Compiler SHA256 mismatch"
+    },
+    {
+      "case": "boot-config-INITRAMFS_SOURCE",
+      "rejected": true,
+      "reason": "Sanitized AELITA config must have empty INITRAMFS_SOURCE"
+    },
+    {
+      "case": "boot-config-BUILTIN_DTB_NAME",
+      "rejected": true,
+      "reason": "Sanitized AELITA config must have empty BUILTIN_DTB_NAME"
+    },
+    {
+      "case": "pre-vmlinux-required-OPENMITRASTAR_QDRV_COMPAT",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-WIRELESS_EXT",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-WEXT_CORE",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-WEXT_PRIV",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-NET_SCHED",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-BRIDGE",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-GPIOLIB",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-I2C",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-IPV6",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-CRYPTO_LIB_AES",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-CFG80211_REQUIRE_SIGNED_REGDB",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-CFG80211_USE_KERNEL_REGDB_KEYS",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-CFG80211",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-MAC80211",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-RTL8192EE",
+      "rejected": true
+    },
+    {
+      "case": "pre-vmlinux-required-QTN_TOPAZ_ETH73",
+      "rejected": true
+    }
+  ],
+  "tool_sha256": "6eb8199d80b6ccb1aa4486194d302b5646b2ddf5c43bfdc658c55c3a5a2d56a4",
+  "predecessor_sha256": "909ff66923e4b75619c493d3d89b3a4a05b515d4e8a95abf89991256f1b12dfc",
+  "limits": [
+    "Actualplanchecksrealsources/config/compiler/referencekernelexports; notfreshkernel/modulebuild",
+    "Required/bootguards areexecutedagainsttemporaryconfigcopies only; nosealed/sourcecontextmutated"
+  ]
+}

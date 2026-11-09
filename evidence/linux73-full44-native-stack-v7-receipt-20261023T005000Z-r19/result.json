@@ -1,0 +1,281 @@
+{
+  "status": "PASS_REAL_LINUX73_KERNEL_BASE_AND_21_NATIVE_MODULES_OFFLINE",
+  "observed_utc": "2026-10-22T21:25:39.879864+00:00",
+  "candidate": "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T004000Z-r19",
+  "candidate_result_sha256": "016b1f8e584e469f1efe4e3eaf8ebb27b5efe546488f652d029c160f0eed2b5c",
+  "kernel": "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-kernel-v6",
+  "kernel_artifacts": [
+    {
+      "path": "vmlinux",
+      "bytes": 9056624,
+      "sha256": "335f792bc0e82d112db27c3b39c757ea1190df276154d44e23dc218a74b2e16f"
+    },
+    {
+      "path": ".config",
+      "bytes": 53812,
+      "sha256": "ef5278daa265bc5c9dd012480f598126c01cf3b7df16063887d24b646f6bf800"
+    },
+    {
+      "path": "Module.symvers",
+      "bytes": 332683,
+      "sha256": "b3bdc2fecfad7321cd5d03454ea47d2341ef43ffc5e3f091de4c78c0d2726950"
+    },
+    {
+      "path": "crypto/aead.ko",
+      "bytes": 8636,
+      "sha256": "3a57eeafca87237505a4c9dcd63bd2adb9cdde2ca5f6160498c364200910737e"
+    },
+    {
+      "path": "crypto/aes.ko",
+      "bytes": 19236,
+      "sha256": "981eaaded1b59fb6ea34c5aa9b6d4dc3566a4339d2d1bf9dcd30fa88a8c8a44b"
+    },
+    {
+      "path": "crypto/ccm.ko",
+      "bytes": 14140,
+      "sha256": "ad9de497e5a44a58b95c78df47e82f0af775ed57c12b00de6af61af60aca2c15"
+    },
+    {
+      "path": "crypto/cmac.ko",
+      "bytes": 5856,
+      "sha256": "b18fa78aa13ddc0d64e80e0ce1db920acf77fdd83edf4d8459a5ac68184aa69a"
+    },
+    {
+      "path": "crypto/crypto_skcipher.ko",
+      "bytes": 23240,
+      "sha256": "03922eb391d585104509fa909fb72fe160e5457c323761ff9e723dc9fc757fa8"
+    },
+    {
+      "path": "crypto/ctr.ko",
+      "bytes": 6896,
+      "sha256": "0c3aa070efd3bb62a704870c3d8b9311779aef8d44c78db8092daf32210bc104"
+    },
+    {
+      "path": "crypto/ecb.ko",
+      "bytes": 5540,
+      "sha256": "fe54adb5b2f81564ac4008ec87abe8bbeedc0ac4929774605a9b36640f2519c9"
+    },
+    {
+      "path": "crypto/gcm.ko",
+      "bytes": 14528,
+      "sha256": "17fe5b10f9b86949130a0d6e401ed8244231ba12c700b1eac1f43cce3938cc5d"
+    },
+    {
+      "path": "crypto/sha256.ko",
+      "bytes": 11552,
+      "sha256": "15371e1548c1eb8f9bfd21fdd51db3a15ece9eca40c25403c7a02be1932e5ad1"
+    },
+    {
+      "path": "drivers/base/firmware_loader/firmware_class.ko",
+      "bytes": 14380,
+      "sha256": "f2e8bf21c68fcf9af2e59ecb383394ff5bad9354d94b3dfceb83701f3468c995"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.ko",
+      "bytes": 170816,
+      "sha256": "570eeaade280fb1eebac288f531589c9cabe60037c176ce1cd1741dc9be08b7e"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.ko",
+      "bytes": 115764,
+      "sha256": "acf90efcbf17b310143ddd6efad4231f84485903ffad42787effd1ea5f36b88f"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl_pci.ko",
+      "bytes": 49928,
+      "sha256": "0a5eadd166044c4c822319c8aac893286a59439f887bb56af97121215a030336"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko",
+      "bytes": 97708,
+      "sha256": "bf4f8695cebfc72d05cb187e5505c322157edd48546aadaf71000375a35be505"
+    },
+    {
+      "path": "lib/crypto/libaes.ko",
+      "bytes": 28652,
+      "sha256": "7d26ca01d56564ee755a0ebd1c2a2a18f83900a543990defd821f7dfbe3fec3f"
+    },
+    {
+      "path": "lib/crypto/libarc4.ko",
+      "bytes": 3144,
+      "sha256": "04c63fb0288472245a4c2d3c2e2d93f6469d9c692d1eb2ccafbe32ac209b20ca"
+    },
+    {
+      "path": "lib/crypto/libgf128hash.ko",
+      "bytes": 6396,
+      "sha256": "c7d9ecf0115092ec11e71f39f6a023e92182a79cc0b87196d66d464516a8130e"
+    },
+    {
+      "path": "net/802/psnap.ko",
+      "bytes": 5772,
+      "sha256": "896ceba2add4e322cae72f581966b43a51669f0ac1aa8632f7c3c261c4327d5b"
+    },
+    {
+      "path": "net/802/stp.ko",
+      "bytes": 4060,
+      "sha256": "d99cb61b7eb2d3cb07ba34269ed4ab41ea35d583fd4b2650d1311585ee70ea15"
+    },
+    {
+      "path": "net/bridge/bridge.ko",
+      "bytes": 183812,
+      "sha256": "01535a1498439e88cddafc91032e2d1b755ce58a8378b5a75d0327bfb96cfefc"
+    },
+    {
+      "path": "net/ipv4/ip_tunnel.ko",
+      "bytes": 23816,
+      "sha256": "995be7c6318a68c6d9ee9cf03aad3b4532a201cfe82e5e46daae9afe4fff7c40"
+    },
+    {
+      "path": "net/ipv4/tunnel4.ko",
+      "bytes": 6016,
+      "sha256": "c2eaee313dad41a364d94aa4793b036f2511fb93ae9f445a7c74833c32f1c1fc"
+    },
+    {
+      "path": "net/ipv6/sit.ko",
+      "bytes": 22028,
+      "sha256": "0b2eaa2aab2ed9780344212da36dbd6dccd8fd576b8a7056161faa8724362099"
+    },
+    {
+      "path": "net/llc/llc.ko",
+      "bytes": 8792,
+      "sha256": "87c63c7a8cd201b9a8c905930e61b6d83bf394f27ab6c237ff6f58f9e0b95a8b"
+    },
+    {
+      "path": "net/mac80211/mac80211.ko",
+      "bytes": 606880,
+      "sha256": "11dfd38669cfcced152ca115756f40701a144fd05a7fb8bb93e0347eeb452e10"
+    },
+    {
+      "path": "net/wireless/cfg80211.ko",
+      "bytes": 391460,
+      "sha256": "6b1211c5413e92444a87f04af06d0b12f86ddd0469adb33657bddfbc804ec6cf"
+    }
+  ],
+  "base_module_count": 26,
+  "kernel_config_required": [
+    "CONFIG_OPENMITRASTAR_QDRV_COMPAT=y",
+    "CONFIG_IPV6=y",
+    "CONFIG_BRIDGE=m",
+    "CONFIG_NET_SCHED=y",
+    "CONFIG_I2C=y",
+    "CONFIG_GPIOLIB=y",
+    "CONFIG_WEXT_CORE=y",
+    "CONFIG_WEXT_PRIV=y",
+    "CONFIG_CFG80211_REQUIRE_SIGNED_REGDB=y",
+    "# CONFIG_MODULE_FORCE_UNLOAD is not set",
+    "# CONFIG_MODVERSIONS is not set"
+  ],
+  "kernel_log_sha256": "ce9937f7513b3869cf6b0171a05261de027bd82a01a285043484b9bd3a2bf42d",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "native": "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-module-v7-r19",
+  "native_module_count": 21,
+  "native_modules": [
+    {
+      "path": "board_compat.ko",
+      "bytes": 29628,
+      "sha256": "b500f92bbfc32b1cb7d3ff11246b9204f4ce5c932cc89503ee4fb3522d806df5"
+    },
+    {
+      "path": "dmautil.ko",
+      "bytes": 4956,
+      "sha256": "a9d978f89e6f3c95bd06a70c34e4099ecb72a4e3d125ce60fe6035007b0851f4"
+    },
+    {
+      "path": "fwt_if.ko",
+      "bytes": 11912,
+      "sha256": "2615b85b8a65ecc7e4bf5f4f15684e17c4342e549777f7a57253248143e0686c"
+    },
+    {
+      "path": "gpio.ko",
+      "bytes": 6120,
+      "sha256": "696c8e8997e1962769246e402a250a4fcd42d0d36f74424357a50038ffe7edb8"
+    },
+    {
+      "path": "hbm.ko",
+      "bytes": 21908,
+      "sha256": "cd6df7a8dfeb338c45cde61b2c212e7da7ca60eb8dcf2545b80028290ed517d0"
+    },
+    {
+      "path": "iputil.ko",
+      "bytes": 7552,
+      "sha256": "c0451712aed2854779aff5c7558c6a028178a25804549f793245d02e9fb17f4e"
+    },
+    {
+      "path": "qdrv.ko",
+      "bytes": 688596,
+      "sha256": "8ea3a3e08a6861a46ff36b542f3655d3f3db332e02d3794d578c3cb4e1661b74"
+    },
+    {
+      "path": "qtn_platform_support.ko",
+      "bytes": 8456,
+      "sha256": "bfddd845d9e83fcdb07464d92317e7aa8d8b3cabaa3a2d91a842ac7c28fb2352"
+    },
+    {
+      "path": "qtn_pm_qos_compat.ko",
+      "bytes": 6696,
+      "sha256": "0ac6faef701377868d63bf804140b4f4d0b9716e2897d4f3ac5aa00ee07482a9"
+    },
+    {
+      "path": "qtn_tsens.ko",
+      "bytes": 5796,
+      "sha256": "3abf826ec5653d574bf047c8b5687a8da487a9d4c8726da5482e079418af7257"
+    },
+    {
+      "path": "runtime_compat.ko",
+      "bytes": 7572,
+      "sha256": "7fcb9e6b3d0001dd618d9621695fbd7ec2f20409f7ffd335d09179c46971ec7c"
+    },
+    {
+      "path": "switch_tqe.ko",
+      "bytes": 39084,
+      "sha256": "c4704c82ca667555c20165bed9def09ed2a891ff9e7ff4841140ceb784e89b04"
+    },
+    {
+      "path": "switch_vlan.ko",
+      "bytes": 20596,
+      "sha256": "7fe0267d68742a6d6c0f2bef90b0dbdde7180bb8e2270f11fdea02b724a84d9e"
+    },
+    {
+      "path": "temp_sens.ko",
+      "bytes": 4480,
+      "sha256": "80338f9f5629c28c94ea406da1735de23fa19078dc9c211a3c769fd94852ec46"
+    },
+    {
+      "path": "topaz_congest_queue.ko",
+      "bytes": 24628,
+      "sha256": "36c429becdc1baf49040a25f52b31a19085f9c3b1821e2ce31ca5e102d59bdf2"
+    },
+    {
+      "path": "wlan.ko",
+      "bytes": 691596,
+      "sha256": "19ead5f9c60e668c9507e233f66000584f9dde1da24d14eaa2322a6608cad02f"
+    },
+    {
+      "path": "wlan_ccmp.ko",
+      "bytes": 10028,
+      "sha256": "2315ef7db8641326d054d1ffd7a74d9d21a000d39a4b1a80d29c538f39a4ac9a"
+    },
+    {
+      "path": "wlan_scan_ap.ko",
+      "bytes": 16220,
+      "sha256": "5c358c719868b3a26d843e15f3ad4063940afc9ba0b027ff27ec398f7fc453b6"
+    },
+    {
+      "path": "wlan_scan_sta.ko",
+      "bytes": 19100,
+      "sha256": "579d43439d26080c4e2d70f68e59c5308b086a5b9d5742e2a80738493b8ff9e2"
+    },
+    {
+      "path": "wlan_tkip.ko",
+      "bytes": 13696,
+      "sha256": "c54adf26e286938e04f48e7196df9288f8acd0d975dad5ccc96a89dde454b1c9"
+    },
+    {
+      "path": "wlan_xauth.ko",
+      "bytes": 3744,
+      "sha256": "5408316c2a001acf4d0384babd8519f0c535b526619b959db7497c15a212f35b"
+    }
+  ],
+  "native_log_sha256": "dc044d4ae1e315a1ec0fb19a251bf2695737afd6342b4cda45cfae20ff7d4a80"
+}

@@ -1,0 +1,14 @@
+{
+  "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\publication-allrefs-audit-20261022T222000Z-r1\\result.json": "67574f1dc09e157cd5702e82c281bc96a369d2fd8fd483b75fb286686c93947d",
+  "repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\vendor\\legacy-gpl\\drivers\\fwt\\fwt.c": "599abb2c09a6c66a3d2643058718691be7ec14a5c12187ce1978861b81142b72",
+  "repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\vendor\\legacy-gpl\\drivers\\fwt\\fwt_sw.c": "7834af9667d64d2c34aa3529520dd0ae04223fb4cd26f690565edefeef662d5a",
+  "repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\vendor\\legacy-gpl\\include\\qtn\\muc_txrx_stats.h": "0b0a12df296c1675230f3df92ceb0fa3704bc6ef7412831d121804f81439071c",
+  "repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\vendor\\port-context\\include\\qtn\\muc_txrx_stats.h": "0b0a12df296c1675230f3df92ceb0fa3704bc6ef7412831d121804f81439071c",
+  "repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\.gitmodules": "ae0c3eb5bc05ade5336529a401448153c3bde83c7d551af4a59f8535bc438d22",
+  "repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\docs\\PROVENANCE.md": "6d384cfa8837553f1fa27f93b4c4e76b0e5e83d3f1db3e85c0d617c44ecc9f6c",
+  "repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\docs\\PUBLICATION.md": "b55f1b3d9570d1ca935357b22871a357c93fff547ee6fb597530f4064c10b7be",
+  "repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\vendor\\legacy-gpl\\README.md": "3373d8be7530b7f3c94dbc3c8871b58ee478b583e6a9f0a7233e72815b1909a6",
+  "repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\vendor\\legacy-gpl\\drivers\\qdrv\\qdrv_wlan.c": "4eeda48299a28116f85cfa3f6feab948ad54a776db6ee87affcf159562f31b35",
+  "repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\vendor\\legacy-gpl\\drivers\\wlan\\ieee80211.c": "11db0fb2a1e04ecb9308f0aabbbe7938caffa3dd5d87cbf29d28239a332a64d8",
+  "repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\LICENSES\\Linux-GPL-2.0.txt": "af8067302947c01fd9eee72befa54c7e3ef8a48fecde7fd71277f2290b2bf0f7"
+}

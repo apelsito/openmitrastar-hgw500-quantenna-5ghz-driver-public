@@ -1,0 +1,17 @@
+/* Exact first-match semantics from OEM FUN_ram_00012f9c, using typed
+ * fields rather than OEM raw offsets. Invalid bounds refuse before dereference.
+ * Template selection is OEM FUN_ram_00012f18 for bands 0 and 1; out-of-range
+ * band values fail explicitly instead of treating any nonzero as band5.
+ *//* Recovered OEM 0x131a8: queue7, BW40 band24 uses ABOVE3/BELOW4.
+ * OEM full queue restarts at0; this helper refuses instead of overwriting.
+ * Invalid bandwidth leaves both queue and current_bandwidth unchanged.
+ *//* Require one populated prefix followed by unused zero slots. *//* Exact nine-word defaults selected by OEM 0x13314. Channel-policy permissions
+ * stay with the caller; constant template availability does not allow TX. *//* OEM helpers 0x13514/0x13598. Use signed 64-bit intermediates and refuse an
+ * unrepresentable edge; the recovered static templates remain within bounds. *//* Exact 88-byte ARC hardware-loop body0x1488e..0x148e6. Ghidra omits this
+ * non-procedure loop; original text bytes and ARC objdump supply the evidence.
+ * ARC mpy/add/sub use low32 bits; preserve that wrap using unsigned arithmetic.
+ * The final subtract is unconditional, even when entry->dfs is zero.
+ *//* Derived from exact OEM constant tables and REA 0x12f18/0x12f9c.
+ * Source reconstruction only: no scan, ranking or regulatory acceptance.
+ * Templates preserve OEM oddities byte for byte. No table grants channel use.
+ *//* Exact OEM constant 80-byte records; no runtime data. */

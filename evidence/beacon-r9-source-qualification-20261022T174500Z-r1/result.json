@@ -1,0 +1,38 @@
+{
+  "status": "PASS_SOURCE_FULL_CHAIN_LIFETIME_AND_VALIDATION_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "selected_candidate": "outputs\\rea\\beacon-global-descriptor-lifetime-20261022T174000Z-r9",
+  "actual32bit_test_lanes": {
+    "plain": {
+      "cases": 10021,
+      "checks": 211134,
+      "wire_bytes": 20,
+      "dynamic_updates": 10000
+    },
+    "80211k": {
+      "cases": 10021,
+      "checks": 211134,
+      "wire_bytes": 20,
+      "dynamic_updates": 10000
+    }
+  },
+  "actual_validation_prefix_included": true,
+  "full_chain_validation_before_rewire_and_static_admission": true,
+  "source_guard_cleanup_checks": 10,
+  "original_comments_preserved": {
+    "headers\\net80211\\ieee80211_beacon_desc.h": 4,
+    "source\\wlan\\ieee80211_beacon_desc.c": 28,
+    "source\\wlan\\ieee80211_beacon.c": 64,
+    "source\\qdrv\\qdrv_wlan.c": 291
+  },
+  "descriptor_wire_bytes": 20,
+  "arena_bytes": 1000,
+  "fixed_dynamic_slots": 2,
+  "nominal_call_upper_bound": 34,
+  "limitations": [
+    "FakeIEencoders/skb/DMA; helperandvalidationactualC,notallfullIEwriters orfullQDRVfunction executed",
+    "Everyheaderuser fullARCmodule rebuild andABI witness pending restoredexecutor",
+    "No firmwareMuC/RF/association/traffic acceptance"
+  ]
+}

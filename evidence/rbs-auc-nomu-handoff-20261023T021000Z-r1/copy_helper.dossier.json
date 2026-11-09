@@ -1,0 +1,39 @@
+{
+  "directory": "outputs\\rea\\rbs-auc-nomu-codecopy-helper-20261023T015800Z-r1",
+  "procedure": {
+    "address": "0xe5005c50",
+    "name": "FUN_ram_e5005c50",
+    "classification": {
+      "external": false,
+      "thunk": false,
+      "thunk_target": null,
+      "provenance": "ghidra-function-manager"
+    },
+    "body": {
+      "available": true,
+      "provenance": "ghidra-function-body-address-set",
+      "ranges": [
+        {
+          "start": "0xe5005c50",
+          "end": "0xe5005cff"
+        }
+      ],
+      "total_bytes": 176,
+      "span_bytes": 176,
+      "non_contiguous": false,
+      "contains_entry": true
+    },
+    "signature": "undefined FUN_ram_e5005c50()",
+    "locals": []
+  },
+  "callees": [],
+  "limitations": [
+    "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+    "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+    "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+    "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+  ],
+  "rea_sha256": "477cb8f2beab03e82623adb5aa2389a52591eb139ba0c8e8ecca89243ba17110",
+  "started_utc": "2026-10-22T22:48:59.560074+00:00",
+  "finished_utc": "2026-10-22T22:49:27.036215+00:00"
+}

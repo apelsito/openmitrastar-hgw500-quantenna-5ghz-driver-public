@@ -1,0 +1,19 @@
+{
+  "status": "SOURCE_ONLY_DYNAMIC_SIFS_ALIAS_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "candidate_sha256": "45a1e2a496d6e7a203b3625cf450ce8b1e5a8a0bea993be48f963d8cbcaadd5b",
+  "parent_sha256": "538da528ed69173af54bb5f7c8001e75254fadc883b6464e6674cff2d83e9cb2",
+  "muc_dispatch_sha256": "d50aaf16993c0abc264405fb0f8840436557269bbca5fffd2b30bb4e9033b318",
+  "muc_setter_sha256": "184a8949e58f3f4e98650dcde2dd896bf8ad5090905ae8bfc0fd011d85b35a29",
+  "total_original_entries_added": 16,
+  "functional_ops_source": 14,
+  "faithful_unsupported": 2,
+  "remaining_original_table_gaps": 28,
+  "protocol": "SETPARAM11 payload76B id463,valueu32 encodedselectors, noextradata",
+  "limits": [
+    "ExactMuCfirmwarehashmuststaypaired",
+    "HostforwardreturndoesnotreportasynchronousMuCsuccess",
+    "NoRFactivation/physicalacceptance/modulequalification"
+  ]
+}

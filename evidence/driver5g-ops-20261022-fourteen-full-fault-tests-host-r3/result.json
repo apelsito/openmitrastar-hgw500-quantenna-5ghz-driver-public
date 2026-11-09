@@ -1,0 +1,43 @@
+{
+  "status": "PASS_ACTUAL_MODULE_FAULT_CHECKS",
+  "cases": 7,
+  "outcomes": [
+    {
+      "mutation": "correct",
+      "outcome": "PASS",
+      "error": null
+    },
+    {
+      "mutation": "text_hole",
+      "outcome": "REJECTED",
+      "error": "all executable bytes outside bounded changes .text"
+    },
+    {
+      "mutation": "relocation_target",
+      "outcome": "REJECTED",
+      "error": "unrelated RELA delta [(('section', '.text', 194), 27, ('section', '.text', 0)), (('section', '.text', 194), 27, ('section', '.text', 1))]"
+    },
+    {
+      "mutation": "rodata_byte",
+      "outcome": "REJECTED",
+      "error": "unrelated allocated data .rodata"
+    },
+    {
+      "mutation": "string_byte",
+      "outcome": "REJECTED",
+      "error": "unrelated RELA delta [(('section', '.text', 260), 27, ('string', '\\x016OMF355_LIFETIME retained=1 operation=%s release=reboot-only\\n')), (('section', '.text', 260), 27, ('string', '\\x017OMF355_LIFETIME retained=1 operation=%s release=reboot-only\\n'))]"
+    },
+    {
+      "mutation": "added_section",
+      "outcome": "REJECTED",
+      "error": "exact section membership"
+    },
+    {
+      "mutation": "section_flags",
+      "outcome": "REJECTED",
+      "error": "section attribute .rodata flags"
+    }
+  ],
+  "hardware_accessed": false,
+  "original_elf_files_modified": false
+}

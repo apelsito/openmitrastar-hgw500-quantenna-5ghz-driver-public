@@ -1,0 +1,26 @@
+{
+  "status": "PASS_ARC_RBSDFS_ISOLATED_TEN_FUNCTION_CORE_OBJECT_ONLY",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "module_built": false,
+  "input_pins": 1040,
+  "inputs_unchanged": true,
+  "bytes": 2220,
+  "sha256": "7b3bc42a7e6b2aabeba7a7031b1993cb2ebb446d2959229a18d83b39ce7cf416",
+  "functions": [
+    "bus_to_virt",
+    "muc_to_nocache",
+    "nocache_to_muc",
+    "om_rbsdfs_exact_frame_window",
+    "om_rbsdfs_get466",
+    "om_rbsdfs_get468",
+    "om_rbsdfs_init",
+    "om_rbsdfs_oem_expire",
+    "om_rbsdfs_oem_mbs_window",
+    "om_rbsdfs_oem_radar_window",
+    "om_rbsdfs_oem_send_permitted",
+    "om_rbsdfs_set466",
+    "om_rbsdfs_set468"
+  ],
+  "limits": "StandaloneARC object only, no kernelregistration/providers/moduleclosure/physicalgrant."
+}

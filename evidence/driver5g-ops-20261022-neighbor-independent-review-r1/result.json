@@ -1,0 +1,64 @@
+{
+  "schema": "openmitrastar.neighbor-capability-independent-source-review/v1",
+  "status": "PASS_HOST_EXACT_HELPER_WITH_NO_GO_DESCRIPTOR_AND_MODULE_CLOSURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "reviewed_candidate": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T151500Z-r1",
+  "actual_helper_fixture": {
+    "cases": 65536,
+    "guard_bytes_before_after": 9,
+    "writes_exactly_seven": true,
+    "id": 70,
+    "length": 5,
+    "payload_bit1_only": true,
+    "status": "PASS",
+    "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-neighbor-independent-fixture-r1\\fixture.exe"
+  },
+  "observations": [
+    "Beacon/probe/assocresponseallocationbudget adds7payloadbytes beforetheir actualwritepaths.",
+    "NewBeaconIE alwayspresentid70,len5; whenflagdisabled zero5payloadbytes; proberesp/assocresp emitIEonlyselected. Explicitbehavior differs OEMoptionalbeaconpresence.",
+    "bo_om_rrm pointsinto successfullyallocatedskb beforedescriptorcreation; qv_boffzeroed beforebeaconalloc and no updateafterearlyfailedalloc in currentqdrvpath.",
+    "bo_om_rrm only updates7payloadbytes inexistingdescriptor,noadditionaldescriptorcreatedduringtoggle.",
+    "QDRVbeaconparam creationprecedesbeaconalloc; descriptorallocatorpanicguard atfixedBEACON_PARAM_SIZE.",
+    "beacon_shared_ie_t wirelayout20bytes and qtn_beacon_args64bytes unchanged; fullARCcompileBUILD_BUG_ON must pass.",
+    "ieee80211com twoappendedu32 fields shiftfollowingqdrv_wlanfields; boappendu8pointer shiftsfollowingqdrv_vapnapi/list fields. Fullallheaderusersrebuild necessary.",
+    "Flagwriters viaWEXTRTNL serialized; asyncbeaconreads do not establishsinglecoherentsnapshot betweencapword andRRMIE.",
+    "No addedNeighborReportactionimplementation; existing11k request/responsehandlers areseparate baseline behavior and must not be counted recoveredbythispatch."
+  ],
+  "findings": [
+    {
+      "priority": 1,
+      "title": "Descriptorarena headroom is not covered by payload7byte reserve",
+      "source": "source/wlan/ieee80211_beacon.c:194; ieee80211_beacon_desc.c:237",
+      "detail": "Adding IE70 adds20bytedescriptor inexistingfixedarena; allocatorpanics on insufficientarena. Need actualworstcaseallIEs anddynamicheadinsertions≤arena budget beforemodulepromotion. No arena/wiregrowth is authorized bysourcepatch."
+    },
+    {
+      "priority": 1,
+      "title": "Sharedhostlayout closure must cover both embeddings",
+      "source": "qdrv_wlan.h:1128 and qdrv_vap.h:122",
+      "detail": "Appendingprefixsafeic/bo doesnot preserveparentstruct offsets. Rebuildallqdrv/wlan/ancillaryconsumers sameheader and documentupdatedqdrv_wlan/qdrv_vap sizes,allocators,and offsets."
+    },
+    {
+      "priority": 2,
+      "title": "Neighborappend header changes absent from generatedpatch",
+      "source": "neighbor-capability-integration.patch",
+      "detail": "PatchonlyfourCfiles; actualheaders ieee80211_var/proto andhelper are changed/pinned inresult butnotrepresentedpatch. Artifact source snapshot sufficient; patchalone notcomplete/reviewable candidate."
+    }
+  ],
+  "remaining_gates": [
+    "Actualdescriptorarenaexhaustionfixture andworstcasecount acrossallconditionalIEpaths.",
+    "ARCcandidateheaderlayoutmanifest andfullcoherentmoduleclosure x2; nooldobjectsreuse acrossoffsetdelta.",
+    "Completecode/data/relocationdeltaaudit plus frameencodedbytes andallocationfailurecases.",
+    "Capabilityadvertisementonly; no80211kclient/releaseacceptance."
+  ],
+  "input_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T151500Z-r1\\result.json": "51eb4ba67cc60317b0e3f603a12316da3ceea59808b885693249d4a4ecb85c7e",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T151500Z-r1\\neighbor-capability-integration.patch": "3547cd21cde7130d40eebbe23c895f34e8a589d461e6a90367660b1ac2da47cf",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T151500Z-r1\\source\\wlan\\openmitrastar_bss_tm.h": "b8aa2c5f0d4b5a02965521ccefc04b24ca50ead66c1afcf6ab2d64389de879f7",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T151500Z-r1\\headers\\net80211\\ieee80211_var.h": "5f9ccf334e8d264be3eacaea4a04b773be802615c2ed95024280ba443475df22",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T151500Z-r1\\headers\\net80211\\ieee80211_proto.h": "84841210beb7746c134eae7829d70d663151b18e57d2640531f42c33424abf45",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T151500Z-r1\\source\\wlan\\ieee80211_beacon.c": "7c55d5319b092d4b1adf40d430d1192a87ca1c584684ff743b06a010276dcdaa",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T151500Z-r1\\source\\wlan\\ieee80211_beacon_desc.c": "3b5dff898444272713b1da3feb184b258df6e09ad532b0f81e0e3696177e209c",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\neighbor-capability-integration-20261022T151500Z-r1\\source\\wlan\\ieee80211_output.c": "e393a8c3cb66b53609298a90cc01c0ac5ad6897911f3ee1a5bda86fef0df66c4"
+  }
+}

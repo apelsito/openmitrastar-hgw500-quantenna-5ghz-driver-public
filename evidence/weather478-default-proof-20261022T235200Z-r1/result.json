@@ -1,0 +1,19 @@
+{
+  "status": "PASS_WEATHER478_OEM_ZERO_INIT_BOOLEAN_AP_SOURCE_DEFAULT_FRAGMENTS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "constructor_cases": 256,
+  "oem_ic_byte_offset": 3060,
+  "oem_zero_allocation_bytes": 32772,
+  "port_ic_byte_offset": 22605,
+  "port_ic_size": 22680,
+  "port_qdrv_size": 30592,
+  "oem_matching_targets": true,
+  "port_zero_before_attach": true,
+  "explicit_default_after_ifattach": true,
+  "limits": [
+    "OEMcompleteallocationzero proven and noexplicitbf4 write in qdrvinit; externalcallees/async consumers not universally replayed",
+    "Hostfixture executesactualzero/defaultfragments using ARCwitnessedsizes, notwholeqdrvinitwithrealhardwarecallbacks",
+    "Initializedconstructiondefault0 only; noOEMcalibration/regulatory/CAC/RFacceptance"
+  ]
+}

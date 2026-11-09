@@ -1,0 +1,459 @@
+{
+  "schema": "openmitrastar.linux73-portable-build-current/v2",
+  "status": "PASS_SINGLE_SANITIZED_AELITA_KERNEL_MODULE_BUILD_PENDING_PAIR_ABI_PHYSICAL",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "driver_manifest_files_checked": 174,
+  "kbuild_source_units": 72,
+  "kbuild_modules": {
+    "board_compat": [
+      "providers/board_compat.o"
+    ],
+    "dmautil": [
+      "source/platform/ruby/dmautil.o"
+    ],
+    "fwt_if": [
+      "source/platform/topaz/fwt_if.o"
+    ],
+    "gpio": [
+      "source/platform/ruby/gpio.o"
+    ],
+    "hbm": [
+      "source/platform/topaz/hbm.o"
+    ],
+    "iputil": [
+      "source/platform/ruby/iputil.o"
+    ],
+    "qdrv": [
+      "source/qdrv/qdrv_auc.o",
+      "source/qdrv/qdrv_bridge.o",
+      "source/qdrv/qdrv_comm.o",
+      "source/qdrv/qdrv_control.o",
+      "source/qdrv/qdrv_dsp.o",
+      "source/qdrv/qdrv_f355_lifetime.o",
+      "source/qdrv/qdrv_fw.o",
+      "source/qdrv/qdrv_fwt_compat.o",
+      "source/qdrv/qdrv_hal.o",
+      "source/qdrv/qdrv_hostlink.o",
+      "source/qdrv/qdrv_kernel_compat.o",
+      "source/qdrv/qdrv_mac.o",
+      "source/qdrv/qdrv_mac_reserve.o",
+      "source/qdrv/qdrv_math.o",
+      "source/qdrv/qdrv_module.o",
+      "source/qdrv/qdrv_mu.o",
+      "source/qdrv/qdrv_muc.o",
+      "source/qdrv/qdrv_muc_stats.o",
+      "source/qdrv/qdrv_pcap.o",
+      "source/qdrv/qdrv_pktlogger.o",
+      "source/qdrv/qdrv_radar.o",
+      "source/qdrv/qdrv_radar_compat.o",
+      "source/qdrv/qdrv_rx.o",
+      "source/qdrv/qdrv_scan.o",
+      "source/qdrv/qdrv_sch.o",
+      "source/qdrv/qdrv_sch_pm.o",
+      "source/qdrv/qdrv_show.o",
+      "source/qdrv/qdrv_soc.o",
+      "source/qdrv/qdrv_tx.o",
+      "source/qdrv/qdrv_txbf.o",
+      "source/qdrv/qdrv_uc_print.o",
+      "source/qdrv/qdrv_vap.o",
+      "source/qdrv/qdrv_vlan.o",
+      "source/qdrv/qdrv_wlan.o"
+    ],
+    "qtn_platform_support": [
+      "providers/qtn_platform_support.o"
+    ],
+    "qtn_pm_qos_compat": [
+      "providers/qtn_pm_qos_compat.o"
+    ],
+    "qtn_tsens": [
+      "source/platform/qtsens/temp_sensor.o"
+    ],
+    "runtime_compat": [
+      "providers/runtime_compat.o"
+    ],
+    "switch_tqe": [
+      "source/platform/topaz/switch_tqe.o"
+    ],
+    "switch_vlan": [
+      "source/platform/topaz/switch_vlan.o"
+    ],
+    "temp_sens": [
+      "source/platform/topaz/temp_sens.o"
+    ],
+    "topaz_congest_queue": [
+      "source/platform/topaz/topaz_congest_queue.o"
+    ],
+    "wlan": [
+      "source/wlan/ieee80211.o",
+      "source/wlan/ieee80211_beacon.o",
+      "source/wlan/ieee80211_beacon_desc.o",
+      "source/wlan/ieee80211_crypto.o",
+      "source/wlan/ieee80211_crypto_none.o",
+      "source/wlan/ieee80211_input.o",
+      "source/wlan/ieee80211_linux.o",
+      "source/wlan/ieee80211_mlme_statistics.o",
+      "source/wlan/ieee80211_node.o",
+      "source/wlan/ieee80211_output.o",
+      "source/wlan/ieee80211_power.o",
+      "source/wlan/ieee80211_proto.o",
+      "source/wlan/ieee80211_rate.o",
+      "source/wlan/ieee80211_scan.o",
+      "source/wlan/ieee80211_tdls.o",
+      "source/wlan/ieee80211_tpc.o",
+      "source/wlan/ieee80211_wireless.o",
+      "source/wlan/if_media.o",
+      "source/wlan/wlan_fwt_compat.o"
+    ],
+    "wlan_ccmp": [
+      "source/wlan/ieee80211_crypto_ccmp.o"
+    ],
+    "wlan_scan_ap": [
+      "source/wlan/ieee80211_scan_ap.o"
+    ],
+    "wlan_scan_sta": [
+      "source/wlan/ieee80211_scan_sta.o"
+    ],
+    "wlan_tkip": [
+      "source/wlan/ieee80211_crypto_tkip.o"
+    ],
+    "wlan_xauth": [
+      "source/wlan/ieee80211_xauth.o"
+    ]
+  },
+  "required_kernel_config": {
+    "OPENMITRASTAR_QDRV_COMPAT": "y",
+    "WIRELESS_EXT": "y",
+    "WEXT_CORE": "y",
+    "WEXT_PRIV": "y",
+    "NET_SCHED": "y",
+    "BRIDGE": "m",
+    "GPIOLIB": "y",
+    "I2C": "y",
+    "IPV6": "y",
+    "CRYPTO_LIB_AES": "m",
+    "CFG80211_REQUIRE_SIGNED_REGDB": "y",
+    "CFG80211_USE_KERNEL_REGDB_KEYS": "y",
+    "CFG80211": "m",
+    "MAC80211": "m",
+    "RTL8192EE": "m",
+    "QTN_TOPAZ_ETH73": "y"
+  },
+  "upstream_kernel_commit": "c03c1a14507dfaf8b856c2608f9ac216021fc222",
+  "kernel_commit_check": "DECLARED_BASE_COMMIT_NO_GIT_METADATA",
+  "inputs": {
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/result.json": "d57b548a0a3cb6ba5ff17198ac825ccd3fe2fc649e648e878dc2fff5c967d718",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/Kbuild": "fc141e99cba3d72214700e1192211cd8c0026150770e8b03549c11f7ac06794d",
+    "/home/rea/openmitrastar-aelita-source-validation-20261022T230200Z-r3/kernel-source/Makefile": "2eb7b5d5c2ac15a28136607e086f82ebd13f0d3753acc89e463fed49109bc794",
+    "/home/rea/openmitrastar-aelita-source-validation-20261022T230200Z-r3/kernel-context/.config": "39c4ba514fdb6c5a1491f96ac2352bb9964af5d86dd78cf0831d1fb161614f70",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-kernel-v6/Module.symvers": "b3bdc2fecfad7321cd5d03454ea47d2341ef43ffc5e3f091de4c78c0d2726950",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-gcc": "3918a0da3c9f2cfde359f6fed1d0df19e737438dfd2cc60edae63f2dcbf14263",
+    "/workspace/user-home/Desktop/MitraStar/repos/openmitrastar-hgw500-quantenna-5ghz-driver/tools/linux73_build_aelita.py": "6eb8199d80b6ccb1aa4486194d302b5646b2ddf5c43bfdc658c55c3a5a2d56a4"
+  },
+  "overlay": {
+    "include/linux/netdevice.h": "b149a958c75f17e685e18f9bbf6969959eb8d67b140aafad19012fe2fec71f7d",
+    "include/linux/openmitrastar_bridge.h": "fafac0b567cad17824713499988aecf256c16f89da591e372251e4477fce11fb",
+    "include/linux/openmitrastar_qtn_skb.h": "2a61b183457bbe9bc05d13a99e88202e9d94c307948c0b2b5c970389c012b5cc",
+    "include/linux/skbuff.h": "5edbedd91f41c81e7aad995511001db1505b062d81aa0d230b8953ce6eed44a4",
+    "net/bridge/br_fdb.c": "f5f19ce2887cfb03f68a4654030629444ca12dbcfed4550e38ad5e09b562c277",
+    "net/bridge/br_forward.c": "928d1e71783bb2d57e27f1d9d7c39ba75a296aff36d76ac9d0718a9b1e92c965",
+    "net/core/dev.c": "b6654f34f28a282067ca149b1347325fe4b5067483c40cd825747d1a5050e27e",
+    "net/wireless/Kconfig": "4ec168a7f54f9f12b6b1b82bb30ae1ea0ae15676c07cb944f02a6294344bf9c0"
+  },
+  "base_config_reference_only": true,
+  "old_objects_reused": false,
+  "driver_private_key_assets_found": false,
+  "private_runtime_assets_requested": false,
+  "kernel_DT_privacy_not_audited": true,
+  "reference_symvers": "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-kernel-v6/Module.symvers",
+  "reference_symvers_is_new_context": false,
+  "dtbs_target_requested": false,
+  "input_boot_selection_sanitized": true,
+  "commands": [
+    [
+      "make",
+      "-C",
+      "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-source",
+      "O=/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "olddefconfig"
+    ],
+    [
+      "make",
+      "-C",
+      "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-source",
+      "O=/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "modules_prepare"
+    ],
+    [
+      "make",
+      "-C",
+      "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-source",
+      "O=/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "-j4",
+      "vmlinux",
+      "modules"
+    ],
+    [
+      "make",
+      "-C",
+      "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-source",
+      "O=/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-context",
+      "ARCH=arc",
+      "CROSS_COMPILE=/home/rea/openmitrastar-linux73-20261022T135100Z/toolchain-arc700/bin/arc-snps-linux-uclibc-",
+      "M=/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/driver",
+      "QTN_GPL=/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL",
+      "-j4",
+      "modules"
+    ]
+  ],
+  "output": "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1",
+  "private_initramfs_excluded": true,
+  "modules": [
+    {
+      "path": "kernel-context/crypto/crypto_skcipher.ko",
+      "bytes": 23236,
+      "sha256": "e98ce048813eed5c58f09ef800d93464723eb54d6709ea61b2d7cd13208a6041"
+    },
+    {
+      "path": "kernel-context/crypto/aes.ko",
+      "bytes": 19232,
+      "sha256": "8f25ebac0adaa4ea31209c72bb9b7bda7c5c2039b508ad6ffbb25f0d9190e759"
+    },
+    {
+      "path": "kernel-context/crypto/sha256.ko",
+      "bytes": 11548,
+      "sha256": "1b256c7e5d27d3ba1817741b07699a0a27388d19ad3a28c12a21895062f1e9c4"
+    },
+    {
+      "path": "kernel-context/crypto/ecb.ko",
+      "bytes": 5540,
+      "sha256": "e05eb29e6094e106d199e46f12eb4280eb4127177b5f587bf63dbc3959e8e446"
+    },
+    {
+      "path": "kernel-context/crypto/gcm.ko",
+      "bytes": 14528,
+      "sha256": "e15f9f3cc83fe7d4603ffc829348ae1c539ff886e7336eaed03da36d8e9be338"
+    },
+    {
+      "path": "kernel-context/crypto/ctr.ko",
+      "bytes": 6896,
+      "sha256": "ce3a5444f926bbbf24a7fdf67d511a1ff958659cbbcd441dc503a06268744381"
+    },
+    {
+      "path": "kernel-context/crypto/aead.ko",
+      "bytes": 8636,
+      "sha256": "0cf2782d682f3dc4254b262d83fa9eb808a1c02955c8cdec1a3086f6cdffb479"
+    },
+    {
+      "path": "kernel-context/crypto/ccm.ko",
+      "bytes": 14140,
+      "sha256": "30e2cf80304758b27d13276cb19d791e1bdb915c46066181fd930f790bd92e1b"
+    },
+    {
+      "path": "kernel-context/crypto/cmac.ko",
+      "bytes": 5856,
+      "sha256": "ad24d69ca28311a1ed223f379fcbaa6fbd5a18bf971026e2e9f61b0739430ff6"
+    },
+    {
+      "path": "kernel-context/lib/crypto/libgf128hash.ko",
+      "bytes": 6392,
+      "sha256": "513d3fb8a0ba92a38868c88a55d53a5c1febf6c4e8a62fc4555d6fe11a6f50b6"
+    },
+    {
+      "path": "kernel-context/lib/crypto/libarc4.ko",
+      "bytes": 3144,
+      "sha256": "867e7665758fbb740e49d6e5433eb8c350ae86a9b3663f2182eb8630b35130fd"
+    },
+    {
+      "path": "kernel-context/lib/crypto/libaes.ko",
+      "bytes": 28652,
+      "sha256": "41bb7cceebc7cfb39bbce394622c560d7d45650be090dbd8830755405d1b3d67"
+    },
+    {
+      "path": "kernel-context/drivers/base/firmware_loader/firmware_class.ko",
+      "bytes": 14372,
+      "sha256": "ca5181849722079725f0a795e38d5c59c10c1cd98b21d7d5c6e317fc29ed8db9"
+    },
+    {
+      "path": "kernel-context/drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko",
+      "bytes": 97708,
+      "sha256": "61de3d5f75127ca707acf7c467eb6451394a441443d6ffc39c107325220b0afb"
+    },
+    {
+      "path": "kernel-context/drivers/net/wireless/realtek/rtlwifi/rtl_pci.ko",
+      "bytes": 49928,
+      "sha256": "9e9eab46b784ad6321bfbe7ad589160223b7a6d3d5142d43cbee363b9e06bcbb"
+    },
+    {
+      "path": "kernel-context/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.ko",
+      "bytes": 115760,
+      "sha256": "db10fb3f8744084169d64e33ded1780e51ed712c7a5cc9cc460904ddbd95a460"
+    },
+    {
+      "path": "kernel-context/drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.ko",
+      "bytes": 170812,
+      "sha256": "c8bec0a3178796c3c3468885185dcac13d8c617ae385872ce9a748ef30bf014d"
+    },
+    {
+      "path": "kernel-context/net/wireless/cfg80211.ko",
+      "bytes": 391456,
+      "sha256": "11b03507dac30178af496d6d6ab5a7990ff079b3bdd77cca6fd6c98ddbc719ac"
+    },
+    {
+      "path": "kernel-context/net/bridge/bridge.ko",
+      "bytes": 183808,
+      "sha256": "9f7a21c8c0d9d4ad25e2e2acd8667e1449d9bf5f9e26a020e8f7f4dc18769a90"
+    },
+    {
+      "path": "kernel-context/net/802/stp.ko",
+      "bytes": 4060,
+      "sha256": "7677872bc3a7208b0f3a0bc5df7535985418b7093e7c71ead1c06951cf20fdbd"
+    },
+    {
+      "path": "kernel-context/net/802/psnap.ko",
+      "bytes": 5772,
+      "sha256": "705ec095ad5db2c3866183040e218cb02ba04a564bfb09e1a1c15456b48bc13c"
+    },
+    {
+      "path": "kernel-context/net/mac80211/mac80211.ko",
+      "bytes": 606880,
+      "sha256": "71f6550cab0d75ef440d593c540f985f6363c06ade965f699cdbce21dc9277d8"
+    },
+    {
+      "path": "kernel-context/net/ipv4/ip_tunnel.ko",
+      "bytes": 23812,
+      "sha256": "924bc81205f7046b2a1cb3b2eeeb6f9359130923262da3316759cf41c855e46e"
+    },
+    {
+      "path": "kernel-context/net/ipv4/tunnel4.ko",
+      "bytes": 6012,
+      "sha256": "3e776827e56a251ce41008b8a1dd56fc96448de4cd21f1e1976a9788827a0582"
+    },
+    {
+      "path": "kernel-context/net/ipv6/sit.ko",
+      "bytes": 22024,
+      "sha256": "7e27a1c79b44a994c3e3f04be6fd09b7c8c68e1b8e9c75f1b2636dfea9633363"
+    },
+    {
+      "path": "kernel-context/net/llc/llc.ko",
+      "bytes": 8792,
+      "sha256": "e91c586521c9e260e9c7c7e0c317ab248a0d0f7301f0954c0c7c7da837d99ba5"
+    },
+    {
+      "path": "driver/hbm.ko",
+      "bytes": 21904,
+      "sha256": "a6b016d64387bc27cdafe9bc92ae36d49631a3007b96f5bc3d863d166966ba61"
+    },
+    {
+      "path": "driver/wlan_scan_ap.ko",
+      "bytes": 16220,
+      "sha256": "ccdbc0080793d59d0e20ba2b61dde41b05ac9e1e8bce42be723528064462b104"
+    },
+    {
+      "path": "driver/switch_vlan.ko",
+      "bytes": 20596,
+      "sha256": "f7f6e529995723bd36e58977932c847e993b34aedfede984530458f55dbdd05b"
+    },
+    {
+      "path": "driver/qdrv.ko",
+      "bytes": 688584,
+      "sha256": "e8062ae563fd01ff91c228a77cedc5bdb83884c3c7c5c53577d00614d712ebc5"
+    },
+    {
+      "path": "driver/wlan_xauth.ko",
+      "bytes": 3740,
+      "sha256": "1f6e7af06db6ba290190296396e8645a8252644a51ff24104464cfaa94bf30a2"
+    },
+    {
+      "path": "driver/dmautil.ko",
+      "bytes": 4884,
+      "sha256": "7895d3fe96aa44a8ffac26fd6240d2ca9f59ccb0ad450fb69f0f926724a45ad3"
+    },
+    {
+      "path": "driver/wlan_scan_sta.ko",
+      "bytes": 19096,
+      "sha256": "82aad9d922703933ff76273588fdcbdff383b626f9c9e71cbb0f10a1b0b748aa"
+    },
+    {
+      "path": "driver/temp_sens.ko",
+      "bytes": 4480,
+      "sha256": "921118b860873e32702b687ea058f8139a173dbaf1c0464885e0e8907b77fc11"
+    },
+    {
+      "path": "driver/wlan_ccmp.ko",
+      "bytes": 10028,
+      "sha256": "9924bbfb9a79f9d1635f9a78df04e2b83767d3d3d6b3baf4626e243b373cc81a"
+    },
+    {
+      "path": "driver/gpio.ko",
+      "bytes": 6584,
+      "sha256": "5b60dae7979e7e32b21c353a2e3cc8e67cff8e6fd6ec90688caa8a0338fc1121"
+    },
+    {
+      "path": "driver/iputil.ko",
+      "bytes": 7548,
+      "sha256": "770edc339309e6b457207b52cfbddcf1b215906eab25808211b4469134db4cee"
+    },
+    {
+      "path": "driver/topaz_congest_queue.ko",
+      "bytes": 24628,
+      "sha256": "c7e32ffef639d7545b162b6406fb11fc1302fbb6e0e783768e6ea756b0fa055c"
+    },
+    {
+      "path": "driver/wlan.ko",
+      "bytes": 691548,
+      "sha256": "4588ed600b937086eacc33bd5d5f9ee7b74013a58cbcd71d26088c1060ef519b"
+    },
+    {
+      "path": "driver/fwt_if.ko",
+      "bytes": 11912,
+      "sha256": "4955b86c915ee17e7ace68af36c585ffc7c167764a1fae925fea6b5ec12e4a04"
+    },
+    {
+      "path": "driver/qtn_pm_qos_compat.ko",
+      "bytes": 6696,
+      "sha256": "8a561ff0aa9dbc52ca5691ca897551081d800fd465d5635eeaeff9d32f39082f"
+    },
+    {
+      "path": "driver/qtn_platform_support.ko",
+      "bytes": 8456,
+      "sha256": "1939430d8aa58ed4d6379364db24ee3cb113cc69e460e63d07e6d13dfb0afe49"
+    },
+    {
+      "path": "driver/runtime_compat.ko",
+      "bytes": 7572,
+      "sha256": "6ac878d64432cd473d4f45796a0c41b82d853efb77a086fa4b9055353c9b9c73"
+    },
+    {
+      "path": "driver/switch_tqe.ko",
+      "bytes": 39084,
+      "sha256": "8fdc5f5955f4cba87a1cc1ff310a548d07aec417c319f5565c6ad85cad32ef8c"
+    },
+    {
+      "path": "driver/board_compat.ko",
+      "bytes": 29624,
+      "sha256": "ac40d9bf507cff3361e94db77561d4d75988982c1d4b09174e2f8d0a6ba9db44"
+    },
+    {
+      "path": "driver/wlan_tkip.ko",
+      "bytes": 13692,
+      "sha256": "b993f7802f02fcb0c4f2fbdc4983842e0e47d92319834c22d40a31f5fb72d22f"
+    },
+    {
+      "path": "driver/qtn_tsens.ko",
+      "bytes": 5796,
+      "sha256": "7b27c5958304ee4c0e407d43c0fb9e7c7bdacd911bada8272c2fd22fe73b1473"
+    }
+  ],
+  "limits": [
+    "Offline source/build only. Reproducible second build, full import/export/ABI and regression audits are separate.",
+    "All base kernel modules and QDRV/WLAN must be rebuilt after packet ABI changes.",
+    "No boot image, private owner asset, firmware write, RF/client or release acceptance."
+  ]
+}

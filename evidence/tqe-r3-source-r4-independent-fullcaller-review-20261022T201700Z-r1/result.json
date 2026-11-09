@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_ACTUAL_MULTICAST_CALLER_ENUMERATION_TYPED_OWNER_SAMPLE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 259,
+  "actual_tqe_push_mc_ports": true,
+  "actual_typed_callback_provider": true,
+  "actual_OEM_enumeration_helpers": 4,
+  "stub_port_has_nodes_verified_equivalent_WMAC2": true,
+  "previous_fullcaller_fixture_gap_closed_for_these_cases": true,
+  "limits": [
+    "All255nonzeroportbitmap cases use zero node bitmap/inputEMAC0; maximum134fanout case uses128WMACnodes withallports.",
+    "Incomplete enumeration/node filtering cases outsidethese samples are not universally exhausted.",
+    "Expectedcounts computedbyactualOEM helper: allports/no-nodecases additionally check publicationcount equality.",
+    "Real HBM refcount/cache/MMIO/module primitives are fakes. Owner-before-EC order is asserted; actualhardwareprimitiveacceptance remains unrun.",
+    "tqe_rx_multicast IP/FWTlookup/packetdecoder entrypoint is not executed bythisfixture.",
+    "146legacycallbackfixture remains historicalscalar-path evidence; notallactiveR3writers.",
+    "No recovery/foreignfirmwarewriter/forceunload/physicalRFclienttrafficpersistence/release acceptance."
+  ],
+  "evidence_pins": [
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1\\result.json",
+      "bytes": 13139,
+      "sha256": "8cebb3834cca745d21d42163688b7b5a8691f1825130ced0e43c5d3a2537d8e0"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\tqe-r3-source-r4-independent-fullcaller-20261022T201600Z-r1\\result.json",
+      "bytes": 558,
+      "sha256": "ea2da0a40d13d1b62335573eeb0598957e0cb96a2b30d945e91913725498bcc5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\tqe-r3-source-r4-independent-fullcaller-20261022T201600Z-r1\\actual-full-multicast-caller.c",
+      "bytes": 26192,
+      "sha256": "20506599c91eea224586b9310b87a5cd67c616760bb69f20735851f23492573e"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\tqe-r3-source-r4-independent-fullcaller-20261022T201600Z-r1\\fixture.exe",
+      "bytes": 97792,
+      "sha256": "861e79683dfa58f7fe5bc6de8eb36737adab5d07b489ea95bbf28db123fea86c"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-source-r4\\switch_tqe.c",
+      "bytes": 53511,
+      "sha256": "c318a0c0f6aa914e8ace5dadc8456da6ea19c28806027e367a460035641cdf1e"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-r3-typed-batch-source-r4\\topaz_congest_queue.c",
+      "bytes": 20405,
+      "sha256": "3838b149e83fd58d5e1040be62f6598d1c061d415c88186c4298d9f6723d20b5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\include\\qtn\\topaz_fwt_cpuif.h",
+      "bytes": 24174,
+      "sha256": "95dba0e648b319133d2c6f598684eeb550ca70b86918350fd71b762d2baa32b2"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_tqe_r3_full_multicast_caller.py",
+      "bytes": 6955,
+      "sha256": "0703e06f1fd73da0f7e408ab57a11738218cafd68644c5de9d15bf59b4a32818"
+    }
+  ]
+}

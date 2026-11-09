@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ACTUAL_INITIAL_TYPED_ENQUEUE_AND_ASYNC_RETRY_OWNER_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 3,
+  "confirmed_CN_queue_then_success_owner_credit_once": true,
+  "retry_publication_unknown_retains_head_marker_owner": true,
+  "fixture_sha256": "45f246eedb2aa4efed34d23ecbe96647a740bb58069bec7bc5c43cc2581f8503",
+  "limits": "FakeMMIO/queuecapacity/VLAN hooks; actualTQEinitial/retry provider/token/queuexmit source. Nohardware/foreign/recoveryacceptance."
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/AuC_nomU-program-headers.txt",
+      "source": "outputs/rea/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/AuC_nomU-program-headers.txt",
+      "bytes": 883,
+      "sha256": "9a33fb116454a264d0ef488f50c56077e5445c4a9fd5cfb3dc57e6339602d48a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/DSP-program-headers.txt",
+      "source": "outputs/rea/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/DSP-program-headers.txt",
+      "bytes": 505,
+      "sha256": "d202cc805a5df7c992464510626e66b765f5b12e8e3bfd4f6a3c9b5c8e3a71ab",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/kernel-program-headers.txt",
+      "source": "outputs/rea/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/kernel-program-headers.txt",
+      "bytes": 703,
+      "sha256": "80d8b393039b176f3d15615a266499615d575b873d9eaf9a370c912dc1905428",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/MuC-program-headers.txt",
+      "source": "outputs/rea/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/MuC-program-headers.txt",
+      "bytes": 881,
+      "sha256": "a4546e67ddf1e8ed527d57cc33e8c3bd0ef513fefa303de2b54a7ef7b046d2de",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/reservation-proposal.json",
+      "source": "outputs/rea/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/reservation-proposal.json",
+      "bytes": 3442,
+      "sha256": "43b8265a4b3be3274e86a412825fc743145c31f97af909139eeadbabac0f6710",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/result.json",
+      "source": "outputs/rea/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/result.json",
+      "bytes": 19408,
+      "sha256": "da145dfea01d35e8271d1ea00628624199e7e3d2ae3f924d534044e4a8f159ee",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/SRAM_OCCUPANCY_AND_RESERVATION.md",
+      "source": "outputs/rea/linux73-selected5g-sram-occupancy-20261022T223000Z-r1/SRAM_OCCUPANCY_AND_RESERVATION.md",
+      "bytes": 1372,
+      "sha256": "a3a7b7c1b563e2ff29678459a00adf378e0857b0b2e00f0a4bfbaa29ae735fa8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-sram-r1/audit_linux73_firmware_sram_occupancy.py",
+      "source": "tools/audit_linux73_firmware_sram_occupancy.py",
+      "bytes": 11443,
+      "sha256": "9ff2d704ccc273f19a771a69dd77d63cfb324ef4f396d53c47ca4318a1be5894",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-sram-r1/audit_linux73_sram_load_blocker.py",
+      "source": "tools/audit_linux73_sram_load_blocker.py",
+      "bytes": 8706,
+      "sha256": "4d402b2053e72ee66246fb70a7eb5704540ec8fe1cd693325c65d4f4435bd723",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

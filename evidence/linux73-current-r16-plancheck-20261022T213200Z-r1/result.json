@@ -1,0 +1,40 @@
+{
+  "status": "PASS_CURRENT_R16_PLAN173FILES72UNITS21MODULES_AND_THREE_HASH_NEGATIVES",
+  "hardware_accessed": false,
+  "build_started": false,
+  "output_directory_absent": true,
+  "manifest_files": 173,
+  "C_units": 72,
+  "modules": 21,
+  "requiredconfig": {
+    "OPENMITRASTAR_QDRV_COMPAT": "y",
+    "WIRELESS_EXT": "y",
+    "WEXT_CORE": "y",
+    "WEXT_PRIV": "y",
+    "NET_SCHED": "y",
+    "BRIDGE": "m",
+    "GPIOLIB": "y",
+    "I2C": "y",
+    "CRYPTO_LIB_AES": "m",
+    "CFG80211_REQUIRE_SIGNED_REGDB": "y",
+    "CFG80211_USE_KERNEL_REGDB_KEYS": "y",
+    "CFG80211": "m",
+    "MAC80211": "m",
+    "RTL8192EE": "m"
+  },
+  "negative_cases": [
+    {
+      "case": "--expected-config-sha256",
+      "rejected": true
+    },
+    {
+      "case": "--compiler-sha256",
+      "rejected": true
+    },
+    {
+      "case": "--expected-kernel-makefile-sha256",
+      "rejected": true
+    }
+  ],
+  "tool_sha256": "f301d77b40db29fb4e4e817ab7dccd27bdbbe4edaba7bdfa33573cbd94c7ed5e"
+}

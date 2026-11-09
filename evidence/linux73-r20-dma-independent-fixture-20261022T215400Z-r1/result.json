@@ -1,0 +1,15 @@
+{
+  "status": "PASS_R20_ACTUAL_DMA_ALLOCATION_FREE_BOUNDS_BACKEND_AND_DUPLICATE_OWNER_32BIT_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "actual_DMA_cases": 42,
+  "public_layout_bytes": 20,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_linux73_r20_dma_independent.py": "d55ce2d8aadab59940e2b232897b42f0e0d0d38e6cab6654e9694c71d45e5cbe",
+    "outputs\\rea\\linux73-full44-candidate-20261023T010500Z-r20\\source\\platform\\ruby\\dmautil.c": "8a3042f9ce649a67739c4623725c2727f144ae17ca8af1281debebc81fd3a018",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\i686-w64-mingw32-clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+    "outputs\\rea\\linux73-r20-dma-independent-fixture-20261022T215400Z-r1\\actual-dma.c": "6e752010cfcb63574f67dd800af4837f936cd30d981599856c6489ab7b794f7d",
+    "outputs\\rea\\linux73-r20-dma-independent-fixture-20261022T215400Z-r1\\fixture.exe": "8dc0fb176bad00c329837c34494326c64a83be5bbe8e1b50822e0d326c19ab8b"
+  },
+  "limits": "ActualDMAcontroller/body, hostheap/map/spinlocks fakes; 32bitmul/addoverflow&typedpubliclayout tested. NoARCphysicalbus/MMIO/MuCtiming or concurrentrealcaller proof."
+}

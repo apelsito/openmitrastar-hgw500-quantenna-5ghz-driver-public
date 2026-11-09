@@ -1,0 +1,12 @@
+{
+  "status": "PASS_OEM481_RECOVERED_CORE_STATE_CALL_SEQUENCE_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 1110083,
+  "exact_callback_sequences": 2,
+  "setter_getter_state_preserved": true,
+  "auto_backoff": true,
+  "fixture_sha256": "85cae33154f24c24d1503a92c50b2369207c447627603f6ccbb9c0995fbb77fb",
+  "source_sha256": "1370a38b94d83ac5395189d1305689f69c92bf4d95c1d0c1a3ee461233c88ad1",
+  "limits": "Reconstructed C core tested with fake providers; not kernel/Lifetime/SCS/OCAC/MuC behavior, ioctl registration or physical acceptance."
+}

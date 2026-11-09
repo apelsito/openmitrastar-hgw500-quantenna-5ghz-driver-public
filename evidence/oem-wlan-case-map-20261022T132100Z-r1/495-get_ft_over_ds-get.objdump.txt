@@ -1,0 +1,147 @@
+   397ea:	1c14 3f80 ffff ffa1 	st	0xffffffa1,[sp,20]
+   397f2:	0021 0000           	b	32	;39810 <ieee80211_find_channel_by_ieee+0x2484>
+   397f6:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   397fe:	0015 0000           	b	20	;39810 <ieee80211_find_channel_by_ieee+0x2484>
+   39802:	da03                	mov_s	r2,0x3
+   39804:	1a00 3080           	st	r2,[gp]
+   39808:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   39810:	c005                	ld_s	r0,[sp,0x14]
+   39812:	140b 361f           	ld.as	blink,[sp,11]
+   39816:	1420 320d           	ld.aw	r13,[sp,32]
+   3981a:	c601                	ld_s	r14,[sp,0x4]
+   3981c:	7fe0                	j_s.d	[blink]
+   3981e:	c0a4                	add_s	sp,sp,0x10
+   39820:	c0f1                	push_s	blink
+   39822:	1cfc b348           	st.aw	r13,[sp,-4]
+   39826:	c1a2                	sub_s	sp,sp,0x8
+   39828:	7548                	mov_s	r13,r2
+   3982a:	1206 0102           	ldh	r2,[r2,6]
+   3982e:	2253 02c3           	bmsk	r3,r2,0xb
+   39832:	e38a                	cmp_s	r3,0xa
+   39834:	023c 000d           	bhi	572	;39a70 <ieee80211_find_channel_by_ieee+0x26e4>
+   39838:	220a 0f80 0008 740c 	mov	r2,0x8740c
+   39840:	22f0 00c2           	ld.as	r2,[r2,r3]
+   39844:	7a00                	j_s	[r2]
+   39846:	2440 321a           	add	gp,sp,0x8
+   3984a:	da0a                	mov_s	r2,0xa
+   3984c:	1afc b088           	st.aw	r2,[gp,-4]
+   39850:	734b                	mov_s	r3,gp
+   39852:	d900                	mov_s	r1,0
+   39854:	220a 3f80 0003 741c 	mov	gp,0x3741c
+   3985c:	2023 0680           	jl.d	[gp]
+   39860:	da00                	mov_s	r2,0
+   39862:	200a 8000           	mov.f	r0,r0
+   39866:	0224 0002           	bne	548	;39a88 <ieee80211_find_channel_by_ieee+0x26fc>
+   3986a:	c201                	ld_s	r2,[sp,0x4]
+   3986c:	e281                	cmp_s	r2,0x1
+   3986e:	22ca 00a1           	mov.eq	r2,0x2
+   39872:	01fa 0001           	beq	506	;39a6a <ieee80211_find_channel_by_ieee+0x26de>
+   39876:	e281                	cmp_s	r2,0x1
+   39878:	01c6 000b           	blt	454	;39a3e <ieee80211_find_channel_by_ieee+0x26b2>
+   3987c:	e283                	cmp_s	r2,0x3
+   3987e:	22ca 012c           	mov.le	r2,0x4
+   39882:	01ea 000c           	ble	490	;39a6a <ieee80211_find_channel_by_ieee+0x26de>
+   39886:	01bb 0000           	b	442	;39a3e <ieee80211_find_channel_by_ieee+0x26b2>
+   3988a:	2440 321a           	add	gp,sp,0x8
+   3988e:	da08                	mov_s	r2,0x8
+   39890:	1afc b088           	st.aw	r2,[gp,-4]
+   39894:	734b                	mov_s	r3,gp
+   39896:	d900                	mov_s	r1,0
+   39898:	220a 3f80 0003 741c 	mov	gp,0x3741c
+   398a0:	2023 0680           	jl.d	[gp]
+   398a4:	da00                	mov_s	r2,0
+   398a6:	200a 8000           	mov.f	r0,r0
+   398aa:	01e0 0002           	bne	480	;39a88 <ieee80211_find_channel_by_ieee+0x26fc>
+   398ae:	c201                	ld_s	r2,[sp,0x4]
+   398b0:	0a19 01d5           	brhs	r2,0x7,24	;398c8 <ieee80211_find_channel_by_ieee+0x253c>
+   398b4:	230a 0f80 0008 7438 	mov	r3,0x87438
+   398bc:	23f0 0083           	ld.as	r3,[r3,r2]
+   398c0:	7b00                	j_s	[r3]
+   398c2:	da08                	mov_s	r2,0x8
+   398c4:	001b 0000           	b	26	;398de <ieee80211_find_channel_by_ieee+0x2552>
+   398c8:	228a 0fff           	mov	r2,-1
+   398cc:	0013 0000           	b	18	;398de <ieee80211_find_channel_by_ieee+0x2552>
+   398d0:	da01                	mov_s	r2,0x1
+   398d2:	000f 0000           	b	14	;398de <ieee80211_find_channel_by_ieee+0x2552>
+   398d6:	da10                	mov_s	r2,0x10
+   398d8:	0007 0000           	b	6	;398de <ieee80211_find_channel_by_ieee+0x2552>
+   398dc:	da04                	mov_s	r2,0x4
+   398de:	a540                	st_s	r2,[r13,0]
+   398e0:	e280                	cmp_s	r2,0
+   398e2:	01a8 000a           	bge	424	;39a88 <ieee80211_find_channel_by_ieee+0x26fc>
+   398e6:	0063 0000           	b	98	;39946 <ieee80211_find_channel_by_ieee+0x25ba>
+   398ea:	2440 321a           	add	gp,sp,0x8
+   398ee:	da05                	mov_s	r2,0x5
+   398f0:	1afc b088           	st.aw	r2,[gp,-4]
+   398f4:	734b                	mov_s	r3,gp
+   398f6:	d900                	mov_s	r1,0
+   398f8:	220a 3f80 0003 741c 	mov	gp,0x3741c
+   39900:	2023 0680           	jl.d	[gp]
+   39904:	da00                	mov_s	r2,0
+   39906:	200a 8000           	mov.f	r0,r0
+   3990a:	0180 0002           	bne	384	;39a88 <ieee80211_find_channel_by_ieee+0x26fc>
+   3990e:	c201                	ld_s	r2,[sp,0x4]
+   39910:	0a19 01d5           	brhs	r2,0x7,24	;39928 <ieee80211_find_channel_by_ieee+0x259c>
+   39914:	230a 0f80 0008 7454 	mov	r3,0x87454
+   3991c:	23f0 0083           	ld.as	r3,[r3,r2]
+   39920:	7b00                	j_s	[r3]
+   39922:	da08                	mov_s	r2,0x8
+   39924:	001b 0000           	b	26	;3993e <ieee80211_find_channel_by_ieee+0x25b2>
+   39928:	228a 0fff           	mov	r2,-1
+   3992c:	0013 0000           	b	18	;3993e <ieee80211_find_channel_by_ieee+0x25b2>
+   39930:	da01                	mov_s	r2,0x1
+   39932:	000f 0000           	b	14	;3993e <ieee80211_find_channel_by_ieee+0x25b2>
+   39936:	da10                	mov_s	r2,0x10
+   39938:	0007 0000           	b	6	;3993e <ieee80211_find_channel_by_ieee+0x25b2>
+   3993c:	da04                	mov_s	r2,0x4
+   3993e:	a540                	st_s	r2,[r13,0]
+   39940:	e280                	cmp_s	r2,0
+   39942:	0148 000a           	bge	328	;39a88 <ieee80211_find_channel_by_ieee+0x26fc>
+   39946:	208a 0abf           	mov	r0,-22
+   3994a:	0141 0000           	b	320	;39a88 <ieee80211_find_channel_by_ieee+0x26fc>
+   3994e:	2440 321a           	add	gp,sp,0x8
+   39952:	da15                	mov_s	r2,0x15
+   39954:	1afc b088           	st.aw	r2,[gp,-4]
+   39958:	734b                	mov_s	r3,gp
+   3995a:	d900                	mov_s	r1,0
+   3995c:	220a 3f80 0003 741c 	mov	gp,0x3741c
+   39964:	2023 0680           	jl.d	[gp]
+   39968:	da00                	mov_s	r2,0
+   3996a:	200a 8000           	mov.f	r0,r0
+   3996e:	011c 0002           	bne	284	;39a88 <ieee80211_find_channel_by_ieee+0x26fc>
+   39972:	c201                	ld_s	r2,[sp,0x4]
+   39974:	a500                	st_s	r0,[r13,0]
+   39976:	2244 0042           	and	r2,r2,0x1
+   3997a:	ea04                	breq_s	r2,0,8	;39980 <ieee80211_find_channel_by_ieee+0x25f4>
+   3997c:	da01                	mov_s	r2,0x1
+   3997e:	a540                	st_s	r2,[r13,0]
+   39980:	c201                	ld_s	r2,[sp,0x4]
+   39982:	2244 0082           	and	r2,r2,0x2
+   39986:	7a4b                	tst_s	r2,r2
+   39988:	0100 0001           	beq	256	;39a88 <ieee80211_find_channel_by_ieee+0x26fc>
+   3998c:	8540                	ld_s	r2,[r13,0]
+   3998e:	2245 0082           	or	r2,r2,0x2
+   39992:	00db 0000           	b	218	;39a6a <ieee80211_find_channel_by_ieee+0x26de>
+   39996:	2440 321a           	add	gp,sp,0x8
+   3999a:	da0e                	mov_s	r2,0xe
+   3999c:	1afc b088           	st.aw	r2,[gp,-4]
+   399a0:	734b                	mov_s	r3,gp
+   399a2:	d900                	mov_s	r1,0
+   399a4:	220a 3f80 0003 741c 	mov	gp,0x3741c
+   399ac:	2023 0680           	jl.d	[gp]
+   399b0:	da00                	mov_s	r2,0
+   399b2:	200a 8000           	mov.f	r0,r0
+   399b6:	00d4 0002           	bne	212	;39a88 <ieee80211_find_channel_by_ieee+0x26fc>
+   399ba:	00b1 0000           	b	176	;39a68 <ieee80211_find_channel_by_ieee+0x26dc>
+   399be:	2440 321a           	add	gp,sp,0x8
+   399c2:	da0f                	mov_s	r2,0xf
+   399c4:	1afc b088           	st.aw	r2,[gp,-4]
+   399c8:	734b                	mov_s	r3,gp
+   399ca:	d900                	mov_s	r1,0
+   399cc:	220a 3f80 0003 741c 	mov	gp,0x3741c
+   399d4:	2023 0680           	jl.d	[gp]
+   399d8:	da00                	mov_s	r2,0
+   399da:	200a 8000           	mov.f	r0,r0
+   399de:	00ac 0002           	bne	172	;39a88 <ieee80211_find_channel_by_ieee+0x26fc>
+   399e2:	0089 0000           	b	136	;39a68 <ieee80211_find_channel_by_ieee+0x26dc>
+   399e6:	2440 321a           	add	gp,sp,0x8

@@ -1,0 +1,16 @@
+[
+  "/usr/bin/python3",
+  "/workspace/user-home/Desktop/MitraStar/tools/compose_hgw5g_joint_modules_dedup.py",
+  "--source-build",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/b",
+  "--candidate",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-source-20261022T222600Z-r2",
+  "--lane",
+  "a",
+  "--qdrv-baseline-build",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/arc700-20261021-r2/f370-module-20261021T221200Z-r2",
+  "--wlan-baseline-build",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-wlan-baseline-r2",
+  "--output",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/b-joint"
+]

@@ -1,0 +1,18 @@
+In file included from /workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:31,
+                 from ./././source/qdrv/compat/include/openmitrastar_qdrv_compat.h:7,
+                 from <command-line>:
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/common_mem.h:239:46: warning: no previous prototype for 'bus_to_virt' [-Wmissing-prototypes]
+  239 |                 RUBY_WEAK(bus_to_virt) void* bus_to_virt(unsigned long addr)
+      |                                              ^~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:305:57: warning: no previous prototype for 'muc_to_nocache' [-Wmissing-prototypes]
+  305 |                         RUBY_WEAK(muc_to_nocache) void* muc_to_nocache(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/common/ruby_mem.h:317:57: warning: no previous prototype for 'nocache_to_muc' [-Wmissing-prototypes]
+  317 |                         RUBY_WEAK(nocache_to_muc) void* nocache_to_muc(const void *addr)
+      |                                                         ^~~~~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r23-actual-map-witness-20261023T044500Z-r1/map-witness.c:3:15: warning: no previous prototype for 'om_r23_muc_translate' [-Wmissing-prototypes]
+    3 | unsigned long om_r23_muc_translate(unsigned long a){return virt_to_phys((void *)muc_to_lhost(a));}
+      |               ^~~~~~~~~~~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r23-actual-map-witness-20261023T044500Z-r1/map-witness.c:4:15: warning: no previous prototype for 'om_r23_bus_translate' [-Wmissing-prototypes]
+    4 | unsigned long om_r23_bus_translate(unsigned long a){return virt_to_phys(bus_to_virt(a));}
+      |               ^~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,24 @@
+{
+  "status": "PASS_ACTUAL_MDID494_FT495_CONTROL_AND_MDIE_CALLER_BLOCK_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "MDIE_cases": 16777216,
+  "actual_control_and_caller_cases": 65664,
+  "495_getter_faithful_unsupported": true,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_mdid494_ft495_paths.py": "03df8b7c2b611faac18ef5508f508a6fd32d21f13a70fd7ee242fdf8b492d726",
+    "outputs\\rea\\hgw5g-linux73-all-ops-source-20261022T210000Z-r4\\source\\wlan\\ieee80211_wireless.c": "27143411cb294b1da7f6477154b73609a2600cb58553ae48d25163e0be2facd9",
+    "outputs\\rea\\hgw5g-linux73-all-ops-source-20261022T210000Z-r4\\source\\wlan\\ieee80211_beacon.c": "1411d52adce1021ad1b9e30a055e85b0d679d0a4ec18e876d524f3feed96a9f0",
+    "outputs\\rea\\hgw5g-linux73-all-ops-source-20261022T210000Z-r4\\source\\wlan\\ieee80211_beacon_desc.c": "aadc79466e403131f50ffb0797456f4ac2a2f1af63c01ce070a32cf3f0d3202e",
+    "outputs\\rea\\hgw5g-linux73-all-ops-source-20261022T210000Z-r4\\source\\wlan\\ieee80211_output.c": "70c7d270e012ec6f90f6930833f5e4a68d16645298bc0dc58851b69870b30714",
+    "outputs\\rea\\hgw5g-linux73-all-ops-source-20261022T210000Z-r4\\source\\wlan\\openmitrastar_mdie.h": "826de380928c522bc4e07a69022b46993e71fba34db922612f8f863e54de665f",
+    "tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\clang.exe": "a8b7a614eeadd9105f814be3701a7f312cda4cea51751b75b408c16100c94e85",
+    "outputs\\rea\\hgw5g-all-ops-mdie-fixture-20261022T210200Z-r1\\actual-mdid-ft.c": "9195c392a244b25b085bc2a5b8eb3d8735d46aa2f087613d1bb2dcb6160bdb74",
+    "outputs\\rea\\hgw5g-all-ops-mdie-fixture-20261022T210200Z-r1\\fixture.exe": "918550968830e1168955a4ad877ecfdd563430970d897040fd5bb9be85a9a73d"
+  },
+  "limits": [
+    "ActualWEXTcases/conditionalbeacon-probe/IEdescriptorcase/helper; fakebeaconcallback/descriptorallocation.",
+    "MDIE16bit×8bitproducerexhausted; callbackresource/lifetime/publishingnotverifiedbyhostfixture.",
+    "NoFTauthentication/DSresponse/client/RFacceptance."
+  ]
+}

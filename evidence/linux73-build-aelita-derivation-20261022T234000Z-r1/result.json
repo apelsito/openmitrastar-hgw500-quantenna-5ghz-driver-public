@@ -1,0 +1,15 @@
+{
+  "status": "NEW_DERIVED_TOOL_PREDECESSOR_UNCHANGED_PENDING_ACTUAL_PLAN",
+  "predecessor": "/workspace/user-home\\Desktop\\MitraStar\\repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\tools\\linux73_build_current_ipv6.py",
+  "predecessor_sha256": "909ff66923e4b75619c493d3d89b3a4a05b515d4e8a95abf89991256f1b12dfc",
+  "new_tool": "/workspace/user-home\\Desktop\\MitraStar\\repos\\openmitrastar-hgw500-quantenna-5ghz-driver\\tools\\linux73_build_aelita.py",
+  "new_tool_sha256": "6eb8199d80b6ccb1aa4486194d302b5646b2ddf5c43bfdc658c55c3a5a2d56a4",
+  "changes": [
+    "No dtbs target",
+    "Require emptyDTname/initramfs at inspection, afterolddefconfig andprevmlinux",
+    "Validateallrequiredconfigafterolddefconfig beforekernelcompile",
+    "Explicitexistingrealreference-symvers; nevercopyit tonewbuild",
+    "PreserveETH73contract mandatory"
+  ],
+  "hardware_accessed": false
+}

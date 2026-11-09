@@ -1,0 +1,314 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "components/ethernet-linux73/build.py",
+      "source": "assembled-private-aelita-package/build.py",
+      "bytes": 6131,
+      "sha256": "57eda81e6761f86b03dc78cdf4496a3c77338ecbe5a51e7d58c11deeca6de6c0",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/KERNEL_PREPARATION.md",
+      "source": "assembled-private-aelita-package/KERNEL_PREPARATION.md",
+      "bytes": 3948,
+      "sha256": "a8721320a372597b7bef6e4c2898c9878631f0efc3fa39fd5e222a8b16c17d34",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/prepare_kernel.py",
+      "source": "assembled-private-aelita-package/prepare_kernel.py",
+      "bytes": 10468,
+      "sha256": "32c79d659d4b5436b7f18779799e18941c021735a01ca95a7c2dc8973899a105",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/README.md",
+      "source": "assembled-private-aelita-package/README.md",
+      "bytes": 3049,
+      "sha256": "76e29637f6ff9aaa6f9af65517ca432a1491e164e0ac4e3c364289a45eaa42de",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/SOURCE_MANIFEST.json",
+      "source": "assembled-private-aelita-package/SOURCE_MANIFEST.json",
+      "bytes": 4661,
+      "sha256": "482c98300b0165000142ff505f6dbb0bc42f40c9f93a5550fcf115028ee18019",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/test_plan.py",
+      "source": "assembled-private-aelita-package/test_plan.py",
+      "bytes": 2902,
+      "sha256": "6bcf6bcc07216208a59729ce41420161a8314dbb8822351041b3c1d94cfd4248",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/TOOLCHAIN_DELIVERY_MANIFEST.json",
+      "source": "assembled-private-aelita-package/TOOLCHAIN_DELIVERY_MANIFEST.json",
+      "bytes": 651112,
+      "sha256": "2f9fd1c815727259a42cd15b422656f379ffc70b2529bd48a4faac1e8b531a69",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/TOOLCHAIN_EXTERNAL.json",
+      "source": "assembled-private-aelita-package/TOOLCHAIN_EXTERNAL.json",
+      "bytes": 2977,
+      "sha256": "1f08ded2f66b69700f53bd0200220c84fb857713957df9c0a956800c909fb6a4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/TOOLCHAIN_PRIVATE_ASSET.json",
+      "source": "assembled-private-aelita-package/TOOLCHAIN_PRIVATE_ASSET.json",
+      "bytes": 1042,
+      "sha256": "625de068c260fab16d291b36e9750a73253c32c9a4a7dc5ef51b8f985c7bec79",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/driver/f352_contract.h",
+      "source": "assembled-private-aelita-package/driver/f352_contract.h",
+      "bytes": 2082,
+      "sha256": "86ce6864caa11d06c127c36fdb8e9e5999c23cf61a7a07ede705b0f51d47b2a2",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/driver/f352_pair.inc",
+      "source": "assembled-private-aelita-package/driver/f352_pair.inc",
+      "bytes": 7390,
+      "sha256": "027ebd5da0cdc98499e58fbb79e8d883089ca49ae36ebe298140e1df69bbcbf3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/driver/Makefile",
+      "source": "assembled-private-aelita-package/driver/Makefile",
+      "bytes": 32,
+      "sha256": "5d9861a9b0791efba1d918a9b54e4038ffb1d405f3b992d928c6f775a96df9ca",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/driver/qtn-topaz-emac-eth73.c",
+      "source": "assembled-private-aelita-package/driver/qtn-topaz-emac-eth73.c",
+      "bytes": 56463,
+      "sha256": "9c72b137d60806fd1345e1410416a86688cdca813435b383f02f1999c425a8d1",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/driver/topaz-ethernet.h",
+      "source": "assembled-private-aelita-package/driver/topaz-ethernet.h",
+      "bytes": 9066,
+      "sha256": "b76ed50ef43801e20d91b5889445f19c54eb0758a445356133116a0d22f835d4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/AUDIT.json",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/AUDIT.json",
+      "bytes": 16467,
+      "sha256": "8b691e5933f7ff1d9aa36cf6dd7a8fccd2f9a4b0ddf0f915602ee60f1dafeb23",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/config.sanitized",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/config.sanitized",
+      "bytes": 53722,
+      "sha256": "9de91b2b0006598196b2f3dc1ef88ad1c52d922454d1763e2452a66d0dbe2cb0",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v2/config.sanitized",
+      "source": "assembled-private-aelita-package/kernel-preparation-v2/config.sanitized",
+      "bytes": 55926,
+      "sha256": "39c4ba514fdb6c5a1491f96ac2352bb9964af5d86dd78cf0831d1fb161614f70",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v2/kernel-source-pins.json",
+      "source": "assembled-private-aelita-package/kernel-preparation-v2/kernel-source-pins.json",
+      "bytes": 10870551,
+      "sha256": "0d58bf0ab674fd2beb5a47f91e254800e17c5e05ced2ee42ae9b6e549d8ec671",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v2/OLDDEFCONFIG_RESULT.json",
+      "source": "assembled-private-aelita-package/kernel-preparation-v2/OLDDEFCONFIG_RESULT.json",
+      "bytes": 344,
+      "sha256": "afc8ef997e5bcf5262e3e5017286ea178aad34ebd0f805b02d4fb5cfb71fc8d4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v2/PREPARE_RESULT.json",
+      "source": "assembled-private-aelita-package/kernel-preparation-v2/PREPARE_RESULT.json",
+      "bytes": 39002,
+      "sha256": "95624ce8d90239299237d55360ec7b9c4fc0d7409d8f292671b4d618ba313e61",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v2/SANITIZATION.json",
+      "source": "assembled-private-aelita-package/kernel-preparation-v2/SANITIZATION.json",
+      "bytes": 412,
+      "sha256": "3a32d39117d3c198b5611249558716a78cdaeec736fd4a54a57dd2fa4401f269",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/reference/ethernet-only-intc-compact.c",
+      "source": "assembled-private-aelita-package/reference/ethernet-only-intc-compact.c",
+      "bytes": 6680,
+      "sha256": "2571db3b9d4d0d8b76727cdc1cb7ff5aa1ec9b48f9733b6e40481e61bd5e303e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/board-overlay/arch/arc/kernel/intc-compact.c",
+      "source": "assembled-private-aelita-package/board-overlay/arch/arc/kernel/intc-compact.c",
+      "bytes": 7358,
+      "sha256": "ce37e4da988159ecaa0b4d306244cd5805d875812ca3b7d93e90a0ff8184f7e5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/board-overlay/include/linux/soc/qtn/topaz-ethernet.h",
+      "source": "assembled-private-aelita-package/board-overlay/include/linux/soc/qtn/topaz-ethernet.h",
+      "bytes": 9066,
+      "sha256": "b76ed50ef43801e20d91b5889445f19c54eb0758a445356133116a0d22f835d4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/Kconfig",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/Kconfig",
+      "bytes": 15708,
+      "sha256": "eed9ea77e11c190f5262b880b519e27d7e96db0f526f17bb19ece25ebf7b4451",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/Makefile",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/Makefile",
+      "bytes": 3454,
+      "sha256": "236305b1f37bfc8df4a8e11c7219f1878289f76aff9bf2cc6bcfea8a16670952",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/kernel/intc-compact.c",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/kernel/intc-compact.c",
+      "bytes": 7358,
+      "sha256": "ce37e4da988159ecaa0b4d306244cd5805d875812ca3b7d93e90a0ff8184f7e5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/mm/cache.c",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/mm/cache.c",
+      "bytes": 30907,
+      "sha256": "446744ea5e32f8805188bf49ec1cbd338097e4e1e6ebeadb442c00854dc82ed6",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/mm/tlb.c",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/mm/tlb.c",
+      "bytes": 21155,
+      "sha256": "a52d64cf133597afea335044454018723d3e042696dd10bf39a95bcf2f4d809b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/mm/tlbex.S",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/mm/tlbex.S",
+      "bytes": 11526,
+      "sha256": "5f625a0ffdbcfb181a57fa9bb3784f1d3e7aacee19fe697961709a2b31813b15",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/plat-topaz-basic/Kconfig",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/plat-topaz-basic/Kconfig",
+      "bytes": 788,
+      "sha256": "2035c03fc886849868c38b6c8f50c4249b8fc766bd85da168368aedf5143b5d8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/plat-topaz-basic/Makefile",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/plat-topaz-basic/Makefile",
+      "bytes": 20,
+      "sha256": "888fe3732d3ab1d604cc7253de830072456b874ce68832057979b875571a4c24",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/plat-topaz-basic/platform.c",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/plat-topaz-basic/platform.c",
+      "bytes": 385,
+      "sha256": "fa98974daf7be61ffa9666597021b0b8e8bb4145b8f7fd276710f35f6cf04bbd",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/include/asm/mmu-arcv2.h",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/include/asm/mmu-arcv2.h",
+      "bytes": 2598,
+      "sha256": "76c42a4d3c6cc4b19f5e5525259fd0a8c84bd4f1cf996d8cb1a7706309ef1476",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/include/asm/pgtable-bits-arcv2.h",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/include/asm/pgtable-bits-arcv2.h",
+      "bytes": 5460,
+      "sha256": "9a92c6df45df84ac671aae9f46be481b0d8217907ef4fcdd652a12c9dce3e8de",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/arch/arc/include/uapi/asm/swab.h",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/arch/arc/include/uapi/asm/swab.h",
+      "bytes": 1323,
+      "sha256": "8f26450812e83b9d5803df40901e67e45b3ac03a523d247d26fab71aa1c4e064",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/drivers/irqchip/irq-qtn-topaz-uart-basic.c",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/drivers/irqchip/irq-qtn-topaz-uart-basic.c",
+      "bytes": 5326,
+      "sha256": "9095bbbb1eba53a92e9406c39ab5fba1d69ecc604130c46312abb2bf172f9260",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/drivers/irqchip/Kconfig",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/drivers/irqchip/Kconfig",
+      "bytes": 20897,
+      "sha256": "ad2317196b341aa5a010b4a991e7045b2aeacb30d3798924e3a9af8b120e375b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/drivers/irqchip/Makefile",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/drivers/irqchip/Makefile",
+      "bytes": 6946,
+      "sha256": "c989a9223082c85a775b52d85a8b1666aa411de100581201daa03936b66d3c7c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/drivers/pci/controller/Makefile",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/drivers/pci/controller/Makefile",
+      "bytes": 2967,
+      "sha256": "ca85ea139897f432646526837f55d3cbcef1b547f0ce72218ebdfd91b02c569f",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/drivers/pci/controller/pcie-qtn-topaz.c",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/drivers/pci/controller/pcie-qtn-topaz.c",
+      "bytes": 7690,
+      "sha256": "ca46f394486eccf1b4fd24699ec8e2dc3e6960ccfe783b30d9ece02335a05204",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v1/board-overlay/include/linux/soc/qtn/topaz-ethernet.h",
+      "source": "assembled-private-aelita-package/kernel-preparation-v1/board-overlay/include/linux/soc/qtn/topaz-ethernet.h",
+      "bytes": 8526,
+      "sha256": "59e06f782d8afa0eb0da5db7a9723d28c82678fe422dd51f34d7914b8a9f18c9",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/kernel-preparation-v2/current-source-verification/result.json",
+      "source": "assembled-private-aelita-package/kernel-preparation-v2/current-source-verification/result.json",
+      "bytes": 810,
+      "sha256": "720cba8b3161d3fba96ad029e266dc3e2f30defbf4641ad873fbd4a990ef17c3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "components/ethernet-linux73/PACKAGE_FINAL_MANIFEST.json",
+      "source": "assembled-private-aelita-package/PACKAGE_FINAL_MANIFEST.json",
+      "bytes": 6314,
+      "sha256": "a24974f508bdf72695fe34846f91286211e9df3b043ffcd1b9718954b652c37c",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "hardware_accessed": false
+}

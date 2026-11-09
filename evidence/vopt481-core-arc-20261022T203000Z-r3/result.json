@@ -1,0 +1,27 @@
+{
+  "status": "PASS_ARC_VOPT481_ISOLATED_CORE_OBJECT_ONLY",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "module_built": false,
+  "input_pins": 1040,
+  "inputs_unchanged": true,
+  "bytes": 2104,
+  "sha256": "7202eb085df09783088b57a7151df37767567bddfb58a4b7914aab90f88e58e5",
+  "functions": [
+    "bus_to_virt",
+    "muc_to_nocache",
+    "nocache_to_muc",
+    "om_vopt_apply",
+    "om_vopt_count_peer",
+    "om_vopt_get",
+    "om_vopt_initialize",
+    "om_vopt_set",
+    "om_vopt_tick"
+  ],
+  "limits": "StandaloneARC object only, no kernelregistration/providers/moduleclosure/physicalgrant.",
+  "adaptation_pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/compile_hgw5g_vopt481_core.py": "dc78d6d85bd67f0f6d229ec05f31fa03da15b9ffde3d4dc80462f4f37dfd0e34",
+    "/workspace/user-home/Desktop/MitraStar/tools/compile_hgw5g_rbsdfs_recovered_core.py": "ea984f9c56f44554357b44a5838c2054da0db0a6c7667f7ac08bd135f6f7c8a5",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/vopt481-core-arc-20261022T203000Z-r3/adapted-core-compiler.py": "8ec9ac484a7cb407ba071af56b1ee6286216c4fe1be832aeb083b7124fdac8f3"
+  }
+}

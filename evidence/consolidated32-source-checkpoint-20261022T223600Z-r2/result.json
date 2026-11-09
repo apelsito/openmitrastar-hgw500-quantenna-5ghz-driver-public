@@ -1,0 +1,73 @@
+{
+  "status": "PASS_SOURCE_ONLY_CONSOLIDATED32_SCANNER_OVERLAY_ABI_TYPED_UNITS_AND_FIXTURES_PENDING_MODULES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "source_original_records": 32,
+  "qualified_combined_records": null,
+  "actual_ARC_private_table_object_records": 598,
+  "parent30_private_records_preserved": 596,
+  "new_461_records": [
+    {
+      "index": 596,
+      "cmd": 461,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "set_bw_autosel"
+    },
+    {
+      "index": 597,
+      "cmd": 461,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bw_autosel"
+    }
+  ],
+  "new_source_files": 4,
+  "scanner_old_fields": {
+    "ieee80211_scan_state": 17,
+    "scan_state": 8
+  },
+  "scanner_private_sizes": {
+    "old": 1188,
+    "new": 14784
+  },
+  "host_wire_sizes_unchanged": true,
+  "actual_changed_syntax_units": 4,
+  "all_current_pins": 3556,
+  "fixture_receipts": [
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-start-fixture-20261022T222700Z-r2/result.json",
+      "status": "PASS_ACTUAL_KERNEL_START_LEGACY_RESERVATION_GUARD"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-next-end-fixture-20261022T222700Z-r2/result.json",
+      "status": "PASS_ACTUAL_FULL_SCAN_NEXT_AP_END_FOREGROUND_SOURCE_FIXTURE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-critical-fixture-20261022T222700Z-r2/result.json",
+      "status": "PASS_ACTUAL_ADAPTER_REVIEW_FIXTURE_WITH_CALLBACK_COUNTEREXAMPLES"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-detach-fixture-20261022T223200Z-r2/result.json",
+      "status": "PASS_ACTUAL_TASKLET_VDETACH_TASKLET_FIRST_JOIN_SCHEDULE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-449-policy-20261022T222800Z-r2/result.json",
+      "status": "PASS_ACTUAL_COEX26_TIMER_SCAN_ASSOC_STA_OBSS_CONSUMER_FIXTURE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-coc-fixture-20261022T222800Z-r2/result.json",
+      "status": "PASS_ACTUAL_COC491_DEFERRED_WORK_CONSUMER_CALLBACK_QUEUE_HOST_REFERENCE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-app-fixture-20261022T222800Z-r2/result.json",
+      "status": "PASS_ACTUAL_APP_HELPER_LENGTH_ALLOCATION_BH_TRANSACTION_FIXTURE"
+    }
+  ],
+  "limits": [
+    "Source32only;fullpairedmodules/allRELA/symbol/data/newexport/parsednegativeglobalgate pending.",
+    "UP/PREEMPT_NONEforegroundAPsampleonly; typed40protocolstates manuallyinstalledinfixtures, noautonomous40scancoverage.",
+    "Shared13wordstats scalarsnotcoherenttuple; noforeigncallerVAP/objectlifetimeproof.",
+    "Existing449/491/492493/NAC/twofaithfulunsupportedlimitsretained; noRFclienttrafficbootpersistence/recovery/release."
+  ]
+}

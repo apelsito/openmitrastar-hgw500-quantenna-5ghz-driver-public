@@ -1,0 +1,19 @@
+{
+  "status": "SOURCE_ONLY_NAC_READ_FORMAT_NO_GO_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "candidate_sha256": "54e4aad1a188ff314302822ccd425407399ac1b3eef70b685807ba9eaeb2c4ac",
+  "header_sha256": "a0f5a0633bbb610de432f21c9733ae0d6401b298f845080b37d4b258de62f5f3",
+  "parent_sha256": "7a128781902eb6cc58f71e2b4a30ae005de7ebf168a10a9ae4139557b93a9be8",
+  "oem_get_sha256": "294fee39538182aed0e2a16151340134f066a6e44af9f98b88dec73d7e771bb2",
+  "functional_operations_added": 9,
+  "total_added_entries": 11,
+  "remaining_original_table_gaps": 33,
+  "behavior_delta": "Return-EAGAIN unchangedoutput for absentpointer or denominator0; OEMunguarded division couldfault",
+  "limits": [
+    "No mode setter or calibration/client records.",
+    "No cross-field coherent snapshot claim.",
+    "Current pointer publication/lifetime must be qualified before modulepromotion.",
+    "Header is exact8-byte prefix only, not a redefinition of complete2596-byte allocation."
+  ]
+}

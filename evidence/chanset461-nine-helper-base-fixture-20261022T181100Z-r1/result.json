@@ -1,0 +1,12 @@
+{
+  "status": "PASS_HOST_ACTUAL461_QUEUE_EDGES_WRAP_COST_HELPERS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "inputs_unchanged": true,
+  "queue_cases": 168,
+  "random_cost_cases": 100000,
+  "edge_cases": 780,
+  "exact_default_words": 27,
+  "malformed_queue_atomic": true,
+  "limits": "No scan collection/final candidate choice/driver registration or RF acceptance"
+}

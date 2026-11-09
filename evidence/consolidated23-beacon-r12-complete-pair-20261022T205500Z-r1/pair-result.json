@@ -1,0 +1,55 @@
+{
+  "status": "PASS_CONSOLIDATED23_BEACON_R12_SOURCE58X2_JOINT_SEVEN_MODULE_PAIR_PENDING_GLOBAL",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "new_source_compiles": 58,
+  "first_source_compiles_reused": 58,
+  "reproducible": true,
+  "first_joint": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint",
+  "second_joint": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/second-joint",
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/qdrv/qdrv.ko",
+      "bytes": 684896,
+      "sha256": "7131ebbb5cfb46653784799c693be1f9b37815c375fd669bdcfbdf560002a887"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan/wlan.ko",
+      "bytes": 636140,
+      "sha256": "b7c82d8c31a2154794fba8b0e24e33ff94293e3b497be72c324ad63001bd7612"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15508,
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9772,
+      "sha256": "646a9a3f50aef605c531142dcc488fd16fa0cf57bb22facd6a9226e37ab0ae8f"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13452,
+      "sha256": "7c19bf71e449c9de0d82e69fcec855d92a76572d38f4b249b81319106c63b5d6"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated23-beacon-r12-complete-pair-20261022T205500Z-r1/first-joint/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "limits": "Complete source58x2/joint strongimports only; whole matchedcontrolresidual/ABI/fixtures stillseparate; nohardware."
+}

@@ -1,0 +1,4868 @@
+{
+  "path": "local-only/modules/f365-switch-tqe.ko",
+  "bytes": 35552,
+  "sha256": "bd5ab1018d293dc6bed655ec2bbc6da64a3969f28a3de578c04fa9c3f4af635f",
+  "elf": "ELF32LE_ET_REL_EM_ARC_COMPACT_93",
+  "symbols_total": 275,
+  "symbols": [
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": ""
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".text.unlikely"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".init.text"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".exit.text"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".rodata.str1.4"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": "__param"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".note.gnu.build-id"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".note.Linux"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".data"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".gnu.linkonce.this_module"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".comment"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".note.GNU-stack"
+    },
+    {
+      "name": "",
+      "value": 0,
+      "size": 0,
+      "type": 3,
+      "bind": 0,
+      "section": ".ARC.attributes"
+    },
+    {
+      "name": "switch_tqe.c",
+      "value": 0,
+      "size": 0,
+      "type": 4,
+      "bind": 0,
+      "section": "SPECIAL_65521"
+    },
+    {
+      "name": "__kstrtab_g_l2_ext_filter",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_g_l2_ext_filter",
+      "value": 16,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_g_l2_ext_filter_port",
+      "value": 17,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_g_l2_ext_filter_port",
+      "value": 38,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_g_wowlan_host_state",
+      "value": 39,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_g_wowlan_host_state",
+      "value": 59,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_g_wowlan_match_type",
+      "value": 60,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_g_wowlan_match_type",
+      "value": 80,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_g_wowlan_l2_ether_type",
+      "value": 81,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_g_wowlan_l2_ether_type",
+      "value": 104,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_g_wowlan_l3_udp_port",
+      "value": 105,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_g_wowlan_l3_udp_port",
+      "value": 126,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_g_dscp_flag",
+      "value": 127,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_g_dscp_flag",
+      "value": 139,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_g_dscp_value",
+      "value": 140,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_g_dscp_value",
+      "value": 153,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_port_add_handler",
+      "value": 154,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_port_add_handler",
+      "value": 175,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_port_remove_handler",
+      "value": 176,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_port_remove_handler",
+      "value": 200,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_port_set_group",
+      "value": 201,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_port_set_group",
+      "value": 220,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_port_clear_group",
+      "value": 221,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_port_clear_group",
+      "value": 242,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_port_register",
+      "value": 243,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_port_register",
+      "value": 261,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_port_unregister",
+      "value": 262,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_port_unregister",
+      "value": 282,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_reg_multicast_tx_stats",
+      "value": 283,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_reg_multicast_tx_stats",
+      "value": 310,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_switch_tqe_multi_proc_sem_down",
+      "value": 311,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_switch_tqe_multi_proc_sem_down",
+      "value": 342,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_switch_tqe_multi_proc_sem_up",
+      "value": 343,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_switch_tqe_multi_proc_sem_up",
+      "value": 372,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_rx_multicast",
+      "value": 373,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_rx_multicast",
+      "value": 390,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_register_mac_reserved_cbk",
+      "value": 391,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_register_mac_reserved_cbk",
+      "value": 421,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_register_ucastfwt_cbk",
+      "value": 422,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_register_ucastfwt_cbk",
+      "value": 448,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_register_macfwt_cbk",
+      "value": 449,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_register_macfwt_cbk",
+      "value": 473,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_rx_l2_ext_filter",
+      "value": 474,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_rx_l2_ext_filter",
+      "value": 495,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_rx_call_port_handler",
+      "value": 496,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_rx_call_port_handler",
+      "value": 521,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_register_fwt_cbk",
+      "value": 522,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_register_fwt_cbk",
+      "value": 543,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtab_tqe_tx",
+      "value": 544,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "__kstrtabns_tqe_tx",
+      "value": 551,
+      "size": 0,
+      "type": 0,
+      "bind": 0,
+      "section": "__ksymtab_strings"
+    },
+    {
+      "name": "arch_local_irq_save",
+      "value": 0,
+      "size": 18,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_irq_enable",
+      "value": 192,
+      "size": 32,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_irq_disable",
+      "value": 224,
+      "size": 30,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_ndo_open",
+      "value": 256,
+      "size": 6,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_ndo_start_xmit",
+      "value": 280,
+      "size": 4,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_port_set",
+      "value": 508,
+      "size": 94,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_dbg_show",
+      "value": 628,
+      "size": 158,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_irqh",
+      "value": 788,
+      "size": 52,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_descs_free",
+      "value": 0,
+      "size": 80,
+      "type": 2,
+      "bind": 0,
+      "section": ".text.unlikely"
+    },
+    {
+      "name": "w3_fwt_reset_grant_probe",
+      "value": 80,
+      "size": 502,
+      "type": 2,
+      "bind": 0,
+      "section": ".text.unlikely"
+    },
+    {
+      "name": "tasklet_schedule",
+      "value": 892,
+      "size": 52,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_ndo_stop",
+      "value": 944,
+      "size": 6,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_rx_pkt_drop",
+      "value": 1000,
+      "size": 132,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "topaz_tqe_vlan_gettid.constprop.0",
+      "value": 1280,
+      "size": 210,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_push_mcast",
+      "value": 4748,
+      "size": 498,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_rx_napi_handler",
+      "value": 6624,
+      "size": 2170,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_dbg_set",
+      "value": 9084,
+      "size": 126,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_module_init",
+      "value": 0,
+      "size": 1662,
+      "type": 2,
+      "bind": 0,
+      "section": ".init.text"
+    },
+    {
+      "name": "tqe_module_exit",
+      "value": 0,
+      "size": 326,
+      "type": 2,
+      "bind": 0,
+      "section": ".exit.text"
+    },
+    {
+      "name": "__FUNCTION__.40",
+      "value": 0,
+      "size": 24,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__func__.48",
+      "value": 24,
+      "size": 29,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__FUNCTION__.45",
+      "value": 56,
+      "size": 7,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__func__.46",
+      "value": 64,
+      "size": 7,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__func__.41",
+      "value": 72,
+      "size": 22,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__FUNCTION__.42",
+      "value": 96,
+      "size": 17,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__func__.43",
+      "value": 116,
+      "size": 18,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__FUNCTION__.44",
+      "value": 136,
+      "size": 18,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__func__.52",
+      "value": 156,
+      "size": 20,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__FUNCTION__.53",
+      "value": 176,
+      "size": 20,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__FUNCTION__.51",
+      "value": 196,
+      "size": 20,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__FUNCTION__.50",
+      "value": 216,
+      "size": 16,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "tqe_ndo",
+      "value": 232,
+      "size": 280,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__FUNCTION__.55",
+      "value": 512,
+      "size": 16,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__func__.56",
+      "value": 528,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__param_str_w3_fwt_reset_probe_enable",
+      "value": 540,
+      "size": 26,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__param_str_w3_rx_ring_entries",
+      "value": 568,
+      "size": 19,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__param_str_w3_switch_tqe_only_enable",
+      "value": 588,
+      "size": 26,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "__param_str_tqe_sem_en",
+      "value": 616,
+      "size": 11,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata"
+    },
+    {
+      "name": "w3_rx_ring_entries",
+      "value": 8,
+      "size": 4,
+      "type": 1,
+      "bind": 0,
+      "section": ".data"
+    },
+    {
+      "name": "tqe_port_handlers",
+      "value": 0,
+      "size": 96,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "g_tqe_mac_reserved_hook",
+      "value": 104,
+      "size": 4,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "g_tqe_fwt_get_ucast_hook",
+      "value": 108,
+      "size": 4,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "g_tqe_fwt_get_from_mac_hook",
+      "value": 112,
+      "size": 4,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "g_tqe_fwt_get_mcast_hook",
+      "value": 116,
+      "size": 4,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "g_tqe_fwt_get_mcast_ff_hook",
+      "value": 120,
+      "size": 4,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "g_tqe_fwt_false_miss_hook",
+      "value": 124,
+      "size": 4,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "omtqe_diag",
+      "value": 128,
+      "size": 64,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "w3_fwt_reset_probe_enable",
+      "value": 192,
+      "size": 4,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "omfwtarb_success_logs.54",
+      "value": 196,
+      "size": 4,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "w3_switch_tqe_only_enable",
+      "value": 220,
+      "size": 4,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "tqe_netdev",
+      "value": 224,
+      "size": 4,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss"
+    },
+    {
+      "name": "__UNIQUE_ID_license608",
+      "value": 0,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "__UNIQUE_ID_w3_fwt_reset_probe_enable588",
+      "value": 12,
+      "size": 98,
+      "type": 1,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "__UNIQUE_ID_w3_fwt_reset_probe_enabletype587",
+      "value": 110,
+      "size": 39,
+      "type": 1,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "__UNIQUE_ID_w3_rx_ring_entries586",
+      "value": 149,
+      "size": 101,
+      "type": 1,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "__UNIQUE_ID_w3_rx_ring_entriestype585",
+      "value": 250,
+      "size": 33,
+      "type": 1,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "__UNIQUE_ID_w3_switch_tqe_only_enable584",
+      "value": 283,
+      "size": 83,
+      "type": 1,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "__UNIQUE_ID_w3_switch_tqe_only_enabletype583",
+      "value": 366,
+      "size": 39,
+      "type": 1,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "__UNIQUE_ID_tqe_sem_entype582",
+      "value": 405,
+      "size": 24,
+      "type": 1,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "__ksymtab_g_dscp_flag",
+      "value": 0,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_g_dscp_value",
+      "value": 12,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_g_l2_ext_filter",
+      "value": 24,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_g_l2_ext_filter_port",
+      "value": 36,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_g_wowlan_host_state",
+      "value": 48,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_g_wowlan_l2_ether_type",
+      "value": 60,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_g_wowlan_l3_udp_port",
+      "value": 72,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_g_wowlan_match_type",
+      "value": 84,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_switch_tqe_multi_proc_sem_down",
+      "value": 96,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_switch_tqe_multi_proc_sem_up",
+      "value": 108,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_port_add_handler",
+      "value": 120,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_port_clear_group",
+      "value": 132,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_port_register",
+      "value": 144,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_port_remove_handler",
+      "value": 156,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_port_set_group",
+      "value": 168,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_port_unregister",
+      "value": 180,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_reg_multicast_tx_stats",
+      "value": 192,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_register_fwt_cbk",
+      "value": 204,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_register_mac_reserved_cbk",
+      "value": 216,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_register_macfwt_cbk",
+      "value": 228,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_register_ucastfwt_cbk",
+      "value": 240,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_rx_call_port_handler",
+      "value": 252,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_rx_l2_ext_filter",
+      "value": 264,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_rx_multicast",
+      "value": 276,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__ksymtab_tqe_tx",
+      "value": 288,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab"
+    },
+    {
+      "name": "__param_w3_fwt_reset_probe_enable",
+      "value": 0,
+      "size": 20,
+      "type": 1,
+      "bind": 0,
+      "section": "__param"
+    },
+    {
+      "name": "__param_w3_rx_ring_entries",
+      "value": 20,
+      "size": 20,
+      "type": 1,
+      "bind": 0,
+      "section": "__param"
+    },
+    {
+      "name": "__param_w3_switch_tqe_only_enable",
+      "value": 40,
+      "size": 20,
+      "type": 1,
+      "bind": 0,
+      "section": "__param"
+    },
+    {
+      "name": "__param_tqe_sem_en",
+      "value": 60,
+      "size": 20,
+      "type": 1,
+      "bind": 0,
+      "section": "__param"
+    },
+    {
+      "name": "switch_tqe.mod.c",
+      "value": 0,
+      "size": 0,
+      "type": 4,
+      "bind": 0,
+      "section": "SPECIAL_65521"
+    },
+    {
+      "name": "__UNIQUE_ID_depends170",
+      "value": 429,
+      "size": 80,
+      "type": 1,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "__UNIQUE_ID_name169",
+      "value": 509,
+      "size": 16,
+      "type": 1,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "__UNIQUE_ID_vermagic168",
+      "value": 525,
+      "size": 58,
+      "type": 1,
+      "bind": 0,
+      "section": ".modinfo"
+    },
+    {
+      "name": "_note_7",
+      "value": 0,
+      "size": 24,
+      "type": 1,
+      "bind": 0,
+      "section": ".note.Linux"
+    },
+    {
+      "name": "free_irq",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "g_l2_ext_filter_port",
+      "value": 0,
+      "size": 1,
+      "type": 1,
+      "bind": 1,
+      "section": ".data"
+    },
+    {
+      "name": "irq_find_matching_fwspec",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "param_ops_uint",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "eth_mac_addr",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "skb_put",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "g_dscp_flag",
+      "value": 208,
+      "size": 4,
+      "type": 1,
+      "bind": 1,
+      "section": ".bss"
+    },
+    {
+      "name": "topaz_hbm_filter_txdone_buf",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "__this_module",
+      "value": 0,
+      "size": 384,
+      "type": 1,
+      "bind": 1,
+      "section": ".gnu.linkonce.this_module"
+    },
+    {
+      "name": "tqe_register_ucastfwt_cbk",
+      "value": 140,
+      "size": 10,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "unregister_netdev",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "tqe_rx_call_port_handler",
+      "value": 164,
+      "size": 28,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_rx_l2_ext_filter",
+      "value": 1132,
+      "size": 148,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "dev_attr_dbg",
+      "value": 12,
+      "size": 16,
+      "type": 1,
+      "bind": 1,
+      "section": ".data"
+    },
+    {
+      "name": "irq_dispose_mapping",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "scnprintf",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "topaz_hbm_filter_txdone_pool",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "__printk_ratelimit",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "cleanup_module",
+      "value": 0,
+      "size": 326,
+      "type": 2,
+      "bind": 1,
+      "section": ".exit.text"
+    },
+    {
+      "name": "vport_tbl_lhost",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "memcpy",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "dma_cache_inv",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "tqe_tx",
+      "value": 3736,
+      "size": 694,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "__udivsi3",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "tqe_port_remove_handler",
+      "value": 840,
+      "size": 52,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "__netif_napi_del",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "dmautil_aligned_dma_desc_free",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "topaz_congest_queue_exit",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "ether_setup",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "topaz_tqe_xmit",
+      "value": 284,
+      "size": 222,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "dma_cache_wback_inv",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "init_module",
+      "value": 0,
+      "size": 1662,
+      "type": 2,
+      "bind": 1,
+      "section": ".init.text"
+    },
+    {
+      "name": "vlan_enabled",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "of_find_compatible_node",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "topaz_hbm_get_buf",
+      "value": 3512,
+      "size": 222,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "napi_complete_done",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "alloc_netdev_mqs",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "dma_cache_wback",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "_topaz_hbm_attach_skb",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "topaz_hbm_congest_queue_put_buf",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "topaz_congest_alloc_queue",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "kfree_skb",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "schedule",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "__napi_schedule",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "tqe_rx_get_node_id",
+      "value": 5248,
+      "size": 40,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "iputil_v6_skip_exthdr",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "tqe_port_add_handler",
+      "value": 20,
+      "size": 30,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_rx_ether_type_skip_vlan",
+      "value": 5288,
+      "size": 40,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "topaz_congest_dump",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "bus_to_virt",
+      "value": 952,
+      "size": 48,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "topaz_tqe_congest_queue_process",
+      "value": 4432,
+      "size": 314,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "g_dscp_value",
+      "value": 212,
+      "size": 8,
+      "type": 1,
+      "bind": 1,
+      "section": ".bss"
+    },
+    {
+      "name": "qdrv_sch_vlan2index",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "qdrv_sch_dscp2tid",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "device_create_file",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "__umodsi3",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "g_wowlan_host_state",
+      "value": 202,
+      "size": 2,
+      "type": 1,
+      "bind": 1,
+      "section": ".bss"
+    },
+    {
+      "name": "tqe_port_set_group",
+      "value": 52,
+      "size": 26,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "request_threaded_irq",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "netif_napi_add",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "irq_get_irq_data",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "register_netdev",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "strncpy",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "__tasklet_schedule",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "free_netdev",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "panic",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "g_wowlan_match_type",
+      "value": 204,
+      "size": 2,
+      "type": 1,
+      "bind": 1,
+      "section": ".bss"
+    },
+    {
+      "name": "printk",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "tqe_port_clear_group",
+      "value": 80,
+      "size": 22,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "soc_shared_params",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "tqe_port_unregister",
+      "value": 616,
+      "size": 10,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "topaz_congest_queue_init",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "g_wowlan_l2_ether_type",
+      "value": 2,
+      "size": 2,
+      "type": 1,
+      "bind": 1,
+      "section": ".data"
+    },
+    {
+      "name": "topaz_congest_enqueue",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "memset",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "wowlan_magic_packet_check",
+      "value": 6348,
+      "size": 276,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "qtn_mproc_sync_spin_lock",
+      "value": 1820,
+      "size": 1190,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "jiffies",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "muc_to_nocache",
+      "value": 1492,
+      "size": 48,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_sem_en",
+      "value": 228,
+      "size": 4,
+      "type": 1,
+      "bind": 1,
+      "section": ".bss"
+    },
+    {
+      "name": "g_l2_ext_filter",
+      "value": 200,
+      "size": 1,
+      "type": 1,
+      "bind": 1,
+      "section": ".bss"
+    },
+    {
+      "name": "strsep",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "qdrv_vap_vlan_max",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "qtn_mproc_sync_spin_try_lock",
+      "value": 1600,
+      "size": 218,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "irq_create_mapping_affinity",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "irq_find_mapping",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "simple_strtoul",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "topaz_hbm_put_buf",
+      "value": 3352,
+      "size": 158,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_register_macfwt_cbk",
+      "value": 152,
+      "size": 10,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_reg_multicast_tx_stats",
+      "value": 104,
+      "size": 14,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_register_fwt_cbk",
+      "value": 264,
+      "size": 16,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "topaz_congest_queue_xmit",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "g_wowlan_l3_udp_port",
+      "value": 4,
+      "size": 2,
+      "type": 1,
+      "bind": 1,
+      "section": ".data"
+    },
+    {
+      "name": "dmautil_aligned_dma_desc_alloc",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "nocache_to_muc",
+      "value": 1540,
+      "size": 60,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_port_register",
+      "value": 604,
+      "size": 10,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "napi_schedule_prep",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "irq_of_parse_and_map",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "switch_tqe_multi_proc_sem_up",
+      "value": 124,
+      "size": 4,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "napi_disable",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "tqe_rx_multicast",
+      "value": 5328,
+      "size": 1018,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "param_ops_int",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "topaz_congest_alloc_unicast_queue",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "update_multicast",
+      "value": 96,
+      "size": 8,
+      "type": 1,
+      "bind": 1,
+      "section": ".bss"
+    },
+    {
+      "name": "tqe_register_mac_reserved_cbk",
+      "value": 128,
+      "size": 10,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "qtn_mproc_sync_spin_unlock",
+      "value": 3012,
+      "size": 338,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "topaz_hbm_attach_skb_quarantine",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "print_tqe_counters",
+      "value": 8796,
+      "size": 288,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "switch_tqe_multi_proc_sem_down",
+      "value": 120,
+      "size": 4,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "device_remove_file",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "of_machine_is_compatible",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    },
+    {
+      "name": "synchronize_net",
+      "value": 0,
+      "size": 0,
+      "type": 0,
+      "bind": 1,
+      "section": ""
+    }
+  ],
+  "functions": [
+    {
+      "name": "arch_local_irq_save",
+      "value": 0,
+      "size": 18,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_irq_enable",
+      "value": 192,
+      "size": 32,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_irq_disable",
+      "value": 224,
+      "size": 30,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_ndo_open",
+      "value": 256,
+      "size": 6,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_ndo_start_xmit",
+      "value": 280,
+      "size": 4,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_port_set",
+      "value": 508,
+      "size": 94,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_dbg_show",
+      "value": 628,
+      "size": 158,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_irqh",
+      "value": 788,
+      "size": 52,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_descs_free",
+      "value": 0,
+      "size": 80,
+      "type": 2,
+      "bind": 0,
+      "section": ".text.unlikely"
+    },
+    {
+      "name": "w3_fwt_reset_grant_probe",
+      "value": 80,
+      "size": 502,
+      "type": 2,
+      "bind": 0,
+      "section": ".text.unlikely"
+    },
+    {
+      "name": "tasklet_schedule",
+      "value": 892,
+      "size": 52,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_ndo_stop",
+      "value": 944,
+      "size": 6,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_rx_pkt_drop",
+      "value": 1000,
+      "size": 132,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "topaz_tqe_vlan_gettid.constprop.0",
+      "value": 1280,
+      "size": 210,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_push_mcast",
+      "value": 4748,
+      "size": 498,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_rx_napi_handler",
+      "value": 6624,
+      "size": 2170,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_dbg_set",
+      "value": 9084,
+      "size": 126,
+      "type": 2,
+      "bind": 0,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_module_init",
+      "value": 0,
+      "size": 1662,
+      "type": 2,
+      "bind": 0,
+      "section": ".init.text"
+    },
+    {
+      "name": "tqe_module_exit",
+      "value": 0,
+      "size": 326,
+      "type": 2,
+      "bind": 0,
+      "section": ".exit.text"
+    },
+    {
+      "name": "tqe_register_ucastfwt_cbk",
+      "value": 140,
+      "size": 10,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_rx_call_port_handler",
+      "value": 164,
+      "size": 28,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_rx_l2_ext_filter",
+      "value": 1132,
+      "size": 148,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "cleanup_module",
+      "value": 0,
+      "size": 326,
+      "type": 2,
+      "bind": 1,
+      "section": ".exit.text"
+    },
+    {
+      "name": "tqe_tx",
+      "value": 3736,
+      "size": 694,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_port_remove_handler",
+      "value": 840,
+      "size": 52,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "topaz_tqe_xmit",
+      "value": 284,
+      "size": 222,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "init_module",
+      "value": 0,
+      "size": 1662,
+      "type": 2,
+      "bind": 1,
+      "section": ".init.text"
+    },
+    {
+      "name": "topaz_hbm_get_buf",
+      "value": 3512,
+      "size": 222,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_rx_get_node_id",
+      "value": 5248,
+      "size": 40,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_port_add_handler",
+      "value": 20,
+      "size": 30,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_rx_ether_type_skip_vlan",
+      "value": 5288,
+      "size": 40,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "bus_to_virt",
+      "value": 952,
+      "size": 48,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "topaz_tqe_congest_queue_process",
+      "value": 4432,
+      "size": 314,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_port_set_group",
+      "value": 52,
+      "size": 26,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_port_clear_group",
+      "value": 80,
+      "size": 22,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_port_unregister",
+      "value": 616,
+      "size": 10,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "wowlan_magic_packet_check",
+      "value": 6348,
+      "size": 276,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "qtn_mproc_sync_spin_lock",
+      "value": 1820,
+      "size": 1190,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "muc_to_nocache",
+      "value": 1492,
+      "size": 48,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "qtn_mproc_sync_spin_try_lock",
+      "value": 1600,
+      "size": 218,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "topaz_hbm_put_buf",
+      "value": 3352,
+      "size": 158,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_register_macfwt_cbk",
+      "value": 152,
+      "size": 10,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_reg_multicast_tx_stats",
+      "value": 104,
+      "size": 14,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_register_fwt_cbk",
+      "value": 264,
+      "size": 16,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "nocache_to_muc",
+      "value": 1540,
+      "size": 60,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_port_register",
+      "value": 604,
+      "size": 10,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "switch_tqe_multi_proc_sem_up",
+      "value": 124,
+      "size": 4,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_rx_multicast",
+      "value": 5328,
+      "size": 1018,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "tqe_register_mac_reserved_cbk",
+      "value": 128,
+      "size": 10,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "qtn_mproc_sync_spin_unlock",
+      "value": 3012,
+      "size": 338,
+      "type": 2,
+      "bind": 2,
+      "section": ".text"
+    },
+    {
+      "name": "print_tqe_counters",
+      "value": 8796,
+      "size": 288,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    },
+    {
+      "name": "switch_tqe_multi_proc_sem_down",
+      "value": 120,
+      "size": 4,
+      "type": 2,
+      "bind": 1,
+      "section": ".text"
+    }
+  ],
+  "imports": [
+    "__napi_schedule",
+    "__netif_napi_del",
+    "__printk_ratelimit",
+    "__tasklet_schedule",
+    "__udivsi3",
+    "__umodsi3",
+    "_topaz_hbm_attach_skb",
+    "alloc_netdev_mqs",
+    "device_create_file",
+    "device_remove_file",
+    "dma_cache_inv",
+    "dma_cache_wback",
+    "dma_cache_wback_inv",
+    "dmautil_aligned_dma_desc_alloc",
+    "dmautil_aligned_dma_desc_free",
+    "eth_mac_addr",
+    "ether_setup",
+    "free_irq",
+    "free_netdev",
+    "iputil_v6_skip_exthdr",
+    "irq_create_mapping_affinity",
+    "irq_dispose_mapping",
+    "irq_find_mapping",
+    "irq_find_matching_fwspec",
+    "irq_get_irq_data",
+    "irq_of_parse_and_map",
+    "jiffies",
+    "kfree_skb",
+    "memcpy",
+    "memset",
+    "napi_complete_done",
+    "napi_disable",
+    "napi_schedule_prep",
+    "netif_napi_add",
+    "of_find_compatible_node",
+    "of_machine_is_compatible",
+    "panic",
+    "param_ops_int",
+    "param_ops_uint",
+    "printk",
+    "qdrv_sch_dscp2tid",
+    "qdrv_sch_vlan2index",
+    "qdrv_vap_vlan_max",
+    "register_netdev",
+    "request_threaded_irq",
+    "schedule",
+    "scnprintf",
+    "simple_strtoul",
+    "skb_put",
+    "soc_shared_params",
+    "strncpy",
+    "strsep",
+    "synchronize_net",
+    "topaz_congest_alloc_queue",
+    "topaz_congest_alloc_unicast_queue",
+    "topaz_congest_dump",
+    "topaz_congest_enqueue",
+    "topaz_congest_queue_exit",
+    "topaz_congest_queue_init",
+    "topaz_congest_queue_xmit",
+    "topaz_hbm_attach_skb_quarantine",
+    "topaz_hbm_congest_queue_put_buf",
+    "topaz_hbm_filter_txdone_buf",
+    "topaz_hbm_filter_txdone_pool",
+    "unregister_netdev",
+    "vlan_enabled",
+    "vport_tbl_lhost"
+  ],
+  "exports": [
+    "g_dscp_flag",
+    "g_dscp_value",
+    "g_l2_ext_filter",
+    "g_l2_ext_filter_port",
+    "g_wowlan_host_state",
+    "g_wowlan_l2_ether_type",
+    "g_wowlan_l3_udp_port",
+    "g_wowlan_match_type",
+    "switch_tqe_multi_proc_sem_down",
+    "switch_tqe_multi_proc_sem_up",
+    "tqe_port_add_handler",
+    "tqe_port_clear_group",
+    "tqe_port_register",
+    "tqe_port_remove_handler",
+    "tqe_port_set_group",
+    "tqe_port_unregister",
+    "tqe_reg_multicast_tx_stats",
+    "tqe_register_fwt_cbk",
+    "tqe_register_mac_reserved_cbk",
+    "tqe_register_macfwt_cbk",
+    "tqe_register_ucastfwt_cbk",
+    "tqe_rx_call_port_handler",
+    "tqe_rx_l2_ext_filter",
+    "tqe_rx_multicast",
+    "tqe_tx"
+  ],
+  "relocation_count": 464,
+  "allocated_data_relocation_count": 100,
+  "function_pointer_relocation_count": 24,
+  "allocated_data_relocations": [
+    {
+      "section": "__ksymtab",
+      "offset": 0,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "g_dscp_flag",
+      "target_section": ".bss",
+      "target_type": 1,
+      "owner": "__ksymtab_g_dscp_flag",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 4,
+      "type": 4,
+      "addend": 127,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_dscp_flag",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 8,
+      "type": 4,
+      "addend": 139,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_dscp_flag",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 12,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "g_dscp_value",
+      "target_section": ".bss",
+      "target_type": 1,
+      "owner": "__ksymtab_g_dscp_value",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 16,
+      "type": 4,
+      "addend": 140,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_dscp_value",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 20,
+      "type": 4,
+      "addend": 153,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_dscp_value",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 24,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "g_l2_ext_filter",
+      "target_section": ".bss",
+      "target_type": 1,
+      "owner": "__ksymtab_g_l2_ext_filter",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 28,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_l2_ext_filter",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 32,
+      "type": 4,
+      "addend": 16,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_l2_ext_filter",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 36,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "g_l2_ext_filter_port",
+      "target_section": ".data",
+      "target_type": 1,
+      "owner": "__ksymtab_g_l2_ext_filter_port",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 40,
+      "type": 4,
+      "addend": 17,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_l2_ext_filter_port",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 44,
+      "type": 4,
+      "addend": 38,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_l2_ext_filter_port",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 48,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "g_wowlan_host_state",
+      "target_section": ".bss",
+      "target_type": 1,
+      "owner": "__ksymtab_g_wowlan_host_state",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 52,
+      "type": 4,
+      "addend": 39,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_wowlan_host_state",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 56,
+      "type": 4,
+      "addend": 59,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_wowlan_host_state",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 60,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "g_wowlan_l2_ether_type",
+      "target_section": ".data",
+      "target_type": 1,
+      "owner": "__ksymtab_g_wowlan_l2_ether_type",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 64,
+      "type": 4,
+      "addend": 81,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_wowlan_l2_ether_type",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 68,
+      "type": 4,
+      "addend": 104,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_wowlan_l2_ether_type",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 72,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "g_wowlan_l3_udp_port",
+      "target_section": ".data",
+      "target_type": 1,
+      "owner": "__ksymtab_g_wowlan_l3_udp_port",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 76,
+      "type": 4,
+      "addend": 105,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_wowlan_l3_udp_port",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 80,
+      "type": 4,
+      "addend": 126,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_wowlan_l3_udp_port",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 84,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "g_wowlan_match_type",
+      "target_section": ".bss",
+      "target_type": 1,
+      "owner": "__ksymtab_g_wowlan_match_type",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 88,
+      "type": 4,
+      "addend": 60,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_wowlan_match_type",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 92,
+      "type": 4,
+      "addend": 80,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_g_wowlan_match_type",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 96,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "switch_tqe_multi_proc_sem_down",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_switch_tqe_multi_proc_sem_down",
+      "owner_offset": 0,
+      "function": "switch_tqe_multi_proc_sem_down",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 100,
+      "type": 4,
+      "addend": 311,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_switch_tqe_multi_proc_sem_down",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 104,
+      "type": 4,
+      "addend": 342,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_switch_tqe_multi_proc_sem_down",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 108,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "switch_tqe_multi_proc_sem_up",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_switch_tqe_multi_proc_sem_up",
+      "owner_offset": 0,
+      "function": "switch_tqe_multi_proc_sem_up",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 112,
+      "type": 4,
+      "addend": 343,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_switch_tqe_multi_proc_sem_up",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 116,
+      "type": 4,
+      "addend": 372,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_switch_tqe_multi_proc_sem_up",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 120,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_port_add_handler",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_port_add_handler",
+      "owner_offset": 0,
+      "function": "tqe_port_add_handler",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 124,
+      "type": 4,
+      "addend": 154,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_add_handler",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 128,
+      "type": 4,
+      "addend": 175,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_add_handler",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 132,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_port_clear_group",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_port_clear_group",
+      "owner_offset": 0,
+      "function": "tqe_port_clear_group",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 136,
+      "type": 4,
+      "addend": 221,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_clear_group",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 140,
+      "type": 4,
+      "addend": 242,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_clear_group",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 144,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_port_register",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_port_register",
+      "owner_offset": 0,
+      "function": "tqe_port_register",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 148,
+      "type": 4,
+      "addend": 243,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_register",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 152,
+      "type": 4,
+      "addend": 261,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_register",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 156,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_port_remove_handler",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_port_remove_handler",
+      "owner_offset": 0,
+      "function": "tqe_port_remove_handler",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 160,
+      "type": 4,
+      "addend": 176,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_remove_handler",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 164,
+      "type": 4,
+      "addend": 200,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_remove_handler",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 168,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_port_set_group",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_port_set_group",
+      "owner_offset": 0,
+      "function": "tqe_port_set_group",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 172,
+      "type": 4,
+      "addend": 201,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_set_group",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 176,
+      "type": 4,
+      "addend": 220,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_set_group",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 180,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_port_unregister",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_port_unregister",
+      "owner_offset": 0,
+      "function": "tqe_port_unregister",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 184,
+      "type": 4,
+      "addend": 262,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_unregister",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 188,
+      "type": 4,
+      "addend": 282,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_port_unregister",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 192,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_reg_multicast_tx_stats",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_reg_multicast_tx_stats",
+      "owner_offset": 0,
+      "function": "tqe_reg_multicast_tx_stats",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 196,
+      "type": 4,
+      "addend": 283,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_reg_multicast_tx_stats",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 200,
+      "type": 4,
+      "addend": 310,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_reg_multicast_tx_stats",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 204,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_register_fwt_cbk",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_register_fwt_cbk",
+      "owner_offset": 0,
+      "function": "tqe_register_fwt_cbk",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 208,
+      "type": 4,
+      "addend": 522,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_register_fwt_cbk",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 212,
+      "type": 4,
+      "addend": 543,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_register_fwt_cbk",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 216,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_register_mac_reserved_cbk",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_register_mac_reserved_cbk",
+      "owner_offset": 0,
+      "function": "tqe_register_mac_reserved_cbk",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 220,
+      "type": 4,
+      "addend": 391,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_register_mac_reserved_cbk",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 224,
+      "type": 4,
+      "addend": 421,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_register_mac_reserved_cbk",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 228,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_register_macfwt_cbk",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_register_macfwt_cbk",
+      "owner_offset": 0,
+      "function": "tqe_register_macfwt_cbk",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 232,
+      "type": 4,
+      "addend": 449,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_register_macfwt_cbk",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 236,
+      "type": 4,
+      "addend": 473,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_register_macfwt_cbk",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 240,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_register_ucastfwt_cbk",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_register_ucastfwt_cbk",
+      "owner_offset": 0,
+      "function": "tqe_register_ucastfwt_cbk",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 244,
+      "type": 4,
+      "addend": 422,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_register_ucastfwt_cbk",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 248,
+      "type": 4,
+      "addend": 448,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_register_ucastfwt_cbk",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 252,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_rx_call_port_handler",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_rx_call_port_handler",
+      "owner_offset": 0,
+      "function": "tqe_rx_call_port_handler",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 256,
+      "type": 4,
+      "addend": 496,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_rx_call_port_handler",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 260,
+      "type": 4,
+      "addend": 521,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_rx_call_port_handler",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 264,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_rx_l2_ext_filter",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_rx_l2_ext_filter",
+      "owner_offset": 0,
+      "function": "tqe_rx_l2_ext_filter",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 268,
+      "type": 4,
+      "addend": 474,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_rx_l2_ext_filter",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 272,
+      "type": 4,
+      "addend": 495,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_rx_l2_ext_filter",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 276,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_rx_multicast",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_rx_multicast",
+      "owner_offset": 0,
+      "function": "tqe_rx_multicast",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 280,
+      "type": 4,
+      "addend": 373,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_rx_multicast",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 284,
+      "type": 4,
+      "addend": 390,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_rx_multicast",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 288,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_tx",
+      "target_section": ".text",
+      "target_type": 2,
+      "owner": "__ksymtab_tqe_tx",
+      "owner_offset": 0,
+      "function": "tqe_tx",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 292,
+      "type": 4,
+      "addend": 544,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_tx",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__ksymtab",
+      "offset": 296,
+      "type": 4,
+      "addend": 551,
+      "target_symbol": "",
+      "target_section": "__ksymtab_strings",
+      "target_type": 3,
+      "owner": "__ksymtab_tqe_tx",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": ".rodata",
+      "offset": 240,
+      "type": 4,
+      "addend": 256,
+      "target_symbol": "",
+      "target_section": ".text",
+      "target_type": 3,
+      "owner": "tqe_ndo",
+      "owner_offset": 8,
+      "function": "tqe_ndo_open",
+      "resolution": "SECTION_PLUS_ADDEND_EXACT_FUNCTION_START"
+    },
+    {
+      "section": ".rodata",
+      "offset": 244,
+      "type": 4,
+      "addend": 944,
+      "target_symbol": "",
+      "target_section": ".text",
+      "target_type": 3,
+      "owner": "tqe_ndo",
+      "owner_offset": 12,
+      "function": "tqe_ndo_stop",
+      "resolution": "SECTION_PLUS_ADDEND_EXACT_FUNCTION_START"
+    },
+    {
+      "section": ".rodata",
+      "offset": 248,
+      "type": 4,
+      "addend": 280,
+      "target_symbol": "",
+      "target_section": ".text",
+      "target_type": 3,
+      "owner": "tqe_ndo",
+      "owner_offset": 16,
+      "function": "tqe_ndo_start_xmit",
+      "resolution": "SECTION_PLUS_ADDEND_EXACT_FUNCTION_START"
+    },
+    {
+      "section": ".rodata",
+      "offset": 268,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "eth_mac_addr",
+      "target_section": "",
+      "target_type": 0,
+      "owner": "tqe_ndo",
+      "owner_offset": 36,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 0,
+      "type": 4,
+      "addend": 540,
+      "target_symbol": "",
+      "target_section": ".rodata",
+      "target_type": 3,
+      "owner": "__param_w3_fwt_reset_probe_enable",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 4,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "__this_module",
+      "target_section": ".gnu.linkonce.this_module",
+      "target_type": 1,
+      "owner": "__param_w3_fwt_reset_probe_enable",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 8,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "param_ops_int",
+      "target_section": "",
+      "target_type": 0,
+      "owner": "__param_w3_fwt_reset_probe_enable",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 16,
+      "type": 4,
+      "addend": 192,
+      "target_symbol": "",
+      "target_section": ".bss",
+      "target_type": 3,
+      "owner": "__param_w3_fwt_reset_probe_enable",
+      "owner_offset": 16,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 20,
+      "type": 4,
+      "addend": 568,
+      "target_symbol": "",
+      "target_section": ".rodata",
+      "target_type": 3,
+      "owner": "__param_w3_rx_ring_entries",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 24,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "__this_module",
+      "target_section": ".gnu.linkonce.this_module",
+      "target_type": 1,
+      "owner": "__param_w3_rx_ring_entries",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 28,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "param_ops_uint",
+      "target_section": "",
+      "target_type": 0,
+      "owner": "__param_w3_rx_ring_entries",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 36,
+      "type": 4,
+      "addend": 8,
+      "target_symbol": "",
+      "target_section": ".data",
+      "target_type": 3,
+      "owner": "__param_w3_rx_ring_entries",
+      "owner_offset": 16,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 40,
+      "type": 4,
+      "addend": 588,
+      "target_symbol": "",
+      "target_section": ".rodata",
+      "target_type": 3,
+      "owner": "__param_w3_switch_tqe_only_enable",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 44,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "__this_module",
+      "target_section": ".gnu.linkonce.this_module",
+      "target_type": 1,
+      "owner": "__param_w3_switch_tqe_only_enable",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 48,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "param_ops_int",
+      "target_section": "",
+      "target_type": 0,
+      "owner": "__param_w3_switch_tqe_only_enable",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 56,
+      "type": 4,
+      "addend": 220,
+      "target_symbol": "",
+      "target_section": ".bss",
+      "target_type": 3,
+      "owner": "__param_w3_switch_tqe_only_enable",
+      "owner_offset": 16,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 60,
+      "type": 4,
+      "addend": 616,
+      "target_symbol": "",
+      "target_section": ".rodata",
+      "target_type": 3,
+      "owner": "__param_tqe_sem_en",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 64,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "__this_module",
+      "target_section": ".gnu.linkonce.this_module",
+      "target_type": 1,
+      "owner": "__param_tqe_sem_en",
+      "owner_offset": 4,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 68,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "param_ops_int",
+      "target_section": "",
+      "target_type": 0,
+      "owner": "__param_tqe_sem_en",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 76,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "tqe_sem_en",
+      "target_section": ".bss",
+      "target_type": 1,
+      "owner": "__param_tqe_sem_en",
+      "owner_offset": 16,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": ".data",
+      "offset": 12,
+      "type": 4,
+      "addend": 4116,
+      "target_symbol": "",
+      "target_section": ".rodata.str1.4",
+      "target_type": 3,
+      "owner": "dev_attr_dbg",
+      "owner_offset": 0,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": ".data",
+      "offset": 20,
+      "type": 4,
+      "addend": 628,
+      "target_symbol": "",
+      "target_section": ".text",
+      "target_type": 3,
+      "owner": "dev_attr_dbg",
+      "owner_offset": 8,
+      "function": "tqe_dbg_show",
+      "resolution": "SECTION_PLUS_ADDEND_EXACT_FUNCTION_START"
+    },
+    {
+      "section": ".data",
+      "offset": 24,
+      "type": 4,
+      "addend": 9084,
+      "target_symbol": "",
+      "target_section": ".text",
+      "target_type": 3,
+      "owner": "dev_attr_dbg",
+      "owner_offset": 12,
+      "function": "tqe_dbg_set",
+      "resolution": "SECTION_PLUS_ADDEND_EXACT_FUNCTION_START"
+    },
+    {
+      "section": ".gnu.linkonce.this_module",
+      "offset": 208,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "init_module",
+      "target_section": ".init.text",
+      "target_type": 2,
+      "owner": "__this_module",
+      "owner_offset": 208,
+      "function": "init_module",
+      "resolution": "STT_FUNC"
+    },
+    {
+      "section": ".gnu.linkonce.this_module",
+      "offset": 288,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "cleanup_module",
+      "target_section": ".exit.text",
+      "target_type": 2,
+      "owner": "__this_module",
+      "owner_offset": 288,
+      "function": "cleanup_module",
+      "resolution": "STT_FUNC"
+    }
+  ],
+  "callback_objects": [
+    {
+      "name": "tqe_port_handlers",
+      "value": 0,
+      "size": 96,
+      "type": 1,
+      "bind": 0,
+      "section": ".bss",
+      "callbacks": []
+    },
+    {
+      "name": "dev_attr_dbg",
+      "value": 12,
+      "size": 16,
+      "type": 1,
+      "bind": 1,
+      "section": ".data",
+      "callbacks": [
+        {
+          "section": ".data",
+          "offset": 20,
+          "type": 4,
+          "addend": 628,
+          "target_symbol": "",
+          "target_section": ".text",
+          "target_type": 3,
+          "owner": "dev_attr_dbg",
+          "owner_offset": 8,
+          "function": "tqe_dbg_show",
+          "resolution": "SECTION_PLUS_ADDEND_EXACT_FUNCTION_START"
+        },
+        {
+          "section": ".data",
+          "offset": 24,
+          "type": 4,
+          "addend": 9084,
+          "target_symbol": "",
+          "target_section": ".text",
+          "target_type": 3,
+          "owner": "dev_attr_dbg",
+          "owner_offset": 12,
+          "function": "tqe_dbg_set",
+          "resolution": "SECTION_PLUS_ADDEND_EXACT_FUNCTION_START"
+        }
+      ]
+    },
+    {
+      "name": "__this_module",
+      "value": 0,
+      "size": 384,
+      "type": 1,
+      "bind": 1,
+      "section": ".gnu.linkonce.this_module",
+      "callbacks": [
+        {
+          "section": ".gnu.linkonce.this_module",
+          "offset": 208,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "init_module",
+          "target_section": ".init.text",
+          "target_type": 2,
+          "owner": "__this_module",
+          "owner_offset": 208,
+          "function": "init_module",
+          "resolution": "STT_FUNC"
+        },
+        {
+          "section": ".gnu.linkonce.this_module",
+          "offset": 288,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "cleanup_module",
+          "target_section": ".exit.text",
+          "target_type": 2,
+          "owner": "__this_module",
+          "owner_offset": 288,
+          "function": "cleanup_module",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "tqe_ndo",
+      "value": 232,
+      "size": 280,
+      "type": 1,
+      "bind": 0,
+      "section": ".rodata",
+      "callbacks": [
+        {
+          "section": ".rodata",
+          "offset": 240,
+          "type": 4,
+          "addend": 256,
+          "target_symbol": "",
+          "target_section": ".text",
+          "target_type": 3,
+          "owner": "tqe_ndo",
+          "owner_offset": 8,
+          "function": "tqe_ndo_open",
+          "resolution": "SECTION_PLUS_ADDEND_EXACT_FUNCTION_START"
+        },
+        {
+          "section": ".rodata",
+          "offset": 244,
+          "type": 4,
+          "addend": 944,
+          "target_symbol": "",
+          "target_section": ".text",
+          "target_type": 3,
+          "owner": "tqe_ndo",
+          "owner_offset": 12,
+          "function": "tqe_ndo_stop",
+          "resolution": "SECTION_PLUS_ADDEND_EXACT_FUNCTION_START"
+        },
+        {
+          "section": ".rodata",
+          "offset": 248,
+          "type": 4,
+          "addend": 280,
+          "target_symbol": "",
+          "target_section": ".text",
+          "target_type": 3,
+          "owner": "tqe_ndo",
+          "owner_offset": 16,
+          "function": "tqe_ndo_start_xmit",
+          "resolution": "SECTION_PLUS_ADDEND_EXACT_FUNCTION_START"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_switch_tqe_multi_proc_sem_down",
+      "value": 96,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 96,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "switch_tqe_multi_proc_sem_down",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_switch_tqe_multi_proc_sem_down",
+          "owner_offset": 0,
+          "function": "switch_tqe_multi_proc_sem_down",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_switch_tqe_multi_proc_sem_up",
+      "value": 108,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 108,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "switch_tqe_multi_proc_sem_up",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_switch_tqe_multi_proc_sem_up",
+          "owner_offset": 0,
+          "function": "switch_tqe_multi_proc_sem_up",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_port_add_handler",
+      "value": 120,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 120,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_port_add_handler",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_port_add_handler",
+          "owner_offset": 0,
+          "function": "tqe_port_add_handler",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_port_clear_group",
+      "value": 132,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 132,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_port_clear_group",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_port_clear_group",
+          "owner_offset": 0,
+          "function": "tqe_port_clear_group",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_port_register",
+      "value": 144,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 144,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_port_register",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_port_register",
+          "owner_offset": 0,
+          "function": "tqe_port_register",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_port_remove_handler",
+      "value": 156,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 156,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_port_remove_handler",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_port_remove_handler",
+          "owner_offset": 0,
+          "function": "tqe_port_remove_handler",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_port_set_group",
+      "value": 168,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 168,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_port_set_group",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_port_set_group",
+          "owner_offset": 0,
+          "function": "tqe_port_set_group",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_port_unregister",
+      "value": 180,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 180,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_port_unregister",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_port_unregister",
+          "owner_offset": 0,
+          "function": "tqe_port_unregister",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_reg_multicast_tx_stats",
+      "value": 192,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 192,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_reg_multicast_tx_stats",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_reg_multicast_tx_stats",
+          "owner_offset": 0,
+          "function": "tqe_reg_multicast_tx_stats",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_register_fwt_cbk",
+      "value": 204,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 204,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_register_fwt_cbk",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_register_fwt_cbk",
+          "owner_offset": 0,
+          "function": "tqe_register_fwt_cbk",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_register_mac_reserved_cbk",
+      "value": 216,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 216,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_register_mac_reserved_cbk",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_register_mac_reserved_cbk",
+          "owner_offset": 0,
+          "function": "tqe_register_mac_reserved_cbk",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_register_macfwt_cbk",
+      "value": 228,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 228,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_register_macfwt_cbk",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_register_macfwt_cbk",
+          "owner_offset": 0,
+          "function": "tqe_register_macfwt_cbk",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_register_ucastfwt_cbk",
+      "value": 240,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 240,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_register_ucastfwt_cbk",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_register_ucastfwt_cbk",
+          "owner_offset": 0,
+          "function": "tqe_register_ucastfwt_cbk",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_rx_call_port_handler",
+      "value": 252,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 252,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_rx_call_port_handler",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_rx_call_port_handler",
+          "owner_offset": 0,
+          "function": "tqe_rx_call_port_handler",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_rx_l2_ext_filter",
+      "value": 264,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 264,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_rx_l2_ext_filter",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_rx_l2_ext_filter",
+          "owner_offset": 0,
+          "function": "tqe_rx_l2_ext_filter",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_rx_multicast",
+      "value": 276,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 276,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_rx_multicast",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_rx_multicast",
+          "owner_offset": 0,
+          "function": "tqe_rx_multicast",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    },
+    {
+      "name": "__ksymtab_tqe_tx",
+      "value": 288,
+      "size": 12,
+      "type": 1,
+      "bind": 0,
+      "section": "__ksymtab",
+      "callbacks": [
+        {
+          "section": "__ksymtab",
+          "offset": 288,
+          "type": 4,
+          "addend": 0,
+          "target_symbol": "tqe_tx",
+          "target_section": ".text",
+          "target_type": 2,
+          "owner": "__ksymtab_tqe_tx",
+          "owner_offset": 0,
+          "function": "tqe_tx",
+          "resolution": "STT_FUNC"
+        }
+      ]
+    }
+  ],
+  "unresolved_nonobject_data_relocations": [
+    {
+      "section": ".rodata",
+      "offset": 268,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "eth_mac_addr",
+      "target_section": "",
+      "target_type": 0,
+      "owner": "tqe_ndo",
+      "owner_offset": 36,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 8,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "param_ops_int",
+      "target_section": "",
+      "target_type": 0,
+      "owner": "__param_w3_fwt_reset_probe_enable",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 28,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "param_ops_uint",
+      "target_section": "",
+      "target_type": 0,
+      "owner": "__param_w3_rx_ring_entries",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 48,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "param_ops_int",
+      "target_section": "",
+      "target_type": 0,
+      "owner": "__param_w3_switch_tqe_only_enable",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    },
+    {
+      "section": "__param",
+      "offset": 68,
+      "type": 4,
+      "addend": 0,
+      "target_symbol": "param_ops_int",
+      "target_section": "",
+      "target_type": 0,
+      "owner": "__param_tqe_sem_en",
+      "owner_offset": 8,
+      "function": null,
+      "resolution": "UNRESOLVED_FUNCTION_TYPE"
+    }
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "name": "",
+      "type": 0,
+      "flags": 0,
+      "size": 0,
+      "align": 0
+    },
+    {
+      "index": 1,
+      "name": ".text",
+      "type": 1,
+      "flags": 6,
+      "size": 9212,
+      "align": 4
+    },
+    {
+      "index": 2,
+      "name": ".rela.text",
+      "type": 4,
+      "flags": 64,
+      "size": 2916,
+      "align": 4
+    },
+    {
+      "index": 3,
+      "name": ".text.unlikely",
+      "type": 1,
+      "flags": 6,
+      "size": 584,
+      "align": 4
+    },
+    {
+      "index": 4,
+      "name": ".rela.text.unlikely",
+      "type": 4,
+      "flags": 64,
+      "size": 228,
+      "align": 4
+    },
+    {
+      "index": 5,
+      "name": ".init.text",
+      "type": 1,
+      "flags": 6,
+      "size": 1664,
+      "align": 4
+    },
+    {
+      "index": 6,
+      "name": ".rela.init.text",
+      "type": 4,
+      "flags": 64,
+      "size": 1008,
+      "align": 4
+    },
+    {
+      "index": 7,
+      "name": ".exit.text",
+      "type": 1,
+      "flags": 6,
+      "size": 328,
+      "align": 4
+    },
+    {
+      "index": 8,
+      "name": ".rela.exit.text",
+      "type": 4,
+      "flags": 64,
+      "size": 216,
+      "align": 4
+    },
+    {
+      "index": 9,
+      "name": "__ksymtab",
+      "type": 1,
+      "flags": 2,
+      "size": 300,
+      "align": 4
+    },
+    {
+      "index": 10,
+      "name": ".rela__ksymtab",
+      "type": 4,
+      "flags": 64,
+      "size": 900,
+      "align": 4
+    },
+    {
+      "index": 11,
+      "name": "__ksymtab_strings",
+      "type": 1,
+      "flags": 50,
+      "size": 552,
+      "align": 1
+    },
+    {
+      "index": 12,
+      "name": ".rodata.str1.4",
+      "type": 1,
+      "flags": 50,
+      "size": 4120,
+      "align": 4
+    },
+    {
+      "index": 13,
+      "name": ".rodata",
+      "type": 1,
+      "flags": 2,
+      "size": 628,
+      "align": 4
+    },
+    {
+      "index": 14,
+      "name": ".rela.rodata",
+      "type": 4,
+      "flags": 64,
+      "size": 48,
+      "align": 4
+    },
+    {
+      "index": 15,
+      "name": ".modinfo",
+      "type": 1,
+      "flags": 2,
+      "size": 583,
+      "align": 1
+    },
+    {
+      "index": 16,
+      "name": "__param",
+      "type": 1,
+      "flags": 2,
+      "size": 80,
+      "align": 4
+    },
+    {
+      "index": 17,
+      "name": ".rela__param",
+      "type": 4,
+      "flags": 64,
+      "size": 192,
+      "align": 4
+    },
+    {
+      "index": 18,
+      "name": ".note.gnu.build-id",
+      "type": 7,
+      "flags": 2,
+      "size": 36,
+      "align": 4
+    },
+    {
+      "index": 19,
+      "name": ".note.Linux",
+      "type": 7,
+      "flags": 2,
+      "size": 24,
+      "align": 4
+    },
+    {
+      "index": 20,
+      "name": ".data",
+      "type": 1,
+      "flags": 3,
+      "size": 28,
+      "align": 4
+    },
+    {
+      "index": 21,
+      "name": ".rela.data",
+      "type": 4,
+      "flags": 64,
+      "size": 36,
+      "align": 4
+    },
+    {
+      "index": 22,
+      "name": ".gnu.linkonce.this_module",
+      "type": 1,
+      "flags": 3,
+      "size": 384,
+      "align": 128
+    },
+    {
+      "index": 23,
+      "name": ".rela.gnu.linkonce.this_module",
+      "type": 4,
+      "flags": 64,
+      "size": 24,
+      "align": 4
+    },
+    {
+      "index": 24,
+      "name": ".bss",
+      "type": 8,
+      "flags": 3,
+      "size": 232,
+      "align": 4
+    },
+    {
+      "index": 25,
+      "name": ".comment",
+      "type": 1,
+      "flags": 48,
+      "size": 138,
+      "align": 1
+    },
+    {
+      "index": 26,
+      "name": ".note.GNU-stack",
+      "type": 1,
+      "flags": 0,
+      "size": 0,
+      "align": 1
+    },
+    {
+      "index": 27,
+      "name": ".ARC.attributes",
+      "type": 1879048193,
+      "flags": 0,
+      "size": 40,
+      "align": 1
+    },
+    {
+      "index": 28,
+      "name": ".symtab",
+      "type": 2,
+      "flags": 0,
+      "size": 4400,
+      "align": 4
+    },
+    {
+      "index": 29,
+      "name": ".strtab",
+      "type": 3,
+      "flags": 0,
+      "size": 5293,
+      "align": 1
+    },
+    {
+      "index": 30,
+      "name": ".shstrtab",
+      "type": 3,
+      "flags": 0,
+      "size": 292,
+      "align": 1
+    }
+  ]
+}

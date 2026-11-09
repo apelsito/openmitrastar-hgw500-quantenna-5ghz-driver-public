@@ -1,0 +1,1152 @@
+{
+  "switch_tqe": {
+    "old_module_sha256": "e842f63c6b62333026f152b4f5d1354803dcefd0235342df77edffc7886afef9",
+    "new_module_sha256": "b9cfdb8292f069d564d9d22c6355f40ef7058c8bfdd78fe70669af0004893bb6",
+    "rename": {},
+    "new_names": [
+      "omcgq_batch_queue_admit",
+      "omcgq_batch_queue_cancel_reserve",
+      "omcgq_batch_queue_reserve",
+      "omcgq_batch_retry_acquire",
+      "omcgq_batch_xmit_register",
+      "omtqe_typed_queue_xmit"
+    ],
+    "moved": [
+      {
+        "name": "tqe_dbg_show",
+        "target": "tqe_dbg_show",
+        "section": ".text",
+        "type": 2,
+        "old_value": 632,
+        "new_value": 748,
+        "size": 158
+      },
+      {
+        "name": "tqe_irqh",
+        "target": "tqe_irqh",
+        "section": ".text",
+        "type": 2,
+        "old_value": 792,
+        "new_value": 908,
+        "size": 52
+      },
+      {
+        "name": "omtqe_lhost_reserve",
+        "target": "omtqe_lhost_reserve",
+        "section": ".text",
+        "type": 2,
+        "old_value": 896,
+        "new_value": 1012,
+        "size": 102
+      },
+      {
+        "name": "omtqe_lhost_submit",
+        "target": "omtqe_lhost_submit",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1000,
+        "new_value": 1116,
+        "size": 62
+      },
+      {
+        "name": "tasklet_schedule",
+        "target": "tasklet_schedule",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1072,
+        "new_value": 1188,
+        "size": 52
+      },
+      {
+        "name": "tqe_ndo_stop",
+        "target": "tqe_ndo_stop",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1124,
+        "new_value": 1240,
+        "size": 6
+      },
+      {
+        "name": "omtqe_push_mcast_batch",
+        "target": "omtqe_push_mcast_batch",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1180,
+        "new_value": 1296,
+        "size": 538
+      },
+      {
+        "name": "tqe_rx_pkt_drop",
+        "target": "tqe_rx_pkt_drop",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1868,
+        "new_value": 2160,
+        "size": 132
+      },
+      {
+        "name": "topaz_tqe_vlan_gettid.constprop.0",
+        "target": "topaz_tqe_vlan_gettid.constprop.0",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2000,
+        "new_value": 2292,
+        "size": 210
+      },
+      {
+        "name": "tqe_rx_napi_handler",
+        "target": "tqe_rx_napi_handler",
+        "section": ".text",
+        "type": 2,
+        "old_value": 6980,
+        "new_value": 7336,
+        "size": 2084
+      },
+      {
+        "name": "tqe_dbg_set",
+        "target": "tqe_dbg_set",
+        "section": ".text",
+        "type": 2,
+        "old_value": 9352,
+        "new_value": 9708,
+        "size": 126
+      },
+      {
+        "name": "__func__.48",
+        "target": "__func__.48",
+        "section": ".rodata",
+        "type": 1,
+        "old_value": 24,
+        "new_value": 48,
+        "size": 29
+      },
+      {
+        "name": "__FUNCTION__.45",
+        "target": "__FUNCTION__.45",
+        "section": ".rodata",
+        "type": 1,
+        "old_value": 56,
+        "new_value": 80,
+        "size": 7
+      },
+      {
+        "name": "__func__.46",
+        "target": "__func__.46",
+        "section": ".rodata",
+        "type": 1,
+        "old_value": 64,
+        "new_value": 88,
+        "size": 7
+      },
+      {
+        "name": "__func__.41",
+        "target": "__func__.41",
+        "section": ".rodata",
+        "type": 1,
+        "old_value": 72,
+        "new_value": 24,
+        "size": 22
+      },
+      {
+        "name": "tqe_rx_l2_ext_filter",
+        "target": "tqe_rx_l2_ext_filter",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1720,
+        "new_value": 2012,
+        "size": 148
+      },
+      {
+        "name": "tqe_tx",
+        "target": "tqe_tx",
+        "section": ".text",
+        "type": 2,
+        "old_value": 4456,
+        "new_value": 4748,
+        "size": 674
+      },
+      {
+        "name": "tqe_port_remove_handler",
+        "target": "tqe_port_remove_handler",
+        "section": ".text",
+        "type": 2,
+        "old_value": 844,
+        "new_value": 960,
+        "size": 52
+      },
+      {
+        "name": "topaz_tqe_xmit",
+        "target": "topaz_tqe_xmit",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1064,
+        "new_value": 1180,
+        "size": 8
+      },
+      {
+        "name": "topaz_hbm_get_buf",
+        "target": "topaz_hbm_get_buf",
+        "section": ".text",
+        "type": 2,
+        "old_value": 4232,
+        "new_value": 4524,
+        "size": 222
+      },
+      {
+        "name": "tqe_rx_get_node_id",
+        "target": "tqe_rx_get_node_id",
+        "section": ".text",
+        "type": 2,
+        "old_value": 5496,
+        "new_value": 5788,
+        "size": 40
+      },
+      {
+        "name": "tqe_rx_ether_type_skip_vlan",
+        "target": "tqe_rx_ether_type_skip_vlan",
+        "section": ".text",
+        "type": 2,
+        "old_value": 5536,
+        "new_value": 5828,
+        "size": 40
+      },
+      {
+        "name": "bus_to_virt",
+        "target": "bus_to_virt",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1132,
+        "new_value": 1248,
+        "size": 48
+      },
+      {
+        "name": "topaz_tqe_congest_queue_process",
+        "target": "topaz_tqe_congest_queue_process",
+        "section": ".text",
+        "type": 2,
+        "old_value": 5132,
+        "new_value": 5424,
+        "size": 364
+      },
+      {
+        "name": "wowlan_magic_packet_check",
+        "target": "wowlan_magic_packet_check",
+        "section": ".text",
+        "type": 2,
+        "old_value": 6704,
+        "new_value": 7060,
+        "size": 276
+      },
+      {
+        "name": "qtn_mproc_sync_spin_lock",
+        "target": "qtn_mproc_sync_spin_lock",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2540,
+        "new_value": 2832,
+        "size": 1190
+      },
+      {
+        "name": "muc_to_nocache",
+        "target": "muc_to_nocache",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2212,
+        "new_value": 2504,
+        "size": 48
+      },
+      {
+        "name": "qtn_mproc_sync_spin_try_lock",
+        "target": "qtn_mproc_sync_spin_try_lock",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2320,
+        "new_value": 2612,
+        "size": 218
+      },
+      {
+        "name": "topaz_hbm_put_buf",
+        "target": "topaz_hbm_put_buf",
+        "section": ".text",
+        "type": 2,
+        "old_value": 4072,
+        "new_value": 4364,
+        "size": 158
+      },
+      {
+        "name": "nocache_to_muc",
+        "target": "nocache_to_muc",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2260,
+        "new_value": 2552,
+        "size": 60
+      },
+      {
+        "name": "tqe_rx_multicast",
+        "target": "tqe_rx_multicast",
+        "section": ".text",
+        "type": 2,
+        "old_value": 5576,
+        "new_value": 5868,
+        "size": 1126
+      },
+      {
+        "name": "qtn_mproc_sync_spin_unlock",
+        "target": "qtn_mproc_sync_spin_unlock",
+        "section": ".text",
+        "type": 2,
+        "old_value": 3732,
+        "new_value": 4024,
+        "size": 338
+      },
+      {
+        "name": "print_tqe_counters",
+        "target": "print_tqe_counters",
+        "section": ".text",
+        "type": 2,
+        "old_value": 9064,
+        "new_value": 9420,
+        "size": 288
+      }
+    ]
+  },
+  "topaz_congest_queue": {
+    "old_module_sha256": "aefc674cabb331fef82e4cca9789ed98525b7bc3b7af19ea25621c685a459f5f",
+    "new_module_sha256": "7bfb3a2759eb6ccdc46b19037a04001f2d9d0b9051aeb2419f2edb0cb0116b3a",
+    "rename": {
+      "__UNIQUE_ID_description327": "__UNIQUE_ID_description328",
+      "__UNIQUE_ID_author328": "__UNIQUE_ID_author329",
+      "__UNIQUE_ID_license329": "__UNIQUE_ID_license330"
+    },
+    "new_names": [
+      "__kstrtab_omcgq_batch_has_queued",
+      "__kstrtab_omcgq_batch_queue_admit",
+      "__kstrtab_omcgq_batch_queue_cancel_reserve",
+      "__kstrtab_omcgq_batch_queue_reserve",
+      "__kstrtab_omcgq_batch_retry_acquire",
+      "__kstrtab_omcgq_batch_xmit_register",
+      "__kstrtabns_omcgq_batch_has_queued",
+      "__kstrtabns_omcgq_batch_queue_admit",
+      "__kstrtabns_omcgq_batch_queue_cancel_reserve",
+      "__kstrtabns_omcgq_batch_queue_reserve",
+      "__kstrtabns_omcgq_batch_retry_acquire",
+      "__kstrtabns_omcgq_batch_xmit_register",
+      "__ksymtab_omcgq_batch_has_queued",
+      "__ksymtab_omcgq_batch_queue_admit",
+      "__ksymtab_omcgq_batch_queue_cancel_reserve",
+      "__ksymtab_omcgq_batch_queue_reserve",
+      "__ksymtab_omcgq_batch_retry_acquire",
+      "__ksymtab_omcgq_batch_xmit_register",
+      "omcgq_batch_has_queued",
+      "omcgq_batch_queue_admit",
+      "omcgq_batch_queue_cancel_reserve",
+      "omcgq_batch_queue_reserve",
+      "omcgq_batch_retry_acquire",
+      "omcgq_batch_xmit_register",
+      "omcgq_credit_queue",
+      "omcgq_queue_markers",
+      "omcgq_queue_pending",
+      "omcgq_queue_processing",
+      "omcgq_queue_reserved",
+      "omcgq_retry_marker",
+      "omcgq_typed_head",
+      "omcgq_typed_owner",
+      "omcgq_typed_xmit"
+    ],
+    "moved": [
+      {
+        "name": "__kstrtab_omcgq_batch_admit",
+        "target": "__kstrtab_omcgq_batch_admit",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 150,
+        "new_value": 314,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_omcgq_batch_admit",
+        "target": "__kstrtabns_omcgq_batch_admit",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 168,
+        "new_value": 332,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_omcgq_batch_valid",
+        "target": "__kstrtab_omcgq_batch_valid",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 169,
+        "new_value": 333,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_omcgq_batch_valid",
+        "target": "__kstrtabns_omcgq_batch_valid",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 187,
+        "new_value": 351,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_omcgq_batch_acquire",
+        "target": "__kstrtab_omcgq_batch_acquire",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 188,
+        "new_value": 352,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_omcgq_batch_acquire",
+        "target": "__kstrtabns_omcgq_batch_acquire",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 208,
+        "new_value": 372,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_omcgq_batch_complete",
+        "target": "__kstrtab_omcgq_batch_complete",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 209,
+        "new_value": 373,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_omcgq_batch_complete",
+        "target": "__kstrtabns_omcgq_batch_complete",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 230,
+        "new_value": 394,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_omcgq_batch_finish",
+        "target": "__kstrtab_omcgq_batch_finish",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 231,
+        "new_value": 395,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_omcgq_batch_finish",
+        "target": "__kstrtabns_omcgq_batch_finish",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 250,
+        "new_value": 414,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_topaz_congest_dump",
+        "target": "__kstrtab_topaz_congest_dump",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 251,
+        "new_value": 415,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_topaz_congest_dump",
+        "target": "__kstrtabns_topaz_congest_dump",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 270,
+        "new_value": 434,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_reg_congest_queue_stats",
+        "target": "__kstrtab_reg_congest_queue_stats",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 271,
+        "new_value": 435,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_reg_congest_queue_stats",
+        "target": "__kstrtabns_reg_congest_queue_stats",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 295,
+        "new_value": 459,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_topaz_congest_queue_get",
+        "target": "__kstrtab_topaz_congest_queue_get",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 296,
+        "new_value": 460,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_topaz_congest_queue_get",
+        "target": "__kstrtabns_topaz_congest_queue_get",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 320,
+        "new_value": 484,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_topaz_congest_set_unicast_queue_count",
+        "target": "__kstrtab_topaz_congest_set_unicast_queue_count",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 321,
+        "new_value": 485,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_topaz_congest_set_unicast_queue_count",
+        "target": "__kstrtabns_topaz_congest_set_unicast_queue_count",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 359,
+        "new_value": 523,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_topaz_congest_alloc_unicast_queue",
+        "target": "__kstrtab_topaz_congest_alloc_unicast_queue",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 360,
+        "new_value": 524,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_topaz_congest_alloc_unicast_queue",
+        "target": "__kstrtabns_topaz_congest_alloc_unicast_queue",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 394,
+        "new_value": 558,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_topaz_congest_alloc_queue",
+        "target": "__kstrtab_topaz_congest_alloc_queue",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 395,
+        "new_value": 559,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_topaz_congest_alloc_queue",
+        "target": "__kstrtabns_topaz_congest_alloc_queue",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 421,
+        "new_value": 585,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_topaz_congest_enqueue",
+        "target": "__kstrtab_topaz_congest_enqueue",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 422,
+        "new_value": 586,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_topaz_congest_enqueue",
+        "target": "__kstrtabns_topaz_congest_enqueue",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 444,
+        "new_value": 608,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_topaz_congest_release_queue",
+        "target": "__kstrtab_topaz_congest_release_queue",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 445,
+        "new_value": 609,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_topaz_congest_release_queue",
+        "target": "__kstrtabns_topaz_congest_release_queue",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 473,
+        "new_value": 637,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_topaz_hbm_congest_queue_put_buf",
+        "target": "__kstrtab_topaz_hbm_congest_queue_put_buf",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 474,
+        "new_value": 638,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_topaz_hbm_congest_queue_put_buf",
+        "target": "__kstrtabns_topaz_hbm_congest_queue_put_buf",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 506,
+        "new_value": 670,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_topaz_congest_queue_xmit",
+        "target": "__kstrtab_topaz_congest_queue_xmit",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 507,
+        "new_value": 671,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_topaz_congest_queue_xmit",
+        "target": "__kstrtabns_topaz_congest_queue_xmit",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 532,
+        "new_value": 696,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_congest_tx_tasklet",
+        "target": "__kstrtab_congest_tx_tasklet",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 533,
+        "new_value": 697,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_congest_tx_tasklet",
+        "target": "__kstrtabns_congest_tx_tasklet",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 552,
+        "new_value": 716,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_topaz_congest_queue_init",
+        "target": "__kstrtab_topaz_congest_queue_init",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 553,
+        "new_value": 717,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_topaz_congest_queue_init",
+        "target": "__kstrtabns_topaz_congest_queue_init",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 578,
+        "new_value": 742,
+        "size": 0
+      },
+      {
+        "name": "__kstrtab_topaz_congest_queue_exit",
+        "target": "__kstrtab_topaz_congest_queue_exit",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 579,
+        "new_value": 743,
+        "size": 0
+      },
+      {
+        "name": "__kstrtabns_topaz_congest_queue_exit",
+        "target": "__kstrtabns_topaz_congest_queue_exit",
+        "section": "__ksymtab_strings",
+        "type": 0,
+        "old_value": 604,
+        "new_value": 768,
+        "size": 0
+      },
+      {
+        "name": "omcgq_batch_matches",
+        "target": "omcgq_batch_matches",
+        "section": ".text",
+        "type": 2,
+        "old_value": 204,
+        "new_value": 328,
+        "size": 42
+      },
+      {
+        "name": "omcgq_held",
+        "target": "omcgq_held",
+        "section": ".bss",
+        "type": 1,
+        "old_value": 64,
+        "new_value": 2792,
+        "size": 8192
+      },
+      {
+        "name": "omcgq_record_held",
+        "target": "omcgq_record_held",
+        "section": ".text",
+        "type": 2,
+        "old_value": 660,
+        "new_value": 784,
+        "size": 192
+      },
+      {
+        "name": "topaz_congest_dequeue",
+        "target": "topaz_congest_dequeue",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2328,
+        "new_value": 3176,
+        "size": 124
+      },
+      {
+        "name": "topaz_congest_queue_clear",
+        "target": "topaz_congest_queue_clear",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2452,
+        "new_value": 3300,
+        "size": 84
+      },
+      {
+        "name": "omcgq_unrecorded",
+        "target": "omcgq_unrecorded",
+        "section": ".bss",
+        "type": 1,
+        "old_value": 52,
+        "new_value": 64,
+        "size": 4
+      },
+      {
+        "name": "omcgq_held_count",
+        "target": "omcgq_held_count",
+        "section": ".bss",
+        "type": 1,
+        "old_value": 56,
+        "new_value": 68,
+        "size": 4
+      },
+      {
+        "name": "omcgq_batch_generation",
+        "target": "omcgq_batch_generation",
+        "section": ".bss",
+        "type": 1,
+        "old_value": 60,
+        "new_value": 84,
+        "size": 4
+      },
+      {
+        "name": "__ksymtab_omcgq_batch_valid",
+        "target": "__ksymtab_omcgq_batch_valid",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 144,
+        "new_value": 204,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_reg_congest_queue_stats",
+        "target": "__ksymtab_reg_congest_queue_stats",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 156,
+        "new_value": 228,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_topaz_congest_alloc_queue",
+        "target": "__ksymtab_topaz_congest_alloc_queue",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 168,
+        "new_value": 240,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_topaz_congest_alloc_unicast_queue",
+        "target": "__ksymtab_topaz_congest_alloc_unicast_queue",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 180,
+        "new_value": 252,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_topaz_congest_dump",
+        "target": "__ksymtab_topaz_congest_dump",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 192,
+        "new_value": 264,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_topaz_congest_enqueue",
+        "target": "__ksymtab_topaz_congest_enqueue",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 204,
+        "new_value": 276,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_topaz_congest_queue_exit",
+        "target": "__ksymtab_topaz_congest_queue_exit",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 216,
+        "new_value": 288,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_topaz_congest_queue_get",
+        "target": "__ksymtab_topaz_congest_queue_get",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 228,
+        "new_value": 300,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_topaz_congest_queue_init",
+        "target": "__ksymtab_topaz_congest_queue_init",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 240,
+        "new_value": 312,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_topaz_congest_queue_xmit",
+        "target": "__ksymtab_topaz_congest_queue_xmit",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 252,
+        "new_value": 324,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_topaz_congest_release_queue",
+        "target": "__ksymtab_topaz_congest_release_queue",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 264,
+        "new_value": 336,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_topaz_congest_set_unicast_queue_count",
+        "target": "__ksymtab_topaz_congest_set_unicast_queue_count",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 276,
+        "new_value": 348,
+        "size": 12
+      },
+      {
+        "name": "__ksymtab_topaz_hbm_congest_queue_put_buf",
+        "target": "__ksymtab_topaz_hbm_congest_queue_put_buf",
+        "section": "__ksymtab",
+        "type": 1,
+        "old_value": 288,
+        "new_value": 360,
+        "size": 12
+      },
+      {
+        "name": "omcgq_batch_valid",
+        "target": "omcgq_batch_valid",
+        "section": ".text",
+        "type": 2,
+        "old_value": 248,
+        "new_value": 372,
+        "size": 40
+      },
+      {
+        "name": "omcgq_batch_admit",
+        "target": "omcgq_batch_admit",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1816,
+        "new_value": 2404,
+        "size": 304
+      },
+      {
+        "name": "omcgq_batch_complete",
+        "target": "omcgq_batch_complete",
+        "section": ".text",
+        "type": 2,
+        "old_value": 288,
+        "new_value": 412,
+        "size": 112
+      },
+      {
+        "name": "topaz_congest_set_unicast_queue_count",
+        "target": "topaz_congest_set_unicast_queue_count",
+        "section": ".text",
+        "type": 2,
+        "old_value": 428,
+        "new_value": 552,
+        "size": 26
+      },
+      {
+        "name": "omcgq_bank_retain",
+        "target": "omcgq_bank_retain",
+        "section": ".text",
+        "type": 2,
+        "old_value": 988,
+        "new_value": 1112,
+        "size": 68
+      },
+      {
+        "name": "topaz_congest_queue_exit",
+        "target": "topaz_congest_queue_exit",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2244,
+        "new_value": 3092,
+        "size": 82
+      },
+      {
+        "name": "topaz_hbm_get_buf",
+        "target": "topaz_hbm_get_buf",
+        "section": ".text",
+        "type": 2,
+        "old_value": 4772,
+        "new_value": 5664,
+        "size": 222
+      },
+      {
+        "name": "topaz_hbm_congest_queue_put_buf",
+        "target": "topaz_hbm_congest_queue_put_buf",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1456,
+        "new_value": 1600,
+        "size": 50
+      },
+      {
+        "name": "topaz_congest_alloc_queue",
+        "target": "topaz_congest_alloc_queue",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1180,
+        "new_value": 1324,
+        "size": 274
+      },
+      {
+        "name": "omcgq_batch_finish",
+        "target": "omcgq_batch_finish",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1056,
+        "new_value": 1180,
+        "size": 124
+      },
+      {
+        "name": "pktlog_update_cgq_stats",
+        "target": "pktlog_update_cgq_stats",
+        "section": ".bss",
+        "type": 1,
+        "old_value": 40,
+        "new_value": 52,
+        "size": 8
+      },
+      {
+        "name": "g_congest_queue_ptr",
+        "target": "g_congest_queue_ptr",
+        "section": ".bss",
+        "type": 1,
+        "old_value": 48,
+        "new_value": 60,
+        "size": 4
+      },
+      {
+        "name": "topaz_congest_dump",
+        "target": "topaz_congest_dump",
+        "section": ".text",
+        "type": 2,
+        "old_value": 456,
+        "new_value": 580,
+        "size": 204
+      },
+      {
+        "name": "bus_to_virt",
+        "target": "bus_to_virt",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2704,
+        "new_value": 3596,
+        "size": 48
+      },
+      {
+        "name": "congest_tx_tasklet",
+        "target": "congest_tx_tasklet",
+        "section": ".sram.text",
+        "type": 2,
+        "old_value": 540,
+        "new_value": 896,
+        "size": 166
+      },
+      {
+        "name": "omcgq_bank_acquire",
+        "target": "omcgq_bank_acquire",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1628,
+        "new_value": 2060,
+        "size": 188
+      },
+      {
+        "name": "omcgq_bank_quarantine",
+        "target": "omcgq_bank_quarantine",
+        "section": ".text",
+        "type": 2,
+        "old_value": 852,
+        "new_value": 976,
+        "size": 134
+      },
+      {
+        "name": "topaz_congest_queue_init",
+        "target": "topaz_congest_queue_init",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2536,
+        "new_value": 3428,
+        "size": 166
+      },
+      {
+        "name": "qtn_mproc_sync_spin_lock",
+        "target": "qtn_mproc_sync_spin_lock",
+        "section": ".text",
+        "type": 2,
+        "old_value": 3080,
+        "new_value": 3972,
+        "size": 1190
+      },
+      {
+        "name": "topaz_congest_release_queue",
+        "target": "topaz_congest_release_queue",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2120,
+        "new_value": 2968,
+        "size": 124
+      },
+      {
+        "name": "muc_to_nocache",
+        "target": "muc_to_nocache",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2752,
+        "new_value": 3644,
+        "size": 48
+      },
+      {
+        "name": "reg_congest_queue_stats",
+        "target": "reg_congest_queue_stats",
+        "section": ".text",
+        "type": 2,
+        "old_value": 400,
+        "new_value": 524,
+        "size": 14
+      },
+      {
+        "name": "omcgq_batch_acquire",
+        "target": "omcgq_batch_acquire",
+        "section": ".text",
+        "type": 2,
+        "old_value": 1508,
+        "new_value": 1940,
+        "size": 120
+      },
+      {
+        "name": "qtn_mproc_sync_spin_try_lock",
+        "target": "qtn_mproc_sync_spin_try_lock",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2860,
+        "new_value": 3752,
+        "size": 218
+      },
+      {
+        "name": "topaz_hbm_put_buf",
+        "target": "topaz_hbm_put_buf",
+        "section": ".text",
+        "type": 2,
+        "old_value": 4612,
+        "new_value": 5504,
+        "size": 158
+      },
+      {
+        "name": "topaz_congest_queue_xmit",
+        "target": "topaz_congest_queue_xmit",
+        "section": ".sram.text",
+        "type": 2,
+        "old_value": 292,
+        "new_value": 348,
+        "size": 246
+      },
+      {
+        "name": "nocache_to_muc",
+        "target": "nocache_to_muc",
+        "section": ".text",
+        "type": 2,
+        "old_value": 2800,
+        "new_value": 3692,
+        "size": 60
+      },
+      {
+        "name": "topaz_congest_alloc_unicast_queue",
+        "target": "topaz_congest_alloc_unicast_queue",
+        "section": ".text",
+        "type": 2,
+        "old_value": 5016,
+        "new_value": 5908,
+        "size": 114
+      },
+      {
+        "name": "topaz_congest_queue_get",
+        "target": "topaz_congest_queue_get",
+        "section": ".text",
+        "type": 2,
+        "old_value": 416,
+        "new_value": 540,
+        "size": 10
+      },
+      {
+        "name": "qtn_mproc_sync_spin_unlock",
+        "target": "qtn_mproc_sync_spin_unlock",
+        "section": ".text",
+        "type": 2,
+        "old_value": 4272,
+        "new_value": 5164,
+        "size": 338
+      },
+      {
+        "name": "get_active_tid_num",
+        "target": "get_active_tid_num",
+        "section": ".text",
+        "type": 2,
+        "old_value": 4996,
+        "new_value": 5888,
+        "size": 20
+      }
+    ]
+  }
+}

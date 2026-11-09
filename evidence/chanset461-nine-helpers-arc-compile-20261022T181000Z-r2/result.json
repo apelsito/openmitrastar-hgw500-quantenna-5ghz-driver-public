@@ -1,0 +1,44 @@
+{
+  "status": "PASS_ARC_COMPILED461_NINE_HELPERS_EXACT130_TABLES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "input_pins": 1042,
+  "inputs_unchanged": true,
+  "object_bytes": 13904,
+  "object_sha256": "6ce3551eebd5aeddc080415d6ef07a18cff37b5487d0abb0287d207fe7614a94",
+  "functions": [
+    "om_cs_scale",
+    "bus_to_virt",
+    "muc_to_nocache",
+    "nocache_to_muc",
+    "om_chanset_template",
+    "om_chanset_find",
+    "om_chanset_add_scan_type",
+    "om_chanset_rank_defaults",
+    "om_chanset_edges",
+    "om_chanset_cost",
+    "om_chanset_normalize_sample",
+    "om_chanset_update_scan_entry",
+    "om_chanset_select"
+  ],
+  "intended_helpers": [
+    "om_chanset_add_scan_type",
+    "om_chanset_cost",
+    "om_chanset_edges",
+    "om_chanset_find",
+    "om_chanset_normalize_sample",
+    "om_chanset_rank_defaults",
+    "om_chanset_select",
+    "om_chanset_template",
+    "om_chanset_update_scan_entry",
+    "om_cs_scale"
+  ],
+  "retained_header_functions": [
+    "bus_to_virt",
+    "muc_to_nocache",
+    "nocache_to_muc"
+  ],
+  "table_bytes": 10400,
+  "machine": 93,
+  "limits": "Standalone object only; no registration/driver integration/physical acceptance"
+}

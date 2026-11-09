@@ -1,0 +1,36 @@
+{
+  "status": "SOURCE_ONLY_SRAM_LIFETIME_ADAPTER_REAL_R20_RESET_RING_CALLSITE_CONTRACT_NOT_CONNECTED",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "R20_source_changed": false,
+  "heap_exports_added": false,
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\prepare_linux73_sram_lifetime_adapter.py": "330cca018521c7520efbca309c97351ad1e67883475922e6b0c4c8c3d8c6b1f9",
+    "outputs\\rea\\linux73-oem-sram-core-20261022T221000Z-r1\\result.json": "b85349676450705f00c1d24a988f4e81b4ffd5e6e4ccdc9f162bedc91526f67e",
+    "outputs\\rea\\linux73-full44-candidate-20261023T010500Z-r20\\source\\qdrv\\qdrv_hal.c": "9073f72099b28a93e8794282ae5b87d7d32fca0ee5ebaf9b90cc6716f64a6691",
+    "outputs\\rea\\linux73-full44-candidate-20261023T010500Z-r20\\source\\qdrv\\qdrv_soc.c": "a179bebe0f469b4156e03139d6e06c99d51720c2bc9e292d5426a37d607603c4",
+    "outputs\\rea\\linux73-full44-candidate-20261023T010500Z-r20\\source\\qdrv\\qdrv_control.c": "04a03eb69951dbd0c30451a6e4b8dea35d5706d7659cfd696eaf18ece4c04d16",
+    "outputs\\rea\\linux73-full44-candidate-20261023T010500Z-r20\\source\\platform\\topaz\\switch_tqe.c": "487e9eff80d719a8e34ea9a5d7e4bea44f75a120e1d79bcb524b241eb9421858",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\include\\qtn\\topaz_tqe_cpuif.h": "dc4e97d0bb987f750ace2ede894a6b05e02f6d6b3d7b070e1f796b87746acc15",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\common\\ruby_platform.h": "d878ff34eff510110994cea174c1a216413bc774cbeaba2d27f23e7f778d1e64"
+  },
+  "sourcefiles": {
+    "om_sram_core.c": "43093bb58b10f0d5a2a39e0dc85577f42f2094ce83b80c1e24f03c502f62b819",
+    "om_sram_core.h": "77ae0bbe90ad01d986cba84cb314bcfb21231d397c90c289e3013a98be6f14cf",
+    "om_sram_lifetime.c": "eef9eb1305a5e1e780c0261c706f89b48ed032a5b53a4a03f5ae4a0048446f70",
+    "om_sram_lifetime.h": "ad561df617dc7f5f614d03dcd56ff9c78994c49fc32fef2f5b931414bc5deac9"
+  },
+  "actual_R20_reset_mask": "0x4180 NETSS|MAC|BB noSRAMbit; nonARCbranchcontainsSRAM_RESETbutisnotcompiled",
+  "callsite_requirements": [
+    "BindreservedkernelheapbeforeTQEdependencyringallocation; allocator cannotreinitafterqdrv_soc_initbecauseTQEalreadyownsring",
+    "BeforeNETSSreset: actualunpublishringbase/count0 andCPUIFresetbit31 plusfreeownedallocations; otherwise-resetprepareEBUSY. R20currentlydoesnotperformthisbeforehal_reset.",
+    "AfterSRAMbitdestructivereset(ifanyfutureexactcaller): stopcorebeforewrite,explicittrustedmappingcontractreinitafterassert/release; noautomaticreinitfromboolflags.",
+    "R20clearsramregions >=20000donottouchheap; adapterrefusesanyoverlap; disjointdirectwritebookkeepingneverclaimsindirectwritersclosed."
+  ],
+  "unknowns": [
+    "NETSSreset impact onTQEhardware ring/base registers needsrealRTL/OEM/runtimeevidence; sourceadapterrejectswithliveobjects ratherthanassumesunchanged.",
+    "MCu/AuC/DSPindirectwriterboundsandcompleteexclusivekernelmappingstillmissing.",
+    "R20hal_disable_auc emptyandDSPdisablecompiledout; stopcannotproveallfirmwarewritersquiet fromthosecalls.",
+    "NoQDRVhookintegration/functionalheapprovider untilreservation+writer+reset callsitegates passed."
+  ]
+}

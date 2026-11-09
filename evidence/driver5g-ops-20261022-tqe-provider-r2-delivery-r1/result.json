@@ -1,0 +1,167 @@
+{
+  "schema": "openmitrastar.tqe-provider-delivery/v3",
+  "status": "PASS_OFFLINE_R2_FULLPAIR171FIXTURES_GLOBALRESIDUAL_NOT_RELEASE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "supersedes_r1_semantic_bug": "R1 quarantinecheckafterVLANegress couldenterHBMdrop. R2stackprepare+ledgerguardbeforeVLAN; oldsource/module/evidencepreserved.",
+  "early_quarantine_before_vlan_hbm_sideeffect": true,
+  "two_exact_owner_guard_cases": true,
+  "fixtures": {
+    "provider": 16,
+    "actual_four_writers": 146,
+    "actual_queue_consumers": 9
+  },
+  "provider": "topaz_congest_queue",
+  "consumer": "switch_tqe",
+  "no_reverse_dependency": true,
+  "complete_pair_reproducible": true,
+  "modules": [
+    {
+      "lane": "a",
+      "name": "topaz_congest_queue",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-provider-build-r2/a/topaz_congest_queue/topaz_congest_queue.ko",
+      "bytes": 17000,
+      "sha256": "a0face8555ed07df340c0808a60e7caccf02b775903ac1aa63cce77eac375568",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "author": [
+          "Quantenna"
+        ],
+        "description": [
+          "CONGEST QUEUE"
+        ],
+        "depends": [
+          "qtn_platform_support,hbm"
+        ],
+        "name": [
+          "topaz_congest_queue"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    },
+    {
+      "lane": "a",
+      "name": "switch_tqe",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-provider-build-r2/a/switch_tqe/switch_tqe.ko",
+      "bytes": 36236,
+      "sha256": "7cb21e6a87284b3b29bfa285d6e51ffa7fac7f1bd4419574c48965e6af84b58f",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "parm": [
+          "w3_fwt_reset_probe_enable:Explicit MitraStar-only FWT arbitration probe around TQE CPU reset",
+          "w3_rx_ring_entries:MitraStar-only compact TQE RX ring; default 512, validated compact value 256",
+          "w3_switch_tqe_only_enable:Explicit MitraStar W3 switch-TQE-only hardware gate"
+        ],
+        "parmtype": [
+          "tqe_sem_en:int",
+          "w3_fwt_reset_probe_enable:int",
+          "w3_rx_ring_entries:uint",
+          "w3_switch_tqe_only_enable:int"
+        ],
+        "depends": [
+          "topaz_congest_queue,dmautil,hbm,iputil,switch_vlan,qtn_platform_support"
+        ],
+        "name": [
+          "switch_tqe"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    },
+    {
+      "lane": "b",
+      "name": "topaz_congest_queue",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-provider-build-r2/b/topaz_congest_queue/topaz_congest_queue.ko",
+      "bytes": 17000,
+      "sha256": "a0face8555ed07df340c0808a60e7caccf02b775903ac1aa63cce77eac375568",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "author": [
+          "Quantenna"
+        ],
+        "description": [
+          "CONGEST QUEUE"
+        ],
+        "depends": [
+          "qtn_platform_support,hbm"
+        ],
+        "name": [
+          "topaz_congest_queue"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    },
+    {
+      "lane": "b",
+      "name": "switch_tqe",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-provider-build-r2/b/switch_tqe/switch_tqe.ko",
+      "bytes": 36236,
+      "sha256": "7cb21e6a87284b3b29bfa285d6e51ffa7fac7f1bd4419574c48965e6af84b58f",
+      "metadata": {
+        "license": [
+          "GPL"
+        ],
+        "parm": [
+          "w3_fwt_reset_probe_enable:Explicit MitraStar-only FWT arbitration probe around TQE CPU reset",
+          "w3_rx_ring_entries:MitraStar-only compact TQE RX ring; default 512, validated compact value 256",
+          "w3_switch_tqe_only_enable:Explicit MitraStar W3 switch-TQE-only hardware gate"
+        ],
+        "parmtype": [
+          "tqe_sem_en:int",
+          "w3_fwt_reset_probe_enable:int",
+          "w3_rx_ring_entries:uint",
+          "w3_switch_tqe_only_enable:int"
+        ],
+        "depends": [
+          "topaz_congest_queue,dmautil,hbm,iputil,switch_vlan,qtn_platform_support"
+        ],
+        "name": [
+          "switch_tqe"
+        ],
+        "vermagic": [
+          "5.10.260-openmitrastar-radiohw mod_unload ARC700"
+        ]
+      }
+    }
+  ],
+  "evidence": [
+    "driver5g-ops-20261022-tqe-provider-source-r2",
+    "driver5g-ops-20261022-tqe-provider-build-r2",
+    "driver5g-ops-20261022-tqe-provider-lifecycle-fixture-r2",
+    "driver5g-ops-20261022-tqe-provider-four-writer-fixture-r4",
+    "driver5g-ops-20261022-tqe-provider-queue-fixture-r3",
+    "driver5g-ops-20261022-tqe-provider-r2-global-qualification-r2"
+  ],
+  "remaining_gates": [
+    "Independent semantic review receipt required beforeimageeligibilitydecision.",
+    "No heldpayloadrelease/recovery;pins permanentrebootonly.",
+    "Ledger256slots saturationrecords unrecordedrefs,ownershipcatalog completenessNO_GO.",
+    "ForeignLHOSTbankfirmwarewritesunknown,HBMallfunctionlatencyunbounded.",
+    "Physical/runtime/client/traffic/persistence/rollback/releaseUNRUN."
+  ],
+  "pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-provider-source-r2\\result.json": "5c1570b6b5a70bb0d510c0d3e46cfcc798af4b57d9cd64a30f995e915dabb60f",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-provider-build-r2\\result.json": "d25315d8d346cd12a9cf01660fb468eb8631a9f4565d100c41a442f9f9dbf17b",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-provider-lifecycle-fixture-r2\\result.json": "d441f57a41ebe6e124d0704fe9d8f37b0d2c6382675bfaeda7de67fbab64f898",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-provider-four-writer-fixture-r4\\result.json": "947e423c732a6c8baa7230abb106ddd08ce278cf4f677ac473441265b6400389",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-provider-queue-fixture-r3\\result.json": "aebeb824eb1b1e7dbb8b1e86c721ae02392ff421adce6ed932501091e299471c",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-tqe-provider-r2-global-qualification-r2\\result.json": "04a91365d7f4f6d3c47e472272a020643d12d47813a32e4acfcf29ce6f1267cc",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\prepare_tqe_bounded_provider_pair.py": "59c7f36cb15dbbd7ace86ca19cc391aff22ae06271708d2bb5838865c04c66af",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\build_tqe_bounded_provider_pair.py": "d6d0c1137c50e6188a106b89fb45ad1a2d509e7e1f7add7d24e74cbf63f89010",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_tqe_provider_lifecycle.py": "e9d8931ddc6f645c336be4c1b0cbe68e06d0fe4e1983f5943f75dd64c12caa31",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_tqe_bounded_provider_pair.py": "f388d28963b6dfc148c690f776936696a6e84a6a1a4775f72bdcb3c05c1c0022",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\test_tqe_bounded_queue_ownership.py": "45c184cf6ba4a5b1aac47ca96801a3d2ed84a60a614d5c8e005f62018e62e52b",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\qualify_tqe_bounded_provider_pair.py": "a785d456a2f453649bf280d40979a11ecbf29ea433f81425a1a762883afb0370"
+  }
+}

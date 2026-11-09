@@ -1,0 +1,7 @@
+outputs\rea\linux73-typed-sram-dma-fixture-20261023T041300Z-r22\actual-typed-dma.c:211:207: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+  211 |  for(unsigned i=0;i<4;i++){reset();memset(&d,0xa5,sizeof(d));aligned_dma_descs before=d;fail_rec=i==0;fail_pool=i==1?-ENODEV:i==2?-EBUSY:i==3?-ENOMEM:0;assert(dmautil_aligned_dma_desc_alloc(&d,20,4,64,true)==(i<2?-ENOMEM+i*(ENOMEM-ENODEV):fail_pool));assert(!memcmp(&d,&before,sizeof(d))&&!np&&!nr&&!unmaps&&!converts&&!flushes);cases++;}
+      |                                                                                                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/user-home/Desktop/MitraStar/tools/external/llvm-mingw-20260616-ucrt-x86_64/include/assert.h:52:7: note: expanded from macro 'assert'
+   52 |  ((!!(_Expression)) || \
+      |       ^~~~~~~~~~~
+1 warning generated.

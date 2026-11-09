@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ACTUAL_PROVIDER_AND_FOUR_WRITER_BOUNDED_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 146,
+  "module_tokens_and_pins_actual_functions": true,
+  "irq_read_budgets_1024": true,
+  "postsubmit_unknown_retained_never_CN": true,
+  "foreign_bank_writer_counterexample_reproduced": true,
+  "fixture_sha256": "913b5c9e171045603baf20c010f27746bc41ca6921b0f45deaa517bfb91fae39",
+  "limits": "Actual source with fake module/MMIO/HBM callbacks; no physical/foreign firmware/retention recovery acceptance."
+}

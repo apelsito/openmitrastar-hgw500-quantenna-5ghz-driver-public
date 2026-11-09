@@ -1,0 +1,10 @@
+[
+  "gcc",
+  "-std=c11",
+  "-O1",
+  "-g",
+  "-fsanitize=address,undefined",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/named-cca-getters-fixture-20261022T133500Z-r2/actual-wlan-forward-fixture.c",
+  "-o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/named-cca-getters-fixture-20261022T133500Z-r2/forward-fixture"
+]

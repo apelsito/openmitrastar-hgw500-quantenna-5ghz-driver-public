@@ -1,0 +1,71 @@
+{
+  "status": "NO_GO_PUBLIC_LICENSE_SCOPE_UNRESOLVED_ALLREFS_SECRET_ARTIFACT_SCAN_PASS",
+  "read_only": true,
+  "git_mutations": false,
+  "repo": "repos\\openmitrastar-hgw500-quantenna-5ghz-driver",
+  "head": "5a66517fa9f72766cdb67a83cde6a57f9483de27",
+  "branch": "port/linux-7.3",
+  "refs": [
+    "5a66517fa9f72766cdb67a83cde6a57f9483de27 refs/heads/main",
+    "5a66517fa9f72766cdb67a83cde6a57f9483de27 refs/heads/port/linux-7.3",
+    "5a66517fa9f72766cdb67a83cde6a57f9483de27 refs/remotes/origin/main"
+  ],
+  "commits_scanned": 35,
+  "blobs_scanned": 2014,
+  "blob_bytes_scanned": 548815498,
+  "secret_candidates": 0,
+  "firmware_binary_candidates": 0,
+  "keys_or_device_capture_candidates": 0,
+  "comments_raw_bins_exception": true,
+  "upstream": {
+    "name": "christianheyl/Quantenna-GPL",
+    "public": true,
+    "github_detected_license": null,
+    "pinned_commit": "116a8b0cd80d75e6bc3b8d21646f9c7fa4ce1cf9"
+  },
+  "mixed_license_observations": [
+    {
+      "path": "vendor/legacy-gpl/drivers/fwt/fwt.c",
+      "line": 29,
+      "observed_marker": "MODULE_LICENSE(\"Proprietary\");",
+      "blob": "c4fa60cedb3bedbc31c6aad02337dccb2ca0f9c0",
+      "first_commit": "c32e2a4c4e6b0f918f3647af4912a1524b01d11a",
+      "scope": "mixedlicense_declaration_requiresprovenance_orpermissionclarification"
+    },
+    {
+      "path": "vendor/legacy-gpl/drivers/fwt/fwt_sw.c",
+      "line": 43,
+      "observed_marker": "MODULE_LICENSE(\"Proprietary\");",
+      "blob": "b7f625cfb51e74eb6fb21297515847345427a998",
+      "first_commit": "c32e2a4c4e6b0f918f3647af4912a1524b01d11a",
+      "scope": "mixedlicense_declaration_requiresprovenance_orpermissionclarification"
+    },
+    {
+      "path": "vendor/legacy-gpl/include/qtn/muc_txrx_stats.h",
+      "line": 503,
+      "observed_marker": "This should not be distributed externally",
+      "blob": "652f67b4506d12a2c098d56b25320dc7af4c0c04",
+      "first_commit": "c32e2a4c4e6b0f918f3647af4912a1524b01d11a",
+      "scope": "mixedlicense_declaration_requiresprovenance_orpermissionclarification"
+    },
+    {
+      "path": "vendor/port-context/include/qtn/muc_txrx_stats.h",
+      "line": 503,
+      "observed_marker": "This should not be distributed externally",
+      "blob": "652f67b4506d12a2c098d56b25320dc7af4c0c04",
+      "first_commit": "c32e2a4c4e6b0f918f3647af4912a1524b01d11a",
+      "scope": "mixedlicense_declaration_requiresprovenance_orpermissionclarification"
+    }
+  ],
+  "vendor_explicit_header_absent_candidates": 45,
+  "main_qdrv_explicit_license": "GPLv2-or-later preserved",
+  "net80211_explicit_license": "BSD3-clause or GPLv2 preserved",
+  "decision": "Wholehistorycontainsmixeddeclarations;cannotassertallimportedfilesGPL/permissiveorpublicredistributionpermissionsolelyfromupstreampublicstatus",
+  "scope_limits": [
+    "MODULE_LICENSE ismoduledeclarationratherthancompletecopyrightlicensingtext; observedconflictrequiresreviewnotautomaticlegalconclusion",
+    "Internaldebugnoteisnotalonealegaldetermination; donotrelabelorrewriteoriginals",
+    "Missingperfileheaderaloneisnotproprietaryproof",
+    "NoGitHubvisibilitychange/push/delete/historyrewriteperformed",
+    "Auditheadmustberecheckedifnewcommitsareadded"
+  ]
+}

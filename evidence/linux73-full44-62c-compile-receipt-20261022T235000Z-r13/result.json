@@ -1,0 +1,389 @@
+{
+  "status": "PASS_62_REAL_LINUX73_C_UNITS_MODPOST_EXTERNAL_PROVIDER_CLOSURE_PENDING",
+  "observed_utc": "2026-10-22T21:10:18.396792+00:00",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "candidate": "outputs/rea/linux73-full44-candidate-20261022T234100Z-r13",
+  "C_units": 62,
+  "units": [
+    {
+      "path": "source/qdrv/qdrv_rx.o",
+      "bytes": 37444,
+      "sha256": "cd0c9719f00013dc14e4652e4f20def4e9abe763b7fd6f0ade464c8ede6242f2"
+    },
+    {
+      "path": "source/qdrv/qdrv_radar.o",
+      "bytes": 37584,
+      "sha256": "27cc8c9daa5aac3b4d1186827697ab20c73d5367904867774c838ecceba51613"
+    },
+    {
+      "path": "source/qdrv/qdrv_uc_print.o",
+      "bytes": 7772,
+      "sha256": "b52bc75c01189b8cccf1664aa475b26aa1c618416b80af83a43ef1b627507bc1"
+    },
+    {
+      "path": "source/qdrv/qdrv_control.o",
+      "bytes": 145428,
+      "sha256": "afdb87ee651db418c81a4d17a364dabc4d7e866138d54d66d24e2d16f7b9c2b6"
+    },
+    {
+      "path": "source/qdrv/qdrv_scan.o",
+      "bytes": 8580,
+      "sha256": "b9637febe96882da98e0b05c85ebecfe991a28ca404e4e5f14adda6a9da24b2c"
+    },
+    {
+      "path": "source/qdrv/qdrv_mac_reserve.o",
+      "bytes": 6816,
+      "sha256": "87f3ef8b22b04693a855b2fa4b944ffc0817987564a22438f385a727232924de"
+    },
+    {
+      "path": "source/qdrv/qdrv_kernel_compat.o",
+      "bytes": 2148,
+      "sha256": "31fd4ba9f66866ba3fb81e12b8261884a714d752e5990ddc8cf5b1a7fe7c9c95"
+    },
+    {
+      "path": "source/qdrv/qdrv_f355_lifetime.o",
+      "bytes": 2900,
+      "sha256": "bdfc0ab7f7935f72f183eeb22e4cb9b7b778ad795984add4f4830428cc1c9538"
+    },
+    {
+      "path": "source/qdrv/qdrv_hostlink.o",
+      "bytes": 35244,
+      "sha256": "92b4d0e75c7757dc39cd7f377168b649e44d259504a865ad12c28ebd2f8f23e4"
+    },
+    {
+      "path": "source/qdrv/qdrv_sch_pm.o",
+      "bytes": 1032,
+      "sha256": "e000e2deef30df59e63c15d6c37fe0a63a7aa855411f0762e5c715a9301abd2f"
+    },
+    {
+      "path": "source/qdrv/qdrv_show.o",
+      "bytes": 11560,
+      "sha256": "856ba692fe5837a0fa27a63373505316d772e1c3d886a8a9a4e6be4ab9434fe2"
+    },
+    {
+      "path": "source/qdrv/qdrv_sch.o",
+      "bytes": 16212,
+      "sha256": "57486203e490d258717386ac7f88866c27e71c1084569ab80f9d6981d1c526d8"
+    },
+    {
+      "path": "source/qdrv/qdrv_math.o",
+      "bytes": 11396,
+      "sha256": "c863c9de4fa361c8a1eb728315d475f9b0524e969fc384135663a91063832edb"
+    },
+    {
+      "path": "source/qdrv/qdrv_tx.o",
+      "bytes": 42516,
+      "sha256": "9f739c8c4c6cbd9e060fa075c820bb1973146d4b0c30a2f16b1d6a7e94d745f8"
+    },
+    {
+      "path": "source/qdrv/qdrv_mac.o",
+      "bytes": 11312,
+      "sha256": "d7b2a79420384829e08b8ba442d304996c75480536425263e3b866bae9d962a3"
+    },
+    {
+      "path": "source/qdrv/qdrv_muc.o",
+      "bytes": 6200,
+      "sha256": "8f342486268ab891a9ce748f5fd987a0577da6ba52b237861635e503f73bf4be"
+    },
+    {
+      "path": "source/qdrv/qdrv_vap.o",
+      "bytes": 18588,
+      "sha256": "cba3daeed4d9c7dbaeb16aaa71b4c98c0a592d281b8cb1dc26436e2d030b7aaa"
+    },
+    {
+      "path": "source/qdrv/qdrv_bridge.o",
+      "bytes": 14472,
+      "sha256": "6f15bd7c365019885b220f66d54fd5674cee9ddd1864edc1769b0710b77a1cc8"
+    },
+    {
+      "path": "source/qdrv/qdrv_soc.o",
+      "bytes": 31812,
+      "sha256": "b0122e9e2b353164db1f48b46f470a346ccf231d88922dce7db33d923a1f1162"
+    },
+    {
+      "path": "source/qdrv/qdrv_auc.o",
+      "bytes": 7752,
+      "sha256": "3944c7e4c019baea5b44672fb6d7156f915f96c38aec0f302ae1198c8f94aad6"
+    },
+    {
+      "path": "source/qdrv/qdrv_vlan.o",
+      "bytes": 5328,
+      "sha256": "2ea27461a522a605da34c0d1ae5c466af7408c58374464cffa69c4e7a33a026d"
+    },
+    {
+      "path": "source/qdrv/qdrv_pcap.o",
+      "bytes": 4364,
+      "sha256": "6b67fa8e8010625ed784de0e27e573ec8096d65eab10ce55e1e83dcb436beafc"
+    },
+    {
+      "path": "source/qdrv/qdrv_txbf.o",
+      "bytes": 14648,
+      "sha256": "4c5d77dd8dc33caf1fb0e81d5d21fd8a438842a5bf9f507f31d93546317b993e"
+    },
+    {
+      "path": "source/qdrv/qdrv_mu.o",
+      "bytes": 4692,
+      "sha256": "02cd1c769eeda931a08a55c90fbf7e8252450e1dd576f96ee9cb2a333abafc4a"
+    },
+    {
+      "path": "source/qdrv/qdrv_muc_stats.o",
+      "bytes": 15476,
+      "sha256": "94702a6af338a70efd034e44b4eec1846170f44b0866eb6108ff89d6fa693537"
+    },
+    {
+      "path": "source/qdrv/qdrv_module.o",
+      "bytes": 14132,
+      "sha256": "690eeddd719797d5cbeff0cb70e36e70b6bc586e5b304d7230d7892b1fe83b01"
+    },
+    {
+      "path": "source/qdrv/qdrv_fwt_compat.o",
+      "bytes": 2180,
+      "sha256": "c348ea42a96c4028d7269a4893d9b550fdf71117cbef26f56177215f09544b5e"
+    },
+    {
+      "path": "source/qdrv/qdrv_dsp.o",
+      "bytes": 5904,
+      "sha256": "cfd86b58aea8868dd93f95573eddd3de484ce3df56d83b4e8345b61d4ea01680"
+    },
+    {
+      "path": "source/qdrv/qdrv_radar_compat.o",
+      "bytes": 2264,
+      "sha256": "8fbf59b356707c369b935b2f2c2852e901f441bf614b8136cca1e6132da079fb"
+    },
+    {
+      "path": "source/qdrv/qdrv_wlan.o",
+      "bytes": 136516,
+      "sha256": "d388b7f8e0d9b86192a689f2625a40b762a86a223ec5635b4d5bf7cfde2ea7c1"
+    },
+    {
+      "path": "source/qdrv/qdrv_comm.o",
+      "bytes": 22472,
+      "sha256": "f3ae1e19c2f49bfc76c7acc3dc2608f2d8744d2e0a48cd93754d64427241758e"
+    },
+    {
+      "path": "source/qdrv/qdrv_hal.o",
+      "bytes": 19184,
+      "sha256": "3279394782ddfff2f0e2553a12f9e1ee27d4a76848a783657ddd936f9cf8d96a"
+    },
+    {
+      "path": "source/qdrv/qdrv_fw.o",
+      "bytes": 5196,
+      "sha256": "4bf14edb0f24bd23ef816cab7c15a26e671e044df2b09962e6a8d126622bd6f8"
+    },
+    {
+      "path": "source/qdrv/qdrv_pktlogger.o",
+      "bytes": 47724,
+      "sha256": "8f39c28cfe5a9c77198efb038ca151627b28e88f1b1d9980d92f512b73a49635"
+    },
+    {
+      "path": "source/wlan/wlan_fwt_compat.o",
+      "bytes": 1596,
+      "sha256": "93e50d4d1c30b85c78acf993fee7bece3ddb2a0220e376029d615a19384a33eb"
+    },
+    {
+      "path": "source/wlan/ieee80211_linux.o",
+      "bytes": 16016,
+      "sha256": "dd62bd59a0f6e4f4916fe16c9540634fcc6eed43b6034c8fe456e918edc573c2"
+    },
+    {
+      "path": "source/wlan/ieee80211_rate.o",
+      "bytes": 3076,
+      "sha256": "af47ba1d7b00566d1ba9c924fe63eae070db25ed2d3231bbe435c9e0cb6ae19e"
+    },
+    {
+      "path": "source/wlan/ieee80211_crypto_tkip.o",
+      "bytes": 12524,
+      "sha256": "6816b100ff3b129c604bd8be0107175827ea7128cf625c667a249d7d705150dd"
+    },
+    {
+      "path": "source/wlan/ieee80211_mlme_statistics.o",
+      "bytes": 9416,
+      "sha256": "0d57cdec953cde20684595b9f2d99080247d660ecf6cc967e76a5f4a2fd9c1e2"
+    },
+    {
+      "path": "source/wlan/ieee80211_crypto.o",
+      "bytes": 9232,
+      "sha256": "2ce7506767258b1d7a1977870952ade48e78064e1d5216aabb655cca11f61194"
+    },
+    {
+      "path": "source/wlan/ieee80211_output.o",
+      "bytes": 58360,
+      "sha256": "a7d01f0cf4c0ce4d055c65d704069bdb83b979bb3ad2e0b939df8fe27a2811de"
+    },
+    {
+      "path": "source/wlan/ieee80211_xauth.o",
+      "bytes": 2536,
+      "sha256": "e76ef73d4564ad43b2064238062014f09fb51fb3ed6bf9f25b46c95aaaa8c141"
+    },
+    {
+      "path": "source/wlan/ieee80211_scan_sta.o",
+      "bytes": 17916,
+      "sha256": "0146f475f2507bc0fa12a32b25582a12b317d99e93c0993f3ad2a31878d219c4"
+    },
+    {
+      "path": "source/wlan/if_media.o",
+      "bytes": 3988,
+      "sha256": "a14e506281444397df68519d3192159ae3f6f7e158e7559fe7780a662d2ddd6b"
+    },
+    {
+      "path": "source/wlan/ieee80211_scan.o",
+      "bytes": 46764,
+      "sha256": "ba839ef1e3e53a267c74eb40817550a36e92ea1bf1ef3ca2eabb12e36d660d89"
+    },
+    {
+      "path": "source/wlan/ieee80211_power.o",
+      "bytes": 5700,
+      "sha256": "4f24f0dae620a42543fc83ba9aff1b5877a3deb3b4e3b517ab5178557c81403d"
+    },
+    {
+      "path": "source/wlan/ieee80211_input.o",
+      "bytes": 113768,
+      "sha256": "71e59ecb9f0ac0f14c46883d6270d410bcef9022bebe22d72e5f97deb4724354"
+    },
+    {
+      "path": "source/wlan/ieee80211_crypto_ccmp.o",
+      "bytes": 8848,
+      "sha256": "0f15dfb5cfad8e617f5a09359957d71f68a801439a7fea0fd02f89f2c9fa68fe"
+    },
+    {
+      "path": "source/wlan/ieee80211_tpc.o",
+      "bytes": 5144,
+      "sha256": "b6114578cdc5b73fae64d8beff9b011167c9c75e496a2d3f764af9d40d7e59d9"
+    },
+    {
+      "path": "source/wlan/ieee80211_node.o",
+      "bytes": 49012,
+      "sha256": "ca3ba656d771a4fb4b4cbb3430a3fe6b8e655a86cc830703296e7b2340f1c5b8"
+    },
+    {
+      "path": "source/wlan/ieee80211_scan_ap.o",
+      "bytes": 15044,
+      "sha256": "97fb7d30887c780fd2bef17bd686c93285f0e6b894e29776013df175f8875169"
+    },
+    {
+      "path": "source/wlan/ieee80211_crypto_none.o",
+      "bytes": 2360,
+      "sha256": "4a638f95faece3124c62e60b24d94cb323459ea997145df59256ad2467c785e3"
+    },
+    {
+      "path": "source/wlan/ieee80211.o",
+      "bytes": 48252,
+      "sha256": "82c299512c8987701d078e4993bd3fe2578e300419f66694e8102403eaf212c3"
+    },
+    {
+      "path": "source/wlan/ieee80211_tdls.o",
+      "bytes": 54860,
+      "sha256": "225072e592c47553d3d0188fcaf374fddbd89a257aed4a9c1477f438c3269642"
+    },
+    {
+      "path": "source/wlan/ieee80211_wireless.o",
+      "bytes": 235252,
+      "sha256": "fdc1c658f06c77b7690352a68dbc61516899370d256e6815c7265c7581a6c9ab"
+    },
+    {
+      "path": "source/wlan/ieee80211_proto.o",
+      "bytes": 30656,
+      "sha256": "841e77670a7d9326e09fd4c5288842a6abc1402d47ea575125645bc1094cb911"
+    },
+    {
+      "path": "source/wlan/ieee80211_beacon_desc.o",
+      "bytes": 12120,
+      "sha256": "aef4bc559a6855ef9f5155e444b0abc0aff3991c8c89ab028964536c0d3cb5d9"
+    },
+    {
+      "path": "source/wlan/ieee80211_beacon.o",
+      "bytes": 7664,
+      "sha256": "b0bf763e9b6afb1d98d6405665a3cc31ed6c02c001b832abf8e19a7e0c815025"
+    },
+    {
+      "path": "providers/qtn_platform_support.o",
+      "bytes": 6116,
+      "sha256": "f9d212f55baa49b9f9c1dc337491176590505a3ac7097ff36384c8b7d419c7e3"
+    },
+    {
+      "path": "providers/runtime_compat.o",
+      "bytes": 4960,
+      "sha256": "d87e073925fbd9df52858482979de84a5f1f302ac0ec110f95bc45803c24909c"
+    },
+    {
+      "path": "providers/board_compat.o",
+      "bytes": 27296,
+      "sha256": "8416c284a3b604abcce36e087de3671ff0ad4b7771b31582018ce50a3ad643f6"
+    },
+    {
+      "path": "providers/qtn_pm_qos_compat.o",
+      "bytes": 4680,
+      "sha256": "35d0753c581414e60c8efaf15f06f8945a360074dae470997203e04a51807570"
+    }
+  ],
+  "config_sha256": "91b73a1aac1d062773b4675738f73a6962103e108ebf7ebfba018ce95d862ca9",
+  "module_ko_count": 0,
+  "unresolved_strong_symbols_count": 61,
+  "unresolved_strong_symbols": [
+    "_topaz_hbm_attach_skb",
+    "br_get_ap_isolate",
+    "br_set_ap_isolate",
+    "g_l2_ext_filter",
+    "g_l2_ext_filter_port",
+    "g_wowlan_host_state",
+    "g_wowlan_l2_ether_type",
+    "g_wowlan_l3_udp_port",
+    "g_wowlan_match_type",
+    "gpio_config",
+    "gpio_disable_pwm",
+    "gpio_enable_pwm",
+    "gpio_wowlan_output",
+    "ieee80211_ppqueue_release_entry",
+    "iputil_proto_info",
+    "iputil_v4_pton",
+    "iwe_stream_add_event",
+    "iwe_stream_add_point",
+    "iwe_stream_add_value",
+    "openmitrastar_br_fdb_fillbuf",
+    "openmitrastar_br_fdb_update_const",
+    "qtn_tsensor_get_temperature",
+    "qtn_vlan_info",
+    "reg_congest_queue_stats",
+    "register_qdisc",
+    "switch_alloc_vlan_dev",
+    "switch_free_vlan_dev_by_idx",
+    "switch_vlan_add_member",
+    "switch_vlan_clr_node",
+    "switch_vlan_del_member",
+    "switch_vlan_dev_get_by_idx",
+    "switch_vlan_dev_get_by_port",
+    "switch_vlan_dev_reset",
+    "switch_vlan_dyn_disable",
+    "switch_vlan_dyn_enable",
+    "switch_vlan_from_proto_stack",
+    "switch_vlan_info_bus",
+    "switch_vlan_set_node",
+    "switch_vlan_set_pvid",
+    "switch_vlan_tag_member",
+    "switch_vlan_to_proto_stack",
+    "switch_vlan_untag_member",
+    "switch_vlan_vdev_table_bus",
+    "switch_vlan_vport_table_bus",
+    "topaz_congest_set_unicast_queue_count",
+    "topaz_hbm_attach_skb_quarantine",
+    "topaz_hbm_pool_available",
+    "topaz_hbm_release_buf_safe",
+    "topaz_read_internal_temp_sens",
+    "tqe_port_add_handler",
+    "tqe_port_register",
+    "tqe_port_remove_handler",
+    "tqe_port_unregister",
+    "tqe_reg_multicast_tx_stats",
+    "tqe_register_mac_reserved_cbk",
+    "tqe_tx",
+    "unregister_qdisc",
+    "vdev_tbl_lhost",
+    "vlan_enabled",
+    "vport_tbl_lhost",
+    "wireless_send_event"
+  ],
+  "actual_linux73_export_prefix": "__export_symbol_",
+  "build_log_sha256": "f77b69f1ff43c8c36f89bfd65d8df95219e069cad06ac6180b844f0c7a5fb035",
+  "limits": "Ccompileonly, no fullkernel withpacketABI/19existingmodule rebuild/linkedproviderclosure/RFacceptance. No5.10objects reused."
+}

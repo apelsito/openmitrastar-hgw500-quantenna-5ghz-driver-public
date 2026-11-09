@@ -1,0 +1,169 @@
+{
+  "schema": "openmitrastar.r26-development-module-handoff/v1",
+  "status": "NO_LOAD_DEVELOPMENT_HANDOFF_COMPILED_PORT",
+  "created_utc": "2026-10-22T22:57:04.946014+00:00",
+  "source_pair_A": "/home/rea/linux73-clear-reset-r26-native-pair-r1/a",
+  "module_count": 22,
+  "modules": [
+    {
+      "path": "modules/board_compat.ko",
+      "bytes": 29624,
+      "sha256": "ac40d9bf507cff3361e94db77561d4d75988982c1d4b09174e2f8d0a6ba9db44",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/dmautil.ko",
+      "bytes": 5300,
+      "sha256": "659123dedb2b99db560eb2f10a5a88c056bd71f45a66dcace9949a950288599c",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/fwt_if.ko",
+      "bytes": 11912,
+      "sha256": "4955b86c915ee17e7ace68af36c585ffc7c167764a1fae925fea6b5ec12e4a04",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/gpio.ko",
+      "bytes": 6584,
+      "sha256": "5b60dae7979e7e32b21c353a2e3cc8e67cff8e6fd6ec90688caa8a0338fc1121",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/hbm.ko",
+      "bytes": 21904,
+      "sha256": "a6b016d64387bc27cdafe9bc92ae36d49631a3007b96f5bc3d863d166966ba61",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/iputil.ko",
+      "bytes": 7548,
+      "sha256": "770edc339309e6b457207b52cfbddcf1b215906eab25808211b4469134db4cee",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/om73_sram.ko",
+      "bytes": 11968,
+      "sha256": "39d8fc237d79e042c5382b29c8156fccb04009f42b13baf655cf13ebda487892",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/qdrv.ko",
+      "bytes": 689216,
+      "sha256": "26f7b8bdd7a0bf728cc9f73fbe7820c3fc4126a65d2203d4fe4448ad12515bf8",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/qtn_platform_support.ko",
+      "bytes": 8456,
+      "sha256": "1939430d8aa58ed4d6379364db24ee3cb113cc69e460e63d07e6d13dfb0afe49",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/qtn_pm_qos_compat.ko",
+      "bytes": 6696,
+      "sha256": "8a561ff0aa9dbc52ca5691ca897551081d800fd465d5635eeaeff9d32f39082f",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/qtn_tsens.ko",
+      "bytes": 5796,
+      "sha256": "7b27c5958304ee4c0e407d43c0fb9e7c7bdacd911bada8272c2fd22fe73b1473",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/runtime_compat.ko",
+      "bytes": 7572,
+      "sha256": "6ac878d64432cd473d4f45796a0c41b82d853efb77a086fa4b9055353c9b9c73",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/switch_tqe.ko",
+      "bytes": 39084,
+      "sha256": "8fdc5f5955f4cba87a1cc1ff310a548d07aec417c319f5565c6ad85cad32ef8c",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/switch_vlan.ko",
+      "bytes": 20596,
+      "sha256": "f7f6e529995723bd36e58977932c847e993b34aedfede984530458f55dbdd05b",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/temp_sens.ko",
+      "bytes": 4480,
+      "sha256": "921118b860873e32702b687ea058f8139a173dbaf1c0464885e0e8907b77fc11",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/topaz_congest_queue.ko",
+      "bytes": 24628,
+      "sha256": "c7e32ffef639d7545b162b6406fb11fc1302fbb6e0e783768e6ea756b0fa055c",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/wlan.ko",
+      "bytes": 691548,
+      "sha256": "4588ed600b937086eacc33bd5d5f9ee7b74013a58cbcd71d26088c1060ef519b",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/wlan_ccmp.ko",
+      "bytes": 10028,
+      "sha256": "9924bbfb9a79f9d1635f9a78df04e2b83767d3d3d6b3baf4626e243b373cc81a",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/wlan_scan_ap.ko",
+      "bytes": 16220,
+      "sha256": "ccdbc0080793d59d0e20ba2b61dde41b05ac9e1e8bce42be723528064462b104",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/wlan_scan_sta.ko",
+      "bytes": 19096,
+      "sha256": "82aad9d922703933ff76273588fdcbdff383b626f9c9e71cbb0f10a1b0b748aa",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/wlan_tkip.ko",
+      "bytes": 13692,
+      "sha256": "b993f7802f02fcb0c4f2fbdc4983842e0e47d92319834c22d40a31f5fb72d22f",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    },
+    {
+      "path": "modules/wlan_xauth.ko",
+      "bytes": 3740,
+      "sha256": "1f6e7af06db6ba290190296396e8645a8252644a51ff24104464cfaa94bf30a2",
+      "vermagic": "7.3.0-openmitrastar-aelita73 mod_unload ARC700"
+    }
+  ],
+  "native_Module_symvers": {
+    "path": "Module.symvers",
+    "bytes": 26845,
+    "sha256": "76c71412605a86b7b9a1c3e55d079d2ba1cb2fad784169764df853bbe3a56fb5"
+  },
+  "reference_inputs": {
+    "/home/rea/linux73-clear-reset-r26-native-pair-r1/result.json": {
+      "bytes": 61766,
+      "sha256": "eb6d927c378c6a7bc52c1a2ce24b9359f7c4bb9166d496e9a0f72a1698007e75"
+    },
+    "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-context/.config": {
+      "bytes": 53562,
+      "sha256": "e709aba8ed2b55f3e6debe1480bbea2f1320c4bcd9dc3e9832c185b8e72e8efe"
+    },
+    "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-context/Module.symvers": {
+      "bytes": 332683,
+      "sha256": "b3bdc2fecfad7321cd5d03454ea47d2341ef43ffc5e3f091de4c78c0d2726950"
+    },
+    "/home/rea/openmitrastar-aelita-source-fullbuild-20261022T233000Z-r1/kernel-context/include/generated/utsrelease.h": {
+      "bytes": 51,
+      "sha256": "6a2091527ed6da858cffb802ffb7f1c1362d33b42a49cf473f2d19a1654ca1fb"
+    }
+  },
+  "pair_artifacts_verified_against_sealed_manifest": true,
+  "firmware_image": false,
+  "hardware_accessed": false,
+  "load_authorized": false,
+  "firmware_eligible": false
+}

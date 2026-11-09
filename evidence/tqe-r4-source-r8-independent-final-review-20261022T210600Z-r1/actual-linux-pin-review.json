@@ -1,0 +1,17 @@
+{
+  "status": "PASS_CURRENT_ACTUAL_R4_BUILD_GLOBAL_PIN_CLOSURE",
+  "reports": [
+    {
+      "input": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-r4-typed-queue-build-r5/input-pins.json",
+      "pins": 1140,
+      "sha256": "05e4ace84ee4a4458bfac7b6a96ba86f9b74c4ac80c6daed06d4c409636d48e7",
+      "all_actual_current_bytes_verified": true
+    },
+    {
+      "input": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-tqe-r4-typed-queue-global-r5/input-pins.json",
+      "pins": 1158,
+      "sha256": "3c0271e19a2b358fb915cc082d863f7b6e897b7148e5e8425c7601c4c4544628",
+      "all_actual_current_bytes_verified": true
+    }
+  ]
+}

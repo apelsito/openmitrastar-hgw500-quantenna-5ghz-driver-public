@@ -1,0 +1,9 @@
+{
+  "status": "HANDOFF_WEATHER478_SOURCE34_QUALIFIED_PENDING_ROOT_REVIEW",
+  "hardware_accessed": false,
+  "qualification": "outputs\\rea\\weather478-qualification-20261023T000100Z-r1\\result.json",
+  "qualification_sha256": "1c6296d7ee0111d757d19d9147971d3635df0d7c4e73c665ee5ad8bdea0187e7",
+  "complete_original_records": 34,
+  "private_table_records": 600,
+  "handoff_sha256": "d6e7839c4d2335c2b1999ae6bc63f302a89724064ed73eac3da09f9aa4885ac7"
+}

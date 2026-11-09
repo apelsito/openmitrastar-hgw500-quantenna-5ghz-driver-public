@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ACTUAL_HOST_NAC22_SET_PREFIX_GET_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "prefix_samples": 16711680,
+  "setter_cases": 1048576,
+  "missing_or_zero_refusal": true,
+  "lifecycle_acceptance": false,
+  "coherent_snapshot_claim": false,
+  "limits": "Scalarpackingonly,nocrossMuCgenerationcoherence; noNACmonitorphysicalverification"
+}

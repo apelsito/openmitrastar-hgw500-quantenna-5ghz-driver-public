@@ -1,0 +1,10 @@
+[
+  "tools\\external\\llvm-mingw-20260616-ucrt-x86_64\\bin\\i686-w64-mingw32-clang.exe",
+  "-std=c11",
+  "-O1",
+  "-I/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-metrics-source-20261022T184500Z-r7",
+  "outputs\\rea\\chanset461-metrics-host-fixture-20261022T185000Z-r1\\fixture.c",
+  "outputs\\rea\\chanset461-metrics-source-20261022T184500Z-r7\\openmitrastar_chanset_recovered.c",
+  "-o",
+  "outputs\\rea\\chanset461-metrics-host-fixture-20261022T185000Z-r1\\fixture.exe"
+]

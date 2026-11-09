@@ -1,0 +1,12 @@
+   46a34:	2700 1f83 0000 5e1c 	add	r3,r15,0x5e1c
+   46a3c:	0e0f 1071           	brne.d	r14,0x1,14	;46a4a <findchannel_any+0x5442>
+   46a40:	8340                	ld_s	r2,[r3,0]
+   46a42:	2245 0042           	or	r2,r2,0x1
+   46a46:	000b 0000           	b	10	;46a4e <findchannel_any+0x5446>
+   46a4a:	2284 0fbf           	and	r2,r2,-2
+   46a4e:	a340                	st_s	r2,[r3,0]
+   46a50:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   46a58:	220a 3f80 0001 05dc 	mov	gp,0x105dc
+   46a60:	2023 0680           	jl.d	[gp]
+   46a64:	70e9                	mov_s	r0,r15
+   46a66:	0223 0000           	b	546	;46c86 <findchannel_any+0x567e>

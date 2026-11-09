@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ACTUAL_SRAM_CORE_WRITER_RESET_SOFTWARE_LEASE_CONCURRENT_TASK_FIXTURE",
+  "source_sha256": "15ab3f7f3013d4fa4d3f104fb367f01aa526904893fa59b9369ba6f36ec20c51",
+  "header_sha256": "582429763fdf35647874272b85fbde4ee9f98314161cd067d31cb64593cd8af2",
+  "output": "PASS actual backend resource+mapping+ownership cases=362 request=3 release=2 map=2 unmap=1\nPASS actual task writer lease cases=410 concurrent_waiters=3 foreign_end=refused resource=4/3 map=3/2\nPASS actual reset software lease cases=468 mask=0x4180 hardware_reset_writes=0 concurrent_waiters=4",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "hardware_quiescence_proved": false,
+  "limits": "Reset software admission only; no actual reset/queue/device/MMIO proof. pthreadlifeactual locks; resource/mapping fakes."
+}

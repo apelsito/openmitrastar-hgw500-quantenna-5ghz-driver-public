@@ -1,0 +1,60 @@
+{
+  "status": "PASS_WLAN_EXACT15THSETTER_DELTA",
+  "symbols": 2250,
+  "baseline_relocations": 9547,
+  "candidate_relocations": 9543,
+  "relocations_outside_setter": 9197,
+  "changed_setter": {
+    "symbol_index": 759,
+    "name": "ieee80211_ioctl_setparam",
+    "old_value": 157520,
+    "new_value": 157520,
+    "old_size": 16294,
+    "new_size": 16232,
+    "old_following_nop_bytes": 2,
+    "layout_growth": -64,
+    "old_sha256": "9d581c90057b01704e4971d462466259b16341ff242ae7f8311715e919080a36",
+    "new_sha256": "5a0bebeb2c0c96fbcc47b5942fe5bb45ca43128e264d9b1cae7153ac6502660f"
+  },
+  "diagnostic_only_changes": [
+    {
+      "symbol_index": 633,
+      "name": "ieee80211_delete_wlanunit",
+      "changes": [
+        {
+          "offset": 38,
+          "old_line": 21180,
+          "new_line": 21187
+        },
+        {
+          "offset": 110,
+          "old_line": 21181,
+          "new_line": 21188
+        }
+      ]
+    },
+    {
+      "symbol_index": 634,
+      "name": "ieee80211_ioctl_giwfreq",
+      "changes": [
+        {
+          "offset": 74,
+          "kind": "exactcompactline+1"
+        }
+      ]
+    },
+    {
+      "symbol_index": 716,
+      "name": "ieee80211_param_from_qdrv",
+      "changes": [
+        {
+          "offset": 86,
+          "old_line": 3467,
+          "new_line": 3468
+        }
+      ]
+    }
+  ],
+  "table580to581": true,
+  "all_original_bytes_outside_declared_delta": true
+}

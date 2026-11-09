@@ -1,0 +1,46 @@
+{
+  "switch_tqe": {
+    "status": "PASS_R3_TYPED_BATCH_RESIDUAL_SCOPE",
+    "changed_source_bodies": [
+      "tqe_rx_multicast"
+    ],
+    "removed_source_functions": [
+      "tqe_push_mcast"
+    ],
+    "new_source_functions": [
+      "omtqe_push_mcast_batch"
+    ],
+    "exact_anchor_diagnostic_functions": [
+      "tqe_rx_napi_handler",
+      "tqe_tx"
+    ],
+    "residual_relocations_checked": 450,
+    "limits": "Actualchanged/newbodies fixturebound; notuniversalfirmware/release acceptance."
+  },
+  "topaz_congest_queue": {
+    "status": "PASS_R3_TYPED_BATCH_RESIDUAL_SCOPE",
+    "changed_source_bodies": [
+      "omcgq_bank_acquire",
+      "omcgq_bank_quarantine"
+    ],
+    "removed_source_functions": [],
+    "new_source_functions": [
+      "omcgq_batch_acquire",
+      "omcgq_batch_admit",
+      "omcgq_batch_complete",
+      "omcgq_batch_finish",
+      "omcgq_batch_matches",
+      "omcgq_batch_valid"
+    ],
+    "exact_anchor_diagnostic_functions": [
+      "omcgq_record_held",
+      "topaz_congest_dequeue",
+      "topaz_congest_queue_exit",
+      "topaz_congest_enqueue",
+      "topaz_congest_release_queue",
+      "reg_congest_queue_stats"
+    ],
+    "residual_relocations_checked": 187,
+    "limits": "Actualchanged/newbodies fixturebound; notuniversalfirmware/release acceptance."
+  }
+}

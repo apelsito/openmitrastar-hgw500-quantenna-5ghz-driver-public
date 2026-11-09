@@ -1,0 +1,7 @@
+{
+  "host_exit": 0,
+  "hardware_accessed": false,
+  "cases": 131072,
+  "firmware_eligible": false,
+  "status": "PASS_STANDALONE_FAKE_PROTOCOL_HELPERS_NOT_DRIVER"
+}

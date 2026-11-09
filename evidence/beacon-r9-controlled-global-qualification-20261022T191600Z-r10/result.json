@@ -1,0 +1,55 @@
+{
+  "status": "PASS_OFFLINE_R9_LIFETIME_CONTROLLED_SEVEN_MODULE_SCOPE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "reproducible": true,
+  "source_units_per_wave": 58,
+  "wire_unchanged": true,
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/qdrv/qdrv.ko",
+      "bytes": 684876,
+      "sha256": "7dc6dc8eb9696aaad78715b1f41a0062e42f01a03942d0fd2bceda0df9479468"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/wlan/wlan.ko",
+      "bytes": 634736,
+      "sha256": "6d194ed1488c3edca2bd56861a1fa0e15b40d84c5b18782aebf0003657597219"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15508,
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9772,
+      "sha256": "68286793f255848f2658afe7400cfb47a0177c6b508a212e5d26dede7c5fdb26"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13452,
+      "sha256": "ddbbee8fe20614dad0da988c3bd8342bac67b96f24ef53d7fcaccf08d3f90564"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/beacon-r9-dedup-joint-composition-20261022T163500Z-r2/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "pins_verified": 2342,
+  "read_once_inputs_rechecked": true,
+  "limits": "Inherited19ops remainpartial/sourceproven; BSS/RRMcapabilitiesnotactionhandler/clientacceptance. Nohardware/RF/traffic/persistence/release."
+}

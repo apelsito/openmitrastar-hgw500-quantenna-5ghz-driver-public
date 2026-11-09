@@ -1,0 +1,57 @@
+{
+  "status": "PASS_INDEPENDENT_ISOLATED_SCAN_AP_BH_LOCK_ORDER_SOURCE_ARC_UNIT",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "module_built": false,
+  "fresh_actual_old_new_body_fixture": {
+    "old_reentrant_windows": 2,
+    "new_reentrant_windows": 0,
+    "prior_context_cases": 3
+  },
+  "object_sha256": "2ed04e3c1334b24098485f7133ec0b96cf10b2de95d6204ac450b12db5994da6",
+  "object_bytes": 14348,
+  "ARC_dependency_pins": 1012,
+  "header_or_wire_changes": false,
+  "limits": [
+    "Fixture models process/softirq lock interleaving; excludes hardIRQ and actual scheduler behavior.",
+    "Source compiled as one actual ARC unit only; no final module/integrated461 acceptance.",
+    "No device access or RF/client/traffic/boot/persistence acceptance."
+  ],
+  "evidence_pins": [
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\wlan\\ieee80211_scan_ap.c",
+      "bytes": 34397,
+      "sha256": "be5fb4d720800aacccacc75c53e3d7e9dc9f0a7c28e7307589e9007ff78eae0e"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\scan-ap-bh-lock-order-20261022T195500Z-r1\\source\\wlan\\ieee80211_scan_ap.c",
+      "bytes": 34397,
+      "sha256": "9a2740433e1140049c6e7e9697cea7aef42c3680cc8cea04c7deea1a07e14f0f"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\scan-ap-bh-lock-order-fixture-20261022T195900Z-r2\\fixture.c",
+      "bytes": 2015,
+      "sha256": "4a1722e0a980b34c5dea379f8f483d5d2da8f8dde77f9e9083a577c280846e58"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\scan-ap-bh-lock-order-fixture-20261022T195900Z-r2\\fixture.exe",
+      "bytes": 77312,
+      "sha256": "91e5498801ff09ca23d3ed41f3ccd3967d6e35512f58d173e3e7fb6f5e3c661e"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\scan-ap-bh-lock-order-arc-20261022T195800Z-r1\\result.json",
+      "bytes": 534,
+      "sha256": "7b1e0dd43bf246bbd17915c1b813a86c6f8485e9f1e249cf0dddc9ec9236d3d1"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\scan-ap-bh-lock-order-arc-20261022T195800Z-r1\\input-pins.json",
+      "bytes": 172106,
+      "sha256": "b37a3a404656a73a24c602691efa780f3c259217116bb55c6d2d95c3bd841570"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\scan-ap-bh-lock-order-arc-20261022T195800Z-r1\\wlan\\ieee80211_scan_ap.o",
+      "bytes": 14348,
+      "sha256": "2ed04e3c1334b24098485f7133ec0b96cf10b2de95d6204ac450b12db5994da6"
+    }
+  ]
+}

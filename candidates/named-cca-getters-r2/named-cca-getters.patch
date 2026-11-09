@@ -1,0 +1,44 @@
+--- a/src/qdrv/qdrv_wlan.c
++++ b/src/qdrv/qdrv_wlan.c
+@@ -5545,6 +5545,15 @@
+ 	DBGPRINTF(DBG_LL_ALL, QDRV_LF_TRACE, "-->Enter\n");
+ 
+ 	switch (param) {
++	/* OEM read-only getters331/275 use these existing named fields.
++	 * The port compiler ABI witness is independent of OEM numeric offsets. */
++	case IEEE80211_PARAM_CCA_FIXED:
++		*value = ic->cca_fix_disable;
++		break;
++	case IEEE80211_PARAM_AUTO_CCA_ENABLE:
++		*value = ic->auto_cca_enable;
++		break;
++
+ 	case IEEE80211_PARAM_TXBF_CTRL:
+ 		DBGPRINTF(DBG_LL_CRIT, QDRV_LF_WLAN,
+ 			"IEEE80211_PARAM_TXBF_CTRL (%d)\n", param);
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -13931,6 +13931,12 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	/* Output handling lives in qualified QDRV and returns existing fields. */
++	case IEEE80211_PARAM_CCA_FIXED:
++	case IEEE80211_PARAM_AUTO_CCA_ENABLE:
++		ieee80211_param_from_qdrv(vap, param[0] & 0xffff, &param[0], NULL, 0);
++		break;
++
+ 	/* OEM getparam450 returns the existing70-second minimum. */
+ 	case OM_OEM_PARAM_MIN_CAC:
+ 		param[0] = MIN_CAC_PERIOD;
+@@ -20847,6 +20853,10 @@
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_sretry_lmt" },
+ 	{ OM_OEM_PARAM_LONG_RETRY_LIMIT,
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_lretry_lmt" },
++	{ IEEE80211_PARAM_CCA_FIXED,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_cca_fixed" },
++	{ IEEE80211_PARAM_AUTO_CCA_ENABLE,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_auto_cca_en" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

@@ -1,0 +1,7 @@
+   46968:	7ecb                	tst_s	r14,r14
+   4696a:	da01                	mov_s	r2,0x1
+   4696c:	2700 1f83 0000 0bf4 	add	r3,r15,0xbf4
+   46974:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   4697c:	22ca 0021           	mov.eq	r2,0
+   46980:	ab40                	stb_s	r2,[r3,0]
+   46982:	0307 0000           	b	774	;46c86 <findchannel_any+0x567e>

@@ -1,0 +1,206 @@
+{
+  "status": "PASS_INDEPENDENT_SOURCE23_OP490_SAME_HEADER_SEVEN_MODULE_REVIEW",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "fresh_actual_WLAN_audit": {
+    "status": "PASS_EXACT_SOURCE23_OP490_RESIDUAL_AGAINST_HEADER_CONTROL",
+    "fixture_bound_bodies": [
+      {
+        "key": [
+          "ieee80211_ioctl_setparam",
+          ".text",
+          2,
+          0
+        ],
+        "old_sha256": "9f3f948a00732628b3072d8581fa0335c02743400dc774543f8cdbfc49e04108",
+        "new_sha256": "e3207f8006886d7913d1b9dce91fbb5755e8a87218a35ee0a4915ecfe0bfd28c",
+        "old_bytes": 16512,
+        "new_bytes": 16562
+      }
+    ],
+    "new_helper": "om_fix_legacy_rate",
+    "diagnostics": [
+      "ieee80211_delete_wlanunit",
+      "ieee80211_ioctl_giwfreq",
+      "ieee80211_param_from_qdrv"
+    ],
+    "unchanged_functions": 955,
+    "residual_relocations": 9200,
+    "symbols_old": 2250,
+    "symbols_new": 2251,
+    "sections": 28
+  },
+  "qualification_pins": 1864,
+  "fixture_transactions": 3548272,
+  "original_records_recovered": 23,
+  "remaining_original_records": 21,
+  "private_records": 589,
+  "ABI_old_members_checked": {
+    "ieee80211com": 374,
+    "ieee80211vap": 210,
+    "qdrv_wlan": 72
+  },
+  "modules": [
+    {
+      "component": "qdrv",
+      "lane": "a",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\a\\qdrv\\qdrv.ko",
+      "bytes": 684740,
+      "sha256": "ca6fcb24a2c6e9c051d27a7220a70e034fd3479378f7c7d68c951982b6e802f6"
+    },
+    {
+      "component": "wlan",
+      "lane": "a",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\a\\wlan\\wlan.ko",
+      "bytes": 631120,
+      "sha256": "486818be02666694706d1660f49ad3b41a05b197d4c4b5bc42dd6476cd3b2d11"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "lane": "a",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\a\\wlan_scan_ap\\wlan_scan_ap.ko",
+      "bytes": 15508,
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "lane": "a",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\a\\wlan_scan_sta\\wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "lane": "a",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\a\\wlan_ccmp\\wlan_ccmp.ko",
+      "bytes": 9792,
+      "sha256": "7c54b944fd3f2d214dd8a4d0c98615a48b6fed1acb0b29d86176dff05c9d700f"
+    },
+    {
+      "component": "wlan_tkip",
+      "lane": "a",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\a\\wlan_tkip\\wlan_tkip.ko",
+      "bytes": 13472,
+      "sha256": "5a625b63d6a86b8f43bc28a2cae90f5a8270cdc6298711029a9aac59f58a4f22"
+    },
+    {
+      "component": "wlan_xauth",
+      "lane": "a",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\a\\wlan_xauth\\wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    },
+    {
+      "component": "qdrv",
+      "lane": "b",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\b\\qdrv\\qdrv.ko",
+      "bytes": 684740,
+      "sha256": "ca6fcb24a2c6e9c051d27a7220a70e034fd3479378f7c7d68c951982b6e802f6"
+    },
+    {
+      "component": "wlan",
+      "lane": "b",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\b\\wlan\\wlan.ko",
+      "bytes": 631120,
+      "sha256": "486818be02666694706d1660f49ad3b41a05b197d4c4b5bc42dd6476cd3b2d11"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "lane": "b",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\b\\wlan_scan_ap\\wlan_scan_ap.ko",
+      "bytes": 15508,
+      "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "lane": "b",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\b\\wlan_scan_sta\\wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "lane": "b",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\b\\wlan_ccmp\\wlan_ccmp.ko",
+      "bytes": 9792,
+      "sha256": "7c54b944fd3f2d214dd8a4d0c98615a48b6fed1acb0b29d86176dff05c9d700f"
+    },
+    {
+      "component": "wlan_tkip",
+      "lane": "b",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\b\\wlan_tkip\\wlan_tkip.ko",
+      "bytes": 13472,
+      "sha256": "5a625b63d6a86b8f43bc28a2cae90f5a8270cdc6298711029a9aac59f58a4f22"
+    },
+    {
+      "component": "wlan_xauth",
+      "lane": "b",
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\b\\wlan_xauth\\wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "limits": [
+    "Two faithful inherited unsupported operations remain; NAC READ_ONCE scalars may mix MuC generations.",
+    "Full ABI dependency supplement is postcompile; original six witness source pins were checked during compilation.",
+    "Host transaction callbacks are fake synchronous callbacks; no physical fixed-rate/mode transition claim.",
+    "No RF, client, traffic, boot, persistence, rollback or release acceptance. Same-header control is analysis only."
+  ],
+  "evidence_pins": [
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-qualification-r2\\result.json",
+      "bytes": 5246,
+      "sha256": "6f0d43e4e26d9315f2038726d5e9f1423d3e864035b172572a64a0a18409e488"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-qualification-r2\\audit.json",
+      "bytes": 1880,
+      "sha256": "341eda63099e76c3caec914cc75b669eed05522ab608bece1bb765756bdde37d"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-qualification-r2\\qualification-input-pins.json",
+      "bytes": 335539,
+      "sha256": "0768e7e9916d07af1e8a88acb1e0453e4d0457398aa8e2f84fe4543285c432d1"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-qualification-r2\\header-control-layout-delta.json",
+      "bytes": 55740,
+      "sha256": "83ad6d2ed7552d09e96163d83bdfb40ddf56b8bd04ddb7680af157705453ee31"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-qualification-r2\\qualify_hgw5g_legacy23_controlled_closure.py",
+      "bytes": 16524,
+      "sha256": "d90f888d2e95c345e7067a4e10ed525df8b771e672ce3263759966343f195ff5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\tools\\qualify_hgw5g_legacy23_controlled_closure.py",
+      "bytes": 16524,
+      "sha256": "d90f888d2e95c345e7067a4e10ed525df8b771e672ce3263759966343f195ff5"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\legacy23-full-transaction-fixture-20261022T195700Z-r2\\result.json",
+      "bytes": 592,
+      "sha256": "9aa95557f463f01c9ed5d300129fc43a04410dbf703b2740ca155f60ec5e85f2"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\legacy23-independent-full-prefix-abi-20261022T194700Z-r1\\result.json",
+      "bytes": 128442,
+      "sha256": "4b49965f125ce2e1f7f1b42a85ed37df3d77148d505047502de0c91fd061cc78"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\legacy23-independent-full-prefix-abi-pins-20261022T195000Z-r2\\result.json",
+      "bytes": 481,
+      "sha256": "122abb878866adee8d5c1df54fc194e35fbd0711b1dc8fd25c9abee32c0ec18d"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-header-control-closure-r1\\a\\wlan\\wlan.ko",
+      "bytes": 630628,
+      "sha256": "dd4896a969b3033e41f8c63eac27b12b1844bd86dd1a506e69c7be5a485b4621"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\driver5g-ops-20261022-legacy23-full-closure-r1\\a\\wlan\\wlan.ko",
+      "bytes": 631120,
+      "sha256": "486818be02666694706d1660f49ad3b41a05b197d4c4b5bc42dd6476cd3b2d11"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+   e83ec:	1cec b348           	st.aw	r13,[sp,-20]
+   e83f0:	1c04 37c0           	st	blink,[sp,4]
+   e83f4:	c642                	st_s	r14,[sp,0x8]
+   e83f6:	c743                	st_s	r15,[sp,0xc]
+   e83f8:	1c10 3400           	st	r16,[sp,16]
+   e83fc:	68b3                	asl_s	r13,r0,0x3
+   e83fe:	200a 2100           	mov	r16,r4
+   e8402:	7d02                	sub_s	r13,r13,r0
+   e8404:	bd02                	asl_s	r13,r13,0x2
+   e8406:	7608                	mov_s	r14,r0
+   e8408:	2500 1f8d 8002 be4c 	add	r13,r13,0x8002be4c
+   e8410:	0945 0030           	breq.d	r1,0,68	;0xe8454
+   e8414:	270a 1140           	mov	r15,r5
+   e8418:	a520                	st_s	r1,[r13,0]
+   e841a:	a541                	st_s	r2,[r13,0x4]
+   e841c:	250a 0f80 8002 c244 	mov	r5,0x8002c244
+   e8424:	15a8 8082           	ldb	r2,[r5,-88]
+   e8428:	a562                	st_s	r3,[r13,0x8]
+   e842a:	2502 0f84 0000 03f8 	sub	r4,r5,0x3f8
+   e8432:	264a 00c0           	mov	r6,0x3
+   e8436:	1d10 1180           	st	r6,[r13,16]
+   e843a:	2400 0084           	add	r4,r4,r2
+   e843e:	a5c3                	st_s	r14,[r13,0xc]
+   e8440:	2400 0f8c 0000 0380 	add	r12,r4,0x380
+   e8448:	acc0                	stb_s	r14,[r12,0]
+   e844a:	e201                	add_s	r2,r2,0x1
+   e844c:	0019 0020           	b.d	24	;0xe8464
+   e8450:	1da8 8082           	stb	r2,[r5,-88]
+   e8454:	70a9                	mov_s	r0,r13
+   e8456:	d900                	mov_s	r1,0
+   e8458:	224a 0500           	mov	r2,0x14
+   e845c:	2022 0f80 000e ea80 	jl	0xeea80
+   e8464:	1d14 1400           	st	r16,[r13,20]
+   e8468:	a5e6                	st_s	r15,[r13,0x18]
+   e846a:	23aa 0310           	lr	r3,[1036]
+   e846e:	230f 0383           	bset	r3,r3,r14
+   e8472:	23ab 0310           	sr	r3,[1036]
+   e8476:	1404 301f           	ld	blink,[sp,4]
+   e847a:	c602                	ld_s	r14,[sp,0x8]
+   e847c:	c703                	ld_s	r15,[sp,0xc]
+   e847e:	1410 3010           	ld	r16,[sp,16]
+   e8482:	1414 340d           	ld.ab	r13,[sp,20]
+   e8486:	7fe0                	j_s.d	[blink]
+   e8488:	204a 0000           	mov	r0,0

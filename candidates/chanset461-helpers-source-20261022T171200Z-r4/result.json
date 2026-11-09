@@ -1,0 +1,38 @@
+{
+  "status": "SOURCE_ONLY461_SCAN_QUEUE_EDGES_COST_HELPERS_NOT_DRIVER",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "recovered_table_rows": 130,
+  "evidence_ids": [
+    "ev_c5d34d394e6b0d9f37197dd06b6d4c8f8a1b16e22a5bda35f33ca933c0614231",
+    "ev_6791ea335498128e594e60640edf082d8f7143179b6433e3379f4cd0db9372ee",
+    "ev_9d59a6464383476045d2405ff569d08ff2670740849407e24d965811791cef9c",
+    "ev_fafe4044ffff3a192a91503144dc6de9409dd88bc912f8d72bb3128c69ef6296"
+  ],
+  "inputs": {
+    "outputs\\rea\\chanset461-tables-source-20261022T170500Z-r1\\result.json": "4538cc2f45336d0640ec8c2c807f766522821c2753880dcc2cb7e68077420621",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-oem-chanset-add-scan-type-20261022T165000Z-r1\\rea.json": "c28a5eade1c0b472af124469481e38fc5007ab91e5b717f871a118f6a5922e23",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-oem-chanset-ranking-init-20261022T171500Z-r1\\rea.json": "0afb0553639e98cf7d634d06498ed79ce28ffd1d44bdb75b7edfe7d679e2502f",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-oem-chanset-edge-low-20261022T170000Z-r1\\rea.json": "0b4b19befca19a358c8b6bd09c5eb0c9de9a37582023cd5ef8905854624669d5",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\windows-oem-chanset-edge-high-20261022T170000Z-r1\\rea.json": "0ca889fc64d85ab530490604fdfff1697847c2ee1dc0192cb10e4e29e92eb3f6",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-cost-loop-with-register-context-20261022T170700Z-r2\\result.json": "c9d232b006c51ad82bfcd27dd1025d1dcfc74c3cabef474aff15f9f4fd923878",
+    "/workspace/user-home\\Desktop\\MitraStar\\outputs\\rea\\chanset461-cost-loop-with-register-context-20261022T170700Z-r2\\assembly.txt": "90dd425e67084b7f0f531654a8d1f4c1534034806799bd816d1b9554605364df",
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\prepare_hgw5g_chanset_helpers.py": "025c1d83219bdef30f39b080b6187fbdd2d39a379a83a3830da46ec3b500c678",
+    "outputs\\rea\\chanset461-tables-source-20261022T170500Z-r1\\openmitrastar_chanset_recovered.h": "f6c43d93c59db71c561c2bd864b0d0c12693980a4e2d251c599802830fc8ae02",
+    "outputs\\rea\\chanset461-tables-source-20261022T170500Z-r1\\openmitrastar_chanset_recovered.c": "7428b497f99866bce22aa4ebc9758ab3ffda061156d71af18d1fef8f8c776c43",
+    "outputs\\rea\\chanset461-tables-source-20261022T170500Z-r1\\openmitrastar_chanset_tables.h": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492",
+    "outputs\\rea\\chanset461-tables-source-20261022T170500Z-r1\\tables.json": "8d37396ee20d6902ea9c2948579c57b4e69c307d332904717aa4889ba6a98538"
+  },
+  "source_hashes": {
+    "openmitrastar_chanset_recovered.c": "430cb61e89bf906aa553d9674c68dd27dc4e2fc53b0327ba059a6e170120f204",
+    "openmitrastar_chanset_recovered.h": "31e27fd7dca6c64596a6eb59156eca4cc249064907fae413133c4239bceb7cd5",
+    "openmitrastar_chanset_tables.h": "f6cd23cdb0fa8b7ad194c243a4ba0a30bbcba86acdbde70df4dd997193773492",
+    "tables.json": "8d37396ee20d6902ea9c2948579c57b4e69c307d332904717aa4889ba6a98538"
+  },
+  "limits": [
+    "No461 table record registered; driver integration unrun.",
+    "Saturated scan queue and malformed arguments refuse without mutation.",
+    "Metric collection, final candidate choice and callbacks/lifetime remain open.",
+    "No regulatory allowlist or physical scan/RF claim."
+  ]
+}

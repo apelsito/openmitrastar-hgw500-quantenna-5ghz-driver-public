@@ -1,0 +1,22 @@
+   f13bc:	1cf8 b348           	st.aw	r13,[sp,-8]
+   f13c0:	1c04 3380           	st	r14,[sp,4]
+   f13c4:	8051                	ld_s	r2,[r0,0x44]
+   f13c6:	b905                	asl_s	r1,r1,0x5
+   f13c8:	e201                	add_s	r2,r2,0x1
+   f13ca:	622d                	ldb_s	r13,[r2,r1]
+   f13cc:	76eb                	mov_s	r14,blink
+   f13ce:	70a9                	mov_s	r0,r13
+   f13d0:	2022 0f80 000f 1ae8 	jl	0xf1ae8
+   f13d8:	0811 0011           	brne	r0,0,16	;0xf13e8
+   f13dc:	70a9                	mov_s	r0,r13
+   f13de:	2022 0f80 000f 1ae8 	jl	0xf1ae8
+   f13e6:	e87c                	breq_s	r0,0,-8	;0xf13dc
+   f13e8:	76fb                	mov_s	blink,r14
+   f13ea:	c601                	ld_s	r14,[sp,0x4]
+   f13ec:	2021 07c0           	j.d	[blink]
+   f13f0:	1408 340d           	ld.ab	r13,[sp,8]
+   f13f4:	8051                	ld_s	r2,[r0,0x44]
+   f13f6:	b905                	asl_s	r1,r1,0x5
+   f13f8:	e201                	add_s	r2,r2,0x1
+   f13fa:	6228                	ldb_s	r0,[r2,r1]
+   f13fc:	2020 0f80 000f 1b6c 	j	0xf1b6c

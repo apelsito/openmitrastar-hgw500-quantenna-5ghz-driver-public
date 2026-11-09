@@ -1,0 +1,219 @@
+{
+  "qdrv": {
+    "status": "PASS_COMPLETE_COC25_RESIDUAL_SAME_HEADER_SCOPE",
+    "component": "qdrv",
+    "fixture_bound_functions": [
+      {
+        "key": [
+          "qdrv_wlan_exit",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 1010,
+        "new_bytes": 1020,
+        "old_sha256": "5b6e9384e64fc5ef9856b64f5f9443316d453e631dcd189ca2c223de106b4a91",
+        "new_sha256": "a81171f41677664c5da2a5e34e4e2440cf484529f86b9ca44770442f5bf89aeb"
+      }
+    ],
+    "new_functions": [],
+    "diagnostics": [],
+    "unchanged_functions": 830,
+    "residual_relocations": 13968,
+    "old_symbols": 1932,
+    "new_symbols": 1933,
+    "executable_residue": [
+      {
+        "section": ".text",
+        "anonymous_body_bytes": 77810,
+        "anonymous_body_count": 41,
+        "old_nop_bytes": 802,
+        "new_nop_bytes": 800,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".text.unlikely",
+        "anonymous_body_bytes": 2,
+        "anonymous_body_count": 1,
+        "old_nop_bytes": 30,
+        "new_nop_bytes": 30,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".init.text",
+        "anonymous_body_bytes": 2,
+        "anonymous_body_count": 1,
+        "old_nop_bytes": 0,
+        "new_nop_bytes": 0,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".exit.text",
+        "anonymous_body_bytes": 0,
+        "anonymous_body_count": 0,
+        "old_nop_bytes": 0,
+        "new_nop_bytes": 0,
+        "every_non_nop_body_and_following_owner_exact": true
+      }
+    ],
+    "limits": "Semanticrangesfixturebound; noinstructionequivalence/PM/CSA/RF/physicalacceptance"
+  },
+  "wlan": {
+    "status": "PASS_COMPLETE_COC25_RESIDUAL_SAME_HEADER_SCOPE",
+    "component": "wlan",
+    "fixture_bound_functions": [
+      {
+        "key": [
+          "ieee80211_ioctl_getparam",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 5928,
+        "new_bytes": 5950,
+        "old_sha256": "c997577e92424427a2ca99ba363c99b4c940d47776722ead0986876d27878b5e",
+        "new_sha256": "f765a30809e58147d8cdb414772e52b9832d5fbfbe7ec101c721f2c586dd716c"
+      },
+      {
+        "key": [
+          "ieee80211_ioctl_setparam",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 16562,
+        "new_bytes": 16500,
+        "old_sha256": "e3207f8006886d7913d1b9dce91fbb5755e8a87218a35ee0a4915ecfe0bfd28c",
+        "new_sha256": "305de498a24dcf8bcf510816d23ced337eaaa695ee501b3edd7000ba1d8dabfb"
+      },
+      {
+        "key": [
+          "ieee80211_update_pm",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 50,
+        "new_bytes": 398,
+        "old_sha256": "78307567560bf077bfaaf73d32cbfeb04fe372f855626b2ff022a82329e9ea0e",
+        "new_sha256": "77e0c1991b9b39ada39c0784d29cf21862088ecfd85f19095d42d3951626a9a7"
+      },
+      {
+        "key": [
+          "ieee80211_ifattach",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 1608,
+        "new_bytes": 1620,
+        "old_sha256": "9fbbfde8715858a15b64b7cf903e7952010a7279ddc514bb786a4cae39661205",
+        "new_sha256": "e94896c0b6b1ca3c559780f17880104d7d32c3201ea32ff5c94b3d41224ac30b"
+      },
+      {
+        "key": [
+          "ieee80211_pm_queue_work",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 72,
+        "new_bytes": 28,
+        "old_sha256": "e542ed3bcd641008b6f55ca2c691c74b1998994665ecaa86d357f2a0a2c2fc17",
+        "new_sha256": "2a52ebafca658e0c364cb33e87412748a3da62ac579bd2a7ff679db412d2707e"
+      },
+      {
+        "key": [
+          "ieee80211_ifdetach",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 222,
+        "new_bytes": 216,
+        "old_sha256": "953dd086ff4d716e259fa0a64634ce0678d53b79fc91ee8cdaac82de903de0d3",
+        "new_sha256": "8838227e65b5abba460eac8158e7840ba3001f3544ce2e00577d841937d0052b"
+      }
+    ],
+    "new_functions": [
+      "om_coc_channel_switch",
+      "om_coc_finish_csa",
+      "om_coc_pm_queue.part.0",
+      "om_ieee80211_coc_quiesce",
+      "om_ieee80211_pm_queue_node_join"
+    ],
+    "diagnostics": [
+      "ieee80211_delete_wlanunit",
+      "ieee80211_ioctl_giwfreq",
+      "ieee80211_param_from_qdrv",
+      "ieee80211com_media_change",
+      "ieee80211_get_chanflags",
+      "ieee80211_get_prichan_list_by_operating_class",
+      "ieee80211_chan2mode"
+    ],
+    "unchanged_functions": 947,
+    "residual_relocations": 9079,
+    "old_symbols": 2251,
+    "new_symbols": 2262,
+    "executable_residue": [
+      {
+        "section": ".text",
+        "anonymous_body_bytes": 2810,
+        "anonymous_body_count": 19,
+        "old_nop_bytes": 938,
+        "new_nop_bytes": 940,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".text.unlikely",
+        "anonymous_body_bytes": 0,
+        "anonymous_body_count": 0,
+        "old_nop_bytes": 6,
+        "new_nop_bytes": 6,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".init.text",
+        "anonymous_body_bytes": 0,
+        "anonymous_body_count": 0,
+        "old_nop_bytes": 0,
+        "new_nop_bytes": 0,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".exit.text",
+        "anonymous_body_bytes": 2,
+        "anonymous_body_count": 1,
+        "old_nop_bytes": 0,
+        "new_nop_bytes": 0,
+        "every_non_nop_body_and_following_owner_exact": true
+      }
+    ],
+    "limits": "Semanticrangesfixturebound; noinstructionequivalence/PM/CSA/RF/physicalacceptance"
+  },
+  "wlan_scan_ap": {
+    "status": "BYTE_IDENTICAL_WHOLE_PROVIDER",
+    "bytes": 15508,
+    "sha256": "0345ee6674524126d322a00a10e2a74c4038dd54b18225ffd82cd96e11437093"
+  },
+  "wlan_scan_sta": {
+    "status": "BYTE_IDENTICAL_WHOLE_PROVIDER",
+    "bytes": 18740,
+    "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+  },
+  "wlan_ccmp": {
+    "status": "BYTE_IDENTICAL_WHOLE_PROVIDER",
+    "bytes": 9792,
+    "sha256": "7c54b944fd3f2d214dd8a4d0c98615a48b6fed1acb0b29d86176dff05c9d700f"
+  },
+  "wlan_tkip": {
+    "status": "BYTE_IDENTICAL_WHOLE_PROVIDER",
+    "bytes": 13472,
+    "sha256": "5a625b63d6a86b8f43bc28a2cae90f5a8270cdc6298711029a9aac59f58a4f22"
+  },
+  "wlan_xauth": {
+    "status": "BYTE_IDENTICAL_WHOLE_PROVIDER",
+    "bytes": 3340,
+    "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "ok": false,
+  "error": {
+    "code": "target_unavailable",
+    "category": "unsupported_target",
+    "message": "Cannot open artifact: ARC700 local lane requires ELF32 LE ET_REL/ET_EXEC flags 0x3/0x403.",
+    "retryable": false,
+    "remediation": {
+      "action": "Review the reported file-format reason and select a supported, well-formed target."
+    },
+    "details": {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/oem-wlan-missingops-20261022T134300Z-linked/wlan-ANALYSIS_ONLY-NOT_FIRMWARE.elf",
+      "reason": "ARC700 local lane requires ELF32 LE ET_REL/ET_EXEC flags 0x3/0x403",
+      "constraint": "file_format_rejected"
+    }
+  },
+  "meta": {
+    "command": "function",
+    "duration": "473ms"
+  }
+}

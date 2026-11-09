@@ -1,0 +1,10 @@
+[
+  "gcc",
+  "-std=c11",
+  "-O1",
+  "-g",
+  "-fsanitize=address,undefined",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/devmode-unsupported-fixture-20261022T141100Z-r1/fixture.c",
+  "-o",
+  "/workspace/user-home/Desktop/MitraStar/outputs/rea/devmode-unsupported-fixture-20261022T141100Z-r1/fixture"
+]

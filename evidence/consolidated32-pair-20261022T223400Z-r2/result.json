@@ -1,0 +1,985 @@
+{
+  "status": "PASS_CONSOLIDATED32_FOUR_CHANGED_UNITS_PAIRED_SEVEN_MODULES_PENDING_GLOBAL",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "candidate": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-source-20261022T222600Z-r2",
+  "units": [
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_f355_lifetime",
+      "source_sha256": "cc9e7520ec286c3f26b02510175dd9f9fb7f9096b55ee0c005558ca4f0198b67",
+      "object_sha256": "28f855454ddd378ef9644f600e8d4696c3da0d36a431d3406dbdc81740c7a59d",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_kernel_compat",
+      "source_sha256": "493de8af98db94c8feb70a71221cf3e37904a01edabcbb3e08000d4f3cca68d1",
+      "object_sha256": "eb4cf4ad9959cc2432323a05e9dd720cbc9c3cdc7b31f9e756b723084ec84a32",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_radar_compat",
+      "source_sha256": "2f0401ff643896a3ef099f941359a4cbbf336ff6f601ccb46cad25c61fe16712",
+      "object_sha256": "f299cd84238affccf0a207c3ae6bf9d49a56a1cf2c1be17229a5c5fefe6e6889",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_fwt_compat",
+      "source_sha256": "c92d173db3e4fc52be1496721192bdf26bc98639dfa220cda20542ad0c513cb1",
+      "object_sha256": "203f7b52d8e86002e808969fbe26ec33b0f16b62e0b4376d45daa160eb385bad",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_module",
+      "source_sha256": "cfecaacfe7256ed17458553a594cbf927a9923c1f6d119950fa5cfb4d7ed39a3",
+      "object_sha256": "7b00a3e15178927697376b3f7969ee57f5fca6f69848bf71f0bbf9c9181db652",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_control",
+      "source_sha256": "ae586fc6db8b94ce7d128309b7c3add6563fbc37907488726ac95fc02242d398",
+      "object_sha256": "d6b71c3ad5c84d99e6cf19441a3bf4792051a5f91788c816adc2a376084fb2e2",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_soc",
+      "source_sha256": "a179bebe0f469b4156e03139d6e06c99d51720c2bc9e292d5426a37d607603c4",
+      "object_sha256": "b831cc1edf4117c014cfa941c249656784127ff7692c35e8838b9ee8c557ccfc",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_hal",
+      "source_sha256": "9073f72099b28a93e8794282ae5b87d7d32fca0ee5ebaf9b90cc6716f64a6691",
+      "object_sha256": "e0de15f4e6924d36bf925b29b2d7cbbb94df0d1a9240d3528c92da3eff9f5cd1",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_muc",
+      "source_sha256": "daf6f06bf5d82ee84dcf66a9ff2706692e6e4a52d155817381d5a9a066f54fde",
+      "object_sha256": "d66c70ac189b0dbacd1a9a1bb9015225b6f8072c7ccea0b474d706d4e4b6c2d7",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_mac",
+      "source_sha256": "43946f44a7dbd5cfe71873175bbf6262e3224093eb5ef65a737a8061984a4e98",
+      "object_sha256": "2597838515dc2c6cf6636658c810bba7c8ac7dece482d7f52c7336a82cc9da6f",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_mac_reserve",
+      "source_sha256": "b1c97d65f4a8cb516634d36cb6f4a21a03a72e9703ec1d8f40f09c033528d67f",
+      "object_sha256": "3dd0ba31c48d34af448496d32fdf799f48d5e1d5d168328065f23215018642bd",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_comm",
+      "source_sha256": "56c5d3d660a512c17dfc3903f606d3dc529542bcdeffeb266d04ab1219113f40",
+      "object_sha256": "934a1ac1dc9f36639f104e6bea4dad1d30b3e06f9e69fdf7816308e8aea820ba",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_wlan",
+      "source_sha256": "d25e170e65f09b63546f71a462d96a0b567fc64fa58c025cb77b87e0fd6204c0",
+      "object_sha256": "4e58f7865616417c8455ed2315cf0adefb41ea20d9eed60c9d1f6fe73af47f4d",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_tx",
+      "source_sha256": "2f93045dc3937074300c571e1b5f1d49c95e51de91d8e00b0742db1177438c1d",
+      "object_sha256": "bec0596ad5250833028d7e130e5e9c4eed115226846ade33dd3b758086e2c066",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_rx",
+      "source_sha256": "7b1126f6ce00111ded62f36204d13736a51bdc94906b3de5f4308c7a7691ba2a",
+      "object_sha256": "9889784ba5d023fe869559df9b6f88f4985aa90e4cffd80c2b7c111cdabac15f",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_scan",
+      "source_sha256": "17cefa0744c2fe8bd00ccb0d29ca8ff0a5b4a013cc41d2b9caaf71df49d2145d",
+      "object_sha256": "2778c88bcfe3c17a9892b099eb70643fed0d22ee764b983cd156faf650d1cfbd",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_hostlink",
+      "source_sha256": "236089b781c9af1d5cf791694934f0dd72f9c119d21261b46d7db991b4e359bb",
+      "object_sha256": "6cef92a6ddc4d2a9b9aac88b982507ca3b73669036ab923851e403d03ea4603b",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_vap",
+      "source_sha256": "8a7e19a8066392468797602735e6d78039ac6b5ab6bcdf1a5d5baa860d59f485",
+      "object_sha256": "16e52ac8c1b177047f577e03634e1610efca7d2871333de62d12381f96359bdc",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_dsp",
+      "source_sha256": "a8210e6df122dc38548a39e6004b534fece563b0af962721eb9e1955f31a560e",
+      "object_sha256": "60dd231eceede0ed46362a4d7af69212df801b8a50cdfb8316da1bfdcee13b3f",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_txbf",
+      "source_sha256": "953a080fd97c9f794cdce56decdc70be121439635d5e421282ead0c93ef143d8",
+      "object_sha256": "802aaab6f25fc94b194ba16fb72b91ab334a018d38765e50a0fd8266625d080a",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_muc_stats",
+      "source_sha256": "d2b9ae154179138b8c80933ff7f1fc4d7600f20dfd52ec9f33412061d7e74768",
+      "object_sha256": "8c4e6953b739ef0729c323a0e5e46c8a5c51cd966491bfba10b73062373889ca",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_radar",
+      "source_sha256": "c261b6777d9322a4baf641a37861bf588e754e5411f7f993ea16725d00c395dc",
+      "object_sha256": "97f9b4c7c387a927944ed947afc1befcd6d292f78e7d2a80e0ee31ab3c908076",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_math",
+      "source_sha256": "c1045ac057bddda8f4a2f8c6a52d6ee7d4dca2c563d3e83883edafc71e8acc32",
+      "object_sha256": "e9c7df1391a2f858ce42769a8f75ac851e1929d6583d03d620cb0ea52b03c05a",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_bridge",
+      "source_sha256": "05bbba44e4cb1641deea8aed511dfa6d68198f25cd7bbb7b8a68387d37a867fe",
+      "object_sha256": "01a77df0871dd79abea7a7cdabcb8918103a8531c008f208a328cd4390c1df47",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_uc_print",
+      "source_sha256": "f8dc7d8b7101568c3ee0b92bb69b45aae972e0df241e6468ec2199d5e03e9d98",
+      "object_sha256": "f509d2e7b23d0954963d0e1b532dd39aeb03cca9fe72fa8012ff51b2f3fed9a8",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_sch",
+      "source_sha256": "64edce498abe520db3c3fcb7a51505af750456b54284b1e2dc25af7519d99035",
+      "object_sha256": "88d389c3e7f9fa67e369a52a563d0ad2fa6079f7384efacc9f008b0b19c8290e",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_sch_pm",
+      "source_sha256": "b2a14cc8aff687f23b7d792fb0eb47cd0b3a3fb5940f791f521f17d02fb43812",
+      "object_sha256": "e000e2deef30df59e63c15d6c37fe0a63a7aa855411f0762e5c715a9301abd2f",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_pktlogger",
+      "source_sha256": "f1ef936e9519e6bc2e75912b71f870011b8699936ed364b2221e189106732717",
+      "object_sha256": "2e5f1bce862c598c342ecbd03863e488c8e988e91fa63da13b0f0fbf1b61ad6e",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_auc",
+      "source_sha256": "70eb8cc1a7761addb9d14b48c97d5bc5362656137bb048fcd3238fd77891c723",
+      "object_sha256": "9bd08baa57d83ca82257e4cc55f95415ca1ebaedf2ee547105a4e2df8087041d",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_pcap",
+      "source_sha256": "7185ef1ce323bae02d481ff102797bd615c18a46a9719d1b4bbe7d5c668459a5",
+      "object_sha256": "ec71846f9ef3e3c71f965ee24c5be8744cd02a28cd808b47aa5f52fa39b927cc",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_vlan",
+      "source_sha256": "466b6e1263cdbb633d05e096287dfcaea967d59594897246d9c4778d65802eb3",
+      "object_sha256": "b7285a258e3fecd2b6430ac2ade40382b3b92c37a966846c9a1f728fa60d0164",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_show",
+      "source_sha256": "996ee4f1294ad79623f10f41c1c57bce98f8a47ee9c1cb99c74acdb11b05bda9",
+      "object_sha256": "ee16a1b3a5b443098cc6b934c111388f42236b67864f185de68c2139f827d594",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_mu",
+      "source_sha256": "1dc0ca7d74c52afcfb49a3359473e542deee409e0a989155b947578a9a6ef85b",
+      "object_sha256": "23e860b1dde3c5c970d754ba89899e9310fc90946953937a9cb340ca5dfdba15",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "qdrv",
+      "name": "qdrv_fw",
+      "source_sha256": "0bdc6c022f3dfe8b19a3294f5697722e7b83a3124383aeac872a91c807746a78",
+      "object_sha256": "f94b28623964be2eba3cf87bcb10b6c854d155790877e0203f4a64c363f0c462",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "wlan_fwt_compat",
+      "source_sha256": "cac94258272e9f7df805505cad378780248c998ef70de590127da3a73ba168d4",
+      "object_sha256": "b701a025c95db242ea639aaa5dc144d88c1b3fd4a9ac69681c52ec535544af8b",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "if_media",
+      "source_sha256": "6fda06d57cf55daeb0256e6aec69e166592f1860d16ec0f972da9eecf27f38e0",
+      "object_sha256": "02a545c2bd9c766598b77d3df4a078a1a8252bf5be6707fddec99580898fb179",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_beacon",
+      "source_sha256": "712d34d4ef45d23d9e146d15702baf6df1c1265b5be52dbcbb376eb4dbc1e64d",
+      "object_sha256": "915e29e546434ddba686979db2dd047e88cd6cdf272f114128090a5b502cb0f5",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_beacon_desc",
+      "source_sha256": "198a92120083cc3c5645c71dcebc9cc285bf8fbe0474cb347f669897bad744c1",
+      "object_sha256": "54daf942fb937a9620b7eacd081d4c032e6cc315469f682ceea4c16ef9f36057",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_crypto",
+      "source_sha256": "8b0dd020dfae158dd3bbe9baf7fe0614913e2b05b6bcbc0a0a28f80e0a020a9e",
+      "object_sha256": "6c759bdd93d07d3a69467113b8aa0f900c01cfe3f29d4eedc1c5152ec01c1bb7",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_crypto_none",
+      "source_sha256": "13bb0971a3eb6562abfb5501a430d12e960c4f6eba9a5683b085b08dc8f0fed7",
+      "object_sha256": "4702d18155d9a5149b63b47e2b5c4cdacec2016935eddd178129fb68ad181a4b",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_proto",
+      "source_sha256": "06bda8e42fc757dcf92c46eaf5b74b3d7c4f2a944ef8e89b52d2ae2ff28512c5",
+      "object_sha256": "967e747d122c1f792ba211e4602a24e25cf58339e1bf1a81484a21abf3cba5d1",
+      "fresh": true
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_output",
+      "source_sha256": "6a353651d6d8f3a84a454f9ec51effceabd6af6b0378a35f13b681fa8abdba6d",
+      "object_sha256": "1fd23d3c2b50be18d5fb824ad6f0df323293bbd7b89f4a685da92dbb0cc68fa8",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_power",
+      "source_sha256": "7e95aa12acf29f852eefa26bcc6870177a3bcb70e3da1ccc0086e41f1b0340fe",
+      "object_sha256": "dabbd1f62adb4c5513e2d761ab2509ae6e271ca9ae9dd12b4ddb597690c5a3e6",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_scan",
+      "source_sha256": "539ba2dc423ea36feaf4151411bda59c2ba8c07503a1241dfaa38c29fad7f266",
+      "object_sha256": "8c9d5afab9f9c11ea3a0584418dbef530f03938a401b91a206c4e92ed6602e31",
+      "fresh": true
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_wireless",
+      "source_sha256": "d8206afe2f33f34302d896e56cf1eeeaaa8fe3af584cdf01222f997779144fbc",
+      "object_sha256": "1a01cf526c18245c4ccf81d258568bd7ca423d40230e49684507ac4888d8a4de",
+      "fresh": true
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_linux",
+      "source_sha256": "db40c95e0bebbfef107c7035f6cafc4be4c32492e87cdc98745b8dd7d56b8b40",
+      "object_sha256": "a8d8332b25075cca2dbc76a14c47378b5da7aa8e1a3043f27ca1a395e97a113d",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_rate",
+      "source_sha256": "289e8aecd31b945659003ee65a3923b716a8784e5ef2df5daf3b9c40a3117fe5",
+      "object_sha256": "895a89e84870ee23662d98a10a5f684a072e849982aedf3667613ced107673ec",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_input",
+      "source_sha256": "65a1fcf4b47eb54611123fed1577c1f6f8784ae9df43bc41b16b21a06c2f86f4",
+      "object_sha256": "f999848799f20a658e34db85c4c5f1b441ce762e0929ab0edc286b6a3bdd07d7",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_node",
+      "source_sha256": "817fde17b08518cd1a98f4ea192f1fd9853f604e6856e967d281dbed5447a2c9",
+      "object_sha256": "673fd33fa146b69cceab41ac5995b18075edcaca3e7e0e4a92752da21eeb0cd7",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_tdls",
+      "source_sha256": "073fdd13f9cc304ab39450d8838b16e953862ec954f9c6e2bcb003340cd581bc",
+      "object_sha256": "af793c70101c6fa5186fb65ef186804e89e478d90fbfd35a52bf52faf38fe065",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_tpc",
+      "source_sha256": "4f784c885634221281e8f19a05dc8f21bbed62f4a65bf958f68a415f4febb9d3",
+      "object_sha256": "bfb48093b3ddef900d0b7e863a86cc3706c4e28606aa5703c896759323be5a02",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211_mlme_statistics",
+      "source_sha256": "aefed7036fd0630b19c34e00607f6f1de1b023476aa5e8459885ff35a42f12a5",
+      "object_sha256": "012eb7c52376996f591af84c2d39c69143b09d0c1f4f6d2d52cfcc2645912826",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan",
+      "name": "ieee80211",
+      "source_sha256": "f7e866905a145548a615eef73cfb934d41d7267e69a7b0ce9e9f041e1dcb7a85",
+      "object_sha256": "9f0aab70d1cb55ddc0718ff09f8210b4ae798927fc7332acdbc976a7718ef846",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan_scan_ap",
+      "name": "ieee80211_scan_ap",
+      "source_sha256": "5d7211e4537d168401f88d7dfed1ac5bad86752fa8abd44038e8614e894e3907",
+      "object_sha256": "cb719cdebb9f328f10e3b354af66cdb6020cdb64b2aac41fadd6b5e69de34381",
+      "fresh": true
+    },
+    {
+      "lane": "a",
+      "component": "wlan_scan_sta",
+      "name": "ieee80211_scan_sta",
+      "source_sha256": "73e0b28b5e74693bd3b50c72883df46dc238201da2232dc066bdef76badd5d93",
+      "object_sha256": "005de57b2aa21a855fa3f17ec0c9bb2e57b87e28fcfa99da334da027a878dfa0",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan_ccmp",
+      "name": "ieee80211_crypto_ccmp",
+      "source_sha256": "90aad4e58ac1ffb3f098a3eb065eb517665ce1ccffb4e630a9a24a7c47bd80c5",
+      "object_sha256": "4c96a0af4add033ace677e76571c22a578fb89d20ce07e705a04de225df171f0",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan_tkip",
+      "name": "ieee80211_crypto_tkip",
+      "source_sha256": "14202a45f14ede03add64eeafa9b4802594ff0b3f38b4478aff694a5302b9e2b",
+      "object_sha256": "3bab617210dcfca90f826b81346fd5ff962c3cb4350ae31151fb33a606a1a7aa",
+      "fresh": false
+    },
+    {
+      "lane": "a",
+      "component": "wlan_xauth",
+      "name": "ieee80211_xauth",
+      "source_sha256": "5feaec3e92676651a090e6dd8e1d4cae2d70738843c8156df30afc601eb01745",
+      "object_sha256": "672cbfd31ab9506ed858b76c2948322d2907c16394474e6bcf9436d2e31a43d6",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_f355_lifetime",
+      "source_sha256": "cc9e7520ec286c3f26b02510175dd9f9fb7f9096b55ee0c005558ca4f0198b67",
+      "object_sha256": "28f855454ddd378ef9644f600e8d4696c3da0d36a431d3406dbdc81740c7a59d",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_kernel_compat",
+      "source_sha256": "493de8af98db94c8feb70a71221cf3e37904a01edabcbb3e08000d4f3cca68d1",
+      "object_sha256": "eb4cf4ad9959cc2432323a05e9dd720cbc9c3cdc7b31f9e756b723084ec84a32",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_radar_compat",
+      "source_sha256": "2f0401ff643896a3ef099f941359a4cbbf336ff6f601ccb46cad25c61fe16712",
+      "object_sha256": "f299cd84238affccf0a207c3ae6bf9d49a56a1cf2c1be17229a5c5fefe6e6889",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_fwt_compat",
+      "source_sha256": "c92d173db3e4fc52be1496721192bdf26bc98639dfa220cda20542ad0c513cb1",
+      "object_sha256": "203f7b52d8e86002e808969fbe26ec33b0f16b62e0b4376d45daa160eb385bad",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_module",
+      "source_sha256": "cfecaacfe7256ed17458553a594cbf927a9923c1f6d119950fa5cfb4d7ed39a3",
+      "object_sha256": "7b00a3e15178927697376b3f7969ee57f5fca6f69848bf71f0bbf9c9181db652",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_control",
+      "source_sha256": "ae586fc6db8b94ce7d128309b7c3add6563fbc37907488726ac95fc02242d398",
+      "object_sha256": "d6b71c3ad5c84d99e6cf19441a3bf4792051a5f91788c816adc2a376084fb2e2",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_soc",
+      "source_sha256": "a179bebe0f469b4156e03139d6e06c99d51720c2bc9e292d5426a37d607603c4",
+      "object_sha256": "b831cc1edf4117c014cfa941c249656784127ff7692c35e8838b9ee8c557ccfc",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_hal",
+      "source_sha256": "9073f72099b28a93e8794282ae5b87d7d32fca0ee5ebaf9b90cc6716f64a6691",
+      "object_sha256": "e0de15f4e6924d36bf925b29b2d7cbbb94df0d1a9240d3528c92da3eff9f5cd1",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_muc",
+      "source_sha256": "daf6f06bf5d82ee84dcf66a9ff2706692e6e4a52d155817381d5a9a066f54fde",
+      "object_sha256": "d66c70ac189b0dbacd1a9a1bb9015225b6f8072c7ccea0b474d706d4e4b6c2d7",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_mac",
+      "source_sha256": "43946f44a7dbd5cfe71873175bbf6262e3224093eb5ef65a737a8061984a4e98",
+      "object_sha256": "2597838515dc2c6cf6636658c810bba7c8ac7dece482d7f52c7336a82cc9da6f",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_mac_reserve",
+      "source_sha256": "b1c97d65f4a8cb516634d36cb6f4a21a03a72e9703ec1d8f40f09c033528d67f",
+      "object_sha256": "3dd0ba31c48d34af448496d32fdf799f48d5e1d5d168328065f23215018642bd",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_comm",
+      "source_sha256": "56c5d3d660a512c17dfc3903f606d3dc529542bcdeffeb266d04ab1219113f40",
+      "object_sha256": "934a1ac1dc9f36639f104e6bea4dad1d30b3e06f9e69fdf7816308e8aea820ba",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_wlan",
+      "source_sha256": "d25e170e65f09b63546f71a462d96a0b567fc64fa58c025cb77b87e0fd6204c0",
+      "object_sha256": "4e58f7865616417c8455ed2315cf0adefb41ea20d9eed60c9d1f6fe73af47f4d",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_tx",
+      "source_sha256": "2f93045dc3937074300c571e1b5f1d49c95e51de91d8e00b0742db1177438c1d",
+      "object_sha256": "bec0596ad5250833028d7e130e5e9c4eed115226846ade33dd3b758086e2c066",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_rx",
+      "source_sha256": "7b1126f6ce00111ded62f36204d13736a51bdc94906b3de5f4308c7a7691ba2a",
+      "object_sha256": "9889784ba5d023fe869559df9b6f88f4985aa90e4cffd80c2b7c111cdabac15f",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_scan",
+      "source_sha256": "17cefa0744c2fe8bd00ccb0d29ca8ff0a5b4a013cc41d2b9caaf71df49d2145d",
+      "object_sha256": "2778c88bcfe3c17a9892b099eb70643fed0d22ee764b983cd156faf650d1cfbd",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_hostlink",
+      "source_sha256": "236089b781c9af1d5cf791694934f0dd72f9c119d21261b46d7db991b4e359bb",
+      "object_sha256": "6cef92a6ddc4d2a9b9aac88b982507ca3b73669036ab923851e403d03ea4603b",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_vap",
+      "source_sha256": "8a7e19a8066392468797602735e6d78039ac6b5ab6bcdf1a5d5baa860d59f485",
+      "object_sha256": "16e52ac8c1b177047f577e03634e1610efca7d2871333de62d12381f96359bdc",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_dsp",
+      "source_sha256": "a8210e6df122dc38548a39e6004b534fece563b0af962721eb9e1955f31a560e",
+      "object_sha256": "60dd231eceede0ed46362a4d7af69212df801b8a50cdfb8316da1bfdcee13b3f",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_txbf",
+      "source_sha256": "953a080fd97c9f794cdce56decdc70be121439635d5e421282ead0c93ef143d8",
+      "object_sha256": "802aaab6f25fc94b194ba16fb72b91ab334a018d38765e50a0fd8266625d080a",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_muc_stats",
+      "source_sha256": "d2b9ae154179138b8c80933ff7f1fc4d7600f20dfd52ec9f33412061d7e74768",
+      "object_sha256": "8c4e6953b739ef0729c323a0e5e46c8a5c51cd966491bfba10b73062373889ca",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_radar",
+      "source_sha256": "c261b6777d9322a4baf641a37861bf588e754e5411f7f993ea16725d00c395dc",
+      "object_sha256": "97f9b4c7c387a927944ed947afc1befcd6d292f78e7d2a80e0ee31ab3c908076",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_math",
+      "source_sha256": "c1045ac057bddda8f4a2f8c6a52d6ee7d4dca2c563d3e83883edafc71e8acc32",
+      "object_sha256": "e9c7df1391a2f858ce42769a8f75ac851e1929d6583d03d620cb0ea52b03c05a",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_bridge",
+      "source_sha256": "05bbba44e4cb1641deea8aed511dfa6d68198f25cd7bbb7b8a68387d37a867fe",
+      "object_sha256": "01a77df0871dd79abea7a7cdabcb8918103a8531c008f208a328cd4390c1df47",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_uc_print",
+      "source_sha256": "f8dc7d8b7101568c3ee0b92bb69b45aae972e0df241e6468ec2199d5e03e9d98",
+      "object_sha256": "f509d2e7b23d0954963d0e1b532dd39aeb03cca9fe72fa8012ff51b2f3fed9a8",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_sch",
+      "source_sha256": "64edce498abe520db3c3fcb7a51505af750456b54284b1e2dc25af7519d99035",
+      "object_sha256": "88d389c3e7f9fa67e369a52a563d0ad2fa6079f7384efacc9f008b0b19c8290e",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_sch_pm",
+      "source_sha256": "b2a14cc8aff687f23b7d792fb0eb47cd0b3a3fb5940f791f521f17d02fb43812",
+      "object_sha256": "e000e2deef30df59e63c15d6c37fe0a63a7aa855411f0762e5c715a9301abd2f",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_pktlogger",
+      "source_sha256": "f1ef936e9519e6bc2e75912b71f870011b8699936ed364b2221e189106732717",
+      "object_sha256": "2e5f1bce862c598c342ecbd03863e488c8e988e91fa63da13b0f0fbf1b61ad6e",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_auc",
+      "source_sha256": "70eb8cc1a7761addb9d14b48c97d5bc5362656137bb048fcd3238fd77891c723",
+      "object_sha256": "9bd08baa57d83ca82257e4cc55f95415ca1ebaedf2ee547105a4e2df8087041d",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_pcap",
+      "source_sha256": "7185ef1ce323bae02d481ff102797bd615c18a46a9719d1b4bbe7d5c668459a5",
+      "object_sha256": "ec71846f9ef3e3c71f965ee24c5be8744cd02a28cd808b47aa5f52fa39b927cc",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_vlan",
+      "source_sha256": "466b6e1263cdbb633d05e096287dfcaea967d59594897246d9c4778d65802eb3",
+      "object_sha256": "b7285a258e3fecd2b6430ac2ade40382b3b92c37a966846c9a1f728fa60d0164",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_show",
+      "source_sha256": "996ee4f1294ad79623f10f41c1c57bce98f8a47ee9c1cb99c74acdb11b05bda9",
+      "object_sha256": "ee16a1b3a5b443098cc6b934c111388f42236b67864f185de68c2139f827d594",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_mu",
+      "source_sha256": "1dc0ca7d74c52afcfb49a3359473e542deee409e0a989155b947578a9a6ef85b",
+      "object_sha256": "23e860b1dde3c5c970d754ba89899e9310fc90946953937a9cb340ca5dfdba15",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "qdrv",
+      "name": "qdrv_fw",
+      "source_sha256": "0bdc6c022f3dfe8b19a3294f5697722e7b83a3124383aeac872a91c807746a78",
+      "object_sha256": "f94b28623964be2eba3cf87bcb10b6c854d155790877e0203f4a64c363f0c462",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "wlan_fwt_compat",
+      "source_sha256": "cac94258272e9f7df805505cad378780248c998ef70de590127da3a73ba168d4",
+      "object_sha256": "b701a025c95db242ea639aaa5dc144d88c1b3fd4a9ac69681c52ec535544af8b",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "if_media",
+      "source_sha256": "6fda06d57cf55daeb0256e6aec69e166592f1860d16ec0f972da9eecf27f38e0",
+      "object_sha256": "02a545c2bd9c766598b77d3df4a078a1a8252bf5be6707fddec99580898fb179",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_beacon",
+      "source_sha256": "712d34d4ef45d23d9e146d15702baf6df1c1265b5be52dbcbb376eb4dbc1e64d",
+      "object_sha256": "915e29e546434ddba686979db2dd047e88cd6cdf272f114128090a5b502cb0f5",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_beacon_desc",
+      "source_sha256": "198a92120083cc3c5645c71dcebc9cc285bf8fbe0474cb347f669897bad744c1",
+      "object_sha256": "54daf942fb937a9620b7eacd081d4c032e6cc315469f682ceea4c16ef9f36057",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_crypto",
+      "source_sha256": "8b0dd020dfae158dd3bbe9baf7fe0614913e2b05b6bcbc0a0a28f80e0a020a9e",
+      "object_sha256": "6c759bdd93d07d3a69467113b8aa0f900c01cfe3f29d4eedc1c5152ec01c1bb7",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_crypto_none",
+      "source_sha256": "13bb0971a3eb6562abfb5501a430d12e960c4f6eba9a5683b085b08dc8f0fed7",
+      "object_sha256": "4702d18155d9a5149b63b47e2b5c4cdacec2016935eddd178129fb68ad181a4b",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_proto",
+      "source_sha256": "06bda8e42fc757dcf92c46eaf5b74b3d7c4f2a944ef8e89b52d2ae2ff28512c5",
+      "object_sha256": "967e747d122c1f792ba211e4602a24e25cf58339e1bf1a81484a21abf3cba5d1",
+      "fresh": true
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_output",
+      "source_sha256": "6a353651d6d8f3a84a454f9ec51effceabd6af6b0378a35f13b681fa8abdba6d",
+      "object_sha256": "1fd23d3c2b50be18d5fb824ad6f0df323293bbd7b89f4a685da92dbb0cc68fa8",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_power",
+      "source_sha256": "7e95aa12acf29f852eefa26bcc6870177a3bcb70e3da1ccc0086e41f1b0340fe",
+      "object_sha256": "dabbd1f62adb4c5513e2d761ab2509ae6e271ca9ae9dd12b4ddb597690c5a3e6",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_scan",
+      "source_sha256": "539ba2dc423ea36feaf4151411bda59c2ba8c07503a1241dfaa38c29fad7f266",
+      "object_sha256": "8c9d5afab9f9c11ea3a0584418dbef530f03938a401b91a206c4e92ed6602e31",
+      "fresh": true
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_wireless",
+      "source_sha256": "d8206afe2f33f34302d896e56cf1eeeaaa8fe3af584cdf01222f997779144fbc",
+      "object_sha256": "1a01cf526c18245c4ccf81d258568bd7ca423d40230e49684507ac4888d8a4de",
+      "fresh": true
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_linux",
+      "source_sha256": "db40c95e0bebbfef107c7035f6cafc4be4c32492e87cdc98745b8dd7d56b8b40",
+      "object_sha256": "a8d8332b25075cca2dbc76a14c47378b5da7aa8e1a3043f27ca1a395e97a113d",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_rate",
+      "source_sha256": "289e8aecd31b945659003ee65a3923b716a8784e5ef2df5daf3b9c40a3117fe5",
+      "object_sha256": "895a89e84870ee23662d98a10a5f684a072e849982aedf3667613ced107673ec",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_input",
+      "source_sha256": "65a1fcf4b47eb54611123fed1577c1f6f8784ae9df43bc41b16b21a06c2f86f4",
+      "object_sha256": "f999848799f20a658e34db85c4c5f1b441ce762e0929ab0edc286b6a3bdd07d7",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_node",
+      "source_sha256": "817fde17b08518cd1a98f4ea192f1fd9853f604e6856e967d281dbed5447a2c9",
+      "object_sha256": "673fd33fa146b69cceab41ac5995b18075edcaca3e7e0e4a92752da21eeb0cd7",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_tdls",
+      "source_sha256": "073fdd13f9cc304ab39450d8838b16e953862ec954f9c6e2bcb003340cd581bc",
+      "object_sha256": "af793c70101c6fa5186fb65ef186804e89e478d90fbfd35a52bf52faf38fe065",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_tpc",
+      "source_sha256": "4f784c885634221281e8f19a05dc8f21bbed62f4a65bf958f68a415f4febb9d3",
+      "object_sha256": "bfb48093b3ddef900d0b7e863a86cc3706c4e28606aa5703c896759323be5a02",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211_mlme_statistics",
+      "source_sha256": "aefed7036fd0630b19c34e00607f6f1de1b023476aa5e8459885ff35a42f12a5",
+      "object_sha256": "012eb7c52376996f591af84c2d39c69143b09d0c1f4f6d2d52cfcc2645912826",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan",
+      "name": "ieee80211",
+      "source_sha256": "f7e866905a145548a615eef73cfb934d41d7267e69a7b0ce9e9f041e1dcb7a85",
+      "object_sha256": "9f0aab70d1cb55ddc0718ff09f8210b4ae798927fc7332acdbc976a7718ef846",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan_scan_ap",
+      "name": "ieee80211_scan_ap",
+      "source_sha256": "5d7211e4537d168401f88d7dfed1ac5bad86752fa8abd44038e8614e894e3907",
+      "object_sha256": "cb719cdebb9f328f10e3b354af66cdb6020cdb64b2aac41fadd6b5e69de34381",
+      "fresh": true
+    },
+    {
+      "lane": "b",
+      "component": "wlan_scan_sta",
+      "name": "ieee80211_scan_sta",
+      "source_sha256": "73e0b28b5e74693bd3b50c72883df46dc238201da2232dc066bdef76badd5d93",
+      "object_sha256": "005de57b2aa21a855fa3f17ec0c9bb2e57b87e28fcfa99da334da027a878dfa0",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan_ccmp",
+      "name": "ieee80211_crypto_ccmp",
+      "source_sha256": "90aad4e58ac1ffb3f098a3eb065eb517665ce1ccffb4e630a9a24a7c47bd80c5",
+      "object_sha256": "4c96a0af4add033ace677e76571c22a578fb89d20ce07e705a04de225df171f0",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan_tkip",
+      "name": "ieee80211_crypto_tkip",
+      "source_sha256": "14202a45f14ede03add64eeafa9b4802594ff0b3f38b4478aff694a5302b9e2b",
+      "object_sha256": "3bab617210dcfca90f826b81346fd5ff962c3cb4350ae31151fb33a606a1a7aa",
+      "fresh": false
+    },
+    {
+      "lane": "b",
+      "component": "wlan_xauth",
+      "name": "ieee80211_xauth",
+      "source_sha256": "5feaec3e92676651a090e6dd8e1d4cae2d70738843c8156df30afc601eb01745",
+      "object_sha256": "672cbfd31ab9506ed858b76c2948322d2907c16394474e6bcf9436d2e31a43d6",
+      "fresh": false
+    }
+  ],
+  "new_compiled_units": 8,
+  "reused_parent30_objects": 108,
+  "reproducible": true,
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/qdrv/qdrv.ko",
+      "bytes": 684944,
+      "sha256": "58fbed55bf18243c58a91fac08b9c3ec36548e8dcf2144e7544a7c6563f0cc73"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan/wlan.ko",
+      "bytes": 660708,
+      "sha256": "4c99e721af811b35495044680f9daabbac2cf2aabb4efebdb70eb49f9a4a081f"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15840,
+      "sha256": "7a804198c3eb8e454e3d3b2c090660e6b4ac47c6e67104c0f82381857f46f2f0"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9760,
+      "sha256": "1eb355a9b96b2ee2a75382565f6a628d62c583aa21600f9b922d038f657d96d5"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13440,
+      "sha256": "02f83895c1e3343ee3cc0b2162e37e9428c66de36fa0e2b8a5ddd834d20dbf5f"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated32-pair-20261022T223400Z-r2/a-joint/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "pins": 3985,
+  "limits": "Public/hostABIunchanged/privateappendownallocation; sourcepairedlinkonly, globaloperation/lifetimephysicalgatepending."
+}

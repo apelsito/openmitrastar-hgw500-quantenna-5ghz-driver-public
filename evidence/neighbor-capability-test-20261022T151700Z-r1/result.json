@@ -1,0 +1,13 @@
+{
+  "status": "PASS_HOST_NEIGHBOR_FLAG_IE_CASES_SOURCE_CAPACITY_CHECKS",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "flag_cases": 65536,
+  "capacity_checks": "7Breservedbeacon/APprobe/APassocresponse",
+  "beacon_wire_struct_changed": false,
+  "limits": [
+    "Noactualbeaconallocation/transmitexecution.",
+    "FullARCstructoffsets/headerclosure/modules pending.",
+    "DisabledIEpresence explicitbehavior difference; no80211kmanagementhandlerclaim."
+  ]
+}

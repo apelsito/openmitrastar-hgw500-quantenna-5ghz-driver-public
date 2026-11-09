@@ -1,0 +1,245 @@
+{
+  "files": [
+    {
+      "path": "candidates/driver5g-ops-20261022-tqe-r3-typed-batch-source-r4/openmitrastar_tqe_bounded_ownership.h",
+      "bytes": 1362,
+      "sha256": "191e4ee87436da07f403778b734d79b1771ebd8292073e9beb071de3e00a173f",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-source-r4/openmitrastar_tqe_bounded_ownership.h"
+    },
+    {
+      "path": "candidates/driver5g-ops-20261022-tqe-r3-typed-batch-source-r4/result.json",
+      "bytes": 1336,
+      "sha256": "37ca77e8d673e20702b97f245d3f64457ada1fb04295faee3567a236e936a7e6",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-source-r4/result.json"
+    },
+    {
+      "path": "candidates/driver5g-ops-20261022-tqe-r3-typed-batch-source-r4/switch_tqe.c",
+      "bytes": 53511,
+      "sha256": "c318a0c0f6aa914e8ace5dadc8456da6ea19c28806027e367a460035641cdf1e",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-source-r4/switch_tqe.c"
+    },
+    {
+      "path": "candidates/driver5g-ops-20261022-tqe-r3-typed-batch-source-r4/topaz_congest_queue.c",
+      "bytes": 20405,
+      "sha256": "3838b149e83fd58d5e1040be62f6598d1c061d415c88186c4298d9f6723d20b5",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-source-r4/topaz_congest_queue.c"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/baseline-switch_tqe.json",
+      "bytes": 9204,
+      "sha256": "627623f88104d728e20d88ea84e466aeaac17ebf8a81c376c179ea4aebf9c4fb",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/baseline-switch_tqe.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/baseline-topaz_congest_queue.json",
+      "bytes": 8219,
+      "sha256": "28977f938198933090e802bfdf1ff1534a351054cf23c465633b288ef33515bb",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/baseline-topaz_congest_queue.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/input-pins.json",
+      "bytes": 190310,
+      "sha256": "2b10a4e3cfc745e927707508a673625de199bf1bb4433cf6bda659bfbe0d74de",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/input-pins.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/result.json",
+      "bytes": 4794,
+      "sha256": "bec577e25805d94e7405cccda1d382e9efbdba68bc3e81613cfc254f279e5ad4",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-build-r2/result.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-typed-batch-global-r11/complete-audit.json",
+      "bytes": 1303,
+      "sha256": "500dfc39f7113b0847ba4f068e977db5537cc11b1331a3f50d90a35c78d541ab",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-global-r11/complete-audit.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-typed-batch-global-r11/input-pins.json",
+      "bytes": 94515,
+      "sha256": "1d7e99e1d2f2b5cba10535d06451464667e6251dfbb5ee47a45d981f55a94c49",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-global-r11/input-pins.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-typed-batch-global-r11/result.json",
+      "bytes": 4137,
+      "sha256": "433991db28e639881ecf73627f2236e0114da8bc06ce7947cb26d06f4e29b2b6",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-global-r11/result.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-typed-batch-capacity-fixture-r3/actual-provider-batch.c",
+      "bytes": 11860,
+      "sha256": "348f17361ce0be2e0dbaf69a5773e7c3fbdad4b5c631e3b2b70e0313a89e3d2c",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-capacity-fixture-r3/actual-provider-batch.c"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-typed-batch-capacity-fixture-r3/result.json",
+      "bytes": 621,
+      "sha256": "f0f4485c1e8e2b2c681a175951b39badac8e26d812646f50ebd35dd6ad38887f",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-batch-capacity-fixture-r3/result.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-typed-publication-fixture-r6/actual-typed-batch-publication.c",
+      "bytes": 22095,
+      "sha256": "fe38ab11c93aef58a2fb9436d55ff5c158e0f25ddd39bd9d3e2fd8a0945c44f0",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-publication-fixture-r6/actual-typed-batch-publication.c"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-typed-publication-fixture-r6/result.json",
+      "bytes": 591,
+      "sha256": "0bc2840acd5fd8069e095aff7905a24c9bbc5f4ad989ef818eb107f27e12913c",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-typed-publication-fixture-r6/result.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-fullcaller-fixture-r1/actual-full-multicast-caller.c",
+      "bytes": 26192,
+      "sha256": "20506599c91eea224586b9310b87a5cd67c616760bb69f20735851f23492573e",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-fullcaller-fixture-r1/actual-full-multicast-caller.c"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-fullcaller-fixture-r1/result.json",
+      "bytes": 558,
+      "sha256": "ea2da0a40d13d1b62335573eeb0598957e0cb96a2b30d945e91913725498bcc5",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-fullcaller-fixture-r1/result.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-normal-writers-fixture-r3/actual-provider-and-four-writers.c",
+      "bytes": 30856,
+      "sha256": "913b5c9e171045603baf20c010f27746bc41ca6921b0f45deaa517bfb91fae39",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-normal-writers-fixture-r3/actual-provider-and-four-writers.c"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-normal-writers-fixture-r3/result.json",
+      "bytes": 562,
+      "sha256": "2745555088cefea1f72ec6424047dd9ada71ebaff38f74fca68cf1eba955b146",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-normal-writers-fixture-r3/result.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-global-negative-r1/result.json",
+      "bytes": 1568,
+      "sha256": "874231852193988b1a8434a8beb3fe88f71c43fd06e13624dd20e8f795ee0f9b",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-global-negative-r1/result.json"
+    },
+    {
+      "path": "evidence/driver5g-ops-20261022-tqe-r3-final-delivery-r1/result.json",
+      "bytes": 3196,
+      "sha256": "b9c691acbb91250bcc2dde7f03a9f791614c34325ed6f3a870ac27b360c576fc",
+      "source": "outputs/rea/driver5g-ops-20261022-tqe-r3-final-delivery-r1/result.json"
+    },
+    {
+      "path": "evidence/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/actual-linux-pin-review.json",
+      "bytes": 689,
+      "sha256": "c1c28771c465f62adc7ecdf63c1251202c12ff466d65e7bd1576d665574f2902",
+      "source": "outputs/rea/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/actual-linux-pin-review.json"
+    },
+    {
+      "path": "evidence/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/check_linux_pins.py",
+      "bytes": 842,
+      "sha256": "f20fa948b3019f76869f65acb21d36a0999b1efb7b60db6e2b8e42ef334fa7d8",
+      "source": "outputs/rea/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/check_linux_pins.py"
+    },
+    {
+      "path": "evidence/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/fresh-module-audits.json",
+      "bytes": 2700,
+      "sha256": "14c947c3072560d7858afdde0869ceeb03067da73d0e6e93e5cd9d0f5a91707d",
+      "source": "outputs/rea/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/fresh-module-audits.json"
+    },
+    {
+      "path": "evidence/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/inspect.py",
+      "bytes": 1087,
+      "sha256": "261792c62b44a89375f11b3f07d4a68ffa74319adcce3f09bed80154d54bb826",
+      "source": "outputs/rea/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/inspect.py"
+    },
+    {
+      "path": "evidence/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/result.json",
+      "bytes": 13139,
+      "sha256": "8cebb3834cca745d21d42163688b7b5a8691f1825130ced0e43c5d3a2537d8e0",
+      "source": "outputs/rea/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/result.json"
+    },
+    {
+      "path": "evidence/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/seal.py",
+      "bytes": 7258,
+      "sha256": "b5be8b1b6b33cc326869f4d514850c91699c8b3f7ecb8bdeab6e4fcb27c463cb",
+      "source": "outputs/rea/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/seal.py"
+    },
+    {
+      "path": "evidence/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/symbol-layout-review.json",
+      "bytes": 18177,
+      "sha256": "7b41e3f89518d8437aacea4cc6af14301fd415a59e03ea479a5bcc70f2311541",
+      "source": "outputs/rea/tqe-r3-source-r4-independent-final-review-20261022T201400Z-r1/symbol-layout-review.json"
+    },
+    {
+      "path": "evidence/tqe-r3-source-r4-independent-fullcaller-review-20261022T201700Z-r1/result.json",
+      "bytes": 3323,
+      "sha256": "62b991ab5dae82b43d3b37110b9f502d5e0a8f36268d8cfc88c416b96347030c",
+      "source": "outputs/rea/tqe-r3-source-r4-independent-fullcaller-review-20261022T201700Z-r1/result.json"
+    },
+    {
+      "path": "evidence/tqe-r3-source-r4-independent-fullcaller-review-20261022T201700Z-r1/seal.py",
+      "bytes": 3631,
+      "sha256": "891ae81d19353e7d1bda13661e00b950a14d138633ae0405dcb840697ba920ce",
+      "source": "outputs/rea/tqe-r3-source-r4-independent-fullcaller-review-20261022T201700Z-r1/seal.py"
+    },
+    {
+      "path": "evidence/tqe-r3-source-r4-independent-fullcaller-20261022T201600Z-r1/actual-full-multicast-caller.c",
+      "bytes": 26192,
+      "sha256": "20506599c91eea224586b9310b87a5cd67c616760bb69f20735851f23492573e",
+      "source": "outputs/rea/tqe-r3-source-r4-independent-fullcaller-20261022T201600Z-r1/actual-full-multicast-caller.c"
+    },
+    {
+      "path": "evidence/tqe-r3-source-r4-independent-fullcaller-20261022T201600Z-r1/result.json",
+      "bytes": 558,
+      "sha256": "ea2da0a40d13d1b62335573eeb0598957e0cb96a2b30d945e91913725498bcc5",
+      "source": "outputs/rea/tqe-r3-source-r4-independent-fullcaller-20261022T201600Z-r1/result.json"
+    },
+    {
+      "path": "evidence/chanset461-independent-pick-loop-review-20261022T201000Z-r1/result.json",
+      "bytes": 1751,
+      "sha256": "1242625cb7c2d97451ddd717699faac64ddf86761f03ddfe545538b0e0b9c9e7",
+      "source": "outputs/rea/chanset461-independent-pick-loop-review-20261022T201000Z-r1/result.json"
+    },
+    {
+      "path": "evidence/chanset461-independent-pick-loop-review-20261022T201000Z-r1/seal.py",
+      "bytes": 2328,
+      "sha256": "d83a1238be9326ac8b813a941a1463aaf979785e9a304ad608941e38948cb731",
+      "source": "outputs/rea/chanset461-independent-pick-loop-review-20261022T201000Z-r1/seal.py"
+    },
+    {
+      "path": "evidence/chanset461-independent-pick-loop-decode-20261022T200000Z-r1/DumpPick.java",
+      "bytes": 601,
+      "sha256": "1b0b7b6f36dfb9ffd85b3fc5f1e5a8c01978e2535e92e7642aef515d7caad79c",
+      "source": "outputs/rea/chanset461-independent-pick-loop-decode-20261022T200000Z-r1/DumpPick.java"
+    },
+    {
+      "path": "evidence/chanset461-independent-pick-loop-decode-20261022T200000Z-r1/ghidra.log",
+      "bytes": 20802,
+      "sha256": "932fb74490d9d6a8d83920744a7ee9febb19ea87f07279872144a7a19a0ca2ac",
+      "source": "outputs/rea/chanset461-independent-pick-loop-decode-20261022T200000Z-r1/ghidra.log"
+    },
+    {
+      "path": "evidence/scan-ap-bh-lock-order-independent-review-20261022T201100Z-r1/result.json",
+      "bytes": 2610,
+      "sha256": "c182171c404df0972944111e5e02b386ad58bb05e45245893ad453267dc5fa45",
+      "source": "outputs/rea/scan-ap-bh-lock-order-independent-review-20261022T201100Z-r1/result.json"
+    },
+    {
+      "path": "evidence/scan-ap-bh-lock-order-independent-review-20261022T201100Z-r1/seal.py",
+      "bytes": 2504,
+      "sha256": "1bac726643b9a0cf526f64715f0c84d51e69ac5eb8aa6fcac313f80f4cec100c",
+      "source": "outputs/rea/scan-ap-bh-lock-order-independent-review-20261022T201100Z-r1/seal.py"
+    },
+    {
+      "path": "tools/integration/tqe-r3-source-r4/prepare_tqe_r3_typed_batch.py",
+      "bytes": 11886,
+      "sha256": "782ceead454dbc68687ff5c4d29f4baaac045d6e1d9421bca70e91d723b39ebf",
+      "source": "tools/prepare_tqe_r3_typed_batch.py"
+    },
+    {
+      "path": "tools/integration/tqe-r3-source-r4/qualify_tqe_r3_typed_batch.py",
+      "bytes": 13208,
+      "sha256": "9a335acdf630699ef5e365e2562cea8e58bfab2ea170795ef115c1a5eb0c10b2",
+      "source": "tools/qualify_tqe_r3_typed_batch.py"
+    }
+  ],
+  "hardware_accessed": false
+}

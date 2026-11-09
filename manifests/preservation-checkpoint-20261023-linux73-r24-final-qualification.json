@@ -1,0 +1,35 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-r24-final-independent-qualification-20261023T060500Z-r1/qualification-input-pins.json",
+      "source": "outputs/rea/linux73-r24-final-independent-qualification-20261023T060500Z-r1/qualification-input-pins.json",
+      "bytes": 41559,
+      "sha256": "99f0e7eebacc5752cddb86d7b303156867d7875c2aaee1e5d2b65928d910389e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-final-independent-qualification-20261023T060500Z-r1/R24_FINAL_OFFLINE_QUALIFICATION.md",
+      "source": "outputs/rea/linux73-r24-final-independent-qualification-20261023T060500Z-r1/R24_FINAL_OFFLINE_QUALIFICATION.md",
+      "bytes": 1655,
+      "sha256": "50cd4ec301b0eb9e531beeac7f6910f67b29068757ebc0e3d26ed7c123d2dbf8",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r24-final-independent-qualification-20261023T060500Z-r1/result.json",
+      "source": "outputs/rea/linux73-r24-final-independent-qualification-20261023T060500Z-r1/result.json",
+      "bytes": 45148,
+      "sha256": "4c9ba5fa91cb3e463f3dd77babbd43b259b350b0b91a6fe9b4dfb3b4d0fc2bd3",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-r24/seal_linux73_r24_final_review.py",
+      "source": "tools/seal_linux73_r24_final_review.py",
+      "bytes": 8686,
+      "sha256": "ef7a4a1931a9cffec744286feffc50e0e36279a6cb4eb8cf4dc52904e6c97bc3",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

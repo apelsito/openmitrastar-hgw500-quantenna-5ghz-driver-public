@@ -1,0 +1,207 @@
+{
+  "qdrv": {
+    "status": "PASS_COMPLETE_WEATHER478_SOURCE34_RESIDUAL_MODULE_SCOPE",
+    "component": "qdrv",
+    "fixture_bound_functions": [
+      {
+        "key": [
+          "qdrv_wlan_init",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 5744,
+        "new_bytes": 5748,
+        "old_sha256": "cdf2d8c2c255926ce7987de8d31adc4f963330c3a91be840ef7c0d482634ce5a",
+        "new_sha256": "aa0df288ae75a281b2d8d7b008aecdc667d75e13e4a994b310fc0a26101eb732"
+      }
+    ],
+    "new_functions": [],
+    "diagnostics": [
+      "qdrv_wlan_exit"
+    ],
+    "unchanged_functions": 829,
+    "residual_relocations": 13683,
+    "old_symbols": 1934,
+    "new_symbols": 1934,
+    "executable_residue": [
+      {
+        "section": ".text",
+        "anonymous_body_bytes": 77810,
+        "anonymous_body_count": 41,
+        "old_nop_bytes": 802,
+        "new_nop_bytes": 802,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".text.unlikely",
+        "anonymous_body_bytes": 2,
+        "anonymous_body_count": 1,
+        "old_nop_bytes": 30,
+        "new_nop_bytes": 30,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".init.text",
+        "anonymous_body_bytes": 2,
+        "anonymous_body_count": 1,
+        "old_nop_bytes": 0,
+        "new_nop_bytes": 0,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".exit.text",
+        "anonymous_body_bytes": 0,
+        "anonymous_body_count": 0,
+        "old_nop_bytes": 0,
+        "new_nop_bytes": 0,
+        "every_non_nop_body_and_following_owner_exact": true
+      }
+    ],
+    "limits": "Semanticrangesfixturebound; noinstructionequivalence/PM/CSA/RF/physicalacceptance"
+  },
+  "wlan": {
+    "status": "PASS_COMPLETE_WEATHER478_SOURCE34_RESIDUAL_MODULE_SCOPE",
+    "component": "wlan",
+    "fixture_bound_functions": [
+      {
+        "key": [
+          "ieee80211_ioctl_getparam",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 6020,
+        "new_bytes": 6042,
+        "old_sha256": "761a08a2b06a9f3c132f2e645b279bbe20fe84fd5e0e3b3af3e7a9913fc07731",
+        "new_sha256": "dd03530659186423aba34dae4b6f2e8b29e7bbc3f3daec014bf082605e4ddc99"
+      },
+      {
+        "key": [
+          "ieee80211_ioctl_setparam",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 16718,
+        "new_bytes": 16732,
+        "old_sha256": "7dfc1ae7a9c67bbdb8c86c882583bab3208d3bd9e4b4a5ea1c5188ed2050e6ed",
+        "new_sha256": "603f092905612dfaf37824ac4c713a9cafe1524a4a952333724feb6ada783738"
+      }
+    ],
+    "new_functions": [],
+    "diagnostics": [
+      "ieee80211_delete_wlanunit",
+      "ieee80211_ioctl_giwfreq",
+      "ieee80211_param_from_qdrv"
+    ],
+    "unchanged_functions": 997,
+    "residual_relocations": 9363,
+    "old_symbols": 2346,
+    "new_symbols": 2346,
+    "executable_residue": [
+      {
+        "section": ".text",
+        "anonymous_body_bytes": 2810,
+        "anonymous_body_count": 19,
+        "old_nop_bytes": 982,
+        "new_nop_bytes": 982,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".text.unlikely",
+        "anonymous_body_bytes": 0,
+        "anonymous_body_count": 0,
+        "old_nop_bytes": 6,
+        "new_nop_bytes": 6,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".init.text",
+        "anonymous_body_bytes": 0,
+        "anonymous_body_count": 0,
+        "old_nop_bytes": 0,
+        "new_nop_bytes": 0,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".exit.text",
+        "anonymous_body_bytes": 2,
+        "anonymous_body_count": 1,
+        "old_nop_bytes": 0,
+        "new_nop_bytes": 0,
+        "every_non_nop_body_and_following_owner_exact": true
+      }
+    ],
+    "limits": "Semanticrangesfixturebound; noinstructionequivalence/PM/CSA/RF/physicalacceptance"
+  },
+  "wlan_scan_ap": {
+    "status": "PASS_COMPLETE_WEATHER478_SOURCE34_RESIDUAL_MODULE_SCOPE",
+    "component": "wlan_scan_ap",
+    "fixture_bound_functions": [
+      {
+        "key": [
+          "ap_pick_channel",
+          ".text",
+          2,
+          0
+        ],
+        "old_bytes": 2520,
+        "new_bytes": 2546,
+        "old_sha256": "ea7f0b9f29ab7ca8d9d66968d03124cf5f829d16cffb92b216486134f6fa2464",
+        "new_sha256": "2174420367da947e6c48d16572c461384f850303c29ab53300e027fa1e37c228"
+      }
+    ],
+    "new_functions": [],
+    "diagnostics": [
+      "ap_end"
+    ],
+    "unchanged_functions": 26,
+    "residual_relocations": 141,
+    "old_symbols": 111,
+    "new_symbols": 111,
+    "executable_residue": [
+      {
+        "section": ".text",
+        "anonymous_body_bytes": 0,
+        "anonymous_body_count": 0,
+        "old_nop_bytes": 20,
+        "new_nop_bytes": 22,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".init.text",
+        "anonymous_body_bytes": 2,
+        "anonymous_body_count": 1,
+        "old_nop_bytes": 0,
+        "new_nop_bytes": 0,
+        "every_non_nop_body_and_following_owner_exact": true
+      },
+      {
+        "section": ".exit.text",
+        "anonymous_body_bytes": 2,
+        "anonymous_body_count": 1,
+        "old_nop_bytes": 0,
+        "new_nop_bytes": 0,
+        "every_non_nop_body_and_following_owner_exact": true
+      }
+    ],
+    "limits": "Semanticrangesfixturebound; noinstructionequivalence/PM/CSA/RF/physicalacceptance"
+  },
+  "wlan_scan_sta": {
+    "status": "BYTE_IDENTICAL_WHOLE_PARENT32_MODULE",
+    "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+  },
+  "wlan_ccmp": {
+    "status": "BYTE_IDENTICAL_WHOLE_PARENT32_MODULE",
+    "sha256": "1eb355a9b96b2ee2a75382565f6a628d62c583aa21600f9b922d038f657d96d5"
+  },
+  "wlan_tkip": {
+    "status": "BYTE_IDENTICAL_WHOLE_PARENT32_MODULE",
+    "sha256": "02f83895c1e3343ee3cc0b2162e37e9428c66de36fa0e2b8a5ddd834d20dbf5f"
+  },
+  "wlan_xauth": {
+    "status": "BYTE_IDENTICAL_WHOLE_PARENT32_MODULE",
+    "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+  }
+}

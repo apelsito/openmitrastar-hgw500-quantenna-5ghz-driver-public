@@ -1,0 +1,19 @@
+   3958c:	1410 3007           	ld	r7,[sp,16]
+   39590:	1724 0002           	ld	r2,[r7,36]
+   39594:	0a35 01b1           	brne.d	r2,0x6,52	;395c8 <ieee80211_find_channel_by_ieee+0x223c>
+   39598:	72e8                	mov_s	r2,r7
+   3959a:	72c7 0000 4df4      	add_s	r2,r2,0x4df4
+   395a0:	8a40                	ldb_s	r2,[r2,0]
+   395a2:	73e8                	mov_s	r3,r7
+   395a4:	73c7 0000 4df5      	add_s	r3,r3,0x4df5
+   395aa:	8b60                	ldb_s	r3,[r3,0]
+   395ac:	2244 03c2           	and	r2,r2,0xf
+   395b0:	2a40 0102           	asl	r2,r2,0x4
+   395b4:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   395bc:	2205 00c2           	or	r2,r2,r3
+   395c0:	1a00 3080           	st	r2,[gp]
+   395c4:	024d 0000           	b	588	;39810 <ieee80211_find_channel_by_ieee+0x2484>
+   395c8:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   395d0:	da00                	mov_s	r2,0
+   395d2:	1a00 3080           	st	r2,[gp]
+   395d6:	023d 0000           	b	572	;39810 <ieee80211_find_channel_by_ieee+0x2484>

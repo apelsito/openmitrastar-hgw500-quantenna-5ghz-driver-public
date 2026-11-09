@@ -1,0 +1,241 @@
+{
+  "schema": "openmitrastar.hbm-lhost-header-closure/v1",
+  "status": "OBSERVED_RETAINED_HEADER_CONSUMER_AND_DUPLICATE_BODY_CLOSURE_REQUIRED",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "compiled_header_units": 8,
+  "commands": [
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\qdrv\\.qdrv_rx.o.cmd",
+      "unit": "qdrv_rx",
+      "sha256": "7761974fba80cf8bc14ff4e49450273c2a2432491be76c089780c5abb11dde79"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\qdrv\\.qdrv_tx.o.cmd",
+      "unit": "qdrv_tx",
+      "sha256": "74a5b9aa94b8f20f209b167fa72e7780089c5696dba0dc08e4724cf68a053b8a"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\qdrv\\.qdrv_txbf.o.cmd",
+      "unit": "qdrv_txbf",
+      "sha256": "857ebf4b94dcc9a283daba186acf7cd2110207d19e92c1d825b02e65d354f703"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\qdrv\\.qdrv_wlan.o.cmd",
+      "unit": "qdrv_wlan",
+      "sha256": "8b462f932761ecabca3d905f4babf0312b13de52200198297e1e7f9b2279e75d"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\.hbm.o.cmd",
+      "unit": "hbm",
+      "sha256": "fa16256fa4862cdf376a3c4c1d2843c119a4363f95f88d9fb4c4a0ef573a5e51"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\.switch_emac.o.cmd",
+      "unit": "switch_emac",
+      "sha256": "c828e5de07038d61237e11c36e4f233074b875981c6005d60a2339404534aeab"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\.switch_tqe.o.cmd",
+      "unit": "switch_tqe",
+      "sha256": "b44f35861fe79a038b0aad35ac36832a4a5925448b49cd78f4e8fd45d6152481"
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\.topaz_congest_queue.o.cmd",
+      "unit": "topaz_congest_queue",
+      "sha256": "ff2341cf01d1048e236add149455506767b5164c1dc6b40fbec780482c11c78f"
+    }
+  ],
+  "modules": [
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\qdrv\\qdrv.ko",
+      "sha256": "ed5314b5f24e6ae4f3dd07ef1efc57c68e4246c9e3fdf055657f80c5798f7f26",
+      "weak_or_local_bodies": [
+        {
+          "name": "topaz_hbm_get_buf",
+          "bytes": 234,
+          "bind": 2,
+          "section": ".text"
+        },
+        {
+          "name": "topaz_hbm_put_buf",
+          "bytes": 164,
+          "bind": 2,
+          "section": ".text"
+        }
+      ],
+      "hbm_imports": [
+        "topaz_hbm_attach_skb_quarantine",
+        "topaz_hbm_pool_available",
+        "topaz_hbm_release_buf_safe"
+      ]
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\hbm.ko",
+      "sha256": "f3b8b78ffda138c5c8287c923086c51cd896e51539ff7a17caa394c0bc6cebb8",
+      "weak_or_local_bodies": [
+        {
+          "name": "topaz_hbm_get_buf",
+          "bytes": 222,
+          "bind": 2,
+          "section": ".text"
+        },
+        {
+          "name": "topaz_hbm_put_buf",
+          "bytes": 158,
+          "bind": 2,
+          "section": ".text"
+        }
+      ],
+      "hbm_imports": []
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\switch_emac.ko",
+      "sha256": "9c45dcf6300b1ac668b73c3fce92d8e6f25599604850a293bbac0f0e58992c87",
+      "weak_or_local_bodies": [
+        {
+          "name": "topaz_hbm_get_buf",
+          "bytes": 222,
+          "bind": 2,
+          "section": ".text"
+        },
+        {
+          "name": "topaz_hbm_put_buf",
+          "bytes": 158,
+          "bind": 2,
+          "section": ".text"
+        }
+      ],
+      "hbm_imports": []
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\switch_tqe.ko",
+      "sha256": "bd5ab1018d293dc6bed655ec2bbc6da64a3969f28a3de578c04fa9c3f4af635f",
+      "weak_or_local_bodies": [
+        {
+          "name": "topaz_hbm_get_buf",
+          "bytes": 222,
+          "bind": 2,
+          "section": ".text"
+        },
+        {
+          "name": "topaz_hbm_put_buf",
+          "bytes": 158,
+          "bind": 2,
+          "section": ".text"
+        }
+      ],
+      "hbm_imports": [
+        "topaz_hbm_attach_skb_quarantine",
+        "topaz_hbm_congest_queue_put_buf",
+        "topaz_hbm_filter_txdone_buf",
+        "topaz_hbm_filter_txdone_pool"
+      ]
+    },
+    {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\topaz_congest_queue.ko",
+      "sha256": "7b9954072e197b04936ed60a51ecbe813f24978d688c52ccc0d2c047f7f49611",
+      "weak_or_local_bodies": [
+        {
+          "name": "topaz_hbm_get_buf",
+          "bytes": 222,
+          "bind": 2,
+          "section": ".text"
+        },
+        {
+          "name": "topaz_hbm_put_buf",
+          "bytes": 158,
+          "bind": 2,
+          "section": ".text"
+        }
+      ],
+      "hbm_imports": [
+        "topaz_hbm_filter_txdone_buf",
+        "topaz_hbm_pool_available"
+      ]
+    }
+  ],
+  "input_pins": {
+    "/workspace/user-home\\Desktop\\MitraStar\\tools\\audit_hbm_lhost_header_closure.py": "6d47cc9390128a77c57a74db61d035027f693d41731e41d852662d1384a27823",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\qdrv\\.qdrv_rx.o.cmd": "7761974fba80cf8bc14ff4e49450273c2a2432491be76c089780c5abb11dde79",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\qdrv\\.qdrv_tx.o.cmd": "74a5b9aa94b8f20f209b167fa72e7780089c5696dba0dc08e4724cf68a053b8a",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\qdrv\\.qdrv_txbf.o.cmd": "857ebf4b94dcc9a283daba186acf7cd2110207d19e92c1d825b02e65d354f703",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\qdrv\\.qdrv_wlan.o.cmd": "8b462f932761ecabca3d905f4babf0312b13de52200198297e1e7f9b2279e75d",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\qdrv\\qdrv.ko": "ed5314b5f24e6ae4f3dd07ef1efc57c68e4246c9e3fdf055657f80c5798f7f26",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\.hbm.o.cmd": "fa16256fa4862cdf376a3c4c1d2843c119a4363f95f88d9fb4c4a0ef573a5e51",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\.switch_emac.o.cmd": "c828e5de07038d61237e11c36e4f233074b875981c6005d60a2339404534aeab",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\.switch_tqe.o.cmd": "b44f35861fe79a038b0aad35ac36832a4a5925448b49cd78f4e8fd45d6152481",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\.topaz_congest_queue.o.cmd": "ff2341cf01d1048e236add149455506767b5164c1dc6b40fbec780482c11c78f",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\hbm.ko": "f3b8b78ffda138c5c8287c923086c51cd896e51539ff7a17caa394c0bc6cebb8",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\switch_emac.ko": "9c45dcf6300b1ac668b73c3fce92d8e6f25599604850a293bbac0f0e58992c87",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\switch_tqe.ko": "bd5ab1018d293dc6bed655ec2bbc6da64a3969f28a3de578c04fa9c3f4af635f",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\linux510-radio-port\\quantenna\\platform\\topaz\\topaz_congest_queue.ko": "7b9954072e197b04936ed60a51ecbe813f24978d688c52ccc0d2c047f7f49611",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\include\\qtn\\topaz_hbm_cpuif.h": "8e99a3d830c4697bea0fa8cab9e3827089e9d1bfd7cf1a4b86538d0d1077ee67",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\common\\ruby_mem.h": "ddb69e6842ed04c5c254065357a798ef6273393b99e1174feaac663432707808",
+    "/workspace/user-home\\Desktop\\MitraStar\\work\\sources\\Quantenna-GPL\\common\\common_mem.h": "93729b5eb5a409814ba7a28080085ee5caed60e5cc71a4859c5633e9b51f2868"
+  },
+  "requestor_mapping": {
+    "linux": 0,
+    "muc": 1,
+    "auc": 6,
+    "dsp": 7
+  },
+  "source_callers": [
+    {
+      "path": "work/linux510-radio-port/quantenna-f344-peers/platform/topaz/hbm.c",
+      "calls": [
+        "pool creation",
+        "txdone pool consume",
+        "safe release",
+        "skb copy attach",
+        "lifecycle direct release"
+      ]
+    },
+    {
+      "path": "work/linux510-radio-port/quantenna-f344-peers/platform/topaz/switch_emac.c",
+      "calls": [
+        "descriptor buffer free via realign void"
+      ]
+    },
+    {
+      "path": "work/linux510-radio-port/quantenna-f344-peers/platform/topaz/switch_tqe.c",
+      "calls": [
+        "tqe rx cleanup via void filter"
+      ]
+    },
+    {
+      "path": "work/linux510-radio-port/quantenna-f344-peers/platform/topaz/topaz_congest_queue.c",
+      "calls": [
+        "unmarked packet cleanup via void filter"
+      ]
+    },
+    {
+      "path": "work/sources/Quantenna-GPL/drivers/qdrv/qdrv_rx.c",
+      "calls": [
+        "receive cleanup",
+        "descriptor allocation direct put"
+      ]
+    },
+    {
+      "path": "work/sources/Quantenna-GPL/drivers/qdrv/qdrv_txbf.c",
+      "calls": [
+        "beamforming attach failure direct put"
+      ]
+    },
+    {
+      "path": "work/sources/Quantenna-GPL/drivers/qdrv/qdrv_wlan.c",
+      "calls": [
+        "buffer release direct realign put"
+      ]
+    }
+  ],
+  "integration_required": [
+    "Provider must own requestor0 generation/pending operation/lifetime pin; consumer-local static state is insufficient.",
+    "Redirect original Linux weak public get/put plus private nowait/direct runtime primitives; rebuild and qualify every compiled header user.",
+    "Void release refusal needs durable owner retention before callers discard descriptors/head ownership.",
+    "No arbitrary retained-owner ledger capacity: reserve from known actual buffer/requestor bounds before any publication or refcount mutation.",
+    "Preserve original ec1/fc0 recycle ABI; hardware/multiple-processor allocation generation and stale duplicate ABA remain unproven.",
+    "Pool lifecycle register reset and provider unload need quarantine fences and explicit recovery proof; neither is authorized or implemented here."
+  ],
+  "limits": "Retained .cmd dependency inventory covers selected historical directories; it is not a complete newly compiled module closure. Source caller list is orientation to active-selected versions and must be reconciled with their actual build pins. Foreign processors, MMIO timing, runtime/client/firmware remain unqualified."
+}

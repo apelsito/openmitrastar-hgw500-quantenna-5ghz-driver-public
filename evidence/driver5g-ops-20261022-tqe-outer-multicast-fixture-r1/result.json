@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ACTUAL_OUTER_IP_FWT_MULTICAST_ENTRY_FIXTURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 105,
+  "actual_outer_entry_and_VLANparser": true,
+  "actual_IPMAC_classifiers_packet_structs": true,
+  "FWT_lookup_valid_invalid_timeout_hooks": true,
+  "refcount_mutation_guard_and_partial_retention": true,
+  "fixture_sha256": "06fb93525fa8116fc4ec85110cad3dc3d55b24cb30e0ba9cafd6dd84804b07c0",
+  "limits": "FWT/MMIO/cache/refcount writes fake; malformedbounds andselectedhookstates tested, notallIP/FWT/foreignhardwarecases orphysicalacceptance."
+}

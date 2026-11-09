@@ -1,0 +1,67 @@
+{
+  "status": "PREPARED_WINDOWS_ARC_STATIC_LAB_NEEDS_VALIDATION",
+  "runtime": "outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\rea-agents",
+  "ghidra": "outputs\\rea\\windows-arc700-static-lab-20261022T154500Z-r3\\ghidra_12.1.4_PUBLIC",
+  "java": "D:\\Tools\\REA\\jdk-21.0.12.1+1",
+  "node": "D:\\Tools\\REA\\node-v24.16.0-win-x64\\node.exe",
+  "language_id": "ARCompact:LE:32:default",
+  "compiler_spec_id": "default",
+  "patches": [
+    {
+      "path": "dist\\cli-runtime\\binary-CWVNJhAC.js",
+      "parent_sha256": "ef64e1420c25d61ab70cda30ca0f11e34a6dc4a1b4c600164100b4d4f53ba4e1",
+      "derived_sha256": "7026b51ff8c01847824d17f53b85d4fd0c3643896fc1b641bb5ccf2e7b6234c2"
+    },
+    {
+      "path": "dist\\cli-runtime\\peMachine-B9ggfSJJ.js",
+      "parent_sha256": "112a05e7abb3a4c6d9f11421565ce6365d891b83a236cdfebcdab44ad45376e1",
+      "derived_sha256": "169196e27baabf790f84eba892b56454355da55c95e06cff1bd87ef54b223e7e"
+    },
+    {
+      "path": "dist\\cli-runtime\\reconstructionObligationLedgerSchemas-Bi6sect1.js",
+      "parent_sha256": "a7e285191fc17e0dd1e996f7583ad76828db26e986ebc0e10caf5687f1e120cc",
+      "derived_sha256": "f12b890c03e47b8cda13fd0c780fdbdb65a31c921a7ce85a94c68911811bbd4f"
+    },
+    {
+      "path": "dist\\domain\\binaryTargetTypes.js",
+      "parent_sha256": "27ec1d8d5891ebed9017a0ea5a4b5ac84d4ee6568384b392cf19685b6e87f6b9",
+      "derived_sha256": "9582848694b0cae36ade973aa0528bfb406a06dff3d51645c9e154e7ff6b70a5"
+    },
+    {
+      "path": "dist\\domain\\elfFixedHeader.js",
+      "parent_sha256": "da57dc0139e7916069e264e94fc7cb06570cb4b5a7db89c23112c2464900bb82",
+      "derived_sha256": "3c8c4435fbea42290fd861a13681308fd0d2a8bd9fcc5aae48b0f798bbbccde7"
+    },
+    {
+      "path": "dist\\ghidra\\GhidraProvider.js",
+      "parent_sha256": "879512c014ddddf739488e84b2be11c5e8671e52e5524f8bbea462ea3a9d415a",
+      "derived_sha256": "3d138fec5623bbbd3f218529c931822dcf236e6db7e0a40abbd1c118decdc37c"
+    },
+    {
+      "path": "dist\\mcp\\main-Cx-Z7m_n.js",
+      "parent_sha256": "b84c42ff88c80a77f4778515effa4edf3f67acb37b60b378ff8c2eccb70b741d",
+      "derived_sha256": "7fd4b2c6277d20012cb559c8690bd3b3c65068a2145cf903116303454eb702ba"
+    },
+    {
+      "path": "dist\\mcp\\nativeValueTrace-BEZbDieM.js",
+      "parent_sha256": "d8eeea23ec960e8232c4b87a975f2b9caeff4c5fa4b09ef382c6e766963c189d",
+      "derived_sha256": "98796725e0f1ffa5ddfca1fa13d08e926d35fd66f0a8bccff48d57d3ed27aca0"
+    },
+    {
+      "path": "dist\\mcp\\peMachine-aP1iYnHq.js",
+      "parent_sha256": "6aea5efe953713a0a8a617adb036191f343874bbb2500ee9c8c64fdd6278caee",
+      "derived_sha256": "5670dc0afdd1e483b228e3cb1f3da550618e9c19b02e4932d052429a431a839c"
+    }
+  ],
+  "compiled_sla_sha256": "3906c522f205a736dbf33c5753e4f7a4c597c9ca74ef710258d3236b68ea3037",
+  "compiled_sla_source_sha256": "3906c522f205a736dbf33c5753e4f7a4c597c9ca74ef710258d3236b68ea3037",
+  "existing_node_modules": "D:\\Tools\\REA\\npm\\node_modules\\rea-agents\\node_modules",
+  "hardware_accessed": false,
+  "installed_runtime_modified": false,
+  "codex_config_modified": false,
+  "limitations": [
+    "Isolatedlocalrecognitionlane notupstreamsupport",
+    "Noemulation/loader/radio/deviceexecution",
+    "ExactARCdecoderverificationagainstpinnedartifact required"
+  ]
+}

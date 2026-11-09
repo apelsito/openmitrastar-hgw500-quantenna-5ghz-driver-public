@@ -1,0 +1,782 @@
+{
+  "status": "PASS_OEM_DERIVED_FIELD_CONSUMER_INDEX",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "source_exports": {
+    "qdrv": {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\radio-re\\decompiled\\full\\qdrv.ko.decompiled.c",
+      "sha256": "4fe33553850c217d050091c1d47cf0b45053b0d97f0fd0a5f6d028283a0235a6"
+    },
+    "wlan": {
+      "path": "/workspace/user-home\\Desktop\\MitraStar\\outputs\\radio-re\\decompiled\\full\\wlan.ko.decompiled.c",
+      "sha256": "eded3911522e7836839449fd20fce7289b44bb06f6bd289e82f5232e99c32ee9"
+    }
+  },
+  "function_count": {
+    "qdrv": 783,
+    "wlan": 967
+  },
+  "fields": {
+    "coexistence449": {
+      "oem_offsets": [
+        "0x5dac"
+      ],
+      "consumers": [
+        {
+          "lane": "qdrv",
+          "function": "qdrv_wlan_init",
+          "analysis_address": "ram:0075eac8",
+          "body_bytes": 13274,
+          "pseudocode_sha256": "dd53204ff098fbe48fddbb474485cfca3300d26f09ee29e164ca81413b8d4bc5",
+          "hits": [
+            "*(undefined1 *)((int)__s + 0x5dac) = 1;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_start_obss_scan_timer",
+          "analysis_address": "ram:000d6614",
+          "body_bytes": 120,
+          "pseudocode_sha256": "a0b00f00eadcd7c908efd5b7a776949faad3359cc9c4fd1c098f5c467e088d8d",
+          "hits": [
+            "(*(char *)(iVar1 + 0x5dac) != '\\0')) {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(bool *)(iVar23 + 0x5dac) = uVar20 != 0;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_check_40_bw_allowed",
+          "analysis_address": "ram:00109a6c",
+          "body_bytes": 324,
+          "pseudocode_sha256": "f0b4bb41faab1cc13c8142aa61480e8b8235b2fbfc3745eedf2d0e5da407aa87",
+          "hits": [
+            "if (((bVar1) && (*(int *)(iVar5 + 0x14) == 9)) && (*(char *)(iVar5 + 0x5dac) != '\\0')) {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_recv_mgmt",
+          "analysis_address": "ram:0010a0c4",
+          "body_bytes": 41204,
+          "pseudocode_sha256": "0017286fe46dfd0f5d60c81b0de935c55b551878326983f7380ab3274a3f1227",
+          "hits": [
+            "((*(ushort *)(param_1 + 0x65) & 0x4000) != 0)) && (*(char *)(iVar67 + 0x5dac) != '\\0')) {",
+            "(*(char *)(iVar64 + 0x5dac) != '\\0')) {",
+            "((*(char *)(iVar67 + 0x5dac) != '\\0' &&",
+            "if ((*(short *)(iVar67 + 0x4de) == 9) && (*(char *)(iVar67 + 0x5dac) != '\\0')) {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "autosel461": {
+      "oem_offsets": [
+        "0x4df0"
+      ],
+      "consumers": [
+        {
+          "lane": "wlan",
+          "function": "ieee80211_start_chanset_selection",
+          "analysis_address": "ram:000ba754",
+          "body_bytes": 1814,
+          "pseudocode_sha256": "9769020cde3ea802db97599a4b00145833477a05a8297bbfbe51d582e06a1e45",
+          "hits": [
+            "if ((*(char *)(iVar12 + 0x4df0) == '\\0') || (iVar4 < 0x15)) {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_chanset_pick_channel",
+          "analysis_address": "ram:000bae6c",
+          "body_bytes": 4942,
+          "pseudocode_sha256": "bf4b98e205dd93eb1a0dc7f3f8552fc12313da5df68e12142a5e295e800a5e2c",
+          "hits": [
+            "if (*(char *)(iVar28 + 0x4df0) != '\\0') {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000de47c",
+          "analysis_address": "ram:000de47c",
+          "body_bytes": 9220,
+          "pseudocode_sha256": "61f58a2714e736473a46e2c3e83027bea94ecc30d684f4b6257d8aa8f7ef3f37",
+          "hits": [
+            "*param_4 = (uint)*(byte *)(iVar8 + 0x4df0);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(byte *)(iVar23 + 0x4df0) = bVar4;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_ifattach",
+          "analysis_address": "ram:0012b470",
+          "body_bytes": 2358,
+          "pseudocode_sha256": "835b57e27dd9fe847eeda7514151a480b086f8f33a6d2185c28fc141a44c7ea4",
+          "hits": [
+            "*(undefined1 *)(param_1 + 0x4df0) = 0;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "maxbw460": {
+      "oem_offsets": [
+        "0x4df1"
+      ],
+      "consumers": [
+        {
+          "lane": "wlan",
+          "function": "ieee80211_chanset_pick_channel",
+          "analysis_address": "ram:000bae6c",
+          "body_bytes": 4942,
+          "pseudocode_sha256": "bf4b98e205dd93eb1a0dc7f3f8552fc12313da5df68e12142a5e295e800a5e2c",
+          "hits": [
+            "pbVar18 = (byte *)(iVar28 + 0x4df1);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_add_vhtop_notif",
+          "analysis_address": "ram:000c0e20",
+          "body_bytes": 240,
+          "pseudocode_sha256": "a8293c49e9b77c93f2fcf429fdf091030c40be3f0479f6801ac46ba602a4b227",
+          "hits": [
+            "if (*(char *)(param_3 + 0x4df1) == '\\x14') {",
+            "else if (*(char *)(param_3 + 0x4df1) == '(') {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000de47c",
+          "analysis_address": "ram:000de47c",
+          "body_bytes": 9220,
+          "pseudocode_sha256": "61f58a2714e736473a46e2c3e83027bea94ecc30d684f4b6257d8aa8f7ef3f37",
+          "hits": [
+            "*param_4 = (uint)*(byte *)(iVar8 + 0x4df1);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(byte *)(iVar23 + 0x4df1) = bVar4;",
+            "*(byte *)(iVar23 + 0x4df1) = bVar4;",
+            "*(byte *)(iVar23 + 0x4df1) = bVar4;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_recv_mgmt",
+          "analysis_address": "ram:0010a0c4",
+          "body_bytes": 41204,
+          "pseudocode_sha256": "0017286fe46dfd0f5d60c81b0de935c55b551878326983f7380ab3274a3f1227",
+          "hits": [
+            "if ((int)(uint)*(byte *)(iVar67 + 0x4df1) <= (int)local_40) {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_restore_bw",
+          "analysis_address": "ram:001163f0",
+          "body_bytes": 288,
+          "pseudocode_sha256": "ce20bcf497c2220d6746337a24d55d778a48613f82174a2ab5a52820b4f93ea0",
+          "hits": [
+            "uVar4 = (uint)*(byte *)(param_2 + 0x4df1);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_sta_join1",
+          "analysis_address": "ram:001190ac",
+          "body_bytes": 1800,
+          "pseudocode_sha256": "fb0bab91c5da9da5d6249c7f42a453311254551c0cf8889c474e8a73caaa1810",
+          "hits": [
+            "uVar5 = (uint)*(byte *)(iVar6 + 0x4df1);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_sta_join",
+          "analysis_address": "ram:0011d5b8",
+          "body_bytes": 1550,
+          "pseudocode_sha256": "bcd4b5735c53d7c71821413488ba03f9a33a6025d85806233bf090b2b28b3496",
+          "hits": [
+            "if (*(byte *)(iVar15 + 0x4df1) < bVar8) {",
+            "bVar8 = *(byte *)(iVar15 + 0x4df1);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_get_max_system_bw",
+          "analysis_address": "ram:001299b8",
+          "body_bytes": 106,
+          "pseudocode_sha256": "4a9d0d6c66a64e9bd857826ffb02056f65e9f94aced7f90995f28c49a41c8355",
+          "hits": [
+            "bVar2 = *(byte *)(param_1 + 0x4df1);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_ifattach",
+          "analysis_address": "ram:0012b470",
+          "body_bytes": 2358,
+          "pseudocode_sha256": "835b57e27dd9fe847eeda7514151a480b086f8f33a6d2185c28fc141a44c7ea4",
+          "hits": [
+            "*(undefined1 *)(param_1 + 0x4df1) = 0x50;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "vopt481": {
+      "oem_offsets": [
+        "0x4df4",
+        "0x4df5"
+      ],
+      "consumers": [
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000de47c",
+          "analysis_address": "ram:000de47c",
+          "body_bytes": 9220,
+          "pseudocode_sha256": "61f58a2714e736473a46e2c3e83027bea94ecc30d684f4b6257d8aa8f7ef3f37",
+          "hits": [
+            "*param_4 = (*(byte *)(iVar8 + 0x4df4) & 0xf) << 4 | (uint)*(byte *)(iVar8 + 0x4df5);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(byte *)(iVar23 + 0x4df4) = bVar4;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_001181c4",
+          "analysis_address": "ram:001181c4",
+          "body_bytes": 1130,
+          "pseudocode_sha256": "8f24b0c95c4767df15e32d535a5372eac55b836eeb4734fe56b0d9cdad9c3f3e",
+          "hits": [
+            "*(char *)(param_1 + 0x4df5) = param_2;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_ifattach",
+          "analysis_address": "ram:0012b470",
+          "body_bytes": 2358,
+          "pseudocode_sha256": "835b57e27dd9fe847eeda7514151a480b086f8f33a6d2185c28fc141a44c7ea4",
+          "hits": [
+            "*(undefined1 *)(param_1 + 0x4df5) = 0;",
+            "*(undefined1 *)(param_1 + 0x4df4) = 0;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "channelcurrent464": {
+      "oem_offsets": [
+        "0x4e2c"
+      ],
+      "consumers": [
+        {
+          "lane": "qdrv",
+          "function": "qdrv_wlan_cleanup_before_reload",
+          "analysis_address": "ram:0074cbe0",
+          "body_bytes": 18,
+          "pseudocode_sha256": "c5182d1ecd416747c5f903510af49fc53315e28c6decc9843c2833a0089669ed",
+          "hits": [
+            "*(undefined4 *)(param_1 + 0x4e2c) = 0;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "qdrv",
+          "function": "FUN_ram_00751934",
+          "analysis_address": "ram:00751934",
+          "body_bytes": 778,
+          "pseudocode_sha256": "53299308f07e44dc23d2786e5a2806ccff562fac10f4c689d9c3acdca7038fb9",
+          "hits": [
+            "*(undefined4 *)(param_1 + 0x4e2c) = 0;",
+            "*(undefined4 *)(param_1 + 0x4e2c) = 1;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(uint *)(iVar23 + 0x4e2c) = uVar20;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "rbsmeasurement466": {
+      "oem_offsets": [
+        "0x5d88"
+      ],
+      "consumers": [
+        {
+          "lane": "qdrv",
+          "function": "FUN_ram_007828c0",
+          "analysis_address": "ram:007828c0",
+          "body_bytes": 400,
+          "pseudocode_sha256": "0efb3fa77af5d2a9128cbb895acaa0a5622c41620c4af3753e3f42fb06b0312e",
+          "hits": [
+            "if ((param_2 != '\\0') && (*(char *)(iVar1 + 0x5d88) != '\\0')) {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "qdrv",
+          "function": "qdrv_radar_detected",
+          "analysis_address": "ram:00782a98",
+          "body_bytes": 3968,
+          "pseudocode_sha256": "773d7a9027fb88be002a2f3efbc89df02a252a6e2e2cd5c21be74b021951e7b5",
+          "hits": [
+            "if ((bVar15) && (DAT_ram_00092b2c[0x5d88] != '\\0')) {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000de47c",
+          "analysis_address": "ram:000de47c",
+          "body_bytes": 9220,
+          "pseudocode_sha256": "61f58a2714e736473a46e2c3e83027bea94ecc30d684f4b6257d8aa8f7ef3f37",
+          "hits": [
+            "*param_4 = (uint)*(byte *)(iVar8 + 0x5d88);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(bool *)(iVar23 + 0x5d88) = uVar20 != 0;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "rbsclose468": {
+      "oem_offsets": [
+        "0x5da8"
+      ],
+      "consumers": [
+        {
+          "lane": "qdrv",
+          "function": "qdrv_wlan_init",
+          "analysis_address": "ram:0075eac8",
+          "body_bytes": 13274,
+          "pseudocode_sha256": "dd53204ff098fbe48fddbb474485cfca3300d26f09ee29e164ca81413b8d4bc5",
+          "hits": [
+            "*(undefined4 *)((int)__s + 0x5da8) = 500;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "qdrv",
+          "function": "qdrv_radar_detected",
+          "analysis_address": "ram:00782a98",
+          "body_bytes": 3968,
+          "pseudocode_sha256": "773d7a9027fb88be002a2f3efbc89df02a252a6e2e2cd5c21be74b021951e7b5",
+          "hits": [
+            "iVar9 = __udivsi3(*(int *)(pcVar4 + 0x5da8) * 200,1000);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000de47c",
+          "analysis_address": "ram:000de47c",
+          "body_bytes": 9220,
+          "pseudocode_sha256": "61f58a2714e736473a46e2c3e83027bea94ecc30d684f4b6257d8aa8f7ef3f37",
+          "hits": [
+            "*param_4 = *(uint *)(iVar8 + 0x5da8);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(uint *)(iVar23 + 0x5da8) = uVar20;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "weather478": {
+      "oem_offsets": [
+        "0xbf4"
+      ],
+      "consumers": [
+        {
+          "lane": "qdrv",
+          "function": "qdrv_vap_init",
+          "analysis_address": "ram:0077be44",
+          "body_bytes": 2646,
+          "pseudocode_sha256": "4209e45debd24757ecf90b27e60041b24db9d86eab0952c4522a3b57402101ce",
+          "hits": [
+            "*(ushort *)(iVar12 + 0xbf4) = (ushort)param_2[8] | 0x8000;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000de47c",
+          "analysis_address": "ram:000de47c",
+          "body_bytes": 9220,
+          "pseudocode_sha256": "61f58a2714e736473a46e2c3e83027bea94ecc30d684f4b6257d8aa8f7ef3f37",
+          "hits": [
+            "*param_4 = (uint)*(byte *)(iVar8 + 0xbf4);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(bool *)(iVar23 + 0xbf4) = uVar20 != 0;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "bbdf483": {
+      "oem_offsets": [
+        "0x5d3d"
+      ],
+      "consumers": [
+        {
+          "lane": "qdrv",
+          "function": "FUN_ram_007623f8",
+          "analysis_address": "ram:007623f8",
+          "body_bytes": 9996,
+          "pseudocode_sha256": "d122c7eddcfa6b7baae8775ed7e8a1d9221b44cb1ced7be94136847149418661",
+          "hits": [
+            "*(bool *)(iVar15 + 0x5d3d) = param_3 != 0;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "amsdu11n484": {
+      "oem_offsets": [
+        "0xc55"
+      ],
+      "consumers": [
+        {
+          "lane": "wlan",
+          "function": "ieee80211_send_mgmt",
+          "analysis_address": "ram:000c75a4",
+          "body_bytes": 11596,
+          "pseudocode_sha256": "d5cae494b7e64d3080bc9d9ef1a306c78eed5b64e6f5ac60097ec22f418206b1",
+          "hits": [
+            "(*(char *)(*param_1 + 0xc55) != '\\0')))) {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "coc491": {
+      "oem_offsets": [
+        "0x5e14"
+      ],
+      "consumers": [
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000de47c",
+          "analysis_address": "ram:000de47c",
+          "body_bytes": 9220,
+          "pseudocode_sha256": "61f58a2714e736473a46e2c3e83027bea94ecc30d684f4b6257d8aa8f7ef3f37",
+          "hits": [
+            "*param_4 = *(uint *)(iVar8 + 0x5e14);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(uint *)(iVar23 + 0x5e14) = uVar20;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_0012ae00",
+          "analysis_address": "ram:0012ae00",
+          "body_bytes": 390,
+          "pseudocode_sha256": "33c4e50ec9ee01a8d5c9da33e2607181a74348f6e3dee53d8a80ae7b878584af",
+          "hits": [
+            "if (((*(int *)(param_1 + 0x5e14) != 0) && (*(char *)(param_1 + 0x8cc) == '\\0')) && (uVar4 == 0))",
+            "bVar6 = *(int *)(param_1 + 0x5e14) != 0;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "neighbor492": {
+      "oem_offsets": [
+        "0x5e18"
+      ],
+      "consumers": [
+        {
+          "lane": "wlan",
+          "function": "ieee80211_beacon_update",
+          "analysis_address": "ram:000b7688",
+          "body_bytes": 1026,
+          "pseudocode_sha256": "0a18300becb2fb4a1edd9be63287ce6af3d83fc8b474de4e1ac928d890a0df65",
+          "hits": [
+            "if ((*(uint *)(iVar7 + 0x5e18) & 1) != 0) {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_add_mandatory_field",
+          "analysis_address": "ram:000b8204",
+          "body_bytes": 316,
+          "pseudocode_sha256": "5e3c5070d41fd427890e3a6724c5f00aca24aa69ea420f8b8f7f216e8b8c71b1",
+          "hits": [
+            "uVar1 = *(uint *)(iVar5 + 0x5e18);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_add_rrm_enabled",
+          "analysis_address": "ram:000c16d8",
+          "body_bytes": 90,
+          "pseudocode_sha256": "a18e708ed2454c79bf4344c83c617fdbc8027d89e6254780e3bef71c59195cda",
+          "hits": [
+            "uVar2 = *(uint *)(*(int *)(param_2 + 0x104) + 0x5e18) & 1;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "ieee80211_send_mgmt",
+          "analysis_address": "ram:000c75a4",
+          "body_bytes": 11596,
+          "pseudocode_sha256": "d5cae494b7e64d3080bc9d9ef1a306c78eed5b64e6f5ac60097ec22f418206b1",
+          "hits": [
+            "if ((*(uint *)(iVar35 + 0x5e18) & 1) == 0) {",
+            "if ((*(uint *)(iVar35 + 0x5e18) & 1) != 0) {",
+            "if ((*(uint *)(iVar35 + 0x5e18) & 1) == 0) {",
+            "if ((*(uint *)(iVar35 + 0x5e18) & 1) != 0) {",
+            "if ((*(uint *)(iVar35 + 0x5e18) & 1) != 0) {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000de47c",
+          "analysis_address": "ram:000de47c",
+          "body_bytes": 9220,
+          "pseudocode_sha256": "61f58a2714e736473a46e2c3e83027bea94ecc30d684f4b6257d8aa8f7ef3f37",
+          "hits": [
+            "*param_4 = *(uint *)(iVar8 + 0x5e18) & 1;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "uVar11 = *(uint *)(iVar23 + 0x5e18);",
+            "*(uint *)(iVar23 + 0x5e18) = uVar11;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "bsstm493": {
+      "oem_offsets": [
+        "0x5e1c"
+      ],
+      "consumers": [
+        {
+          "lane": "wlan",
+          "function": "ieee80211_update_bss_tm",
+          "analysis_address": "ram:000c06a4",
+          "body_bytes": 138,
+          "pseudocode_sha256": "fcf594c5e2d2262931dbbd09da8e5085e82d4d725d205623c71ed5a05a1f8287",
+          "hits": [
+            "if ((*(uint *)(param_3 + 0x5e1c) & 1) == 0) {"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000de47c",
+          "analysis_address": "ram:000de47c",
+          "body_bytes": 9220,
+          "pseudocode_sha256": "61f58a2714e736473a46e2c3e83027bea94ecc30d684f4b6257d8aa8f7ef3f37",
+          "hits": [
+            "*param_4 = *(uint *)(iVar8 + 0x5e1c) & 1;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "uVar11 = *(uint *)(iVar23 + 0x5e1c);",
+            "*(uint *)(iVar23 + 0x5e1c) = uVar11;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "mdid494": {
+      "oem_offsets": [
+        "0xf8c"
+      ],
+      "consumers": [
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000de47c",
+          "analysis_address": "ram:000de47c",
+          "body_bytes": 9220,
+          "pseudocode_sha256": "61f58a2714e736473a46e2c3e83027bea94ecc30d684f4b6257d8aa8f7ef3f37",
+          "hits": [
+            "*param_4 = (uint)*(ushort *)(param_1 + 0xf8c);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(ushort *)(param_1 + 0xf8c) = uVar9;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "ftoverds495": {
+      "oem_offsets": [
+        "0xf8e"
+      ],
+      "consumers": [
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(byte *)(param_1 + 0xf8e) = bVar4;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    },
+    "duprts498": {
+      "oem_offsets": [
+        "0x535c"
+      ],
+      "consumers": [
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000de47c",
+          "analysis_address": "ram:000de47c",
+          "body_bytes": 9220,
+          "pseudocode_sha256": "61f58a2714e736473a46e2c3e83027bea94ecc30d684f4b6257d8aa8f7ef3f37",
+          "hits": [
+            "*param_4 = (uint)*(byte *)(iVar8 + 0x535c);"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        },
+        {
+          "lane": "wlan",
+          "function": "FUN_ram_000e86c4",
+          "analysis_address": "ram:000e86c4",
+          "body_bytes": 22446,
+          "pseudocode_sha256": "c2a5eb47f1e5766df157edf21e34d23a8231e9433a50282210a5d5b0bbbe326f",
+          "hits": [
+            "*(byte *)(iVar23 + 0x535c) = bVar4;"
+          ],
+          "evidence": "LEXICAL_OFFSET_HITS_IN_DERIVED_PSEUDOCODE_NOT_ALIAS_OR_RUNTIME_PROOF"
+        }
+      ]
+    }
+  },
+  "limits": [
+    "A matchingnumericaloffsetmayoccurinotherobjects; checkbase/type first.",
+    "No-hitsdoesnotproveabsence becausedecompilerforms/indirectaliases vary.",
+    "Existingexportsarederivedevidence; exactfreshREA/assembly usedforpromotion."
+  ]
+}

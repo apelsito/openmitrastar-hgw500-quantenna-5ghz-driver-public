@@ -1,0 +1,26 @@
+{
+  "status": "PASS_ACTUAL_SRAM_CORE_BACKEND_TASK_WRITER_LEASE_OWNERSHIP_CONCURRENT_WAITS",
+  "output": "PASS actual backend resource+mapping+ownership cases=362 request=3 release=2 map=2 unmap=1\nPASS actual task writer lease cases=410 concurrent_waiters=3 foreign_end=refused resource=4/3 map=3/2",
+  "source_sha256": "d35ce0d0a70cb3f3b7e54cde3aea314588379e127d479bb6883bb95507ad4dad",
+  "header_sha256": "4214cd7a9b406161ee91909c04ec1ff0733f5ac6bea4f8848022fdd05b91b57a",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "limits": "Actual source/core with pthread locks and task TLS; resource/map mocked, no physicalwriters/cache/RF proof",
+  "command": [
+    "gcc",
+    "-std=gnu11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-misleading-indentation",
+    "-pthread",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-I/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/include",
+    "-include",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/shim.h",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/fixture.c",
+    "-o",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r24-provider-writer-task-fixture-20261023T054300Z-r1/fixture"
+  ]
+}

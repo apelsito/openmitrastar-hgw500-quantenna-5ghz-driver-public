@@ -1,0 +1,30 @@
+{
+  "status": "PASS_R26_ACTUAL_AUC_PREPARED_HASH_LEASE_CLEAR_LOAD_ENABLE_PIPELINE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "actual_AuC_prepared_pipeline_cases": 46,
+  "clear_span_checks_before_first_map": 4,
+  "loader_destinations_checked_first": 8,
+  "positive_callback_rejected": true,
+  "hash_backend": "OpenSSL SHA256 host",
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/test_linux73_r26_auc_prepared.py": "b4602a7acf5abf9f80718e3e1c75a228cdb9269488a93206a1ef94a932f6d742",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-clear-reset-candidate-20261023T064300Z-r26/source/qdrv/qdrv_fw.c": "6c261926750aefcc77ac49b710cc36fb9007ad0aae1aa60374290a0f131c7402",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-clear-reset-candidate-20261023T064300Z-r26/source/qdrv/qdrv_auc.c": "491202dac16b2b85277735eb9a01c26f6ccfc04a4c0e7eea4a32d84da6b383ad",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-clear-reset-candidate-20261023T064300Z-r26/source/qdrv/qdrv_fw.h": "573cd21f7d16a83567620b159ce5f2af8a5c58525eaaf42f7c145a429fa403cb",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-clear-reset-candidate-20261023T064300Z-r26/source/qdrv/om73_fw_profiles.h": "301a427f90314c089dd2cf811745567cf7be28189e2d66c86c0bd934e235e30f",
+    "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/etc/firmware/auc_driver.nomu.0.bin": "c10018f4fe384d753a800bbbcd5ef3c85c568d0852c221009063282d30fd85f6",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r26-auc-prepared-fixture-20261023T065000Z-r1/actual-r26-auc.c": "12414a83ae4496ebea4628c3de7a6e01ab353d64959049a16062f3357dc333a4",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-r26-auc-prepared-fixture-20261023T065000Z-r1/fixture": "6b265b7d4e9f0142deb7ad538b0d7b6e8a273a944a540eba4d225e4efc8ff974"
+  },
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "limits": [
+    "ActualR26preparecallback/fullqdrv_auc_init plusloaderC; realOpenSSLSHA256 host. Sharedparams/address/MMIO/resources/leasefake.",
+    "Hash andfullloaderdestinations thenall4clearspanscheckedbeforeanyclearmap; initdoesnotenableAuConanyrejection/failure.",
+    "Mapfailmayleaveearlierclearwrites; entryneverpublishedandnoenable, noatomicphysicalrollbackclaim.",
+    "ExternalNETSS/TQE/allproducerquiescence notprovenbythisfixture; resetlocaladapter sourceonly."
+  ]
+}

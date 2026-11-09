@@ -1,0 +1,79 @@
+{
+  "status": "PASS_OFFLINE_DFS467_BOUNDED_5GHZ_INITIALIZED_SCANNER_MODULE_CLOSURE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "allmode_oem467_recovery": false,
+  "bounded_record_added": 1,
+  "allmode_qualified_records_unchanged": 29,
+  "candidate_private_records": 596,
+  "reproducible": true,
+  "new_scan_compiles": 2,
+  "retained_dfs467_changed_compiles": 4,
+  "qualified_parent_whole_units_reused": 110,
+  "query_cases": 28672,
+  "missing_mode_cases": 96,
+  "getter_cases": 131072,
+  "old_field_abi": {
+    "ieee80211com": 386,
+    "ieee80211vap": 210,
+    "qdrv_wlan": 72
+  },
+  "negative_cases": 10,
+  "pins_verified": 4262,
+  "modules": [
+    {
+      "component": "qdrv",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/dfs467-bounded-joint-a-20261022T225300Z-r2/qdrv/qdrv.ko",
+      "bytes": 684928,
+      "sha256": "e456176906d31c34d71b52944e3c8cdaf9ac700b4a7cf5b6ad97d5967c9ea743"
+    },
+    {
+      "component": "wlan",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/dfs467-bounded-joint-a-20261022T225300Z-r2/wlan/wlan.ko",
+      "bytes": 638712,
+      "sha256": "db1d386286b7e0208b4abd43ce819cd4976a3681ad6e7474d14cd0dc9a3e9675"
+    },
+    {
+      "component": "wlan_scan_ap",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/dfs467-bounded-joint-a-20261022T225300Z-r2/wlan_scan_ap/wlan_scan_ap.ko",
+      "bytes": 15524,
+      "sha256": "9422f2245defece656cc1d2fcc31b09d1983abec9bc6b572bb05657544f3e595"
+    },
+    {
+      "component": "wlan_scan_sta",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/dfs467-bounded-joint-a-20261022T225300Z-r2/wlan_scan_sta/wlan_scan_sta.ko",
+      "bytes": 18740,
+      "sha256": "8a1825a68082dd2086c6ba496ee70bd1d1663a2c0aa3acbf2f0c5da085b290a5"
+    },
+    {
+      "component": "wlan_ccmp",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/dfs467-bounded-joint-a-20261022T225300Z-r2/wlan_ccmp/wlan_ccmp.ko",
+      "bytes": 9760,
+      "sha256": "1eb355a9b96b2ee2a75382565f6a628d62c583aa21600f9b922d038f657d96d5"
+    },
+    {
+      "component": "wlan_tkip",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/dfs467-bounded-joint-a-20261022T225300Z-r2/wlan_tkip/wlan_tkip.ko",
+      "bytes": 13440,
+      "sha256": "02f83895c1e3343ee3cc0b2162e37e9428c66de36fa0e2b8a5ddd834d20dbf5f"
+    },
+    {
+      "component": "wlan_xauth",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/dfs467-bounded-joint-a-20261022T225300Z-r2/wlan_xauth/wlan_xauth.ko",
+      "bytes": 3340,
+      "sha256": "0cc908723d5d097f11acad4eb0c4b33d5ee5b183a134657e0291c8540c145989"
+    }
+  ],
+  "limits": [
+    "Preservesretainedportmetric/alternate/width/fallbackmachinery; notfullOEMAPpickinstructionequivalence.",
+    "No24GHzchanset461implementationorallmode467acceptance.",
+    "NoPHY/RF/regulatory/calibration/clienttrafficpersistence/releaseacceptance.",
+    "Validinitializedscannerobjectlifetime assumed; nohotdetach/overlapscanproof",
+    "24GHz/OEM461modes2/3/8/9 andunsupportedmodes return-95",
+    "Missingstart/pick/private/scannervap refuses stalequery insteadOEMpartiallistfallback",
+    "APscannerinitializedonly; noSTA/mixedscannerclaim",
+    "Empty/out-of-range refreshedscanlist refuses beforepick toavoid retained/OEM ANYCfallbacksuccessfromstale ss_chans0",
+    "20MHzdeterministicwholeAPstart/pickfixturewithfakecheck/alternatecallbacks; not40/80widthorallOEMmetric/rankingproof",
+    "Noallmode467acceptance orqualifiedfullrecordcountpromotion; noRF/PHY/regulatory/traffic/persistence/recovery/release"
+  ]
+}

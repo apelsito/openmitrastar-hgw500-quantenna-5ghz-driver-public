@@ -1,0 +1,51 @@
+[
+  {
+    "original_table_offset": "0xec59c",
+    "name": "uc_hostif_init_mbox",
+    "name_address": "0x1b0dac",
+    "target_address": "0xf0bdc",
+    "authority": "original metadata hint; independently verify body"
+  },
+  {
+    "original_table_offset": "0xec5dc",
+    "name": "uc_hostif_getsemaphore",
+    "name_address": "0x1b0e58",
+    "target_address": "0xf13f4",
+    "authority": "original metadata hint; independently verify body"
+  },
+  {
+    "original_table_offset": "0xec5e4",
+    "name": "uc_hostif_release_semaphore",
+    "name_address": "0x1b0e70",
+    "target_address": "0xf1404",
+    "authority": "original metadata hint; independently verify body"
+  },
+  {
+    "original_table_offset": "0xecd4c",
+    "name": "qtn_framedesc_acquire",
+    "name_address": "0x1b2214",
+    "target_address": "0x109450",
+    "authority": "original metadata hint; independently verify body"
+  },
+  {
+    "original_table_offset": "0xed7dc",
+    "name": "qtn_tx_restrict_process",
+    "name_address": "0x1b42a0",
+    "target_address": "0x12dbb4",
+    "authority": "original metadata hint; independently verify body"
+  },
+  {
+    "original_table_offset": "0xee2a4",
+    "name": "qtn_auc_tqe_handle_lhost_mgmt",
+    "name_address": "0x1b640c",
+    "target_address": "0x159f5c",
+    "authority": "original metadata hint; independently verify body"
+  },
+  {
+    "original_table_offset": "0xf00e4",
+    "name": "uc_scheduler",
+    "name_address": "0x1bb56c",
+    "target_address": "0x800239d8",
+    "authority": "original metadata hint; independently verify body"
+  }
+]

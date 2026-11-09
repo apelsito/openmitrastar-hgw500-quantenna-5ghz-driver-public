@@ -1,0 +1,46 @@
+{
+  "switch_tqe": {
+    "status": "PASS_R4_CONFIRMED_CN_RETRY_GLOBAL_RESIDUAL_SCOPE",
+    "changed_source_functions": [
+      "omtqe_push_mcast_batch",
+      "tqe_rx_multicast"
+    ],
+    "new_functions": [
+      "omtqe_typed_queue_xmit"
+    ],
+    "other_exact_anchor_diagnostics": [
+      "tqe_rx_napi_handler",
+      "tqe_tx"
+    ],
+    "residual_relocations": 450,
+    "limits": "Changed/newsourcebodies fixturebounded, hardwaretiming/foreign/recoveryacceptanceUNRUN."
+  },
+  "topaz_congest_queue": {
+    "status": "PASS_R4_CONFIRMED_CN_RETRY_GLOBAL_RESIDUAL_SCOPE",
+    "changed_source_functions": [
+      "omcgq_batch_finish",
+      "topaz_congest_enqueue",
+      "topaz_congest_queue_clear",
+      "topaz_congest_queue_xmit"
+    ],
+    "new_functions": [
+      "omcgq_batch_has_queued",
+      "omcgq_batch_queue_admit",
+      "omcgq_batch_queue_cancel_reserve",
+      "omcgq_batch_queue_reserve",
+      "omcgq_batch_retry_acquire",
+      "omcgq_batch_xmit_register",
+      "omcgq_typed_head"
+    ],
+    "other_exact_anchor_diagnostics": [
+      "omcgq_batch_admit",
+      "omcgq_record_held",
+      "reg_congest_queue_stats",
+      "topaz_congest_dequeue",
+      "topaz_congest_queue_exit",
+      "topaz_congest_release_queue"
+    ],
+    "residual_relocations": 220,
+    "limits": "Changed/newsourcebodies fixturebounded, hardwaretiming/foreign/recoveryacceptanceUNRUN."
+  }
+}

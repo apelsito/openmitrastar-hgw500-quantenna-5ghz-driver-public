@@ -1,0 +1,181 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-r26-auc-prepared-fixture-20261023T065000Z-r1/actual-r26-auc.c",
+      "source": "outputs/rea/linux73-r26-auc-prepared-fixture-20261023T065000Z-r1/actual-r26-auc.c",
+      "bytes": 22610,
+      "sha256": "12414a83ae4496ebea4628c3de7a6e01ab353d64959049a16062f3357dc333a4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-auc-prepared-fixture-20261023T065000Z-r1/compile.log",
+      "source": "outputs/rea/linux73-r26-auc-prepared-fixture-20261023T065000Z-r1/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-auc-prepared-fixture-20261023T065000Z-r1/result.json",
+      "source": "outputs/rea/linux73-r26-auc-prepared-fixture-20261023T065000Z-r1/result.json",
+      "bytes": 2420,
+      "sha256": "394344a13819aea91a0416a48596936353e584ffe7eed7e7c6eef52fbc62f5bc",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-auc-prepared-fixture-20261023T065000Z-r1/run.log",
+      "source": "outputs/rea/linux73-r26-auc-prepared-fixture-20261023T065000Z-r1/run.log",
+      "bytes": 190,
+      "sha256": "27f26fd5440a6a570ede7570a23084a8539a7b38a8540b0a8f64af02613e2956",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-clear-reset-fixture-20261023T065500Z-r1/actual-clear-reset.c",
+      "source": "outputs/rea/linux73-r26-clear-reset-fixture-20261023T065500Z-r1/actual-clear-reset.c",
+      "bytes": 13017,
+      "sha256": "ba0db18a6d30055477e02c0c00c1f586eeee417da5bf4230dcbe13b1951d51da",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-clear-reset-fixture-20261023T065500Z-r1/compile.log",
+      "source": "outputs/rea/linux73-r26-clear-reset-fixture-20261023T065500Z-r1/compile.log",
+      "bytes": 1583,
+      "sha256": "a5c85f7d93b582b6a83bdfab9c6d647ce29746a1cf14cfee8e68ab8d56c4c17d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-clear-reset-fixture-20261023T065500Z-r1/result.json",
+      "source": "outputs/rea/linux73-r26-clear-reset-fixture-20261023T065500Z-r1/result.json",
+      "bytes": 1585,
+      "sha256": "b45a84c2ebc010885baf52dceb65a0da829916fccd19de05d25715b097adba50",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r26-clear-reset-fixture-20261023T065500Z-r1/run.log",
+      "source": "outputs/rea/linux73-r26-clear-reset-fixture-20261023T065500Z-r1/run.log",
+      "bytes": 79,
+      "sha256": "a150aa41b60483bd747f43d28d7056b3d7b47f8ddf0258fb8a39dfcfb41bf74b",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/compile.log",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/fixture.c",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/fixture.c",
+      "bytes": 13006,
+      "sha256": "1c734701c2b299061bd1583fb540f885ab17eb29082ca7ac86a2e16d76343cfa",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/result.json",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/result.json",
+      "bytes": 811,
+      "sha256": "306e5c05ff202ccf6fca4338163798079f5f2bc9a5eac98fcc7a07d744751040",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/run.log",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/run.log",
+      "bytes": 293,
+      "sha256": "cbf60cba5b92f704293ccf18a63adada6bb04a260cbe484859394dc4bcc473b2",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/shim.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/shim.h",
+      "bytes": 3590,
+      "sha256": "19b082aca76918d4882a3b98d5e22488753c68f4bad51193d9f98b024bac0086",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/asm/page.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/asm/page.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/errno.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/errno.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/io.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/io.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/ioport.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/ioport.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/log2.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/log2.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/module.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/module.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/mutex.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/mutex.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/overflow.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/overflow.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/sched.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/sched.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/spinlock.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/spinlock.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/string.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/string.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/types.h",
+      "source": "outputs/rea/linux73-typed-sram-reset-fixture-20261023T062000Z-r6/include/linux/types.h",
+      "bytes": 68,
+      "sha256": "ff3c2f8f5c77352ed784d569ee85e89c60831f2beca737a154606273618e5ee5",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "hardware_accessed": false
+}

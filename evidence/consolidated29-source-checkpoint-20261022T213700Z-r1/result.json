@@ -1,0 +1,96 @@
+{
+  "status": "PASS_SOURCE_ONLY_CONSOLIDATED29_PRESERVED25_ABI_AND_FIXTURES_PENDING_LINKED_MODULES",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "source29_private_records": 29,
+  "qualified_combined_records": null,
+  "actual_ARC_private_table_object_records": 595,
+  "inherited_COC25_table_records_preserved": 591,
+  "added_records": [
+    {
+      "index": 591,
+      "cmd": 493,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "bss_tm"
+    },
+    {
+      "index": 592,
+      "cmd": 493,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_bss_tm"
+    },
+    {
+      "index": 593,
+      "cmd": 492,
+      "set_args": 18433,
+      "get_args": 0,
+      "name": "neigh_repo"
+    },
+    {
+      "index": 594,
+      "cmd": 492,
+      "set_args": 0,
+      "get_args": 18433,
+      "name": "get_neigh_repo"
+    }
+  ],
+  "old_members_checked": {
+    "ieee80211com": 384,
+    "ieee80211vap": 210,
+    "qdrv_wlan": 72,
+    "qdrv_vap": 23,
+    "ieee80211_beacon_offsets": 17,
+    "ieee80211_beacon_param_t": 5
+  },
+  "actual_current_pins": 1587,
+  "source_units_compiled_for_syntax": 6,
+  "fixture_receipts": [
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated29-coc-fixture-20261022T212600Z-r1/result.json",
+      "status": "PASS_ACTUAL_COC491_DEFERRED_WORK_CONSUMER_CALLBACK_QUEUE_HOST_REFERENCE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated29-coc-interleaving-20261022T212800Z-r1/result.json",
+      "status": "PASS_ACTUAL_COC491_DEFERRED_COMPLETION_PRODUCER_INTERLEAVINGS"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated29-coc-ioctl-20261022T213500Z-r1/result.json",
+      "status": "PASS_ACTUAL_COC491_IOCTL_SETGET_FULL_U32_BOUNDARY_FIXTURE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated29-legacy-fixture-20261022T212600Z-r1/result.json",
+      "status": "PASS_ACTUAL490_FULL_TRANSACTION_REFERENCE_HOST_FIXTURE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated29-app-fixture-20261022T212600Z-r1/result.json",
+      "status": "PASS_ACTUAL_APP_HELPER_LENGTH_ALLOCATION_BH_TRANSACTION_FIXTURE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated29-descriptor-fixture-20261022T212800Z-r1/result.json",
+      "status": "PASS_ACTUAL_32BIT_DESCRIPTOR_AND_DYNAMIC_PATH_FIXTURE"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated29-cleanup-fixture-20261022T212800Z-r1/result.json",
+      "status": "PASS_ACTUAL_PREPUBLICATION_HOSTLINK_CLEANUP"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated29-neighbor-fixture-20261022T213100Z-r1/result.json",
+      "status": "PASS_HOST_NEIGHBOR_FLAG_IE_CASES_SOURCE_CAPACITY_CHECKS"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/consolidated29-capability-paths-20261022T213500Z-r1/result.json",
+      "status": "PASS_CONSOLIDATED29_ACTUAL_CAPABILITY_SOURCE_PATH_AND_ARC_PRIVATE_TABLE_OBJECT"
+    }
+  ],
+  "excluded": [
+    "449",
+    "461"
+  ],
+  "limits": [
+    "Full58source2x/jointmodules/currentglobalresidual/delta stillpending.",
+    "29recordssourceonly; inherited25validinit/NAC/unsupported and492/493advertisementdeviationsretained.",
+    "NoRFclienttrafficbootpersistence/rollback/recovery/releaseacceptance."
+  ]
+}

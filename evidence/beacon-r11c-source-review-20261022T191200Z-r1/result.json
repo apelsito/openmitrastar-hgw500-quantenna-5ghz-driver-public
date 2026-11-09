@@ -1,0 +1,36 @@
+{
+  "status": "PASS_APP_SOURCE_AND_HOST_INTERLEAVING_PENDING_LOCKCONTEXT_ARC_MODULE",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "selected_candidate": "outputs\\rea\\beacon-app-ie-synchronization-20261022T190600Z-r11c",
+  "all_app_array_reader_writer_sites_reviewed": true,
+  "readers": [
+    "beacon_update under ic_comlockBH",
+    "probe_req copyhelper reserves1024",
+    "probe_resp/assoc_req/assoc_resp copyhelper reserves1024",
+    "get_app_ie lockedlengthcopy",
+    "vap_remove_ie lockswap clear beforefree"
+  ],
+  "writers": "Allocateoutsideic_comlockBH; swap pointer+len whileBHlocked; oldFREEafterunlock",
+  "host_length_cases": 1025,
+  "host_interleavings": {
+    "copy_vs_replace": 1,
+    "copy_vs_remove": 1,
+    "writer_blocked_until_reader_finishes": true,
+    "old_free_after_copy_only": true
+  },
+  "wire_header_or_field_layout_changes": false,
+  "frames_reserve_existing_max_bytes": 1024,
+  "lockcontext_evidence": {
+    "process_and_softirq_readers_observed": true,
+    "newstate_vaps_lock_not_ic_lock": true,
+    "VAP_to_IC_order_alreadyused_elsewhere": true,
+    "hardirq_callers_fullproof": false
+  },
+  "remaining_gates": [
+    "FullhardIRQ/caller-reentrancy/lockorder audit beforeclaimkernellocksafe",
+    "ActualARC4modifiedWLunits+fullmoduledelta",
+    "Allotherlegacyoptional/pairingIE pointerlifetimes outofscope",
+    "NoVAPobject lifetime orphysicaltrafficproof"
+  ]
+}

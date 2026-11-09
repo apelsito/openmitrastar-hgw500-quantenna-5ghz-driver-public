@@ -1,0 +1,62 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "tools/linux73_build_aelita.py",
+      "source": "sealed-aelita-sanitized-build/tools/linux73_build_aelita.py",
+      "bytes": 15669,
+      "sha256": "6eb8199d80b6ccb1aa4486194d302b5646b2ddf5c43bfdc658c55c3a5a2d56a4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/linux73_build_aelita_verified.py",
+      "source": "sealed-aelita-sanitized-build/tools/linux73_build_aelita_verified.py",
+      "bytes": 2547,
+      "sha256": "4ea2938109d120158e7597487c95415ea8431a8ccc648a55c192adbe8b43b133",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "scripts/aelita_rebuild.sh",
+      "source": "sealed-aelita-sanitized-build/scripts/aelita_rebuild.sh",
+      "bytes": 3098,
+      "sha256": "7dbefddad3596ea5ff720a40157aba5b8d35fd929dd09091cc54921be29c7238",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "docs/AELITA_SANITIZED_KERNEL_BUILD_20261022.md",
+      "source": "sealed-aelita-sanitized-build/docs/AELITA_SANITIZED_KERNEL_BUILD_20261022.md",
+      "bytes": 3594,
+      "sha256": "689256996a5d18533149eecc93cf95bf09a0f24dcaf164a91240c18546cb69e0",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "docs/AELITA_END_TO_END_SANITIZED_20261022.md",
+      "source": "sealed-aelita-sanitized-build/docs/AELITA_END_TO_END_SANITIZED_20261022.md",
+      "bytes": 5275,
+      "sha256": "cd27c6b795bb03dd961e7f9a8eb65458f87698b8b5788b2dea040bf7ae99589d",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-builder-plan-20261022T234200Z-r1/result.json",
+      "source": "sealed-aelita-sanitized-build/evidence/linux73-aelita-builder-plan-20261022T234200Z-r1/result.json",
+      "bytes": 3030,
+      "sha256": "22c5edeb98959b6e124135a5956433badce698b6b0394784f15484fefe4dde0e",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/result.json",
+      "source": "sealed-aelita-sanitized-build/evidence/linux73-aelita-sourcewrapper-plan-20261022T234900Z-r2/result.json",
+      "bytes": 1009,
+      "sha256": "d3fc3376b9062299817cb64f67686926a509740ec1bd241334fd135eb682677c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/aelita-active-r3-input-verification-20261022T234500Z-r1/result.json",
+      "source": "sealed-aelita-sanitized-build/evidence/aelita-active-r3-input-verification-20261022T234500Z-r1/result.json",
+      "bytes": 364,
+      "sha256": "59d807134e2ef42ba6fcba1ffa0ec29231294cce31024325e545daf5e43007b2",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "hardware_accessed": false
+}

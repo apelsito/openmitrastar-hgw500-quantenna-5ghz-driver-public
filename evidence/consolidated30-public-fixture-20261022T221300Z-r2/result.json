@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ACTUAL_COEX449_PUBLIC_ACTION_LENGTH_POLICY_CONSUMER",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "cases": 3538944,
+  "coex_length_cases": 256,
+  "source_sha256": "65a1fcf4b47eb54611123fed1577c1f6f8784ae9df43bc41b16b21a06c2f86f4",
+  "function_sha256": "ab5de074f4562a945c11a06e3fb9dc1343c0f6050b60560a31b7ea52e0b9223c",
+  "limits": "Actualparserbody/fakeBW+stats/send/cancelcallbacks; validcallbackobjectrange only; noPHY/RX/RF/trafficacceptance"
+}

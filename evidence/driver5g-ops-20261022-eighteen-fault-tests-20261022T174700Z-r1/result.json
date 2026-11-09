@@ -1,0 +1,43 @@
+{
+  "status": "PASS_ACTUAL_EIGHTEEN_MODULE_FAULT_CHECKS",
+  "hardware_accessed": false,
+  "cases": 7,
+  "outcomes": [
+    {
+      "case": "correct",
+      "outcome": "PASS",
+      "error": null
+    },
+    {
+      "case": "text_hole",
+      "outcome": "REJECTED",
+      "error": "all executable bytes outside bounded changes .text"
+    },
+    {
+      "case": "relocation",
+      "outcome": "REJECTED",
+      "error": "unrelated RELA delta [(('section', '.text', 194), 27, ('section', '.text', 0)), (('section', '.text', 194), 27, ('section', '.text', 1))]"
+    },
+    {
+      "case": "rodata",
+      "outcome": "REJECTED",
+      "error": "unrelated allocated data .rodata"
+    },
+    {
+      "case": "string",
+      "outcome": "REJECTED",
+      "error": "unrelated RELA delta [(('section', '.text', 260), 27, ('string', '\\x016OMF355_LIFETIME retained=1 operation=%s release=reboot-only\\n')), (('section', '.text', 260), 27, ('string', '\\x017OMF355_LIFETIME retained=1 operation=%s release=reboot-only\\n'))]"
+    },
+    {
+      "case": "added_section",
+      "outcome": "REJECTED",
+      "error": "exact section membership"
+    },
+    {
+      "case": "flags",
+      "outcome": "REJECTED",
+      "error": "section attribute .rodata flags"
+    }
+  ],
+  "original_modules_modified": false
+}

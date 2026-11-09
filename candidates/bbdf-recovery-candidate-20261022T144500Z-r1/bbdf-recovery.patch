@@ -1,0 +1,86 @@
+--- a/src/qdrv/qdrv_wlan.h
++++ b/src/qdrv/qdrv_wlan.h
+@@ -1245,6 +1245,8 @@
+ 	struct i2c_client *se95_temp_sensor;
+ 	struct tx_power_cal tx_power_cal_data;
+ 	struct shared_params *sp;
++	/* Recovered OEM483 local state; private append preserves earlier offsets. */
++	bool om_bbdf_war_enabled;
+ };
+ 
+ /**************/
+--- a/src/qdrv/qdrv_wlan.c
++++ b/src/qdrv/qdrv_wlan.c
+@@ -101,6 +101,7 @@
+ #define QDRV_DFLT_MAX_TXPOW	19
+ 
+ #define QDRV_WLAN_IGMP_QUERY_INTERVAL 125
++#define OM_OEM_PARAM_BBDF_WAR 483
+ #define NET_IP_ALIGN 2
+ 
+ #define SE95_DEVICE_ADDR	0x49
+@@ -4510,6 +4511,10 @@
+ 	u_int16_t seq, size, time;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_BBDF_WAR:
++		qw->om_bbdf_war_enabled = !!value;
++		break;
++
+ 	case IEEE80211_PARAM_FORCE_MUC_TRACE:
+ 		qdrv_muc_traceback(value == 0xdead ? 1 : 0);
+ 		return;
+@@ -5545,6 +5550,10 @@
+ 	DBGPRINTF(DBG_LL_ALL, QDRV_LF_TRACE, "-->Enter\n");
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_BBDF_WAR:
++		*value = !!qw->om_bbdf_war_enabled;
++		break;
++
+ 	/* OEM read-only getters331/275 use these existing named fields.
+ 	 * The port compiler ABI witness is independent of OEM numeric offsets. */
+ 	case IEEE80211_PARAM_CCA_FIXED:
+--- a/src/wlan/ieee80211_wireless.c
++++ b/src/wlan/ieee80211_wireless.c
+@@ -122,6 +122,7 @@
+ /* OEM451 reports role1/2 first, else repeater3 or normal0. Two advertised
+  * OEM entries below remain unsupported; adding their records enables no feature. */
+ #define OM_OEM_PARAM_MAX_BANDWIDTH 460
++#define OM_OEM_PARAM_BBDF_WAR 483
+ #define OM_OEM_PARAM_DEVICE_MODE 451
+ #define OM_OEM_PARAM_IGNORE_ICAC_SELECTION 465
+ #define OM_OEM_PARAM_FT_OVER_DS 495
+@@ -11369,6 +11370,10 @@
+ 		rsn = &vap->iv_bss->ni_rsn;
+ 
+ 	switch (param) {
++	case OM_OEM_PARAM_BBDF_WAR:
++		ieee80211_param_to_qdrv(vap, param, value, NULL, 0);
++		break;
++
+ 	/* OEM460 stores the lowbyte only; no channel/RF command is sent. */
+ 	case OM_OEM_PARAM_MAX_BANDWIDTH:
+ 		ic->ic_max_system_bw = (u_int8_t)value;
+@@ -13946,6 +13951,10 @@
+ #endif
+ 
+ 	switch (param[0] & 0xffff) {
++	case OM_OEM_PARAM_BBDF_WAR:
++		ieee80211_param_from_qdrv(vap, param[0] & 0xffff, &param[0], NULL, 0);
++		break;
++
+ 	case OM_OEM_PARAM_MAX_BANDWIDTH:
+ 		param[0] = ic->ic_max_system_bw;
+ 		break;
+@@ -20897,6 +20906,10 @@
+ 	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "set_max_bw" },
+ 	{ OM_OEM_PARAM_MAX_BANDWIDTH,
+ 	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_max_bw" },
++	{ OM_OEM_PARAM_BBDF_WAR,
++	  IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, 0, "bbdf_war_en" },
++	{ OM_OEM_PARAM_BBDF_WAR,
++	  0, IW_PRIV_TYPE_INT | IW_PRIV_SIZE_FIXED | 1, "get_bbdfwar_en" },
+ };
+ 
+ static const iw_handler ieee80211_handlers[] = {

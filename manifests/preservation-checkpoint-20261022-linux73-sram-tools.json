@@ -1,0 +1,63 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "tools/integration/linux73-sram-r1/prepare_linux73_sram_allocator.py",
+      "source": "tools/prepare_linux73_sram_allocator.py",
+      "bytes": 8266,
+      "sha256": "24f768be18a53989c0563b15686c20eacb9485b2daa367690cfa965cc2711d8c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-sram-r1/witness_linux73_sram_map.py",
+      "source": "tools/witness_linux73_sram_map.py",
+      "bytes": 3778,
+      "sha256": "fe5db81b45b3665765a2885704b59ca31151c259552139fb01dca500eea146c4",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "tools/integration/linux73-sram-r1/seal_linux73_sram_core_checkpoint.py",
+      "source": "tools/seal_linux73_sram_core_checkpoint.py",
+      "bytes": 5028,
+      "sha256": "fee52550b30821223aca6c7d7d9125382abda48fbdcb5b6b74f2d1dbe776fc1c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-oem-sram-core-arc-20261022T221400Z-r1/result.json",
+      "source": "outputs/rea/linux73-oem-sram-core-arc-20261022T221400Z-r1/result.json",
+      "bytes": 1168,
+      "sha256": "a7a7a280787e20e458d7e867cb66f0d707d9379a0b4498e3c361afbfef4f0d00",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-oem-sram-map-witness-20261022T221600Z-r1/result.json",
+      "source": "outputs/rea/linux73-oem-sram-map-witness-20261022T221600Z-r1/result.json",
+      "bytes": 3230,
+      "sha256": "4956ed1591f12ec4984e3fef05a60274342ffb151ee34efc63a819871f60e384",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-oem-sram-map-witness-20261022T221600Z-r1/map-witness.c",
+      "source": "outputs/rea/linux73-oem-sram-map-witness-20261022T221600Z-r1/map-witness.c",
+      "bytes": 769,
+      "sha256": "2faf93197c0fc5b240d66a1f358ce52c6fc174da922fe020cd050c48edbf60ef",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-oem-sram-core-fixture-20261022T221200Z-r1/result.json",
+      "source": "outputs/rea/linux73-oem-sram-core-fixture-20261022T221200Z-r1/result.json",
+      "bytes": 1359,
+      "sha256": "e6c10c461e672da52ac6802652bc0505034ffddb5ef896d8abe513e4285d5b13",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-oem-sram-core-fixture-20261022T221200Z-r1/actual-sram-test.c",
+      "source": "outputs/rea/linux73-oem-sram-core-fixture-20261022T221200Z-r1/actual-sram-test.c",
+      "bytes": 4752,
+      "sha256": "c3ddc5af8eb2bb049f069e17f7173d203ca3350ee5fd1bb576a71a71eecd7063",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "repository_visibility": "private",
+  "hardware_accessed": false
+}

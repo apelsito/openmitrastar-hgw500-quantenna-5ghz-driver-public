@@ -1,0 +1,9 @@
+   37bea:	c003                	ld_s	r0,[sp,0xc]
+   37bec:	71c8                	mov_s	r1,r6
+   37bee:	724b                	mov_s	r2,gp
+   37bf0:	db00                	mov_s	r3,0
+   37bf2:	250a 0f80 0003 3484 	mov	r5,0x33484
+   37bfa:	2023 0140           	jl.d	[r5]
+   37bfe:	244a 0000           	mov	r4,0
+   37c02:	1c14 3f80 0000 0000 	st	0,[sp,20]
+   37c0a:	0409 00c0           	b	7176	;39810 <ieee80211_find_channel_by_ieee+0x2484>

@@ -1,0 +1,59 @@
+{
+  "schema": "openmitrastar.wlan-baseline-rebuild/v1",
+  "status": "PASS_OFFLINE_FULL_BASELINE_EQUIVALENT_DECLARED_SRCVERSION",
+  "hardware_accessed": false,
+  "firmware_image": false,
+  "firmware_eligible": false,
+  "physical_gates": "UNRUN",
+  "parent_module_sha256": "f4f6099b43dd675dd44e7021374f1ea2f4380a4d9d9fd81b1d35ea411984897f",
+  "units": [
+    "wlan_fwt_compat",
+    "if_media",
+    "ieee80211_beacon",
+    "ieee80211_beacon_desc",
+    "ieee80211_crypto",
+    "ieee80211_crypto_none",
+    "ieee80211_proto",
+    "ieee80211_output",
+    "ieee80211_power",
+    "ieee80211_scan",
+    "ieee80211_wireless",
+    "ieee80211_linux",
+    "ieee80211_rate",
+    "ieee80211_input",
+    "ieee80211_node",
+    "ieee80211_tdls",
+    "ieee80211_tpc",
+    "ieee80211_mlme_statistics",
+    "ieee80211"
+  ],
+  "modules": [
+    {
+      "lane": "a",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-wlan-baseline-r2/a/wlan.ko",
+      "bytes": 629180,
+      "sha256": "7b0e504e6aee9b763757ea59268b21ebf2f18cdaf6a3c30f52ca43970a6f8dc0"
+    },
+    {
+      "lane": "b",
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/driver5g-ops-20261022-wlan-baseline-r2/b/wlan.ko",
+      "bytes": 629180,
+      "sha256": "7b0e504e6aee9b763757ea59268b21ebf2f18cdaf6a3c30f52ca43970a6f8dc0"
+    }
+  ],
+  "limits": "Baseline-only rebuild. No feature enablement, runtime, client traffic, persistence or release acceptance. Exact original source identity hash not reproduced: srcversion depends on recovered headers. No original metadata copied or ELF bytes patched.",
+  "reproducible": true,
+  "full_baseline_comparison_status": "PASS_FULL_BASELINE_RECONSTRUCTION",
+  "comparison_errors": [],
+  "baseline_functions": 959,
+  "baseline_relocations": 9543,
+  "baseline_symbols": 2250,
+  "baseline_code_bytes": 319940,
+  "metadata_exact": false,
+  "whole_file_exact": false,
+  "metadata_delta": [
+    "srcversion"
+  ],
+  "declared_srcversion_delta_allowed": true,
+  "protected_inputs_unchanged": true
+}

@@ -1,0 +1,82 @@
+{
+  "status": "PASS_STATIC_R20_NORMAL_LOAD_BLOCKERS_SRAM_BACKEND_AND_SHARED_PARAMS_SCOPE_IDENTIFIED",
+  "hardware_accessed": false,
+  "firmware_eligible": false,
+  "candidate": "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20",
+  "qdrv_module_depends": "wlan,switch_vlan,switch_tqe,qtn_platform_support,firmware_class,board_compat,runtime_compat,qtn_pm_qos_compat,gpio,hbm,temp_sens,iputil,topaz_congest_queue,qtn_tsens",
+  "OEM_qdrv_symbol_imports": [
+    "U heap_sram_alloc",
+    "U heap_sram_free",
+    "U heap_sram_ptr",
+    "U soc_shared_params"
+  ],
+  "blockers": [
+    {
+      "priority": "FIRST_DEFAULT_LOAD_BLOCKER",
+      "path": "switch_tqe:tqe_module_init",
+      "condition": "w3_switch_tqe_only_enable default0 requires explicit1 and matchingHGW500DT; otherwise-EPERM. qdrvmoduledep requires switch_tqe."
+    },
+    {
+      "priority": "NEXT_REQUIRED_RING_BLOCKER_IF_GATE_EXPLICITLY_ENABLED",
+      "path": "switch_tqe:tqe_descs_alloc→dmautil_aligned_dma_desc_alloc(is_sram=1)→heap_sram_alloc",
+      "condition": "Defaultallow_dram_sram_fallback=false makes heapreturnNULL; ringallocation fails andswitch_tqeinitreturns-EFAULT. This prevents normalcompleteqdrvdependencyload."
+    }
+  ],
+  "scheduler_sram_path": "OptionalCONFIG_ARCH_RUBY_NUMAonly; kmallocfallbackexisting. Notinevitableloadblocker.",
+  "shared_params": {
+    "requested_symbol": "qtn_mproc_sync_soc_sharedparams_init",
+    "exact_symbol_found_in_selected_current_and_OEM_sources": false,
+    "observed_implementation": "qdrv_soc_publish_params inqdrv_soc.c allocatesdma_alloc_coherent,validateswirewidth/range,assignssoc_shared_params andpublishesviaqtn_mproc_sync_shared_params_set/readback. ItisnotmissingSRAMallocator.",
+    "original_GPL_implementation": "drivers/qdrv/qdrv_soc.c qdrv_soc_publish_params and include/qtn/mproc_sync_base.h getter/setter exist.",
+    "physical_bus_coherence_and_publish_acceptance": "UNRUN"
+  },
+  "existing_backend_sources": [
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/linux_2.6.35.12/arch/arc/kernel/module.c",
+      "scope": "OEM2.6.35ARC_KERNEL_NUMA SRAMfree-list qtn_meminit/get/free; __sram_end andconfiguredbankbounds,notportedto7.3"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/providers/board_compat.c",
+      "scope": "Currentreadonlyboardprovider withdefaultNULL SRAM andmanualDRAMkmallocfallback only"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/platform/ruby/dmautil.c",
+      "scope": "CurrentownedDMAallocator requirescallerbackend, noinventedSRAMrange"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/drivers/ruby/dmautil.c",
+      "scope": "OEMDMAcaller requestingSRAM"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/drivers/fwt/fwt_sw.c",
+      "scope": "OEMFWTIPMACtableadditionalSRAMconsumer"
+    },
+    {
+      "path": "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/include/qtn/mproc_sync_base.h",
+      "scope": "OEM/currentsharedparamsgetter/settercontract"
+    }
+  ],
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/tools/audit_linux73_sram_load_blocker.py": "4d402b2053e72ee66246fb70a7eb5704540ec8fe1cd693325c65d4f4435bd723",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/providers/board_compat.c": "61c53123f612cd2130e4d22402a912f51eb87af6eac6bd75d2604e4dd08846d6",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/platform/topaz/switch_tqe.c": "487e9eff80d719a8e34ea9a5d7e4bea44f75a120e1d79bcb524b241eb9421858",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/platform/ruby/dmautil.c": "8a3042f9ce649a67739c4623725c2727f144ae17ca8af1281debebc81fd3a018",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/qdrv/qdrv_sch.c": "64edce498abe520db3c3fcb7a51505af750456b54284b1e2dc25af7519d99035",
+    "/workspace/user-home/Desktop/MitraStar/outputs/rea/linux73-full44-candidate-20261023T010500Z-r20/source/qdrv/qdrv_soc.c": "a179bebe0f469b4156e03139d6e06c99d51720c2bc9e292d5426a37d607603c4",
+    "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/linux_2.6.35.12/arch/arc/kernel/module.c": "7557e1c85b49f1a7a7f04c454753a3253b101b6d994f14124d412c60e37c0896",
+    "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/include/qtn/mproc_sync_base.h": "c79dfa9577a0559cdd8352d91dcb099436211a0cf7f506fced0ef20083d81767",
+    "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/drivers/qdrv/qdrv_soc.c": "36ccc405fa58b25a85de2f7db2f882410a656e65832dab57c48e6538ef461cb9",
+    "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/drivers/ruby/dmautil.c": "61ba225d3579713cbf687dfaa77e64d0bd1bb71b11bc93ce114a5f6a65103082",
+    "/workspace/user-home/Desktop/MitraStar/work/sources/Quantenna-GPL/drivers/fwt/fwt_sw.c": "7834af9667d64d2c34aa3529520dd0ae04223fb4cd26f690565edefeef662d5a",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-kernel-v6/.config": "ef5278daa265bc5c9dd012480f598126c01cf3b7df16063887d24b646f6bf800",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-module-v8-r20/qdrv.ko": "8ea3a3e08a6861a46ff36b542f3655d3f3db332e02d3794d578c3cb4e1661b74",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/qdrv-full44-linux73-module-v8-r20/switch_tqe.ko": "c4704c82ca667555c20165bed9def09ed2a891ff9e7ff4841140ceb784e89b04",
+    "/workspace/user-home/Desktop/MitraStar/work/hgw500-rootfs-live/squashfs-root/lib/modules/2.6.35.12/extra/qdrv/qdrv.ko": "faf2327c92d9d90c29d24b1e861037d7b46fef1d6fe0933484b0b87bd86f7103"
+  },
+  "limits": [
+    "Offlinebuild/link/all44tablepresence doesnotmeannormalQDRVloadviable. CurrentTQEexplicitgateandmissingSRAMdefault areconcretepre-radio blockers.",
+    "ManualDRAMfallbackisnotOEMSRAMallocatorandnotauthorizedautomaticallybythisaudit; itsbus/cache/ringacceptancephysicalUNRUN.",
+    "Finiteexacttermsearch ofselectedcurrent/OEMtrees isnotglobalassertionthatnootherOEMversionhassymbol.",
+    "No calibration content, routeraccess, MMIO, TX, ioctl26, reboot, flash or sourcechanges."
+  ]
+}

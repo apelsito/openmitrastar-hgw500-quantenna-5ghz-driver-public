@@ -1,0 +1,55 @@
+{
+  "schema": "openmitrastar.preservation-checkpoint/v1",
+  "files": [
+    {
+      "path": "evidence/linux73-r20-pair-abi-audit-20261023T020000Z-r1/result.json",
+      "source": "outputs/rea/linux73-r20-pair-abi-audit-20261023T020000Z-r1/result.json",
+      "bytes": 12085,
+      "sha256": "af21e2f04cd1a748cb57e4e2ebf4460e6f4c3882c0ff3ed99f2122987e5e304a",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-pair-abi-audit-20261023T020000Z-r1/a/abi_probe.c",
+      "source": "outputs/rea/linux73-r20-pair-abi-audit-20261023T020000Z-r1/a/abi_probe.c",
+      "bytes": 1332,
+      "sha256": "abaa1c1507a4551cc1809997b0909d0657af187f474020ac8aa78e42076bed83",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-pair-abi-audit-20261023T020000Z-r1/a/build.log",
+      "source": "outputs/rea/linux73-r20-pair-abi-audit-20261023T020000Z-r1/a/build.log",
+      "bytes": 1834,
+      "sha256": "bd9a6f9510a5a6cbabb4bd1c414d4114c1f4da2e60fb2ec21088febf18ba7653",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-pair-abi-audit-20261023T020000Z-r1/a/Kbuild",
+      "source": "outputs/rea/linux73-r20-pair-abi-audit-20261023T020000Z-r1/a/Kbuild",
+      "bytes": 476,
+      "sha256": "c103e7f2ff8aae3644c93a580db86e87307fc3ed5b6473d035638f770418c369",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-pair-abi-audit-20261023T020000Z-r1/b/abi_probe.c",
+      "source": "outputs/rea/linux73-r20-pair-abi-audit-20261023T020000Z-r1/b/abi_probe.c",
+      "bytes": 1332,
+      "sha256": "abaa1c1507a4551cc1809997b0909d0657af187f474020ac8aa78e42076bed83",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-pair-abi-audit-20261023T020000Z-r1/b/build.log",
+      "source": "outputs/rea/linux73-r20-pair-abi-audit-20261023T020000Z-r1/b/build.log",
+      "bytes": 1834,
+      "sha256": "ee54939c023ad7d3c8b192161ab46a0a96b1c12607930df8d03654884976b88c",
+      "copy": "EXACT_BYTES"
+    },
+    {
+      "path": "evidence/linux73-r20-pair-abi-audit-20261023T020000Z-r1/b/Kbuild",
+      "source": "outputs/rea/linux73-r20-pair-abi-audit-20261023T020000Z-r1/b/Kbuild",
+      "bytes": 476,
+      "sha256": "c103e7f2ff8aae3644c93a580db86e87307fc3ed5b6473d035638f770418c369",
+      "copy": "EXACT_BYTES"
+    }
+  ],
+  "hardware_accessed": false
+}

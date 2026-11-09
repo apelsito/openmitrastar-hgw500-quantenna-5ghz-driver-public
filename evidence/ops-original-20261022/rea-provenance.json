@@ -1,0 +1,176 @@
+{
+  "getparam": {
+    "path": "outputs/rea/oem-wlan-missingops-20261022T131900Z-getparam-r2/rea.json",
+    "sha256": "294fee39538182aed0e2a16151340134f066a6e44af9f98b88dec73d7e771bb2",
+    "evidence_id": "ev_de04f46b6670c239edb9c24b58de20d003ecdfae4450ddc9b17210bc5ba03dac",
+    "target_sha256": "79fbcbd4634a9fc32fdf8ac0c997f3bd0329131162a1ea4948794e4986c7e40a",
+    "operation": "analyze_function",
+    "procedure": {
+      "address": "0x3741c",
+      "name": "FUN_ram_0003741c",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x3741c",
+            "end": "0x3981f"
+          }
+        ],
+        "total_bytes": 9220,
+        "span_bytes": 9220,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined FUN_ram_0003741c()",
+      "locals": [
+        {
+          "description": "undefined4 local_10 @ Stack[-0x10]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_1c @ Stack[-0x1c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_20 @ Stack[-0x20]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_24 @ Stack[-0x24]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_28 @ Stack[-0x28]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_2c @ Stack[-0x2c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_30 @ Stack[-0x30]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "limits": "Independent static REA binding; no inference of complete behavior or hardware acceptance"
+  },
+  "setparam": {
+    "path": "outputs/rea/oem-wlan-missingops-20261022T131900Z-setparam-r2/rea.json",
+    "sha256": "ca1d8159bc59573e28ab194decf48bcf4fda3ce8de336a5902f08134106aef6d",
+    "evidence_id": "ev_44a857a0951921a0602b96dea7a6506921e6a4d1331ede06e633588236cd492d",
+    "target_sha256": "79fbcbd4634a9fc32fdf8ac0c997f3bd0329131162a1ea4948794e4986c7e40a",
+    "operation": "analyze_function",
+    "procedure": {
+      "address": "0x41664",
+      "name": "FUN_ram_00041664",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x41664",
+            "end": "0x46e11"
+          }
+        ],
+        "total_bytes": 22446,
+        "span_bytes": 22446,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined FUN_ram_00041664()",
+      "locals": [
+        {
+          "description": "undefined4 local_10 @ Stack[-0x10]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_14 @ Stack[-0x14]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_18 @ Stack[-0x18]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_1c @ Stack[-0x1c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_28 @ Stack[-0x28]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined2 local_2a @ Stack[-0x2a]:2",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_2d @ Stack[-0x2d]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_31 @ Stack[-0x31]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_38 @ Stack[-0x38]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_3b @ Stack[-0x3b]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_3c @ Stack[-0x3c]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_40 @ Stack[-0x40]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_44 @ Stack[-0x44]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_48 @ Stack[-0x48]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_4c @ Stack[-0x4c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_50 @ Stack[-0x50]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_54 @ Stack[-0x54]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_58 @ Stack[-0x58]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "limits": "Independent static REA binding; no inference of complete behavior or hardware acceptance"
+  }
+}

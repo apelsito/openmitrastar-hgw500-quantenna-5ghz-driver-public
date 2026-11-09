@@ -1,0 +1,10 @@
+e5007404:	270a 3000           	mov	blink,r0
+e5007408:	d800                	mov_s	r0,0
+e500740a:	1e00 7000 0047 2004 	st	r0,[0x472004]
+e5007412:	70cf ffff ffff      	mov_s	r0,0xffffffff
+e5007418:	206b 00c0           	sr	r0,[lp_end]
+e500741c:	70cf e500 73b0      	mov_s	r0,0xe50073b0
+e5007422:	71cf 0063 b3b0      	mov_s	r1,0x63b3b0
+e5007428:	72cf 0000 0b34      	mov_s	r2,0xb34
+e500742e:	0025 ff4f           	b	-6108	;0xe5005c50
+e5007432:	78e0                	nop_s
